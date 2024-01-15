@@ -20,8 +20,7 @@ namespace abyss
 			FileStream() : m_fileSize(0) {}
 			virtual ~FileStream() {}
 
-			virtual bool OpenFile(const char *fileName,
-								  ABYSS_FILE_TYPE fileType) = 0;
+			virtual bool OpenFile(const char *fileName, ABYSS_FILE_TYPE fileType) = 0;
 			virtual void CloseFile() = 0;
 
 			virtual void SeekStreamToStart() = 0;
