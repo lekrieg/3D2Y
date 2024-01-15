@@ -15,8 +15,7 @@ namespace abyss
 			}
 			else
 			{
-				m_fileStream.open(fileName, std::ifstream::in |
-												std::ifstream::binary);
+				m_fileStream.open(fileName, std::ifstream::in | std::ifstream::binary);
 			}
 
 			m_fileStream.seekg(0, std::ios::end);
@@ -84,14 +83,11 @@ namespace abyss
 
 			if (fileType == ABYSS_FILE_TYPE::ABYSS_TEXT_FILE)
 			{
-				m_fileStream.open(fileName, std::ofstream::in |
-												std::ofstream::trunc);
+				m_fileStream.open(fileName, std::ofstream::in | std::ofstream::trunc);
 			}
 			else
 			{
-				m_fileStream.open(fileName, std::ofstream::in |
-												std::ofstream::trunc |
-												std::ofstream::binary);
+				m_fileStream.open(fileName, std::ofstream::in | std::ofstream::trunc | std::ofstream::binary);
 			}
 
 			return (IsOpen() == true);
