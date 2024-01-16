@@ -40,7 +40,9 @@ namespace abyss
 			bool operator==(HashItem &item)
 			{
 				if (m_key == item.GetKey())
+				{
 					return true;
+				}
 
 				return false;
 			}
@@ -71,10 +73,10 @@ namespace abyss
 			{
 				m_size = 0;
 
-				if (m_table != NULL)
+				if (m_table != nullptr)
 				{
 					delete[] m_table;
-					m_table = NULL;
+					m_table = nullptr;
 				}
 			}
 
@@ -119,7 +121,9 @@ namespace abyss
 					temp = (*ptr)[i];
 
 					if (temp == item)
+					{
 						return temp;
+					}
 				}
 
 				item.SetKey(-1);
@@ -145,7 +149,7 @@ namespace abyss
 				return hash;
 			}
 
-			int GetSize()
+			int GetSize() const
 			{
 				return m_size;
 			}

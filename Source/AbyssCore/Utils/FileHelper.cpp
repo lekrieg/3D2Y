@@ -6,7 +6,7 @@ namespace abyss
 	{
 		bool FileInputStream::OpenFile(const char *fileName, ABYSS_FILE_TYPE fileType)
 		{
-			if (IsOpen() == true)
+			if (IsOpen())
 				CloseFile();
 
 			if (fileType == ABYSS_FILE_TYPE::ABYSS_TEXT_FILE)
@@ -23,7 +23,7 @@ namespace abyss
 			m_fileStream.seekg(0, std::ios::beg);
 			m_fileSize++;
 
-			return (IsOpen() == true);
+			return IsOpen();
 		}
 
 		void FileInputStream::CloseFile()
@@ -53,8 +53,10 @@ namespace abyss
 
 		bool FileInputStream::Read(char *buffer, int bytesToRead)
 		{
-			if (IsOpen() == false || buffer == NULL || bytesToRead <= 0)
+			if (!IsOpen() || buffer == NULL || bytesToRead <= 0)
+			{
 				return false;
+			}
 
 			m_fileStream.read(buffer, bytesToRead);
 
@@ -68,8 +70,10 @@ namespace abyss
 
 		bool FileInputStream::IsOpen()
 		{
-			if (m_fileStream.is_open() == false)
+			if (!m_fileStream.is_open())
+			{
 				return false;
+			}
 
 			return true;
 		}
@@ -78,7 +82,7 @@ namespace abyss
 
 		bool FileOutputStream::OpenFile(const char *fileName, ABYSS_FILE_TYPE fileType)
 		{
-			if (IsOpen() == true)
+			if (IsOpen())
 				CloseFile();
 
 			if (fileType == ABYSS_FILE_TYPE::ABYSS_TEXT_FILE)
@@ -90,7 +94,7 @@ namespace abyss
 				m_fileStream.open(fileName, std::ofstream::in | std::ofstream::trunc | std::ofstream::binary);
 			}
 
-			return (IsOpen() == true);
+			return IsOpen();
 		}
 
 		void FileOutputStream::CloseFile()
@@ -125,7 +129,7 @@ namespace abyss
 
 		bool FileOutputStream::Write(char *buffer, int bytesToWrite)
 		{
-			if (IsOpen() == false || buffer == NULL || bytesToWrite <= 0)
+			if (!IsOpen() || buffer == NULL || bytesToWrite <= 0)
 				return false;
 
 			m_fileStream.write(buffer, bytesToWrite);
@@ -136,7 +140,7 @@ namespace abyss
 
 		bool FileOutputStream::IsOpen()
 		{
-			if (m_fileStream.is_open() == false)
+			if (!m_fileStream.is_open())
 				return false;
 
 			return true;
