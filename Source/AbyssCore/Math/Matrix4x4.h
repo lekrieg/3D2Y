@@ -1,0 +1,66 @@
+#ifndef MATH_4X4_H
+#define MATH_4X4_H
+
+#include "Vector3D.h"
+
+namespace abyss
+{
+	namespace math
+	{
+		#define PI_CONST  3.14159265358979323846
+		#define DEG_TO_RAD(angle)  (angle * PI_CONST / 180)
+		#define RAD_TO_DEG(radian) (radian * 180 / PI_CONST)
+
+		class Matrix4x4
+		{
+		public:
+			float matrix[16];
+
+			Matrix4x4();
+			Matrix4x4(float r11, float r12, float r13, float r14,
+					  float r21, float r22, float r23, float r24,
+					  float r31, float r32, float r33, float r34,
+					  float r41, float r42, float r43, float r44);
+
+			void Add(const Matrix4x4& m1, const Matrix4x4& m2);
+			void Subtract(const Matrix4x4& m1, const Matrix4x4& m2);
+			void Multiple(const Matrix4x4& mat1, const Matrix4x4& mat2);
+
+			void operator=(const Matrix4x4& m);
+			Matrix4x4 operator-(const Matrix4x4& m);
+			Matrix4x4 operator+(const Matrix4x4& m);
+			Matrix4x4 operator*(const Matrix4x4& m);
+
+			void Identity();
+			void Zero();
+
+			void Translate(const Vector3D& v);
+			void Translate(float x, float y, float z);
+
+			Vector3D inverseTranslateVector(const Vector3D& v);
+
+			bool inverseMatrix(const Matrix4x4& m);
+			void invertMatrix(const Matrix4x4& m);
+
+			Vector3D VectorMatrixMultiply(const Vector3D& v);
+			Vector3D VectorMatrixMultiply3x3(const Vector3D& v);
+			Vector3D VectorMatrixMultiply3x3Inv(const Vector3D& v);
+
+			void Transpose(const Matrix4x4& m);
+
+			void Scale(const Vector3D& scale);
+
+			void SetRotationRadians(double x, double y, double z);
+			void Rotate(float angle, int x, int y, int z);
+			void RotateAxis(double angle, Vector3D axis);
+			void RotateX(double angle);
+			void RotateY(double angle);
+			void RotateZ(double angle);
+
+			void CreateViewMatrix(Vector3D pos, Vector3D dir, Vector3D up, Vector3D right);
+
+		};
+	}
+}
+
+#endif
