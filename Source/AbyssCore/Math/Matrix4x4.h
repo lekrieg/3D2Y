@@ -2,15 +2,12 @@
 #define MATH_4X4_H
 
 #include "Vector3D.h"
+#include "../Utils/MathDefines.h"
 
 namespace abyss
 {
 	namespace math
 	{
-		#define PI_CONST  3.14159265358979323846
-		#define DEG_TO_RAD(angle)  (angle * PI_CONST / 180)
-		#define RAD_TO_DEG(radian) (radian * 180 / PI_CONST)
-
 		class Matrix4x4
 		{
 		public:
