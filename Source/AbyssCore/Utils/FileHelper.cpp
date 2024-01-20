@@ -130,7 +130,9 @@ namespace abyss
 		bool FileOutputStream::Write(char *buffer, int bytesToWrite)
 		{
 			if (!IsOpen() || buffer == NULL || bytesToWrite <= 0)
+			{
 				return false;
+			}
 
 			m_fileStream.write(buffer, bytesToWrite);
 			m_fileSize += bytesToWrite;
@@ -141,7 +143,9 @@ namespace abyss
 		bool FileOutputStream::IsOpen()
 		{
 			if (!m_fileStream.is_open())
+			{
 				return false;
+			}
 
 			return true;
 		}

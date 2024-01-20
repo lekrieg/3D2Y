@@ -66,6 +66,19 @@ endif
 
 OBJECTS := \
 	$(OBJDIR)/AbyssCore.o \
+	$(OBJDIR)/Camera.o \
+	$(OBJDIR)/Frustrum.o \
+	$(OBJDIR)/BoundingBox.o \
+	$(OBJDIR)/BoundingSphere.o \
+	$(OBJDIR)/Matrix4x4.o \
+	$(OBJDIR)/OrientedBoundingBox.o \
+	$(OBJDIR)/Plane.o \
+	$(OBJDIR)/Quaternion.o \
+	$(OBJDIR)/Ray.o \
+	$(OBJDIR)/Vector3D.o \
+	$(OBJDIR)/EndianOrderHelper.o \
+	$(OBJDIR)/FileArchiverHelper.o \
+	$(OBJDIR)/FileHelper.o \
 	$(OBJDIR)/glad.o \
 
 RESOURCES := \
@@ -126,6 +139,45 @@ $(OBJECTS): | $(OBJDIR)
 endif
 
 $(OBJDIR)/AbyssCore.o: AbyssCore.cpp
+	@echo $(notdir $<)
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/Camera.o: Camera/Camera.cpp
+	@echo $(notdir $<)
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/Frustrum.o: Camera/Frustrum.cpp
+	@echo $(notdir $<)
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/BoundingBox.o: Math/BoundingBox.cpp
+	@echo $(notdir $<)
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/BoundingSphere.o: Math/BoundingSphere.cpp
+	@echo $(notdir $<)
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/Matrix4x4.o: Math/Matrix4x4.cpp
+	@echo $(notdir $<)
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/OrientedBoundingBox.o: Math/OrientedBoundingBox.cpp
+	@echo $(notdir $<)
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/Plane.o: Math/Plane.cpp
+	@echo $(notdir $<)
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/Quaternion.o: Math/Quaternion.cpp
+	@echo $(notdir $<)
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/Ray.o: Math/Ray.cpp
+	@echo $(notdir $<)
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/Vector3D.o: Math/Vector3D.cpp
+	@echo $(notdir $<)
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/EndianOrderHelper.o: Utils/EndianOrderHelper.cpp
+	@echo $(notdir $<)
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/FileArchiverHelper.o: Utils/FileArchiverHelper.cpp
+	@echo $(notdir $<)
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/FileHelper.o: Utils/FileHelper.cpp
 	@echo $(notdir $<)
 	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
 $(OBJDIR)/glad.o: Utils/glad.c

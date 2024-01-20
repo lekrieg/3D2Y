@@ -16,7 +16,9 @@ namespace abyss
 				clock_t time = clock();
 
 				if (g_start == 0)
+				{
 					g_start = (float)clock();
+				}
 
 				return (float)time - g_start;
 			}

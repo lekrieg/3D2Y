@@ -248,7 +248,9 @@ namespace abyss
 			for (int i = 0; i < m_totalHeaders; i++)
 			{
 				if (strcmp(fileName, m_headers[i].GetFileName()) == 0)
+				{
 					return i;
+				}
 			}
 
 			return -1;
