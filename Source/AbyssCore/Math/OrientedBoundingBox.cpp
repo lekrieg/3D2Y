@@ -1,4 +1,5 @@
 #include "OrientedBoundingBox.h"
+
 #include <cmath>
 
 namespace abyss
@@ -17,7 +18,7 @@ namespace abyss
 			m_totalEdges = 3;
 		}
 
-		OrientedBoundingBox::OrientedBoundingBox(OrientedBoundingBox &obb)
+		OrientedBoundingBox::OrientedBoundingBox(OrientedBoundingBox& obb)
 		{
 			m_halfAxis1 = obb.m_halfAxis1;
 			m_halfAxis2 = obb.m_halfAxis2;
@@ -33,12 +34,12 @@ namespace abyss
 			m_center = obb.m_center;
 		}
 
-		OrientedBoundingBox::OrientedBoundingBox(BoundingBox &aabb)
+		OrientedBoundingBox::OrientedBoundingBox(BoundingBox& aabb)
 		{
 			Calculate(aabb);
 		}
 
-		void OrientedBoundingBox::Calculate(Vector3D *vertices, int numVerts)
+		void OrientedBoundingBox::Calculate(Vector3D* vertices, int numVerts)
 		{
 			BoundingBox aabb;
 
@@ -46,7 +47,7 @@ namespace abyss
 			Calculate(aabb);
 		}
 
-		void OrientedBoundingBox::Calculate(BoundingBox &aabb)
+		void OrientedBoundingBox::Calculate(BoundingBox& aabb)
 		{
 			m_axis1 = Vector3D(1, 0, 0);
 			m_axis2 = Vector3D(0, 1, 0);
@@ -59,7 +60,7 @@ namespace abyss
 			m_halfAxis3 = (aabb.m_max.z - aabb.m_min.z) * 0.5f;
 		}
 
-		void OrientedBoundingBox::Transform(OrientedBoundingBox &obb, Matrix4x4 &mat)
+		void OrientedBoundingBox::Transform(OrientedBoundingBox& obb, Matrix4x4& mat)
 		{
 			Matrix4x4 tempMat = mat;
 
@@ -82,16 +83,14 @@ namespace abyss
 			m_halfAxis3 = obb.GetHalfAxis3() * m_axis3.Magnitude();
 		}
 
-		void OrientedBoundingBox::ObjectTransform(OrientedBoundingBox &obb, Matrix4x4 &mat)
+		void OrientedBoundingBox::ObjectTransform(OrientedBoundingBox& obb, Matrix4x4& mat)
 		{
 			Matrix4x4 tempMat;
 			Vector3D trans;
 
-			tempMat.inverseMatrix(mat);
+			tempMat.InverseMatrix(mat);
 
-			trans = Vector3D(tempMat.matrix[12],
-							 tempMat.matrix[13],
-							 tempMat.matrix[14]);
+			trans = Vector3D(tempMat.matrix[12], tempMat.matrix[13], tempMat.matrix[14]);
 
 			tempMat.matrix[12] = 0;
 			tempMat.matrix[13] = 0;
@@ -109,9 +108,7 @@ namespace abyss
 			m_halfAxis3 = obb.GetHalfAxis3();
 		}
 
-		void OrientedBoundingBox::ProjectionInterval(Vector3D &axis, float &center,
-									 float &ext, float &min,
-									 float &max)
+		void OrientedBoundingBox::ProjectionInterval(Vector3D& axis, float& center, float& ext, float& min, float& max)
 		{
 			center = m_center.Dot3(axis);
 
@@ -123,24 +120,25 @@ namespace abyss
 			max = center + ext;
 		}
 
-		unsigned int OrientedBoundingBox::GetSupport(Vector3D &axis, Vector3D *contacts)
+		unsigned int OrientedBoundingBox::GetSupport(Vector3D& axis, Vector3D* contacts)
 		{
 			Vector3D vecs[8] =
-				{
-					Vector3D(-1, -1, -1), Vector3D(1, -1, -1),
-					Vector3D(1, -1, 1), Vector3D(-1, -1, 1),
-					Vector3D(-1, 1, -1), Vector3D(1, 1, -1),
-					Vector3D(1, 1, 1), Vector3D(-1, 1, 1)};
+			{
+				Vector3D(-1, -1, -1), Vector3D(1, -1, -1),
+				Vector3D(1, -1, 1), Vector3D(-1, -1, 1),
+				Vector3D(-1, 1, -1), Vector3D(1, 1, -1),
+				Vector3D(1, 1, 1), Vector3D(-1, 1, 1)
+			};
 
 			int faces[6][4] =
-				{
-					{4, 0, 3, 7},
-					{1, 5, 6, 2},
-					{0, 1, 2, 3},
-					{7, 6, 5, 4},
-					{5, 1, 0, 4},
-					{6, 7, 3, 2},
-				};
+			{
+				{4, 0, 3, 7},
+				{1, 5, 6, 2},
+				{0, 1, 2, 3},
+				{7, 6, 5, 4},
+				{5, 1, 0, 4},
+				{6, 7, 3, 2},
+			};
 
 			float d[3];
 
@@ -149,11 +147,17 @@ namespace abyss
 			for (int i = 0; i < 3; i++)
 			{
 				if (i == 0)
+				{
 					d[i] = axis.Dot3(m_axis1);
+				}
 				else if (i == 1)
+				{
 					d[i] = axis.Dot3(m_axis2);
+				}
 				else
+				{
 					d[i] = axis.Dot3(m_axis3);
+				}
 
 				if (fabs(d[i]) > face_threshold)
 				{

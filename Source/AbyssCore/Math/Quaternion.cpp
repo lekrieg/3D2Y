@@ -1,6 +1,7 @@
 #include "Quaternion.h"
 
 #include "../Utils/MathDefines.h"
+
 #include <cmath>
 
 namespace abyss
@@ -15,7 +16,7 @@ namespace abyss
 			w = 1;
 		}
 
-		Quaternion::Quaternion(const Quaternion &q)
+		Quaternion::Quaternion(const Quaternion& q)
 		{
 			w = q.w;
 			x = q.x;
@@ -31,7 +32,7 @@ namespace abyss
 			z = Z;
 		}
 
-		Quaternion Quaternion::operator*(const Quaternion &q)
+		Quaternion Quaternion::operator*(const Quaternion& q)
 		{
 			return Quaternion(w * q.x + x * q.w + y * q.z - z * q.y,
 							  w * q.y - x * q.z + y * q.w + z * q.x,
@@ -39,7 +40,7 @@ namespace abyss
 							  w * q.w - x * q.x - y * q.y - z * q.z);
 		}
 
-		void Quaternion::operator=(const Quaternion &q)
+		void Quaternion::operator=(const Quaternion& q)
 		{
 			w = q.w;
 			x = q.x;
@@ -49,7 +50,7 @@ namespace abyss
 
 		float Quaternion::Magnitude()
 		{
-			return (float)sqrt(x * x + y * y + z * z + w * w);
+			return static_cast<float>(sqrt(x * x + y * y + z * z + w * w));
 		}
 
 		void Quaternion::Normalize()
@@ -57,7 +58,9 @@ namespace abyss
 			float len = Magnitude();
 
 			if (len != 0 && len != 1)
+			{
 				len = 1 / len;
+			}
 
 			x *= len;
 			y *= len;
@@ -70,19 +73,19 @@ namespace abyss
 			return Quaternion(-x, -y, -z, w);
 		}
 
-		void Quaternion::RotationAxisToQuaternion(float angle, Vector3D &axis)
+		void Quaternion::RotationAxisToQuaternion(float angle, Vector3D& axis)
 		{
-			float angle_1 = (float)DEG_TO_RAD(angle);
+			float angle_1 = static_cast<float>(DEG_TO_RAD(angle));
 			float angle_2 = angle_1 * 0.5f;
-			float sine = (float)sin(angle_2);
+			float sine = static_cast<float>(sin(angle_2));
 
-			w = (float)cos(angle_2);
+			w = static_cast<float>(cos(angle_2));
 			x = axis.x * sine;
 			y = axis.y * sine;
 			z = axis.z * sine;
 		}
 
-		void Quaternion::EulerToQuaternion(Vector3D &euler)
+		void Quaternion::EulerToQuaternion(Vector3D& euler)
 		{
 			float cosX = 0.5f * cosf(euler.x);
 			float cosY = 0.5f * cosf(euler.y);
@@ -98,7 +101,7 @@ namespace abyss
 			z = sinZ * cosY * cosX - cosZ * sinY * sinX;
 		}
 
-		Quaternion Quaternion::CrossProduct(const Quaternion &q)
+		Quaternion Quaternion::CrossProduct(const Quaternion& q)
 		{
 			Quaternion crossProduct;
 
@@ -110,10 +113,12 @@ namespace abyss
 			return crossProduct;
 		}
 
-		void Quaternion::CreateMatrix(float *matrix)
+		void Quaternion::CreateMatrix(float* matrix)
 		{
 			if (!matrix)
+			{
 				return;
+			}
 
 			matrix[0] = 1.0f - 2.0f * (y * y + z * z);
 			matrix[1] = 2.0f * (x * y + z * w);
@@ -136,14 +141,14 @@ namespace abyss
 			matrix[15] = 1.0f;
 		}
 
-		void Quaternion::MatrixToQuaternion(float *matrix)
+		void Quaternion::MatrixToQuaternion(float* matrix)
 		{
 			float trace;
 			float sqrtTrace;
 			float sqrtTrace2;
 
 			trace = matrix[0] + matrix[5] + matrix[10] + matrix[15];
-			sqrtTrace = (float)sqrt(trace);
+			sqrtTrace = static_cast<float>(sqrt(trace));
 
 			sqrtTrace2 = 1.0f / (2.0f * sqrtTrace);
 
@@ -153,7 +158,7 @@ namespace abyss
 			z = (matrix[1] - matrix[4]) * sqrtTrace2;
 		}
 
-		void Quaternion::Slerp(const Quaternion &q1, const Quaternion &q2, float t)
+		void Quaternion::Slerp(const Quaternion& q1, const Quaternion& q2, float t)
 		{
 			float cosTheta = 0.0f;
 			float sinTheta = 0.0f;
@@ -180,10 +185,10 @@ namespace abyss
 
 			if (1.0f - cosTheta > 0.001f)
 			{
-				cosTheta = (float)acos(cosTheta);
-				sinTheta = 1.0f / (float)sin(cosTheta);
-				beta = (float)sin(cosTheta * beta) * sinTheta;
-				t = (float)sin(cosTheta * t) * sinTheta;
+				cosTheta = static_cast<float>(acos(cosTheta));
+				sinTheta = 1.0f / static_cast<float>(sin(cosTheta));
+				beta = static_cast<float>(sin(cosTheta * beta)) * sinTheta;
+				t = static_cast<float>(sin(cosTheta * t)) * sinTheta;
 			}
 
 			x = beta * q1.x + t * q2Array[0];

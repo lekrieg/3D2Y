@@ -54,31 +54,35 @@ namespace abyss
 		public:
 			ArchiveFileHeader() : m_fileName({'\0'}), m_size(0), m_offset(0) {}
 
-			char *GetFileName() { return m_fileName; }
+			char* GetFileName() { return m_fileName; }
 			int GetSize() const { return m_size; }
 			int GetOffset() const { return m_offset; }
 
 			void SetSize(int size) { m_size = size; }
 			void SetOffset(int offset) { m_offset = offset; }
 
-			void SetFileName(char *fileName)
+			void SetFileName(char* fileName)
 			{
 				int len;
 				m_fileName[0] = '\0';
 
 				if (fileName == nullptr)
+				{
 					return;
+				}
 
 				len = strlen(fileName);
 
 				if (len > 255)
+				{
 					return;
+				}
 
 				memcpy(m_fileName, fileName, len);
 				m_fileName[len] = '\0';
 			}
 
-			void operator=(ArchiveFileHeader &header)
+			void operator=(ArchiveFileHeader& header)
 			{
 				m_size = header.GetSize();
 				SetFileName(header.GetFileName());
@@ -88,7 +92,7 @@ namespace abyss
 
 		class Archive
 		{
-			ArchiveFileHeader *m_headers;
+			ArchiveFileHeader* m_headers;
 			FileInputStream m_fileStream;
 			int m_totalHeaders;
 
@@ -96,17 +100,17 @@ namespace abyss
 			Archive();
 			~Archive();
 
-			bool ReadArchiveFile(char *fileName);
-			bool WriteArchiveFile(char *fileName, ArchiveFileHeader *headers, int totalHeaders);
+			bool ReadArchiveFile(char* fileName);
+			bool WriteArchiveFile(char* fileName, ArchiveFileHeader* headers, int totalHeaders);
 			void CloseArchive();
 
-			bool Extract(int index, char *location);
-			bool Extract(char *fileName, char *location);
+			bool Extract(int index, char* location);
+			bool Extract(char* fileName, char* location);
 
-			int GetFileIndex(char *fileName);
-			bool GetFileData(int index, char *buffer, int bytesToRead);
-			bool GetFileData(char *fileName, char *buffer, int bytesToRead);
-			bool GetFileHeaderInfoByIndex(int index, ArchiveFileHeader *fh);
+			int GetFileIndex(char* fileName);
+			bool GetFileData(int index, char* buffer, int bytesToRead);
+			bool GetFileData(char* fileName, char* buffer, int bytesToRead);
+			bool GetFileHeaderInfoByIndex(int index, ArchiveFileHeader* fh);
 
 			int GetTotalHeaders() const { return m_totalHeaders; }
 

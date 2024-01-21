@@ -37,7 +37,7 @@ namespace abyss
 				m_obj = obj;
 			}
 
-			bool operator==(HashItem &item)
+			bool operator==(HashItem& item)
 			{
 				if (m_key == item.GetKey())
 				{
@@ -80,7 +80,7 @@ namespace abyss
 				}
 			}
 
-			void Insert(HashItem<A> &obj)
+			void Insert(HashItem<A>& obj)
 			{
 				int hash = HashFunction(obj.GetKey());
 				m_table[hash].push_back(obj);
@@ -135,7 +135,7 @@ namespace abyss
 				return key % m_size;
 			}
 
-			int HashFunction(std::string &str)
+			int HashFunction(std::string& str)
 			{
 				int hash = 0;
 				int i = 0;
@@ -154,8 +154,7 @@ namespace abyss
 				return m_size;
 			}
 		};
-	} // namespace utils
-
-} // namespace abyss
+	}
+}
 
 #endif

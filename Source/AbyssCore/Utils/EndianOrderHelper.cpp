@@ -11,7 +11,7 @@ namespace abyss
 			m_systemEndian = ABYSS_ENDIAN_TYPE::ABYSS_ENDIAN_UNKNOWN;
 
 			unsigned long data = 0x12345678;
-			unsigned char *ptr = (unsigned char *)&data;
+			unsigned char *ptr = reinterpret_cast<unsigned char*>(&data);
 
 			if (*ptr == 0x12 && *(ptr + 1) == 0x34 &&
 				*(ptr + 2) == 0x56 && *(ptr + 3) == 0x78)
@@ -34,7 +34,7 @@ namespace abyss
 		{
 		}
 
-		void EndianOrderHelper::ResolveEndian(char *data, int size, ABYSS_ENDIAN_TYPE inputEndian)
+		void EndianOrderHelper::ResolveEndian(char* data, int size, ABYSS_ENDIAN_TYPE inputEndian)
 		{
 			if (m_systemEndian == ABYSS_ENDIAN_TYPE::ABYSS_ENDIAN_UNKNOWN ||
 				inputEndian == ABYSS_ENDIAN_TYPE::ABYSS_ENDIAN_UNKNOWN ||
@@ -46,20 +46,16 @@ namespace abyss
 			int half = size / 2;
 
 			// Test for middle vs big else middle vs little.
-			if ((m_systemEndian == ABYSS_ENDIAN_TYPE::ABYSS_ENDIAN_MIDDLE &&
-				 inputEndian == ABYSS_ENDIAN_TYPE::ABYSS_ENDIAN_BIG) ||
-				(m_systemEndian == ABYSS_ENDIAN_TYPE::ABYSS_ENDIAN_BIG &&
-				 inputEndian == ABYSS_ENDIAN_TYPE::ABYSS_ENDIAN_MIDDLE))
+			if ((m_systemEndian == ABYSS_ENDIAN_TYPE::ABYSS_ENDIAN_MIDDLE && inputEndian == ABYSS_ENDIAN_TYPE::ABYSS_ENDIAN_BIG) ||
+				(m_systemEndian == ABYSS_ENDIAN_TYPE::ABYSS_ENDIAN_BIG && inputEndian == ABYSS_ENDIAN_TYPE::ABYSS_ENDIAN_MIDDLE))
 			{
 				SwapBytes(data, half);
 				SwapBytes(data + half, half);
 
 				return;
 			}
-			else if ((m_systemEndian == ABYSS_ENDIAN_TYPE::ABYSS_ENDIAN_MIDDLE &&
-					  inputEndian == ABYSS_ENDIAN_TYPE::ABYSS_ENDIAN_LITTLE) ||
-					 (m_systemEndian == ABYSS_ENDIAN_TYPE::ABYSS_ENDIAN_LITTLE &&
-					  inputEndian == ABYSS_ENDIAN_TYPE::ABYSS_ENDIAN_MIDDLE))
+			else if ((m_systemEndian == ABYSS_ENDIAN_TYPE::ABYSS_ENDIAN_MIDDLE && inputEndian == ABYSS_ENDIAN_TYPE::ABYSS_ENDIAN_LITTLE) ||
+					 (m_systemEndian == ABYSS_ENDIAN_TYPE::ABYSS_ENDIAN_LITTLE && inputEndian == ABYSS_ENDIAN_TYPE::ABYSS_ENDIAN_MIDDLE))
 			{
 				// Switch little to big then middle.
 				SwapBytes(data, size);
@@ -73,7 +69,7 @@ namespace abyss
 			SwapBytes(data, size);
 		}
 
-		void EndianOrderHelper::SwapBytes(char *data, int size)
+		void EndianOrderHelper::SwapBytes(char* data, int size)
 		{
 			assert((size & 1) == 0);
 
@@ -88,7 +84,7 @@ namespace abyss
 			}
 		}
 
-		void EndianOrderHelper::SwapBytes(char *data, int size, int number)
+		void EndianOrderHelper::SwapBytes(char* data, int size, int number)
 		{
 			assert((size & 1) == 0);
 

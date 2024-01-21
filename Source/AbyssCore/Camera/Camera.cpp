@@ -13,8 +13,8 @@ namespace abyss
 			m_right.x = 1;
 		}
 
-		Camera::Camera(math::Vector3D &pos, math::Vector3D &lookAt,
-					   math::Vector3D &up, math::Vector3D &right)
+		Camera::Camera(math::Vector3D& pos, math::Vector3D& lookAt,
+					   math::Vector3D& up, math::Vector3D& right)
 		{
 			m_pos = pos;
 			m_lookAt = lookAt;
@@ -22,7 +22,7 @@ namespace abyss
 			m_right = right;
 		}
 
-		void Camera::MoveCamera(math::Vector3D &direction, float speed)
+		void Camera::MoveCamera(math::Vector3D& direction, float speed)
 		{
 			m_pos += direction * speed;
 			m_lookAt += direction * speed;
@@ -33,7 +33,7 @@ namespace abyss
 			MoveCamera(m_right, speed);
 		}
 
-		void Camera::RotateCamera(float angle, math::Vector3D &axis)
+		void Camera::RotateCamera(float angle, math::Vector3D& axis)
 		{
 			math::Quaternion qRotation, qView, qNewView;
 

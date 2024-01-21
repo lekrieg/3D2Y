@@ -10,7 +10,6 @@ namespace abyss
 		class BoundingBox
 		{
 		public:
-
 			Vector3D m_min, m_max, m_center;
 
 			BoundingBox();

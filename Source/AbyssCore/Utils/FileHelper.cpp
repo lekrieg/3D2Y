@@ -4,10 +4,12 @@ namespace abyss
 {
 	namespace utils
 	{
-		bool FileInputStream::OpenFile(const char *fileName, ABYSS_FILE_TYPE fileType)
+		bool FileInputStream::OpenFile(const char* fileName, ABYSS_FILE_TYPE fileType)
 		{
 			if (IsOpen())
+			{
 				CloseFile();
+			}
 
 			if (fileType == ABYSS_FILE_TYPE::ABYSS_TEXT_FILE)
 			{
@@ -51,9 +53,9 @@ namespace abyss
 			return m_fileStream.tellg();
 		}
 
-		bool FileInputStream::Read(char *buffer, int bytesToRead)
+		bool FileInputStream::Read(char* buffer, int bytesToRead)
 		{
-			if (!IsOpen() || buffer == NULL || bytesToRead <= 0)
+			if (!IsOpen() || buffer == nullptr || bytesToRead <= 0)
 			{
 				return false;
 			}
@@ -63,7 +65,7 @@ namespace abyss
 			return true;
 		}
 
-		bool FileInputStream::Write(char *buffer, int bytesToWrite)
+		bool FileInputStream::Write(char* buffer, int bytesToWrite)
 		{
 			return false;
 		}
@@ -80,10 +82,12 @@ namespace abyss
 
 		// OUTPUT FILE
 
-		bool FileOutputStream::OpenFile(const char *fileName, ABYSS_FILE_TYPE fileType)
+		bool FileOutputStream::OpenFile(const char* fileName, ABYSS_FILE_TYPE fileType)
 		{
 			if (IsOpen())
+			{
 				CloseFile();
+			}
 
 			if (fileType == ABYSS_FILE_TYPE::ABYSS_TEXT_FILE)
 			{
@@ -122,14 +126,14 @@ namespace abyss
 			return m_fileStream.tellp();
 		}
 
-		bool FileOutputStream::Read(char *buffer, int bytesToRead)
+		bool FileOutputStream::Read(char* buffer, int bytesToRead)
 		{
 			return false;
 		}
 
-		bool FileOutputStream::Write(char *buffer, int bytesToWrite)
+		bool FileOutputStream::Write(char* buffer, int bytesToWrite)
 		{
-			if (!IsOpen() || buffer == NULL || bytesToWrite <= 0)
+			if (!IsOpen() || buffer == nullptr || bytesToWrite <= 0)
 			{
 				return false;
 			}

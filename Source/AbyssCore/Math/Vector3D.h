@@ -45,8 +45,7 @@ namespace abyss
 			float Magnitude();
 
 			void Normalize();
-			void Normalize(Vector3D p1, Vector3D p2,
-						   Vector3D p3);
+			void Normalize(Vector3D p1, Vector3D p2, Vector3D p3);
 
 			Vector3D CrossProduct(const Vector3D& v);
 		};

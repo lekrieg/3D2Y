@@ -16,11 +16,14 @@ namespace abyss
 	{
 		class FileStream
 		{
+		protected:
+			int m_fileSize;
+
 		public:
 			FileStream() : m_fileSize(0) {}
 			virtual ~FileStream() {}
 
-			virtual bool OpenFile(const char *fileName, ABYSS_FILE_TYPE fileType) = 0;
+			virtual bool OpenFile(const char* fileName, ABYSS_FILE_TYPE fileType) = 0;
 			virtual void CloseFile() = 0;
 
 			virtual void SeekStreamToStart() = 0;
@@ -28,23 +31,21 @@ namespace abyss
 			virtual void SeekPast(int offset) = 0;
 			virtual int GetSeekPosition() = 0;
 
-			virtual bool Read(char *buffer, int bytesToRead) = 0;
-			virtual bool Write(char *buffer, int bytesToWrite) = 0;
+			virtual bool Read(char* buffer, int bytesToRead) = 0;
+			virtual bool Write(char* buffer, int bytesToWrite) = 0;
 
 			int GetFileSize() { return m_fileSize; }
 			virtual bool IsOpen() = 0;
-
-		protected:
-			int m_fileSize;
 		};
 
 		class FileInputStream : public FileStream
 		{
 			std::ifstream m_fileStream;
+
 		public:
 			FileInputStream() {}
 
-			FileInputStream(const char *fileName, ABYSS_FILE_TYPE fileType)
+			FileInputStream(const char* fileName, ABYSS_FILE_TYPE fileType)
 			{
 				OpenFile(fileName, fileType);
 			}
@@ -54,7 +55,7 @@ namespace abyss
 				CloseFile();
 			}
 
-			bool OpenFile(const char *fileName, ABYSS_FILE_TYPE fileType);
+			bool OpenFile(const char* fileName, ABYSS_FILE_TYPE fileType);
 			void CloseFile();
 
 			void SeekStreamToStart();
@@ -62,8 +63,8 @@ namespace abyss
 			void SeekPast(int offset);
 			int GetSeekPosition();
 
-			bool Read(char *buffer, int bytesToRead);
-			bool Write(char *buffer, int bytesToWrite);
+			bool Read(char* buffer, int bytesToRead);
+			bool Write(char* buffer, int bytesToWrite);
 
 			bool IsOpen();
 		};
@@ -71,10 +72,11 @@ namespace abyss
 		class FileOutputStream : public FileStream
 		{
 			std::ofstream m_fileStream;
+			
 		public:
 			FileOutputStream() {}
 
-			FileOutputStream(const char *fileName, ABYSS_FILE_TYPE fileType)
+			FileOutputStream(const char* fileName, ABYSS_FILE_TYPE fileType)
 			{
 				OpenFile(fileName, fileType);
 			}
@@ -84,7 +86,7 @@ namespace abyss
 				CloseFile();
 			}
 
-			bool OpenFile(const char *fileName, ABYSS_FILE_TYPE fileType);
+			bool OpenFile(const char* fileName, ABYSS_FILE_TYPE fileType);
 			void CloseFile();
 
 			void SeekStreamToStart();
@@ -92,8 +94,8 @@ namespace abyss
 			void SeekPast(int offset);
 			int GetSeekPosition();
 
-			bool Read(char *buffer, int bytesToRead);
-			bool Write(char *buffer, int bytesToWrite);
+			bool Read(char* buffer, int bytesToRead);
+			bool Write(char* buffer, int bytesToWrite);
 
 			bool IsOpen();
 		};

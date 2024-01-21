@@ -34,10 +34,10 @@ namespace abyss
 			void Translate(const Vector3D& v);
 			void Translate(float x, float y, float z);
 
-			Vector3D inverseTranslateVector(const Vector3D& v);
+			Vector3D InverseTranslateVector(const Vector3D& v);
 
-			bool inverseMatrix(const Matrix4x4& m);
-			void invertMatrix(const Matrix4x4& m);
+			bool InverseMatrix(const Matrix4x4& m);
+			void InvertMatrix(const Matrix4x4& m);
 
 			Vector3D VectorMatrixMultiply(const Vector3D& v);
 			Vector3D VectorMatrixMultiply3x3(const Vector3D& v);

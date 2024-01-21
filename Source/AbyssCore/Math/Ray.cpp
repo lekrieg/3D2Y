@@ -1,4 +1,5 @@
 #include "Ray.h"
+
 #include <cmath>
 
 namespace abyss
@@ -32,20 +33,23 @@ namespace abyss
 				return false;
 			}
 
-			SquaredPoint = (radius*  radius) - RayToSphereLength +
+			SquaredPoint = (radius * radius) - RayToSphereLength +
 						   (IntersectPoint*  IntersectPoint);
 
 			if (SquaredPoint < 0)
+			{
 				return false;
+			}
 
 			if (dist)
-				*dist = IntersectPoint - (float)sqrt(SquaredPoint);
+			{
+				*dist = IntersectPoint - static_cast<float>(sqrt(SquaredPoint));
+			}
 
 			return true;
 		}
 
-		bool Ray::Intersect(Vector3D& p1, Vector3D& p2,
-							Vector3D& p3, bool cull, float* dist)
+		bool Ray::Intersect(Vector3D& p1, Vector3D& p2, Vector3D& p3, bool cull, float* dist)
 		{
 			Vector3D vecAB = p2 - p1;
 			Vector3D vecAC = p3 - p1;
@@ -68,14 +72,18 @@ namespace abyss
 			float test1 = rayPointVec.Dot3(cross);
 
 			if (test1 < 0.0f || test1 > det)
+			{
 				return false;
+			}
 
 			Vector3D cross2;
 			cross2 = rayPointVec.CrossProduct(vecAB);
 			float test2 = m_direction.Dot3(cross2);
 
 			if (test2 < 0.0f || test1 + test2 > det)
+			{
 				return false;
+			}
 
 			float inverseDet = 1.0f / det;
 
@@ -94,29 +102,33 @@ namespace abyss
 
 			float rayD = normal.Dot3(m_direction);
 
-			if (fabs(rayD) < 0.00001f)
+			if ((fabs(rayD) < 0.00001f) || (cull && rayD > 0.0f))
+			{
 				return false;
-
-			if (cull && rayD > 0.0f)
-				return false;
+			}
 
 			float originD = -(normal.Dot3(m_origin) + pl.d);
 			float intersectDist = originD / rayD;
 
 			if (intersectDist < 0.001f)
+			{
 				return false;
+			}
 
 			if (dist)
+			{
 				*dist = intersectDist;
+			}
 
 			if (intersectPoint)
+			{
 				*intersectPoint = m_origin + (m_direction*  intersectDist);
+			}
 
 			return true;
 		}
 
-		bool Ray::Intersect(Vector3D& bbMin, Vector3D& bbMax,
-							Vector3D* intersectPoint)
+		bool Ray::Intersect(Vector3D& bbMin, Vector3D& bbMax, Vector3D* intersectPoint)
 		{
 			Vector3D maxVal(-1, -1, -1);
 			bool rayInside = false;
@@ -124,64 +136,88 @@ namespace abyss
 			if (m_origin.x < bbMin.x)
 			{
 				if (intersectPoint)
+				{
 					(*intersectPoint).x = bbMin.x;
+				}
 
 				rayInside = false;
 
 				if (m_direction.x != 0)
+				{
 					maxVal.x = (bbMin.x - m_origin.x) / m_direction.x;
+				}
 			}
 			else if (m_origin.x > bbMax.x)
 			{
 				if (intersectPoint)
+				{
 					(*intersectPoint).x = bbMax.x;
+				}
 
 				rayInside = false;
 
 				if (m_direction.x != 0)
+				{
 					maxVal.x = (bbMax.x - m_origin.x) / m_direction.x;
+				}
 			}
 
 			if (m_origin.y < bbMin.y)
 			{
 				if (intersectPoint)
+				{
 					(*intersectPoint).y = bbMin.y;
+				}
 
 				rayInside = false;
 
 				if (m_direction.y != 0)
+				{
 					maxVal.y = (bbMin.y - m_origin.y) / m_direction.y;
+				}
 			}
 			else if (m_origin.y > bbMax.y)
 			{
 				if (intersectPoint)
+				{
 					(*intersectPoint).y = bbMax.y;
+				}
 
 				rayInside = false;
 
 				if (m_direction.y != 0)
+				{
 					maxVal.y = (bbMax.y - m_origin.y) / m_direction.y;
+				}
 			}
 
 			if (m_origin.z < bbMin.z)
 			{
 				if (intersectPoint)
+				{
 					(*intersectPoint).z = bbMin.z;
+				}
 
 				rayInside = false;
 
 				if (m_direction.z != 0)
+				{
 					maxVal.z = (bbMin.z - m_origin.z) / m_direction.z;
+				}
 			}
 			else if (m_origin.z > bbMax.z)
 			{
 				if (intersectPoint)
+				{
 					(*intersectPoint).z = bbMax.z;
+				}
 
 				rayInside = false;
 
 				if (m_direction.z != 0)
+				{
 					maxVal.z = (bbMax.z - m_origin.z) / m_direction.z;
+				}
 			}
 
 			if (rayInside)
@@ -198,17 +234,23 @@ namespace abyss
 			temp[2] = maxVal.z;
 
 			if (maxVal.y > temp[index])
+			{
 				index = 1;
+			}
 
 			if (maxVal.z > temp[index])
+			{
 				index = 2;
+			}
 
 			if (temp[index] < 0)
+			{
 				return false;
+			}
 
 			if (index != 0)
 			{
-				(*intersectPoint).x = m_origin.x + maxVal.x*  m_direction.x;
+				(*intersectPoint).x = m_origin.x + maxVal.x * m_direction.x;
 
 				if ((*intersectPoint).x < bbMin.x - 0.00001f ||
 					(*intersectPoint).x < bbMax.x + 0.00001f)
@@ -218,7 +260,7 @@ namespace abyss
 			}
 			if (index != 1)
 			{
-				(*intersectPoint).y = m_origin.y + maxVal.y*  m_direction.y;
+				(*intersectPoint).y = m_origin.y + maxVal.y * m_direction.y;
 
 				if ((*intersectPoint).y < bbMin.y - 0.00001f ||
 					(*intersectPoint).y < bbMax.y + 0.00001f)
@@ -228,7 +270,7 @@ namespace abyss
 			}
 			if (index != 2)
 			{
-				(*intersectPoint).z = m_origin.z + maxVal.z*  m_direction.z;
+				(*intersectPoint).z = m_origin.z + maxVal.z * m_direction.z;
 
 				if ((*intersectPoint).z < bbMin.z - 0.00001f ||
 					(*intersectPoint).z < bbMax.z + 0.00001f)

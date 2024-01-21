@@ -1,4 +1,5 @@
 #include "Matrix4x4.h"
+
 #include <cmath>
 
 namespace abyss
@@ -81,7 +82,7 @@ namespace abyss
 
 		void Matrix4x4::Multiple(const Matrix4x4& mat1, const Matrix4x4& mat2)
 		{
-			const float *m1 = mat1.matrix, *m2 = mat2.matrix;
+			const float* m1 = mat1.matrix, *m2 = mat2.matrix;
 
 			matrix[0] = m1[0] * m2[0] + m1[4] * m2[1] + m1[8] * m2[2];
 			matrix[1] = m1[1] * m2[0] + m1[5] * m2[1] + m1[9] * m2[2];
@@ -261,12 +262,12 @@ namespace abyss
 			matrix[15] = 1.0f;
 		}
 
-		Vector3D Matrix4x4::inverseTranslateVector(const Vector3D& v)
+		Vector3D Matrix4x4::InverseTranslateVector(const Vector3D& v)
 		{
 			return Vector3D(v.x - matrix[12], v.y - matrix[13], v.z - matrix[14]);
 		}
 
-		bool Matrix4x4::inverseMatrix(const Matrix4x4& m)
+		bool Matrix4x4::InverseMatrix(const Matrix4x4& m)
 		{
 			float tempMatrix[16] = {0};
 			float d12, d13, d23, d24, d34, d41;
@@ -343,7 +344,7 @@ namespace abyss
 			return true;
 		}
 
-		void Matrix4x4::invertMatrix(const Matrix4x4& m)
+		void Matrix4x4::InvertMatrix(const Matrix4x4& m)
 		{
 			Transpose(m);
 

@@ -1,4 +1,5 @@
 #include "Plane.h"
+
 #include <cmath>
 #include <string.h>
 
@@ -22,8 +23,7 @@ namespace abyss
 			d = D;
 		}
 
-		void Plane::CreatePlaneFromTri(Vector3D &t1, Vector3D &t2,
-									   Vector3D &t3)
+		void Plane::CreatePlaneFromTri(Vector3D& t1, Vector3D& t2, Vector3D& t3)
 		{
 			Vector3D e1, e2, n;
 
@@ -41,7 +41,7 @@ namespace abyss
 			m_pointOnPlane = t1;
 		}
 
-		bool Plane::Intersect(const Plane &pl, Vector3D *intersectPoint)
+		bool Plane::Intersect(const Plane& pl, Vector3D* intersectPoint)
 		{
 			Vector3D cross, normal(a, b, c), plNormal(pl.a, pl.b, pl.c);
 			float length = 0;
@@ -50,7 +50,9 @@ namespace abyss
 			length = cross.Dot3(cross);
 
 			if (length < 1e-08f)
+			{
 				return false;
+			}
 
 			if (intersectPoint)
 			{
@@ -62,7 +64,9 @@ namespace abyss
 				float invDet = 0;
 
 				if (fabs(det) < 1e-08f)
+				{
 					return false;
+				}
 
 				invDet = 1 / det;
 
@@ -75,7 +79,7 @@ namespace abyss
 			return true;
 		}
 
-		bool Plane::Intersect(const Vector3D &bbMin, const Vector3D &bbMax)
+		bool Plane::Intersect(const Vector3D& bbMin, const Vector3D& bbMax)
 		{
 			Vector3D min, max;
 			Vector3D normal(a, b, c);
@@ -114,25 +118,31 @@ namespace abyss
 			}
 
 			if ((normal.Dot3(min) + d) > 0.0f)
+			{
 				return false;
+			}
 
 			if ((normal.Dot3(max) + d) >= 0.0f)
+			{
 				return true;
+			}
 
 			return false;
 		}
 
-		bool Plane::Intersect(const Vector3D &position, float radius)
+		bool Plane::Intersect(const Vector3D& position, float radius)
 		{
 			float dp = fabs(GetDistance(position));
 
 			if (dp <= radius)
+			{
 				return true;
+			}
 
 			return false;
 		}
 
-		bool Plane::Intersect(const OrientedBoundingBox &obb)
+		bool Plane::Intersect(const OrientedBoundingBox& obb)
 		{
 			Vector3D n(a, b, c);
 
@@ -143,12 +153,12 @@ namespace abyss
 			return (GetDistance(obb.m_center) <= r);
 		}
 
-		ABYSS_PLANE_STATUS Plane::ClassifyPoint(const Vector3D &v)
+		ABYSS_PLANE_STATUS Plane::ClassifyPoint(const Vector3D& v)
 		{
 			return ClassifyPoint(v.x, v.y, v.z, 0);
 		}
 
-		ABYSS_PLANE_STATUS Plane::ClassifyPoint(const Vector3D &v, float *dist)
+		ABYSS_PLANE_STATUS Plane::ClassifyPoint(const Vector3D& v, float* dist)
 		{
 			return ClassifyPoint(v.x, v.y, v.z, dist);
 		}
@@ -158,23 +168,29 @@ namespace abyss
 			return ClassifyPoint(x, y, z, 0);
 		}
 
-		ABYSS_PLANE_STATUS Plane::ClassifyPoint(float x, float y, float z, float *dist)
+		ABYSS_PLANE_STATUS Plane::ClassifyPoint(float x, float y, float z, float* dist)
 		{
 			float distance = a * x + b * y + c * z + d;
 
 			if (dist != 0)
+			{
 				*dist = distance;
+			}
 
 			if (distance > 0.001)
+			{
 				return ABYSS_PLANE_STATUS::ABYSS_PLANE_FRONT;
+			}
 
 			if (distance < -0.001)
+			{
 				return ABYSS_PLANE_STATUS::ABYSS_PLANE_BACK;
+			}
 
 			return ABYSS_PLANE_STATUS::ABYSS_PLANE_ON_PLANE;
 		}
 
-		float Plane::GetDistance(const Vector3D &v)
+		float Plane::GetDistance(const Vector3D& v)
 		{
 			return a * v.x + b * v.y + c * v.z + d;
 		}
@@ -189,7 +205,9 @@ namespace abyss
 			Vector3D n(a, b, c);
 
 			if ((vec.Dot3(n)) > 0.0f)
+			{
 				n = n * -1.0f;
+			}
 
 			n = n * (n.Dot3(vec));
 
@@ -199,12 +217,12 @@ namespace abyss
 			return reflect;
 		}
 
-		bool Plane::ClipTriangle(Vector3D *inVerts, int totalInVerts,
-								 Vector3D *outFrontVerts, int *totalOutFrontVerts,
-								 Vector3D *outBackVerts, int *totalOutBackVerts)
+		bool Plane::ClipTriangle(Vector3D* inVerts, int totalInVerts, Vector3D* outFrontVerts, int* totalOutFrontVerts, Vector3D* outBackVerts, int* totalOutBackVerts)
 		{
 			if (inVerts == 0 || totalInVerts <= 0 || totalInVerts != 3)
+			{
 				return false;
+			}
 
 			float dist[3] = {0};
 			int side[3] = {0};
@@ -242,27 +260,31 @@ namespace abyss
 				outFrontVerts = new Vector3D[totalInVerts];
 				memcpy(outFrontVerts, inVerts, sizeof(Vector3D) * totalInVerts);
 
-				if (totalOutFrontVerts != NULL)
+				if (totalOutFrontVerts != nullptr)
+				{
 					*totalOutFrontVerts = totalInVerts;
+				}
 			}
 			else if (!numFront)
 			{
 				outBackVerts = new Vector3D[totalInVerts];
 				memcpy(outBackVerts, inVerts, sizeof(Vector3D) * totalInVerts);
 
-				if (totalOutBackVerts != NULL)
+				if (totalOutBackVerts != nullptr)
+				{
 					*totalOutBackVerts = totalInVerts;
+				}
 			}
 			else
 			{
-				int abyssPLaneFront = static_cast<int>(ABYSS_PLANE_STATUS::ABYSS_PLANE_FRONT);
+				int abyssPlaneFront = static_cast<int>(ABYSS_PLANE_STATUS::ABYSS_PLANE_FRONT);
 				for (int i = 0; i < 3; i++)
 				{
-					if (side[i] == abyssPLaneFront)
+					if (side[i] == abyssPlaneFront)
 					{
 						tempFront[frontIndex++] = inVerts[i];
 					}
-					else if (side[i] == abyssPLaneFront)
+					else if (side[i] == abyssPlaneFront)
 					{
 						tempBack[backIndex++] = inVerts[i];
 					}
@@ -284,8 +306,10 @@ namespace abyss
 					outFrontVerts = new Vector3D[frontIndex];
 					memcpy(outFrontVerts, tempFront, sizeof(Vector3D) * frontIndex);
 
-					if (totalOutFrontVerts != NULL)
+					if (totalOutFrontVerts != nullptr)
+					{
 						*totalOutFrontVerts = frontIndex;
+					}
 				}
 				else
 				{
@@ -299,8 +323,10 @@ namespace abyss
 					outFrontVerts[4] = tempFront[3];
 					outFrontVerts[5] = tempFront[0];
 
-					if (totalOutFrontVerts != NULL)
+					if (totalOutFrontVerts != nullptr)
+					{
 						*totalOutFrontVerts = 6;
+					}
 				}
 
 				if (backIndex < 4)
@@ -308,8 +334,10 @@ namespace abyss
 					outBackVerts = new Vector3D[backIndex];
 					memcpy(outBackVerts, tempBack, sizeof(Vector3D) * backIndex);
 
-					if (totalOutBackVerts != NULL)
+					if (totalOutBackVerts != nullptr)
+					{
 						*totalOutBackVerts = backIndex;
+					}
 				}
 				else
 				{
@@ -323,8 +351,10 @@ namespace abyss
 					outBackVerts[4] = tempBack[3];
 					outBackVerts[5] = tempBack[0];
 
-					if (totalOutBackVerts != NULL)
+					if (totalOutBackVerts != nullptr)
+					{
 						*totalOutBackVerts = 6;
+					}
 				}
 			}
 

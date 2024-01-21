@@ -21,11 +21,10 @@ namespace abyss
 			EndianOrderHelper();
 			virtual ~EndianOrderHelper();
 
-			void ResolveEndian(char *data, int size,
-							   ABYSS_ENDIAN_TYPE inputEndian);
+			void ResolveEndian(char* data, int size, ABYSS_ENDIAN_TYPE inputEndian);
 
-			void SwapBytes(char *data, int size);
-			void SwapBytes(char *data, int size, int number);
+			void SwapBytes(char* data, int size);
+			void SwapBytes(char* data, int size, int number);
 
 			ABYSS_ENDIAN_TYPE GetEndianType() const
 			{

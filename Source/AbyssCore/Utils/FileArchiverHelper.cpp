@@ -2,6 +2,7 @@
 
 #include "FileHelper.h"
 #include "EndianOrderHelper.h"
+
 #include <string>
 
 namespace abyss
@@ -31,7 +32,7 @@ namespace abyss
 			m_fileStream.CloseFile();
 		}
 
-		bool Archive::ReadArchiveFile(char *fileName)
+		bool Archive::ReadArchiveFile(char* fileName)
 		{
 			if (fileName == nullptr)
 			{
@@ -44,7 +45,7 @@ namespace abyss
 			}
 
 			ArchiveHeader archiveHeader;
-			m_fileStream.Read((char *)&archiveHeader, sizeof(ArchiveHeader));
+			m_fileStream.Read(reinterpret_cast<char*>(&archiveHeader), sizeof(ArchiveHeader));
 
 			if (strcmp(archiveHeader.GetId(), ARCHIVE_ID) != 0)
 			{
@@ -55,10 +56,10 @@ namespace abyss
 			int temp = 0, temp2 = 0, offset = 0, size = 0;
 
 			temp = archiveHeader.GetMajorVersion();
-			endianSwap.ResolveEndian((char *)&temp, 4, ABYSS_ENDIAN_TYPE::ABYSS_ENDIAN_LITTLE);
+			endianSwap.ResolveEndian(reinterpret_cast<char*>(&temp), 4, ABYSS_ENDIAN_TYPE::ABYSS_ENDIAN_LITTLE);
 
 			temp2 = archiveHeader.GetMinorVersion();
-			endianSwap.ResolveEndian((char *)&temp, 4, ABYSS_ENDIAN_TYPE::ABYSS_ENDIAN_LITTLE);
+			endianSwap.ResolveEndian(reinterpret_cast<char*>(&temp), 4, ABYSS_ENDIAN_TYPE::ABYSS_ENDIAN_LITTLE);
 
 			if (temp != ARCHIVE_MAJOR && temp2 != ARCHIVE_MINOR)
 			{
@@ -99,7 +100,7 @@ namespace abyss
 			return true;
 		}
 
-		bool Archive::WriteArchiveFile(char *fileName, ArchiveFileHeader *headers, int totalHeaders)
+		bool Archive::WriteArchiveFile(char* fileName, ArchiveFileHeader* headers, int totalHeaders)
 		{
 			FileOutputStream fileOut;
 
@@ -163,16 +164,16 @@ namespace abyss
 				}
 
 				temp = fileSize;
-				endianSwap.ResolveEndian((char *)&temp, 4, ABYSS_ENDIAN_TYPE::ABYSS_ENDIAN_LITTLE);
+				endianSwap.ResolveEndian(reinterpret_cast<char*>(&temp), 4, ABYSS_ENDIAN_TYPE::ABYSS_ENDIAN_LITTLE);
 				headers[i].SetSize(temp);
 
 				currentOffset += sizeof(ArchiveFileHeader);
 
 				temp = currentOffset;
-				endianSwap.ResolveEndian((char *)&temp, 4, ABYSS_ENDIAN_TYPE::ABYSS_ENDIAN_LITTLE);
+				endianSwap.ResolveEndian(reinterpret_cast<char*>(&temp), 4, ABYSS_ENDIAN_TYPE::ABYSS_ENDIAN_LITTLE);
 				headers[i].SetOffset(temp);
 
-				fileOut.Write((char *)&headers[i], sizeof(ArchiveFileHeader));
+				fileOut.Write(reinterpret_cast<char*>(&headers[i]), sizeof(ArchiveFileHeader));
 
 				if ((fileSize > 0) && (fileData != nullptr))
 				{
@@ -192,7 +193,7 @@ namespace abyss
 			return true;
 		}
 
-		bool Archive::Extract(int index, char *location)
+		bool Archive::Extract(int index, char* location)
 		{
 			if (!IsArchiveOpen() || index < 0 || index >= m_totalHeaders || location == nullptr)
 			{
@@ -200,7 +201,7 @@ namespace abyss
 			}
 
 			std::string str;
-			char *buffer = nullptr;
+			char* buffer = nullptr;
 			int size = 0;
 
 			size = m_headers[index].GetSize();
@@ -236,14 +237,14 @@ namespace abyss
 			return true;
 		}
 
-		bool Archive::Extract(char *fileName, char *location)
+		bool Archive::Extract(char* fileName, char* location)
 		{
 			int index = GetFileIndex(fileName);
 
 			return (Extract(index, location));
 		}
 
-		int Archive::GetFileIndex(char *fileName)
+		int Archive::GetFileIndex(char* fileName)
 		{
 			for (int i = 0; i < m_totalHeaders; i++)
 			{
@@ -256,7 +257,7 @@ namespace abyss
 			return -1;
 		}
 
-		bool Archive::GetFileData(int index, char *buffer, int bytesToRead)
+		bool Archive::GetFileData(int index, char* buffer, int bytesToRead)
 		{
 			if (index < 0 || index >= m_totalHeaders)
 			{
@@ -268,14 +269,14 @@ namespace abyss
 			return m_fileStream.Read(buffer, bytesToRead);
 		}
 
-		bool Archive::GetFileData(char *fileName, char *buffer, int bytesToRead)
+		bool Archive::GetFileData(char* fileName, char* buffer, int bytesToRead)
 		{
 			int index = GetFileIndex(fileName);
 
 			return (GetFileData(index, buffer, bytesToRead));
 		}
 
-		bool Archive::GetFileHeaderInfoByIndex(int index, ArchiveFileHeader *header)
+		bool Archive::GetFileHeaderInfoByIndex(int index, ArchiveFileHeader* header)
 		{
 			if (index < 0 || index >= m_totalHeaders || header == nullptr)
 			{

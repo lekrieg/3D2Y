@@ -21,31 +21,30 @@ namespace abyss
 		class Plane
 		{
 		public:
+			float a, b, c, d;
+			Vector3D m_pointOnPlane;
+
 			Plane();
 			Plane(float A, float B, float C, float D);
 
-			void CreatePlaneFromTri(Vector3D &t1,
-									Vector3D &t2,
-									Vector3D &t3);
+			void CreatePlaneFromTri(Vector3D& t1, Vector3D& t2, Vector3D& t3);
 
-			bool Intersect(const Plane &pl, Vector3D *intersectPoint);
-			bool Intersect(const Vector3D &bbMin, const Vector3D &bbMax);
-			bool Intersect(const Vector3D &position, float radius);
-			bool Intersect(const OrientedBoundingBox &obb);
+			bool Intersect(const Plane& pl, Vector3D* intersectPoint);
+			bool Intersect(const Vector3D& bbMin, const Vector3D& bbMax);
+			bool Intersect(const Vector3D& position, float radius);
+			bool Intersect(const OrientedBoundingBox& obb);
 
-			ABYSS_PLANE_STATUS ClassifyPoint(const Vector3D &v);
-			ABYSS_PLANE_STATUS ClassifyPoint(const Vector3D &v, float *dist);
+			ABYSS_PLANE_STATUS ClassifyPoint(const Vector3D& v);
+			ABYSS_PLANE_STATUS ClassifyPoint(const Vector3D& v, float* dist);
 			ABYSS_PLANE_STATUS ClassifyPoint(float x, float y, float z);
-			ABYSS_PLANE_STATUS ClassifyPoint(float x, float y, float z, float *dist);
+			ABYSS_PLANE_STATUS ClassifyPoint(float x, float y, float z, float* dist);
 
-			float GetDistance(const Vector3D &v);
+			float GetDistance(const Vector3D& v);
 			float GetDistance(float x, float y, float z);
 
 			Vector3D Reflect(Vector3D vec, float e);
 
-			bool ClipTriangle(Vector3D *inVerts, int totalInVerts,
-							  Vector3D *outFrontVerts, int *totalOutFrontVerts,
-							  Vector3D *outBackVerts, int *totalOutBackVerts);
+			bool ClipTriangle(Vector3D* inVerts, int totalInVerts, Vector3D* outFrontVerts, int* totalOutFrontVerts, Vector3D* outBackVerts, int* totalOutBackVerts);
 
 			Vector3D GetNormal()
 			{
@@ -66,8 +65,7 @@ namespace abyss
 
 			bool operator==(Plane p)
 			{
-				return (a == p.a && b == p.b &&
-						c == p.c && d == p.d);
+				return (a == p.a && b == p.b && c == p.c && d == p.d);
 			}
 
 			void operator=(Plane p)
@@ -77,9 +75,6 @@ namespace abyss
 				c = p.c;
 				d = p.d;
 			}
-
-			float a, b, c, d;
-			Vector3D m_pointOnPlane;
 		};
 	}
 }
