@@ -76,6 +76,7 @@ OBJECTS := \
 	$(OBJDIR)/Quaternion.o \
 	$(OBJDIR)/Ray.o \
 	$(OBJDIR)/Vector3D.o \
+	$(OBJDIR)/Render.o \
 	$(OBJDIR)/EndianOrderHelper.o \
 	$(OBJDIR)/FileArchiverHelper.o \
 	$(OBJDIR)/FileHelper.o \
@@ -169,6 +170,9 @@ $(OBJDIR)/Ray.o: Math/Ray.cpp
 	@echo $(notdir $<)
 	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
 $(OBJDIR)/Vector3D.o: Math/Vector3D.cpp
+	@echo $(notdir $<)
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/Render.o: Rendering/Render.cpp
 	@echo $(notdir $<)
 	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
 $(OBJDIR)/EndianOrderHelper.o: Utils/EndianOrderHelper.cpp

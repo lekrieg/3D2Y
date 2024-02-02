@@ -3,21 +3,12 @@
 
 #include "Vector3D.h"
 #include "OrientedBoundingBox.h"
+#include "../Utils/Enums.h"
 
 namespace abyss
 {
 	namespace math
 	{
-		enum class ABYSS_PLANE_STATUS
-		{
-			ABYSS_PLANE_FRONT = 1,
-			ABYSS_PLANE_BACK,
-			ABYSS_PLANE_ON_PLANE,
-			ABYSS_PLANE_CLIPPED,
-			ABYSS_PLANE_CULLED,
-			ABYSS_PLANE_VISIBLE
-		};
-
 		class Plane
 		{
 		public:

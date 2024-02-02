@@ -1,14 +1,10 @@
 #ifndef HASH_TABLE_H
 #define HASH_TABLE_H
 
+#include "Enums.h"
+
 #include <fstream>
 #include <stdarg.h>
-
-enum class ABYSS_FILE_TYPE
-{
-	ABYSS_TEXT_FILE = 1,
-	ABYSS_BINARY_FILE
-};
 
 namespace abyss
 {

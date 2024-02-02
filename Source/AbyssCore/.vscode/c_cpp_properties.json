@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+				"{workspaceFolder}/**",
+				"/home/lekrieg/Documents/projects/github/3D2Y/Source/AbyssCore/3rdParty/glfw/include",
+				"/home/lekrieg/Documents/projects/github/3D2Y/Source/AbyssCore/3rdParty/glad/include"
+				
+            ]
+        }
+    ],
+    "version": 4
+}

@@ -1,0 +1,13 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+				"{workspaceFolder}/**",
+				"/home/lekrieg/Documents/projects/github/3D2Y/Source/"
+				
+            ]
+        }
+    ],
+    "version": 4
+}

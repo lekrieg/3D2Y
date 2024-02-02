@@ -1,18 +1,12 @@
 #ifndef ENDIAN_ORDER_HELPER_H
 #define ENDIAN_ORDER_HELPER_H
 
+#include "Enums.h"
+
 namespace abyss
 {
 	namespace utils
 	{
-		enum class ABYSS_ENDIAN_TYPE
-		{
-			ABYSS_ENDIAN_UNKNOWN = 0,
-			ABYSS_ENDIAN_LITTLE,
-			ABYSS_ENDIAN_BIG,
-			ABYSS_ENDIAN_MIDDLE
-		};
-
 		class EndianOrderHelper
 		{
 			ABYSS_ENDIAN_TYPE m_systemEndian;
