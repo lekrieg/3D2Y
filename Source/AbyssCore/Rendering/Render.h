@@ -2,6 +2,7 @@
 #define RENDER_H
 
 #include "../3rdParty/glad/include/glad/glad.h"
+// #include "glad/glad.h"
 #include "RenderParams.h"
 #include "../Utils/Enums.h"
 #include "../Utils/ResourceManager.h"

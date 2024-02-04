@@ -12,15 +12,15 @@ endif
 
 ifeq ($(config),debug)
   RESCOMP = windres
-  TARGETDIR = ../Lib/linuxx86_64Debug
-  TARGET = $(TARGETDIR)/libAbyssCore.a
-  OBJDIR = ../Temp/linuxx86_64Debug/Debug/AbyssCore
+  TARGETDIR = ../Lib/windowsx86_64Debug
+  TARGET = $(TARGETDIR)/AbyssCore.lib
+  OBJDIR = ../Temp/windowsx86_64Debug/Debug/AbyssCore
   DEFINES += -DABYSS_DEBUG
   INCLUDES += -I3rdParty/glfw/include -I3rdParty/glad/include
   FORCE_INCLUDE +=
   ALL_CPPFLAGS += $(CPPFLAGS) -MD -MP $(DEFINES) $(INCLUDES)
   ALL_CFLAGS += $(CFLAGS) $(ALL_CPPFLAGS) -m64 -O0 -g
-  ALL_CXXFLAGS += $(CXXFLAGS) $(ALL_CPPFLAGS) -m64 -O0 -g -std=c++17
+  ALL_CXXFLAGS += $(CXXFLAGS) $(ALL_CPPFLAGS) -m64 -O0 -g
   ALL_RESFLAGS += $(RESFLAGS) $(DEFINES) $(INCLUDES)
   LIBS +=
   LDDEPS +=
@@ -39,15 +39,15 @@ endif
 
 ifeq ($(config),release)
   RESCOMP = windres
-  TARGETDIR = ../Lib/linuxx86_64Release
-  TARGET = $(TARGETDIR)/libAbyssCore.a
-  OBJDIR = ../Temp/linuxx86_64Release/Release/AbyssCore
+  TARGETDIR = ../Lib/windowsx86_64Release
+  TARGET = $(TARGETDIR)/AbyssCore.lib
+  OBJDIR = ../Temp/windowsx86_64Release/Release/AbyssCore
   DEFINES += -DABYSS_RELEASE
   INCLUDES += -I3rdParty/glfw/include -I3rdParty/glad/include
   FORCE_INCLUDE +=
   ALL_CPPFLAGS += $(CPPFLAGS) -MD -MP $(DEFINES) $(INCLUDES)
   ALL_CFLAGS += $(CFLAGS) $(ALL_CPPFLAGS) -m64 -O3
-  ALL_CXXFLAGS += $(CXXFLAGS) $(ALL_CPPFLAGS) -m64 -O3 -std=c++17
+  ALL_CXXFLAGS += $(CXXFLAGS) $(ALL_CPPFLAGS) -m64 -O3
   ALL_RESFLAGS += $(RESFLAGS) $(DEFINES) $(INCLUDES)
   LIBS +=
   LDDEPS +=

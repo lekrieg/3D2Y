@@ -1,10 +1,10 @@
 {
     "configurations": [
         {
-            "name": "Linux",
+            "name": "Win32",
             "includePath": [
 				"{workspaceFolder}/**",
-				"/home/lekrieg/Documents/projects/github/3D2Y/Source/"
+				"C:/MyThings/Projects/git/3D2Y/Source"
 				
             ]
         }

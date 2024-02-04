@@ -1,0 +1,3 @@
+SDL3-3.0.0-Windows-mingw-x64
+
+glfw-3.3.9.bin.WIN64

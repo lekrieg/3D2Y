@@ -12,19 +12,19 @@ endif
 
 ifeq ($(config),debug)
   RESCOMP = windres
-  TARGETDIR = ../../Game/linuxx86_64Debug
-  TARGET = $(TARGETDIR)/SunRise
-  OBJDIR = ../Temp/linuxx86_64Debug/Debug/SunRise
-  DEFINES += -DABYSS_PLATFORM_WINDOWS -DABYSS_DEBUG
+  TARGETDIR = ../../Game/windowsx86_64Debug
+  TARGET = $(TARGETDIR)/SunRise.exe
+  OBJDIR = ../Temp/windowsx86_64Debug/Debug/SunRise
+  DEFINES += -DABYSS_DEBUG
   INCLUDES += -I../AbyssCore
   FORCE_INCLUDE +=
   ALL_CPPFLAGS += $(CPPFLAGS) -MD -MP $(DEFINES) $(INCLUDES)
   ALL_CFLAGS += $(CFLAGS) $(ALL_CPPFLAGS) -m64 -O0 -g
-  ALL_CXXFLAGS += $(CXXFLAGS) $(ALL_CPPFLAGS) -m64 -O0 -g -std=c++17
+  ALL_CXXFLAGS += $(CXXFLAGS) $(ALL_CPPFLAGS) -m64 -O0 -g
   ALL_RESFLAGS += $(RESFLAGS) $(DEFINES) $(INCLUDES)
-  LIBS += ../Lib/linuxx86_64Debug/libAbyssCore.a -lglfw3 -lGL -lX11 -lpthread -lXrandr -lXi -ldl
-  LDDEPS += ../Lib/linuxx86_64Debug/libAbyssCore.a
-  ALL_LDFLAGS += $(LDFLAGS) -L../Lib/linuxx86_64Debug -L/usr/lib64 -m64
+  LIBS += ../Lib/windowsx86_64Debug/AbyssCore.lib -lopengl32 -lglfw3 -lgdi32
+  LDDEPS += ../Lib/windowsx86_64Debug/AbyssCore.lib
+  ALL_LDFLAGS += $(LDFLAGS) -L../Lib/windowsx86_64Debug -L/usr/lib64 -m64
   LINKCMD = $(CXX) -o "$@" $(OBJECTS) $(RESOURCES) $(ALL_LDFLAGS) $(LIBS)
   define PREBUILDCMDS
   endef
@@ -39,19 +39,19 @@ endif
 
 ifeq ($(config),release)
   RESCOMP = windres
-  TARGETDIR = ../../Game/linuxx86_64Release
-  TARGET = $(TARGETDIR)/SunRise
-  OBJDIR = ../Temp/linuxx86_64Release/Release/SunRise
-  DEFINES += -DABYSS_PLATFORM_WINDOWS -DABYSS_RELEASE
+  TARGETDIR = ../../Game/windowsx86_64Release
+  TARGET = $(TARGETDIR)/SunRise.exe
+  OBJDIR = ../Temp/windowsx86_64Release/Release/SunRise
+  DEFINES += -DABYSS_RELEASE
   INCLUDES += -I../AbyssCore
   FORCE_INCLUDE +=
   ALL_CPPFLAGS += $(CPPFLAGS) -MD -MP $(DEFINES) $(INCLUDES)
   ALL_CFLAGS += $(CFLAGS) $(ALL_CPPFLAGS) -m64 -O2
-  ALL_CXXFLAGS += $(CXXFLAGS) $(ALL_CPPFLAGS) -m64 -O2 -std=c++17
+  ALL_CXXFLAGS += $(CXXFLAGS) $(ALL_CPPFLAGS) -m64 -O2
   ALL_RESFLAGS += $(RESFLAGS) $(DEFINES) $(INCLUDES)
-  LIBS += ../Lib/linuxx86_64Release/libAbyssCore.a -lglfw3 -lGL -lX11 -lpthread -lXrandr -lXi -ldl
-  LDDEPS += ../Lib/linuxx86_64Release/libAbyssCore.a
-  ALL_LDFLAGS += $(LDFLAGS) -L../Lib/linuxx86_64Release -L/usr/lib64 -m64 -s
+  LIBS += ../Lib/windowsx86_64Release/AbyssCore.lib -lopengl32 -lglfw3 -lgdi32
+  LDDEPS += ../Lib/windowsx86_64Release/AbyssCore.lib
+  ALL_LDFLAGS += $(LDFLAGS) -L../Lib/windowsx86_64Release -L/usr/lib64 -m64 -s
   LINKCMD = $(CXX) -o "$@" $(OBJECTS) $(RESOURCES) $(ALL_LDFLAGS) $(LIBS)
   define PREBUILDCMDS
   endef

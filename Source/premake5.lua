@@ -32,7 +32,7 @@ project "AbyssCore"
 		"Lib/%{cfg.architecture}%{cfg.buildcfg}/"
 	}
 
-	filter "system:linux"
+	filter "system:window"
 		cppdialect "C++17"
 		staticruntime "Off"
 		systemversion "latest"
@@ -80,17 +80,13 @@ project "SunRise"
 	}
 
 	links{
+		"opengl32",
 		"glfw3",
-		"GL",
-		"X11",
-		"pthread",
-		"Xrandr",
-		"Xi",
-		"dl",
-		"AbyssCore"
+		"AbyssCore",
+		"gdi32"
 	}
 
-	filter "system:linux"
+	filter "system:window"
 		cppdialect "C++17"
 		staticruntime "Off"
 		systemversion "latest"
