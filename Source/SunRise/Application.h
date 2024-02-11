@@ -3,12 +3,19 @@
 
 #include "Rendering/Render.h"
 #include "Rendering/RenderParams.h"
+#include "Utils/InputHandler.h"
 
 class Application
 {
+private:
+	abyss::render::RenderParams params;
+
 public:
 	// Rendering System.
 	abyss::render::OpenGLRenderer render;
+
+	// Input handler
+	abyss::input::InputHandler inputHandler;
 
 	// Main model object.
 	// abyss::ModelData model;
@@ -27,7 +34,6 @@ public:
 	// int xRot = 0, oldXRot = 0;
 	// int yRot = 0, oldYRot = 0;
 
-	void Resize(int width, int height);
 	bool Initialize();
 	void Update();
 	void Render();

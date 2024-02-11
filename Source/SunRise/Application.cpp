@@ -1,30 +1,29 @@
 #include "Application.h"
 
-void Application::Resize(int width, int height)
-{
+#include "Utils/Enums.h"
 
-}
+#include <iostream>
+#include <vector>
 
 bool Application::Initialize()
 {
 	bool result = false;
 
-	abyss::render::RenderParams params;
-
 	params.name = "SunRise";
-	params.colorBits = 24;
-	params.depthBits = 16;
-	params.stencilBits = 8;
 	params.isFullscreen = false;
 	params.height = 600;
 	params.width = 600;
-	params.maxCacheBytes = 2000;
-	params.maxCacheIndices = 2000;
 
 	if(render.Initialize(&params) != ABYSS_RESULT::ABYSS_SUCCESS)
 	{
 		return false;
 	}
+
+	std::vector<ABYSS_INPUT_BUTTON> buttons = {
+		ABYSS_INPUT_BUTTON::ABYSS_BUTTON_SPACE
+	};
+
+	inputHandler.InitializeInputs(params.window, buttons);
 
 	// TODO: Limpa a tela com uma cor nova
 	// TODO: Ativa shader
@@ -40,6 +39,13 @@ bool Application::Initialize()
 void Application::Update()
 {
 	// TODO: Pega entrada do usuario
+	if(inputHandler.GetIsButtonDown(ABYSS_INPUT_BUTTON::ABYSS_BUTTON_D))
+	{
+		std::cout << "Space pressed!" << '\n';
+	}
+
+	// abyss::math::Vector3D test = inputHandler.GetMousePos(params.window);
+	// std::cout << test.x << '\n';
 }
 
 void Application::Render()

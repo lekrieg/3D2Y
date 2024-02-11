@@ -12,7 +12,9 @@ int main(int argc, char* argv[])
 
 	while(!app.ShouldCloseWindow())
 	{
+		// INPUT
 		app.Update();
+		// PHYSICS -> maybe in another thread
 		app.Render();
 	}
 

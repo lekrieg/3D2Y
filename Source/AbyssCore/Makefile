@@ -80,6 +80,7 @@ OBJECTS := \
 	$(OBJDIR)/EndianOrderHelper.o \
 	$(OBJDIR)/FileArchiverHelper.o \
 	$(OBJDIR)/FileHelper.o \
+	$(OBJDIR)/InputHandler.o \
 	$(OBJDIR)/glad.o \
 
 RESOURCES := \
@@ -182,6 +183,9 @@ $(OBJDIR)/FileArchiverHelper.o: Utils/FileArchiverHelper.cpp
 	@echo $(notdir $<)
 	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
 $(OBJDIR)/FileHelper.o: Utils/FileHelper.cpp
+	@echo $(notdir $<)
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/InputHandler.o: Utils/InputHandler.cpp
 	@echo $(notdir $<)
 	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
 $(OBJDIR)/glad.o: Utils/glad.c
