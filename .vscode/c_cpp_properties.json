@@ -1,7 +1,7 @@
 {
     "configurations": [
         {
-            "name": "Linux",
+            "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
                 "${workspaceFolder}/Source/AbyssCore/3rdParty/glfw/include"
@@ -9,8 +9,8 @@
             "defines": [],
             "cStandard": "c17",
             "cppStandard": "gnu++17",
-            "intelliSenseMode": "linux-gcc-x64",
-            "compilerPath": "/usr/bin/gcc"
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "C:/MyThings/msys64/ucrt64/bin/gcc"
         }
     ],
     "version": 4

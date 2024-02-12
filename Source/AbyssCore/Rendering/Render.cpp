@@ -79,8 +79,8 @@ namespace abyss
 
 		void OpenGLRenderer::EndRendering()
 		{
-			glfwSwapBuffers(m_params.window);
 			glfwPollEvents();
+			glfwSwapBuffers(m_params.window);
 		}
 	}
 }
