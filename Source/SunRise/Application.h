@@ -8,14 +8,17 @@
 class Application
 {
 private:
-	abyss::render::RenderParams params;
+	abyss::render::RenderParams m_params;
+
+	float m_vertices[9] = {
+		-0.5f, -0.5f, 0.0f,
+		0.5f, -0.5f, 0.0f,
+		0.0f, 0.5f, 0.0f
+	};
 
 public:
 	// Rendering System.
 	abyss::render::OpenGLRenderer render;
-
-	// Input handler
-	abyss::input::InputHandler inputHandler;
 
 	// Main model object.
 	// abyss::ModelData model;

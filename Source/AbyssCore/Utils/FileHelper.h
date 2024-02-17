@@ -1,5 +1,5 @@
-#ifndef HASH_TABLE_H
-#define HASH_TABLE_H
+#ifndef FILE_HELPER
+#define FILE_HELPER
 
 #include "Enums.h"
 

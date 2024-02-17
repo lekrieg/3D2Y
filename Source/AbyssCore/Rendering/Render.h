@@ -16,34 +16,45 @@ namespace abyss
 	namespace render
 	{
 		// RESOURCE HANDLE STUFF
-		struct stTexture {};
-		typedef utils::Handle<stTexture> ABYSS_TEXTURE;
-		typedef int ShaderHandle;
-		typedef int ParameterHandle;
+		struct AbyssShader
+		{
+		public:
+			AbyssShader(char* s, ABYSS_SHADER_TYPE shaderType)
+			{
+				shaderFile = s;
+				t = shaderType;
+			}
+
+			char* shaderFile;
+			ABYSS_SHADER_TYPE t;
+		};
 
 		class OpenGLRenderer
 		{
-			VertexDescriptor *m_currentDesc;
-
-			// abyss::utils::ResourceManager<GLTexture, ABYSS_TEXTURE> *m_texManager;
-
-			// std::vector<GLSLShader> m_shaders;
-			// std::vector<GLSLParameter> m_parameters;
-
 			RenderParams m_params;
+			
+			// TODO: Check if I really need to put this thing globally
+			unsigned int m_VBOs[1];
+			unsigned int m_VAOs[1];
+			unsigned int m_shaderPrograms[1];
+
+			ABYSS_RESULT CreateShaderFromMemory(const char* shaderFile, ABYSS_SHADER_TYPE t);
 
 		public:
 			OpenGLRenderer() {}
 			~OpenGLRenderer() { Shutdown(); }
 
 			// RENDER STUFF
-			ABYSS_RESULT Initialize(const RenderParams* params);
-			void Render(ABYSS_PRIMITIVE_TYPE type, VertexDescriptor *desc, char *vertexData,
-						unsigned int *indices, int totalVertices, int totalIndices, int stride);
+			ABYSS_RESULT Initialize(RenderParams* params, float vertices[]);
+			void Render();
 			void Shutdown();
 			bool ShouldCloseWindow();
 			void SetViewPort(int x, int y, int width, int height);
+			void BeginRendering();
 			void EndRendering();
+
+			ABYSS_RESULT CreateShaderFromFile(std::vector<AbyssShader> shaders);
+			void ApplyShader();
 
 		private:
 			void framebuffer_size_callback(int width, int height)

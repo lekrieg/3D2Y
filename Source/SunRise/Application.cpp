@@ -7,31 +7,27 @@
 
 bool Application::Initialize()
 {
-	bool result = false;
+	ABYSS_RESULT result;
 
-	params.name = "SunRise";
-	params.isFullscreen = false;
-	params.height = 600;
-	params.width = 600;
+	m_params.name = "SunRise";
+	m_params.isFullscreen = false;
+	m_params.height = 600;
+	m_params.width = 600;
 
-	if(render.Initialize(&params) != ABYSS_RESULT::ABYSS_SUCCESS)
+	result = render.Initialize(&m_params, m_vertices);
+	if(result != ABYSS_RESULT::ABYSS_SUCCESS)
 	{
 		return false;
 	}
 
-	std::vector<ABYSS_INPUT_BUTTON> buttons = {
-		ABYSS_INPUT_BUTTON::ABYSS_BUTTON_SPACE
-	};
-
-	inputHandler.InitializeInputs(params.window, buttons);
-
-	// TODO: Limpa a tela com uma cor nova
-	// TODO: Ativa shader
-	// TODO: Ativa textura
-	// TODO: Carrega a mesh de teste
-	// TODO: Seta os filtros que vao ser usados na textura
-	// TODO: Carrega a textura
-	// TODO: Cria e seta o shader
+	result = render.CreateShaderFromFile({
+		abyss::render::AbyssShader("C:/MyThings/Projects/git/3D2Y/Source/SunRise/Shaders/VertexShader.glsl", ABYSS_SHADER_TYPE::ABYSS_VERTEX_SHADER),
+		abyss::render::AbyssShader("C:/MyThings/Projects/git/3D2Y/Source/SunRise/Shaders/FragmentShader.glsl", ABYSS_SHADER_TYPE::ABYSS_FRAGMENT_SHADER)
+	});
+	if(result != ABYSS_RESULT::ABYSS_SUCCESS)
+	{
+		return false;
+	}
 
 	return true;
 }
@@ -39,9 +35,9 @@ bool Application::Initialize()
 void Application::Update()
 {
 	// TODO: Pega entrada do usuario
-	if(inputHandler.GetIsButtonDown(ABYSS_INPUT_BUTTON::ABYSS_BUTTON_D))
+	if(abyss::input::GetIsButtonDown(m_params.window, ABYSS_INPUT_BUTTON::ABYSS_BUTTON_D))
 	{
-		std::cout << "Space pressed!" << '\n';
+		std::cout << "D pressed!" << '\n';
 	}
 
 	// abyss::math::Vector3D test = inputHandler.GetMousePos(params.window);
@@ -50,7 +46,12 @@ void Application::Update()
 
 void Application::Render()
 {
+	render.BeginRendering();
+	render.ApplyShader();
+	render.Render();
+
 	render.EndRendering();
+	//-----------------------------
 	// TODO: limpa a tela
 	// TODO: seta a view e rotaciona a matrix da camera
 	// TODO: aplica o shader
