@@ -1,0 +1,50 @@
+#include "EntityManager.h"
+#include <algorithm>
+
+void core::EntityManager::Update()
+{
+	for (auto e : m_toAdd)
+	{
+		m_entities.push_back(e);
+		m_entityMap[e->Tag()].push_back(e);
+	}
+	m_toAdd.clear();
+
+	RemoveDeadEntities(m_entities);
+
+	for (auto& pair : m_entityMap)
+	{
+		// first - tag
+		// second - entity vec
+		RemoveDeadEntities(pair.second);
+	}
+}
+
+std::shared_ptr<core::Entity> core::EntityManager::AddEntity(const EntityTag& tag)
+{
+	// TODO: check map edge cases
+	auto e = std::make_shared<Entity>(tag, m_totalEntities++);
+	m_toAdd.push_back(e);
+
+	return e;
+}
+
+core::EntityVec& core::EntityManager::GetEntities()
+{
+	return m_entities;
+}
+
+core::EntityVec& core::EntityManager::GetEntities(const EntityTag& tag)
+{
+	return m_entityMap[tag];
+}
+
+const std::map<core::EntityTag, core::EntityVec>& core::EntityManager::GetEntityMap()
+{
+	return m_entityMap;
+}
+
+void core::EntityManager::RemoveDeadEntities(EntityVec& vec)
+{
+	vec.erase(std::remove_if(vec.begin(), vec.end(), [](std::shared_ptr<Entity>& e) { return !e->IsActive();  }), vec.end());
+}
