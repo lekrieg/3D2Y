@@ -1,0 +1,14 @@
+﻿  EndianOrderHelper.cpp
+  FileArchiverHelper.cpp
+C:\MyThings\Projects\git\polygon-project\Tools\ArchiveCreator\ArchiveCreator\FileArchiverHelper.h(72,16): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  FileHelper.cpp
+C:\MyThings\Projects\git\polygon-project\Tools\ArchiveCreator\ArchiveCreator\FileHelper.cpp(22,34): warning C4244: '=': conversion from 'std::streamoff' to 'int', possible loss of data
+C:\MyThings\Projects\git\polygon-project\Tools\ArchiveCreator\ArchiveCreator\FileHelper.cpp(51,28): warning C4244: 'return': conversion from 'std::streamoff' to 'int', possible loss of data
+C:\MyThings\Projects\git\polygon-project\Tools\ArchiveCreator\ArchiveCreator\FileHelper.cpp(124,28): warning C4244: 'return': conversion from 'std::streamoff' to 'int', possible loss of data
+  main.cpp
+C:\MyThings\Projects\git\polygon-project\Tools\ArchiveCreator\ArchiveCreator\FileArchiverHelper.h(72,16): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 205 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  ArchiveCreator.vcxproj -> C:\MyThings\Projects\git\polygon-project\Tools\ArchiveCreator\x64\Release\ArchiveCreator.exe

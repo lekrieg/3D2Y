@@ -1,0 +1,11 @@
+-------------- MUSICS --------------
+Credit to https://www.free-stock-music.com/artist.joshuamclean.html for the background music.
+
+-------------- Frameworks --------------
+Credit to https://www.sfml-dev.org/
+
+-------------- General credits --------------
+Credit to https://www.youtube.com/@DaveChurchill
+
+-------------- Game related things --------------
+Programmer / Game designer: Lekrieg

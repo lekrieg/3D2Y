@@ -1,0 +1,11 @@
+Texture Down assets/sprites/player.png 0 0 32 3
+Texture Left assets/sprites/player.png 0 1 32 3
+Texture Right assets/sprites/player.png 0 2 32 3
+Texture Up assets/sprites/player.png 0 3 32 3
+Animation Down Down 3 15
+Animation Left Left 3 15
+Animation Right Right 3 15
+Animation Up Up 3 15
+Font elementalis assets/fonts/elementalis-type.ttf
+Sound MainMusic assets/sounds/main_music.mp3
+Sound JumpSound assets/sounds/jump_sound.wav

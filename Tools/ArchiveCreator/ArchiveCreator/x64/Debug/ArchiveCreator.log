@@ -1,0 +1,6 @@
+﻿  FileArchiverHelper.cpp
+C:\MyThings\Projects\git\polygon-project\Tools\ArchiveCreator\ArchiveCreator\FileArchiverHelper.h(72,16): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  main.cpp
+C:\MyThings\Projects\git\polygon-project\Tools\ArchiveCreator\ArchiveCreator\FileArchiverHelper.h(72,16): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  Generating Code...
+  ArchiveCreator.vcxproj -> C:\MyThings\Projects\git\polygon-project\Tools\ArchiveCreator\x64\Debug\ArchiveCreator.exe
