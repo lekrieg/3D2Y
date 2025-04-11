@@ -27,6 +27,7 @@ namespace abyss
 
 		public:
 
+		    virtual ~Application() { };
 			virtual void Run() = 0;
 			virtual void Quit() = 0;
 			virtual bool IsRunning() = 0;

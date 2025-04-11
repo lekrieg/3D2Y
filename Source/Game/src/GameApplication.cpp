@@ -1,13 +1,13 @@
 #include "GameApplication.h"
 
+#include "ActionState.h"
+#include "Logger.h"
 #include "SFML/Graphics/Rect.hpp"
 #include "SFML/System/Vector2.hpp"
 #include "SFML/Window/Keyboard.hpp"
 #include "SFML/Window/Mouse.hpp"
 #include "SFML/Window/VideoMode.hpp"
-#include "ActionState.h"
-#include "scenes/MenuScene.h"
-#include "Logger.h"
+#include "scenes/PlayScene.h"
 #include <optional>
 
 void game::GameApplication::Init(const std::string &configPath, const std::string &assetsPath)
@@ -24,8 +24,9 @@ void game::GameApplication::Init(const std::string &configPath, const std::strin
 	// m_window.setFramerateLimit(60);
 
 	// ChangeScene("MENU", std::make_shared<scene::MenuScene>(this)); -> TODO: finish the menu level
-	// ChangeScene("MENU", std::make_shared<abyss::MenuScene>(this));
-	// ChangeScene("PLAY", std::make_shared<abyss::PlayScene>(this, "scenes/testScene.txt"));
+	// ChangeScene("MENU", std::make_shared<game::MenuScene>(this));
+	ChangeScene("PLAY",
+				std::make_shared<game::PlayScene>(this, "scenes/testScene.txt", GetAssets().GetFont("elementalis")));
 }
 
 game::GameApplication::~GameApplication()
@@ -153,7 +154,7 @@ void game::GameApplication::UserInputSystem()
 
 				if (texture.copyToImage().saveToFile("test.png"))
 				{
-				    ABYSS_INFO("Screenshot saved to test.png");
+					ABYSS_INFO("Screenshot saved to test.png");
 				}
 			}
 		}
@@ -180,63 +181,63 @@ void game::GameApplication::UserInputSystem()
 		}
 
 		if (mousePressed)
-    		{
-    			const abyss::ActionState actionState = abyss::ActionState::Start;
+		{
+			const abyss::ActionState actionState = abyss::ActionState::Start;
 
-    			sf::Vector2i foo = sf::Mouse::getPosition(m_window);
-    			// window().mapPixelToCoords(action.pos());
+			sf::Vector2i foo = sf::Mouse::getPosition(m_window);
+			// window().mapPixelToCoords(action.pos());
 
-    			abyss::math::Vec2<int> mousePosition(foo.x, foo.y);
-    			switch (mousePressed->button)
-    			{
-    				case sf::Mouse::Button::Left:
-    				{
-    					GetCurrentScene()->ExecuteAction(abyss::Action("LEFT_CLICK", actionState, mousePosition));
-    					break;
-    				};
-    				case sf::Mouse::Button::Right:
-    				{
-    					GetCurrentScene()->ExecuteAction(abyss::Action("RIGHT_CLICK", actionState, mousePosition));
-    					break;
-    				};
-    				case sf::Mouse::Button::Middle:
-    				{
-    					GetCurrentScene()->ExecuteAction(abyss::Action("MIDDLE_CLICK", actionState, mousePosition));
-    					break;
-    				};
-    				default:
-    					break;
-    			}
-    		}
+			abyss::math::Vec2<int> mousePosition(foo.x, foo.y);
+			switch (mousePressed->button)
+			{
+				case sf::Mouse::Button::Left:
+				{
+					GetCurrentScene()->ExecuteAction(abyss::Action("LEFT_CLICK", actionState, mousePosition));
+					break;
+				};
+				case sf::Mouse::Button::Right:
+				{
+					GetCurrentScene()->ExecuteAction(abyss::Action("RIGHT_CLICK", actionState, mousePosition));
+					break;
+				};
+				case sf::Mouse::Button::Middle:
+				{
+					GetCurrentScene()->ExecuteAction(abyss::Action("MIDDLE_CLICK", actionState, mousePosition));
+					break;
+				};
+				default:
+					break;
+			}
+		}
 
-    		if (mouseReleased)
-    		{
-    			const abyss::ActionState actionState = abyss::ActionState::End;
+		if (mouseReleased)
+		{
+			const abyss::ActionState actionState = abyss::ActionState::End;
 
-    			sf::Vector2i foo = sf::Mouse::getPosition(m_window);
-    			// window().mapPixelToCoords(action.pos());
+			sf::Vector2i foo = sf::Mouse::getPosition(m_window);
+			// window().mapPixelToCoords(action.pos());
 
-    			abyss::math::Vec2<int> mousePosition(foo.x, foo.y);
-    			switch (mouseReleased->button)
-    			{
-    				case sf::Mouse::Button::Left:
-    				{
-    					GetCurrentScene()->ExecuteAction(abyss::Action("LEFT_CLICK", actionState, mousePosition));
-    					break;
-    				};
-    				case sf::Mouse::Button::Right:
-    				{
-    					GetCurrentScene()->ExecuteAction(abyss::Action("RIGHT_CLICK", actionState, mousePosition));
-    					break;
-    				};
-    				case sf::Mouse::Button::Middle:
-    				{
-    					GetCurrentScene()->ExecuteAction(abyss::Action("MIDDLE_CLICK", actionState, mousePosition));
-    					break;
-    				};
-    				default:
-    					break;
-    			}
-    		}
+			abyss::math::Vec2<int> mousePosition(foo.x, foo.y);
+			switch (mouseReleased->button)
+			{
+				case sf::Mouse::Button::Left:
+				{
+					GetCurrentScene()->ExecuteAction(abyss::Action("LEFT_CLICK", actionState, mousePosition));
+					break;
+				};
+				case sf::Mouse::Button::Right:
+				{
+					GetCurrentScene()->ExecuteAction(abyss::Action("RIGHT_CLICK", actionState, mousePosition));
+					break;
+				};
+				case sf::Mouse::Button::Middle:
+				{
+					GetCurrentScene()->ExecuteAction(abyss::Action("MIDDLE_CLICK", actionState, mousePosition));
+					break;
+				};
+				default:
+					break;
+			}
+		}
 	}
 }

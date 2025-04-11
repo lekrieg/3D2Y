@@ -1,38 +1,41 @@
-// #ifndef MENU_SCENE_H
-// #define MENU_SCENE_H
+#ifndef MENU_SCENE_H
+#define MENU_SCENE_H
 
-// #include "Scene.h"
+#include "Scene.h"
 
-// #include <SFML/Graphics/Text.hpp>
-// #include <string>
-// #include <vector>
+#include <SFML/Graphics/Text.hpp>
+#include <string>
+#include <vector>
 
-// namespace game
-// {
-// 	class MenuScene : public abyss::Scene
-// 	{
-// 		std::string m_title;
-// 		std::vector<std::string> m_menuStrings;
-// 		std::vector<std::string> m_levelPaths;
-// 		sf::Text m_menuTitleText;
-// 		std::vector<sf::Text> m_levelList;
-// 		int m_menuIndex = 0;
+namespace game
+{
+	class MenuScene : public abyss::Scene
+	{
+			std::string m_title;
+			std::vector<std::string> m_menuStrings;
+			std::vector<std::string> m_levelPaths;
+			sf::Text m_menuTitleText;
+			std::vector<sf::Text> m_levelList;
+			int m_menuIndex = 0;
 
-// 	protected:
+		protected:
 
-// 		void Init(const std::string& configPath) override;
-// 		void OnEnd() override;
+			void Init(const std::string &configPath) override;
+			void OnEnd() override;
 
-// 	public:
-// 		MenuScene(game::GameApplication* gameApplication = nullptr) : abyss::Scene(gameApplication), m_menuTitleText(m_gameApplication->GetAssets().GetFont("elementalis"))
-// 		{
-// 			Init("");
-// 		}
+		public:
 
-// 		void Update(float deltaTime) override;
-// 		void Render() override;
-// 		void ExecuteAction(const abyss::Action& action) override;
-// 	};
-// }
+			MenuScene(abyss::Application *gameApplication = nullptr) :
+				abyss::Scene(gameApplication),
+				m_menuTitleText(m_application->GetAssets().GetFont("elementalis"))
+			{
+				Init("");
+			}
 
-// #endif // !MENU_SCENE_H
+			void Update(float deltaTime) override;
+			void Render() override;
+			void ExecuteAction(const abyss::Action &action) override;
+	};
+}
+
+#endif // !MENU_SCENE_H

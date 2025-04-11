@@ -8,7 +8,7 @@
 
 #include <SFML/System/Vector2.hpp>
 #include <iostream>
-#include "../utils/Logger.h"
+#include "Logger.h"
 
 namespace abyss
 {
@@ -46,7 +46,7 @@ namespace abyss
 				return overlap;
 			}
 
-			bool IsInside(const abyss_math::Vec2<float> &pos, std::shared_ptr<Entity> e)
+			bool IsInside(const abyss::math::Vec2<float> &pos, std::shared_ptr<Entity> e)
 			{
 				auto &bb = e->GetComponent<components::BoundingBox>();
 				auto &t = e->GetComponent<components::Transform>();

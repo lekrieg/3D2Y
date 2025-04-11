@@ -1,9 +1,7 @@
 #ifndef GAME_APPLICATION_H
 #define GAME_APPLICATION_H
 
-#include "FileData.h"
-#include "SFML/Window/Event.hpp"
-#include "SFML/Window/Keyboard.hpp"
+#include "Application.h"
 #include "Assets.h"
 #include "Scene.h"
 #include "managers/AudioManager.h"
@@ -16,7 +14,7 @@ namespace game
 	class Scene;
 	class AudioManager;
 
-	class GameApplication
+	class GameApplication : public abyss::Application
 	{
 			game::GameManager m_gameManager;
 			game::AudioManager *m_audioManager; // TODO: think in a better way to make this stuff
