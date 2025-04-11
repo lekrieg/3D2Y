@@ -1,11 +1,11 @@
 #include "Assets.h"
 
-#include "../utils/Logger.h"
+#include "Logger.h"
 #include "SFML/System/Vector2.hpp"
 
 #include <fstream>
 
-void core::Assets::AddTexture(const TextureInfo &textureInfo)
+void abyss::Assets::AddTexture(const TextureInfo &textureInfo)
 {
 	// if (!texture.loadFromFile(path, sf::IntRect(10, 10, 32, 32)))
 	//  cada linha vai ter x,y, widht e height de cada item, se for uma animacao, vai ter o tamanho total dela
@@ -26,19 +26,19 @@ void core::Assets::AddTexture(const TextureInfo &textureInfo)
 	m_textures[textureInfo.textureName] = texture;
 }
 
-void core::Assets::AddAnimation(const AnimationInfo &animationInfo)
+void abyss::Assets::AddAnimation(const AnimationInfo &animationInfo)
 {
 	Animation animation = Animation(animationInfo.animationName, GetTexture(animationInfo.textureName),
 									animationInfo.frameCount, animationInfo.animationSpeed);
 	m_animations[animationInfo.animationName] = animation;
 }
 
-void core::Assets::AddSound(const SoundInfo &soundInfo)
+void abyss::Assets::AddSound(const SoundInfo &soundInfo)
 {
 	m_sounds[soundInfo.soundName] = soundInfo.filePath;
 }
 
-void core::Assets::AddFont(const FontInfo &fontInfo)
+void abyss::Assets::AddFont(const FontInfo &fontInfo)
 {
 	sf::Font font;
 
@@ -51,17 +51,17 @@ void core::Assets::AddFont(const FontInfo &fontInfo)
 	m_fonts[fontInfo.fontName] = font;
 }
 
-sf::Texture &core::Assets::GetTexture(std::string name)
+sf::Texture &abyss::Assets::GetTexture(std::string name)
 {
 	return m_textures[name];
 }
 
-core::Animation &core::Assets::GetAnimation(std::string name)
+abyss::Animation &abyss::Assets::GetAnimation(std::string name)
 {
 	return m_animations[name];
 }
 
-std::map<std::string, core::Animation> &core::Assets::GetAnimations()
+std::map<std::string, abyss::Animation> &abyss::Assets::GetAnimations()
 {
 	return m_animations;
 }
@@ -69,17 +69,17 @@ std::map<std::string, core::Animation> &core::Assets::GetAnimations()
 // SoLoud wav dont stay on memory when it leaves the method, I am using string because of this
 // TODO: adicionar musica para os leveis
 
-std::string &core::Assets::GetSound(std::string name)
+std::string &abyss::Assets::GetSound(std::string name)
 {
 	return m_sounds[name];
 }
 
-sf::Font &core::Assets::GetFont(std::string name)
+sf::Font &abyss::Assets::GetFont(std::string name)
 {
 	return m_fonts[name];
 }
 
-void core::Assets::LoadFromFile(std::string path)
+void abyss::Assets::LoadFromFile(std::string path)
 {
 	std::ifstream ifs(path, std::ifstream::in);
 

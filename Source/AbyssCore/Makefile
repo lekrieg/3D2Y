@@ -79,6 +79,11 @@ endif
 GENERATED :=
 OBJECTS :=
 
+GENERATED += $(OBJDIR)/Animation.o
+GENERATED += $(OBJDIR)/Assets.o
+GENERATED += $(OBJDIR)/EntityManager.o
+GENERATED += $(OBJDIR)/EntityTag.o
+GENERATED += $(OBJDIR)/Scene.o
 GENERATED += $(OBJDIR)/darray.o
 GENERATED += $(OBJDIR)/dr_impl.o
 GENERATED += $(OBJDIR)/klatt.o
@@ -128,6 +133,11 @@ GENERATED += $(OBJDIR)/soloud_wavstream.o
 GENERATED += $(OBJDIR)/stb_vorbis.o
 GENERATED += $(OBJDIR)/ted.o
 GENERATED += $(OBJDIR)/tts.o
+OBJECTS += $(OBJDIR)/Animation.o
+OBJECTS += $(OBJDIR)/Assets.o
+OBJECTS += $(OBJDIR)/EntityManager.o
+OBJECTS += $(OBJDIR)/EntityTag.o
+OBJECTS += $(OBJDIR)/Scene.o
 OBJECTS += $(OBJDIR)/darray.o
 OBJECTS += $(OBJDIR)/dr_impl.o
 OBJECTS += $(OBJDIR)/klatt.o
@@ -385,6 +395,21 @@ $(OBJDIR)/soloud_robotizefilter.o: 3rdParty/SoLoud/src/filter/soloud_robotizefil
 	@echo "$(notdir $<)"
 	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
 $(OBJDIR)/soloud_waveshaperfilter.o: 3rdParty/SoLoud/src/filter/soloud_waveshaperfilter.cpp
+	@echo "$(notdir $<)"
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/Animation.o: src/Animation.cpp
+	@echo "$(notdir $<)"
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/Assets.o: src/Assets.cpp
+	@echo "$(notdir $<)"
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/EntityManager.o: src/EntityManager.cpp
+	@echo "$(notdir $<)"
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/EntityTag.o: src/EntityTag.cpp
+	@echo "$(notdir $<)"
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/Scene.o: src/Scene.cpp
 	@echo "$(notdir $<)"
 	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
 

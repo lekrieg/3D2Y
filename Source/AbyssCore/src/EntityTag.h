@@ -1,7 +1,7 @@
 #ifndef ENTITY_TAG_H
 #define ENTITY_TAG_H
 
-namespace core
+namespace abyss
 {
 	enum class EntityTag
 	{

@@ -3,14 +3,14 @@
 
 #include "Component.h"
 
-namespace core
+namespace abyss
 {
 	namespace components
 	{
 		class Jump : public Component
 		{
 		public:
-			
+
 			bool isJumping = false;
 			float maxJumpTime;
 			float jumpTime;

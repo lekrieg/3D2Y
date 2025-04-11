@@ -5,22 +5,22 @@
 
 #include "../math/Vectors.h"
 
-namespace core
+namespace abyss
 {
 	namespace components
 	{
 		class FollowPlayer : public Component
 		{
 		public:
-			
-			abyss_math::Vec2<float> home;
+
+			abyss::math::Vec2<float> home;
 			float speed;
 
-			FollowPlayer() : FollowPlayer(abyss_math::Vec2<float>(0, 0), 0)
+			FollowPlayer() : FollowPlayer(abyss::math::Vec2<float>(0, 0), 0)
 			{
 			}
 
-			FollowPlayer(abyss_math::Vec2<float> p, float s) : home(p), speed(s)
+			FollowPlayer(abyss::math::Vec2<float> p, float s) : home(p), speed(s)
 			{
 			}
 		};

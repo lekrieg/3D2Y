@@ -2,7 +2,7 @@
 #define ASSETS_H
 
 #include "Animation.h"
-#include "../FileData.h"
+#include "FileData.h"
 #include "soloud.h"
 #include "soloud_wav.h"
 
@@ -10,7 +10,7 @@
 #include <map>
 
 // TODO: MAKE THIS BECOME A RESOURCE MANAGER LIKE THE ONE FROM BUILDING BLOCKS ENGINE OR GAME ENGINE  DESIGN AND IMPLEMENTATION BOOKS
-namespace core
+namespace abyss
 {
 	class Assets
 	{

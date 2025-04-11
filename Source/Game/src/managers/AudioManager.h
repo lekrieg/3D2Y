@@ -7,13 +7,13 @@
 #include <string>
 #include <vector>
 
-namespace core
+namespace game
 {
 	class GameApplication;
 
 	class AudioManager
 	{
-		GameApplication* m_gameApplication;
+		game::GameApplication* m_gameApplication;
 
 		SoLoud::Soloud m_soLoud;
 		SoLoud::Wav m_internalMusicWav;
@@ -21,7 +21,7 @@ namespace core
 		SoLoud::handle m_internalHandle;
 
 	public:
-		AudioManager(GameApplication* gameApplication = nullptr) : m_gameApplication(gameApplication)
+		AudioManager(game::GameApplication* gameApplication = nullptr) : m_gameApplication(gameApplication)
 		{
 			m_soLoud.init();
 		}

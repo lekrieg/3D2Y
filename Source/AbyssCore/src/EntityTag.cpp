@@ -1,26 +1,26 @@
 #include "EntityTag.h"
 
-const char* core::EntityTagToString(EntityTag tag)
+const char* abyss::EntityTagToString(EntityTag tag)
 {
 	switch (tag)
 	{
-	case core::EntityTag::Default:
+	case abyss::EntityTag::Default:
 		return "Default";
-	case core::EntityTag::Player:
+	case abyss::EntityTag::Player:
 		return "Player";
-	case core::EntityTag::Enemy:
+	case abyss::EntityTag::Enemy:
 		return "Enemy";
-	case core::EntityTag::SmallEnemy:
+	case abyss::EntityTag::SmallEnemy:
 		return "SmallEnemy";
-	case core::EntityTag::Bullet:
+	case abyss::EntityTag::Bullet:
 		return "Bullet";
-	case core::EntityTag::SpecialAttack1:
+	case abyss::EntityTag::SpecialAttack1:
 		return "SpecialAttack1";
 		break;
-	case core::EntityTag::Tile:
+	case abyss::EntityTag::Tile:
 		return "Tile";
 		break;
-	case core::EntityTag::Dangerous:
+	case abyss::EntityTag::Dangerous:
 		return "Dangerous";
 		break;
 	default:

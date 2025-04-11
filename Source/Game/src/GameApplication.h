@@ -4,14 +4,14 @@
 #include "FileData.h"
 #include "SFML/Window/Event.hpp"
 #include "SFML/Window/Keyboard.hpp"
-#include "core/Assets.h"
-#include "core/Scene.h"
+#include "Assets.h"
+#include "Scene.h"
 #include "managers/AudioManager.h"
 #include "managers/GameManager.h"
 
 #include <memory>
 
-namespace core
+namespace game
 {
 	class Scene;
 	class AudioManager;
@@ -19,11 +19,11 @@ namespace core
 	class GameApplication
 	{
 			game::GameManager m_gameManager;
-			core::AudioManager *m_audioManager; // TODO: think in a better way to make this stuff
+			game::AudioManager *m_audioManager; // TODO: think in a better way to make this stuff
 
-			std::map<std::string, std::shared_ptr<core::Scene>> m_scenes;
+			std::map<std::string, std::shared_ptr<abyss::Scene>> m_scenes;
 			sf::RenderWindow m_window;
-			core::Assets m_assets;
+			abyss::Assets m_assets;
 			std::string m_currentScene;
 			int m_simulationSpeed = 1;
 			bool m_running = true;
@@ -45,13 +45,13 @@ namespace core
 			void Run();
 			void Quit();
 			bool IsRunning();
-			core::AudioManager *GetAudioManager();
-			core::Assets &GetAssets();
+			game::AudioManager *GetAudioManager();
+			abyss::Assets &GetAssets();
 			sf::RenderWindow &GetWindow();
 			game::GameManager &GetGameManager();
 			const float DeltaTime() const;
 
-			void ChangeScene(const std::string &sceneName, std::shared_ptr<core::Scene> scene,
+			void ChangeScene(const std::string &sceneName, std::shared_ptr<abyss::Scene> scene,
 							 bool endCurrentScene = false);
 
 		private:
@@ -59,7 +59,7 @@ namespace core
 			void Init(const std::string &configPath, const std::string &assetsPath);
 			void Update();
 
-			std::shared_ptr<core::Scene> GetCurrentScene();
+			std::shared_ptr<abyss::Scene> GetCurrentScene();
 
 			void UserInputSystem();
 	};

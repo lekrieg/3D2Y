@@ -28,7 +28,7 @@ ifeq ($(origin AR), default)
   AR = ar
 endif
 RESCOMP = windres
-INCLUDES += -I../AbyssCore
+INCLUDES += -I../AbyssCore/src -I../AbyssCore/3rdParty/SFML-3.0.0/include -I../AbyssCore/3rdParty/SoLoud/include
 FORCE_INCLUDE +=
 ALL_CPPFLAGS += $(CPPFLAGS) -MD -MP $(DEFINES) $(INCLUDES)
 ALL_RESFLAGS += $(RESFLAGS) $(DEFINES) $(INCLUDES)
@@ -71,6 +71,21 @@ endif
 # File sets
 # #############################################
 
+GENERATED :=
+OBJECTS :=
+
+GENERATED += $(OBJDIR)/AudioManager.o
+GENERATED += $(OBJDIR)/GameApplication.o
+GENERATED += $(OBJDIR)/GameManager.o
+GENERATED += $(OBJDIR)/Main.o
+GENERATED += $(OBJDIR)/MenuScene.o
+GENERATED += $(OBJDIR)/PlayScene.o
+OBJECTS += $(OBJDIR)/AudioManager.o
+OBJECTS += $(OBJDIR)/GameApplication.o
+OBJECTS += $(OBJDIR)/GameManager.o
+OBJECTS += $(OBJDIR)/Main.o
+OBJECTS += $(OBJDIR)/MenuScene.o
+OBJECTS += $(OBJDIR)/PlayScene.o
 
 # Rules
 # #############################################
@@ -78,7 +93,7 @@ endif
 all: $(TARGET)
 	@:
 
-$(TARGET): $(OBJECTS) $(LDDEPS) | $(TARGETDIR)
+$(TARGET): $(GENERATED) $(OBJECTS) $(LDDEPS) | $(TARGETDIR)
 	$(PRELINKCMDS)
 	@echo Linking Game
 	$(SILENT) $(LINKCMD)
@@ -133,6 +148,25 @@ endif
 
 # File Rules
 # #############################################
+
+$(OBJDIR)/GameApplication.o: src/GameApplication.cpp
+	@echo "$(notdir $<)"
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/Main.o: src/Main.cpp
+	@echo "$(notdir $<)"
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/AudioManager.o: src/managers/AudioManager.cpp
+	@echo "$(notdir $<)"
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/GameManager.o: src/managers/GameManager.cpp
+	@echo "$(notdir $<)"
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/MenuScene.o: src/scenes/MenuScene.cpp
+	@echo "$(notdir $<)"
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/PlayScene.o: src/scenes/PlayScene.cpp
+	@echo "$(notdir $<)"
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
 
 -include $(OBJECTS:%.o=%.d)
 ifneq (,$(PCH))

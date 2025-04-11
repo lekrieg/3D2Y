@@ -2,7 +2,7 @@
 #include "SFML/System/Vector2.hpp"
 
 // animation loops when it reaches the end
-void core::Animation::Update()
+void abyss::Animation::Update()
 {
 	m_currentFrame++;
 
@@ -22,7 +22,7 @@ void core::Animation::Update()
 	 */
 }
 
-bool core::Animation::HasEnded()
+bool abyss::Animation::HasEnded()
 {
 	return m_animFrame == (m_frameCount - 1);
 }

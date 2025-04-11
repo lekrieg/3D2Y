@@ -1,7 +1,7 @@
 #include "EntityManager.h"
 #include <algorithm>
 
-void core::EntityManager::Update()
+void abyss::EntityManager::Update()
 {
 	for (auto e : m_toAdd)
 	{
@@ -20,7 +20,7 @@ void core::EntityManager::Update()
 	}
 }
 
-std::shared_ptr<core::Entity> core::EntityManager::AddEntity(const EntityTag& tag)
+std::shared_ptr<abyss::Entity> abyss::EntityManager::AddEntity(const EntityTag& tag)
 {
 	// TODO: check map edge cases
 	auto e = std::make_shared<Entity>(tag, m_totalEntities++);
@@ -29,22 +29,22 @@ std::shared_ptr<core::Entity> core::EntityManager::AddEntity(const EntityTag& ta
 	return e;
 }
 
-core::EntityVec& core::EntityManager::GetEntities()
+abyss::EntityVec& abyss::EntityManager::GetEntities()
 {
 	return m_entities;
 }
 
-core::EntityVec& core::EntityManager::GetEntities(const EntityTag& tag)
+abyss::EntityVec& abyss::EntityManager::GetEntities(const EntityTag& tag)
 {
 	return m_entityMap[tag];
 }
 
-const std::map<core::EntityTag, core::EntityVec>& core::EntityManager::GetEntityMap()
+const std::map<abyss::EntityTag, abyss::EntityVec>& abyss::EntityManager::GetEntityMap()
 {
 	return m_entityMap;
 }
 
-void core::EntityManager::RemoveDeadEntities(EntityVec& vec)
+void abyss::EntityManager::RemoveDeadEntities(EntityVec& vec)
 {
 	vec.erase(std::remove_if(vec.begin(), vec.end(), [](std::shared_ptr<Entity>& e) { return !e->IsActive();  }), vec.end());
 }

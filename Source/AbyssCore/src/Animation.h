@@ -9,7 +9,7 @@
 #include <cmath>
 #include <string>
 
-namespace core
+namespace abyss
 {
 	class Animation
 	{

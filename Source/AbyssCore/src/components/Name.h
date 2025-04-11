@@ -5,7 +5,7 @@
 
 #include <string>
 
-namespace core
+namespace abyss
 {
 	namespace components
 	{

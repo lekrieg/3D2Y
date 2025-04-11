@@ -28,7 +28,7 @@ ifeq ($(origin AR), default)
   AR = ar
 endif
 RESCOMP = windres
-INCLUDES += -I../AbyssCore
+INCLUDES += -I../AbyssCore/src -I../AbyssCore/3rdParty/SFML-3.0.0/include -I../AbyssCore/3rdParty/SoLoud/include
 FORCE_INCLUDE +=
 ALL_CPPFLAGS += $(CPPFLAGS) -MD -MP $(DEFINES) $(INCLUDES)
 ALL_RESFLAGS += $(RESFLAGS) $(DEFINES) $(INCLUDES)
@@ -71,6 +71,25 @@ endif
 # File sets
 # #############################################
 
+GENERATED :=
+OBJECTS :=
+
+GENERATED += $(OBJDIR)/EditorScene.o
+GENERATED += $(OBJDIR)/Main.o
+GENERATED += $(OBJDIR)/imgui-SFML.o
+GENERATED += $(OBJDIR)/imgui.o
+GENERATED += $(OBJDIR)/imgui_demo.o
+GENERATED += $(OBJDIR)/imgui_draw.o
+GENERATED += $(OBJDIR)/imgui_tables.o
+GENERATED += $(OBJDIR)/imgui_widgets.o
+OBJECTS += $(OBJDIR)/EditorScene.o
+OBJECTS += $(OBJDIR)/Main.o
+OBJECTS += $(OBJDIR)/imgui-SFML.o
+OBJECTS += $(OBJDIR)/imgui.o
+OBJECTS += $(OBJDIR)/imgui_demo.o
+OBJECTS += $(OBJDIR)/imgui_draw.o
+OBJECTS += $(OBJDIR)/imgui_tables.o
+OBJECTS += $(OBJDIR)/imgui_widgets.o
 
 # Rules
 # #############################################
@@ -78,7 +97,7 @@ endif
 all: $(TARGET)
 	@:
 
-$(TARGET): $(OBJECTS) $(LDDEPS) | $(TARGETDIR)
+$(TARGET): $(GENERATED) $(OBJECTS) $(LDDEPS) | $(TARGETDIR)
 	$(PRELINKCMDS)
 	@echo Linking EngineEditor
 	$(SILENT) $(LINKCMD)
@@ -133,6 +152,31 @@ endif
 
 # File Rules
 # #############################################
+
+$(OBJDIR)/Main.o: src/Main.cpp
+	@echo "$(notdir $<)"
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/EditorScene.o: src/Scenes/EditorScene.cpp
+	@echo "$(notdir $<)"
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/imgui-SFML.o: src/imgui/imgui-SFML.cpp
+	@echo "$(notdir $<)"
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/imgui.o: src/imgui/imgui.cpp
+	@echo "$(notdir $<)"
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/imgui_demo.o: src/imgui/imgui_demo.cpp
+	@echo "$(notdir $<)"
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/imgui_draw.o: src/imgui/imgui_draw.cpp
+	@echo "$(notdir $<)"
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/imgui_tables.o: src/imgui/imgui_tables.cpp
+	@echo "$(notdir $<)"
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/imgui_widgets.o: src/imgui/imgui_widgets.cpp
+	@echo "$(notdir $<)"
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
 
 -include $(OBJECTS:%.o=%.d)
 ifneq (,$(PCH))

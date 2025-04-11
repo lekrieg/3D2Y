@@ -5,7 +5,7 @@
 
 #include <SFML/Graphics.hpp>
 
-namespace core
+namespace abyss
 {
 	namespace components
 	{

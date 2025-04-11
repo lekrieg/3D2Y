@@ -10,7 +10,7 @@
 #include <iostream>
 #include "../utils/Logger.h"
 
-namespace core
+namespace abyss
 {
 	class Physics
 	{

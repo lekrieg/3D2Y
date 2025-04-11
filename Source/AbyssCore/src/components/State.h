@@ -4,7 +4,7 @@
 #include "Component.h"
 #include <string>
 
-namespace core
+namespace abyss
 {
 	namespace components
 	{

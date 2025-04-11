@@ -1,9 +1,9 @@
 #ifndef MATH_FUNC_H
 #define MATH_FUNC_H
 
-namespace core
+namespace abyss
 {
-	namespace mathFunc
+	namespace math
 	{
 		float lerp(float a, float b, float t)
 		{

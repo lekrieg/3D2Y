@@ -6,7 +6,7 @@
 #include "../math/Vectors.h"
 #include <vector>
 
-namespace core
+namespace abyss
 {
 	namespace components
 	{
@@ -14,7 +14,7 @@ namespace core
 		{
 		public:
 
-			std::vector<abyss_math::Vec2<float>> positions;
+			std::vector<abyss::math::Vec2<float>> positions;
 			size_t currentPosition;
 			float speed;
 
@@ -22,7 +22,7 @@ namespace core
 			{
 			}
 
-			Patrol(std::vector<abyss_math::Vec2<float>>& pList, float s) : positions(pList), speed(s)
+			Patrol(std::vector<abyss::math::Vec2<float>>& pList, float s) : positions(pList), speed(s)
 			{
 				currentPosition = 0;
 			}

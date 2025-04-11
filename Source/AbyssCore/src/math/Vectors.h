@@ -1,9 +1,9 @@
 #ifndef VECTORS_H
 #define VECTORS_H
 
-namespace core
+namespace abyss
 {
-	namespace abyss_math
+	namespace math
 	{
 #define RAD2DEG(x) ((x) * 57.295754f)
 #define DEG2RAD(x) ((x) * 0.0174533f)

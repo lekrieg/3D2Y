@@ -130,7 +130,9 @@ project "EngineEditor"
     }
 
     includedirs {
-        "AbyssCore/"
+        "AbyssCore/src",
+        "AbyssCore/3rdParty/SFML-3.0.0/include",
+        "AbyssCore/3rdParty/SoLoud/include"
     }
 
     libdirs {
@@ -221,7 +223,9 @@ project "Game"
     }
 
     includedirs {
-        "AbyssCore/"
+        "AbyssCore/src",
+        "AbyssCore/3rdParty/SFML-3.0.0/include",
+        "AbyssCore/3rdParty/SoLoud/include"
     }
 
     libdirs {

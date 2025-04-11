@@ -6,10 +6,10 @@
 #include <vector>
 #include <map>
 
-namespace core
+namespace abyss
 {
-	typedef std::vector<std::shared_ptr<core::Entity>> EntityVec;
-	typedef std::map<core::EntityTag, EntityVec> EntityMap;
+	typedef std::vector<std::shared_ptr<abyss::Entity>> EntityVec;
+	typedef std::map<abyss::EntityTag, EntityVec> EntityMap;
 
 	class EntityManager
 	{

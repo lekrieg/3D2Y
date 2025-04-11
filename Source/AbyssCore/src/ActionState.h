@@ -1,7 +1,7 @@
 #ifndef ACTION_STATE_H
 #define ACTION_STATE_H
 
-namespace core
+namespace abyss
 {
 	enum class ActionState
 	{

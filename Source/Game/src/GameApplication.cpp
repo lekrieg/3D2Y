@@ -5,16 +5,14 @@
 #include "SFML/Window/Keyboard.hpp"
 #include "SFML/Window/Mouse.hpp"
 #include "SFML/Window/VideoMode.hpp"
-#include "core/ActionState.h"
-#include "imgui/imgui-SFML.h"
-#include "imgui/imgui.h"
+#include "ActionState.h"
 #include "scenes/MenuScene.h"
-#include "utils/Logger.h"
+#include "Logger.h"
 #include <optional>
 
-void core::GameApplication::Init(const std::string &configPath, const std::string &assetsPath)
+void game::GameApplication::Init(const std::string &configPath, const std::string &assetsPath)
 {
-	m_audioManager = new core::AudioManager(this);
+	m_audioManager = new game::AudioManager(this);
 
 	// TODO: checar se e possivel substituir isso pelo resource manager do livro
 	// TODO: read config file and fill the config things(windows size and etc)
@@ -26,34 +24,25 @@ void core::GameApplication::Init(const std::string &configPath, const std::strin
 	// m_window.setFramerateLimit(60);
 
 	// ChangeScene("MENU", std::make_shared<scene::MenuScene>(this)); -> TODO: finish the menu level
-	ChangeScene("MENU", std::make_shared<core::MenuScene>(this));
-	// ChangeScene("PLAY", std::make_shared<core::PlayScene>(this, "scenes/testScene.txt"));
-
-	if (!ImGui::SFML::Init(m_window))
-	{
-		ABYSS_ERROR("ImGui SFML initialization problem!");
-	}
+	// ChangeScene("MENU", std::make_shared<abyss::MenuScene>(this));
+	// ChangeScene("PLAY", std::make_shared<abyss::PlayScene>(this, "scenes/testScene.txt"));
 }
 
-core::GameApplication::~GameApplication()
+game::GameApplication::~GameApplication()
 {
 	delete m_audioManager;
-
-	ImGui::SFML::Shutdown();
 }
 
-void core::GameApplication::Run()
+void game::GameApplication::Run()
 {
 	// TODO: Check if this run is really necessary, I could just use update...
 	while (IsRunning())
 	{
-		ImGui::SFML::Update(m_window, FIXED_FRAME_TIME);
-
 		Update();
 	}
 }
 
-void core::GameApplication::Update()
+void game::GameApplication::Update()
 {
 	sf::Time clockTime = clock.restart();
 	timeSinceLastUpdate += clockTime;
@@ -66,50 +55,47 @@ void core::GameApplication::Update()
 		m_scenes[m_currentScene]->Update(DeltaTime());
 	}
 
-	m_scenes[m_currentScene]->EntityInfoGui();
-	m_scenes[m_currentScene]->AssetManagerGui();
-
 	m_scenes[m_currentScene]->Render();
 }
 
-void core::GameApplication::Quit()
+void game::GameApplication::Quit()
 {
 	// TODO: check later if I am in a level
 
 	m_running = false;
 }
 
-bool core::GameApplication::IsRunning()
+bool game::GameApplication::IsRunning()
 {
 	return m_running && m_window.isOpen();
 }
 
-core::AudioManager *core::GameApplication::GetAudioManager()
+game::AudioManager *game::GameApplication::GetAudioManager()
 {
 	return m_audioManager;
 }
 
-core::Assets &core::GameApplication::GetAssets()
+abyss::Assets &game::GameApplication::GetAssets()
 {
 	return m_assets;
 }
 
-sf::RenderWindow &core::GameApplication::GetWindow()
+sf::RenderWindow &game::GameApplication::GetWindow()
 {
 	return m_window;
 }
 
-game::GameManager &core::GameApplication::GetGameManager()
+game::GameManager &game::GameApplication::GetGameManager()
 {
 	return m_gameManager;
 }
 
-const float core::GameApplication::DeltaTime() const
+const float game::GameApplication::DeltaTime() const
 {
 	return FIXED_FRAME_TIME.asSeconds();
 }
 
-void core::GameApplication::ChangeScene(const std::string &sceneName, std::shared_ptr<core::Scene> scene,
+void game::GameApplication::ChangeScene(const std::string &sceneName, std::shared_ptr<abyss::Scene> scene,
 										bool endCurrentScene)
 {
 	// TODO: transform this in a helper method that I can call to reset the view
@@ -122,17 +108,15 @@ void core::GameApplication::ChangeScene(const std::string &sceneName, std::share
 	m_currentScene = sceneName;
 }
 
-std::shared_ptr<core::Scene> core::GameApplication::GetCurrentScene()
+std::shared_ptr<abyss::Scene> game::GameApplication::GetCurrentScene()
 {
 	return m_scenes[m_currentScene];
 }
 
-void core::GameApplication::UserInputSystem()
+void game::GameApplication::UserInputSystem()
 {
 	while (const std::optional event = m_window.pollEvent())
 	{
-		ImGui::SFML::ProcessEvent(m_window, *event);
-
 		const auto *keyPressed = event->getIf<sf::Event::KeyPressed>();
 		const auto *keyReleased = event->getIf<sf::Event::KeyReleased>();
 		const auto *mousePressed = event->getIf<sf::Event::MouseButtonPressed>();
@@ -182,7 +166,7 @@ void core::GameApplication::UserInputSystem()
 			}
 
 			GetCurrentScene()->ExecuteAction(
-				core::Action(GetCurrentScene()->GetActionMap().at(keyPressed->code), core::ActionState::Start));
+				abyss::Action(GetCurrentScene()->GetActionMap().at(keyPressed->code), abyss::ActionState::Start));
 		}
 		else if (keyReleased)
 		{
@@ -192,34 +176,32 @@ void core::GameApplication::UserInputSystem()
 			}
 
 			GetCurrentScene()->ExecuteAction(
-				core::Action(GetCurrentScene()->GetActionMap().at(keyReleased->code), core::ActionState::End));
+				abyss::Action(GetCurrentScene()->GetActionMap().at(keyReleased->code), abyss::ActionState::End));
 		}
 
-		if (!ImGui::GetIO().WantCaptureMouse)
-		{
-    		if (mousePressed)
+		if (mousePressed)
     		{
-    			const core::ActionState actionState = core::ActionState::Start;
+    			const abyss::ActionState actionState = abyss::ActionState::Start;
 
     			sf::Vector2i foo = sf::Mouse::getPosition(m_window);
     			// window().mapPixelToCoords(action.pos());
 
-    			abyss_math::Vec2<int> mousePosition(foo.x, foo.y);
+    			abyss::math::Vec2<int> mousePosition(foo.x, foo.y);
     			switch (mousePressed->button)
     			{
     				case sf::Mouse::Button::Left:
     				{
-    					GetCurrentScene()->ExecuteAction(core::Action("LEFT_CLICK", actionState, mousePosition));
+    					GetCurrentScene()->ExecuteAction(abyss::Action("LEFT_CLICK", actionState, mousePosition));
     					break;
     				};
     				case sf::Mouse::Button::Right:
     				{
-    					GetCurrentScene()->ExecuteAction(core::Action("RIGHT_CLICK", actionState, mousePosition));
+    					GetCurrentScene()->ExecuteAction(abyss::Action("RIGHT_CLICK", actionState, mousePosition));
     					break;
     				};
     				case sf::Mouse::Button::Middle:
     				{
-    					GetCurrentScene()->ExecuteAction(core::Action("MIDDLE_CLICK", actionState, mousePosition));
+    					GetCurrentScene()->ExecuteAction(abyss::Action("MIDDLE_CLICK", actionState, mousePosition));
     					break;
     				};
     				default:
@@ -229,33 +211,32 @@ void core::GameApplication::UserInputSystem()
 
     		if (mouseReleased)
     		{
-    			const core::ActionState actionState = core::ActionState::End;
+    			const abyss::ActionState actionState = abyss::ActionState::End;
 
     			sf::Vector2i foo = sf::Mouse::getPosition(m_window);
     			// window().mapPixelToCoords(action.pos());
 
-    			abyss_math::Vec2<int> mousePosition(foo.x, foo.y);
+    			abyss::math::Vec2<int> mousePosition(foo.x, foo.y);
     			switch (mouseReleased->button)
     			{
     				case sf::Mouse::Button::Left:
     				{
-    					GetCurrentScene()->ExecuteAction(core::Action("LEFT_CLICK", actionState, mousePosition));
+    					GetCurrentScene()->ExecuteAction(abyss::Action("LEFT_CLICK", actionState, mousePosition));
     					break;
     				};
     				case sf::Mouse::Button::Right:
     				{
-    					GetCurrentScene()->ExecuteAction(core::Action("RIGHT_CLICK", actionState, mousePosition));
+    					GetCurrentScene()->ExecuteAction(abyss::Action("RIGHT_CLICK", actionState, mousePosition));
     					break;
     				};
     				case sf::Mouse::Button::Middle:
     				{
-    					GetCurrentScene()->ExecuteAction(core::Action("MIDDLE_CLICK", actionState, mousePosition));
+    					GetCurrentScene()->ExecuteAction(abyss::Action("MIDDLE_CLICK", actionState, mousePosition));
     					break;
     				};
     				default:
     					break;
     			}
     		}
-		}
 	}
 }

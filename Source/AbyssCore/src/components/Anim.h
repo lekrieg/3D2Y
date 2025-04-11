@@ -4,7 +4,7 @@
 #include "Component.h"
 #include "../Animation.h"
 
-namespace core
+namespace abyss
 {
 	namespace components
 	{

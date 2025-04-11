@@ -17,26 +17,26 @@
 #include <string>
 #include <tuple>
 
-namespace core
+namespace abyss
 {
 	class EntityManager;
 
 	class Entity
 	{
 		friend class EntityManager;
-		
+
 		// TODO: Refactor this, there's no reason to keep wasting memory like this
 		std::tuple<
-			core::components::Transform,
-			core::components::BoundingBox,
-			core::components::Input,
-			core::components::Lifespan,
-			core::components::Anim,
-			core::components::Gravity,
-			core::components::State,
-			core::components::Patrol,
-			core::components::FollowPlayer,
-			core::components::Jump> m_components;
+			abyss::components::Transform,
+			abyss::components::BoundingBox,
+			abyss::components::Input,
+			abyss::components::Lifespan,
+			abyss::components::Anim,
+			abyss::components::Gravity,
+			abyss::components::State,
+			abyss::components::Patrol,
+			abyss::components::FollowPlayer,
+			abyss::components::Jump> m_components;
 
 		size_t m_id = 0;
 		const EntityTag m_tag = EntityTag::Default;

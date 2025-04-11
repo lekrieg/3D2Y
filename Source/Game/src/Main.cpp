@@ -2,6 +2,6 @@
 
 int main()
 {
-	core::GameApplication game("config.txt", "assets.txt");
+	game::GameApplication game("config.txt", "assets.txt");
 	game.Run();
 }

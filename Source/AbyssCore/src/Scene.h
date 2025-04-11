@@ -4,25 +4,23 @@
 #include "Action.h"
 #include "EntityManager.h"
 
-#include "../GameApplication.h"
+#include "Application.h"
 #include "SFML/Window/Keyboard.hpp"
 
-namespace core
+namespace abyss
 {
-	class GameApplication;
+	class Application;
 
 	class Scene
 	{
 	protected:
 
-		GameApplication* m_gameApplication;
+		Application* m_application;
 		EntityManager m_entityManager;
-		std::shared_ptr<core::Entity> m_selectedEntity;
+		std::shared_ptr<abyss::Entity> m_selectedEntity;
 		std::map<sf::Keyboard::Key, std::string> m_actionMap;
 		bool m_paused = false;
 		bool m_hasEnded = false;
-		bool m_isEntityInfoOpen = false;
-		bool m_isAssetManagerOpen = false;
 		float m_deltaTime = 0.0f;
 
 		virtual void OnEnd() = 0;
@@ -40,7 +38,7 @@ namespace core
 
 		}
 
-		Scene(GameApplication* gameApplication = nullptr) : m_gameApplication(gameApplication)
+		Scene(Application* application = nullptr) : m_application(application)
 		{
 
 		}
@@ -69,9 +67,6 @@ namespace core
 		}
 
 		void DrawLine(sf::Vector2f p1, sf::Vector2f p2);
-
-		void EntityInfoGui();
-		void AssetManagerGui();
 	};
 }
 
