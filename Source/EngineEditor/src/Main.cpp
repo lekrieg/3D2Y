@@ -1,7 +1,7 @@
-// #include "GameApplication.h"
+#include "EditorApplication.h"
 
 int main()
 {
-	// core::GameApplication game("config.txt", "assets.txt");
-	// game.Run();
+	editor::EditorApplication editor("config.txt", "assets.txt");
+	editor.Run();
 }

@@ -17,7 +17,6 @@ namespace abyss
 
 		Application* m_application;
 		EntityManager m_entityManager;
-		std::shared_ptr<abyss::Entity> m_selectedEntity;
 		std::map<sf::Keyboard::Key, std::string> m_actionMap;
 		bool m_paused = false;
 		bool m_hasEnded = false;
@@ -42,6 +41,8 @@ namespace abyss
 		{
 
 		}
+
+		~Scene() = default;
 
 		virtual void Update(float deltaTime) = 0;
 		virtual void ExecuteAction(const Action& action) = 0;

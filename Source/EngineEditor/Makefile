@@ -74,6 +74,7 @@ endif
 GENERATED :=
 OBJECTS :=
 
+GENERATED += $(OBJDIR)/EditorApplication.o
 GENERATED += $(OBJDIR)/EditorScene.o
 GENERATED += $(OBJDIR)/Main.o
 GENERATED += $(OBJDIR)/imgui-SFML.o
@@ -82,6 +83,7 @@ GENERATED += $(OBJDIR)/imgui_demo.o
 GENERATED += $(OBJDIR)/imgui_draw.o
 GENERATED += $(OBJDIR)/imgui_tables.o
 GENERATED += $(OBJDIR)/imgui_widgets.o
+OBJECTS += $(OBJDIR)/EditorApplication.o
 OBJECTS += $(OBJDIR)/EditorScene.o
 OBJECTS += $(OBJDIR)/Main.o
 OBJECTS += $(OBJDIR)/imgui-SFML.o
@@ -153,10 +155,10 @@ endif
 # File Rules
 # #############################################
 
-$(OBJDIR)/Main.o: src/Main.cpp
+$(OBJDIR)/EditorApplication.o: src/EditorApplication.cpp
 	@echo "$(notdir $<)"
 	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
-$(OBJDIR)/EditorScene.o: src/Scenes/EditorScene.cpp
+$(OBJDIR)/Main.o: src/Main.cpp
 	@echo "$(notdir $<)"
 	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
 $(OBJDIR)/imgui-SFML.o: src/imgui/imgui-SFML.cpp
@@ -175,6 +177,9 @@ $(OBJDIR)/imgui_tables.o: src/imgui/imgui_tables.cpp
 	@echo "$(notdir $<)"
 	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
 $(OBJDIR)/imgui_widgets.o: src/imgui/imgui_widgets.cpp
+	@echo "$(notdir $<)"
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/EditorScene.o: src/scenes/EditorScene.cpp
 	@echo "$(notdir $<)"
 	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
 

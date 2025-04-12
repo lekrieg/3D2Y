@@ -1,14 +1,12 @@
 #ifndef PLAY_SCENE_H
 #define PLAY_SCENE_H
 
-#include "../GameApplication.h"
 #include "Application.h"
 #include "FileData.h"
 #include "Physics.h"
 #include "SFML/Graphics/Font.hpp"
 #include "Scene.h"
 
-#include <iostream>
 #include <string>
 
 namespace game

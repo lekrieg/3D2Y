@@ -8,6 +8,7 @@
 #include "SFML/Window/Mouse.hpp"
 #include "SFML/Window/VideoMode.hpp"
 #include "scenes/PlayScene.h"
+#include "managers/AudioManager.h"
 #include <optional>
 
 void game::GameApplication::Init(const std::string &configPath, const std::string &assetsPath)

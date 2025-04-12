@@ -5,7 +5,6 @@
 #include "../GameApplication.h"
 
 #include <string>
-#include <vector>
 
 namespace game
 {
