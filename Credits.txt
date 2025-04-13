@@ -9,3 +9,6 @@ Credit to https://www.youtube.com/@DaveChurchill
 
 -------------- Game related things --------------
 Programmer / Game designer: Lekrieg
+
+-------------- View movement and zoom --------------
+https://stackoverflow.com/questions/41788847/dragging-screen-in-sfml

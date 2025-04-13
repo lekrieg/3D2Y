@@ -11,9 +11,12 @@ namespace abyss
 {
 	class Action
 	{
-		std::string m_name;
-		ActionState m_actionState;
-		abyss::math::Vec2<int> m_position;
+		private:
+
+			std::string m_name;
+			ActionState m_actionState;
+			abyss::math::Vec2<int> m_position;
+			float m_scrollWheelDelta;
 
 		public:
 
@@ -26,9 +29,16 @@ namespace abyss
 			}
 
 			Action(const std::string &name, const ActionState &state, const abyss::math::Vec2<int> &pos) :
+				Action(name, state, pos, 0.0f)
+			{
+			}
+
+			Action(const std::string &name, const ActionState &state, const abyss::math::Vec2<int> &pos,
+				   const float scrollWheelDelta) :
 				m_name(name),
 				m_actionState(state),
-				m_position(pos)
+				m_position(pos),
+				m_scrollWheelDelta(scrollWheelDelta)
 			{
 			}
 
@@ -45,6 +55,11 @@ namespace abyss
 			abyss::math::Vec2<int> Pos() const
 			{
 				return m_position;
+			}
+
+			float ScrollWheelDelta() const
+			{
+				return m_scrollWheelDelta;
 			}
 	};
 }

@@ -1,5 +1,6 @@
 #include "EditorApplication.h"
 
+#include "Action.h"
 #include "ActionState.h"
 #include "Logger.h"
 #include "SFML/Graphics/Rect.hpp"
@@ -9,6 +10,7 @@
 #include "SFML/Window/VideoMode.hpp"
 #include "imgui/imgui-SFML.h"
 #include "imgui/imgui.h"
+#include "math/Vectors.h"
 #include "scenes/EditorScene.h"
 #include <optional>
 
@@ -95,6 +97,8 @@ void editor::EditorApplication::UserInputSystem()
 		const auto *keyReleased = event->getIf<sf::Event::KeyReleased>();
 		const auto *mousePressed = event->getIf<sf::Event::MouseButtonPressed>();
 		const auto *mouseReleased = event->getIf<sf::Event::MouseButtonReleased>();
+		const auto *mouseMoved = event->getIf<sf::Event::MouseMoved>();
+		const auto *mouseWheelScrolled = event->getIf<sf::Event::MouseWheelScrolled>();
 
 		if (event->is<sf::Event::Closed>())
 		{
@@ -156,13 +160,13 @@ void editor::EditorApplication::UserInputSystem()
 
 		if (!ImGui::GetIO().WantCaptureMouse)
 		{
+			sf::Vector2i foo = sf::Mouse::getPosition(m_window);
+			abyss::math::Vec2<int> mousePosition(foo.x, foo.y);
+
 			if (mousePressed)
 			{
 				const abyss::ActionState actionState = abyss::ActionState::Start;
 
-				sf::Vector2i foo = sf::Mouse::getPosition(m_window);
-
-				abyss::math::Vec2<int> mousePosition(foo.x, foo.y);
 				switch (mousePressed->button)
 				{
 					case sf::Mouse::Button::Left:
@@ -189,9 +193,6 @@ void editor::EditorApplication::UserInputSystem()
 			{
 				const abyss::ActionState actionState = abyss::ActionState::End;
 
-				sf::Vector2i foo = sf::Mouse::getPosition(m_window);
-
-				abyss::math::Vec2<int> mousePosition(foo.x, foo.y);
 				switch (mouseReleased->button)
 				{
 					case sf::Mouse::Button::Left:
@@ -212,6 +213,19 @@ void editor::EditorApplication::UserInputSystem()
 					default:
 						break;
 				}
+			}
+
+			if (mouseMoved)
+			{
+				m_scene->ExecuteAction(abyss::Action("MOUSE_MOVE", abyss::ActionState::Start, abyss::math::Vec2<int>(mouseMoved->position.x, mouseMoved->position.y)));
+			}
+
+			if (mouseWheelScrolled)
+			{
+				m_scene->ExecuteAction(abyss::Action(
+					"ZOOM", abyss::ActionState::Start,
+					abyss::math::Vec2<int>(mouseWheelScrolled->position.x, mouseWheelScrolled->position.y),
+					mouseWheelScrolled->delta));
 			}
 		}
 	}

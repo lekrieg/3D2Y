@@ -2,18 +2,24 @@
 
 #include "Action.h"
 
+#include "Entity.h"
+#include "EntityTag.h"
 #include "components/Anim.h"
 #include "components/Transform.h"
 
 #include "Logger.h"
 
 #include "../imgui/imgui-SFML.h"
+#include "../imgui/imgui.h"
 #include "SFML/Graphics/View.hpp"
 #include "SFML/System/Angle.hpp"
 #include "SFML/System/Vector2.hpp"
+#include "math/Vectors.h"
+#include <algorithm>
 #include <cmath>
 #include <cstdlib>
 #include <math.h>
+#include <memory>
 #include <string>
 
 void editor::EditorScene::Update(float deltaTime)
@@ -22,7 +28,7 @@ void editor::EditorScene::Update(float deltaTime)
 
 	if (!m_paused)
 	{
-		CameraSystem();
+		// CameraSystem();
 	}
 
 	AnimationSystem();
@@ -42,6 +48,9 @@ void editor::EditorScene::Init(const std::string &levelPath)
 	RegisterAction(sf::Keyboard::Key::S, "TO_DOWN");
 	RegisterAction(sf::Keyboard::Key::Num1, "TOGGLE_ASSET_MANAGER");
 
+	m_gridText.setCharacterSize(8);
+	m_gridText.setFont(m_application->GetAssets().GetFont("elementalis"));
+
 	LoadLevel(levelPath);
 }
 
@@ -53,6 +62,10 @@ void editor::EditorScene::LoadLevel(const std::string &fileName)
 
 	// TODO: Check how to better reset the manager
 	m_entityManager = abyss::EntityManager();
+
+	std::shared_ptr<abyss::Entity> player = m_entityManager.AddEntity(abyss::EntityTag::Player);
+	player->AddComponent<abyss::components::Anim>(m_application->GetAssets().GetAnimation("Down"), true);
+	player->AddComponent<abyss::components::Transform>(sf::Vector2f(512, 300));
 
 	// std::ifstream ifs(fileName, std::ifstream::in);
 
@@ -152,8 +165,7 @@ void editor::EditorScene::AnimationSystem()
 void editor::EditorScene::CameraSystem()
 {
 	sf::View view = m_application->GetWindow().getView();
-
-	// view.setCenter();
+	view.setCenter(sf::Vector2f(m_midPointX, m_midPointY));
 
 	m_application->GetWindow().setView(view);
 }
@@ -190,40 +202,116 @@ void editor::EditorScene::ExecuteAction(const abyss::Action &action)
 		{
 			OnEnd();
 		}
-		else if (action.Name() == "LEFT_CLICK")
+		if (action.Name() == "TOGGLE_ASSET_MANAGER")
 		{
-			// m_selectedEntity = {};
-			// sf::Vector2f worldPos =
-			// 	m_application->GetWindow().mapPixelToCoords(sf::Vector2i(action.Pos().x, action.Pos().y));
-
-			// for (auto e : m_entityManager.GetEntities())
-			// {
-			// 	if (m_physics.IsInside(abyss::math::Vec2<float>(worldPos.x, worldPos.y), e))
-			// 	{
-			// 		m_isEntityInfoOpen = true;
-			// 		m_selectedEntity = e;
-			// 		break;
-			// 	}
-			// }
+			m_isAssetManagerOpen = !m_isAssetManagerOpen;
 		}
-		else if (action.Name() == "TOGGLE_ASSET_MANAGER")
+
+		sf::Vector2f worldPos =
+			m_application->GetWindow().mapPixelToCoords(sf::Vector2i(action.Pos().x, action.Pos().y));
+
+		if (action.Name() == "LEFT_CLICK")
 		{
-			// m_isAssetManagerOpen = !m_isAssetManagerOpen;
+			m_leftClick = true;
+			m_oldPos = abyss::math::Vec2<float>(action.Pos().x, action.Pos().y);
+
+			if (!m_dragEntity)
+			{
+				m_dragEntity = {};
+				for (auto e : m_entityManager.GetEntities())
+				{
+					if (m_physics.IsInside(abyss::math::Vec2<float>(worldPos.x, worldPos.y), e))
+					{
+						m_dragEntity = e;
+						break;
+					}
+				}
+			}
+		}
+		else if (action.Name() == "RIGHT_CLICK")
+		{
+			m_selectedEntity = {};
+			for (auto e : m_entityManager.GetEntities())
+			{
+				if (m_physics.IsInside(abyss::math::Vec2<float>(worldPos.x, worldPos.y), e))
+				{
+					m_isEntityInfoOpen = true;
+					m_selectedEntity = e;
+					break;
+				}
+			}
+		}
+		else
+		{
+			m_dragEntity = {};
+		}
+
+		if (action.Name() == "MOUSE_MOVE")
+		{
+			if (m_leftClick)
+			{
+				abyss::math::Vec2<float> newPos = abyss::math::Vec2<float>(action.Pos().x, action.Pos().y);
+				abyss::math::Vec2<float> deltaPos = m_oldPos - newPos;
+
+				sf::View view = m_application->GetWindow().getView();
+				view.move(sf::Vector2f(deltaPos.x, deltaPos.y));
+				m_application->GetWindow().setView(view);
+
+				m_oldPos = newPos;
+			}
+
+			if (m_dragEntity)
+			{
+				if (m_snapToGrid)
+				{
+					worldPos.x = std::floor(worldPos.x / 64) * 64 + 32;
+					worldPos.y = std::floor(worldPos.y / 64) * 64 + 32;
+				}
+
+				m_dragEntity->GetComponent<abyss::components::Transform>().pos = worldPos;
+			}
+		}
+		else if (action.Name() == "ZOOM")
+		{
+			if (action.ScrollWheelDelta() <= -1)
+			{
+				actualZoom = std::min(2.0f, actualZoom + 0.1f);
+			}
+			else if (action.ScrollWheelDelta() >= 1)
+			{
+				actualZoom = std::max(0.5f, actualZoom - 0.1f);
+			}
+
+			accumulatedZoom *= actualZoom;
+			sf::View view = m_application->GetWindow().getView();
+			view.setSize(m_application->GetWindow().getDefaultView().getSize());
+			view.zoom(actualZoom);
+			m_application->GetWindow().setView(view);
+
+			sf:;sf::Vector2f newPos = m_application->GetWindow().mapPixelToCoords(sf::Vector2i(action.Pos().x, action.Pos().y));
+			sf::Vector2f deltaPos = worldPos - newPos;
+			view.move(deltaPos);
+			m_application->GetWindow().setView(view);
 		}
 	}
 	else if (action.State() == abyss::ActionState::End)
 	{
+		if (action.Name() == "LEFT_CLICK")
+		{
+			m_leftClick = false;
+		}
 	}
 }
 
 void editor::EditorScene::DrawGrid()
 {
-	float leftX = m_midPointX - Width();
-	float rightX = m_midPointX + Width();
+	sf::View view = m_application->GetWindow().getView();
+	float leftX = view.getCenter().x - Width();
+	float rightX = view.getCenter().x + Width();
 	float nextGridX = leftX - std::fmod(leftX, m_gridSize.x);
 
-	float topY = m_midPointY - Height();
-	float bottomY = m_midPointY + Height();
+	float topY = view.getCenter().y - Height();
+	float bottomY = view.getCenter().y + Height();
 	float nextGridY = topY - std::fmod(topY, m_gridSize.y);
 
 	// draw Y lines
@@ -252,49 +340,49 @@ void editor::EditorScene::DrawGrid()
 
 void editor::EditorScene::EntityInfoGui()
 {
- //   	if (!m_selectedEntity || !m_isEntityInfoOpen)
-	// {
-	//    return;
-	// }
+	if (!m_selectedEntity || !m_isEntityInfoOpen)
+	{
+		return;
+	}
 
- //    ImGui::Begin("Entity Info", &m_isEntityInfoOpen);
+	ImGui::Begin("Entity Info", &m_isEntityInfoOpen);
 
-	// ImGui::End();
+	ImGui::End();
 }
 
 void editor::EditorScene::AssetManagerGui()
 {
- //   	if (!m_isAssetManagerOpen)
-	// {
-	//     return;
-	// }
+	if (!m_isAssetManagerOpen)
+	{
+		return;
+	}
 
- //    ImGui::Begin("Asset Manager", &m_isAssetManagerOpen);
-	// ImGuiTabBarFlags tabBarFlags = ImGuiTabBarFlags_None;
-	// if (ImGui::BeginTabBar("GameTabBar", tabBarFlags))
-	// {
-	// 	if (ImGui::BeginTabItem("Systems"))
-	// 	{
-	// 		ImGui::EndTabItem();
-	// 	}
+	ImGui::Begin("Asset Manager", &m_isAssetManagerOpen);
+	ImGuiTabBarFlags tabBarFlags = ImGuiTabBarFlags_None;
+	if (ImGui::BeginTabBar("GameTabBar", tabBarFlags))
+	{
+		if (ImGui::BeginTabItem("Systems"))
+		{
+			ImGui::EndTabItem();
+		}
 
-	// 	if (ImGui::BeginTabItem("Assets"))
-	// 	{
-	// 		if (ImGui::BeginTable("TableTest", 5))
-	// 		{
-	// 			for (auto &a : m_gameApplication->GetAssets().GetAnimations())
-	// 			{
-	// 				ImGui::ImageButton(a.first.c_str(), a.second.GetSprite(), a.second.GetSize());
-	// 				ImGui::TableNextColumn();
-	// 			}
+		if (ImGui::BeginTabItem("Assets"))
+		{
+			if (ImGui::BeginTable("TableTest", 5))
+			{
+				for (auto &a : m_application->GetAssets().GetAnimations())
+				{
+					ImGui::ImageButton(a.first.c_str(), a.second.GetSprite(), a.second.GetSize());
+					ImGui::TableNextColumn();
+				}
 
-	// 			ImGui::EndTable();
-	// 		}
-	// 		ImGui::EndTabItem();
-	// 	}
-	// 	ImGui::EndTabBar();
-	// }
-	// ImGui::End();
+				ImGui::EndTable();
+			}
+			ImGui::EndTabItem();
+		}
+		ImGui::EndTabBar();
+	}
+	ImGui::End();
 
 	// TODO: tab Actions
 	// This one will show and let you do some actions, like pause, toggle texture and etc
