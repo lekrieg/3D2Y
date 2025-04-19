@@ -28,7 +28,7 @@ ifeq ($(origin AR), default)
   AR = ar
 endif
 RESCOMP = windres
-INCLUDES += -I../AbyssCore/src -I../AbyssCore/3rdParty/SFML-3.0.0/include -I../AbyssCore/3rdParty/SoLoud/include
+INCLUDES += -I../AbyssCore/src -I../AbyssCore/3rdParty/SFML-3.0.0/include -I../AbyssCore/3rdParty/SoLoud/include -I../AbyssCore/3rdParty/yaml-cpp/include
 FORCE_INCLUDE +=
 ALL_CPPFLAGS += $(CPPFLAGS) -MD -MP $(DEFINES) $(INCLUDES)
 ALL_RESFLAGS += $(RESFLAGS) $(DEFINES) $(INCLUDES)
@@ -47,7 +47,7 @@ OBJDIR = ../Temp/linuxx86_64Debug/Debug/Game
 DEFINES += -DABYSS_PLATFORM_LINUX -DSFML_STATIC -DABYSS_DEBUG -DWITH_MINIAUDIO
 ALL_CFLAGS += $(CFLAGS) $(ALL_CPPFLAGS) -m64 -O0 -g -fPIC
 ALL_CXXFLAGS += $(CXXFLAGS) $(ALL_CPPFLAGS) -m64 -O0 -g -fPIC
-LIBS += ../Lib/linuxx86_64Debug/libAbyssCore.a -lsfml-graphics-s-d -lsfml-audio-s-d -lsfml-network-s-d -lsfml-window-s-d -lsfml-system-s-d -lfreetype -lX11 -lXi -lXxf86vm -lXrandr -lXcursor -ludev -lGL -lopenal -lFLAC -logg -lvorbis -lpthread
+LIBS += ../Lib/linuxx86_64Debug/libAbyssCore.a -lsfml-graphics-s-d -lsfml-audio-s-d -lsfml-network-s-d -lsfml-window-s-d -lsfml-system-s-d -lyaml-cpp -lfreetype -lX11 -lXi -lXxf86vm -lXrandr -lXcursor -ludev -lGL -lopenal -lFLAC -logg -lvorbis -lpthread
 LDDEPS += ../Lib/linuxx86_64Debug/libAbyssCore.a
 ALL_LDFLAGS += $(LDFLAGS) -L../Lib/linuxx86_64Debug -L/usr/lib64 -m64
 
@@ -58,7 +58,7 @@ OBJDIR = ../Temp/linuxx86_64Release/Release/Game
 DEFINES += -DABYSS_PLATFORM_LINUX -DSFML_STATIC -DABYSS_RELEASE -DWITH_MINIAUDIO
 ALL_CFLAGS += $(CFLAGS) $(ALL_CPPFLAGS) -m64 -O2
 ALL_CXXFLAGS += $(CXXFLAGS) $(ALL_CPPFLAGS) -m64 -O2
-LIBS += ../Lib/linuxx86_64Release/libAbyssCore.a -lsfml-graphics-s -lsfml-audio-s -lsfml-network-s -lsfml-system-s -lsfml-window-s -lfreetype -lX11 -lXi -lXxf86vm -lXrandr -lXcursor -ludev -lGL -lopenal -lFLAC -logg -lvorbis -lpthread
+LIBS += ../Lib/linuxx86_64Release/libAbyssCore.a -lsfml-graphics-s -lsfml-audio-s -lsfml-network-s -lsfml-system-s -lsfml-window-s -lyaml-cpp -lfreetype -lX11 -lXi -lXxf86vm -lXrandr -lXcursor -ludev -lGL -lopenal -lFLAC -logg -lvorbis -lpthread
 LDDEPS += ../Lib/linuxx86_64Release/libAbyssCore.a
 ALL_LDFLAGS += $(LDFLAGS) -L../Lib/linuxx86_64Release -L/usr/lib64 -m64 -s
 

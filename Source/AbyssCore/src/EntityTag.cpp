@@ -1,4 +1,5 @@
 #include "EntityTag.h"
+#include <cstring>
 
 const char* abyss::EntityTagToString(EntityTag tag)
 {
@@ -23,7 +24,46 @@ const char* abyss::EntityTagToString(EntityTag tag)
 	case abyss::EntityTag::Dangerous:
 		return "Dangerous";
 		break;
+	case abyss::EntityTag::Unknown:
 	default:
 		return "Unknown";
 	}
+}
+
+const abyss::EntityTag abyss::StringToEntityTag(const char* tag)
+{
+    if (strcmp(tag, "Default"))
+    {
+        return abyss::EntityTag::Default;
+    }
+    else if (strcmp(tag, "Player"))
+    {
+        return abyss::EntityTag::Player;
+    }
+    else if (strcmp(tag, "Enemy"))
+    {
+        return abyss::EntityTag::Enemy;
+    }
+    else if (strcmp(tag, "SmallEnemy"))
+    {
+        return abyss::EntityTag::SmallEnemy;
+    }
+    else if (strcmp(tag, "Bullet"))
+    {
+        return abyss::EntityTag::Bullet;
+    }
+    else if (strcmp(tag, "SpecialAttack1"))
+    {
+        return abyss::EntityTag::SpecialAttack1;
+    }
+    else if (strcmp(tag, "Tile"))
+    {
+        return abyss::EntityTag::Tile;
+    }
+    else if (strcmp(tag, "Dangerous"))
+    {
+        return abyss::EntityTag::Dangerous;
+    }
+
+    return abyss::EntityTag::Unknown;
 }

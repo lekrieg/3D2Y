@@ -48,3 +48,10 @@ void abyss::EntityManager::RemoveDeadEntities(EntityVec& vec)
 {
 	vec.erase(std::remove_if(vec.begin(), vec.end(), [](std::shared_ptr<Entity>& e) { return !e->IsActive();  }), vec.end());
 }
+
+void abyss::EntityManager::Clear()
+{
+    m_entities.clear();
+    m_entityMap.clear();
+    m_totalEntities = 0;
+}

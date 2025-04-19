@@ -58,6 +58,8 @@ void editor::EditorApplication::Update()
 
 	m_scene->EntityInfoGui();
 	m_scene->AssetManagerGui();
+	m_scene->SceneManagerGui();
+	m_scene->InspectorGui();
 
 	m_scene->Render();
 }

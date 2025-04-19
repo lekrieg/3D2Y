@@ -28,6 +28,7 @@ namespace abyss
 		EntityVec& GetEntities();
 		EntityVec& GetEntities(const EntityTag& tag);
 		const std::map<EntityTag, EntityVec>& GetEntityMap();
+		void Clear();
 
 	private:
 		void RemoveDeadEntities(EntityVec& vec);

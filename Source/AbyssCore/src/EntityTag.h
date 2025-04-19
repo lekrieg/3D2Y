@@ -13,9 +13,11 @@ namespace abyss
 		SpecialAttack1,
 		Tile,
 		Dangerous,
+		Unknown,
 	};
 
 	const char* EntityTagToString(EntityTag tag);
+	const EntityTag StringToEntityTag(const char* tag);
 }
 
 #endif // !ENTITY_TAG_H

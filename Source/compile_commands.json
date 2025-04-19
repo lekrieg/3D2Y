@@ -9,6 +9,7 @@
       "-I../AbyssCore/src",
       "-I../AbyssCore/3rdParty/SFML-3.0.0/include",
       "-I../AbyssCore/3rdParty/SoLoud/include",
+      "-I../AbyssCore/3rdParty/yaml-cpp/include",
       "-m64",
       "-O0",
       "-g",

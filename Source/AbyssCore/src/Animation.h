@@ -20,6 +20,7 @@ namespace abyss
 			int m_animFrame;
 			int m_speed;
 			sf::Vector2f m_size;
+			sf::Vector2f m_halfSize;
 			std::string m_name;
 
 		public:
@@ -43,6 +44,7 @@ namespace abyss
 				m_currentFrame = 0;
 				m_size = sf::Vector2f(static_cast<float>(texture.getSize().x / frameCount),
 									  static_cast<float>(texture.getSize().y));
+				m_halfSize = sf::Vector2f(m_size.x / 2.0f, m_size.y / 2.0f);
 				m_sprite.setOrigin(sf::Vector2f(m_size.x / 2.0f, m_size.y / 2.0f));
 				m_sprite.setTextureRect(sf::IntRect(
 					sf::Vector2<int>(static_cast<int>(std::floor(m_currentFrame)) * static_cast<int>(m_size.x), 0),
@@ -60,6 +62,11 @@ namespace abyss
 			const sf::Vector2f &GetSize() const
 			{
 				return m_size;
+			}
+
+			const sf::Vector2f &GetHalfSize() const
+			{
+				return m_halfSize;
 			}
 
 			const std::string &GetName() const

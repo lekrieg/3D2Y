@@ -26,6 +26,7 @@ project "AbyssCore"
     includedirs {
         "AbyssCore/3rdParty/SFML-3.0.0/include",
         "AbyssCore/3rdParty/SoLoud/include",
+        "AbyssCore/3rdParty/yaml-cpp/include",
     }
 
     libdirs {
@@ -44,6 +45,7 @@ project "AbyssCore"
                 "sfml-network-s-d",
                 "sfml-window-s-d",
                 "sfml-system-s-d",
+                "yaml-cpp",
                 "freetype",
                 "X11",
                 "Xi",
@@ -67,6 +69,7 @@ project "AbyssCore"
             runtime "Debug"
             prebuildcommands {
                 "cp -R -u %{wks.location}/AbyssCore/3rdParty/SFML-3.0.0/lib/Debug/*.a %{wks.location}/Lib/%{cfg.system}%{cfg.architecture}%{cfg.buildcfg}/"
+                --"cp -R -u %{wks.location}/AbyssCore/3rdParty/yaml-cpp/lib/Debug/*.a %{wks.location}/Lib/%{cfg.system}%{cfg.architecture}%{cfg.buildcfg}/"
                 --"cp -R -u %{wks.location}/AbyssCore/3rdParty/SFML-3.0.0/lib/Debug/*.lib %{wks.location}/Lib/%{cfg.system}%{cfg.architecture}%{cfg.buildcfg}/"
             }
 
@@ -83,6 +86,7 @@ project "AbyssCore"
                 "sfml-network-s",
                 "sfml-system-s",
                 "sfml-window-s",
+                "yaml-cpp",
                 "freetype",
                 "X11",
                 "Xi",
@@ -105,6 +109,8 @@ project "AbyssCore"
             runtime "Release"
             prebuildcommands {
                 "cp -R -u %{wks.location}AbyssCore/3rdParty/SFML-3.0.0/lib/Release/*.a %{wks.location}Lib/%{cfg.system}%{cfg.architecture}%{cfg.buildcfg}/"
+                "cp -R -u %{wks.location}AbyssCore/3rdParty/yaml-cpp/lib/Release/*.a %{wks.location}Lib/%{cfg.system}%{cfg.architecture}%{cfg.buildcfg}/"
+
                 --"cp -R -u %{wks.location}AbyssCore/3rdParty/SFML-3.0.0/lib/Release/*.lib %{wks.location}Lib/%{cfg.system}%{cfg.architecture}%{cfg.buildcfg}/"
             }
 
@@ -132,7 +138,8 @@ project "EngineEditor"
     includedirs {
         "AbyssCore/src",
         "AbyssCore/3rdParty/SFML-3.0.0/include",
-        "AbyssCore/3rdParty/SoLoud/include"
+        "AbyssCore/3rdParty/SoLoud/include",
+        "AbyssCore/3rdParty/yaml-cpp/include",
     }
 
     libdirs {
@@ -151,6 +158,7 @@ project "EngineEditor"
                 "sfml-network-s-d",
                 "sfml-window-s-d",
                 "sfml-system-s-d",
+                "yaml-cpp",
                 "freetype",
                 "X11",
                 "Xi",
@@ -183,6 +191,7 @@ project "EngineEditor"
                 "sfml-network-s",
                 "sfml-system-s",
                 "sfml-window-s",
+                "yaml-cpp",
                 "freetype",
                 "X11",
                 "Xi",
@@ -225,7 +234,8 @@ project "Game"
     includedirs {
         "AbyssCore/src",
         "AbyssCore/3rdParty/SFML-3.0.0/include",
-        "AbyssCore/3rdParty/SoLoud/include"
+        "AbyssCore/3rdParty/SoLoud/include",
+        "AbyssCore/3rdParty/yaml-cpp/include",
     }
 
     libdirs {
@@ -244,6 +254,7 @@ project "Game"
                 "sfml-network-s-d",
                 "sfml-window-s-d",
                 "sfml-system-s-d",
+                "yaml-cpp",
                 "freetype",
                 "X11",
                 "Xi",
@@ -276,6 +287,7 @@ project "Game"
                 "sfml-network-s",
                 "sfml-system-s",
                 "sfml-window-s",
+                "yaml-cpp",
                 "freetype",
                 "X11",
                 "Xi",

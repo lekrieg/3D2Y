@@ -46,7 +46,9 @@ void editor::EditorScene::Init(const std::string &levelPath)
 	RegisterAction(sf::Keyboard::Key::D, "TO_RIGHT");
 	RegisterAction(sf::Keyboard::Key::W, "TO_UP");
 	RegisterAction(sf::Keyboard::Key::S, "TO_DOWN");
-	RegisterAction(sf::Keyboard::Key::Num1, "TOGGLE_ASSET_MANAGER");
+	RegisterAction(sf::Keyboard::Key::Num1, "TOGGLE_INSPECTOR");
+	RegisterAction(sf::Keyboard::Key::Num2, "TOGGLE_ASSET_MANAGER");
+	RegisterAction(sf::Keyboard::Key::Num3, "TOGGLE_SCENE_MANAGER");
 
 	m_gridText.setCharacterSize(8);
 	m_gridText.setFont(m_application->GetAssets().GetFont("elementalis"));
@@ -202,9 +204,17 @@ void editor::EditorScene::ExecuteAction(const abyss::Action &action)
 		{
 			OnEnd();
 		}
-		if (action.Name() == "TOGGLE_ASSET_MANAGER")
+		else if (action.Name() == "TOGGLE_ASSET_MANAGER")
 		{
 			m_isAssetManagerOpen = !m_isAssetManagerOpen;
+		}
+		else if (action.Name() == "TOGGLE_INSPECTOR")
+		{
+			m_isInspectorOpen = !m_isInspectorOpen;
+		}
+		else if (action.Name() == "TOGGLE_SCENE_MANAGER")
+		{
+			m_isSceneManagerOpen = !m_isSceneManagerOpen;
 		}
 
 		sf::Vector2f worldPos =
@@ -212,18 +222,27 @@ void editor::EditorScene::ExecuteAction(const abyss::Action &action)
 
 		if (action.Name() == "LEFT_CLICK")
 		{
-			m_leftClick = true;
-			m_oldPos = abyss::math::Vec2<float>(action.Pos().x, action.Pos().y);
-
-			if (!m_dragEntity)
+			if (m_draggingEntity)
 			{
 				m_dragEntity = {};
-				for (auto e : m_entityManager.GetEntities())
+				m_draggingEntity = false;
+			}
+			else
+			{
+				m_leftClick = true;
+				m_oldPos = abyss::math::Vec2<float>(action.Pos().x, action.Pos().y);
+
+				if (!m_dragEntity)
 				{
-					if (m_physics.IsInside(abyss::math::Vec2<float>(worldPos.x, worldPos.y), e))
+					m_dragEntity = {};
+					for (auto e : m_entityManager.GetEntities())
 					{
-						m_dragEntity = e;
-						break;
+						if (m_physics.IsInside(abyss::math::Vec2<float>(worldPos.x, worldPos.y), e))
+						{
+							m_dragEntity = e;
+							m_draggingEntity = true;
+							break;
+						}
 					}
 				}
 			}
@@ -240,10 +259,6 @@ void editor::EditorScene::ExecuteAction(const abyss::Action &action)
 					break;
 				}
 			}
-		}
-		else
-		{
-			m_dragEntity = {};
 		}
 
 		if (action.Name() == "MOUSE_MOVE")
@@ -264,8 +279,8 @@ void editor::EditorScene::ExecuteAction(const abyss::Action &action)
 			{
 				if (m_snapToGrid)
 				{
-					worldPos.x = std::floor(worldPos.x / 64) * 64 + 32;
-					worldPos.y = std::floor(worldPos.y / 64) * 64 + 32;
+					worldPos.x = std::floor(worldPos.x / 16) * 16 + 8;
+					worldPos.y = std::floor(worldPos.y / 16) * 16 + 8;
 				}
 
 				m_dragEntity->GetComponent<abyss::components::Transform>().pos = worldPos;
@@ -288,7 +303,9 @@ void editor::EditorScene::ExecuteAction(const abyss::Action &action)
 			view.zoom(actualZoom);
 			m_application->GetWindow().setView(view);
 
-			sf:;sf::Vector2f newPos = m_application->GetWindow().mapPixelToCoords(sf::Vector2i(action.Pos().x, action.Pos().y));
+		sf:;
+			sf::Vector2f newPos =
+				m_application->GetWindow().mapPixelToCoords(sf::Vector2i(action.Pos().x, action.Pos().y));
 			sf::Vector2f deltaPos = worldPos - newPos;
 			view.move(deltaPos);
 			m_application->GetWindow().setView(view);
@@ -326,15 +343,15 @@ void editor::EditorScene::DrawGrid()
 		DrawLine(sf::Vector2f(leftX, y), sf::Vector2f(rightX, y));
 
 		// draw text inside grid
-		for (float x = nextGridX; x < rightX; x += m_gridSize.x)
-		{
-			int xCell = static_cast<int>(std::floor(x / m_gridSize.x));
-			int yCell = static_cast<int>(std::floor(y / m_gridSize.y));
+		// for (float x = nextGridX; x < rightX; x += m_gridSize.x)
+		// {
+		// 	int xCell = static_cast<int>(std::floor(x / m_gridSize.x));
+		// 	int yCell = static_cast<int>(std::floor(y / m_gridSize.y));
 
-			m_gridText.setString("(" + std::to_string(xCell) + "," + std::to_string(yCell) + ")");
-			m_gridText.setPosition(sf::Vector2<float>(x + 3, y + 2));
-			m_application->GetWindow().draw(m_gridText);
-		}
+		// 	m_gridText.setString("(" + std::to_string(xCell) + "," + std::to_string(yCell) + ")");
+		// 	m_gridText.setPosition(sf::Vector2<float>(x + 3, y + 2));
+		// 	m_application->GetWindow().draw(m_gridText);
+		// }
 	}
 }
 
@@ -368,11 +385,21 @@ void editor::EditorScene::AssetManagerGui()
 
 		if (ImGui::BeginTabItem("Assets"))
 		{
+		    ImGui::Checkbox("Snap to grid", &m_snapToGrid);
 			if (ImGui::BeginTable("TableTest", 5))
 			{
 				for (auto &a : m_application->GetAssets().GetAnimations())
 				{
-					ImGui::ImageButton(a.first.c_str(), a.second.GetSprite(), a.second.GetSize());
+					if (ImGui::ImageButton(a.first.c_str(), a.second.GetSprite(), sf::Vector2f(32, 32)))
+					{
+						m_dragEntity = m_entityManager.AddEntity(abyss::EntityTag::Default);
+						m_dragEntity->AddComponent<abyss::components::Anim>(
+							m_application->GetAssets().GetAnimation(a.first.c_str()), true);
+						m_dragEntity->AddComponent<abyss::components::Transform>(
+							sf::Vector2f(m_application->GetWindow().getView().getCenter().x, m_application->GetWindow().getView().getCenter().y));
+
+						m_draggingEntity = true;
+					}
 					ImGui::TableNextColumn();
 				}
 
@@ -386,4 +413,89 @@ void editor::EditorScene::AssetManagerGui()
 
 	// TODO: tab Actions
 	// This one will show and let you do some actions, like pause, toggle texture and etc
+}
+
+void editor::EditorScene::SceneManagerGui()
+{
+    if (!m_isSceneManagerOpen)
+	{
+		return;
+	}
+
+    ImGui::Begin("Scene Manager", &m_isSceneManagerOpen, ImGuiWindowFlags_NoResize);
+
+    // Scene: Name
+    ImGui::Text("Scene: Default");
+
+    ImGui::Spacing();
+
+    // New
+    if (ImGui::Button("New", ImVec2(100, 25)))
+    {
+
+    }
+
+    ImGui::SameLine();
+
+    // Save
+    if (ImGui::Button("Save", ImVec2(100, 25)))
+    {
+        Serialize("/home/lekrieg/Downloads/test.yaml");
+    }
+
+    ImGui::SameLine();
+
+    // Load
+    if (ImGui::Button("Load", ImVec2(100, 25)))
+    {
+        Deserialize("/home/lekrieg/Downloads/test.yaml");
+    }
+
+    ImGui::Spacing();
+    ImGui::Separator();
+    ImGui::Spacing();
+
+    static ImGuiComboFlags flags = 0;
+    const char* items[] = { "AAAA", "BBBB", "CCCC", "DDDD", "EEEE", "FFFF", "GGGG", "HHHH", "IIII", "JJJJ", "KKKK", "LLLLLLL", "MMMM", "OOOOOOO" };
+    static int item_selected_idx = 0; // Here we store our selection data as an index.
+
+    // Pass in the preview value visible before opening the combo (it could technically be different contents or not pulled from items[])
+    const char* combo_preview_value = items[item_selected_idx];
+    if (ImGui::BeginCombo("Level list", combo_preview_value, flags))
+    {
+        for (int n = 0; n < IM_ARRAYSIZE(items); n++)
+        {
+            const bool is_selected = (item_selected_idx == n);
+            if (ImGui::Selectable(items[n], is_selected))
+                item_selected_idx = n;
+
+            // Set the initial focus when opening the combo (scrolling + keyboard navigation focus)
+            if (is_selected)
+                ImGui::SetItemDefaultFocus();
+        }
+        ImGui::EndCombo();
+    }
+
+    ImGui::Spacing();
+
+    if (ImGui::Button("Reload", ImVec2(100, 25)))
+    {
+
+    }
+
+    // Scene list - reloead
+
+    ImGui::End();
+}
+
+void editor::EditorScene::InspectorGui()
+{
+    if (!m_isInspectorOpen)
+	{
+		return;
+	}
+
+	ImGui::Begin("Inspector", &m_isInspectorOpen);
+
+	ImGui::End();
 }

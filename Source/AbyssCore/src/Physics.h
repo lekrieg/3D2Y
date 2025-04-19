@@ -3,6 +3,7 @@
 
 #include "Entity.h"
 
+#include "components/Anim.h"
 #include "components/BoundingBox.h"
 #include "components/Transform.h"
 
@@ -48,12 +49,12 @@ namespace abyss
 
 			bool IsInside(const abyss::math::Vec2<float> &pos, std::shared_ptr<Entity> e)
 			{
-				auto &bb = e->GetComponent<components::BoundingBox>();
+				auto &anim = e->GetComponent<components::Anim>();
 				auto &t = e->GetComponent<components::Transform>();
 
-
-				if ((pos.x < t.pos.x + bb.halfSize.x && pos.x > t.pos.x - bb.halfSize.x) &&
-					(pos.y > t.pos.y - bb.halfSize.y && pos.y < t.pos.y + bb.halfSize.y))
+				sf::Vector2f halfSize = anim.animation.GetHalfSize();
+				if ((pos.x < t.pos.x + halfSize.x && pos.x > t.pos.x - halfSize.x) &&
+					(pos.y > t.pos.y - halfSize.y && pos.y < t.pos.y + halfSize.y))
 				{
 					return true;
 				}

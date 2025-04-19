@@ -25,8 +25,11 @@ namespace editor
 			bool m_snapToGrid = true;
 			bool m_isEntityInfoOpen = false;
 			bool m_isAssetManagerOpen = false;
+			bool m_isInspectorOpen = false;
+			bool m_isSceneManagerOpen = false;
 			bool m_leftClick = false;
-			sf::Vector2f m_gridSize = { 64, 64 };
+			bool m_draggingEntity = false;
+			sf::Vector2f m_gridSize = { 16, 16 };
 			sf::Text m_gridText;
 			abyss::Physics m_physics;
 
@@ -64,6 +67,8 @@ namespace editor
 
 			void EntityInfoGui();
 			void AssetManagerGui();
+			void SceneManagerGui();
+			void InspectorGui();
 
 		private:
 
