@@ -1,0 +1,5 @@
+Entities:
+  - Player:
+      TransformComponent:
+        pos: [696, 456]
+        scale: [1, 1]

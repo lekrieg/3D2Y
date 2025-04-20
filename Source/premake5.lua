@@ -108,7 +108,7 @@ project "AbyssCore"
             optimize "On"
             runtime "Release"
             prebuildcommands {
-                "cp -R -u %{wks.location}AbyssCore/3rdParty/SFML-3.0.0/lib/Release/*.a %{wks.location}Lib/%{cfg.system}%{cfg.architecture}%{cfg.buildcfg}/"
+                "cp -R -u %{wks.location}AbyssCore/3rdParty/SFML-3.0.0/lib/Release/*.a %{wks.location}Lib/%{cfg.system}%{cfg.architecture}%{cfg.buildcfg}/",
                 "cp -R -u %{wks.location}AbyssCore/3rdParty/yaml-cpp/lib/Release/*.a %{wks.location}Lib/%{cfg.system}%{cfg.architecture}%{cfg.buildcfg}/"
 
                 --"cp -R -u %{wks.location}AbyssCore/3rdParty/SFML-3.0.0/lib/Release/*.lib %{wks.location}Lib/%{cfg.system}%{cfg.architecture}%{cfg.buildcfg}/"

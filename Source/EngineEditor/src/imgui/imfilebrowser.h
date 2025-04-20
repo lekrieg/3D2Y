@@ -744,8 +744,6 @@ inline void ImGui::FileBrowser::Display()
                 else if(!(flags_ & ImGuiFileBrowserFlags_SelectDirectory))
                 {
                     selectedFilenames_ = { rsc.name };
-                    isOk_ = true;
-                    // CloseCurrentPopup();
                 }
             }
             else if(IsKeyPressed(ImGuiKey_GamepadFaceDown) && IsItemHovered())

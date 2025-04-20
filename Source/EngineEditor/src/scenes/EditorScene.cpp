@@ -18,6 +18,7 @@
 #include <algorithm>
 #include <cmath>
 #include <cstdlib>
+#include <filesystem>
 #include <math.h>
 #include <memory>
 #include <string>
@@ -469,19 +470,25 @@ void editor::EditorScene::SceneManagerGui()
 	ImGui::Spacing();
 
 	static ImGuiComboFlags flags = 0;
-	const char *items[] = { "AAAA", "BBBB", "CCCC", "DDDD", "EEEE",	   "FFFF", "GGGG",
-							"HHHH", "IIII", "JJJJ", "KKKK", "LLLLLLL", "MMMM", "OOOOOOO" };
-	static int item_selected_idx = 0; // Here we store our selection data as an index.
+	std::vector<std::filesystem::path> fileList;
 
-	// Pass in the preview value visible before opening the combo (it could technically be different contents or not
-	// pulled from items[])
-	const char *combo_preview_value = items[item_selected_idx];
+	for (auto const& dirEntry : std::filesystem::directory_iterator(std::filesystem::canonical(m_levelsPathFolder)))
+	{
+	    if (dirEntry.path().string().find(".yaml") != std::string::npos)
+		{
+            fileList.push_back(dirEntry.path());
+		}
+	}
+
+	static int item_selected_idx = 0;
+
+	const char *combo_preview_value = fileList[item_selected_idx].filename().c_str();
 	if (ImGui::BeginCombo("Level list", combo_preview_value, flags))
 	{
-		for (int n = 0; n < IM_ARRAYSIZE(items); n++)
+		for (int n = 0; n < fileList.size(); n++)
 		{
 			const bool is_selected = (item_selected_idx == n);
-			if (ImGui::Selectable(items[n], is_selected))
+			if (ImGui::Selectable(fileList[n].filename().c_str(), is_selected))
 				item_selected_idx = n;
 
 			// Set the initial focus when opening the combo (scrolling + keyboard navigation focus)
@@ -495,10 +502,13 @@ void editor::EditorScene::SceneManagerGui()
 
 	if (ImGui::Button("Reload", ImVec2(100, 25)))
 	{
+	    // check if this is being called!
+	    Deserialize(fileList[item_selected_idx]);
 	}
 
-	static char str0[128] = "Hello, world!";
-	ImGui::InputText("input text", str0, IM_ARRAYSIZE(str0));
+	ImGui::SameLine();
+
+	ImGui::Text("%s", fileList[item_selected_idx].filename().c_str());
 
 	ImGui::End();
 
@@ -511,7 +521,7 @@ void editor::EditorScene::SceneManagerGui()
 		{
 			case FileDialogState::Save:
 				m_levelPath = path.empty() ? "DefaultName.yaml" : path;
-				if (!m_levelPath.find(".yaml"))
+				if (m_levelPath.find(".yaml") == std::string::npos)
 				{
 					m_levelPath.append(".yaml");
 				}

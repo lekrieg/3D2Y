@@ -3,12 +3,10 @@
 
 #include "Action.h"
 #include "EntityManager.h"
-#include "Logger.h"
-#include "serialization/Serializer.h"
 
 #include "Application.h"
 #include "SFML/Window/Keyboard.hpp"
-#include <fstream>
+
 
 namespace abyss
 {
@@ -71,38 +69,9 @@ namespace abyss
 
 			void DrawLine(sf::Vector2f p1, sf::Vector2f p2);
 
-			inline void Serialize(const std::string &path)
-			{
-				YAML::Emitter emitter;
-				emitter << YAML::BeginMap;
-				abyss::serializer::Serializer(&m_entityManager).serialize(emitter);
-				emitter << YAML::EndMap;
+			void Serialize(const std::string &path);
 
-				std::ofstream filepath(path);
-				filepath << emitter.c_str();
-			}
-
-			inline bool Deserialize(const std::string &path)
-			{
-				YAML::Node root;
-				try
-				{
-					root = YAML::LoadFile(path);
-				}
-				catch (YAML::ParserException e)
-				{
-					ABYSS_ERROR("Failed to deserialize scene!");
-					return false;
-				}
-
-				if (auto entities = root["entities"])
-				{
-					abyss::serializer::Serializer(&m_entityManager).Deserialize(entities);
-					return true;
-				}
-
-				return false;
-			}
+			bool Deserialize(const std::string &path);
 	};
 }
 

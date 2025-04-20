@@ -37,6 +37,7 @@ namespace editor
 			abyss::Physics m_physics;
 			ImGui::FileBrowser m_fileDialog;
 			FileDialogState m_dialogState;
+			const std::filesystem::path m_levelsPathFolder;
 
 			abyss::math::Vec2<float> m_oldPos;
 			abyss::math::Vec2<int> m_room = { 0, 0 };
@@ -61,7 +62,8 @@ namespace editor
 			EditorScene(abyss::Application *editorApplication, const std::string &levelPath, const sf::Font commonFont) :
 				Scene(editorApplication),
 				m_levelPath(levelPath),
-				m_gridText(commonFont)
+				m_gridText(commonFont),
+				m_levelsPathFolder("../../Game/linuxx86_64Debug/scenes")
 			{
 				Init(m_levelPath);
 			}

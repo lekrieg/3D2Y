@@ -65,6 +65,7 @@ ALL_LDFLAGS += $(LDFLAGS) -L../Lib/linuxx86_64Release -L/usr/lib64 -m64 -s
 define PREBUILDCMDS
 	@echo Running prebuild commands
 	cp -R -u ..AbyssCore/3rdParty/SFML-3.0.0/lib/Release/*.a ..Lib/linuxx86_64Release/
+	cp -R -u ..AbyssCore/3rdParty/yaml-cpp/lib/Release/*.a ..Lib/linuxx86_64Release/
 endef
 
 endif
@@ -84,6 +85,7 @@ GENERATED += $(OBJDIR)/Assets.o
 GENERATED += $(OBJDIR)/EntityManager.o
 GENERATED += $(OBJDIR)/EntityTag.o
 GENERATED += $(OBJDIR)/Scene.o
+GENERATED += $(OBJDIR)/Serializer.o
 GENERATED += $(OBJDIR)/darray.o
 GENERATED += $(OBJDIR)/dr_impl.o
 GENERATED += $(OBJDIR)/klatt.o
@@ -138,6 +140,7 @@ OBJECTS += $(OBJDIR)/Assets.o
 OBJECTS += $(OBJDIR)/EntityManager.o
 OBJECTS += $(OBJDIR)/EntityTag.o
 OBJECTS += $(OBJDIR)/Scene.o
+OBJECTS += $(OBJDIR)/Serializer.o
 OBJECTS += $(OBJDIR)/darray.o
 OBJECTS += $(OBJDIR)/dr_impl.o
 OBJECTS += $(OBJDIR)/klatt.o
@@ -410,6 +413,9 @@ $(OBJDIR)/EntityTag.o: src/EntityTag.cpp
 	@echo "$(notdir $<)"
 	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
 $(OBJDIR)/Scene.o: src/Scene.cpp
+	@echo "$(notdir $<)"
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/Serializer.o: src/serialization/Serializer.cpp
 	@echo "$(notdir $<)"
 	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
 
