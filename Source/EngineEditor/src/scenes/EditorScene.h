@@ -7,6 +7,9 @@
 #include "Physics.h"
 #include "math/Vectors.h"
 
+#include "../imgui/imfilebrowser.h"
+#include "../FileDialogState.h"
+
 #include <string>
 
 namespace editor
@@ -32,6 +35,8 @@ namespace editor
 			sf::Vector2f m_gridSize = { 16, 16 };
 			sf::Text m_gridText;
 			abyss::Physics m_physics;
+			ImGui::FileBrowser m_fileDialog;
+			FileDialogState m_dialogState;
 
 			abyss::math::Vec2<float> m_oldPos;
 			abyss::math::Vec2<int> m_room = { 0, 0 };

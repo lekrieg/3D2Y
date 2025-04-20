@@ -37,8 +37,6 @@ void editor::EditorApplication::Run()
 {
 	while (IsRunning())
 	{
-		ImGui::SFML::Update(m_window, FIXED_FRAME_TIME);
-
 		Update();
 	}
 }
@@ -55,6 +53,8 @@ void editor::EditorApplication::Update()
 		UserInputSystem();
 		m_scene->Update(DeltaTime());
 	}
+
+	ImGui::SFML::Update(m_window, clockTime);
 
 	m_scene->EntityInfoGui();
 	m_scene->AssetManagerGui();
@@ -160,6 +160,7 @@ void editor::EditorApplication::UserInputSystem()
 				abyss::Action(m_scene->GetActionMap().at(keyReleased->code), abyss::ActionState::End));
 		}
 
+		// TODO: try to block user input when focus on imgui
 		if (!ImGui::GetIO().WantCaptureMouse)
 		{
 			sf::Vector2i foo = sf::Mouse::getPosition(m_window);

@@ -53,6 +53,9 @@ void editor::EditorScene::Init(const std::string &levelPath)
 	m_gridText.setCharacterSize(8);
 	m_gridText.setFont(m_application->GetAssets().GetFont("elementalis"));
 
+	m_fileDialog.SetTitle("File dialog");
+	m_fileDialog.SetTypeFilters({ ".yaml" });
+
 	LoadLevel(levelPath);
 }
 
@@ -61,6 +64,9 @@ void editor::EditorScene::LoadLevel(const std::string &fileName)
 	ABYSS_INFO("Info...");
 	ABYSS_WARNING("Warning...");
 	ABYSS_ERROR("Error...");
+
+	// TODO: terminar de serializar e deserializar os componentes
+	// dessa forma sempre que der load, os itens sao redesanhados na cena corretamente
 
 	// TODO: Check how to better reset the manager
 	m_entityManager = abyss::EntityManager();
@@ -385,7 +391,7 @@ void editor::EditorScene::AssetManagerGui()
 
 		if (ImGui::BeginTabItem("Assets"))
 		{
-		    ImGui::Checkbox("Snap to grid", &m_snapToGrid);
+			ImGui::Checkbox("Snap to grid", &m_snapToGrid);
 			if (ImGui::BeginTable("TableTest", 5))
 			{
 				for (auto &a : m_application->GetAssets().GetAnimations())
@@ -396,7 +402,8 @@ void editor::EditorScene::AssetManagerGui()
 						m_dragEntity->AddComponent<abyss::components::Anim>(
 							m_application->GetAssets().GetAnimation(a.first.c_str()), true);
 						m_dragEntity->AddComponent<abyss::components::Transform>(
-							sf::Vector2f(m_application->GetWindow().getView().getCenter().x, m_application->GetWindow().getView().getCenter().y));
+							sf::Vector2f(m_application->GetWindow().getView().getCenter().x,
+										 m_application->GetWindow().getView().getCenter().y));
 
 						m_draggingEntity = true;
 					}
@@ -417,80 +424,111 @@ void editor::EditorScene::AssetManagerGui()
 
 void editor::EditorScene::SceneManagerGui()
 {
-    if (!m_isSceneManagerOpen)
+	if (!m_isSceneManagerOpen)
 	{
 		return;
 	}
 
-    ImGui::Begin("Scene Manager", &m_isSceneManagerOpen, ImGuiWindowFlags_NoResize);
+	ImGui::Begin("Scene Manager", &m_isSceneManagerOpen, ImGuiWindowFlags_NoResize);
 
-    // Scene: Name
-    ImGui::Text("Scene: Default");
+	// Scene: Name
+	ImGui::Text("Scene: Default");
 
-    ImGui::Spacing();
+	ImGui::Spacing();
 
-    // New
-    if (ImGui::Button("New", ImVec2(100, 25)))
-    {
+	// New
+	if (ImGui::Button("New", ImVec2(100, 25)))
+	{
+		m_entityManager.Clear();
+	}
 
-    }
+	ImGui::SameLine();
 
-    ImGui::SameLine();
+	// Save
+	if (ImGui::Button("Save", ImVec2(100, 25)))
+	{
+		m_fileDialog.SetFlagOptions(0 | ImGuiFileBrowserFlags_CloseOnEsc | ImGuiFileBrowserFlags_EnterNewFilename |
+									ImGuiFileBrowserFlags_CreateNewDir);
+		m_dialogState = FileDialogState::Save;
+		m_fileDialog.Open();
+	}
 
-    // Save
-    if (ImGui::Button("Save", ImVec2(100, 25)))
-    {
-        Serialize("/home/lekrieg/Downloads/test.yaml");
-    }
+	ImGui::SameLine();
 
-    ImGui::SameLine();
+	// Load
+	if (ImGui::Button("Load", ImVec2(100, 25)))
+	{
+		// TODO: Check about the double click problem
+		m_fileDialog.SetFlagOptions(0 | ImGuiFileBrowserFlags_CloseOnEsc);
+		m_dialogState = FileDialogState::Load;
+		m_fileDialog.Open();
+	}
 
-    // Load
-    if (ImGui::Button("Load", ImVec2(100, 25)))
-    {
-        Deserialize("/home/lekrieg/Downloads/test.yaml");
-    }
+	ImGui::Spacing();
+	ImGui::Separator();
+	ImGui::Spacing();
 
-    ImGui::Spacing();
-    ImGui::Separator();
-    ImGui::Spacing();
+	static ImGuiComboFlags flags = 0;
+	const char *items[] = { "AAAA", "BBBB", "CCCC", "DDDD", "EEEE",	   "FFFF", "GGGG",
+							"HHHH", "IIII", "JJJJ", "KKKK", "LLLLLLL", "MMMM", "OOOOOOO" };
+	static int item_selected_idx = 0; // Here we store our selection data as an index.
 
-    static ImGuiComboFlags flags = 0;
-    const char* items[] = { "AAAA", "BBBB", "CCCC", "DDDD", "EEEE", "FFFF", "GGGG", "HHHH", "IIII", "JJJJ", "KKKK", "LLLLLLL", "MMMM", "OOOOOOO" };
-    static int item_selected_idx = 0; // Here we store our selection data as an index.
+	// Pass in the preview value visible before opening the combo (it could technically be different contents or not
+	// pulled from items[])
+	const char *combo_preview_value = items[item_selected_idx];
+	if (ImGui::BeginCombo("Level list", combo_preview_value, flags))
+	{
+		for (int n = 0; n < IM_ARRAYSIZE(items); n++)
+		{
+			const bool is_selected = (item_selected_idx == n);
+			if (ImGui::Selectable(items[n], is_selected))
+				item_selected_idx = n;
 
-    // Pass in the preview value visible before opening the combo (it could technically be different contents or not pulled from items[])
-    const char* combo_preview_value = items[item_selected_idx];
-    if (ImGui::BeginCombo("Level list", combo_preview_value, flags))
-    {
-        for (int n = 0; n < IM_ARRAYSIZE(items); n++)
-        {
-            const bool is_selected = (item_selected_idx == n);
-            if (ImGui::Selectable(items[n], is_selected))
-                item_selected_idx = n;
+			// Set the initial focus when opening the combo (scrolling + keyboard navigation focus)
+			if (is_selected)
+				ImGui::SetItemDefaultFocus();
+		}
+		ImGui::EndCombo();
+	}
 
-            // Set the initial focus when opening the combo (scrolling + keyboard navigation focus)
-            if (is_selected)
-                ImGui::SetItemDefaultFocus();
-        }
-        ImGui::EndCombo();
-    }
+	ImGui::Spacing();
 
-    ImGui::Spacing();
+	if (ImGui::Button("Reload", ImVec2(100, 25)))
+	{
+	}
 
-    if (ImGui::Button("Reload", ImVec2(100, 25)))
-    {
+	static char str0[128] = "Hello, world!";
+	ImGui::InputText("input text", str0, IM_ARRAYSIZE(str0));
 
-    }
+	ImGui::End();
 
-    // Scene list - reloead
+	m_fileDialog.Display();
 
-    ImGui::End();
+	if (m_fileDialog.HasSelected())
+	{
+		std::string path = m_fileDialog.GetSelected().string();
+		switch (m_dialogState)
+		{
+			case FileDialogState::Save:
+				m_levelPath = path.empty() ? "DefaultName.yaml" : path;
+				if (!m_levelPath.find(".yaml"))
+				{
+					m_levelPath.append(".yaml");
+				}
+				Serialize(m_levelPath);
+				break;
+			case FileDialogState::Load:
+				Deserialize(path);
+				break;
+		}
+
+		m_fileDialog.ClearSelected();
+	}
 }
 
 void editor::EditorScene::InspectorGui()
 {
-    if (!m_isInspectorOpen)
+	if (!m_isInspectorOpen)
 	{
 		return;
 	}
