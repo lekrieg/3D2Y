@@ -38,6 +38,7 @@ namespace editor
 			ImGui::FileBrowser m_fileDialog;
 			FileDialogState m_dialogState;
 			const std::filesystem::path m_levelsPathFolder;
+			std::string m_sceneName = "Default";
 
 			abyss::math::Vec2<float> m_oldPos;
 			abyss::math::Vec2<int> m_room = { 0, 0 };

@@ -6,20 +6,21 @@
       "-DSFML_STATIC",
       "-DABYSS_DEBUG",
       "-DWITH_MINIAUDIO",
-      "-I3rdParty/SFML-3.0.0/include",
-      "-I3rdParty/SoLoud/include",
-      "-I3rdParty/yaml-cpp/include",
+      "-I../AbyssCore/src",
+      "-I../AbyssCore/3rdParty/SFML-3.0.0/include",
+      "-I../AbyssCore/3rdParty/SoLoud/include",
+      "-I../AbyssCore/3rdParty/yaml-cpp/include",
       "-m64",
       "-O0",
       "-g",
       "-fPIC",
       "-c",
       "-o",
-      "../Temp/linuxx86_64Debug/Debug/AbyssCore/Serializer.o",
-      "src/serialization/Serializer.cpp"
+      "../Temp/linuxx86_64Debug/Debug/EngineEditor/EditorScene.o",
+      "src/scenes/EditorScene.cpp"
     ],
-    "directory": "/home/lekrieg/Documents/Projects/3D2Y/Source/AbyssCore",
-    "file": "/home/lekrieg/Documents/Projects/3D2Y/Source/AbyssCore/src/serialization/Serializer.cpp",
-    "output": "/home/lekrieg/Documents/Projects/3D2Y/Source/Temp/linuxx86_64Debug/Debug/AbyssCore/Serializer.o"
+    "directory": "/home/lekrieg/Documents/Projects/3D2Y/Source/EngineEditor",
+    "file": "/home/lekrieg/Documents/Projects/3D2Y/Source/EngineEditor/src/scenes/EditorScene.cpp",
+    "output": "/home/lekrieg/Documents/Projects/3D2Y/Source/Temp/linuxx86_64Debug/Debug/EngineEditor/EditorScene.o"
   }
 ]

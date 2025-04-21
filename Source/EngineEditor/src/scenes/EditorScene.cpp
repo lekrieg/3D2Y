@@ -433,13 +433,14 @@ void editor::EditorScene::SceneManagerGui()
 	ImGui::Begin("Scene Manager", &m_isSceneManagerOpen, ImGuiWindowFlags_NoResize);
 
 	// Scene: Name
-	ImGui::Text("Scene: Default");
+	ImGui::Text("Scene: %s", m_sceneName.c_str());
 
 	ImGui::Spacing();
 
 	// New
 	if (ImGui::Button("New", ImVec2(100, 25)))
 	{
+	    m_sceneName = "Default";
 		m_entityManager.Clear();
 	}
 
@@ -459,7 +460,6 @@ void editor::EditorScene::SceneManagerGui()
 	// Load
 	if (ImGui::Button("Load", ImVec2(100, 25)))
 	{
-		// TODO: Check about the double click problem
 		m_fileDialog.SetFlagOptions(0 | ImGuiFileBrowserFlags_CloseOnEsc);
 		m_dialogState = FileDialogState::Load;
 		m_fileDialog.Open();
@@ -502,7 +502,7 @@ void editor::EditorScene::SceneManagerGui()
 
 	if (ImGui::Button("Reload", ImVec2(100, 25)))
 	{
-	    // check if this is being called!
+		m_sceneName = fileList[item_selected_idx].filename();
 	    Deserialize(fileList[item_selected_idx]);
 	}
 
@@ -517,6 +517,8 @@ void editor::EditorScene::SceneManagerGui()
 	if (m_fileDialog.HasSelected())
 	{
 		std::string path = m_fileDialog.GetSelected().string();
+		m_sceneName = m_fileDialog.GetSelected().filename();
+
 		switch (m_dialogState)
 		{
 			case FileDialogState::Save:
