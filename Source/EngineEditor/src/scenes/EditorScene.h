@@ -30,6 +30,7 @@ namespace editor
 			bool m_isAssetManagerOpen = false;
 			bool m_isInspectorOpen = false;
 			bool m_isSceneManagerOpen = false;
+			bool m_allowInput = true;
 			bool m_leftClick = false;
 			bool m_draggingEntity = false;
 			sf::Vector2f m_gridSize = { 16, 16 };

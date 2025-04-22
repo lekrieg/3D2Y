@@ -185,6 +185,11 @@ void editor::EditorScene::OnEnd()
 
 void editor::EditorScene::ExecuteAction(const abyss::Action &action)
 {
+	if (!m_allowInput)
+	{
+		return;
+	}
+
 	if (action.State() == abyss::ActionState::Start)
 	{
 		if (action.Name() == "TOGGLE_TEXTURE")
@@ -440,7 +445,7 @@ void editor::EditorScene::SceneManagerGui()
 	// New
 	if (ImGui::Button("New", ImVec2(100, 25)))
 	{
-	    m_sceneName = "Default";
+		m_sceneName = "Default";
 		m_entityManager.Clear();
 	}
 
@@ -449,6 +454,7 @@ void editor::EditorScene::SceneManagerGui()
 	// Save
 	if (ImGui::Button("Save", ImVec2(100, 25)))
 	{
+		m_allowInput = false;
 		m_fileDialog.SetFlagOptions(0 | ImGuiFileBrowserFlags_CloseOnEsc | ImGuiFileBrowserFlags_EnterNewFilename |
 									ImGuiFileBrowserFlags_CreateNewDir);
 		m_dialogState = FileDialogState::Save;
@@ -460,6 +466,7 @@ void editor::EditorScene::SceneManagerGui()
 	// Load
 	if (ImGui::Button("Load", ImVec2(100, 25)))
 	{
+		m_allowInput = false;
 		m_fileDialog.SetFlagOptions(0 | ImGuiFileBrowserFlags_CloseOnEsc);
 		m_dialogState = FileDialogState::Load;
 		m_fileDialog.Open();
@@ -472,11 +479,11 @@ void editor::EditorScene::SceneManagerGui()
 	static ImGuiComboFlags flags = 0;
 	std::vector<std::filesystem::path> fileList;
 
-	for (auto const& dirEntry : std::filesystem::directory_iterator(std::filesystem::canonical(m_levelsPathFolder)))
+	for (auto const &dirEntry : std::filesystem::directory_iterator(std::filesystem::canonical(m_levelsPathFolder)))
 	{
-	    if (dirEntry.path().string().find(".yaml") != std::string::npos)
+		if (dirEntry.path().string().find(".yaml") != std::string::npos)
 		{
-            fileList.push_back(dirEntry.path());
+			fileList.push_back(dirEntry.path());
 		}
 	}
 
@@ -503,7 +510,7 @@ void editor::EditorScene::SceneManagerGui()
 	if (ImGui::Button("Reload", ImVec2(100, 25)))
 	{
 		m_sceneName = fileList[item_selected_idx].filename();
-	    Deserialize(fileList[item_selected_idx]);
+		Deserialize(fileList[item_selected_idx]);
 	}
 
 	ImGui::SameLine();
@@ -516,6 +523,7 @@ void editor::EditorScene::SceneManagerGui()
 
 	if (m_fileDialog.HasSelected())
 	{
+		m_allowInput = true;
 		std::string path = m_fileDialog.GetSelected().string();
 		m_sceneName = m_fileDialog.GetSelected().filename();
 
@@ -535,6 +543,10 @@ void editor::EditorScene::SceneManagerGui()
 		}
 
 		m_fileDialog.ClearSelected();
+	}
+	else if (!m_allowInput && !m_fileDialog.IsOpened())
+	{
+		m_allowInput = true;
 	}
 }
 
