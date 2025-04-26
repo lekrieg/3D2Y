@@ -1,8 +1,9 @@
 #include "Serializer.h"
 
+#include "../Assets.h"
 #include "../EntityTag.h"
-#include "../Logger.h"
 #include "SFML/System/Vector2.hpp"
+#include "yaml-cpp/node/node.h"
 
 void abyss::serializer::Serializer::Serialize(YAML::Emitter &em)
 {
@@ -17,6 +18,7 @@ void abyss::serializer::Serializer::Serialize(YAML::Emitter &em)
 		{
 			em << YAML::BeginMap;
 
+			SerializeAnim(em, e);
 			SerializeTransform(em, e);
 
 			em << YAML::EndMap;
@@ -34,12 +36,14 @@ void abyss::serializer::Serializer::Deserialize(YAML::Node nodes)
 
 	for (auto node : nodes)
 	{
-		ABYSS_INFO("Entrei no primeiro loop!");
 		for (auto innerNode : node)
 		{
-			ABYSS_INFO("Entrei no segundo loop!");
-			auto e = m_entityManager->AddEntity(abyss::StringToEntityTag(innerNode.first.as<std::string>().c_str()));
-			DeserializeTransform(innerNode, e);
+			abyss::EntityTag tag = abyss::StringToEntityTag(innerNode.first.as<std::string>().c_str());
+			auto e = m_entityManager->AddEntity(tag);
+
+			YAML::Node components = innerNode.second;
+			DeserializeAnim(components, e);
+			DeserializeTransform(components, e);
 		}
 	}
 }
@@ -53,24 +57,70 @@ void abyss::serializer::Serializer::SerializeTransform(YAML::Emitter &em, std::s
 		em << YAML::BeginMap;
 		em << YAML::Key << "pos" << YAML::Value << t.pos;
 		em << YAML::Key << "scale" << YAML::Value << t.scale;
+		em << YAML::Key << "angle" << YAML::Value << t.angle;
 		em << YAML::EndMap;
 	}
 }
 
 void abyss::serializer::Serializer::DeserializeTransform(YAML::Node node, std::shared_ptr<abyss::Entity> &e)
 {
-	for (auto n : node)
+	if (auto data = node["TransformComponent"])
 	{
-		ABYSS_INFO("Deserializando!");
-		if (auto data = n["TransformComponent"])
-		{
-			ABYSS_INFO("No comeco do if!");
-			auto &t = e->AddComponent<abyss::components::Transform>();
-			ABYSS_INFO("Deserializei o transform!");
-			t.pos = data["pos"].as<sf::Vector2f>();
-			ABYSS_INFO("Peguei a pos!");
-			t.scale = data["scale"].as<sf::Vector2f>();
-			ABYSS_INFO("Peguei a scale!");
-		}
+		auto &t = e->AddComponent<abyss::components::Transform>();
+		t.pos = data["pos"].as<sf::Vector2f>();
+		t.scale = data["scale"].as<sf::Vector2f>();
+		t.angle = data["angle"].as<float>();
+	}
+}
+
+void abyss::serializer::Serializer::SerializeAnim(YAML::Emitter &em, std::shared_ptr<abyss::Entity> e)
+{
+	if (e->HasComponent<abyss::components::Anim>())
+	{
+		auto &t = e->GetComponent<abyss::components::Anim>();
+		em << YAML::Key << "AnimComponent";
+		em << YAML::BeginMap;
+		em << YAML::Key << "repeat" << YAML::Value << t.repeat;
+		em << YAML::Key << "name" << YAML::Value << t.animation.GetName();
+		em << YAML::EndMap;
+	}
+}
+
+void abyss::serializer::Serializer::DeserializeAnim(YAML::Node node, std::shared_ptr<abyss::Entity> &e)
+{
+	if (auto data = node["AnimComponent"])
+	{
+		e->AddComponent<abyss::components::Anim>(m_assets.GetAnimation(data["name"].as<std::string>()),
+												 data["repeat"].as<bool>());
+	}
+}
+
+void abyss::serializer::Serializer::SerializeBoundingBox(YAML::Emitter &em, std::shared_ptr<abyss::Entity> e)
+{
+	if (e->HasComponent<abyss::components::BoundingBox>())
+	{
+		auto &t = e->GetComponent<abyss::components::BoundingBox>();
+		em << YAML::Key << "BoundingBoxComponent";
+		em << YAML::BeginMap;
+		em << YAML::Key << "size" << YAML::Value << t.size;
+		em << YAML::Key << "halfSize" << YAML::Value << t.halfSize;
+		em << YAML::Key << "blockMove" << YAML::Value << t.blockMove;
+		em << YAML::Key << "blockVision" << YAML::Value << t.blockVision;
+		em << YAML::Key << "isTrigger" << YAML::Value << t.isTrigger;
+
+		em << YAML::EndMap;
+	}
+}
+
+void abyss::serializer::Serializer::DeserializeBoundingBox(YAML::Node node, std::shared_ptr<abyss::Entity> &e)
+{
+	if (auto data = node["BoundingBoxComponent"])
+	{
+		auto &t = e->AddComponent<abyss::components::BoundingBox>();
+		t.size = data["size"].as<sf::Vector2f>();
+		t.halfSize = data["halfSize"].as<sf::Vector2f>();
+		t.blockMove = data["blockMove"].as<bool>();
+		t.blockVision = data["blockVision"].as<bool>();
+		t.isTrigger = data["isTrigger"].as<bool>();
 	}
 }

@@ -73,6 +73,16 @@ namespace abyss
 			{
 				return m_name;
 			}
+
+			const int GetFrameCount() const
+			{
+			    return m_frameCount;
+			}
+
+			const int GetSpeed() const
+			{
+			    return m_speed;
+			}
 	};
 }
 

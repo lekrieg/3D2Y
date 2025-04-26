@@ -1,5 +1,5 @@
 #include "EntityTag.h"
-#include <cstring>
+#include <string>
 
 const char* abyss::EntityTagToString(EntityTag tag)
 {
@@ -32,35 +32,35 @@ const char* abyss::EntityTagToString(EntityTag tag)
 
 const abyss::EntityTag abyss::StringToEntityTag(const char* tag)
 {
-    if (strcmp(tag, "Default"))
+    if (std::string(tag) == "Default")
     {
         return abyss::EntityTag::Default;
     }
-    else if (strcmp(tag, "Player"))
+    else if (std::string(tag) == "Player")
     {
         return abyss::EntityTag::Player;
     }
-    else if (strcmp(tag, "Enemy"))
+    else if (std::string(tag) == "Enemy")
     {
         return abyss::EntityTag::Enemy;
     }
-    else if (strcmp(tag, "SmallEnemy"))
+    else if (std::string(tag) == "SmallEnemy")
     {
         return abyss::EntityTag::SmallEnemy;
     }
-    else if (strcmp(tag, "Bullet"))
+    else if (std::string(tag) == "Bullet")
     {
         return abyss::EntityTag::Bullet;
     }
-    else if (strcmp(tag, "SpecialAttack1"))
+    else if (std::string(tag) == "SpecialAttack1")
     {
         return abyss::EntityTag::SpecialAttack1;
     }
-    else if (strcmp(tag, "Tile"))
+    else if (std::string(tag) == "Tile")
     {
         return abyss::EntityTag::Tile;
     }
-    else if (strcmp(tag, "Dangerous"))
+    else if (std::string(tag) == "Dangerous")
     {
         return abyss::EntityTag::Dangerous;
     }
