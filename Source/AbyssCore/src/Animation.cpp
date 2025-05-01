@@ -2,16 +2,16 @@
 #include "SFML/System/Vector2.hpp"
 
 // animation loops when it reaches the end
-void abyss::Animation::Update()
+void abyss::Animation::Update() // TODO: maybe I can add something like delta time here too
 {
 	m_currentFrame++;
 
-	if (m_speed < 1)
+	if (speed < 1)
 	{
 		return;
 	}
 
-	m_animFrame = (m_currentFrame / m_speed) % m_frameCount;
+	m_animFrame = (m_currentFrame / speed) % m_frameCount;
 	m_sprite.setTextureRect(sf::IntRect(sf::Vector2<int>(m_animFrame * static_cast<int>(m_size.x), 0),
 										sf::Vector2<int>(static_cast<int>(m_size.x), static_cast<int>(m_size.y))));
 

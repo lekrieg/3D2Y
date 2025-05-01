@@ -26,6 +26,8 @@ namespace abyss
 		friend class EntityManager;
 
 		// TODO: Refactor this, there's no reason to keep wasting memory like this
+		// maybe I could do a Component manager, that stores all related components in a vector
+		// and this vector can be referenced using the entity id
 		std::tuple<
 			abyss::components::Transform,
 			abyss::components::BoundingBox,

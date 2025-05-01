@@ -5,6 +5,7 @@
 #include "Entity.h"
 #include "EntityTag.h"
 #include "components/Anim.h"
+#include "components/BoundingBox.h"
 #include "components/Transform.h"
 
 #include "Logger.h"
@@ -47,6 +48,7 @@ void editor::EditorScene::Init(const std::string &levelPath)
 	RegisterAction(sf::Keyboard::Key::D, "TO_RIGHT");
 	RegisterAction(sf::Keyboard::Key::W, "TO_UP");
 	RegisterAction(sf::Keyboard::Key::S, "TO_DOWN");
+	RegisterAction(sf::Keyboard::Key::LControl, "CONTROL");
 	RegisterAction(sf::Keyboard::Key::Num1, "TOGGLE_INSPECTOR");
 	RegisterAction(sf::Keyboard::Key::Num2, "TOGGLE_ASSET_MANAGER");
 	RegisterAction(sf::Keyboard::Key::Num3, "TOGGLE_SCENE_MANAGER");
@@ -118,9 +120,9 @@ void editor::EditorScene::Render()
 			{
 				// TODO: check if I can get the sprite and dont waste the calls to GetSprite
 				auto &animation = e->GetComponent<abyss::components::Anim>();
-				animation.animation.GetSprite().setRotation(sf::degrees(transform.angle));
-				animation.animation.GetSprite().setPosition(sf::Vector2<float>(transform.pos.x, transform.pos.y));
-				animation.animation.GetSprite().setScale(sf::Vector2<float>(transform.scale.x, transform.scale.y));
+				animation.animation.SetRotation(transform.angle);
+				animation.animation.SetPosition(sf::Vector2<float>(transform.pos.x, transform.pos.y));
+				animation.animation.SetScale(sf::Vector2<float>(transform.scale.x, transform.scale.y));
 
 				m_application->GetWindow().draw(animation.animation.GetSprite());
 			}
@@ -216,17 +218,22 @@ void editor::EditorScene::ExecuteAction(const abyss::Action &action)
 		{
 			OnEnd();
 		}
-		else if (action.Name() == "TOGGLE_ASSET_MANAGER")
+		else if (action.Name() == "CONTROL")
 		{
-			m_isAssetManagerOpen = !m_isAssetManagerOpen;
+			m_leftControl = true;
 		}
-		else if (action.Name() == "TOGGLE_INSPECTOR")
+
+		if (m_leftControl && action.Name() == "TOGGLE_INSPECTOR")
 		{
 			m_isInspectorOpen = !m_isInspectorOpen;
 		}
-		else if (action.Name() == "TOGGLE_SCENE_MANAGER")
+		else if (m_leftControl && action.Name() == "TOGGLE_SCENE_MANAGER")
 		{
 			m_isSceneManagerOpen = !m_isSceneManagerOpen;
+		}
+		else if (m_leftControl && action.Name() == "TOGGLE_ASSET_MANAGER")
+		{
+			m_isAssetManagerOpen = !m_isAssetManagerOpen;
 		}
 
 		sf::Vector2f worldPos =
@@ -315,7 +322,6 @@ void editor::EditorScene::ExecuteAction(const abyss::Action &action)
 			view.zoom(actualZoom);
 			m_application->GetWindow().setView(view);
 
-		sf:;
 			sf::Vector2f newPos =
 				m_application->GetWindow().mapPixelToCoords(sf::Vector2i(action.Pos().x, action.Pos().y));
 			sf::Vector2f deltaPos = worldPos - newPos;
@@ -328,6 +334,11 @@ void editor::EditorScene::ExecuteAction(const abyss::Action &action)
 		if (action.Name() == "LEFT_CLICK")
 		{
 			m_leftClick = false;
+		}
+
+		if (action.Name() == "CONTROL")
+		{
+			m_leftControl = false;
 		}
 	}
 }
@@ -375,6 +386,48 @@ void editor::EditorScene::EntityInfoGui()
 	}
 
 	ImGui::Begin("Entity Info", &m_isEntityInfoOpen);
+
+	// button to clone the entity
+	// option to change the tag
+	// option to change the entity name (this will show at the top, the name will be used on the inspector stuff to
+	// filter and so on)
+	// list of components added
+	// button to add more components
+
+	// TODO: add component to the entity
+	// TODO: find a way to reset the function pointers so eevry entity has its own info
+	// for(auto& f : m_guiPointers)
+	// {
+	//    (this->*f)();
+	// }
+	//
+	if (m_selectedEntity->HasComponent<abyss::components::Transform>())
+	{
+		TransformCompGui();
+	}
+	if (m_selectedEntity->HasComponent<abyss::components::Anim>())
+	{
+		AnimCompGui();
+	}
+	if (m_selectedEntity->HasComponent<abyss::components::BoundingBox>())
+	{
+		BoundingBoxCompGui();
+	}
+
+	const char *names[] = { "Transform", "Anim", "Bounding box" };
+
+	if (ImGui::Button("Add component"))
+	{
+		ImGui::OpenPopup("my_add_component_popup");
+	}
+	if (ImGui::BeginPopup("my_add_component_popup"))
+	{
+		for (int i = 0; i < IM_ARRAYSIZE(names); i++)
+			if (ImGui::Selectable(names[i]))
+				InsertGuiToDraw(i);
+
+		ImGui::EndPopup();
+	}
 
 	ImGui::End();
 }
@@ -560,4 +613,79 @@ void editor::EditorScene::InspectorGui()
 	ImGui::Begin("Inspector", &m_isInspectorOpen);
 
 	ImGui::End();
+}
+
+void editor::EditorScene::TransformCompGui()
+{
+	if (ImGui::CollapsingHeader("Transform"))
+	{
+		auto &transform = m_selectedEntity->GetComponent<abyss::components::Transform>();
+		auto &animation = m_selectedEntity->GetComponent<abyss::components::Anim>();
+
+		float pos[2] = { transform.pos.x, transform.pos.y };
+		ImGui::InputFloat2("Position", pos);
+		transform.pos.x = pos[0];
+		transform.pos.y = pos[1];
+
+		float scale[2] = { transform.scale.x, transform.scale.y };
+		ImGui::InputFloat2("Scale", scale);
+		transform.scale.x = scale[0];
+		transform.scale.y = scale[1];
+
+		ImGui::InputFloat("Angle", &transform.angle);
+	}
+}
+
+void editor::EditorScene::AnimCompGui()
+{
+	if (ImGui::CollapsingHeader("Anim"))
+	{
+    	auto &animation = m_selectedEntity->GetComponent<abyss::components::Anim>();
+    	ImGui::InputInt("Speed", &animation.animation.speed);
+	}
+}
+
+void editor::EditorScene::BoundingBoxCompGui()
+{
+	if (ImGui::CollapsingHeader("Bounding box"))
+	{
+        auto &bb = m_selectedEntity->GetComponent<abyss::components::BoundingBox>();
+
+       	float pos[2] = { bb.size.x, bb.size.y };
+       	ImGui::InputFloat2("Position", pos);
+       	bb.size.x = pos[0];
+       	bb.size.y = pos[1];
+        bb.halfSize = sf::Vector2f(bb.size / 2.0f);
+
+       	ImGui::Checkbox("Is trigger", &bb.isTrigger);
+       	ImGui::Checkbox("Block movement", &bb.blockMove);
+        ImGui::SameLine();
+       	ImGui::Checkbox("Block vision", &bb.blockVision);
+	}
+}
+
+void editor::EditorScene::InsertGuiToDraw(int index)
+{
+	switch (index)
+	{
+		case 0:
+			if (!m_selectedEntity->HasComponent<abyss::components::Transform>())
+			{
+				m_selectedEntity->AddComponent<abyss::components::Transform>(sf::Vector2f());
+			}
+			break;
+		case 1:
+			if (!m_selectedEntity->HasComponent<abyss::components::Anim>())
+			{
+				m_selectedEntity->AddComponent<abyss::components::Anim>(m_application->GetAssets().GetAnimation("Down"),
+																		true);
+			}
+			break;
+		case 2:
+			if (!m_selectedEntity->HasComponent<abyss::components::BoundingBox>())
+			{
+				m_selectedEntity->AddComponent<abyss::components::BoundingBox>(sf::Vector2f(), false);
+			}
+			break;
+	}
 }

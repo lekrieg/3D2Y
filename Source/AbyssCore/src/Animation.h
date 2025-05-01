@@ -18,14 +18,14 @@ namespace abyss
 			int m_frameCount;
 			int m_currentFrame;
 			int m_animFrame;
-			int m_speed;
 			sf::Vector2f m_size;
 			sf::Vector2f m_halfSize;
 			std::string m_name;
 
 		public:
+		    int speed;
 
-		    Animation() : Animation("", sf::Texture())
+			Animation() : Animation("", sf::Texture())
 			{
 			}
 
@@ -35,7 +35,7 @@ namespace abyss
 
 			Animation(const std::string &name, const sf::Texture &texture, int frameCount, int speed) :
 				m_name(name),
-				m_speed(speed),
+				speed(speed),
 				m_currentFrame(0),
 				m_sprite(texture),
 				m_frameCount(frameCount),
@@ -76,12 +76,25 @@ namespace abyss
 
 			const int GetFrameCount() const
 			{
-			    return m_frameCount;
+				return m_frameCount;
 			}
 
-			const int GetSpeed() const
+			void SetScale(sf::Vector2<float> scale)
 			{
-			    return m_speed;
+				m_sprite.setScale(scale);
+
+				// m_sprite.setOrigin(sf::Vector2f(m_sprite.getTexture().getSize().x / 2.0f,
+				// m_sprite.getTexture().getSize().y / 2.0f));
+			}
+
+			void SetPosition(sf::Vector2<float> pos)
+			{
+				m_sprite.setPosition(pos);
+			}
+
+			void SetRotation(float angle)
+			{
+				m_sprite.setRotation(sf::degrees(angle));
 			}
 	};
 }

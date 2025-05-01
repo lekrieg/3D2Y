@@ -11,11 +11,15 @@
 #include "../FileDialogState.h"
 
 #include <string>
+// #include <vector>
 
 namespace editor
 {
 	class EditorScene : public abyss::Scene
 	{
+	  //       using ComponentGuiPtr = void (editor::EditorScene::*)();
+			// std::vector<ComponentGuiPtr> m_guiPointers = {};
+
 	        // maybe I could use a list of function pointers to add the components to UI
 			// so I would have a dropdown to select what I want and add it in whatever sequence I want
 			std::shared_ptr<abyss::Entity> m_selectedEntity;
@@ -33,6 +37,7 @@ namespace editor
 			bool m_allowInput = true;
 			bool m_leftClick = false;
 			bool m_draggingEntity = false;
+			bool m_leftControl = false;
 			sf::Vector2f m_gridSize = { 16, 16 };
 			sf::Text m_gridText;
 			abyss::Physics m_physics;
@@ -90,6 +95,11 @@ namespace editor
 			void CameraSystem();
 
 			void DrawGrid();
+
+			void TransformCompGui();
+			void AnimCompGui();
+			void BoundingBoxCompGui();
+			void InsertGuiToDraw(int index);
 	};
 }
 

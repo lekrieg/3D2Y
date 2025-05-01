@@ -20,6 +20,7 @@ void abyss::serializer::Serializer::Serialize(YAML::Emitter &em)
 
 			SerializeAnim(em, e);
 			SerializeTransform(em, e);
+			SerializeBoundingBox(em, e);
 
 			em << YAML::EndMap;
 		}
@@ -44,6 +45,7 @@ void abyss::serializer::Serializer::Deserialize(YAML::Node nodes)
 			YAML::Node components = innerNode.second;
 			DeserializeAnim(components, e);
 			DeserializeTransform(components, e);
+			DeserializeBoundingBox(components, e);
 		}
 	}
 }
@@ -82,6 +84,7 @@ void abyss::serializer::Serializer::SerializeAnim(YAML::Emitter &em, std::shared
 		em << YAML::BeginMap;
 		em << YAML::Key << "repeat" << YAML::Value << t.repeat;
 		em << YAML::Key << "name" << YAML::Value << t.animation.GetName();
+		em << YAML::Key << "speed" << YAML::Value << t.animation.speed;
 		em << YAML::EndMap;
 	}
 }
@@ -90,8 +93,9 @@ void abyss::serializer::Serializer::DeserializeAnim(YAML::Node node, std::shared
 {
 	if (auto data = node["AnimComponent"])
 	{
-		e->AddComponent<abyss::components::Anim>(m_assets.GetAnimation(data["name"].as<std::string>()),
+		auto& anim = e->AddComponent<abyss::components::Anim>(m_assets.GetAnimation(data["name"].as<std::string>()),
 												 data["repeat"].as<bool>());
+		anim.animation.speed = data["speed"].as<int>();
 	}
 }
 
