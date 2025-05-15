@@ -30,7 +30,7 @@ void abyss::Scene::Serialize(const std::string &path)
 
 	YAML::Emitter emitter;
 	emitter << YAML::BeginMap;
-	abyss::serializer::Serializer(&m_entityManager, m_application->GetAssets()).Serialize(emitter);
+	abyss::serializer::Serializer(&m_entityManager, &m_componentManager, m_application->GetAssets()).Serialize(emitter);
 	emitter << YAML::EndMap;
 
 	std::ofstream filepath(path);
@@ -53,7 +53,7 @@ bool abyss::Scene::Deserialize(const std::string &path)
 
 	if (auto entities = root["Entities"])
 	{
-		abyss::serializer::Serializer(&m_entityManager, m_application->GetAssets()).Deserialize(entities);
+		abyss::serializer::Serializer(&m_entityManager, &m_componentManager, m_application->GetAssets()).Deserialize(entities);
 		return true;
 	}
 

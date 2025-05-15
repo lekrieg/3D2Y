@@ -3,6 +3,7 @@
 
 #include "Entity.h"
 
+#include <memory>
 #include <vector>
 #include <map>
 

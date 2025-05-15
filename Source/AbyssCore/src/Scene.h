@@ -3,6 +3,7 @@
 
 #include "Action.h"
 #include "EntityManager.h"
+#include "ComponentManager.h"
 
 #include "Application.h"
 #include "SFML/Window/Keyboard.hpp"
@@ -18,6 +19,7 @@ namespace abyss
 
 			Application *m_application;
 			EntityManager m_entityManager;
+			ComponentManager m_componentManager;
 			std::map<sf::Keyboard::Key, std::string> m_actionMap;
 			bool m_paused = false;
 			bool m_hasEnded = false;

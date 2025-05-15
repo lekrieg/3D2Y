@@ -1,9 +1,10 @@
 #ifndef SERIALIZER_H
 #define SERIALIZER_H
 
+#include "../Assets.h"
 #include "../Entity.h"
 #include "../EntityManager.h"
-#include "../Assets.h"
+#include "../Scene.h"
 #include "Yaml.h"
 
 #include <memory>
@@ -17,11 +18,16 @@ namespace abyss
 			private:
 
 				EntityManager *m_entityManager = nullptr;
+				ComponentManager *m_componentManager = nullptr;
 				abyss::Assets m_assets;
 
 			public:
 
-				Serializer(EntityManager *entityManager, const abyss::Assets& assets) : m_entityManager(entityManager), m_assets(assets)
+				Serializer(EntityManager *entityManager, ComponentManager *componentManager,
+						   const abyss::Assets &assets) :
+					m_entityManager(entityManager),
+					m_componentManager(componentManager),
+					m_assets(assets)
 				{
 				}
 

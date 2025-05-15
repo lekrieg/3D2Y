@@ -3,6 +3,9 @@
 #include "../Assets.h"
 #include "../EntityTag.h"
 #include "SFML/System/Vector2.hpp"
+#include "../components/Anim.h"
+#include "../components/BoundingBox.h"
+#include "../components/Transform.h"
 #include "yaml-cpp/node/node.h"
 
 void abyss::serializer::Serializer::Serialize(YAML::Emitter &em)
@@ -52,9 +55,9 @@ void abyss::serializer::Serializer::Deserialize(YAML::Node nodes)
 
 void abyss::serializer::Serializer::SerializeTransform(YAML::Emitter &em, std::shared_ptr<abyss::Entity> e)
 {
-	if (e->HasComponent<abyss::components::Transform>())
+	if (m_componentManager->HasComponent<abyss::components::Transform>(e->Id()))
 	{
-		auto &t = e->GetComponent<abyss::components::Transform>();
+		auto &t = m_componentManager->GetComponent<abyss::components::Transform>(e->Id());
 		em << YAML::Key << "TransformComponent";
 		em << YAML::BeginMap;
 		em << YAML::Key << "pos" << YAML::Value << t.pos;
@@ -68,7 +71,8 @@ void abyss::serializer::Serializer::DeserializeTransform(YAML::Node node, std::s
 {
 	if (auto data = node["TransformComponent"])
 	{
-		auto &t = e->AddComponent<abyss::components::Transform>();
+	    m_componentManager->AddComponent<abyss::components::Transform>(e->Id(), abyss::components::Transform());
+		auto &t = m_componentManager->GetComponent<abyss::components::Transform>(e->Id());
 		t.pos = data["pos"].as<sf::Vector2f>();
 		t.scale = data["scale"].as<sf::Vector2f>();
 		t.angle = data["angle"].as<float>();
@@ -77,9 +81,9 @@ void abyss::serializer::Serializer::DeserializeTransform(YAML::Node node, std::s
 
 void abyss::serializer::Serializer::SerializeAnim(YAML::Emitter &em, std::shared_ptr<abyss::Entity> e)
 {
-	if (e->HasComponent<abyss::components::Anim>())
+   	if (m_componentManager->HasComponent<abyss::components::Anim>(e->Id()))
 	{
-		auto &t = e->GetComponent<abyss::components::Anim>();
+		auto &t = m_componentManager->GetComponent<abyss::components::Anim>(e->Id());
 		em << YAML::Key << "AnimComponent";
 		em << YAML::BeginMap;
 		em << YAML::Key << "repeat" << YAML::Value << t.repeat;
@@ -93,24 +97,25 @@ void abyss::serializer::Serializer::DeserializeAnim(YAML::Node node, std::shared
 {
 	if (auto data = node["AnimComponent"])
 	{
-		auto& anim = e->AddComponent<abyss::components::Anim>(m_assets.GetAnimation(data["name"].as<std::string>()),
-												 data["repeat"].as<bool>());
+        m_componentManager->AddComponent<abyss::components::Anim>(e->Id(), abyss::components::Anim(m_assets.GetAnimation(data["name"].as<std::string>()),
+												 data["repeat"].as<bool>()));
+        auto &anim = m_componentManager->GetComponent<abyss::components::Anim>(e->Id());
 		anim.animation.speed = data["speed"].as<int>();
 	}
 }
 
 void abyss::serializer::Serializer::SerializeBoundingBox(YAML::Emitter &em, std::shared_ptr<abyss::Entity> e)
 {
-	if (e->HasComponent<abyss::components::BoundingBox>())
+	if (m_componentManager->HasComponent<abyss::components::BoundingBox>(e->Id()))
 	{
-		auto &t = e->GetComponent<abyss::components::BoundingBox>();
+		auto &bb = m_componentManager->GetComponent<abyss::components::BoundingBox>(e->Id());
 		em << YAML::Key << "BoundingBoxComponent";
 		em << YAML::BeginMap;
-		em << YAML::Key << "size" << YAML::Value << t.size;
-		em << YAML::Key << "halfSize" << YAML::Value << t.halfSize;
-		em << YAML::Key << "blockMove" << YAML::Value << t.blockMove;
-		em << YAML::Key << "blockVision" << YAML::Value << t.blockVision;
-		em << YAML::Key << "isTrigger" << YAML::Value << t.isTrigger;
+		em << YAML::Key << "size" << YAML::Value << bb.size;
+		em << YAML::Key << "halfSize" << YAML::Value << bb.halfSize;
+		em << YAML::Key << "blockMove" << YAML::Value << bb.blockMove;
+		em << YAML::Key << "blockVision" << YAML::Value << bb.blockVision;
+		em << YAML::Key << "isTrigger" << YAML::Value << bb.isTrigger;
 
 		em << YAML::EndMap;
 	}
@@ -120,11 +125,12 @@ void abyss::serializer::Serializer::DeserializeBoundingBox(YAML::Node node, std:
 {
 	if (auto data = node["BoundingBoxComponent"])
 	{
-		auto &t = e->AddComponent<abyss::components::BoundingBox>();
-		t.size = data["size"].as<sf::Vector2f>();
-		t.halfSize = data["halfSize"].as<sf::Vector2f>();
-		t.blockMove = data["blockMove"].as<bool>();
-		t.blockVision = data["blockVision"].as<bool>();
-		t.isTrigger = data["isTrigger"].as<bool>();
+	    m_componentManager->AddComponent<abyss::components::BoundingBox>(e->Id(), abyss::components::BoundingBox());
+        auto &bb = m_componentManager->GetComponent<abyss::components::BoundingBox>(e->Id());
+		bb.size = data["size"].as<sf::Vector2f>();
+		bb.halfSize = data["halfSize"].as<sf::Vector2f>();
+		bb.blockMove = data["blockMove"].as<bool>();
+		bb.blockVision = data["blockVision"].as<bool>();
+		bb.isTrigger = data["isTrigger"].as<bool>();
 	}
 }
