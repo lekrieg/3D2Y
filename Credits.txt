@@ -12,3 +12,6 @@ Programmer / Game designer: Lekrieg
 
 -------------- View movement and zoom --------------
 https://stackoverflow.com/questions/41788847/dragging-screen-in-sfml
+
+-------------- Component array and manager --------------
+https://austinmorlan.com/posts/entity_component_system/

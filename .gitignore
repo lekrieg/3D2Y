@@ -28,5 +28,6 @@
 Source/.vs/
 Source/.cache/
 Source/Temp/
+Source/.idea
 
 Tools/ArchiveCreator/.vs/

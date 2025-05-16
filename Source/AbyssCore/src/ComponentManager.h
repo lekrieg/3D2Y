@@ -3,9 +3,9 @@
 #include <cassert>
 #include <cstddef>
 #include <memory>
+#include <string>
 #include <sys/types.h>
 #include <unordered_map>
-#include <string>
 
 class ComponentManager
 {
@@ -55,6 +55,7 @@ class ComponentManager
 		template <typename T> std::shared_ptr<ComponentArray<T>> GetComponentArray()
 		{
 			std::string typeName = typeid(T).name();
+			assert(m_componentArrays.count(typeName) && "No component registred!");
 			return std::static_pointer_cast<ComponentArray<T>>(m_componentArrays[typeName]);
 		}
 };

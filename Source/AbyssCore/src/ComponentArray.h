@@ -31,7 +31,8 @@ template <typename T> class ComponentArray : public IComponentArray
 
 		T &GetComponent(size_t entity)
 		{
-			return m_componentsMap[entity];
+			assert(m_componentsMap.count(entity) && "No component exist for this entity!");
+			return m_componentsMap.at(entity);
 		}
 
 		void EntityDestroyed(size_t entity) override
