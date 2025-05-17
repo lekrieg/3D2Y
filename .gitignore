@@ -29,5 +29,7 @@ Source/.vs/
 Source/.cache/
 Source/Temp/
 Source/.idea
+Source/cmake-build-debug
+Source/cmake-build-release
 
 Tools/ArchiveCreator/.vs/
