@@ -1,16 +1,32 @@
 Entities:
   - Player:
-      AnimComponent:
-        repeat: true
-        name: Down
-        speed: 5
-      TransformComponent:
-        pos: [512, 300]
-        scale: [1, 1]
-        angle: 0
-      BoundingBoxComponent:
-        size: [32, 32]
-        halfSize: [16, 16]
-        blockMove: false
-        blockVision: false
-        isTrigger: false
+      0:
+        AnimComponent:
+          repeat: true
+          name: Down
+          speed: 5
+        TransformComponent:
+          pos: [ 360, 600 ]
+          scale: [ 1, 1 ]
+          angle: 0
+        BoundingBoxComponent:
+          size: [ 32, 32 ]
+          halfSize: [ 16, 16 ]
+          blockMove: false
+          blockVision: false
+          isTrigger: false
+      1:
+        AnimComponent:
+          repeat: true
+          name: Down
+          speed: 5
+        TransformComponent:
+          pos: [ 360, 600 ]
+          scale: [ 1, 1 ]
+          angle: 0
+        BoundingBoxComponent:
+          size: [ 32, 32 ]
+          halfSize: [ 16, 16 ]
+          blockMove: false
+          blockVision: false
+          isTrigger: false

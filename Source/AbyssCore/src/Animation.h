@@ -29,12 +29,12 @@ namespace abyss
 			{
 			}
 
-			Animation(const std::string &name, const sf::Texture &texture) : Animation(name, texture, 1, 0)
+			Animation(std::string name, const sf::Texture &texture) : Animation(name, texture, 1, 0)
 			{
 			}
 
 			Animation(const std::string &name, const sf::Texture &texture, int frameCount, int speed) :
-				m_name(name),
+				m_name{ name },
 				speed(speed),
 				m_currentFrame(0),
 				m_sprite(texture),

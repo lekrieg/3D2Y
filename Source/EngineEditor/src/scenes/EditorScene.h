@@ -17,14 +17,10 @@ namespace editor
 {
 	class EditorScene : public abyss::Scene
 	{
-	  //       using ComponentGuiPtr = void (editor::EditorScene::*)();
-			// std::vector<ComponentGuiPtr> m_guiPointers = {};
-
-	        // maybe I could use a list of function pointers to add the components to UI
-			// so I would have a dropdown to select what I want and add it in whatever sequence I want
 			std::shared_ptr<abyss::Entity> m_selectedEntity;
 			std::shared_ptr<abyss::Entity> m_dragEntity;
 			std::string m_levelPath;
+			std::string m_lastEntityToCreate;
 			bool m_drawTextures = true;
 			bool m_drawCollision = false;
 			bool m_drawGrid = false;
@@ -37,6 +33,8 @@ namespace editor
 			bool m_allowInput = true;
 			bool m_leftClick = false;
 			bool m_draggingEntity = false;
+			bool m_entityCreation = false;
+			bool m_cloningEntity = false;
 			bool m_leftControl = false;
 			sf::Vector2f m_gridSize = { 16, 16 };
 			sf::Text m_gridText;
@@ -47,6 +45,7 @@ namespace editor
 			std::string m_sceneName = "Default";
 
 			abyss::math::Vec2<float> m_oldPos;
+			abyss::math::Vec2<float> m_originalEntityPos;
 			abyss::math::Vec2<int> m_room = { 0, 0 };
 			float m_leftXOffset = 0;
 			float m_rightXOffset = Width();
@@ -83,6 +82,7 @@ namespace editor
 			void AssetManagerGui();
 			void SceneManagerGui();
 			void InspectorGui();
+			std::shared_ptr<abyss::Entity> CreateEntity(bool clone = false, const char* animName = nullptr);
 
 		private:
 

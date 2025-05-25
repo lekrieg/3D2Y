@@ -14,12 +14,9 @@ namespace abyss
 			Animation animation;
 			bool repeat = false;
 
-			Anim()
-			{
+			Anim() = default;
 
-			}
-
-			Anim(const Animation& anim, bool r) : animation(anim), repeat(r)
+			Anim(const Animation& anim, const bool r) : animation{ anim }, repeat(r)
 			{
 
 			}

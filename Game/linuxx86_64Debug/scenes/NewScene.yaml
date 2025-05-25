@@ -1,5 +1,20 @@
 Entities:
-  - Player:
+  - Default:
+      0:
+        AnimComponent:
+          repeat: true
+          name: Hill_Tile_Bottom_1
+          speed: 0
+        TransformComponent:
+          pos: [504, 392]
+          scale: [1, 1]
+          angle: 0
+  - 1:
+      AnimComponent:
+        repeat: true
+        name: Hill_Tile_Bottom_1
+        speed: 0
       TransformComponent:
-        pos: [696, 456]
+        pos: [456, 504]
         scale: [1, 1]
+        angle: 0

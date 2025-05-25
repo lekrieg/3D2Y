@@ -8,6 +8,10 @@
 #include "../components/Transform.h"
 #include "yaml-cpp/node/node.h"
 
+// TODO: fix loading yaml with the new structure
+// TODO: delete entity when click on clone or the asset manager and dont let the entity drop when you dont want
+// TODO: block movement when mouse inside UI
+
 void abyss::serializer::Serializer::Serialize(YAML::Emitter &em)
 {
 	em << YAML::Key << "Entities" << YAML::Value << YAML::BeginSeq;
@@ -15,19 +19,23 @@ void abyss::serializer::Serializer::Serialize(YAML::Emitter &em)
 	for (auto &innerMap : m_entityManager->GetEntityMap())
 	{
 		em << YAML::BeginMap;
-		em << YAML::Key << abyss::EntityTagToString(innerMap.first);
+		em << YAML::Key << abyss::EntityTagToString(innerMap.first) << YAML::Value << YAML::BeginMap;
 
+		int index = 0;
 		for (auto &e : innerMap.second)
 		{
-			em << YAML::BeginMap;
+			em << YAML::Key << index << YAML::Value << YAML::BeginMap;
 
 			SerializeAnim(em, e);
 			SerializeTransform(em, e);
 			SerializeBoundingBox(em, e);
 
-			em << YAML::EndMap;
+			em << YAML::EndMap; // index
+
+			index++;
 		}
 
+		em << YAML::EndMap; // entity tag
 		em << YAML::EndMap;
 	}
 
@@ -38,17 +46,24 @@ void abyss::serializer::Serializer::Deserialize(YAML::Node nodes)
 {
 	m_entityManager->Clear();
 
+	// entity nodes
 	for (auto node : nodes)
 	{
+		// tag nodes
 		for (auto innerNode : node)
 		{
 			abyss::EntityTag tag = abyss::StringToEntityTag(innerNode.first.as<std::string>().c_str());
-			auto e = m_entityManager->AddEntity(tag);
 
-			YAML::Node components = innerNode.second;
-			DeserializeAnim(components, e);
-			DeserializeTransform(components, e);
-			DeserializeBoundingBox(components, e);
+			YAML::Node indexNode = innerNode.second;
+			// index nodes
+			for (auto comp : indexNode)
+			{
+				auto e = m_entityManager->AddEntity(tag);
+				YAML::Node components = comp.second;
+				DeserializeAnim(components, e);
+				DeserializeTransform(components, e);
+				DeserializeBoundingBox(components, e);
+			}
 		}
 	}
 }
@@ -58,8 +73,7 @@ void abyss::serializer::Serializer::SerializeTransform(YAML::Emitter &em, std::s
 	if (m_componentManager->HasComponent<abyss::components::Transform>(e->Id()))
 	{
 		auto &t = m_componentManager->GetComponent<abyss::components::Transform>(e->Id());
-		em << YAML::Key << "TransformComponent";
-		em << YAML::BeginMap;
+		em << YAML::Key << "TransformComponent" << YAML::Value << YAML::BeginMap;
 		em << YAML::Key << "pos" << YAML::Value << t.pos;
 		em << YAML::Key << "scale" << YAML::Value << t.scale;
 		em << YAML::Key << "angle" << YAML::Value << t.angle;
@@ -84,8 +98,7 @@ void abyss::serializer::Serializer::SerializeAnim(YAML::Emitter &em, std::shared
    	if (m_componentManager->HasComponent<abyss::components::Anim>(e->Id()))
 	{
 		auto &t = m_componentManager->GetComponent<abyss::components::Anim>(e->Id());
-		em << YAML::Key << "AnimComponent";
-		em << YAML::BeginMap;
+		em << YAML::Key << "AnimComponent" << YAML::Value << YAML::BeginMap;
 		em << YAML::Key << "repeat" << YAML::Value << t.repeat;
 		em << YAML::Key << "name" << YAML::Value << t.animation.GetName();
 		em << YAML::Key << "speed" << YAML::Value << t.animation.speed;
@@ -109,8 +122,7 @@ void abyss::serializer::Serializer::SerializeBoundingBox(YAML::Emitter &em, std:
 	if (m_componentManager->HasComponent<abyss::components::BoundingBox>(e->Id()))
 	{
 		auto &bb = m_componentManager->GetComponent<abyss::components::BoundingBox>(e->Id());
-		em << YAML::Key << "BoundingBoxComponent";
-		em << YAML::BeginMap;
+		em << YAML::Key << "BoundingBoxComponent" << YAML::Value << YAML::BeginMap;
 		em << YAML::Key << "size" << YAML::Value << bb.size;
 		em << YAML::Key << "halfSize" << YAML::Value << bb.halfSize;
 		em << YAML::Key << "blockMove" << YAML::Value << bb.blockMove;

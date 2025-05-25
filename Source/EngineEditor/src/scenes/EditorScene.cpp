@@ -45,7 +45,7 @@ void editor::EditorScene::Update(float deltaTime)
 void editor::EditorScene::Init(const std::string &levelPath)
 {
 	RegisterAction(sf::Keyboard::Key::P, "PAUSE");
-	RegisterAction(sf::Keyboard::Key::Escape, "QUIT");
+	RegisterAction(sf::Keyboard::Key::Escape, "CANCEL");
 	RegisterAction(sf::Keyboard::Key::T, "TOGGLE_TEXTURE");
 	RegisterAction(sf::Keyboard::Key::C, "TOGGLE_COLLISION");
 	RegisterAction(sf::Keyboard::Key::G, "TOGGLE_GRID");
@@ -73,9 +73,6 @@ void editor::EditorScene::LoadLevel(const std::string &fileName)
 	ABYSS_INFO("Info...");
 	ABYSS_WARNING("Warning...");
 	ABYSS_ERROR("Error...");
-
-	// TODO: terminar de serializar e deserializar os componentes
-	// dessa forma sempre que der load, os itens sao redesanhados na cena corretamente
 
 	// TODO: Check how to better reset the manager
 	m_entityManager = abyss::EntityManager();
@@ -234,10 +231,6 @@ void editor::EditorScene::ExecuteAction(const abyss::Action &action)
 		{
 			SetPaused(!m_paused);
 		}
-		else if (action.Name() == "QUIT")
-		{
-			OnEnd();
-		}
 		else if (action.Name() == "CONTROL")
 		{
 			m_leftControl = true;
@@ -259,12 +252,37 @@ void editor::EditorScene::ExecuteAction(const abyss::Action &action)
 		sf::Vector2f worldPos =
 			m_application->GetWindow().mapPixelToCoords(sf::Vector2i(action.Pos().x, action.Pos().y));
 
+		if (m_draggingEntity && action.Name() == "CANCEL")
+		{
+			if (m_draggingEntity && !m_entityCreation)
+			{
+				if (m_componentManager.HasComponent<abyss::components::Transform>(m_dragEntity->Id()))
+				{
+					m_componentManager.GetComponent<abyss::components::Transform>(m_dragEntity->Id()).pos = {m_originalEntityPos.x, m_originalEntityPos.y};
+				}
+			}
+			else if (m_entityCreation)
+			{
+				m_componentManager.EntityDestroyed(m_dragEntity->Id());
+				m_dragEntity->Destroy();
+			}
+
+			m_dragEntity = {};
+			m_draggingEntity = false;
+			m_entityCreation = false;
+		}
+
 		if (action.Name() == "LEFT_CLICK")
 		{
-			if (m_draggingEntity)
+			if (m_draggingEntity && !m_entityCreation)
 			{
 				m_dragEntity = {};
 				m_draggingEntity = false;
+			}
+			else if (m_draggingEntity && m_entityCreation)
+			{
+				m_dragEntity = {};
+				m_dragEntity = CreateEntity(m_cloningEntity, m_lastEntityToCreate.c_str());
 			}
 			else
 			{
@@ -281,6 +299,13 @@ void editor::EditorScene::ExecuteAction(const abyss::Action &action)
 						{
 							m_dragEntity = e;
 							m_draggingEntity = true;
+
+							if (m_componentManager.HasComponent<abyss::components::Transform>(m_dragEntity->Id()))
+							{
+								auto t = m_componentManager.GetComponent<abyss::components::Transform>(m_dragEntity->Id());
+								m_originalEntityPos = abyss::math::Vec2<float>(t.pos.x, t.pos.y);
+							}
+
 							break;
 						}
 					}
@@ -289,6 +314,11 @@ void editor::EditorScene::ExecuteAction(const abyss::Action &action)
 		}
 		else if (action.Name() == "RIGHT_CLICK")
 		{
+			if (m_entityCreation)
+			{
+				return;
+			}
+
 			m_selectedEntity = {};
 			for (auto e : m_entityManager.GetEntities())
 			{
@@ -401,7 +431,7 @@ void editor::EditorScene::DrawGrid()
 
 void editor::EditorScene::EntityInfoGui()
 {
-	if (!m_selectedEntity || !m_isEntityInfoOpen)
+	if (m_draggingEntity || m_entityCreation || !m_selectedEntity || !m_isEntityInfoOpen)
 	{
 		return;
 	}
@@ -409,6 +439,32 @@ void editor::EditorScene::EntityInfoGui()
 	ImGui::Begin("Entity Info", &m_isEntityInfoOpen);
 	if (ImGui::Button("Clone", ImVec2(100, 25)))
 	{
+		m_dragEntity = CreateEntity(true);
+		m_draggingEntity = true;
+		m_entityCreation = true;
+		m_cloningEntity = true;
+		m_isEntityInfoOpen = false;
+
+		m_lastEntityToCreate = {};
+	}
+
+	ImGui::SameLine();
+
+	if (ImGui::Button("Add component", ImVec2(100, 25)))
+	{
+		ImGui::OpenPopup("my_add_component_popup");
+	}
+	if (ImGui::BeginPopup("my_add_component_popup"))
+	{
+		const char *names[] = { "Transform", "Anim", "Bounding box" };
+
+		for (int i = 0; i < IM_ARRAYSIZE(names); i++)
+			if (ImGui::Selectable(names[i]))
+			{
+				InsertGuiToDraw(i);
+			}
+
+		ImGui::EndPopup();
 	}
 
 	// button to clone the entity
@@ -419,7 +475,7 @@ void editor::EditorScene::EntityInfoGui()
 	// button to add more components
 
 	// TODO: add component to the entity
-	// TODO: find a way to reset the function pointers so eevry entity has its own info
+	// TODO: find a way to reset the function pointers so every entity has its own info
 	// for(auto& f : m_guiPointers)
 	// {
 	//    (this->*f)();
@@ -436,23 +492,6 @@ void editor::EditorScene::EntityInfoGui()
 	if (m_componentManager.HasComponent<abyss::components::BoundingBox>(m_selectedEntity->Id()))
 	{
 		BoundingBoxCompGui();
-	}
-
-	const char *names[] = { "Transform", "Anim", "Bounding box" };
-
-	if (ImGui::Button("Add component"))
-	{
-		ImGui::OpenPopup("my_add_component_popup");
-	}
-	if (ImGui::BeginPopup("my_add_component_popup"))
-	{
-		for (int i = 0; i < IM_ARRAYSIZE(names); i++)
-			if (ImGui::Selectable(names[i]))
-			{
-				InsertGuiToDraw(i);
-			}
-
-		ImGui::EndPopup();
 	}
 
 	ImGui::End();
@@ -483,16 +522,12 @@ void editor::EditorScene::AssetManagerGui()
 				{
 					if (ImGui::ImageButton(a.first.c_str(), a.second.GetSprite(), sf::Vector2f(32, 32)))
 					{
-						m_dragEntity = m_entityManager.AddEntity(abyss::EntityTag::Default);
-						m_componentManager.AddComponent<abyss::components::Anim>(
-							m_dragEntity->Id(),
-							abyss::components::Anim(m_application->GetAssets().GetAnimation(a.first.c_str()), true));
-						m_componentManager.AddComponent<abyss::components::Transform>(
-							m_dragEntity->Id(), abyss::components::Transform(
-													sf::Vector2f(m_application->GetWindow().getView().getCenter().x,
-																 m_application->GetWindow().getView().getCenter().y)));
+						m_lastEntityToCreate = a.first;
+						m_dragEntity = CreateEntity(false, m_lastEntityToCreate.c_str());
 
 						m_draggingEntity = true;
+						m_entityCreation = true;
+						m_cloningEntity = false;
 					}
 					ImGui::TableNextColumn();
 				}
@@ -641,6 +676,44 @@ void editor::EditorScene::InspectorGui()
 	ImGui::Begin("Inspector", &m_isInspectorOpen);
 
 	ImGui::End();
+}
+
+std::shared_ptr<abyss::Entity> editor::EditorScene::CreateEntity(const bool clone, const char* animName)
+{
+	auto entity = m_entityManager.AddEntity(abyss::EntityTag::Default);
+
+	if (clone)
+	{
+		if (m_componentManager.HasComponent<abyss::components::Anim>(m_selectedEntity->Id()))
+		{
+			auto a = m_componentManager.GetComponent<abyss::components::Anim>(m_selectedEntity->Id());
+			m_componentManager.AddComponent(entity->Id(), abyss::components::Anim(abyss::Animation(a.animation.GetName(), a.animation.GetSprite().getTexture(), a.animation.GetFrameCount(), a.animation.speed), a.repeat));
+		}
+
+		if (m_componentManager.HasComponent<abyss::components::Transform>(m_selectedEntity->Id()))
+		{
+			const auto t = m_componentManager.GetComponent<abyss::components::Transform>(m_selectedEntity->Id());
+			m_componentManager.AddComponent(entity->Id(), abyss::components::Transform(t.pos, t.velocity, t.scale, t.angle));
+		}
+
+		if (m_componentManager.HasComponent<abyss::components::BoundingBox>(m_selectedEntity->Id()))
+		{
+			const auto bb = m_componentManager.GetComponent<abyss::components::BoundingBox>(m_selectedEntity->Id());
+			m_componentManager.AddComponent(entity->Id(), abyss::components::BoundingBox(bb.size, bb.isTrigger, bb.blockMove, bb.blockVision));
+		}
+	}
+	else
+	{
+		m_componentManager.AddComponent<abyss::components::Anim>(
+			entity->Id(),
+			abyss::components::Anim(m_application->GetAssets().GetAnimation(std::string(animName)), true));
+		m_componentManager.AddComponent<abyss::components::Transform>(
+			entity->Id(), abyss::components::Transform(
+				sf::Vector2f(m_application->GetWindow().getView().getCenter().x,
+				             m_application->GetWindow().getView().getCenter().y)));
+	}
+
+	return entity;
 }
 
 void editor::EditorScene::TransformCompGui()
