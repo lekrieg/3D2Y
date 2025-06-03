@@ -55,7 +55,7 @@ class ComponentManager
 		template <typename T> std::shared_ptr<ComponentArray<T>> GetComponentArray()
 		{
 			std::string typeName = typeid(T).name();
-			assert(m_componentArrays.count(typeName) && "No component registred!");
+			assert(m_componentArrays.count(typeName) && "No component registered!");
 			return std::static_pointer_cast<ComponentArray<T>>(m_componentArrays[typeName]);
 		}
 };

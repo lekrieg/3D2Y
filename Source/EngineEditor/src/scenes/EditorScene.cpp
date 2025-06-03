@@ -111,9 +111,14 @@ void editor::EditorScene::LoadLevel(const std::string &fileName)
 
 sf::Vector2f editor::EditorScene::GridToMidPixel(float gridX, float gridY, std::shared_ptr<abyss::Entity> entity)
 {
-	auto &spriteSize = m_componentManager.GetComponent<abyss::components::Anim>(entity->Id()).animation.GetSize();
-	return sf::Vector2f((gridX * m_gridSize.x) + (spriteSize.x / 2.0f),
-						Height() - ((gridY * m_gridSize.y) + (spriteSize.y / 2.0f)));
+	if (m_componentManager.HasComponent<abyss::components::Anim>(entity->Id()))
+	{
+		auto &spriteSize = m_componentManager.GetComponent<abyss::components::Anim>(entity->Id()).animation.GetSize();
+		return {(gridX * m_gridSize.x) + (spriteSize.x / 2.0f),
+							Height() - ((gridY * m_gridSize.y) + (spriteSize.y / 2.0f))};
+	}
+
+	return {};
 }
 
 void editor::EditorScene::Render()
@@ -131,35 +136,44 @@ void editor::EditorScene::Render()
 	{
 		if (m_drawTextures)
 		{
-			auto &transform = m_componentManager.GetComponent<abyss::components::Transform>(e->Id());
-			if (m_componentManager.HasComponent<abyss::components::Anim>(e->Id()))
+			if (!m_componentManager.HasComponent<abyss::components::Transform>(e->Id()) ||
+				!m_componentManager.HasComponent<abyss::components::Anim>(e->Id()))
 			{
-				// TODO: check if I can get the sprite and dont waste the calls to GetSprite
-				auto &animation = m_componentManager.GetComponent<abyss::components::Anim>(e->Id());
-				animation.animation.SetRotation(transform.angle);
-				animation.animation.SetPosition(sf::Vector2<float>(transform.pos.x, transform.pos.y));
-				animation.animation.SetScale(sf::Vector2<float>(transform.scale.x, transform.scale.y));
-
-				m_application->GetWindow().draw(animation.animation.GetSprite());
+				assert("No component registered!");
+				continue;
 			}
+
+			auto &transform = m_componentManager.GetComponent<abyss::components::Transform>(e->Id());
+
+			// TODO: check if I can get the sprite and dont waste the calls to GetSprite
+			auto &animation = m_componentManager.GetComponent<abyss::components::Anim>(e->Id());
+			animation.animation.SetRotation(transform.angle);
+			animation.animation.SetPosition(sf::Vector2<float>(transform.pos.x, transform.pos.y));
+			animation.animation.SetScale(sf::Vector2<float>(transform.scale.x, transform.scale.y));
+
+			m_application->GetWindow().draw(animation.animation.GetSprite());
 		}
 
 		if (m_drawCollision)
 		{
-			if (m_componentManager.HasComponent<abyss::components::BoundingBox>(e->Id()))
+			if (!m_componentManager.HasComponent<abyss::components::Transform>(e->Id()) ||
+				!m_componentManager.HasComponent<abyss::components::BoundingBox>(e->Id()))
 			{
-				auto &boundingBox = m_componentManager.GetComponent<abyss::components::BoundingBox>(e->Id());
-				auto &transform = m_componentManager.GetComponent<abyss::components::Transform>(e->Id());
-
-				sf::RectangleShape rect;
-				rect.setSize(sf::Vector2f(boundingBox.size.x - 1, boundingBox.size.y - 1));
-				rect.setOrigin(sf::Vector2f(boundingBox.halfSize.x, boundingBox.halfSize.y));
-				rect.setPosition(sf::Vector2<float>(transform.pos.x, transform.pos.y));
-				rect.setFillColor(sf::Color(0, 0, 0, 0));
-				rect.setOutlineColor(sf::Color(255, 255, 255, 255));
-				rect.setOutlineThickness(1);
-				m_application->GetWindow().draw(rect);
+				assert("No component registered!");
+				continue;
 			}
+
+			auto &boundingBox = m_componentManager.GetComponent<abyss::components::BoundingBox>(e->Id());
+			auto &transform = m_componentManager.GetComponent<abyss::components::Transform>(e->Id());
+
+			sf::RectangleShape rect;
+			rect.setSize(sf::Vector2f(boundingBox.size.x - 1, boundingBox.size.y - 1));
+			rect.setOrigin(sf::Vector2f(boundingBox.halfSize.x, boundingBox.halfSize.y));
+			rect.setPosition(sf::Vector2<float>(transform.pos.x, transform.pos.y));
+			rect.setFillColor(sf::Color(0, 0, 0, 0));
+			rect.setOutlineColor(sf::Color(255, 255, 255, 255));
+			rect.setOutlineThickness(1);
+			m_application->GetWindow().draw(rect);
 		}
 	}
 
@@ -429,6 +443,12 @@ void editor::EditorScene::DrawGrid()
 	}
 }
 
+void editor::EditorScene::DeleteEntity(const std::shared_ptr<abyss::Entity>& entity)
+{
+	m_componentManager.EntityDestroyed(entity->Id());
+	entity->Destroy();
+}
+
 void editor::EditorScene::EntityInfoGui()
 {
 	if (m_draggingEntity || m_entityCreation || !m_selectedEntity || !m_isEntityInfoOpen)
@@ -437,7 +457,7 @@ void editor::EditorScene::EntityInfoGui()
 	}
 
 	ImGui::Begin("Entity Info", &m_isEntityInfoOpen);
-	if (ImGui::Button("Clone", ImVec2(100, 25)))
+	if (ImGui::Button("C", ImVec2(25, 25)))
 	{
 		m_dragEntity = CreateEntity(true);
 		m_draggingEntity = true;
@@ -449,6 +469,18 @@ void editor::EditorScene::EntityInfoGui()
 	}
 
 	ImGui::SameLine();
+
+	if (ImGui::Button("D", ImVec2(25, 25)))
+	{
+		DeleteEntity(m_selectedEntity);
+		m_selectedEntity = {};
+
+		m_isEntityInfoOpen = false;
+
+		ImGui::End();
+		return;
+
+	}
 
 	if (ImGui::Button("Add component", ImVec2(100, 25)))
 	{
@@ -724,16 +756,16 @@ void editor::EditorScene::TransformCompGui()
 		auto &animation = m_componentManager.GetComponent<abyss::components::Anim>(m_selectedEntity->Id());
 
 		float pos[2] = { transform.pos.x, transform.pos.y };
-		ImGui::InputFloat2("Position", pos);
+		ImGui::InputFloat2("t_pos", pos);
 		transform.pos.x = pos[0];
 		transform.pos.y = pos[1];
 
 		float scale[2] = { transform.scale.x, transform.scale.y };
-		ImGui::InputFloat2("Scale", scale);
+		ImGui::InputFloat2("t_scale", scale);
 		transform.scale.x = scale[0];
 		transform.scale.y = scale[1];
 
-		ImGui::InputFloat("Angle", &transform.angle);
+		ImGui::InputFloat("t_angle", &transform.angle);
 	}
 }
 
@@ -759,7 +791,7 @@ void editor::EditorScene::BoundingBoxCompGui()
 		auto &bb = m_componentManager.GetComponent<abyss::components::BoundingBox>(m_selectedEntity->Id());
 
 		float pos[2] = { bb.size.x, bb.size.y };
-		ImGui::InputFloat2("Position", pos);
+		ImGui::InputFloat2("bb_position", pos);
 		bb.size.x = pos[0];
 		bb.size.y = pos[1];
 		bb.halfSize = sf::Vector2f(bb.size / 2.0f);

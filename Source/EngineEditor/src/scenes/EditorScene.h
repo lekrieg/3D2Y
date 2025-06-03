@@ -96,6 +96,8 @@ namespace editor
 
 			void DrawGrid();
 
+			void DeleteEntity(const std::shared_ptr<abyss::Entity>& entity);
+
 			void TransformCompGui();
 			void AnimCompGui();
 			void BoundingBoxCompGui();
