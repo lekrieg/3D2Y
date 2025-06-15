@@ -58,6 +58,8 @@ namespace editor
 			float accumulatedZoom = 1;
 			float actualZoom = accumulatedZoom;
 
+			std::vector<std::string> m_entityTags;
+
 		protected:
 
 			void Init(const std::string &levelPath) override;

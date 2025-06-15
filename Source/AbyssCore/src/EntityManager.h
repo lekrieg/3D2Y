@@ -30,6 +30,7 @@ namespace abyss
 		EntityVec& GetEntities(const EntityTag& tag);
 		const std::map<EntityTag, EntityVec>& GetEntityMap();
 		void Clear();
+		void UpdateEntityTag(const std::shared_ptr<abyss::Entity>& entity, const EntityTag& newTag);
 
 	private:
 		void RemoveDeadEntities(EntityVec& vec);

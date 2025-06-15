@@ -14,7 +14,7 @@ namespace abyss
 		friend class EntityManager;
 
 		size_t m_id = 0;
-		const EntityTag m_tag = EntityTag::Default;
+		EntityTag m_tag = EntityTag::Default;
 		bool m_alive = true;
 
 	public:
@@ -31,6 +31,11 @@ namespace abyss
 		const EntityTag Tag() const
 		{
 			return m_tag;
+		}
+
+		void SetTag(const EntityTag& tag)
+		{
+			m_tag = tag;
 		}
 
 		bool IsActive() const

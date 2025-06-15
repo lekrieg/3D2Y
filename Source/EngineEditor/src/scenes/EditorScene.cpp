@@ -65,6 +65,8 @@ void editor::EditorScene::Init(const std::string &levelPath)
 	m_fileDialog.SetTitle("File dialog");
 	m_fileDialog.SetTypeFilters({ ".yaml" });
 
+	m_entityTags = abyss::GetEntityTagNames();
+
 	LoadLevel(levelPath);
 }
 
@@ -479,7 +481,6 @@ void editor::EditorScene::EntityInfoGui()
 
 		ImGui::End();
 		return;
-
 	}
 
 	if (ImGui::Button("Add component", ImVec2(100, 25)))
@@ -491,12 +492,56 @@ void editor::EditorScene::EntityInfoGui()
 		const char *names[] = { "Transform", "Anim", "Bounding box" };
 
 		for (int i = 0; i < IM_ARRAYSIZE(names); i++)
+		{
 			if (ImGui::Selectable(names[i]))
 			{
 				InsertGuiToDraw(i);
 			}
+		}
+
 
 		ImGui::EndPopup();
+	}
+
+	static ImGuiComboFlags flags = 0;
+	const std::string tagString = abyss::EntityTagToString(m_selectedEntity->Tag());
+
+	// TODO: check if there's a better way to do this comparison
+	static int itemSelectedIndex = 0;
+	for (int i = 0; i < m_entityTags.size(); i++)
+	{
+		if (strcmp(m_entityTags[i].c_str(), tagString.c_str()) == 0)
+		{
+			itemSelectedIndex = i;
+			break;
+		}
+	}
+
+	if (const char* comboPreviewValue = m_entityTags[itemSelectedIndex].c_str(); ImGui::BeginCombo("Tags", comboPreviewValue, flags))
+	{
+		static ImGuiTextFilter filter;
+		if (ImGui::IsWindowAppearing())
+		{
+			ImGui::SetKeyboardFocusHere();
+			filter.Clear();
+		}
+		ImGui::SetNextItemShortcut(ImGuiMod_Ctrl | ImGuiKey_F);
+		filter.Draw("##Filter", -FLT_MIN);
+
+		for (int n = 0; n < m_entityTags.size(); n++)
+		{
+			const bool is_selected = (itemSelectedIndex == n);
+			if (filter.PassFilter(m_entityTags[n].c_str()))
+			{
+				if (ImGui::Selectable(m_entityTags[n].c_str(), is_selected))
+				{
+					itemSelectedIndex = n;
+					m_entityManager.UpdateEntityTag(m_selectedEntity, abyss::StringToEntityTag(m_entityTags[itemSelectedIndex].c_str()));
+					break;
+				}
+			}
+		}
+		ImGui::EndCombo();
 	}
 
 	// button to clone the entity

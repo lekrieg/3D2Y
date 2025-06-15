@@ -1,6 +1,9 @@
 #ifndef ENTITY_TAG_H
 #define ENTITY_TAG_H
 
+#include <string>
+#include <vector>
+
 namespace abyss
 {
 	enum class EntityTag
@@ -17,7 +20,10 @@ namespace abyss
 	};
 
 	const char* EntityTagToString(EntityTag tag);
-	const EntityTag StringToEntityTag(const char* tag);
+
+	EntityTag StringToEntityTag(const char *tag);
+
+	std::vector<std::string> GetEntityTagNames();
 }
 
 #endif // !ENTITY_TAG_H

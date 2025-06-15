@@ -55,3 +55,13 @@ void abyss::EntityManager::Clear()
     m_entityMap.clear();
     m_totalEntities = 0;
 }
+
+void abyss::EntityManager::UpdateEntityTag(const std::shared_ptr<abyss::Entity>& entity, const EntityTag &newTag)
+{
+	auto& entityVec = m_entityMap[entity->Tag()];
+
+	entityVec.erase(std::find(entityVec.begin(), entityVec.end(), entity));
+
+	entity->SetTag(newTag);
+	m_entityMap[newTag].push_back(entity);
+}

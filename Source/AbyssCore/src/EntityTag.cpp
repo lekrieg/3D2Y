@@ -1,69 +1,63 @@
 #include "EntityTag.h"
+
+#include <map>
 #include <string>
 
-const char* abyss::EntityTagToString(EntityTag tag)
+const char *abyss::EntityTagToString(const EntityTag tag)
 {
-	switch (tag)
-	{
-	case abyss::EntityTag::Default:
-		return "Default";
-	case abyss::EntityTag::Player:
-		return "Player";
-	case abyss::EntityTag::Enemy:
-		return "Enemy";
-	case abyss::EntityTag::SmallEnemy:
-		return "SmallEnemy";
-	case abyss::EntityTag::Bullet:
-		return "Bullet";
-	case abyss::EntityTag::SpecialAttack1:
-		return "SpecialAttack1";
-		break;
-	case abyss::EntityTag::Tile:
-		return "Tile";
-		break;
-	case abyss::EntityTag::Dangerous:
-		return "Dangerous";
-		break;
-	case abyss::EntityTag::Unknown:
-	default:
-		return "Unknown";
-	}
+    static const std::map<EntityTag, std::string> entityTagMap =
+    {
+        {EntityTag::Default, "Default"},
+        {EntityTag::Player, "Player"},
+        {EntityTag::Enemy, "Enemy"},
+        {EntityTag::SmallEnemy, "SmallEnemy"},
+        {EntityTag::Bullet, "Bullet"},
+        {EntityTag::SpecialAttack1, "SpecialAttack1"},
+        {EntityTag::Tile, "Tile"},
+        {EntityTag::Dangerous, "Dangerous"},
+        {EntityTag::Unknown, "Unknown"},
+    };
+
+    if (const auto it = entityTagMap.find(tag); it != entityTagMap.end())
+    {
+        return it->second.c_str();
+    }
+
+    return "Unknown";
 }
 
-const abyss::EntityTag abyss::StringToEntityTag(const char* tag)
+abyss::EntityTag abyss::StringToEntityTag(const char *tag)
 {
-    if (std::string(tag) == "Default")
+    static const std::map<std::string, EntityTag> entityTagMap =
     {
-        return abyss::EntityTag::Default;
-    }
-    else if (std::string(tag) == "Player")
+        {"Default", EntityTag::Default},
+        {"Player", EntityTag::Player},
+        {"Enemy", EntityTag::Enemy},
+        {"SmallEnemy", EntityTag::SmallEnemy},
+        {"Bullet", EntityTag::Bullet},
+        {"SpecialAttack1", EntityTag::SpecialAttack1},
+        {"Tile", EntityTag::Tile},
+        {"Dangerous", EntityTag::Dangerous},
+        {"Unknown", EntityTag::Unknown},
+    };
+
+    if (const auto it = entityTagMap.find(tag); it != entityTagMap.end())
     {
-        return abyss::EntityTag::Player;
-    }
-    else if (std::string(tag) == "Enemy")
-    {
-        return abyss::EntityTag::Enemy;
-    }
-    else if (std::string(tag) == "SmallEnemy")
-    {
-        return abyss::EntityTag::SmallEnemy;
-    }
-    else if (std::string(tag) == "Bullet")
-    {
-        return abyss::EntityTag::Bullet;
-    }
-    else if (std::string(tag) == "SpecialAttack1")
-    {
-        return abyss::EntityTag::SpecialAttack1;
-    }
-    else if (std::string(tag) == "Tile")
-    {
-        return abyss::EntityTag::Tile;
-    }
-    else if (std::string(tag) == "Dangerous")
-    {
-        return abyss::EntityTag::Dangerous;
+        return it->second;
     }
 
     return abyss::EntityTag::Unknown;
+}
+
+std::vector<std::string> abyss::GetEntityTagNames()
+{
+    std::vector<std::string> names;
+
+    constexpr int maxSize = 9;
+    for (int i = 0; i < maxSize; i++)
+    {
+        names.emplace_back(EntityTagToString(static_cast<EntityTag>(i)));
+    }
+
+    return names;
 }
