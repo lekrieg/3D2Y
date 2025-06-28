@@ -134,6 +134,19 @@ void editor::EditorScene::Render()
 		m_application->GetWindow().clear(sf::Color(104, 104, 104));
 	}
 
+	/*
+	 * criar um priority array de ponteiros de entidades e usar ele na hora de desenhar aqui
+	 * talvez usar um heap sort pra ordenar ou usar aquele sort do proprio C++
+	* std::sort(objectsToDraw.begin(), objectsToDraw.end(), [](const DrawableObject& a, const DrawableObject& b)
+	* {
+	*		return a.zOrder < b.zOrder;
+	* });
+	* for (const auto& obj : objectsToDraw)
+	* {
+	*		window.draw(obj.sprite);
+	* }
+	 */
+
 	for (auto e : m_entityManager.GetEntities())
 	{
 		if (m_drawTextures)

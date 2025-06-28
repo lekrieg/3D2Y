@@ -1,25 +1,25 @@
-Texture Hill_Tile_Top_0 assets/sprites/Hills.png 0 0 16 1
-Texture Hill_Tile_Top_1 assets/sprites/Hills.png 0 1 16 1
-Texture Hill_Tile_Top_2 assets/sprites/Hills.png 0 2 16 1
-Texture Hill_Tile_Mid_0 assets/sprites/Hills.png 1 0 16 1
-Texture Hill_Tile_Mid_1 assets/sprites/Hills.png 1 1 16 1
-Texture Hill_Tile_Mid_2 assets/sprites/Hills.png 1 2 16 1
-Texture Hill_Tile_Bottom_0 assets/sprites/Hills.png 2 0 16 1
-Texture Hill_Tile_Bottom_1 assets/sprites/Hills.png 2 1 16 1
-Texture Hill_Tile_Bottom_2 assets/sprites/Hills.png 2 2 16 1
-Texture Down assets/sprites/player.png 0 0 32 3
-Texture Left assets/sprites/player.png 0 1 32 3
-Texture Right assets/sprites/player.png 0 2 32 3
-Texture Up assets/sprites/player.png 0 3 32 3
-Animation Hill_Tile_Top_0 Hill_Tile_Top_0 1 0
-Animation Hill_Tile_Top_1 Hill_Tile_Top_1 1 0
-Animation Hill_Tile_Top_2 Hill_Tile_Top_2 1 0
-Animation Hill_Tile_Mid_0 Hill_Tile_Mid_0 1 0
-Animation Hill_Tile_Mid_1 Hill_Tile_Mid_1 1 0
-Animation Hill_Tile_Mid_2 Hill_Tile_Mid_2 1 0
-Animation Hill_Tile_Bottom_0 Hill_Tile_Bottom_0 1 0
-Animation Hill_Tile_Bottom_1 Hill_Tile_Bottom_1 1 0
-Animation Hill_Tile_Bottom_2 Hill_Tile_Bottom_2 1 0
+Texture Ground_Tile_01_01 assets/sprites/tiny_realm/tiles/ground/ground_tiles.png 0 0 16 16 1
+Texture Ground_Tile_01_02 assets/sprites/tiny_realm/tiles/ground/ground_tiles.png 0 1 16 16 1
+Texture Ground_Tile_01_03 assets/sprites/tiny_realm/tiles/ground/ground_tiles.png 1 0 16 16 1
+Texture Ground_Tile_01_04 assets/sprites/tiny_realm/tiles/ground/ground_tiles.png 1 1 16 16 1
+Texture Ground_Tile_02_01 assets/sprites/tiny_realm/tiles/ground/ground_tiles.png 2 0 16 16 1
+Texture Ground_Tile_02_02 assets/sprites/tiny_realm/tiles/ground/ground_tiles.png 2 1 16 16 1
+Texture Ground_Tile_02_03 assets/sprites/tiny_realm/tiles/ground/ground_tiles.png 3 0 16 16 1
+Texture Ground_Tile_02_04 assets/sprites/tiny_realm/tiles/ground/ground_tiles.png 3 1 16 16 1
+Texture Nature_prop_01_01 assets/sprites/tiny_realm/nature/nature_props.png 0 0 32 48 1
+Texture Down assets/sprites/player.png 0 0 32 32 3
+Texture Left assets/sprites/player.png 0 1 32 32 3
+Texture Right assets/sprites/player.png 0 2 32 32 3
+Texture Up assets/sprites/player.png 0 3 32 32 3
+Animation Ground_Tile_01_01 Ground_Tile_01_01 1 0
+Animation Ground_Tile_01_02 Ground_Tile_01_02 1 0
+Animation Ground_Tile_01_03 Ground_Tile_01_03 1 0
+Animation Ground_Tile_01_04 Ground_Tile_01_04 1 0
+Animation Ground_Tile_02_01 Ground_Tile_02_01 1 0
+Animation Ground_Tile_02_02 Ground_Tile_02_02 1 0
+Animation Ground_Tile_02_03 Ground_Tile_02_03 1 0
+Animation Ground_Tile_02_04 Ground_Tile_02_04 1 0
+Animation Nature_prop_01_01 Nature_prop_01_01 1 0
 Animation Down Down 3 15
 Animation Down Down 3 15
 Animation Left Left 3 15

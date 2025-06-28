@@ -16,8 +16,8 @@ void abyss::Assets::AddTexture(const TextureInfo &textureInfo)
 	if (!texture.loadFromFile(
 			textureInfo.texturePath, false,
 			sf::IntRect(
-				sf::Vector2<int>(textureInfo.indexX * textureInfo.itemSize, textureInfo.indexY * textureInfo.itemSize),
-				sf::Vector2<int>(textureInfo.itemSize * textureInfo.frameCount, textureInfo.itemSize))))
+				sf::Vector2<int>(textureInfo.indexX * textureInfo.width, textureInfo.indexY * textureInfo.height),
+				sf::Vector2<int>(textureInfo.width * textureInfo.frameCount, textureInfo.height))))
 	{
 		ABYSS_ERROR("Could not load texture!");
 		exit(-1);
@@ -95,7 +95,7 @@ void abyss::Assets::LoadFromFile(std::string path)
 		if (itemType.compare("Texture") == 0)
 		{
 			ifs >> textureInfo.textureName >> textureInfo.texturePath >> textureInfo.indexX >> textureInfo.indexY >>
-				textureInfo.itemSize >> textureInfo.frameCount;
+				textureInfo.width >> textureInfo.height >> textureInfo.frameCount;
 			AddTexture(textureInfo);
 		}
 		else if (itemType.compare("Animation") == 0)

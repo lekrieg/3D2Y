@@ -24,7 +24,8 @@ struct TextureInfo
 	std::string textureName;
 	int indexX;
 	int indexY;
-	int itemSize;
+	int width;
+	int height;
 	int frameCount;
 };
 
