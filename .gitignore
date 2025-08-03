@@ -31,5 +31,6 @@ Source/Temp/
 Source/.idea
 Source/cmake-build-debug
 Source/cmake-build-release
+Tools/AssetCreator/.idea
 
 Tools/ArchiveCreator/.vs/
