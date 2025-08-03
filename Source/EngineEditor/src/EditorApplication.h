@@ -40,6 +40,8 @@ namespace editor
 			void Update() override;
 
 			void UserInputSystem() override;
+
+			void ConfigImGuiStyle();
 	};
 }
 
