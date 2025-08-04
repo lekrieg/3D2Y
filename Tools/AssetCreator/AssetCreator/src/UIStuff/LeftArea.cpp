@@ -8,7 +8,6 @@
 #include "SFML/System/Vector2.hpp"
 #include "../imgui/imgui-SFML.h"
 #include "../imgui/imgui.h"
-#include <optional>
 
 void LeftArea::Init(Application* app)
 {
@@ -18,8 +17,6 @@ void LeftArea::Init(Application* app)
 void LeftArea::Update()
 {
     DrawLeftPanel();
-
-
 }
 
 void LeftArea::DrawLeftPanel()
@@ -29,11 +26,14 @@ void LeftArea::DrawLeftPanel()
     // rt.create(viewportSize.x, viewportSize.y);
 
     ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(0.f, 0.f));
+
     if (ImGui::Begin("Viewport"))
     {
         if (ImGui::Button("Open image"))
         {
             ABYSS_INFO("IMG!")
+
+            m_app->GetFileDialog().SetTypeFilters({ ".png", ".jpeg" });
             m_app->GetFileDialog().SetFlagOptions(0 | ImGuiFileBrowserFlags_CloseOnEsc);
             m_app->GetFileDialog().Open();
         }
@@ -68,6 +68,7 @@ void LeftArea::DrawLeftPanel()
             }
             ImGui::PushItemWidth(90);
             ImGui::InputInt("Scale", &i0);
+
             if (ImGui::Button("Apply", ImVec2(45, 20)))
             {
                 m_app->SetScale(i0);
@@ -95,6 +96,7 @@ void LeftArea::DrawLeftPanel()
         ImGui::Image(m_app->GetRenderTexture());
         ImGui::EndChild();
     }
+
     ImGui::End();
     ImGui::PopStyleVar();
     // ImGui::PopFont();

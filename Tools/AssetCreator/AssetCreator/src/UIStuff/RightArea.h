@@ -21,7 +21,6 @@ class RightArea : public ImGuiArea
 private:
 
     bool m_openSpriteInfo = false;
-
     std::vector<std::string> m_spriteTypes;
 
 public:

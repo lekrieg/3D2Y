@@ -11,7 +11,7 @@
 
 #include "Animation.h"
 #include "BaseAsset.h"
-#include "../Enums/SpriteType.h"
+#include "../Utils/SpriteType.h"
 #include "SFML/Graphics/RectangleShape.hpp"
 #include "SFML/System/Vector2.hpp"
 
@@ -23,7 +23,7 @@ namespace abyss
         {
         public:
 
-            enums::SpriteType spriteType{};
+            utils::SpriteType spriteType{};
             std::vector<std::shared_ptr<Animation>> animations{};
             int scale{};
             int speed{};

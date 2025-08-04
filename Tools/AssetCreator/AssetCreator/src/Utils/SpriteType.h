@@ -10,7 +10,7 @@
 
 namespace abyss
 {
-    namespace enums
+    namespace utils
     {
         enum class SpriteType
         {

@@ -13,8 +13,13 @@ void RightArea::Init(Application *app)
 {
     m_app = app;
 
-    m_spriteTypes = abyss::enums::GetSpriteTypeNames();
+    m_spriteTypes = abyss::utils::GetSpriteTypeNames();
 }
+
+// void abyss::EntityManager::RemoveDeadEntities(EntityVec& vec)
+// {
+//     vec.erase(std::remove_if(vec.begin(), vec.end(), [](std::shared_ptr<Entity>& e) { return !e->IsActive();  }), vec.end());
+// }
 
 void RightArea::Update()
 {
@@ -47,6 +52,8 @@ void RightArea::DrawTopMenuBar()
         DrawSpritesStuff();
         DrawAudiosStuff();
         DrawFontsStuff();
+
+        m_app->GetFileDialog().Display();
     }
 
     if (m_openSpriteInfo)
@@ -79,6 +86,15 @@ void RightArea::DrawSpriteInfo()
             ImGui::InputText("Name", sprite->assetName, IM_ARRAYSIZE(sprite->assetName));
             ImGui::EndPopup();
         }
+
+        ImGui::SameLine();
+        ImGui::PushItemWidth(90);
+        ImGui::PushID("DeleteSprite");
+        if (ImGui::Button("Delete"))
+        {
+
+        }
+        ImGui::PopID();
 
         ImGui::Separator();
 
@@ -148,6 +164,61 @@ void RightArea::DrawAudiosStuff()
 {
     if (!ImGui::CollapsingHeader("Audios"))
     {
+        auto& audios = m_app->GetAudios();
+        auto& fileDialog = m_app->GetFileDialog();
+
+        ImGui::PushID("NewAudio");
+        if (ImGui::Button("+"))
+        {
+            audios.emplace_back(std::make_shared<abyss::asset_info::AudioAsset>());
+        }
+        ImGui::PopID();
+
+        for (int i = 0; i < audios.size(); i++)
+        {
+            ImGui::Text(audios[i]->assetName);
+            ImGui::PushItemWidth(90);
+
+            ImGui::PushID("AudioName" + i);
+            if (ImGui::Button("Edit name"))
+            {
+                ImGui::OpenPopup("edit_name_popup" + i);
+            }
+
+            if (ImGui::BeginPopup("edit_name_popup" + i))
+            {
+                ImGui::InputText("Name", audios[i]->assetName, IM_ARRAYSIZE(audios[i]->assetName));
+
+                ImGui::EndPopup();
+            }
+            ImGui::PopID();
+
+            ImGui::SameLine();
+            ImGui::PushID("DeleteAudio" + i);
+            if (ImGui::Button("Delete"))
+            {
+
+            }
+            ImGui::PopID();
+
+            ImGui::PushID("SelectAudio" + i);
+            if (ImGui::Button("Select audio"))
+            {
+                fileDialog.SetTypeFilters({ ".mp3", ".mkv" });
+                fileDialog.SetFlagOptions(0 | ImGuiFileBrowserFlags_CloseOnEsc);
+                fileDialog.Open();
+            }
+            ImGui::PopID();
+
+            if (fileDialog.HasSelected())
+            {
+                audios[i]->filePath = fileDialog.GetSelected().string();
+
+                fileDialog.ClearSelected();
+            }
+
+            ImGui::Separator();
+        }
     }
 }
 
@@ -155,6 +226,62 @@ void RightArea::DrawFontsStuff()
 {
     if (!ImGui::CollapsingHeader("Fonts"))
     {
+        auto& fonts = m_app->GetFonts();
+        auto& fileDialog = m_app->GetFileDialog();
+
+        ImGui::PushID("NewFont");
+        if (ImGui::Button("+"))
+        {
+            fonts.emplace_back(std::make_shared<abyss::asset_info::FontAsset>());
+        }
+        ImGui::PopID();
+
+        for (int i = 0; i < fonts.size(); i++)
+        {
+            ImGui::Text(fonts[i]->assetName);
+            ImGui::PushItemWidth(90);
+
+            ImGui::PushID("FontName" + i);
+            if (ImGui::Button("Edit name"))
+            {
+                ImGui::OpenPopup("edit_name_popup" + i);
+            }
+
+            if (ImGui::BeginPopup("edit_name_popup" + i))
+            {
+                ImGui::InputText("Name", fonts[i]->assetName, IM_ARRAYSIZE(fonts[i]->assetName));
+
+                ImGui::EndPopup();
+            }
+            ImGui::PopID();
+
+            ImGui::SameLine();
+            ImGui::PushItemWidth(90);
+            ImGui::PushID("DeleteFont" + i);
+            if (ImGui::Button("Delete"))
+            {
+
+            }
+            ImGui::PopID();
+
+            ImGui::PushID("SelectFont" + i);
+            if (ImGui::Button("Select font"))
+            {
+                fileDialog.SetTypeFilters({ ".ttf" });
+                fileDialog.SetFlagOptions(0 | ImGuiFileBrowserFlags_CloseOnEsc);
+                fileDialog.Open();
+            }
+            ImGui::PopID();
+
+            if (fileDialog.HasSelected())
+            {
+                fonts[i]->filePath = fileDialog.GetSelected().string();
+
+                fileDialog.ClearSelected();
+            }
+
+            ImGui::Separator();
+        }
     }
 }
 
@@ -163,7 +290,7 @@ void RightArea::DrawSpriteTypeCombobox()
     auto& sprite = m_app->GetSelectedSprite();
 
     static ImGuiComboFlags flags = 0;
-    const std::string tagString = abyss::enums::SpriteTypeToString(sprite->spriteType);
+    const std::string tagString = abyss::utils::SpriteTypeToString(sprite->spriteType);
 
     static int itemSelectedIndex = 0;
     for (int i = 0; i < m_spriteTypes.size(); i++)
@@ -194,7 +321,7 @@ void RightArea::DrawSpriteTypeCombobox()
                 if (ImGui::Selectable(m_spriteTypes[n].c_str(), is_selected))
                 {
                     itemSelectedIndex = n;
-                    sprite->spriteType = abyss::enums::StringToSpriteType(m_spriteTypes[itemSelectedIndex].c_str());
+                    sprite->spriteType = abyss::utils::StringToSpriteType(m_spriteTypes[itemSelectedIndex].c_str());
                     break;
                 }
             }
@@ -255,6 +382,15 @@ void RightArea::DrawAnimationArea()
                 ImGui::EndPopup();
             }
 
+            ImGui::SameLine();
+            ImGui::PushItemWidth(90);
+            ImGui::PushID("DeleteAnimation" + i);
+            if (ImGui::Button("Delete"))
+            {
+
+            }
+            ImGui::PopID();
+
             ImGui::Text("Animation frame");
             ImGui::SameLine();
             if (ImGui::Button("+"))
@@ -262,9 +398,16 @@ void RightArea::DrawAnimationArea()
                 anim->AddFrame(sf::Vector2f(32, 32));
             }
 
-            ImGui::Separator();
             for (int j = 0; j < anim->size.size(); j++)
             {
+                ImGui::PushItemWidth(90);
+                ImGui::PushID("DeleteFrame" + j);
+                if (ImGui::Button("Delete"))
+                {
+
+                }
+                ImGui::PopID();
+
                 float newSize[] = {anim->size[j].x, anim->size[j].y};
                 ImGui::PushID(j + i);
                 ImGui::InputFloat2("Size", newSize);
@@ -277,8 +420,9 @@ void RightArea::DrawAnimationArea()
                 anim->position[j].x = newPos[0];
                 anim->position[j].y = newPos[1];
                 ImGui::PopID();
+
+                ImGui::Separator();
             }
-            ImGui::Separator();
 
             ImGui::TreePop();
         }

@@ -5,7 +5,7 @@
 
 #include <map>
 
-const char *abyss::enums::SpriteTypeToString(const SpriteType tag)
+const char *abyss::utils::SpriteTypeToString(const SpriteType tag)
 {
     static const std::map<SpriteType, std::string> SpriteTypeMap =
     {
@@ -23,7 +23,7 @@ const char *abyss::enums::SpriteTypeToString(const SpriteType tag)
     return "Unknown";
 }
 
-abyss::enums::SpriteType abyss::enums::StringToSpriteType(const char *tag)
+abyss::utils::SpriteType abyss::utils::StringToSpriteType(const char *tag)
 {
     static const std::map<std::string, SpriteType> SpriteTypeMap =
     {
@@ -41,7 +41,7 @@ abyss::enums::SpriteType abyss::enums::StringToSpriteType(const char *tag)
     return SpriteType::Prop;
 }
 
-std::vector<std::string> abyss::enums::GetSpriteTypeNames()
+std::vector<std::string> abyss::utils::GetSpriteTypeNames()
 {
     std::vector<std::string> names;
 

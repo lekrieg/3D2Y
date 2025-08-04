@@ -39,6 +39,8 @@ void Application::Init()
 	m_imguiAreas.push_back(std::make_shared<LeftArea>());
 	m_imguiAreas.push_back(std::make_shared<RightArea>());
 
+	m_fileDialog.SetTitle("File dialog");
+
 	for (auto& a : m_imguiAreas)
 	{
 		a->Init(this);

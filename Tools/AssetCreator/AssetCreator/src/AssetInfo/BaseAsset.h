@@ -9,7 +9,7 @@ class BaseAsset
 {
 public:
     char assetName[128] = {"Default"};
-    std::string filePath;
+    std::string filePath {};
 };
 
 #endif //BASE_ASSET_H
