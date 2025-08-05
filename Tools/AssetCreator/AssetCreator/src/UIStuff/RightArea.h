@@ -5,6 +5,7 @@
 #ifndef RIGHT_AREA_H
 #define RIGHT_AREA_H
 
+#include <algorithm>
 #include <memory>
 
 #include "ImGuiArea.h"
@@ -16,7 +17,7 @@ namespace abyss::asset_info
     class Animation;
 }
 
-class RightArea : public ImGuiArea
+ class RightArea : public ImGuiArea
 {
 private:
 
@@ -40,6 +41,12 @@ private:
     void DrawSpriteTypeCombobox();
     void DrawAnimationArea();
     void DrawFrames(const std::shared_ptr<abyss::asset_info::Animation>& anim);
+
+    template <typename TVec, typename TType>
+    void RemoveDeadItems(TVec vec)
+    {
+        vec.erase(std::remove_if(vec.begin(), vec.end(), [](TType& e) { return !e->isActive;  }), vec.end());
+    }
 };
 
 

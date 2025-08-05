@@ -2,11 +2,11 @@
 // Created by lekrieg on 22/07/25.
 //
 
-#ifndef FRAME_H
-#define FRAME_H
+#ifndef ANIMATION_H
+#define ANIMATION_H
 #include <vector>
 
-#include "SFML/System/Vector2.hpp"
+#include "Frame.h"
 
 namespace abyss
 {
@@ -18,9 +18,9 @@ namespace abyss
 
             char name[128] = {"Default"};
 
-            std::vector<sf::Vector2f> size {};
-            std::vector<sf::Vector2f> halfSize {};
-            std::vector<sf::Vector2i> position {};
+            std::vector<std::shared_ptr<Frame>> frames;
+
+            bool isActive = true;
 
             Animation() = default;
 
@@ -31,20 +31,18 @@ namespace abyss
 
             void AddFrame(const sf::Vector2f& size)
             {
-                this->size.push_back(size);
-                this->halfSize.push_back(size / 2.0f);
-                this->position.push_back(sf::Vector2i(0, 0));
+                frames.push_back(std::make_shared<Frame>(size, size / 2.0f, sf::Vector2i(0, 0)));
             }
 
-            void SetSize(const sf::Vector2f& size, const int index)
+            void SetSize(const std::shared_ptr<Frame>& frame, const sf::Vector2f& size)
             {
-                this->size[index].x = size.x;
-                this->size[index].y = size.y;
-                this->halfSize[index].x = size.x / 2.0f;
-                this->halfSize[index].y = size.y/ 2.0f;
+                frame->size.x = size.x;
+                frame->size.y = size.y;
+                frame->halfSize.x = size.x / 2.0f;
+                frame->halfSize.y = size.y/ 2.0f;
             }
         };
     }
 }
 
-#endif //FRAME_H
+#endif //ANIMATION_H

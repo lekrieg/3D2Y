@@ -10,6 +10,7 @@ class BaseAsset
 public:
     char assetName[128] = {"Default"};
     std::string filePath {};
+    bool isActive = true;
 };
 
 #endif //BASE_ASSET_H

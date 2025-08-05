@@ -16,14 +16,23 @@ void RightArea::Init(Application *app)
     m_spriteTypes = abyss::utils::GetSpriteTypeNames();
 }
 
-// void abyss::EntityManager::RemoveDeadEntities(EntityVec& vec)
-// {
-//     vec.erase(std::remove_if(vec.begin(), vec.end(), [](std::shared_ptr<Entity>& e) { return !e->IsActive();  }), vec.end());
-// }
-
 void RightArea::Update()
 {
     DrawRightArea();
+
+    RemoveDeadItems<std::vector<std::shared_ptr<abyss::asset_info::SpriteAsset>>&, std::shared_ptr<abyss::asset_info::SpriteAsset>>(m_app->GetSprites());
+    RemoveDeadItems<std::vector<std::shared_ptr<abyss::asset_info::AudioAsset>>&, std::shared_ptr<abyss::asset_info::AudioAsset>>(m_app->GetAudios());
+    RemoveDeadItems<std::vector<std::shared_ptr<abyss::asset_info::FontAsset>>&, std::shared_ptr<abyss::asset_info::FontAsset>>(m_app->GetFonts());
+
+    for (const auto& s : m_app->GetSprites())
+    {
+        RemoveDeadItems<std::vector<std::shared_ptr<abyss::asset_info::Animation>>&, std::shared_ptr<abyss::asset_info::Animation>>(s->animations);
+
+        for (const auto& a : s->animations)
+        {
+            RemoveDeadItems<std::vector<std::shared_ptr<abyss::asset_info::Frame>>&, std::shared_ptr<abyss::asset_info::Frame>>(a->frames);
+        }
+    }
 }
 
 void RightArea::DrawRightArea()
@@ -92,7 +101,7 @@ void RightArea::DrawSpriteInfo()
         ImGui::PushID("DeleteSprite");
         if (ImGui::Button("Delete"))
         {
-
+            sprite->isActive = false;
         }
         ImGui::PopID();
 
@@ -140,10 +149,11 @@ void RightArea::DrawSpritesStuff()
             {
                 ImGui::TableNextColumn();
                 sf::Sprite s(*m_app->GetUsedTextures()[sprite->filePath]);
-                s.setOrigin(sprite->defaultFrame->halfSize[0]);
+                s.setOrigin(sprite->defaultFrame->frames[0]->halfSize);
                 s.setTextureRect(sf::IntRect(sf::Vector2<int>(
-                    sprite->defaultFrame->position[0].x * static_cast<int>(sprite->defaultFrame->size[0].x), sprite->defaultFrame->position[0].y * static_cast<int>(sprite->defaultFrame->size[0].y)),
-                    sf::Vector2<int>(static_cast<int>(sprite->defaultFrame->size[0].x), static_cast<int>(sprite->defaultFrame->size[0].y))));
+                    sprite->defaultFrame->frames[0]->position.x * static_cast<int>(sprite->defaultFrame->frames[0]->size.x),
+                    sprite->defaultFrame->frames[0]->position.y * static_cast<int>(sprite->defaultFrame->frames[0]->size.y)),
+                    sf::Vector2<int>(static_cast<int>(sprite->defaultFrame->frames[0]->size.x), static_cast<int>(sprite->defaultFrame->frames[0]->size.y))));
 
                 if (ImGui::ImageButton("ImgButton##" + imgButtonId, s, sf::Vector2f(32, 32)))
                 {
@@ -197,7 +207,7 @@ void RightArea::DrawAudiosStuff()
             ImGui::PushID("DeleteAudio" + i);
             if (ImGui::Button("Delete"))
             {
-
+                audios[i]->isActive = false;
             }
             ImGui::PopID();
 
@@ -260,7 +270,7 @@ void RightArea::DrawFontsStuff()
             ImGui::PushID("DeleteFont" + i);
             if (ImGui::Button("Delete"))
             {
-
+                fonts[i]->isActive = false;
             }
             ImGui::PopID();
 
@@ -387,7 +397,7 @@ void RightArea::DrawAnimationArea()
             ImGui::PushID("DeleteAnimation" + i);
             if (ImGui::Button("Delete"))
             {
-
+                anim->isActive = false;
             }
             ImGui::PopID();
 
@@ -398,27 +408,28 @@ void RightArea::DrawAnimationArea()
                 anim->AddFrame(sf::Vector2f(32, 32));
             }
 
-            for (int j = 0; j < anim->size.size(); j++)
+            for (int j = 0; j < anim->frames.size(); j++)
             {
+                float newSize[] = {anim->frames[j]->size.x, anim->frames[j]->size.y};
+                ImGui::PushID(j + i);
+                ImGui::InputFloat2("Size", newSize);
+                anim->SetSize(anim->frames[j], sf::Vector2f(newSize[0], newSize[1]));
+                ImGui::PopID();
+
                 ImGui::PushItemWidth(90);
+                ImGui::SameLine(230);
                 ImGui::PushID("DeleteFrame" + j);
                 if (ImGui::Button("Delete"))
                 {
-
+                    anim->frames[j]->isActive = false;
                 }
                 ImGui::PopID();
 
-                float newSize[] = {anim->size[j].x, anim->size[j].y};
-                ImGui::PushID(j + i);
-                ImGui::InputFloat2("Size", newSize);
-                anim->SetSize(sf::Vector2f(newSize[0], newSize[1]), j);
-                ImGui::PopID();
-
-                int newPos[] = {anim->position[j].x, anim->position[j].y};
+                int newPos[] = {anim->frames[j]->position.x, anim->frames[j]->position.y};
                 ImGui::PushID(j + i);
                 ImGui::InputInt2("Position", newPos);
-                anim->position[j].x = newPos[0];
-                anim->position[j].y = newPos[1];
+                anim->frames[j]->position.x = newPos[0];
+                anim->frames[j]->position.y = newPos[1];
                 ImGui::PopID();
 
                 ImGui::Separator();
@@ -435,12 +446,12 @@ void RightArea::DrawAnimationArea()
 void RightArea::DrawFrames(const std::shared_ptr<abyss::asset_info::Animation>& anim)
 {
     int scale = m_app->GetScale();
-    for (int i = 0; i < anim->size.size(); i++)
+    for (int i = 0; i < anim->frames.size(); i++)
     {
         sf::RectangleShape rect;
-        rect.setSize(sf::Vector2f(anim->size[i].x * scale, anim->size[i].y * scale));
-        rect.setOrigin(sf::Vector2f(anim->halfSize[i].x * scale, anim->halfSize[i].y * scale));
-        rect.setPosition(sf::Vector2(((anim->size[i].x * anim->position[i].x) + anim->halfSize[i].x) * scale, ((anim->size[i].y * anim->position[i].y) + anim->halfSize[i].y) * scale));
+        rect.setSize(sf::Vector2f(anim->frames[i]->size.x * scale, anim->frames[i]->size.y * scale));
+        rect.setOrigin(sf::Vector2f(anim->frames[i]->halfSize.x * scale, anim->frames[i]->halfSize.y * scale));
+        rect.setPosition(sf::Vector2(((anim->frames[i]->size.x * anim->frames[i]->position.x) + anim->frames[i]->halfSize.x) * scale, ((anim->frames[i]->size.y * anim->frames[i]->position.y) + anim->frames[i]->halfSize.y) * scale));
         rect.setFillColor(sf::Color(0, 0, 0, 0));
         rect.setOutlineColor(sf::Color(255, 0, 0, 255));
         rect.setOutlineThickness(1);
