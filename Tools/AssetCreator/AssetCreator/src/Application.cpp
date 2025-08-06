@@ -14,10 +14,6 @@
 #include "UIStuff/LeftArea.h"
 #include "UIStuff/RightArea.h"
 
-// https://ruurdsdevlog.wordpress.com/2020/03/07/c-desktop-application-with-dear-imgui/
-// https://ruurdsdevlog.wordpress.com/2020/05/14/imguiui/
-// tentar  fazer com docking de janelas do imgui
-
 void Application::Init()
 {
 	m_window.create(sf::VideoMode(sf::Vector2u(1024, 768)), "Asset Creator", sf::Style::Titlebar | sf::Style::Close);

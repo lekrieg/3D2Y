@@ -96,15 +96,6 @@ void RightArea::DrawSpriteInfo()
             ImGui::EndPopup();
         }
 
-        ImGui::SameLine();
-        ImGui::PushItemWidth(90);
-        ImGui::PushID("DeleteSprite");
-        if (ImGui::Button("Delete"))
-        {
-            sprite->isActive = false;
-        }
-        ImGui::PopID();
-
         ImGui::Separator();
 
         DrawAnimationArea();
@@ -159,6 +150,25 @@ void RightArea::DrawSpritesStuff()
                 {
                     m_openSpriteInfo = true;
                     m_app->SetSelectedSprite(sprite);
+                }
+
+                if (ImGui::IsItemHovered() && ImGui::IsMouseClicked(1))
+                {
+                    ImGui::OpenPopup("edit_name_popup" + imgButtonId);
+                }
+
+                if (ImGui::BeginPopup("edit_name_popup" + imgButtonId))
+                {
+                    ImGui::PushItemWidth(90);
+                    ImGui::PushID("DeleteSprite");
+                    if (ImGui::Button("Delete"))
+                    {
+                        sprite->isActive = false;
+                        m_openSpriteInfo = false;
+                    }
+                    ImGui::PopID();
+
+                    ImGui::EndPopup();
                 }
 
                 imgButtonId++;
@@ -376,6 +386,7 @@ void RightArea::DrawAnimationArea()
         ImGui::PushID(i);
         if (ImGui::TreeNode("", anim->name))
         {
+
             if (m_app->GetUsedTextures()[m_app->GetSelectedSprite()->filePath])
             {
                 DrawFrames(anim);
