@@ -274,6 +274,10 @@
         "AssetCreator/src/AssetInfo/FontAsset.h"
         "AssetCreator/src/AssetInfo/BaseAsset.h"
         "AssetCreator/src/AssetInfo/Frame.h"
+        "AssetCreator/src/Utils/FileDialogType.h"
+        "AssetCreator/src/Serialization/Serializer.cpp"
+        "AssetCreator/src/Serialization/Serializer.h"
+        "AssetCreator/src/Serialization/Yaml.h"
 )
 if(CMAKE_BUILD_TYPE STREQUAL Debug)
   set_target_properties("AssetCreator" PROPERTIES

@@ -18,6 +18,7 @@
 #include "AssetInfo/AudioAsset.h"
 #include "AssetInfo/FontAsset.h"
 #include "AssetInfo/SpriteAsset.h"
+#include "Utils/FileDialogType.h"
 #include "imgui/imfilebrowser.h"
 
 class Application
@@ -33,15 +34,17 @@ protected:
     bool m_running = true;
     bool m_dockSpaceOpen = true;
     bool m_leftButton = false;
+    bool m_openSpriteInfo = false;
     int m_scale = 1;
 
-    std::vector<std::shared_ptr<abyss::asset_info::AudioAsset>> m_audios;
-    std::vector<std::shared_ptr<abyss::asset_info::FontAsset>> m_fonts;
-    std::vector<std::shared_ptr<abyss::asset_info::SpriteAsset>> m_sprites;
+    std::vector<std::shared_ptr<AudioAsset>> m_audios;
+    std::vector<std::shared_ptr<FontAsset>> m_fonts;
+    std::vector<std::shared_ptr<SpriteAsset>> m_sprites;
     std::map<std::string, std::shared_ptr<sf::Texture>> m_usedTextures;
-    std::shared_ptr<abyss::asset_info::SpriteAsset> m_selectedSprite;
+    std::shared_ptr<SpriteAsset> m_selectedSprite;
 
     ImGui::FileBrowser m_fileDialog;
+    FileDialogType m_fileDialogType;
 
     std::vector<std::shared_ptr<ImGuiArea>> m_imguiAreas;
 
@@ -60,18 +63,21 @@ public:
     bool IsRunning();
     sf::RenderWindow &GetWindow();
     ImGui::FileBrowser& GetFileDialog();
+    FileDialogType& GetFileDialogType();
     void SetImagePath(const std::string& path);
     std::string GetFilePath();
     sf::Texture& GetTexture();
     sf::RenderTexture& GetRenderTexture();
     void SetScale(int scale);
     int GetScale();
-    std::vector<std::shared_ptr<abyss::asset_info::AudioAsset>>& GetAudios();
-    std::vector<std::shared_ptr<abyss::asset_info::FontAsset>>& GetFonts();
-    std::vector<std::shared_ptr<abyss::asset_info::SpriteAsset>>& GetSprites();
+    std::vector<std::shared_ptr<AudioAsset>>& GetAudios();
+    std::vector<std::shared_ptr<FontAsset>>& GetFonts();
+    std::vector<std::shared_ptr<SpriteAsset>>& GetSprites();
     std::map<std::string, std::shared_ptr<sf::Texture>>& GetUsedTextures();
-    std::shared_ptr<abyss::asset_info::SpriteAsset>& GetSelectedSprite();
-    void SetSelectedSprite(const std::shared_ptr<abyss::asset_info::SpriteAsset>& sprite);
+    std::shared_ptr<SpriteAsset>& GetSelectedSprite();
+    void SetSelectedSprite(const std::shared_ptr<SpriteAsset>& sprite);
+    void LoadTexture(const std::string& path);
+    bool& SpriteInfoOpen();
 
 
 protected:

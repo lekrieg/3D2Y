@@ -100,6 +100,11 @@ ImGui::FileBrowser& Application::GetFileDialog()
 	return m_fileDialog;
 }
 
+FileDialogType& Application::GetFileDialogType()
+{
+	return m_fileDialogType;
+}
+
 void Application::SetImagePath(const std::string &path)
 {
 	m_imagePath = path;
@@ -130,17 +135,17 @@ int Application::GetScale()
 	return m_scale;
 }
 
-std::vector<std::shared_ptr<abyss::asset_info::AudioAsset>> & Application::GetAudios()
+std::vector<std::shared_ptr<AudioAsset>> & Application::GetAudios()
 {
 	return m_audios;
 }
 
-std::vector<std::shared_ptr<abyss::asset_info::FontAsset>> & Application::GetFonts()
+std::vector<std::shared_ptr<FontAsset>> & Application::GetFonts()
 {
 	return m_fonts;
 }
 
-std::vector<std::shared_ptr<abyss::asset_info::SpriteAsset>>& Application::GetSprites()
+std::vector<std::shared_ptr<SpriteAsset>>& Application::GetSprites()
 {
 	return m_sprites;
 }
@@ -150,14 +155,38 @@ std::map<std::string, std::shared_ptr<sf::Texture>>& Application::GetUsedTexture
 	return m_usedTextures;
 }
 
-std::shared_ptr<abyss::asset_info::SpriteAsset> & Application::GetSelectedSprite()
+std::shared_ptr<SpriteAsset> & Application::GetSelectedSprite()
 {
 	return m_selectedSprite;
 }
 
-void Application::SetSelectedSprite(const std::shared_ptr<abyss::asset_info::SpriteAsset> &sprite)
+void Application::SetSelectedSprite(const std::shared_ptr<SpriteAsset> &sprite)
 {
 	m_selectedSprite = sprite;
+}
+
+void Application::LoadTexture(const std::string &path)
+{
+	if (path.compare( m_imagePath) == 0)
+	{
+		return;
+	}
+
+	if (!m_texture.loadFromFile(path))
+	{
+		ABYSS_ERROR("Failed to load texture!")
+	}
+	m_imagePath = path;
+
+	if (!m_renderTexture.resize(m_texture.getSize()))
+	{
+		ABYSS_ERROR("Failed to resize render texture!")
+	}
+}
+
+bool & Application::SpriteInfoOpen()
+{
+	return m_openSpriteInfo;
 }
 
 void Application::UserInputSystem()

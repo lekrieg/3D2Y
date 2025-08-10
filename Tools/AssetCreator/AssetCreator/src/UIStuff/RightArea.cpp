@@ -4,33 +4,41 @@
 
 #include "RightArea.h"
 
+#include <fstream>
+
 #include "../Application.h"
 #include "../imgui/imgui.h"
 #include "../imgui//imgui-SFML.h"
 #include "../Logger.h"
+#include "../Serialization/Serializer.h"
+#include "../Utils/FileDialogType.h"
+#include "yaml-cpp/emitter.h"
+#include "yaml-cpp/exceptions.h"
+#include "yaml-cpp/node/node.h"
+#include "yaml-cpp/node/parse.h"
 
 void RightArea::Init(Application *app)
 {
     m_app = app;
 
-    m_spriteTypes = abyss::utils::GetSpriteTypeNames();
+    m_spriteTypes = GetSpriteTypeNames();
 }
 
 void RightArea::Update()
 {
     DrawRightArea();
 
-    RemoveDeadItems<std::vector<std::shared_ptr<abyss::asset_info::SpriteAsset>>&, std::shared_ptr<abyss::asset_info::SpriteAsset>>(m_app->GetSprites());
-    RemoveDeadItems<std::vector<std::shared_ptr<abyss::asset_info::AudioAsset>>&, std::shared_ptr<abyss::asset_info::AudioAsset>>(m_app->GetAudios());
-    RemoveDeadItems<std::vector<std::shared_ptr<abyss::asset_info::FontAsset>>&, std::shared_ptr<abyss::asset_info::FontAsset>>(m_app->GetFonts());
+    RemoveDeadItems<std::vector<std::shared_ptr<SpriteAsset>>&, std::shared_ptr<SpriteAsset>>(m_app->GetSprites());
+    RemoveDeadItems<std::vector<std::shared_ptr<AudioAsset>>&, std::shared_ptr<AudioAsset>>(m_app->GetAudios());
+    RemoveDeadItems<std::vector<std::shared_ptr<FontAsset>>&, std::shared_ptr<FontAsset>>(m_app->GetFonts());
 
     for (const auto& s : m_app->GetSprites())
     {
-        RemoveDeadItems<std::vector<std::shared_ptr<abyss::asset_info::Animation>>&, std::shared_ptr<abyss::asset_info::Animation>>(s->animations);
+        RemoveDeadItems<std::vector<std::shared_ptr<Animation>>&, std::shared_ptr<Animation>>(s->animations);
 
         for (const auto& a : s->animations)
         {
-            RemoveDeadItems<std::vector<std::shared_ptr<abyss::asset_info::Frame>>&, std::shared_ptr<abyss::asset_info::Frame>>(a->frames);
+            RemoveDeadItems<std::vector<std::shared_ptr<Frame>>&, std::shared_ptr<Frame>>(a->frames);
         }
     }
 }
@@ -46,16 +54,48 @@ void RightArea::DrawTopMenuBar()
 {
     if (ImGui::Begin("Asset stuff"))
     {
+        auto& fileDialogType = m_app->GetFileDialogType();
         if (ImGui::Button("Load asset"))
         {
-            ABYSS_INFO("L!")
+            m_app->GetFileDialog().SetTypeFilters({ ".asset" });
+            m_app->GetFileDialog().SetFlagOptions(0 | ImGuiFileBrowserFlags_CloseOnEsc);
+            fileDialogType = FileDialogType::Load;
+            m_app->GetFileDialog().Open();
         }
 
         ImGui::SameLine();
 
         if (ImGui::Button("Save asset"))
         {
-            ABYSS_INFO("S!")
+            m_app->GetFileDialog().SetTypeFilters({ ".asset" });
+            m_app->GetFileDialog().SetFlagOptions(0 | ImGuiFileBrowserFlags_CloseOnEsc | ImGuiFileBrowserFlags_EnterNewFilename | ImGuiFileBrowserFlags_CreateNewDir);
+            fileDialogType = FileDialogType::Save;
+            m_app->GetFileDialog().Open();
+        }
+
+        if ((fileDialogType == FileDialogType::Load || fileDialogType == FileDialogType::Save) && m_app->GetFileDialog().HasSelected())
+        {
+            std::string path = m_app->GetFileDialog().GetSelected().string();
+
+            switch (fileDialogType)
+            {
+                case FileDialogType::Save:
+                    m_assetFilePath = path.empty() ? "DefaultName.asset" : path;
+                    if (m_assetFilePath.find(".asset") == std::string::npos)
+                    {
+                        m_assetFilePath.append(".asset");
+                    }
+                    Serialize(m_assetFilePath);
+                    break;
+                case FileDialogType::Load:
+                    Deserialize(path);
+                    break;
+                case FileDialogType::Texture:
+                case FileDialogType::None:
+                    break;
+            }
+
+            m_app->GetFileDialog().ClearSelected();
         }
 
         DrawSpritesStuff();
@@ -65,7 +105,7 @@ void RightArea::DrawTopMenuBar()
         m_app->GetFileDialog().Display();
     }
 
-    if (m_openSpriteInfo)
+    if (m_app->SpriteInfoOpen())
     {
         DrawSpriteInfo();
     }
@@ -78,7 +118,7 @@ void RightArea::DrawTopMenuBar()
 void RightArea::DrawSpriteInfo()
 {
     const auto& sprite =  m_app->GetSelectedSprite();
-    if (ImGui::Begin("Sprite info", &m_openSpriteInfo))
+    if (ImGui::Begin("Sprite info", &m_app->SpriteInfoOpen()))
     {
         DrawSpriteTypeCombobox();
 
@@ -127,7 +167,7 @@ void RightArea::DrawSpritesStuff()
                     m_app->GetUsedTextures()[std::move(path)] = std::make_shared<sf::Texture>(m_app->GetTexture());
                 }
 
-                auto s = std::make_shared<abyss::asset_info::SpriteAsset>(path);
+                auto s = std::make_shared<SpriteAsset>(path);
                 s->AddAnimation();
                 m_app->GetSprites().emplace_back(s);
             }
@@ -138,17 +178,26 @@ void RightArea::DrawSpritesStuff()
             static int imgButtonId = 0;
             for (const auto& sprite : m_app->GetSprites())
             {
+                // m_app->LoadTexture(sprite->filePath);
+
                 ImGui::TableNextColumn();
                 sf::Sprite s(*m_app->GetUsedTextures()[sprite->filePath]);
-                s.setOrigin(sprite->defaultFrame->frames[0]->halfSize);
+                s.setOrigin(sprite->animations[0]->frames[0]->halfSize);
                 s.setTextureRect(sf::IntRect(sf::Vector2<int>(
-                    sprite->defaultFrame->frames[0]->position.x * static_cast<int>(sprite->defaultFrame->frames[0]->size.x),
-                    sprite->defaultFrame->frames[0]->position.y * static_cast<int>(sprite->defaultFrame->frames[0]->size.y)),
-                    sf::Vector2<int>(static_cast<int>(sprite->defaultFrame->frames[0]->size.x), static_cast<int>(sprite->defaultFrame->frames[0]->size.y))));
+                    sprite->animations[0]->frames[0]->position.x * static_cast<int>(sprite->animations[0]->frames[0]->size.x),
+                    sprite->animations[0]->frames[0]->position.y * static_cast<int>(sprite->animations[0]->frames[0]->size.y)),
+                    sf::Vector2<int>(static_cast<int>(sprite->animations[0]->frames[0]->size.x), static_cast<int>(sprite->animations[0]->frames[0]->size.y))));
 
                 if (ImGui::ImageButton("ImgButton##" + imgButtonId, s, sf::Vector2f(32, 32)))
                 {
-                    m_openSpriteInfo = true;
+                    m_app->SpriteInfoOpen() = true;
+
+                    m_app->GetTexture() = *m_app->GetUsedTextures()[sprite->filePath];
+                    if (!m_app->GetRenderTexture().resize(m_app->GetTexture().getSize()))
+                    {
+                        ABYSS_ERROR("Failed to resize render texture!")
+                    }
+
                     m_app->SetSelectedSprite(sprite);
                 }
 
@@ -164,7 +213,7 @@ void RightArea::DrawSpritesStuff()
                     if (ImGui::Button("Delete"))
                     {
                         sprite->isActive = false;
-                        m_openSpriteInfo = false;
+                        m_app->SpriteInfoOpen() = false;
                     }
                     ImGui::PopID();
 
@@ -190,7 +239,7 @@ void RightArea::DrawAudiosStuff()
         ImGui::PushID("NewAudio");
         if (ImGui::Button("+"))
         {
-            audios.emplace_back(std::make_shared<abyss::asset_info::AudioAsset>());
+            audios.emplace_back(std::make_shared<AudioAsset>());
         }
         ImGui::PopID();
 
@@ -252,7 +301,7 @@ void RightArea::DrawFontsStuff()
         ImGui::PushID("NewFont");
         if (ImGui::Button("+"))
         {
-            fonts.emplace_back(std::make_shared<abyss::asset_info::FontAsset>());
+            fonts.emplace_back(std::make_shared<FontAsset>());
         }
         ImGui::PopID();
 
@@ -310,7 +359,7 @@ void RightArea::DrawSpriteTypeCombobox()
     auto& sprite = m_app->GetSelectedSprite();
 
     static ImGuiComboFlags flags = 0;
-    const std::string tagString = abyss::utils::SpriteTypeToString(sprite->spriteType);
+    const std::string tagString = SpriteTypeToString(sprite->spriteType);
 
     static int itemSelectedIndex = 0;
     for (int i = 0; i < m_spriteTypes.size(); i++)
@@ -341,7 +390,7 @@ void RightArea::DrawSpriteTypeCombobox()
                 if (ImGui::Selectable(m_spriteTypes[n].c_str(), is_selected))
                 {
                     itemSelectedIndex = n;
-                    sprite->spriteType = abyss::utils::StringToSpriteType(m_spriteTypes[itemSelectedIndex].c_str());
+                    sprite->spriteType = StringToSpriteType(m_spriteTypes[itemSelectedIndex].c_str());
                     break;
                 }
             }
@@ -403,14 +452,17 @@ void RightArea::DrawAnimationArea()
                 ImGui::EndPopup();
             }
 
-            ImGui::SameLine();
-            ImGui::PushItemWidth(90);
-            ImGui::PushID("DeleteAnimation" + i);
-            if (ImGui::Button("Delete"))
+            if (sprite->animations.size() > 1)
             {
-                anim->isActive = false;
+                ImGui::SameLine();
+                ImGui::PushItemWidth(90);
+                ImGui::PushID("DeleteAnimation" + i);
+                if (ImGui::Button("Delete"))
+                {
+                    anim->isActive = false;
+                }
+                ImGui::PopID();
             }
-            ImGui::PopID();
 
             ImGui::Text("Animation frame");
             ImGui::SameLine();
@@ -427,14 +479,17 @@ void RightArea::DrawAnimationArea()
                 anim->SetSize(anim->frames[j], sf::Vector2f(newSize[0], newSize[1]));
                 ImGui::PopID();
 
-                ImGui::PushItemWidth(90);
-                ImGui::SameLine(230);
-                ImGui::PushID("DeleteFrame" + j);
-                if (ImGui::Button("Delete"))
+                if (anim->frames.size() > 1)
                 {
-                    anim->frames[j]->isActive = false;
+                    ImGui::PushItemWidth(90);
+                    ImGui::SameLine(230);
+                    ImGui::PushID("DeleteFrame" + j);
+                    if (ImGui::Button("Delete"))
+                    {
+                        anim->frames[j]->isActive = false;
+                    }
+                    ImGui::PopID();
                 }
-                ImGui::PopID();
 
                 int newPos[] = {anim->frames[j]->position.x, anim->frames[j]->position.y};
                 ImGui::PushID(j + i);
@@ -454,7 +509,7 @@ void RightArea::DrawAnimationArea()
     }
 }
 
-void RightArea::DrawFrames(const std::shared_ptr<abyss::asset_info::Animation>& anim)
+void RightArea::DrawFrames(const std::shared_ptr<Animation>& anim)
 {
     int scale = m_app->GetScale();
     for (int i = 0; i < anim->frames.size(); i++)
@@ -468,4 +523,33 @@ void RightArea::DrawFrames(const std::shared_ptr<abyss::asset_info::Animation>& 
         rect.setOutlineThickness(1);
         m_app->GetRenderTexture().draw(rect);
     }
+}
+
+void RightArea::Serialize(const std::string &path)
+{
+    ABYSS_INFO("Serializing: %s", path.c_str());
+
+    YAML::Emitter emitter;
+    Serializer(m_app).Serialize(emitter);
+
+    std::ofstream filepath(path);
+    filepath << emitter.c_str();
+}
+
+bool RightArea::Deserialize(const std::string &path)
+{
+    ABYSS_INFO("Deserializing: %s", path.c_str());
+    YAML::Node root;
+    try
+    {
+        root = YAML::LoadFile(path);
+    }
+    catch (YAML::ParserException& e)
+    {
+        ABYSS_ERROR("Failed to deserialize scene!");
+        return false;
+    }
+
+    Serializer(m_app).Deserialize(root);
+    return true;
 }

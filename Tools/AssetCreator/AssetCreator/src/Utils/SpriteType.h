@@ -8,23 +8,18 @@
 #include <string>
 #include <vector>
 
-namespace abyss
+enum class SpriteType
 {
-    namespace utils
-    {
-        enum class SpriteType
-        {
-            Prop,
-            Building,
-            Tile,
-            Character,
-        };
+    Prop,
+    Building,
+    Tile,
+    Character,
+};
 
-        const char* SpriteTypeToString(SpriteType tag);
+const char* SpriteTypeToString(SpriteType tag);
 
-        SpriteType StringToSpriteType(const char *tag);
+SpriteType StringToSpriteType(const char *tag);
 
-        std::vector<std::string> GetSpriteTypeNames();
-    }
-}
+std::vector<std::string> GetSpriteTypeNames();
+
 #endif //SPRITE_TYPE_H

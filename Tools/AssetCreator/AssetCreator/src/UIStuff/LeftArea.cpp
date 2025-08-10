@@ -4,10 +4,11 @@
 
 #include "LeftArea.h"
 
-
 #include "SFML/System/Vector2.hpp"
 #include "../imgui/imgui-SFML.h"
 #include "../imgui/imgui.h"
+
+#include "../Application.h"
 
 void LeftArea::Init(Application* app)
 {
@@ -21,17 +22,17 @@ void LeftArea::Update()
 
 void LeftArea::DrawLeftPanel()
 {
-    // static ImVec2 viewportSize{500, 500};
-    // static sf::RenderTexture rt{ sf::Vector2u(static_cast<int>(viewportSize.x), static_cast<int>(viewportSize.y)) };
-    // rt.create(viewportSize.x, viewportSize.y);
-
     ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2(0.f, 0.f));
 
     if (ImGui::Begin("Viewport"))
     {
+        auto& fileDialogType = m_app->GetFileDialogType();
         if (ImGui::Button("Open image"))
         {
             ABYSS_INFO("IMG!")
+
+            fileDialogType = FileDialogType::Texture;
+            m_app->SpriteInfoOpen() = false;
 
             m_app->GetFileDialog().SetTypeFilters({ ".png", ".jpeg" });
             m_app->GetFileDialog().SetFlagOptions(0 | ImGuiFileBrowserFlags_CloseOnEsc);
@@ -40,19 +41,10 @@ void LeftArea::DrawLeftPanel()
 
         m_app->GetFileDialog().Display();
 
-        if (m_app->GetFileDialog().HasSelected())
+        if (fileDialogType == FileDialogType::Texture && m_app->GetFileDialog().HasSelected())
         {
             std::string path = m_app->GetFileDialog().GetSelected().string();
-            if (!m_app->GetTexture().loadFromFile(path))
-            {
-                ABYSS_ERROR("Failed to load texture!")
-            }
-            m_app->SetImagePath(path);
-
-            if (!m_app->GetRenderTexture().resize(m_app->GetTexture().getSize()))
-            {
-                ABYSS_ERROR("Failed to resize render texture!")
-            }
+            m_app->LoadTexture(path);
 
             m_app->GetFileDialog().ClearSelected();
         }

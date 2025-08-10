@@ -7,14 +7,8 @@
 
 #include "BaseAsset.h"
 
-namespace abyss
+class AudioAsset : public BaseAsset
 {
-    namespace asset_info
-    {
-        class AudioAsset : public BaseAsset
-        {
-        };
-    }
-}
+};
 
 #endif //AUDIO_ASSET_H

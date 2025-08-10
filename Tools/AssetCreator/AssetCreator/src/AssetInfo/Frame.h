@@ -7,25 +7,19 @@
 
 #include "SFML/System/Vector2.hpp"
 
-namespace abyss
+class Frame
 {
-    namespace asset_info
+public:
+    sf::Vector2f size {};
+    sf::Vector2f halfSize {};
+    sf::Vector2i position {};
+
+    bool isActive = true;
+
+    Frame(const sf::Vector2f size, const sf::Vector2f halfSize, const sf::Vector2i position) : size(size), halfSize(halfSize), position(position)
     {
-        class Frame
-        {
-        public:
-            sf::Vector2f size {};
-            sf::Vector2f halfSize {};
-            sf::Vector2i position {};
 
-            bool isActive = true;
-
-            Frame(const sf::Vector2f size, const sf::Vector2f halfSize, const sf::Vector2i position) : size(size), halfSize(halfSize), position(position)
-            {
-
-            }
-        };
     }
-}
+};
 
 #endif //FRAME_H

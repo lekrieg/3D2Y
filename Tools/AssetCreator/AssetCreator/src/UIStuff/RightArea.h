@@ -9,20 +9,15 @@
 #include <memory>
 
 #include "ImGuiArea.h"
+#include "../AssetInfo/Animation.h"
 
 #include <vector>
-
-namespace abyss::asset_info
-{
-    class Animation;
-}
 
  class RightArea : public ImGuiArea
 {
 private:
-
-    bool m_openSpriteInfo = false;
     std::vector<std::string> m_spriteTypes;
+    std::string m_assetFilePath;
 
 public:
 
@@ -40,7 +35,10 @@ private:
 
     void DrawSpriteTypeCombobox();
     void DrawAnimationArea();
-    void DrawFrames(const std::shared_ptr<abyss::asset_info::Animation>& anim);
+    void DrawFrames(const std::shared_ptr<Animation>& anim);
+
+    void Serialize(const std::string &path);
+    bool Deserialize(const std::string &path);
 
     template <typename TVec, typename TType>
     void RemoveDeadItems(TVec vec)

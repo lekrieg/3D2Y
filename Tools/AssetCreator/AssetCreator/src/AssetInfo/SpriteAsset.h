@@ -12,32 +12,22 @@
 #include "Animation.h"
 #include "BaseAsset.h"
 #include "../Utils/SpriteType.h"
-#include "SFML/Graphics/RectangleShape.hpp"
-#include "SFML/System/Vector2.hpp"
 
-namespace abyss
+class SpriteAsset : public BaseAsset
 {
-    namespace asset_info
+public:
+
+    SpriteType spriteType{};
+    std::vector<std::shared_ptr<Animation>> animations{};
+    int scale{};
+    int speed{};
+
+    explicit SpriteAsset(std::string  path)
     {
-        class SpriteAsset : public BaseAsset
-        {
-        public:
-
-            utils::SpriteType spriteType{};
-            std::vector<std::shared_ptr<Animation>> animations{};
-            int scale{};
-            int speed{};
-
-            std::shared_ptr<Animation> defaultFrame{std::make_shared<Animation>(sf::Vector2f(32.0f, 32.0f))};
-
-            explicit SpriteAsset(std::string  path)
-            {
-                filePath = std::move(path);
-            }
-
-            void AddAnimation();
-        };
+        filePath = std::move(path);
     }
-}
+
+    void AddAnimation();
+};
 
 #endif //SPRITE_ASSET_H

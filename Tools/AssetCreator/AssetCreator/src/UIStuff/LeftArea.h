@@ -7,7 +7,6 @@
 
 #include "ImGuiArea.h"
 
-#include "../Application.h"
 
 class LeftArea : public ImGuiArea
 {

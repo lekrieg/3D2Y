@@ -7,14 +7,8 @@
 
 #include "BaseAsset.h"
 
-namespace abyss
+class FontAsset : public BaseAsset
 {
-    namespace asset_info
-    {
-        class FontAsset : public BaseAsset
-        {
-        };
-    }
-}
+};
 
 #endif //FONT_ASSET_H
