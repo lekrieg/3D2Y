@@ -270,20 +270,33 @@ void RightArea::DrawAudiosStuff()
             }
             ImGui::PopID();
 
+            auto& fileDialogType = m_app->GetFileDialogType();
             ImGui::PushID("SelectAudio" + i);
             if (ImGui::Button("Select audio"))
             {
+                fileDialogType = FileDialogType::Audio;
+
                 fileDialog.SetTypeFilters({ ".mp3", ".mkv" });
                 fileDialog.SetFlagOptions(0 | ImGuiFileBrowserFlags_CloseOnEsc);
                 fileDialog.Open();
             }
             ImGui::PopID();
 
-            if (fileDialog.HasSelected())
+            if (fileDialogType == FileDialogType::Audio && fileDialog.HasSelected())
             {
                 audios[i]->filePath = fileDialog.GetSelected().string();
 
                 fileDialog.ClearSelected();
+            }
+
+            ImGui::SameLine();
+            if (audios[i]->filePath.empty())
+            {
+                ImGui::TextColored(ImVec4(1.0f, 0.0f, 0.0f, 1.0f), "X");
+            }
+            else
+            {
+                ImGui::TextColored(ImVec4(0.0f, 1.0f, 0.0f, 1.0f), "O");
             }
 
             ImGui::Separator();
@@ -333,6 +346,7 @@ void RightArea::DrawFontsStuff()
             }
             ImGui::PopID();
 
+            auto& fileDialogType = m_app->GetFileDialogType();
             ImGui::PushID("SelectFont" + i);
             if (ImGui::Button("Select font"))
             {
@@ -342,11 +356,21 @@ void RightArea::DrawFontsStuff()
             }
             ImGui::PopID();
 
-            if (fileDialog.HasSelected())
+            if (fileDialogType == FileDialogType::Audio && fileDialog.HasSelected())
             {
                 fonts[i]->filePath = fileDialog.GetSelected().string();
 
                 fileDialog.ClearSelected();
+            }
+
+            ImGui::SameLine();
+            if (fonts[i]->filePath.empty())
+            {
+                ImGui::TextColored(ImVec4(1.0f, 0.0f, 0.0f, 1.0f), "X");
+            }
+            else
+            {
+                ImGui::TextColored(ImVec4(0.0f, 1.0f, 0.0f, 1.0f), "O");
             }
 
             ImGui::Separator();

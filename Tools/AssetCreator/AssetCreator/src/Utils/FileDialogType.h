@@ -10,6 +10,8 @@ enum class FileDialogType
     Load,
     Save,
     Texture,
+    Audio,
+    Font,
     None,
 };
 
