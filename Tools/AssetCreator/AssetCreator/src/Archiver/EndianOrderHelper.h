@@ -3,7 +3,7 @@
 
 #include "Defines.h"
 
-namespace utils
+namespace archiver
 {
 	class EndianOrderHelper
 	{

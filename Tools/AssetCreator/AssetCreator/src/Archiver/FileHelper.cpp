@@ -1,6 +1,6 @@
 #include "FileHelper.h"
 
-namespace utils
+namespace archiver
 {
 	bool FileInputStream::OpenFile(const char* fileName, ABYSS_FILE_TYPE fileType)
 	{

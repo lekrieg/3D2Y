@@ -6,7 +6,7 @@
 #include <fstream>
 #include <stdarg.h>
 
-namespace utils
+namespace archiver
 {
 	class FileStream
 	{

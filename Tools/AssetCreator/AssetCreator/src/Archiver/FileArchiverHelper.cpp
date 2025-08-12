@@ -5,7 +5,7 @@
 
 #include <string>
 
-namespace utils
+namespace archiver
 {
 	Archive::Archive()
 	{

@@ -278,6 +278,13 @@
         "AssetCreator/src/Serialization/Serializer.cpp"
         "AssetCreator/src/Serialization/Serializer.h"
         "AssetCreator/src/Serialization/Yaml.h"
+        "AssetCreator/src/Archiver/Defines.h"
+        "AssetCreator/src/Archiver/EndianOrderHelper.cpp"
+        "AssetCreator/src/Archiver/EndianOrderHelper.h"
+        "AssetCreator/src/Archiver/FileArchiverHelper.cpp"
+        "AssetCreator/src/Archiver/FileArchiverHelper.h"
+        "AssetCreator/src/Archiver/FileHelper.cpp"
+        "AssetCreator/src/Archiver/FileHelper.h"
 )
 if(CMAKE_BUILD_TYPE STREQUAL Debug)
   set_target_properties("AssetCreator" PROPERTIES

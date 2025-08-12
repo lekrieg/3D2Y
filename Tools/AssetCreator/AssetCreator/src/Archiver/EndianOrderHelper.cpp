@@ -2,7 +2,7 @@
 
 #include<assert.h>
 
-namespace utils
+namespace archiver
 {
 	EndianOrderHelper::EndianOrderHelper()
 	{

@@ -6,7 +6,7 @@
 #include <stdio.h>
 #include <string.h>
 
-namespace utils
+namespace archiver
 {
 #define ARCHIVE_ID "AE1"
 #define ARCHIVE_MAJOR 1
