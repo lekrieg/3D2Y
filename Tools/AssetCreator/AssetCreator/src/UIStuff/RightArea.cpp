@@ -12,6 +12,7 @@
 #include "../Logger.h"
 #include "../Serialization/Serializer.h"
 #include "../Utils/FileDialogType.h"
+#include "../Logger.h"
 #include "yaml-cpp/emitter.h"
 #include "yaml-cpp/exceptions.h"
 #include "yaml-cpp/node/node.h"
@@ -85,6 +86,8 @@ void RightArea::DrawTopMenuBar()
                     {
                         m_assetFilePath.append(".asset");
                     }
+
+                    ArchiveData();
                     Serialize(m_assetFilePath);
                     break;
                 case FileDialogType::Load:
@@ -164,10 +167,16 @@ void RightArea::DrawSpritesStuff()
             {
                 if (!m_app->GetUsedTextures()[path])
                 {
-                    m_app->GetUsedTextures()[std::move(path)] = std::make_shared<sf::Texture>(m_app->GetTexture());
+                    m_app->GetUsedTextures()[path] = std::make_shared<sf::Texture>(m_app->GetTexture());
+                }
+
+                if (m_app->GetFileNames()[path].empty())
+                {
+                    m_app->GetFileNames()[path] = m_app->GetFileName();
                 }
 
                 auto s = std::make_shared<SpriteAsset>(path);
+                s->fileName = m_app->GetFileName();
                 s->AddAnimation();
                 m_app->GetSprites().emplace_back(s);
             }
@@ -285,6 +294,7 @@ void RightArea::DrawAudiosStuff()
             if (fileDialogType == FileDialogType::Audio && fileDialog.HasSelected())
             {
                 audios[i]->filePath = fileDialog.GetSelected().string();
+                audios[i]->fileName = fileDialog.GetSelected().filename().string();
 
                 fileDialog.ClearSelected();
             }
@@ -298,6 +308,10 @@ void RightArea::DrawAudiosStuff()
             {
                 ImGui::TextColored(ImVec4(0.0f, 1.0f, 0.0f, 1.0f), "O");
             }
+
+            ImGui::PushID("AudioName" + i);
+            ImGui::Text(audios[i]->fileName.c_str());
+            ImGui::PopID();
 
             ImGui::Separator();
         }
@@ -350,15 +364,18 @@ void RightArea::DrawFontsStuff()
             ImGui::PushID("SelectFont" + i);
             if (ImGui::Button("Select font"))
             {
+                fileDialogType = FileDialogType::Font;
+
                 fileDialog.SetTypeFilters({ ".ttf" });
                 fileDialog.SetFlagOptions(0 | ImGuiFileBrowserFlags_CloseOnEsc);
                 fileDialog.Open();
             }
             ImGui::PopID();
 
-            if (fileDialogType == FileDialogType::Audio && fileDialog.HasSelected())
+            if (fileDialogType == FileDialogType::Font && fileDialog.HasSelected())
             {
                 fonts[i]->filePath = fileDialog.GetSelected().string();
+                fonts[i]->fileName = fileDialog.GetSelected().filename().string();
 
                 fileDialog.ClearSelected();
             }
@@ -372,6 +389,10 @@ void RightArea::DrawFontsStuff()
             {
                 ImGui::TextColored(ImVec4(0.0f, 1.0f, 0.0f, 1.0f), "O");
             }
+
+            ImGui::PushID("FontName" + i);
+            ImGui::Text(fonts[i]->fileName.c_str());
+            ImGui::PopID();
 
             ImGui::Separator();
         }
@@ -574,6 +595,70 @@ bool RightArea::Deserialize(const std::string &path)
         return false;
     }
 
+    char dataFileName[] = "data.abyss";
+    m_app->GetArchiver().ReadArchiveFile(dataFileName);
+
     Serializer(m_app).Deserialize(root);
+
+    m_app->GetArchiver().CloseArchive();
+    return true;
+}
+
+bool RightArea::ArchiveData()
+{
+    int totalFiles = 0;
+    std::vector<std::string> filePaths;
+    std::vector<std::string> fileNames;
+
+    for (const auto& item : m_app->GetAudios())
+    {
+        if (!item->fileName.empty())
+        {
+            totalFiles++;
+            filePaths.push_back(item->filePath);
+            fileNames.push_back(item->fileName);
+        }
+    }
+
+    for (const auto& item : m_app->GetFonts())
+    {
+        if (!item->fileName.empty())
+        {
+            totalFiles++;
+            filePaths.push_back(item->filePath);
+            fileNames.push_back(item->fileName);
+        }
+    }
+
+    for (const auto& item : m_app->GetFileNames())
+    {
+        totalFiles++;
+        filePaths.push_back(item.first);
+        fileNames.push_back(item.second);
+    }
+
+    const auto& headers = new archiver::ArchiveFileHeader[totalFiles];
+    for (int i = 0; i < totalFiles; i++)
+    {
+        char n[fileNames[i].size() + 1];
+        strcpy(n, fileNames[i].c_str());
+        headers[i].SetFileName(n);
+    }
+
+    char dataFileName[] = "data.abyss";
+    if (m_app->GetArchiver().WriteArchiveFile(dataFileName, headers, filePaths, totalFiles))
+    {
+        ABYSS_INFO("Archive %s created!", dataFileName)
+    }
+    else
+    {
+        ABYSS_ERROR("Error creating archive %s!", dataFileName)
+        return false;
+    }
+
+    m_app->GetArchiver().CloseArchive();
+
+    delete[] headers;
+
     return true;
 }

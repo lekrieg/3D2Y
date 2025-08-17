@@ -98,7 +98,7 @@ namespace archiver
 		return true;
 	}
 
-	bool Archive::WriteArchiveFile(char* fileName, ArchiveFileHeader* headers, int totalHeaders)
+	bool Archive::WriteArchiveFile(char* fileName, ArchiveFileHeader* headers, std::vector<std::string>& paths, int totalHeaders)
 	{
 		FileOutputStream fileOut;
 
@@ -140,7 +140,7 @@ namespace archiver
 		{
 			FileInputStream fileIn;
 
-			fileIn.OpenFile(headers[i].GetFileName(), ABYSS_FILE_TYPE::ABYSS_BINARY_FILE);
+			fileIn.OpenFile(paths[i].c_str(), ABYSS_FILE_TYPE::ABYSS_BINARY_FILE);
 
 			fileSize = fileIn.GetFileSize();
 

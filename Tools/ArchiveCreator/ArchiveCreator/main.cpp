@@ -10,7 +10,7 @@ int main(int args, char** arg)
 		std::cout << "Not enough arguments defined." << std::endl;
 		return 0;
 	}
-	
+
 	// Arg 1 is total files, 2 is archive file,
 	// 3+ are all file names to go into archive.
 	if (arg[1] == nullptr)

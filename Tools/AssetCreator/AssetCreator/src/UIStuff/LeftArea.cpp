@@ -44,7 +44,19 @@ void LeftArea::DrawLeftPanel()
         if (fileDialogType == FileDialogType::Texture && m_app->GetFileDialog().HasSelected())
         {
             std::string path = m_app->GetFileDialog().GetSelected().string();
-            m_app->LoadTexture(path);
+            m_app->GetFileName() = m_app->GetFileDialog().GetSelected().filename().string();
+
+            if (!m_app->GetTexture().loadFromFile(path))
+            {
+                ABYSS_ERROR("Failed to load texture!")
+            }
+
+            m_app->GetFilePath() = path;
+
+            if (!m_app->GetRenderTexture().resize(m_app->GetTexture().getSize()))
+            {
+                ABYSS_ERROR("Failed to resize render texture!")
+            }
 
             m_app->GetFileDialog().ClearSelected();
         }

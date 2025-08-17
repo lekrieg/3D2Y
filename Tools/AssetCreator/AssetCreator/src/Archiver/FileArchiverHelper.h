@@ -5,6 +5,7 @@
 
 #include <stdio.h>
 #include <string.h>
+#include <vector>
 
 namespace archiver
 {
@@ -99,7 +100,7 @@ namespace archiver
 		~Archive();
 
 		bool ReadArchiveFile(char* fileName);
-		bool WriteArchiveFile(char* fileName, ArchiveFileHeader* headers, int totalHeaders);
+		bool WriteArchiveFile(char* fileName, ArchiveFileHeader* headers, std::vector<std::string>& paths, int totalHeaders);
 		void CloseArchive();
 
 		bool Extract(int index, char* location);

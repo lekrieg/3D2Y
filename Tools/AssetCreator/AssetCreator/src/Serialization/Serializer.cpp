@@ -3,6 +3,26 @@
 #include "SFML/System/Vector2.hpp"
 #include "yaml-cpp/node/node.h"
 
+/*
+ * Eu vou somar todos os itens com path nao vazio / nulo
+ * vou criar a quantidade de headers de acordo com a quantidade de itens
+ * Vou criar um Archive, nao precisa ser ponteiro
+ *		com ele eu vou fazer WriteArchiveFile(fileName, headers, totalFiles)
+ *		e quando eu acabar de usar esse cara: archiveFile.CloseArchive(); + delete[] headers;
+ *		pra deletar as referencias e tal
+ *	Pra carregar eu vou usar:
+ *		ReadArchiveFile(fileName);
+ *	ai eu consigo usar qualquer um desses:
+*		int GetFileIndex(char* fileName);
+		bool GetFileData(int index, char* buffer, int bytesToRead);
+		bool GetFileData(char* fileName, char* buffer, int bytesToRead);
+		bool GetFileHeaderInfoByIndex(int index, ArchiveFileHeader* fh);
+		int GetTotalHeaders() const;
+		bool IsArchiveOpen();
+
+		pra brincar com os dados
+ */
+
 void Serializer::Serialize(YAML::Emitter &em)
 {
 	em << YAML::BeginMap;
@@ -33,6 +53,9 @@ void Serializer::Serialize(YAML::Emitter &em)
 
 void Serializer::Deserialize(const YAML::Node& nodes)
 {
+	m_app->GetFileNames().clear();
+	m_app->GetUsedTextures().clear();
+
 	if (auto spritesNode = nodes["Sprites"])
 	{
 		m_app->GetSprites().clear();
@@ -59,7 +82,7 @@ void Serializer::SerializeSprite(YAML::Emitter &em, const std::shared_ptr<Sprite
 	em << YAML::Key << s->assetName << YAML::Value << YAML::BeginMap;
 	em << YAML::Key << "speed" << YAML::Value << s->speed;
 	em << YAML::Key << "scale" << YAML::Value << s->scale;
-	em << YAML::Key << "file_path" << YAML::Value << s->filePath;
+	em << YAML::Key << "file_name" << YAML::Value << s->fileName;
 	em << YAML::Key << "sprite_type" << YAML::Value << SpriteTypeToString(s->spriteType);
 
 	em << YAML::Key << "animations" << YAML::Value << YAML::BeginMap;
@@ -91,14 +114,46 @@ void Serializer::DeserializeSprite(const YAML::Node& node, std::vector<std::shar
 	{
 		for (const auto& internalNode : mainNode)
 		{
-			auto filePath = internalNode.second["file_path"].as<std::string>();
-			if (!m_app->GetUsedTextures()[filePath])
+			auto fileName = internalNode.second["file_name"].as<std::string>();
+			if (m_app->GetFileNames()[fileName].empty())
 			{
-				m_app->LoadTexture(filePath);
-				m_app->GetUsedTextures()[std::move(filePath)] = std::make_shared<sf::Texture>(m_app->GetTexture());
+				m_app->GetFileName() = fileName;
+				m_app->GetFileNames()[fileName] = fileName;
 			}
 
-			const auto& s = std::make_shared<SpriteAsset>(filePath);
+			if (!m_app->GetUsedTextures()[fileName])
+			{
+				if (fileName.compare(m_app->GetFilePath()) != 0)
+				{
+					char* n = new char[fileName.size()];
+					strcpy(n, fileName.c_str());
+					int fileIndex = m_app->GetArchiver().GetFileIndex(n);
+
+					archiver::ArchiveFileHeader* header = new archiver::ArchiveFileHeader;
+					m_app->GetArchiver().GetFileHeaderInfoByIndex(fileIndex, header);
+					char* buffer = new char[header->GetSize()];
+					m_app->GetArchiver().GetFileData(fileIndex, buffer, header->GetSize());
+
+					if (!m_app->GetTexture().loadFromMemory(buffer, header->GetSize()))
+					{
+						ABYSS_ERROR("Failed to load texture!")
+					}
+
+					m_app->GetFilePath() = fileName;
+
+					if (!m_app->GetRenderTexture().resize(m_app->GetTexture().getSize()))
+					{
+						ABYSS_ERROR("Failed to resize render texture!")
+					}
+
+					delete[] n;
+					delete[] buffer;
+
+					m_app->GetUsedTextures()[std::move(fileName)] = std::make_shared<sf::Texture>(m_app->GetTexture());
+				}
+			}
+
+			const auto& s = std::make_shared<SpriteAsset>(fileName);
 			auto sName = internalNode.first.as<std::string>();
 			strcpy(s->assetName, sName.c_str());
 
@@ -132,7 +187,7 @@ void Serializer::SerializeAudio(YAML::Emitter &em, const std::shared_ptr<AudioAs
 {
 	em << YAML::BeginMap;
 	em << YAML::Key << a->assetName << YAML::Value << YAML::BeginMap;
-	em << YAML::Key << "file_path" << YAML::Value << a->filePath;
+	em << YAML::Key << "file_name" << YAML::Value << a->fileName;
 	em << YAML::EndMap;
 	em << YAML::EndMap;
 }
@@ -145,7 +200,8 @@ void Serializer::DeserializeAudio(const YAML::Node& node, std::vector<std::share
 		{
 			const auto audio = std::make_shared<AudioAsset>();
 			strcpy(audio->assetName, internalNode.first.as<std::string>().c_str());
-			audio->filePath = internalNode.second["file_path"].as<std::string>();
+			audio->fileName = internalNode.second["file_name"].as<std::string>();
+			audio->filePath = audio->fileName;
 
 			audios.push_back(audio);
 		}
@@ -156,7 +212,7 @@ void Serializer::SerializeFont(YAML::Emitter &em, const std::shared_ptr<FontAsse
 {
 	em << YAML::BeginMap;
 	em << YAML::Key << f->assetName << YAML::Value << YAML::BeginMap;
-	em << YAML::Key << "file_path" << YAML::Value << f->filePath;
+	em << YAML::Key << "file_name" << YAML::Value << f->fileName;
 	em << YAML::EndMap;
 	em << YAML::EndMap;
 }
@@ -169,7 +225,8 @@ void Serializer::DeserializeFont(const YAML::Node& node, std::vector<std::shared
 		{
 			const auto font = std::make_shared<FontAsset>();
 			strcpy(font->assetName, internalNode.first.as<std::string>().c_str());
-			font->filePath = internalNode.second["file_path"].as<std::string>();
+			font->fileName = internalNode.second["file_name"].as<std::string>();
+			font->filePath = font->fileName;
 
 			fonts.push_back(font);
 		}

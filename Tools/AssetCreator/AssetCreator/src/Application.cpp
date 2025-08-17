@@ -110,9 +110,14 @@ void Application::SetImagePath(const std::string &path)
 	m_imagePath = path;
 }
 
-std::string Application::GetFilePath()
+std::string& Application::GetFilePath()
 {
 	return m_imagePath;
+}
+
+std::string& Application::GetFileName()
+{
+	return m_fileName;
 }
 
 sf::Texture& Application::GetTexture()
@@ -155,6 +160,11 @@ std::map<std::string, std::shared_ptr<sf::Texture>>& Application::GetUsedTexture
 	return m_usedTextures;
 }
 
+std::map<std::string, std::string>& Application::GetFileNames()
+{
+	return m_fileNames;
+}
+
 std::shared_ptr<SpriteAsset> & Application::GetSelectedSprite()
 {
 	return m_selectedSprite;
@@ -165,28 +175,14 @@ void Application::SetSelectedSprite(const std::shared_ptr<SpriteAsset> &sprite)
 	m_selectedSprite = sprite;
 }
 
-void Application::LoadTexture(const std::string &path)
-{
-	if (path.compare( m_imagePath) == 0)
-	{
-		return;
-	}
-
-	if (!m_texture.loadFromFile(path))
-	{
-		ABYSS_ERROR("Failed to load texture!")
-	}
-	m_imagePath = path;
-
-	if (!m_renderTexture.resize(m_texture.getSize()))
-	{
-		ABYSS_ERROR("Failed to resize render texture!")
-	}
-}
-
 bool & Application::SpriteInfoOpen()
 {
 	return m_openSpriteInfo;
+}
+
+archiver::Archive & Application::GetArchiver()
+{
+	return m_archiver;
 }
 
 void Application::UserInputSystem()

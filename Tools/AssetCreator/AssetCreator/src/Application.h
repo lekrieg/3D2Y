@@ -20,15 +20,18 @@
 #include "AssetInfo/SpriteAsset.h"
 #include "Utils/FileDialogType.h"
 #include "imgui/imfilebrowser.h"
+#include "Archiver/FileArchiverHelper.h"
 
 class Application
 {
 protected:
     sf::RenderWindow m_window;
     std::string m_imagePath;
+    std::string m_fileName;
     sf::Texture m_texture;
     sf::RenderTexture m_renderTexture;
     sf::Vector2f m_oldPos;
+    archiver::Archive m_archiver;
 
     int m_simulationSpeed = 1;
     bool m_running = true;
@@ -41,6 +44,7 @@ protected:
     std::vector<std::shared_ptr<FontAsset>> m_fonts;
     std::vector<std::shared_ptr<SpriteAsset>> m_sprites;
     std::map<std::string, std::shared_ptr<sf::Texture>> m_usedTextures;
+    std::map<std::string, std::string> m_fileNames;
     std::shared_ptr<SpriteAsset> m_selectedSprite;
 
     ImGui::FileBrowser m_fileDialog;
@@ -65,7 +69,8 @@ public:
     ImGui::FileBrowser& GetFileDialog();
     FileDialogType& GetFileDialogType();
     void SetImagePath(const std::string& path);
-    std::string GetFilePath();
+    std::string& GetFilePath();
+    std::string& GetFileName();
     sf::Texture& GetTexture();
     sf::RenderTexture& GetRenderTexture();
     void SetScale(int scale);
@@ -74,10 +79,11 @@ public:
     std::vector<std::shared_ptr<FontAsset>>& GetFonts();
     std::vector<std::shared_ptr<SpriteAsset>>& GetSprites();
     std::map<std::string, std::shared_ptr<sf::Texture>>& GetUsedTextures();
+    std::map<std::string, std::string>& GetFileNames();
     std::shared_ptr<SpriteAsset>& GetSelectedSprite();
     void SetSelectedSprite(const std::shared_ptr<SpriteAsset>& sprite);
-    void LoadTexture(const std::string& path);
     bool& SpriteInfoOpen();
+    archiver::Archive& GetArchiver();
 
 
 protected:
