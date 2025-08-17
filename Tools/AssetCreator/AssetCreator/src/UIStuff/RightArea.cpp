@@ -195,8 +195,8 @@ void RightArea::DrawSpritesStuff()
                 sf::Sprite s(*m_app->GetUsedTextures()[sprite->filePath]);
                 s.setOrigin(sprite->animations[0]->frames[0]->halfSize);
                 s.setTextureRect(sf::IntRect(sf::Vector2<int>(
-                    sprite->animations[0]->frames[0]->position.x * static_cast<int>(sprite->animations[0]->frames[0]->size.x),
-                    sprite->animations[0]->frames[0]->position.y * static_cast<int>(sprite->animations[0]->frames[0]->size.y)),
+                    sprite->animations[0]->frames[0]->position.x,
+                    sprite->animations[0]->frames[0]->position.y),
                     sf::Vector2<int>(static_cast<int>(sprite->animations[0]->frames[0]->size.x), static_cast<int>(sprite->animations[0]->frames[0]->size.y))));
 
                 if (ImGui::ImageButton("ImgButton##" + imgButtonId, s, sf::Vector2f(32, 32)))
@@ -558,7 +558,7 @@ void RightArea::DrawFrames(const std::shared_ptr<Animation>& anim)
         sf::RectangleShape rect;
         rect.setSize(sf::Vector2f(anim->frames[i]->size.x, anim->frames[i]->size.y));
         rect.setOrigin(sf::Vector2f(anim->frames[i]->halfSize.x, anim->frames[i]->halfSize.y));
-        rect.setPosition(sf::Vector2(((anim->frames[i]->size.x * anim->frames[i]->position.x) + anim->frames[i]->halfSize.x), ((anim->frames[i]->size.y * anim->frames[i]->position.y) + anim->frames[i]->halfSize.y)));
+        rect.setPosition(sf::Vector2(anim->frames[i]->position.x + anim->frames[i]->halfSize.x, anim->frames[i]->position.y + anim->frames[i]->halfSize.y));
         rect.setFillColor(sf::Color(0, 0, 0, 0));
         rect.setOutlineColor(sf::Color(255, 0, 0, 255));
         rect.setOutlineThickness(1);
