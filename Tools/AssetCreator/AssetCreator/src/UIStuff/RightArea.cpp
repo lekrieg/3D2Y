@@ -455,14 +455,9 @@ void RightArea::DrawAnimationArea()
     }
 
     ImGui::SameLine(ImGui::GetWindowWidth() - 150 - ImGui::GetStyle().WindowPadding.x);
-    static int animeSpeed = 0;
-    ImGui::InputInt("Speed", &animeSpeed);
 
-    animeSpeed = animeSpeed < 0 ? 0 : animeSpeed;
-    if (animeSpeed >= 0 && animeSpeed != sprite->speed)
-    {
-        sprite->speed = animeSpeed;
-    }
+    ImGui::InputInt("Speed", &sprite->speed);
+    sprite->speed = sprite->speed < 0 ? 0 : sprite->speed;
 
     int i = 0;
     for (const auto& anim : sprite->animations)
