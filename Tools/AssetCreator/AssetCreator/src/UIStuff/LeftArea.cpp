@@ -61,32 +61,6 @@ void LeftArea::DrawLeftPanel()
             m_app->GetFileDialog().ClearSelected();
         }
 
-        ImGui::SameLine(ImGui::GetWindowWidth() - 200 - ImGui::GetStyle().WindowPadding.x);
-
-        ImGui::BeginGroup();
-        {
-            static int i0 = 1;
-            if (i0 < 0)
-            {
-                i0 = 0;
-            }
-            ImGui::PushItemWidth(90);
-            ImGui::InputInt("Scale", &i0);
-
-            if (ImGui::Button("Apply", ImVec2(45, 20)))
-            {
-                m_app->SetScale(i0);
-                ABYSS_INFO("SCALE APPLIED!")
-
-                const int s = m_app->GetScale();
-                if (!m_app->GetRenderTexture().resize(sf::Vector2u((m_app->GetTexture().getSize().x * s), (m_app->GetTexture().getSize().y * s))))
-                {
-                    ABYSS_ERROR("Failed to resize render texture!")
-                }
-            }
-            ImGui::EndGroup();
-        }
-
         ImVec2 currentSize = ImGui::GetContentRegionAvail();
         static ImVec2 previousSize;
 
@@ -106,8 +80,6 @@ void LeftArea::DrawLeftPanel()
     // ImGui::PopFont();
 
     sf::Sprite sprite(m_app->GetTexture());
-    const int s = m_app->GetScale();
-    sprite.setScale(sf::Vector2f(s, s));
 
     m_app->GetRenderTexture().clear(sf::Color::Black);
     m_app->GetRenderTexture().draw(sprite);

@@ -38,7 +38,6 @@ protected:
     bool m_dockSpaceOpen = true;
     bool m_leftButton = false;
     bool m_openSpriteInfo = false;
-    int m_scale = 1;
 
     std::vector<std::shared_ptr<AudioAsset>> m_audios;
     std::vector<std::shared_ptr<FontAsset>> m_fonts;
@@ -73,8 +72,6 @@ public:
     std::string& GetFileName();
     sf::Texture& GetTexture();
     sf::RenderTexture& GetRenderTexture();
-    void SetScale(int scale);
-    int GetScale();
     std::vector<std::shared_ptr<AudioAsset>>& GetAudios();
     std::vector<std::shared_ptr<FontAsset>>& GetFonts();
     std::vector<std::shared_ptr<SpriteAsset>>& GetSprites();

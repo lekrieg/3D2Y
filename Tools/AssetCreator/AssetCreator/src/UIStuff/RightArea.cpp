@@ -58,6 +58,8 @@ void RightArea::DrawTopMenuBar()
         auto& fileDialogType = m_app->GetFileDialogType();
         if (ImGui::Button("Load asset"))
         {
+            m_app->SpriteInfoOpen() = false;
+
             m_app->GetFileDialog().SetTypeFilters({ ".asset" });
             m_app->GetFileDialog().SetFlagOptions(0 | ImGuiFileBrowserFlags_CloseOnEsc);
             fileDialogType = FileDialogType::Load;
@@ -551,13 +553,12 @@ void RightArea::DrawAnimationArea()
 
 void RightArea::DrawFrames(const std::shared_ptr<Animation>& anim)
 {
-    int scale = m_app->GetScale();
     for (int i = 0; i < anim->frames.size(); i++)
     {
         sf::RectangleShape rect;
-        rect.setSize(sf::Vector2f(anim->frames[i]->size.x * scale, anim->frames[i]->size.y * scale));
-        rect.setOrigin(sf::Vector2f(anim->frames[i]->halfSize.x * scale, anim->frames[i]->halfSize.y * scale));
-        rect.setPosition(sf::Vector2(((anim->frames[i]->size.x * anim->frames[i]->position.x) + anim->frames[i]->halfSize.x) * scale, ((anim->frames[i]->size.y * anim->frames[i]->position.y) + anim->frames[i]->halfSize.y) * scale));
+        rect.setSize(sf::Vector2f(anim->frames[i]->size.x, anim->frames[i]->size.y));
+        rect.setOrigin(sf::Vector2f(anim->frames[i]->halfSize.x, anim->frames[i]->halfSize.y));
+        rect.setPosition(sf::Vector2(((anim->frames[i]->size.x * anim->frames[i]->position.x) + anim->frames[i]->halfSize.x), ((anim->frames[i]->size.y * anim->frames[i]->position.y) + anim->frames[i]->halfSize.y)));
         rect.setFillColor(sf::Color(0, 0, 0, 0));
         rect.setOutlineColor(sf::Color(255, 0, 0, 255));
         rect.setOutlineThickness(1);

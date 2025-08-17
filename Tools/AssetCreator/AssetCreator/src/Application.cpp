@@ -130,16 +130,6 @@ sf::RenderTexture& Application::GetRenderTexture()
 	return m_renderTexture;
 }
 
-void Application::SetScale(int scale)
-{
-	m_scale = scale;
-}
-
-int Application::GetScale()
-{
-	return m_scale;
-}
-
 std::vector<std::shared_ptr<AudioAsset>> & Application::GetAudios()
 {
 	return m_audios;

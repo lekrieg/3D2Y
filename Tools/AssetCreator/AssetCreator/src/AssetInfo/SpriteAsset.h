@@ -19,7 +19,6 @@ public:
 
     SpriteType spriteType{};
     std::vector<std::shared_ptr<Animation>> animations{};
-    int scale{};
     int speed{};
 
     explicit SpriteAsset(std::string  path)

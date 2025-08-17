@@ -81,7 +81,6 @@ void Serializer::SerializeSprite(YAML::Emitter &em, const std::shared_ptr<Sprite
 	em << YAML::BeginMap;
 	em << YAML::Key << s->assetName << YAML::Value << YAML::BeginMap;
 	em << YAML::Key << "speed" << YAML::Value << s->speed;
-	em << YAML::Key << "scale" << YAML::Value << s->scale;
 	em << YAML::Key << "file_name" << YAML::Value << s->fileName;
 	em << YAML::Key << "sprite_type" << YAML::Value << SpriteTypeToString(s->spriteType);
 
@@ -158,7 +157,6 @@ void Serializer::DeserializeSprite(const YAML::Node& node, std::vector<std::shar
 			strcpy(s->assetName, sName.c_str());
 
 			s->speed = internalNode.second["speed"].as<int>();
-			s->scale = internalNode.second["scale"].as<float>();
 			s->spriteType = StringToSpriteType(internalNode.second["sprite_type"].as<std::string>().c_str());
 
 			for (const auto& animNode : internalNode.second["animations"])
