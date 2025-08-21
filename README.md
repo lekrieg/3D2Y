@@ -1,7 +1,7 @@
 # 3D2Y basic game enine
 
 - [General explanation](#general-explanation)
-- [Basics](#basics)
+- [Docs](#docs)
 
 ## General explanation
 This is a game engine based on the engine from COMP4300 course from [Dave Churchill](https://www.youtube.com/@DaveChurchill/playlists).
@@ -57,8 +57,10 @@ zip this folder and share with other people whenever you want.
 
 You can use cmake or recreate the project using premake5 and build using make or any other option premake5 gives you.
 
-## Basics
+## Docs
 
-This is the basic UML for a basic workflow with the engine:
-
-- [ ] WIP
+- [Asset creator](https://github.com/lekrieg/3D2Y/tree/main/Docs/AssetCreator.md)
+- [Archive](https://github.com/lekrieg/3D2Y/tree/main/Docs/Archive.md)
+- [Serialization](https://github.com/lekrieg/3D2Y/tree/main/Docs/Serialization.md)
+- [Game editor](https://github.com/lekrieg/3D2Y/tree/main/Docs/GameEditor.md)
+- [Game programming](https://github.com/lekrieg/3D2Y/tree/main/Docs/GameProgramming.md)
