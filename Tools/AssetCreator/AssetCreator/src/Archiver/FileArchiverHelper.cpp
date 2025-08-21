@@ -1,5 +1,7 @@
 #include "FileArchiverHelper.h"
 
+#include <filesystem>
+
 #include "FileHelper.h"
 #include "EndianOrderHelper.h"
 
@@ -198,7 +200,6 @@ namespace archiver
 			return false;
 		}
 
-		std::string str;
 		char* buffer = nullptr;
 		int size = 0;
 
@@ -220,8 +221,12 @@ namespace archiver
 
 		GetFileData(index, buffer, size);
 
-		str = location;
+		std::string str = location;
 		str += "/";
+
+		std::filesystem::path locationPath(str);
+		std::filesystem::create_directories(locationPath.parent_path());
+
 		str += m_headers[index].GetFileName();
 
 		FileOutputStream fileOutput;
@@ -284,5 +289,17 @@ namespace archiver
 		*header = m_headers[index];
 
 		return true;
+	}
+
+	bool Archive::DeleteFolder(char *folderName)
+	{
+		const std::filesystem::path folderPath(folderName);
+
+		if (std::filesystem::exists(folderPath) && std::filesystem::is_directory(folderPath))
+		{
+			return std::filesystem::remove_all(folderPath);
+		}
+
+		return false;
 	}
 }

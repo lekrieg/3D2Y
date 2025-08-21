@@ -16,6 +16,13 @@
 
 void Application::Init()
 {
+	if (m_archiver.ReadArchiveFile("data.abyss"))
+	{
+		char idk[] = "./test";
+		bool t = m_archiver.Extract(0, idk);
+		m_archiver.CloseArchive();
+	}
+
 	m_window.create(sf::VideoMode(sf::Vector2u(1024, 768)), "Asset Creator", sf::Style::Titlebar | sf::Style::Close);
     m_window.setFramerateLimit(60);
 

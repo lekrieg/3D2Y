@@ -55,6 +55,7 @@ void Serializer::Deserialize(const YAML::Node& nodes)
 {
 	m_app->GetFileNames().clear();
 	m_app->GetUsedTextures().clear();
+	m_app->GetSelectedSprite() = {};
 
 	if (auto spritesNode = nodes["Sprites"])
 	{
@@ -122,37 +123,35 @@ void Serializer::DeserializeSprite(const YAML::Node& node, std::vector<std::shar
 
 			if (!m_app->GetUsedTextures()[fileName])
 			{
-				if (fileName.compare(m_app->GetFilePath()) != 0)
+				char* n = new char[fileName.size()];
+				strcpy(n, fileName.c_str());
+				int fileIndex = m_app->GetArchiver().GetFileIndex(n);
+
+				archiver::ArchiveFileHeader* header = new archiver::ArchiveFileHeader;
+				m_app->GetArchiver().GetFileHeaderInfoByIndex(fileIndex, header);
+				char* buffer = new char[header->GetSize()];
+				m_app->GetArchiver().GetFileData(fileIndex, buffer, header->GetSize());
+
+				if (!m_app->GetTexture().loadFromMemory(buffer, header->GetSize()))
 				{
-					char* n = new char[fileName.size()];
-					strcpy(n, fileName.c_str());
-					int fileIndex = m_app->GetArchiver().GetFileIndex(n);
-
-					archiver::ArchiveFileHeader* header = new archiver::ArchiveFileHeader;
-					m_app->GetArchiver().GetFileHeaderInfoByIndex(fileIndex, header);
-					char* buffer = new char[header->GetSize()];
-					m_app->GetArchiver().GetFileData(fileIndex, buffer, header->GetSize());
-
-					if (!m_app->GetTexture().loadFromMemory(buffer, header->GetSize()))
-					{
-						ABYSS_ERROR("Failed to load texture!")
-					}
+					ABYSS_ERROR("Failed to load texture!")
+				}
 
 					m_app->GetFilePath() = fileName;
 
-					if (!m_app->GetRenderTexture().resize(m_app->GetTexture().getSize()))
-					{
-						ABYSS_ERROR("Failed to resize render texture!")
-					}
-
-					delete[] n;
-					delete[] buffer;
-
-					m_app->GetUsedTextures()[std::move(fileName)] = std::make_shared<sf::Texture>(m_app->GetTexture());
+				if (!m_app->GetRenderTexture().resize(m_app->GetTexture().getSize()))
+				{
+					ABYSS_ERROR("Failed to resize render texture!")
 				}
+
+				delete[] n;
+				delete[] buffer;
+
+				m_app->GetUsedTextures()[fileName] = std::make_shared<sf::Texture>(m_app->GetTexture());
 			}
 
 			const auto& s = std::make_shared<SpriteAsset>(fileName);
+			s->fileName = fileName;
 			auto sName = internalNode.first.as<std::string>();
 			strcpy(s->assetName, sName.c_str());
 

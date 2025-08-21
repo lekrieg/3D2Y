@@ -113,6 +113,8 @@ namespace archiver
 
 		int GetTotalHeaders() const { return m_totalHeaders; }
 
+		bool DeleteFolder(char* folderName);
+
 		bool IsArchiveOpen()
 		{
 			return m_fileStream.IsOpen();
