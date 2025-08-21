@@ -28,7 +28,6 @@ protected:
     sf::RenderWindow m_window;
     std::string m_imagePath;
     std::string m_fileName;
-    sf::Texture m_texture;
     sf::RenderTexture m_renderTexture;
     sf::Vector2f m_oldPos;
     archiver::Archive m_archiver;
@@ -70,7 +69,6 @@ public:
     void SetImagePath(const std::string& path);
     std::string& GetFilePath();
     std::string& GetFileName();
-    sf::Texture& GetTexture();
     sf::RenderTexture& GetRenderTexture();
     std::vector<std::shared_ptr<AudioAsset>>& GetAudios();
     std::vector<std::shared_ptr<FontAsset>>& GetFonts();

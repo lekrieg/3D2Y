@@ -46,14 +46,19 @@ void LeftArea::DrawLeftPanel()
             std::string path = m_app->GetFileDialog().GetSelected().string();
             m_app->GetFileName() = m_app->GetFileDialog().GetSelected().filename().string();
 
-            if (!m_app->GetTexture().loadFromFile(path))
+            if (!m_app->GetUsedTextures()[path])
+            {
+                m_app->GetUsedTextures()[path] = std::make_shared<sf::Texture>();
+            }
+
+            if (!m_app->GetUsedTextures()[path]->loadFromFile(path))
             {
                 ABYSS_ERROR("Failed to load texture!")
             }
 
             m_app->GetFilePath() = path;
 
-            if (!m_app->GetRenderTexture().resize(m_app->GetTexture().getSize()))
+            if (!m_app->GetRenderTexture().resize(m_app->GetUsedTextures()[path]->getSize()))
             {
                 ABYSS_ERROR("Failed to resize render texture!")
             }
@@ -79,9 +84,12 @@ void LeftArea::DrawLeftPanel()
     ImGui::PopStyleVar();
     // ImGui::PopFont();
 
-    sf::Sprite sprite(m_app->GetTexture());
+    if (m_app->GetUsedTextures()[m_app->GetFilePath()])
+    {
+        sf::Sprite sprite(*m_app->GetUsedTextures()[m_app->GetFilePath()]);
 
-    m_app->GetRenderTexture().clear(sf::Color::Black);
-    m_app->GetRenderTexture().draw(sprite);
-    m_app->GetRenderTexture().display();
+        m_app->GetRenderTexture().clear(sf::Color::Black);
+        m_app->GetRenderTexture().draw(sprite);
+        m_app->GetRenderTexture().display();
+    }
 }

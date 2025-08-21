@@ -167,11 +167,6 @@ void RightArea::DrawSpritesStuff()
             }
             else
             {
-                if (!m_app->GetUsedTextures()[path])
-                {
-                    m_app->GetUsedTextures()[path] = std::make_shared<sf::Texture>(m_app->GetTexture());
-                }
-
                 if (m_app->GetFileNames()[path].empty())
                 {
                     m_app->GetFileNames()[path] = m_app->GetFileName();
@@ -201,10 +196,11 @@ void RightArea::DrawSpritesStuff()
 
                 if (ImGui::ImageButton("ImgButton##" + imgButtonId, s, sf::Vector2f(32, 32)))
                 {
+                    m_app->GetFilePath() = sprite->filePath;
+
                     m_app->SpriteInfoOpen() = true;
 
-                    m_app->GetTexture() = *m_app->GetUsedTextures()[sprite->filePath];
-                    if (!m_app->GetRenderTexture().resize(m_app->GetTexture().getSize()))
+                    if (!m_app->GetRenderTexture().resize(m_app->GetUsedTextures()[sprite->filePath]->getSize()))
                     {
                         ABYSS_ERROR("Failed to resize render texture!")
                     }
@@ -633,6 +629,31 @@ bool RightArea::ArchiveData()
         fileNames.push_back(item.second);
     }
 
+    char dataFileName[] = "data.abyss";
+    char tmpFolder[] = "tmpData";
+
+    if (m_app->GetArchiver().ReadArchiveFile(dataFileName))
+    {
+        for (int i = 0; i < fileNames.size(); i++)
+        {
+            char n[fileNames[i].size() + 1];
+            strcpy(n, fileNames[i].c_str());
+            if (m_app->GetArchiver().GetFileIndex(n) < 0)
+            {
+                continue;
+            }
+
+            m_app->GetArchiver().Extract(n, tmpFolder);
+
+            // auto& toRemove = filePaths[i];
+            // filePaths.erase(std::find(filePaths.begin(), filePaths.end(), toRemove));
+
+            std::string filePath = tmpFolder;
+            filePath += "/" + fileNames[i];
+            filePaths[i]= filePath;
+        }
+    }
+
     const auto& headers = new archiver::ArchiveFileHeader[totalFiles];
     for (int i = 0; i < totalFiles; i++)
     {
@@ -641,7 +662,6 @@ bool RightArea::ArchiveData()
         headers[i].SetFileName(n);
     }
 
-    char dataFileName[] = "data.abyss";
     if (m_app->GetArchiver().WriteArchiveFile(dataFileName, headers, filePaths, totalFiles))
     {
         ABYSS_INFO("Archive %s created!", dataFileName)
@@ -652,9 +672,11 @@ bool RightArea::ArchiveData()
         return false;
     }
 
+    delete[] headers;
+
     m_app->GetArchiver().CloseArchive();
 
-    delete[] headers;
+    m_app->GetArchiver().DeleteFolder(tmpFolder);
 
     return true;
 }

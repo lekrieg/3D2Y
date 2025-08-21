@@ -115,6 +115,8 @@ namespace archiver
 
 		bool DeleteFolder(char* folderName);
 
+		ArchiveFileHeader* GetHeaders() const { return m_headers; }
+
 		bool IsArchiveOpen()
 		{
 			return m_fileStream.IsOpen();
