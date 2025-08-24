@@ -1,1 +1,68 @@
-AssetCreator
+# AssetCreator
+
+This is a tool used to make the editor / engine assets.
+It creates two files:
+- A .abyss with the compacted file data so everything is in one place
+- A .asset with the assets you will use
+
+You can create sprites, fonts and audios to use.
+
+<details>
+<summary>asset file example</summary>
+
+```yaml
+Sprites:
+  - Tile_1:
+      speed: 0
+      file_name: Hills.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [32, 32]
+            pos: [0, 0]
+  - Character_1:
+      speed: 10
+      file_name: Player.png
+      sprite_type: Character
+      animations:
+        Default:
+          0:
+            size: [32, 32]
+            pos: [0, 0]
+          1:
+            size: [32, 32]
+            pos: [32, 0]
+          2:
+            size: [32, 32]
+            pos: [64, 0]
+  - Bonfire_1:
+      speed: 0
+      file_name: campfire.png
+      sprite_type: Prop
+      animations:
+        Default:
+          0:
+            size: [32, 32]
+            pos: [0, 0]
+  - House_1:
+      speed: 0
+      file_name: houses_03.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [92, 100]
+            pos: [10, 27]
+Audios:
+  - Default:
+      file_name: AliceRoomLoopN.mp3
+Fonts:
+  - Default:
+      file_name: elementalis-type.ttf
+```
+</details>
+
+# Screenshots
+
+![AssetCreator_01](./images/AssetCreator_01.png)
