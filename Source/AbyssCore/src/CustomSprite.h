@@ -45,7 +45,6 @@ namespace abyss
 
                 this->path = path;
 
-                // TODO: set all data here
                 name = spriteAsset.name;
                 path = spriteAsset.path;
 

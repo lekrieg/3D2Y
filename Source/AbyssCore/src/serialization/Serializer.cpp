@@ -216,6 +216,8 @@ void abyss::serializer::Serializer::DeserializeSprite(const YAML::Node& node, st
 			}
 
 			sprites[s.name] = s;
+
+			m_assets->GetSpritesPerType()[s.spriteType].push_back(s);
 		}
 	}
 }

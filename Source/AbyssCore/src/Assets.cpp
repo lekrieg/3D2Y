@@ -29,6 +29,11 @@ std::map<std::string, sf::Font> & abyss::Assets::GetFonts()
 	return m_fonts;
 }
 
+std::map<abyss::enums::SpriteType, std::vector<abyss::assets::SpriteAsset>> & abyss::Assets::GetSpritesPerType()
+{
+	return m_spritesPerType;
+}
+
 archiver::Archive & abyss::Assets::GetArchiver()
 {
 	return m_archive;

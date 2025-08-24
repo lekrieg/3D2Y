@@ -607,29 +607,41 @@ void editor::EditorScene::AssetManagerGui()
 		if (ImGui::BeginTabItem("Assets"))
 		{
 			ImGui::Checkbox("Snap to grid", &m_snapToGrid);
-			if (ImGui::BeginTable("TableTest", 5))
+
+			if (ImGui::BeginTabBar("GameTabBar", tabBarFlags))
 			{
-				for (auto &a : m_application->GetAssets().GetSprites())
+				for (auto& spritePerType : m_application->GetAssets().GetSpritesPerType())
 				{
-					// TODO: fix this workaround in a later version
-					sf::Sprite s(m_application->GetAssets().GetTextures()[a.second.path]);
-					s.setOrigin(sf::Vector2f(a.second.sizes[a.second.animationNames[0]][0].x / 2, a.second.sizes[a.second.animationNames[0]][0].y / 2));
-					s.setTextureRect(sf::IntRect(a.second.positions[a.second.animationNames[0]][0],
-						sf::Vector2<int>(static_cast<int>(a.second.sizes[a.second.animationNames[0]][0].x), static_cast<int>(a.second.sizes[a.second.animationNames[0]][0].y))));
-
-					if (ImGui::ImageButton(a.first.c_str(), s, sf::Vector2f(32, 32)))
+					if (ImGui::BeginTabItem(abyss::enums::SpriteTypeToString(spritePerType.first)))
 					{
-						m_lastEntityToCreate = a.first;
-						m_dragEntity = CreateEntity(false, m_lastEntityToCreate.c_str());
+						if (ImGui::BeginTable("TypeTable", 5))
+						{
+							for (auto &a : spritePerType.second)
+							{
+								ImGui::TableNextColumn();
 
-						m_draggingEntity = true;
-						m_entityCreation = true;
-						m_cloningEntity = false;
+								// TODO: fix this workaround in a later version
+								sf::Sprite s(m_application->GetAssets().GetTextures()[a.path]);
+								s.setOrigin(sf::Vector2f(a.sizes[a.animationNames[0]][0].x / 2, a.sizes[a.animationNames[0]][0].y / 2));
+								s.setTextureRect(sf::IntRect(a.positions[a.animationNames[0]][0],
+									sf::Vector2<int>(static_cast<int>(a.sizes[a.animationNames[0]][0].x), static_cast<int>(a.sizes[a.animationNames[0]][0].y))));
+
+								if (ImGui::ImageButton(a.name.c_str(), s, sf::Vector2f(32, 32)))
+								{
+									m_lastEntityToCreate = a.name;
+									m_dragEntity = CreateEntity(false, m_lastEntityToCreate.c_str());
+
+									m_draggingEntity = true;
+									m_entityCreation = true;
+									m_cloningEntity = false;
+								}
+							}
+							ImGui::EndTable();
+						}
+						ImGui::EndTabItem();
 					}
-					ImGui::TableNextColumn();
 				}
-
-				ImGui::EndTable();
+				ImGui::EndTabBar();
 			}
 			ImGui::EndTabItem();
 		}
