@@ -8,18 +8,20 @@ You can:
 
 <details>
 <summary>Disponible methods</summary>
+
 ```C++
-- bool ReadArchiveFile(char* fileName);
-- bool WriteArchiveFile(char* fileName, ArchiveFileHeader* headers, std::vector<std::string>& paths, int totalHeaders);
-- void CloseArchive();bool Extract(int index, char* location);
-- bool Extract(char* fileName, char* location);
-- int GetFileIndex(char* fileName);
-- bool GetFileData(int index, char* buffer, int bytesToRead);
-- bool GetFileData(char* fileName, char* buffer, int bytesToRead);
-- bool GetFileHeaderInfoByIndex(int index, ArchiveFileHeader* fh);
-- int GetTotalHeaders();
-- bool IsArchiveOpen();
+bool ReadArchiveFile(char* fileName);
+bool WriteArchiveFile(char* fileName, ArchiveFileHeader* headers, std::vector<std::string>& paths, int totalHeaders);
+void CloseArchive();bool Extract(int index, char* location);
+bool Extract(char* fileName, char* location);
+int GetFileIndex(char* fileName);
+bool GetFileData(int index, char* buffer, int bytesToRead);
+bool GetFileData(char* fileName, char* buffer, int bytesToRead);
+bool GetFileHeaderInfoByIndex(int index, ArchiveFileHeader* fh);
+int GetTotalHeaders();
+bool IsArchiveOpen();
 ```
+
 </details>
 
 ## Examples
