@@ -1,7 +1,7 @@
 #ifndef ENTITY_H
 #define ENTITY_H
 
-#include "EntityTag.h"
+#include "Enums.h"
 #include <cstddef>
 
 
@@ -14,12 +14,12 @@ namespace abyss
 		friend class EntityManager;
 
 		size_t m_id = 0;
-		EntityTag m_tag = EntityTag::Default;
+		enums::EntityTag m_tag = enums::EntityTag::Default;
 		bool m_alive = true;
 
 	public:
 
-		Entity(const EntityTag& tag, size_t id) : m_tag(tag), m_id(id)
+		Entity(const enums::EntityTag& tag, size_t id) : m_tag(tag), m_id(id)
 		{
 		}
 
@@ -28,12 +28,12 @@ namespace abyss
 			m_alive = false;
 		}
 
-		const EntityTag Tag() const
+		const enums::EntityTag Tag() const
 		{
 			return m_tag;
 		}
 
-		void SetTag(const EntityTag& tag)
+		void SetTag(const enums::EntityTag& tag)
 		{
 			m_tag = tag;
 		}

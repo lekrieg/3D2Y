@@ -53,7 +53,7 @@ namespace abyss
 				auto &anim = componentManager->GetComponent<components::Anim>(e->Id());
 				auto &t = componentManager->GetComponent<components::Transform>(e->Id());
 
-				sf::Vector2f halfSize = anim.animation.GetHalfSize();
+				sf::Vector2f halfSize = anim.animation.GetAnimation()->frames[0]->halfSize;
 				if ((pos.x < t.pos.x + halfSize.x && pos.x > t.pos.x - halfSize.x) &&
 					(pos.y > t.pos.y - halfSize.y && pos.y < t.pos.y + halfSize.y))
 				{

@@ -20,7 +20,7 @@ void abyss::EntityManager::Update()
 	}
 }
 
-std::shared_ptr<abyss::Entity> abyss::EntityManager::AddEntity(const EntityTag& tag)
+std::shared_ptr<abyss::Entity> abyss::EntityManager::AddEntity(const enums::EntityTag& tag)
 {
 	// TODO: check map edge cases
 	auto e = std::make_shared<Entity>(tag, m_totalEntities++);
@@ -34,12 +34,12 @@ abyss::EntityVec& abyss::EntityManager::GetEntities()
 	return m_entities;
 }
 
-abyss::EntityVec& abyss::EntityManager::GetEntities(const EntityTag& tag)
+abyss::EntityVec& abyss::EntityManager::GetEntities(const enums::EntityTag& tag)
 {
 	return m_entityMap[tag];
 }
 
-const std::map<abyss::EntityTag, abyss::EntityVec>& abyss::EntityManager::GetEntityMap()
+const std::map<abyss::enums::EntityTag, abyss::EntityVec>& abyss::EntityManager::GetEntityMap()
 {
 	return m_entityMap;
 }
@@ -56,7 +56,7 @@ void abyss::EntityManager::Clear()
     m_totalEntities = 0;
 }
 
-void abyss::EntityManager::UpdateEntityTag(const std::shared_ptr<abyss::Entity>& entity, const EntityTag &newTag)
+void abyss::EntityManager::UpdateEntityTag(const std::shared_ptr<abyss::Entity>& entity, const enums::EntityTag &newTag)
 {
 	auto& entityVec = m_entityMap[entity->Tag()];
 

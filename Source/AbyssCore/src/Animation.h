@@ -1,102 +1,40 @@
+//
+// Created by lekrieg on 22/08/25.
+//
+
 #ifndef ANIMATION_H
 #define ANIMATION_H
 
-#include "SFML/Graphics/Rect.hpp"
-#include "SFML/Graphics/Sprite.hpp"
-#include "SFML/Graphics/Texture.hpp"
-#include "SFML/System/Vector2.hpp"
-#include <SFML/Graphics.hpp>
-#include <cmath>
-#include <string>
+#include "Frame.h"
+
+#include <memory>
+
+#include "assets/BaseAsset.h"
 
 namespace abyss
 {
-	class Animation
-	{
-			sf::Sprite m_sprite;
+    class Animation
+    {
+    public:
+        char name[128] = {"Default"};
 
-			int m_frameCount;
-			int m_currentFrame;
-			int m_animFrame;
-			sf::Vector2f m_size;
-			sf::Vector2f m_halfSize;
-			std::string m_name;
+        std::vector<std::shared_ptr<Frame>> frames;
 
-		public:
-		    int speed;
+        Animation() = default;
 
-			Animation() : Animation("", sf::Texture())
-			{
-			}
+        void AddFrame(const sf::Vector2f &size, const sf::Vector2i &pos)
+        {
+            frames.push_back(std::make_shared<Frame>(size, size / 2.0f, pos));
+        }
 
-			Animation(std::string name, const sf::Texture &texture) : Animation(name, texture, 1, 0)
-			{
-			}
-
-			Animation(const std::string &name, const sf::Texture &texture, int frameCount, int speed) :
-				m_name{ name },
-				speed(speed),
-				m_currentFrame(0),
-				m_sprite(texture),
-				m_frameCount(frameCount),
-				m_animFrame(0)
-			{
-				m_currentFrame = 0;
-				m_size = sf::Vector2f(static_cast<float>(texture.getSize().x / frameCount),
-									  static_cast<float>(texture.getSize().y));
-				m_halfSize = sf::Vector2f(m_size.x / 2.0f, m_size.y / 2.0f);
-				m_sprite.setOrigin(sf::Vector2f(m_size.x / 2.0f, m_size.y / 2.0f));
-				m_sprite.setTextureRect(sf::IntRect(
-					sf::Vector2<int>(static_cast<int>(std::floor(m_currentFrame)) * static_cast<int>(m_size.x), 0),
-					sf::Vector2<int>(static_cast<int>(m_size.x), static_cast<int>(m_size.y))));
-			}
-
-			void Update();
-			bool HasEnded();
-
-			sf::Sprite &GetSprite()
-			{
-				return m_sprite;
-			}
-
-			const sf::Vector2f &GetSize() const
-			{
-				return m_size;
-			}
-
-			const sf::Vector2f &GetHalfSize() const
-			{
-				return m_halfSize;
-			}
-
-			const std::string &GetName() const
-			{
-				return m_name;
-			}
-
-			const int GetFrameCount() const
-			{
-				return m_frameCount;
-			}
-
-			void SetScale(sf::Vector2<float> scale)
-			{
-				m_sprite.setScale(scale);
-
-				// m_sprite.setOrigin(sf::Vector2f(m_sprite.getTexture().getSize().x / 2.0f,
-				// m_sprite.getTexture().getSize().y / 2.0f));
-			}
-
-			void SetPosition(sf::Vector2<float> pos)
-			{
-				m_sprite.setPosition(pos);
-			}
-
-			void SetRotation(float angle)
-			{
-				m_sprite.setRotation(sf::degrees(angle));
-			}
-	};
+        void SetSize(const std::shared_ptr<Frame> &frame, const sf::Vector2f &size)
+        {
+            frame->size.x = size.x;
+            frame->size.y = size.y;
+            frame->halfSize.x = size.x / 2.0f;
+            frame->halfSize.y = size.y / 2.0f;
+        }
+    };
 }
 
-#endif // !ANIMATION_H
+#endif //ANIMATION_H

@@ -1,8 +1,10 @@
 #ifndef ANIM_H
 #define ANIM_H
 
+#include <utility>
+
 #include "Component.h"
-#include "../Animation.h"
+#include "../CustomSprite.h"
 
 namespace abyss
 {
@@ -11,14 +13,11 @@ namespace abyss
 		class Anim : public Component
 		{
 		public:
-			Animation animation;
+			CustomSprite animation;
 			bool repeat = false;
 
-			Anim() = default;
-
-			Anim(const Animation& anim, const bool r) : animation{ anim }, repeat(r)
+			Anim(CustomSprite  anim, const bool r) : animation{std::move( anim )}, repeat(r)
 			{
-
 			}
 		};
 	}

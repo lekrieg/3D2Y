@@ -1,7 +1,7 @@
 #ifndef ACTION_H
 #define ACTION_H
 
-#include "ActionState.h"
+#include "Enums.h"
 
 #include "math/Vectors.h"
 
@@ -14,26 +14,26 @@ namespace abyss
 		private:
 
 			std::string m_name;
-			ActionState m_actionState;
+			enums::ActionState m_actionState;
 			abyss::math::Vec2<int> m_position;
 			float m_scrollWheelDelta;
 
 		public:
 
-			Action() : Action("default", ActionState::Default)
+			Action() : Action("default", enums::ActionState::Default)
 			{
 			}
 
-			Action(const std::string &name, const ActionState &state) : Action(name, state, abyss::math::Vec2<int>())
+			Action(const std::string &name, const enums::ActionState &state) : Action(name, state, abyss::math::Vec2<int>())
 			{
 			}
 
-			Action(const std::string &name, const ActionState &state, const abyss::math::Vec2<int> &pos) :
+			Action(const std::string &name, const enums::ActionState &state, const abyss::math::Vec2<int> &pos) :
 				Action(name, state, pos, 0.0f)
 			{
 			}
 
-			Action(const std::string &name, const ActionState &state, const abyss::math::Vec2<int> &pos,
+			Action(const std::string &name, const enums::ActionState &state, const abyss::math::Vec2<int> &pos,
 				   const float scrollWheelDelta) :
 				m_name(name),
 				m_actionState(state),
@@ -47,7 +47,7 @@ namespace abyss
 				return m_name;
 			}
 
-			const ActionState &State() const
+			const enums::ActionState &State() const
 			{
 				return m_actionState;
 			}

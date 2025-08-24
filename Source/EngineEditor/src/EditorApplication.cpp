@@ -1,7 +1,7 @@
 #include "EditorApplication.h"
 
 #include "Action.h"
-#include "ActionState.h"
+#include "Enums.h"
 #include "Logger.h"
 #include "SFML/Graphics/Rect.hpp"
 #include "SFML/System/Vector2.hpp"
@@ -20,7 +20,7 @@ void editor::EditorApplication::Init(const std::string &configPath, const std::s
 
 	m_window.create(sf::VideoMode(sf::Vector2u(1024, 768)), "Level Editor", sf::Style::Titlebar | sf::Style::Close);
 
-	m_scene = std::make_shared<editor::EditorScene>(this, "", GetAssets().GetFont("elementalis"));
+	m_scene = std::make_shared<editor::EditorScene>(this, "", GetAssets().GetFonts()["Default"]);
 
 	if (!ImGui::SFML::Init(m_window))
 	{
@@ -150,7 +150,7 @@ void editor::EditorApplication::UserInputSystem()
 			}
 
 			m_scene->ExecuteAction(
-				abyss::Action(m_scene->GetActionMap().at(keyPressed->code), abyss::ActionState::Start));
+				abyss::Action(m_scene->GetActionMap().at(keyPressed->code), abyss::enums::ActionState::Start));
 		}
 		else if (keyReleased)
 		{
@@ -160,7 +160,7 @@ void editor::EditorApplication::UserInputSystem()
 			}
 
 			m_scene->ExecuteAction(
-				abyss::Action(m_scene->GetActionMap().at(keyReleased->code), abyss::ActionState::End));
+				abyss::Action(m_scene->GetActionMap().at(keyReleased->code), abyss::enums::ActionState::End));
 		}
 
 		// TODO: try to block user input when focus on imgui
@@ -171,7 +171,7 @@ void editor::EditorApplication::UserInputSystem()
 
 			if (mousePressed)
 			{
-				const abyss::ActionState actionState = abyss::ActionState::Start;
+				const abyss::enums::ActionState actionState = abyss::enums::ActionState::Start;
 
 				switch (mousePressed->button)
 				{
@@ -197,7 +197,7 @@ void editor::EditorApplication::UserInputSystem()
 
 			if (mouseReleased)
 			{
-				const abyss::ActionState actionState = abyss::ActionState::End;
+				const abyss::enums::ActionState actionState = abyss::enums::ActionState::End;
 
 				switch (mouseReleased->button)
 				{
@@ -223,13 +223,13 @@ void editor::EditorApplication::UserInputSystem()
 
 			if (mouseMoved)
 			{
-				m_scene->ExecuteAction(abyss::Action("MOUSE_MOVE", abyss::ActionState::Start, abyss::math::Vec2<int>(mouseMoved->position.x, mouseMoved->position.y)));
+				m_scene->ExecuteAction(abyss::Action("MOUSE_MOVE", abyss::enums::ActionState::Start, abyss::math::Vec2<int>(mouseMoved->position.x, mouseMoved->position.y)));
 			}
 
 			if (mouseWheelScrolled)
 			{
 				m_scene->ExecuteAction(abyss::Action(
-					"ZOOM", abyss::ActionState::Start,
+					"ZOOM", abyss::enums::ActionState::Start,
 					abyss::math::Vec2<int>(mouseWheelScrolled->position.x, mouseWheelScrolled->position.y),
 					mouseWheelScrolled->delta));
 			}

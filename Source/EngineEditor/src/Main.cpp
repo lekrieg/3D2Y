@@ -2,6 +2,6 @@
 
 int main()
 {
-	editor::EditorApplication editor("config.txt", "assets.txt");
+	editor::EditorApplication editor("config.txt", "test.asset");
 	editor.Run();
 }

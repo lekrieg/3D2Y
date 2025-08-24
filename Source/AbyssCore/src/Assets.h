@@ -1,8 +1,12 @@
 #ifndef ASSETS_H
 #define ASSETS_H
 
-#include "Animation.h"
-#include "FileData.h"
+#include "assets/SpriteAsset.h"
+#include "assets/AudioAsset.h"
+#include "assets/FontAsset.h"
+#include "CustomSprite.h"
+#include "archiver/FileArchiverHelper.h"
+
 #include "soloud.h"
 #include "soloud_wav.h"
 
@@ -14,25 +18,26 @@ namespace abyss
 {
 	class Assets
 	{
+		archiver::Archive m_archive;
+
 		std::map<std::string, sf::Texture> m_textures;
-		std::map<std::string, Animation> m_animations;
-		std::map<std::string, std::string> m_sounds;
+		std::map<std::string, assets::SpriteAsset> m_sprites; // o problema ta aqui! nao posso ter mais de dois itens com o mesmo nome...
+																				// ou arrumo um jeito de criar os sprites sem dependencia
+		std::map<std::string, assets::AudioAsset> m_sounds;
 		std::map<std::string, sf::Font> m_fonts;
 
 	public:
 
-		void AddTexture(const TextureInfo& textureInfo);
-		void AddAnimation(const AnimationInfo& animationInfo);
-		void AddSound(const SoundInfo& soundInfo);
-		void AddFont(const FontInfo& fontInfo);
+		Assets() =default;
 
-		sf::Texture& GetTexture(std::string name);
-		Animation& GetAnimation(std::string name);
-		std::map<std::string, Animation>& GetAnimations();
-		std::string& GetSound(std::string name);
-		sf::Font& GetFont(std::string name);
+		std::map<std::string, sf::Texture>& GetTextures();
+		std::map<std::string, assets::SpriteAsset>& GetSprites();
+		std::map<std::string, assets::AudioAsset>& GetAudios();
+		std::map<std::string, sf::Font>& GetFonts();
 
-		void LoadFromFile(std::string path);
+		archiver::Archive& GetArchiver();
+
+		void LoadFromFile(const std::string& path);
 	};
 }
 

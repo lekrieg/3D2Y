@@ -1,7 +1,7 @@
 #include "Serializer.h"
 
 #include "../Assets.h"
-#include "../EntityTag.h"
+#include "../Enums.h"
 #include "SFML/System/Vector2.hpp"
 #include "../components/Anim.h"
 #include "../components/BoundingBox.h"
@@ -19,7 +19,7 @@ void abyss::serializer::Serializer::Serialize(YAML::Emitter &em)
 	for (auto &innerMap : m_entityManager->GetEntityMap())
 	{
 		em << YAML::BeginMap;
-		em << YAML::Key << abyss::EntityTagToString(innerMap.first) << YAML::Value << YAML::BeginMap;
+		em << YAML::Key << enums::EntityTagToString(innerMap.first) << YAML::Value << YAML::BeginMap;
 
 		int index = 0;
 		for (auto &e : innerMap.second)
@@ -52,7 +52,7 @@ void abyss::serializer::Serializer::Deserialize(YAML::Node nodes)
 		// tag nodes
 		for (auto innerNode : node)
 		{
-			abyss::EntityTag tag = abyss::StringToEntityTag(innerNode.first.as<std::string>().c_str());
+			enums::EntityTag tag = enums::StringToEntityTag(innerNode.first.as<std::string>().c_str());
 
 			YAML::Node indexNode = innerNode.second;
 			// index nodes
@@ -65,6 +65,24 @@ void abyss::serializer::Serializer::Deserialize(YAML::Node nodes)
 				DeserializeBoundingBox(components, e);
 			}
 		}
+	}
+}
+
+void abyss::serializer::Serializer::DeserializeAssets(YAML::Node nodes)
+{
+	if (auto spritesNode = nodes["Sprites"])
+	{
+		DeserializeSprite(spritesNode, m_assets->GetSprites());
+	}
+
+	if (auto audiosNode = nodes["Audios"])
+	{
+		DeserializeAudio(audiosNode, m_assets->GetAudios());
+	}
+
+	if (auto fontsNode = nodes["Fonts"])
+	{
+		DeserializeFont(fontsNode, m_assets->GetFonts());
 	}
 }
 
@@ -100,7 +118,7 @@ void abyss::serializer::Serializer::SerializeAnim(YAML::Emitter &em, std::shared
 		auto &t = m_componentManager->GetComponent<abyss::components::Anim>(e->Id());
 		em << YAML::Key << "AnimComponent" << YAML::Value << YAML::BeginMap;
 		em << YAML::Key << "repeat" << YAML::Value << t.repeat;
-		em << YAML::Key << "name" << YAML::Value << t.animation.GetName();
+		em << YAML::Key << "name" << YAML::Value << t.animation.GetAnimation()->name;
 		em << YAML::Key << "speed" << YAML::Value << t.animation.speed;
 		em << YAML::EndMap;
 	}
@@ -110,7 +128,8 @@ void abyss::serializer::Serializer::DeserializeAnim(YAML::Node node, std::shared
 {
 	if (auto data = node["AnimComponent"])
 	{
-        m_componentManager->AddComponent<abyss::components::Anim>(e->Id(), abyss::components::Anim(m_assets.GetAnimation(data["name"].as<std::string>()),
+		auto& s = m_assets->GetSprites()[data["name"].as<std::string>()];
+        m_componentManager->AddComponent<abyss::components::Anim>(e->Id(), abyss::components::Anim(CustomSprite(s, m_assets->GetTextures()[s.path]),
 												 data["repeat"].as<bool>()));
         auto &anim = m_componentManager->GetComponent<abyss::components::Anim>(e->Id());
 		anim.animation.speed = data["speed"].as<int>();
@@ -144,5 +163,99 @@ void abyss::serializer::Serializer::DeserializeBoundingBox(YAML::Node node, std:
 		bb.blockMove = data["blockMove"].as<bool>();
 		bb.blockVision = data["blockVision"].as<bool>();
 		bb.isTrigger = data["isTrigger"].as<bool>();
+	}
+}
+
+void abyss::serializer::Serializer::DeserializeSprite(const YAML::Node& node, std::map<std::string, assets::SpriteAsset>& sprites)
+{
+	for (const auto& mainNode : node)
+	{
+		for (const auto& internalNode : mainNode)
+		{
+			auto fileName = internalNode.second["file_name"].as<std::string>();
+
+			m_assets->GetTextures()[fileName] = sf::Texture();
+
+			char* n = new char[fileName.size()];
+			strcpy(n, fileName.c_str());
+			int fileIndex = m_assets->GetArchiver().GetFileIndex(n);
+
+			archiver::ArchiveFileHeader* header = new archiver::ArchiveFileHeader;
+			m_assets->GetArchiver().GetFileHeaderInfoByIndex(fileIndex, header);
+			char* buffer = new char[header->GetSize()];
+			m_assets->GetArchiver().GetFileData(fileIndex, buffer, header->GetSize());
+
+			if (!m_assets->GetTextures()[fileName].loadFromMemory(buffer, header->GetSize()))
+			{
+				ABYSS_ERROR("Failed to load texture!")
+			}
+
+			delete[] n;
+			delete[] buffer;
+
+			auto s = assets::SpriteAsset();
+			s.path = fileName;
+			s.name = internalNode.first.as<std::string>();
+
+			s.speed = internalNode.second["speed"].as<int>();
+			s.spriteType = enums::StringToSpriteType(internalNode.second["sprite_type"].as<std::string>().c_str());
+
+			for (const auto& animNode : internalNode.second["animations"])
+			{;
+				std::string animationName = animNode.first.as<std::string>();
+				s.animationNames.push_back(animationName);
+
+				for (const auto& frameNode : animNode.second)
+				{
+					auto size = frameNode.second["size"].as<sf::Vector2f>();
+					auto pos = frameNode.second["pos"].as<sf::Vector2i>();
+
+					s.sizes[animationName].push_back(size);
+					s.positions[animationName].push_back(pos);
+				}
+			}
+
+			sprites[s.name] = s;
+		}
+	}
+}
+
+void abyss::serializer::Serializer::DeserializeAudio(const YAML::Node& node, std::map<std::string, assets::AudioAsset>& audios)
+{
+	for (const auto& audioNode : node)
+	{
+		for (const auto& internalNode : audioNode)
+		{
+			auto audio = assets::AudioAsset();
+			audio.name = internalNode.first.as<std::string>();
+			audio.path = internalNode.second["file_name"].as<std::string>();
+
+			audios[audio.name] = audio;
+		}
+	}
+}
+
+void abyss::serializer::Serializer::DeserializeFont(const YAML::Node& node, std::map<std::string, sf::Font>& fonts)
+{
+	for (const auto& audioNode : node)
+	{
+		for (const auto& internalNode : audioNode)
+		{
+			auto font = assets::FontAsset();
+			font.name = internalNode.first.as<std::string>();
+			font.path = internalNode.second["file_name"].as<std::string>();
+
+			char* pathName = new char[font.path.size()];
+			strcpy(pathName, font.path.c_str());
+
+			int fileIndex = m_assets->GetArchiver().GetFileIndex(pathName);
+			archiver::ArchiveFileHeader* header = new archiver::ArchiveFileHeader;
+			m_assets->GetArchiver().GetFileHeaderInfoByIndex(fileIndex, header);
+
+			char* buffer = new char[header->GetSize()];
+			m_assets->GetArchiver().GetFileData(fileIndex, buffer, header->GetSize());
+
+			fonts[font.name] = sf::Font(buffer, header->GetSize());
+		}
 	}
 }

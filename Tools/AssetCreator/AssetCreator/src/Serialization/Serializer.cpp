@@ -3,26 +3,6 @@
 #include "SFML/System/Vector2.hpp"
 #include "yaml-cpp/node/node.h"
 
-/*
- * Eu vou somar todos os itens com path nao vazio / nulo
- * vou criar a quantidade de headers de acordo com a quantidade de itens
- * Vou criar um Archive, nao precisa ser ponteiro
- *		com ele eu vou fazer WriteArchiveFile(fileName, headers, totalFiles)
- *		e quando eu acabar de usar esse cara: archiveFile.CloseArchive(); + delete[] headers;
- *		pra deletar as referencias e tal
- *	Pra carregar eu vou usar:
- *		ReadArchiveFile(fileName);
- *	ai eu consigo usar qualquer um desses:
-*		int GetFileIndex(char* fileName);
-		bool GetFileData(int index, char* buffer, int bytesToRead);
-		bool GetFileData(char* fileName, char* buffer, int bytesToRead);
-		bool GetFileHeaderInfoByIndex(int index, ArchiveFileHeader* fh);
-		int GetTotalHeaders() const;
-		bool IsArchiveOpen();
-
-		pra brincar com os dados
- */
-
 void Serializer::Serialize(YAML::Emitter &em)
 {
 	em << YAML::BeginMap;

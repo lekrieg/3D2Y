@@ -9,8 +9,8 @@
 
 namespace abyss
 {
-	typedef std::vector<std::shared_ptr<abyss::Entity>> EntityVec;
-	typedef std::map<abyss::EntityTag, EntityVec> EntityMap;
+	typedef std::vector<std::shared_ptr<Entity>> EntityVec;
+	typedef std::map<enums::EntityTag, EntityVec> EntityMap;
 
 	class EntityManager
 	{
@@ -25,12 +25,12 @@ namespace abyss
 		}
 
 		void Update();
-		std::shared_ptr<Entity> AddEntity(const EntityTag& tag);
+		std::shared_ptr<Entity> AddEntity(const enums::EntityTag& tag);
 		EntityVec& GetEntities();
-		EntityVec& GetEntities(const EntityTag& tag);
-		const std::map<EntityTag, EntityVec>& GetEntityMap();
+		EntityVec& GetEntities(const enums::EntityTag& tag);
+		const std::map<enums::EntityTag, EntityVec>& GetEntityMap();
 		void Clear();
-		void UpdateEntityTag(const std::shared_ptr<abyss::Entity>& entity, const EntityTag& newTag);
+		void UpdateEntityTag(const std::shared_ptr<abyss::Entity>& entity, const enums::EntityTag& newTag);
 
 	private:
 		void RemoveDeadEntities(EntityVec& vec);

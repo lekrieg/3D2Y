@@ -6,6 +6,8 @@
 #include "../EntityManager.h"
 #include "../Scene.h"
 #include "Yaml.h"
+#include "../assets/SpriteAsset.h"
+#include "../assets/AudioAsset.h"
 
 #include <memory>
 
@@ -19,12 +21,11 @@ namespace abyss
 
 				EntityManager *m_entityManager = nullptr;
 				ComponentManager *m_componentManager = nullptr;
-				abyss::Assets m_assets;
+				Assets *m_assets = nullptr;
 
 			public:
 
-				Serializer(EntityManager *entityManager, ComponentManager *componentManager,
-						   const abyss::Assets &assets) :
+				Serializer(EntityManager *entityManager, ComponentManager *componentManager, Assets* assets) :
 					m_entityManager(entityManager),
 					m_componentManager(componentManager),
 					m_assets(assets)
@@ -34,6 +35,7 @@ namespace abyss
 				void Serialize(YAML::Emitter &em);
 
 				void Deserialize(YAML::Node nodes);
+				void DeserializeAssets(YAML::Node nodes);
 
 				void SerializeTransform(YAML::Emitter &em, std::shared_ptr<abyss::Entity> e);
 				void DeserializeTransform(YAML::Node node, std::shared_ptr<abyss::Entity> &e);
@@ -43,6 +45,10 @@ namespace abyss
 
 				void SerializeBoundingBox(YAML::Emitter &em, std::shared_ptr<abyss::Entity> e);
 				void DeserializeBoundingBox(YAML::Node node, std::shared_ptr<abyss::Entity> &e);
+
+				void DeserializeSprite(const YAML::Node& node, std::map<std::string, assets::SpriteAsset>& sprites);
+				void DeserializeAudio(const YAML::Node& node, std::map<std::string, assets::AudioAsset>& audios);
+				void DeserializeFont(const YAML::Node& node, std::map<std::string, sf::Font>& fonts);
 		};
 	}
 }

@@ -21,7 +21,7 @@ template <typename T> class ComponentArray : public IComponentArray
 
 		void AddComponent(size_t entity, T component)
 		{
-			m_componentsMap[entity] = component;
+			m_componentsMap.insert({ entity, component });
 		}
 
 		void RemoveComponent(size_t entity)

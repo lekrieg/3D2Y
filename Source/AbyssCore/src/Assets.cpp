@@ -5,114 +5,53 @@
 
 #include <fstream>
 
-void abyss::Assets::AddTexture(const TextureInfo &textureInfo)
+#include "serialization/Serializer.h"
+
+std::map<std::string, sf::Texture> & abyss::Assets::GetTextures()
 {
-	// if (!texture.loadFromFile(path, sf::IntRect(10, 10, 32, 32)))
-	//  cada linha vai ter x,y, widht e height de cada item, se for uma animacao, vai ter o tamanho total dela
-	//  a animacao se vira com a textura
-
-	sf::Texture texture;
-
-	if (!texture.loadFromFile(
-			textureInfo.texturePath, false,
-			sf::IntRect(
-				sf::Vector2<int>(textureInfo.indexX * textureInfo.width, textureInfo.indexY * textureInfo.height),
-				sf::Vector2<int>(textureInfo.width * textureInfo.frameCount, textureInfo.height))))
-	{
-		ABYSS_ERROR("Could not load texture!");
-		exit(-1);
-	}
-
-	m_textures[textureInfo.textureName] = texture;
+	return m_textures;
 }
 
-void abyss::Assets::AddAnimation(const AnimationInfo &animationInfo)
+std::map<std::string, abyss::assets::SpriteAsset> & abyss::Assets::GetSprites()
 {
-	Animation animation = Animation(animationInfo.animationName, GetTexture(animationInfo.textureName),
-									animationInfo.frameCount, animationInfo.animationSpeed);
-	m_animations[animationInfo.animationName] = animation;
-}
-
-void abyss::Assets::AddSound(const SoundInfo &soundInfo)
-{
-	m_sounds[soundInfo.soundName] = soundInfo.filePath;
-}
-
-void abyss::Assets::AddFont(const FontInfo &fontInfo)
-{
-	sf::Font font;
-
-	if (!font.openFromFile(fontInfo.fontPath))
-	{
-		ABYSS_ERROR("Could not load font!");
-		exit(-1);
-	}
-
-	m_fonts[fontInfo.fontName] = font;
-}
-
-sf::Texture &abyss::Assets::GetTexture(std::string name)
-{
-	return m_textures[name];
-}
-
-abyss::Animation &abyss::Assets::GetAnimation(std::string name)
-{
-	return m_animations[name];
-}
-
-std::map<std::string, abyss::Animation> &abyss::Assets::GetAnimations()
-{
-	return m_animations;
+	return m_sprites;
 }
 
 // SoLoud wav dont stay on memory when it leaves the method, I am using string because of this
 // TODO: adicionar musica para os leveis
-
-std::string &abyss::Assets::GetSound(std::string name)
+std::map<std::string, abyss::assets::AudioAsset> & abyss::Assets::GetAudios()
 {
-	return m_sounds[name];
+	return m_sounds;
 }
 
-sf::Font &abyss::Assets::GetFont(std::string name)
+std::map<std::string, sf::Font> & abyss::Assets::GetFonts()
 {
-	return m_fonts[name];
+	return m_fonts;
 }
 
-void abyss::Assets::LoadFromFile(std::string path)
+archiver::Archive & abyss::Assets::GetArchiver()
 {
-	std::ifstream ifs(path, std::ifstream::in);
+	return m_archive;
+}
 
-	TextureInfo textureInfo;
-	AnimationInfo animationInfo;
-	FontInfo fontInfo;
-	SoundInfo soundInfo;
-
-	std::string itemType;
-	while (ifs.good())
+void abyss::Assets::LoadFromFile(const std::string& path)
+{
+	ABYSS_INFO("Deserializing: %s", path.c_str());
+	YAML::Node root;
+	try
 	{
-		ifs >> itemType;
-		if (itemType.compare("Texture") == 0)
-		{
-			ifs >> textureInfo.textureName >> textureInfo.texturePath >> textureInfo.indexX >> textureInfo.indexY >>
-				textureInfo.width >> textureInfo.height >> textureInfo.frameCount;
-			AddTexture(textureInfo);
-		}
-		else if (itemType.compare("Animation") == 0)
-		{
-			ifs >> animationInfo.animationName >> animationInfo.textureName >> animationInfo.frameCount >>
-				animationInfo.animationSpeed;
-			AddAnimation(animationInfo);
-		}
-		else if (itemType.compare("Font") == 0)
-		{
-			ifs >> fontInfo.fontName >> fontInfo.fontPath;
-			AddFont(fontInfo);
-		}
-		else if (itemType.compare("Sound") == 0)
-		{
-			ifs >> soundInfo.soundName >> soundInfo.filePath;
-			AddSound(soundInfo);
-		}
+		root = YAML::LoadFile(path);
 	}
+	catch (YAML::ParserException& e)
+	{
+		ABYSS_ERROR("Failed to deserialize scene!");
+		return;
+	}
+
+	char dataFileName[] = "data.abyss";
+	m_archive.ReadArchiveFile(dataFileName);
+
+	serializer::Serializer(nullptr, nullptr, this).DeserializeAssets(root);
+
+	m_archive.CloseArchive();
 }

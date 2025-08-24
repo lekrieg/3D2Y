@@ -2,7 +2,6 @@
 #include "Action.h"
 
 #include "Entity.h"
-#include "EntityTag.h"
 #include "components/Anim.h"
 #include "components/BoundingBox.h"
 #include "components/FollowPlayer.h"
@@ -60,12 +59,12 @@ void editor::EditorScene::Init(const std::string &levelPath)
 	RegisterAction(sf::Keyboard::Key::Num3, "TOGGLE_SCENE_MANAGER");
 
 	m_gridText.setCharacterSize(8);
-	m_gridText.setFont(m_application->GetAssets().GetFont("elementalis"));
+	m_gridText.setFont(m_application->GetAssets().GetFonts()["Default"]);
 
 	m_fileDialog.SetTitle("File dialog");
 	m_fileDialog.SetTypeFilters({ ".yaml" });
 
-	m_entityTags = abyss::GetEntityTagNames();
+	m_entityTags = abyss::enums::GetEntityTagNames();
 
 	LoadLevel(levelPath);
 }
@@ -91,9 +90,11 @@ void editor::EditorScene::LoadLevel(const std::string &fileName)
 	m_componentManager.RegisterComponent<abyss::components::FollowPlayer>();
 	m_componentManager.RegisterComponent<abyss::components::Jump>();
 
-	std::shared_ptr<abyss::Entity> player = m_entityManager.AddEntity(abyss::EntityTag::Player);
+	std::shared_ptr<abyss::Entity> player = m_entityManager.AddEntity(abyss::enums::EntityTag::Player);
+
+	auto& s = m_application->GetAssets().GetSprites()["Character_1"];
 	m_componentManager.AddComponent(player->Id(),
-									abyss::components::Anim(m_application->GetAssets().GetAnimation("Down"), true));
+									abyss::components::Anim(abyss::CustomSprite(s, m_application->GetAssets().GetTextures()[s.path]), true));
 	m_componentManager.AddComponent(player->Id(), abyss::components::Transform(sf::Vector2f(512, 300)));
 
 	// std::ifstream ifs(fileName, std::ifstream::in);
@@ -115,7 +116,7 @@ sf::Vector2f editor::EditorScene::GridToMidPixel(float gridX, float gridY, std::
 {
 	if (m_componentManager.HasComponent<abyss::components::Anim>(entity->Id()))
 	{
-		auto &spriteSize = m_componentManager.GetComponent<abyss::components::Anim>(entity->Id()).animation.GetSize();
+		auto &spriteSize = m_componentManager.GetComponent<abyss::components::Anim>(entity->Id()).animation.GetAnimation()->frames[0]->size;
 		return {(gridX * m_gridSize.x) + (spriteSize.x / 2.0f),
 							Height() - ((gridY * m_gridSize.y) + (spriteSize.y / 2.0f))};
 	}
@@ -238,7 +239,7 @@ void editor::EditorScene::ExecuteAction(const abyss::Action &action)
 		return;
 	}
 
-	if (action.State() == abyss::ActionState::Start)
+	if (action.State() == abyss::enums::ActionState::Start)
 	{
 		if (action.Name() == "TOGGLE_TEXTURE")
 		{
@@ -409,7 +410,7 @@ void editor::EditorScene::ExecuteAction(const abyss::Action &action)
 			m_application->GetWindow().setView(view);
 		}
 	}
-	else if (action.State() == abyss::ActionState::End)
+	else if (action.State() == abyss::enums::ActionState::End)
 	{
 		if (action.Name() == "LEFT_CLICK")
 		{
@@ -517,7 +518,7 @@ void editor::EditorScene::EntityInfoGui()
 	}
 
 	static ImGuiComboFlags flags = 0;
-	const std::string tagString = abyss::EntityTagToString(m_selectedEntity->Tag());
+	const std::string tagString = abyss::enums::EntityTagToString(m_selectedEntity->Tag());
 
 	// TODO: check if there's a better way to do this comparison
 	static int itemSelectedIndex = 0;
@@ -549,7 +550,7 @@ void editor::EditorScene::EntityInfoGui()
 				if (ImGui::Selectable(m_entityTags[n].c_str(), is_selected))
 				{
 					itemSelectedIndex = n;
-					m_entityManager.UpdateEntityTag(m_selectedEntity, abyss::StringToEntityTag(m_entityTags[itemSelectedIndex].c_str()));
+					m_entityManager.UpdateEntityTag(m_selectedEntity, abyss::enums::StringToEntityTag(m_entityTags[itemSelectedIndex].c_str()));
 					break;
 				}
 			}
@@ -608,9 +609,15 @@ void editor::EditorScene::AssetManagerGui()
 			ImGui::Checkbox("Snap to grid", &m_snapToGrid);
 			if (ImGui::BeginTable("TableTest", 5))
 			{
-				for (auto &a : m_application->GetAssets().GetAnimations())
+				for (auto &a : m_application->GetAssets().GetSprites())
 				{
-					if (ImGui::ImageButton(a.first.c_str(), a.second.GetSprite(), sf::Vector2f(32, 32)))
+					// TODO: fix this workaround in a later version
+					sf::Sprite s(m_application->GetAssets().GetTextures()[a.second.path]);
+					s.setOrigin(sf::Vector2f(a.second.sizes[a.second.animationNames[0]][0].x / 2, a.second.sizes[a.second.animationNames[0]][0].y / 2));
+					s.setTextureRect(sf::IntRect(a.second.positions[a.second.animationNames[0]][0],
+						sf::Vector2<int>(static_cast<int>(a.second.sizes[a.second.animationNames[0]][0].x), static_cast<int>(a.second.sizes[a.second.animationNames[0]][0].y))));
+
+					if (ImGui::ImageButton(a.first.c_str(), s, sf::Vector2f(32, 32)))
 					{
 						m_lastEntityToCreate = a.first;
 						m_dragEntity = CreateEntity(false, m_lastEntityToCreate.c_str());
@@ -770,14 +777,16 @@ void editor::EditorScene::InspectorGui()
 
 std::shared_ptr<abyss::Entity> editor::EditorScene::CreateEntity(const bool clone, const char* animName)
 {
-	auto entity = m_entityManager.AddEntity(abyss::EntityTag::Default);
+	auto entity = m_entityManager.AddEntity(abyss::enums::EntityTag::Default);
 
 	if (clone)
 	{
 		if (m_componentManager.HasComponent<abyss::components::Anim>(m_selectedEntity->Id()))
 		{
 			auto a = m_componentManager.GetComponent<abyss::components::Anim>(m_selectedEntity->Id());
-			m_componentManager.AddComponent(entity->Id(), abyss::components::Anim(abyss::Animation(a.animation.GetName(), a.animation.GetSprite().getTexture(), a.animation.GetFrameCount(), a.animation.speed), a.repeat));
+
+			auto& s = m_application->GetAssets().GetSprites()[a.animation.name];
+			m_componentManager.AddComponent(entity->Id(), abyss::components::Anim(abyss::CustomSprite(s, m_application->GetAssets().GetTextures()[s.path]), a.repeat));
 		}
 
 		if (m_componentManager.HasComponent<abyss::components::Transform>(m_selectedEntity->Id()))
@@ -794,9 +803,11 @@ std::shared_ptr<abyss::Entity> editor::EditorScene::CreateEntity(const bool clon
 	}
 	else
 	{
+		auto& s = m_application->GetAssets().GetSprites()[std::string(animName)];
+
 		m_componentManager.AddComponent<abyss::components::Anim>(
 			entity->Id(),
-			abyss::components::Anim(m_application->GetAssets().GetAnimation(std::string(animName)), true));
+			abyss::components::Anim(abyss::CustomSprite(s, m_application->GetAssets().GetTextures()[s.path]), true));
 		m_componentManager.AddComponent<abyss::components::Transform>(
 			entity->Id(), abyss::components::Transform(
 				sf::Vector2f(m_application->GetWindow().getView().getCenter().x,
@@ -875,9 +886,11 @@ void editor::EditorScene::InsertGuiToDraw(int index)
 		case 1:
 			if (!m_componentManager.HasComponent<abyss::components::Anim>(m_selectedEntity->Id()))
 			{
+				auto& s = m_application->GetAssets().GetSprites().begin()->second;
+
 				m_componentManager.AddComponent<abyss::components::Anim>(
 					m_selectedEntity->Id(),
-					abyss::components::Anim(m_application->GetAssets().GetAnimation("Down"), true));
+					abyss::components::Anim(abyss::CustomSprite(s, m_application->GetAssets().GetTextures()[s.path]), true));
 			}
 			break;
 		case 2:
