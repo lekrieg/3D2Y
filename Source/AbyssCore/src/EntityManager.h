@@ -19,7 +19,10 @@ namespace abyss
 		EntityMap m_entityMap;
 		size_t m_totalEntities = 0;
 
+		bool m_shouldUpdateOrder = false;
+
 	public:
+		
 		EntityManager()
 		{
 		}
@@ -31,6 +34,7 @@ namespace abyss
 		const std::map<enums::EntityTag, EntityVec>& GetEntityMap();
 		void Clear();
 		void UpdateEntityTag(const std::shared_ptr<abyss::Entity>& entity, const enums::EntityTag& newTag);
+		void UpdateEntityLayer(const std::shared_ptr<abyss::Entity>& entity, size_t newLayer);
 
 	private:
 		void RemoveDeadEntities(EntityVec& vec);

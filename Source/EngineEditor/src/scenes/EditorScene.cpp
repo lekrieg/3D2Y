@@ -135,34 +135,22 @@ void editor::EditorScene::Render()
 		m_application->GetWindow().clear(sf::Color(104, 104, 104));
 	}
 
-	/*
-	 * criar um priority array de ponteiros de entidades e usar ele na hora de desenhar aqui
-	 * talvez usar um heap sort pra ordenar ou usar aquele sort do proprio C++
-	* std::sort(objectsToDraw.begin(), objectsToDraw.end(), [](const DrawableObject& a, const DrawableObject& b)
-	* {
-	*		return a.zOrder < b.zOrder;
-	* });
-	* for (const auto& obj : objectsToDraw)
-	* {
-	*		window.draw(obj.sprite);
-	* }
-	 */
-
-	for (auto e : m_entityManager.GetEntities())
+	const auto& entities = m_entityManager.GetEntities();
+	for (int i = entities.size(); i-- > 0;)
 	{
 		if (m_drawTextures)
 		{
-			if (!m_componentManager.HasComponent<abyss::components::Transform>(e->Id()) ||
-				!m_componentManager.HasComponent<abyss::components::Anim>(e->Id()))
+			if (!m_componentManager.HasComponent<abyss::components::Transform>(entities[i]->Id()) ||
+				!m_componentManager.HasComponent<abyss::components::Anim>(entities[i]->Id()))
 			{
 				assert("No component registered!");
 				continue;
 			}
 
-			auto &transform = m_componentManager.GetComponent<abyss::components::Transform>(e->Id());
+			auto &transform = m_componentManager.GetComponent<abyss::components::Transform>(entities[i]->Id());
 
 			// TODO: check if I can get the sprite and dont waste the calls to GetSprite
-			auto &animation = m_componentManager.GetComponent<abyss::components::Anim>(e->Id());
+			auto &animation = m_componentManager.GetComponent<abyss::components::Anim>(entities[i]->Id());
 			animation.animation.SetRotation(transform.angle);
 			animation.animation.SetPosition(sf::Vector2<float>(transform.pos.x, transform.pos.y));
 			animation.animation.SetScale(sf::Vector2<float>(transform.scale.x, transform.scale.y));
@@ -172,15 +160,15 @@ void editor::EditorScene::Render()
 
 		if (m_drawCollision)
 		{
-			if (!m_componentManager.HasComponent<abyss::components::Transform>(e->Id()) ||
-				!m_componentManager.HasComponent<abyss::components::BoundingBox>(e->Id()))
+			if (!m_componentManager.HasComponent<abyss::components::Transform>(entities[i]->Id()) ||
+				!m_componentManager.HasComponent<abyss::components::BoundingBox>(entities[i]->Id()))
 			{
 				assert("No component registered!");
 				continue;
 			}
 
-			auto &boundingBox = m_componentManager.GetComponent<abyss::components::BoundingBox>(e->Id());
-			auto &transform = m_componentManager.GetComponent<abyss::components::Transform>(e->Id());
+			auto &boundingBox = m_componentManager.GetComponent<abyss::components::BoundingBox>(entities[i]->Id());
+			auto &transform = m_componentManager.GetComponent<abyss::components::Transform>(entities[i]->Id());
 
 			sf::RectangleShape rect;
 			rect.setSize(sf::Vector2f(boundingBox.size.x - 1, boundingBox.size.y - 1));
@@ -513,8 +501,18 @@ void editor::EditorScene::EntityInfoGui()
 			}
 		}
 
-
 		ImGui::EndPopup();
+	}
+
+	int layer = m_selectedEntity->Layer();
+	ImGui::InputInt("Layer", &layer);
+	if (layer < 0)
+	{
+		layer = 0;
+	}
+	if (m_selectedEntity->Layer() != layer)
+	{
+		m_entityManager.UpdateEntityLayer(m_selectedEntity, layer);
 	}
 
 	static ImGuiComboFlags flags = 0;

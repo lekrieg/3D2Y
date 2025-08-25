@@ -18,6 +18,31 @@ void abyss::EntityManager::Update()
 		// second - entity vec
 		RemoveDeadEntities(pair.second);
 	}
+
+	if (m_shouldUpdateOrder)
+	{
+		/*
+		 *  criar um priority array de ponteiros de entidades e usar ele na hora de desenhar aqui
+		 * talvez usar um heap sort pra ordenar ou usar aquele sort do proprio C++
+		 * std::sort(objectsToDraw.begin(), objectsToDraw.end(), [](const DrawableObject& a, const DrawableObject& b)
+		 * {
+		 * return a.zOrder < b.zOrder;
+		 * });
+		 * for (const auto& obj : objectsToDraw)
+		 * {
+		 * window.draw(obj.sprite);
+		 * }
+		 *
+		 * eu poderia criar um metodo que ativa uma flag pra ordenar as entidades uma vez por modificacao
+		 */
+		// TODO: update layer order
+		std::sort(m_entities.begin(), m_entities.end(), [](const std::shared_ptr<Entity>& lhs, const std::shared_ptr<Entity>& rhs)
+		{
+			return lhs->Layer() > rhs->Layer();
+		});
+
+		m_shouldUpdateOrder = false;
+	}
 }
 
 std::shared_ptr<abyss::Entity> abyss::EntityManager::AddEntity(const enums::EntityTag& tag)
@@ -64,4 +89,11 @@ void abyss::EntityManager::UpdateEntityTag(const std::shared_ptr<abyss::Entity>&
 
 	entity->SetTag(newTag);
 	m_entityMap[newTag].push_back(entity);
+}
+
+void abyss::EntityManager::UpdateEntityLayer(const std::shared_ptr<abyss::Entity> &entity, size_t newLayer)
+{
+	m_shouldUpdateOrder = true;
+
+	entity->SetLayer(newLayer);
 }

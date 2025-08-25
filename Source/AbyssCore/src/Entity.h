@@ -14,6 +14,7 @@ namespace abyss
 		friend class EntityManager;
 
 		size_t m_id = 0;
+		size_t m_layer = 0;
 		enums::EntityTag m_tag = enums::EntityTag::Default;
 		bool m_alive = true;
 
@@ -46,6 +47,16 @@ namespace abyss
 		const size_t Id() const
 		{
 			return m_id;
+		}
+
+		const size_t Layer() const
+		{
+			return m_layer;
+		}
+
+		void SetLayer(const size_t& newLayer)
+		{
+			m_layer = newLayer;
 		}
 	};
 }
