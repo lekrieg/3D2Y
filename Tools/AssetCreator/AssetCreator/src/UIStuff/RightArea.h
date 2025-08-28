@@ -46,6 +46,8 @@ private:
 
     void DrawFrames(const std::shared_ptr<Animation> &anim);
 
+    void DrawAutoCutStuff();
+
     void Serialize(const std::string &path);
 
     bool Deserialize(const std::string &path);

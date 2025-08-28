@@ -165,6 +165,11 @@ bool & Application::SpriteInfoOpen()
 	return m_openSpriteInfo;
 }
 
+bool & Application::AutoCutOpen()
+{
+	return m_openAutoCut;
+}
+
 archiver::Archive & Application::GetArchiver()
 {
 	return m_archiver;

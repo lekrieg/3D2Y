@@ -115,6 +115,11 @@ void RightArea::DrawTopMenuBar()
         DrawSpriteInfo();
     }
 
+    if (m_app->AutoCutOpen())
+    {
+        DrawAutoCutStuff();
+    }
+
     ShowWarningModal(popupMessage);
 
     ImGui::End();
@@ -179,6 +184,20 @@ void RightArea::DrawSpritesStuff()
             }
         }
 
+        if (ImGui::Button("Auto cut"))
+        {
+            if (path.empty())
+            {
+                ImGui::OpenPopup("WarningPopup");
+                m_warningPopupOpen = true;
+                popupMessage = "You need to open a texture before creating a sprite!";
+            }
+            else
+            {
+                m_app->AutoCutOpen() = true;
+            }
+        }
+
         if (ImGui::BeginTable("SpriteTable", 4))
         {
             static int imgButtonId = 0;
@@ -194,7 +213,8 @@ void RightArea::DrawSpritesStuff()
                     sprite->animations[0]->frames[0]->position.y),
                     sf::Vector2<int>(static_cast<int>(sprite->animations[0]->frames[0]->size.x), static_cast<int>(sprite->animations[0]->frames[0]->size.y))));
 
-                if (ImGui::ImageButton("ImgButton##" + imgButtonId, s, sf::Vector2f(32, 32)))
+                ImGui::PushID(imgButtonId);
+                if (ImGui::ImageButton("ImgButton##xx", s, sf::Vector2f(32, 32)))
                 {
                     m_app->GetFilePath() = sprite->filePath;
 
@@ -207,6 +227,8 @@ void RightArea::DrawSpritesStuff()
 
                     m_app->SetSelectedSprite(sprite);
                 }
+
+                ImGui::PopID();
 
                 if (ImGui::IsItemHovered() && ImGui::IsMouseClicked(1))
                 {
@@ -560,6 +582,47 @@ void RightArea::DrawFrames(const std::shared_ptr<Animation>& anim)
         rect.setOutlineThickness(1);
         m_app->GetRenderTexture().draw(rect);
     }
+}
+
+void RightArea::DrawAutoCutStuff()
+{
+    if (ImGui::Begin("Auto cut stuff", &m_app->AutoCutOpen()))
+    {
+        static float size[] {0.0f, 0.0f};
+        ImGui::InputFloat2("Cut size", size);
+
+        if (ImGui::Button("Cut everything"))
+        {
+            auto& t = m_app->GetUsedTextures()[m_app->GetFilePath()];
+            float textureSize[] = {static_cast<float>(t->getSize().x), static_cast<float>(t->getSize().y)};
+
+            int rowsAmount = static_cast<int>(textureSize[1] / size[1]);
+            int columnsAmount = static_cast<int>(textureSize[0] / size[0]);
+
+            for (int i = 0; i < rowsAmount; i++)
+            {
+                for (int j = 0; j < columnsAmount; j++)
+                {
+                    if (m_app->GetFileNames()[m_app->GetFilePath()].empty())
+                    {
+                        m_app->GetFileNames()[m_app->GetFilePath()] = m_app->GetFileName();
+                    }
+
+                    auto s = std::make_shared<SpriteAsset>(m_app->GetFilePath());
+                    std::string n = "Default" + std::to_string(i + j);
+                    strcpy(s->assetName, n.c_str());
+                    s->fileName = m_app->GetFileName();
+                    s->AddAnimation();
+                    s->animations[0]->frames[0]->size = sf::Vector2f(size[0], size[0]);
+                    s->animations[0]->frames[0]->size = sf::Vector2f(size[0], size[0]);
+                    s->animations[0]->frames[0]->position = sf::Vector2i(j * static_cast<int>(size[0]),  i * static_cast<int>(size[0]));
+                    m_app->GetSprites().emplace_back(s);
+                }
+            }
+        }
+    }
+
+    ImGui::End();
 }
 
 void RightArea::Serialize(const std::string &path)

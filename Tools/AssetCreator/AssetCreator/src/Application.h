@@ -37,6 +37,7 @@ protected:
     bool m_dockSpaceOpen = true;
     bool m_leftButton = false;
     bool m_openSpriteInfo = false;
+    bool m_openAutoCut = false;
 
     std::vector<std::shared_ptr<AudioAsset>> m_audios;
     std::vector<std::shared_ptr<FontAsset>> m_fonts;
@@ -78,6 +79,7 @@ public:
     std::shared_ptr<SpriteAsset>& GetSelectedSprite();
     void SetSelectedSprite(const std::shared_ptr<SpriteAsset>& sprite);
     bool& SpriteInfoOpen();
+    bool& AutoCutOpen();
     archiver::Archive& GetArchiver();
 
 
