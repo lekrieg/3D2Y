@@ -184,6 +184,8 @@ void RightArea::DrawSpritesStuff()
             }
         }
 
+        ImGui::SameLine();
+
         if (ImGui::Button("Auto cut"))
         {
             if (path.empty())
@@ -200,7 +202,7 @@ void RightArea::DrawSpritesStuff()
 
         if (ImGui::BeginTable("SpriteTable", 4))
         {
-            static int imgButtonId = 0;
+            int imgButtonId = 0;
             for (const auto& sprite : m_app->GetSprites())
             {
                 // m_app->LoadTexture(sprite->filePath);
@@ -230,15 +232,16 @@ void RightArea::DrawSpritesStuff()
 
                 ImGui::PopID();
 
+                std::string popupName = "delete_popup" + std::to_string(imgButtonId);
                 if (ImGui::IsItemHovered() && ImGui::IsMouseClicked(1))
                 {
-                    ImGui::OpenPopup("edit_name_popup" + imgButtonId);
+                    ImGui::OpenPopup(popupName.c_str());
                 }
 
-                if (ImGui::BeginPopup("edit_name_popup" + imgButtonId))
+                if (ImGui::BeginPopup(popupName.c_str()))
                 {
                     ImGui::PushItemWidth(90);
-                    ImGui::PushID("DeleteSprite");
+                    ImGui::PushID("DeleteSprite" + imgButtonId);
                     if (ImGui::Button("Delete"))
                     {
                         sprite->isActive = false;
@@ -251,8 +254,6 @@ void RightArea::DrawSpritesStuff()
 
                 imgButtonId++;
             }
-
-            imgButtonId = 0;
             ImGui::EndTable();
         }
     }
@@ -280,10 +281,10 @@ void RightArea::DrawAudiosStuff()
             ImGui::PushID("AudioName" + i);
             if (ImGui::Button("Edit name"))
             {
-                ImGui::OpenPopup("edit_name_popup" + i);
+                ImGui::OpenPopup("edit_audio_name_popup" + i);
             }
 
-            if (ImGui::BeginPopup("edit_name_popup" + i))
+            if (ImGui::BeginPopup("edit_audio_name_popup" + i))
             {
                 ImGui::InputText("Name", audios[i]->assetName, IM_ARRAYSIZE(audios[i]->assetName));
 
@@ -360,10 +361,10 @@ void RightArea::DrawFontsStuff()
             ImGui::PushID("FontName" + i);
             if (ImGui::Button("Edit name"))
             {
-                ImGui::OpenPopup("edit_name_popup" + i);
+                ImGui::OpenPopup("edit_font_name_popup" + i);
             }
 
-            if (ImGui::BeginPopup("edit_name_popup" + i))
+            if (ImGui::BeginPopup("edit_font_name_popup" + i))
             {
                 ImGui::InputText("Name", fonts[i]->assetName, IM_ARRAYSIZE(fonts[i]->assetName));
 
@@ -599,6 +600,8 @@ void RightArea::DrawAutoCutStuff()
             int rowsAmount = static_cast<int>(textureSize[1] / size[1]);
             int columnsAmount = static_cast<int>(textureSize[0] / size[0]);
 
+            // TODO: fix name colliding problem
+            int spriteId = 0;
             for (int i = 0; i < rowsAmount; i++)
             {
                 for (int j = 0; j < columnsAmount; j++)
@@ -609,7 +612,7 @@ void RightArea::DrawAutoCutStuff()
                     }
 
                     auto s = std::make_shared<SpriteAsset>(m_app->GetFilePath());
-                    std::string n = "Default" + std::to_string(i + j);
+                    std::string n = "Default" + std::to_string(spriteId);
                     strcpy(s->assetName, n.c_str());
                     s->fileName = m_app->GetFileName();
                     s->AddAnimation();
@@ -617,6 +620,8 @@ void RightArea::DrawAutoCutStuff()
                     s->animations[0]->frames[0]->size = sf::Vector2f(size[0], size[0]);
                     s->animations[0]->frames[0]->position = sf::Vector2i(j * static_cast<int>(size[0]),  i * static_cast<int>(size[0]));
                     m_app->GetSprites().emplace_back(s);
+
+                    spriteId++;
                 }
             }
         }
