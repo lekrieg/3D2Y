@@ -592,6 +592,37 @@ void RightArea::DrawAutoCutStuff()
         static float size[] {0.0f, 0.0f};
         ImGui::InputFloat2("Cut size", size);
 
+        static ImGuiComboFlags flags = 0;
+        static int itemSelectedIndex = 0;
+        static SpriteType sType;
+
+        if (const char* comboPreviewValue = m_spriteTypes[itemSelectedIndex].c_str(); ImGui::BeginCombo("Type", comboPreviewValue, flags))
+        {
+            static ImGuiTextFilter filter;
+            if (ImGui::IsWindowAppearing())
+            {
+                ImGui::SetKeyboardFocusHere();
+                filter.Clear();
+            }
+            ImGui::SetNextItemShortcut(ImGuiMod_Ctrl | ImGuiKey_F);
+            filter.Draw("##Filter", -FLT_MIN);
+
+            for (int n = 0; n < m_spriteTypes.size(); n++)
+            {
+                const bool is_selected = (itemSelectedIndex == n);
+                if (filter.PassFilter(m_spriteTypes[n].c_str()))
+                {
+                    if (ImGui::Selectable(m_spriteTypes[n].c_str(), is_selected))
+                    {
+                        itemSelectedIndex = n;
+                        sType = StringToSpriteType(m_spriteTypes[itemSelectedIndex].c_str());
+                        break;
+                    }
+                }
+            }
+            ImGui::EndCombo();
+        }
+
         if (ImGui::Button("Cut everything"))
         {
             auto& t = m_app->GetUsedTextures()[m_app->GetFilePath()];
@@ -615,9 +646,10 @@ void RightArea::DrawAutoCutStuff()
                     std::string n = "Default" + std::to_string(spriteId);
                     strcpy(s->assetName, n.c_str());
                     s->fileName = m_app->GetFileName();
+                    s->spriteType = sType;
                     s->AddAnimation();
-                    s->animations[0]->frames[0]->size = sf::Vector2f(size[0], size[0]);
-                    s->animations[0]->frames[0]->size = sf::Vector2f(size[0], size[0]);
+                    s->animations[0]->frames[0]->size = sf::Vector2f(size[0], size[1]);
+                    s->animations[0]->frames[0]->halfSize = sf::Vector2f(size[0] / 2, size[1] / 2);
                     s->animations[0]->frames[0]->position = sf::Vector2i(j * static_cast<int>(size[0]),  i * static_cast<int>(size[0]));
                     m_app->GetSprites().emplace_back(s);
 
