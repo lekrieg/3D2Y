@@ -31,7 +31,8 @@ Source/Temp/
 Source/.idea
 Source/cmake-build-debug
 Source/cmake-build-release
-Tools/AssetCreator/.idea
-Tools/AssetCreator/Lib
+!AssetCreator/.gitkeep
+!Game/.gitkeep
+!EngineEditor/.gitkeep
 
 Tools/ArchiveCreator/.vs/
