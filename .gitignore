@@ -31,6 +31,10 @@ Source/Temp/
 Source/.idea
 Source/cmake-build-debug
 Source/cmake-build-release
+
+AssetCreator/*
+Game/*
+EngineEditor/*
 !AssetCreator/.gitkeep
 !Game/.gitkeep
 !EngineEditor/.gitkeep
