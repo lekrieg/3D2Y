@@ -26,5 +26,6 @@ set(CMAKE_CXX_FLAGS_RELEASE "")
 
 project("SunRise")
 include(AbyssCore/AbyssCore.cmake)
+include(AssetCreator/AssetCreator.cmake)
 include(EngineEditor/EngineEditor.cmake)
 include(Game/Game.cmake)

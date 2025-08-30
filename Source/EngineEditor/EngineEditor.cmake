@@ -35,9 +35,9 @@ if(CMAKE_BUILD_TYPE STREQUAL Debug)
 endif()
 target_include_directories("EngineEditor" PRIVATE
   $<$<CONFIG:Debug>:/home/lekrieg/Documents/Projects/3D2Y/Source/AbyssCore/src>
-  $<$<CONFIG:Debug>:/home/lekrieg/Documents/Projects/3D2Y/Source/AbyssCore/3rdParty/SFML-3.0.0/include>
-  $<$<CONFIG:Debug>:/home/lekrieg/Documents/Projects/3D2Y/Source/AbyssCore/3rdParty/SoLoud/include>
-  $<$<CONFIG:Debug>:/home/lekrieg/Documents/Projects/3D2Y/Source/AbyssCore/3rdParty/yaml-cpp/include>
+  $<$<CONFIG:Debug>:/home/lekrieg/Documents/Projects/3D2Y/Source/3rdParty/SFML-3.0.0/include>
+  $<$<CONFIG:Debug>:/home/lekrieg/Documents/Projects/3D2Y/Source/3rdParty/SoLoud/include>
+  $<$<CONFIG:Debug>:/home/lekrieg/Documents/Projects/3D2Y/Source/3rdParty/yaml-cpp/include>
 )
 target_compile_definitions("EngineEditor" PRIVATE
   $<$<CONFIG:Debug>:ABYSS_PLATFORM_LINUX>
@@ -94,9 +94,9 @@ if(CMAKE_BUILD_TYPE STREQUAL Release)
 endif()
 target_include_directories("EngineEditor" PRIVATE
   $<$<CONFIG:Release>:/home/lekrieg/Documents/Projects/3D2Y/Source/AbyssCore/src>
-  $<$<CONFIG:Release>:/home/lekrieg/Documents/Projects/3D2Y/Source/AbyssCore/3rdParty/SFML-3.0.0/include>
-  $<$<CONFIG:Release>:/home/lekrieg/Documents/Projects/3D2Y/Source/AbyssCore/3rdParty/SoLoud/include>
-  $<$<CONFIG:Release>:/home/lekrieg/Documents/Projects/3D2Y/Source/AbyssCore/3rdParty/yaml-cpp/include>
+  $<$<CONFIG:Release>:/home/lekrieg/Documents/Projects/3D2Y/Source/3rdParty/SFML-3.0.0/include>
+  $<$<CONFIG:Release>:/home/lekrieg/Documents/Projects/3D2Y/Source/3rdParty/SoLoud/include>
+  $<$<CONFIG:Release>:/home/lekrieg/Documents/Projects/3D2Y/Source/3rdParty/yaml-cpp/include>
 )
 target_compile_definitions("EngineEditor" PRIVATE
   $<$<CONFIG:Release>:ABYSS_PLATFORM_LINUX>

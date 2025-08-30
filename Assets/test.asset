@@ -1,0 +1,3635 @@
+Sprites:
+  - Default0:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [0, 0]
+  - Default1:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [16, 0]
+  - Default2:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [32, 0]
+  - Default3:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [48, 0]
+  - Default4:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [64, 0]
+  - Default5:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [80, 0]
+  - Default6:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [96, 0]
+  - Default7:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [112, 0]
+  - Default10:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [0, 16]
+  - Default11:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [16, 16]
+  - Default12:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [32, 16]
+  - Default13:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [48, 16]
+  - Default14:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [64, 16]
+  - Default15:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [80, 16]
+  - Default16:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [96, 16]
+  - Default20:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [0, 32]
+  - Default21:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [16, 32]
+  - Default22:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [32, 32]
+  - Default23:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [48, 32]
+  - Default24:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [64, 32]
+  - Default25:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [80, 32]
+  - Default26:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [96, 32]
+  - Default27:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [112, 32]
+  - Default28:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [128, 32]
+  - Default29:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [144, 32]
+  - Default30:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [0, 48]
+  - Default32:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [32, 48]
+  - Default33:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [48, 48]
+  - Default34:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [64, 48]
+  - Default35:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [80, 48]
+  - Default37:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [112, 48]
+  - Default38:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [128, 48]
+  - Default39:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [144, 48]
+  - Default40:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [0, 64]
+  - Default41:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [16, 64]
+  - Default42:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [32, 64]
+  - Default43:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [48, 64]
+  - Default44:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [64, 64]
+  - Default45:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [80, 64]
+  - Default46:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [96, 64]
+  - Default47:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [112, 64]
+  - Default48:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [128, 64]
+  - Default49:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [144, 64]
+  - Default50:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [0, 80]
+  - Default51:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [16, 80]
+  - Default52:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [32, 80]
+  - Default53:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [48, 80]
+  - Default54:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [64, 80]
+  - Default55:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [80, 80]
+  - Default56:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [96, 80]
+  - Default57:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [112, 80]
+  - Default58:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [128, 80]
+  - Default59:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [144, 80]
+  - Default60:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [0, 96]
+  - Default62:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [32, 96]
+  - Default63:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [48, 96]
+  - Default64:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [64, 96]
+  - Default65:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [80, 96]
+  - Default67:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [112, 96]
+  - Default68:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [128, 96]
+  - Default69:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [144, 96]
+  - Default70:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [0, 112]
+  - Default71:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [16, 112]
+  - Default72:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [32, 112]
+  - Default73:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [48, 112]
+  - Default74:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [64, 112]
+  - Default75:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [80, 112]
+  - Default76:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [96, 112]
+  - Default77:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [112, 112]
+  - Default78:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [128, 112]
+  - Default79:
+      speed: 0
+      file_name: ground_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [144, 112]
+  - Default0:
+      speed: 0
+      file_name: elevation.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [0, 0]
+  - Default1:
+      speed: 0
+      file_name: elevation.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [16, 0]
+  - Default2:
+      speed: 0
+      file_name: elevation.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [32, 0]
+  - Default3:
+      speed: 0
+      file_name: elevation.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [48, 0]
+  - Default4:
+      speed: 0
+      file_name: elevation.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [64, 0]
+  - Default5:
+      speed: 0
+      file_name: elevation.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [80, 0]
+  - Default6:
+      speed: 0
+      file_name: elevation.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [96, 0]
+  - Default7:
+      speed: 0
+      file_name: elevation.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [112, 0]
+  - Default8:
+      speed: 0
+      file_name: elevation.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [128, 0]
+  - Default9:
+      speed: 0
+      file_name: elevation.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [144, 0]
+  - Default10:
+      speed: 0
+      file_name: elevation.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [0, 16]
+  - Default12:
+      speed: 0
+      file_name: elevation.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [32, 16]
+  - Default13:
+      speed: 0
+      file_name: elevation.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [48, 16]
+  - Default14:
+      speed: 0
+      file_name: elevation.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [64, 16]
+  - Default15:
+      speed: 0
+      file_name: elevation.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [80, 16]
+  - Default17:
+      speed: 0
+      file_name: elevation.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [112, 16]
+  - Default18:
+      speed: 0
+      file_name: elevation.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [128, 16]
+  - Default19:
+      speed: 0
+      file_name: elevation.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [144, 16]
+  - Default20:
+      speed: 0
+      file_name: elevation.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [0, 32]
+  - Default21:
+      speed: 0
+      file_name: elevation.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [16, 32]
+  - Default22:
+      speed: 0
+      file_name: elevation.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [32, 32]
+  - Default25:
+      speed: 0
+      file_name: elevation.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [80, 32]
+  - Default26:
+      speed: 0
+      file_name: elevation.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [96, 32]
+  - Default27:
+      speed: 0
+      file_name: elevation.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [112, 32]
+  - Default30:
+      speed: 0
+      file_name: elevation.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [0, 48]
+  - Default31:
+      speed: 0
+      file_name: elevation.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [16, 48]
+  - Default32:
+      speed: 0
+      file_name: elevation.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [32, 48]
+  - Default35:
+      speed: 0
+      file_name: elevation.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [80, 48]
+  - Default36:
+      speed: 0
+      file_name: elevation.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [96, 48]
+  - Default37:
+      speed: 0
+      file_name: elevation.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [112, 48]
+  - Default40:
+      speed: 0
+      file_name: elevation.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [0, 64]
+  - Default41:
+      speed: 0
+      file_name: elevation.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [16, 64]
+  - Default42:
+      speed: 0
+      file_name: elevation.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [32, 64]
+  - Default0:
+      speed: 0
+      file_name: stairs.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [48, 32]
+            pos: [0, 0]
+  - Default1:
+      speed: 0
+      file_name: stairs.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [48, 32]
+            pos: [48, 0]
+  - Default2:
+      speed: 0
+      file_name: stairs.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [48, 32]
+            pos: [96, 0]
+  - Default:
+      speed: 0
+      file_name: cave_entrance.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [32, 16]
+            pos: [0, 0]
+  - Default:
+      speed: 0
+      file_name: cave_entrance.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [32, 24]
+            pos: [0, 24]
+  - Default:
+      speed: 0
+      file_name: cave_entrance.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [32, 16]
+            pos: [32, 0]
+  - Default:
+      speed: 0
+      file_name: cave_entrance.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [32, 24]
+            pos: [32, 24]
+  - Default:
+      speed: 0
+      file_name: cave_entrance.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [32, 24]
+            pos: [64, 24]
+  - Default:
+      speed: 0
+      file_name: cave_entrance.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [36, 36]
+            pos: [110, 12]
+  - Default0:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [0, 0]
+  - Default1:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [16, 0]
+  - Default20:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [0, 16]
+  - Default21:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [16, 16]
+  - Default22:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [32, 16]
+  - Default23:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [48, 16]
+  - Default24:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [64, 16]
+  - Default25:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [80, 16]
+  - Default26:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [96, 16]
+  - Default27:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [112, 16]
+  - Default28:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [128, 16]
+  - Default29:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [144, 16]
+  - Default30:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [160, 16]
+  - Default31:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [176, 16]
+  - Default32:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [192, 16]
+  - Default33:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [208, 16]
+  - Default34:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [224, 16]
+  - Default35:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [240, 16]
+  - Default36:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [256, 16]
+  - Default37:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [272, 16]
+  - Default38:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [288, 16]
+  - Default39:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [304, 16]
+  - Default40:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [0, 32]
+  - Default42:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [32, 32]
+  - Default43:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [48, 32]
+  - Default44:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [64, 32]
+  - Default45:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [80, 32]
+  - Default47:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [112, 32]
+  - Default48:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [128, 32]
+  - Default49:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [144, 32]
+  - Default50:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [160, 32]
+  - Default52:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [192, 32]
+  - Default53:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [208, 32]
+  - Default54:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [224, 32]
+  - Default55:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [240, 32]
+  - Default57:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [272, 32]
+  - Default58:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [288, 32]
+  - Default59:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [304, 32]
+  - Default60:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [0, 48]
+  - Default61:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [16, 48]
+  - Default62:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [32, 48]
+  - Default63:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [48, 48]
+  - Default64:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [64, 48]
+  - Default65:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [80, 48]
+  - Default66:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [96, 48]
+  - Default67:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [112, 48]
+  - Default68:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [128, 48]
+  - Default69:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [144, 48]
+  - Default70:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [160, 48]
+  - Default71:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [176, 48]
+  - Default72:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [192, 48]
+  - Default73:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [208, 48]
+  - Default74:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [224, 48]
+  - Default75:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [240, 48]
+  - Default76:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [256, 48]
+  - Default77:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [272, 48]
+  - Default78:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [288, 48]
+  - Default79:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [304, 48]
+  - Default80:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [0, 64]
+  - Default81:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [16, 64]
+  - Default82:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [32, 64]
+  - Default83:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [48, 64]
+  - Default84:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [64, 64]
+  - Default85:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [80, 64]
+  - Default86:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [96, 64]
+  - Default87:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [112, 64]
+  - Default88:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [128, 64]
+  - Default89:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [144, 64]
+  - Default90:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [160, 64]
+  - Default91:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [176, 64]
+  - Default92:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [192, 64]
+  - Default93:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [208, 64]
+  - Default94:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [224, 64]
+  - Default95:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [240, 64]
+  - Default96:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [256, 64]
+  - Default97:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [272, 64]
+  - Default98:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [288, 64]
+  - Default99:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [304, 64]
+  - Default100:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [0, 80]
+  - Default101:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [16, 80]
+  - Default102:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [32, 80]
+  - Default103:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [48, 80]
+  - Default104:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [64, 80]
+  - Default105:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [80, 80]
+  - Default106:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [96, 80]
+  - Default107:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [112, 80]
+  - Default108:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [128, 80]
+  - Default109:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [144, 80]
+  - Default110:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [160, 80]
+  - Default111:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [176, 80]
+  - Default112:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [192, 80]
+  - Default113:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [208, 80]
+  - Default114:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [224, 80]
+  - Default115:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [240, 80]
+  - Default116:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [256, 80]
+  - Default117:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [272, 80]
+  - Default118:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [288, 80]
+  - Default119:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [304, 80]
+  - Default120:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [0, 96]
+  - Default121:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [16, 96]
+  - Default122:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [32, 96]
+  - Default123:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [48, 96]
+  - Default124:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [64, 96]
+  - Default125:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [80, 96]
+  - Default126:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [96, 96]
+  - Default127:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [112, 96]
+  - Default128:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [128, 96]
+  - Default129:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [144, 96]
+  - Default130:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [160, 96]
+  - Default131:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [176, 96]
+  - Default132:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [192, 96]
+  - Default133:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [208, 96]
+  - Default134:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [224, 96]
+  - Default135:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [240, 96]
+  - Default136:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [256, 96]
+  - Default137:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [272, 96]
+  - Default138:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [288, 96]
+  - Default139:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [304, 96]
+  - Default140:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [0, 112]
+  - Default141:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [16, 112]
+  - Default142:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [32, 112]
+  - Default143:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [48, 112]
+  - Default144:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [64, 112]
+  - Default145:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [80, 112]
+  - Default146:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [96, 112]
+  - Default147:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [112, 112]
+  - Default148:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [128, 112]
+  - Default149:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [144, 112]
+  - Default150:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [160, 112]
+  - Default151:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [176, 112]
+  - Default152:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [192, 112]
+  - Default153:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [208, 112]
+  - Default154:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [224, 112]
+  - Default155:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [240, 112]
+  - Default156:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [256, 112]
+  - Default157:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [272, 112]
+  - Default158:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [288, 112]
+  - Default159:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [304, 112]
+  - Default160:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [0, 128]
+  - Default162:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [32, 128]
+  - Default163:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [48, 128]
+  - Default164:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [64, 128]
+  - Default165:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [80, 128]
+  - Default167:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [112, 128]
+  - Default168:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [128, 128]
+  - Default169:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [144, 128]
+  - Default170:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [160, 128]
+  - Default172:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [192, 128]
+  - Default173:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [208, 128]
+  - Default174:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [224, 128]
+  - Default175:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [240, 128]
+  - Default177:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [272, 128]
+  - Default178:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [288, 128]
+  - Default179:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [304, 128]
+  - Default180:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [0, 144]
+  - Default181:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [16, 144]
+  - Default182:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [32, 144]
+  - Default183:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [48, 144]
+  - Default184:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [64, 144]
+  - Default185:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [80, 144]
+  - Default186:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [96, 144]
+  - Default187:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [112, 144]
+  - Default188:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [128, 144]
+  - Default189:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [144, 144]
+  - Default190:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [160, 144]
+  - Default191:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [176, 144]
+  - Default192:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [192, 144]
+  - Default193:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [208, 144]
+  - Default194:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [224, 144]
+  - Default195:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [240, 144]
+  - Default196:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [256, 144]
+  - Default197:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [272, 144]
+  - Default198:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [288, 144]
+  - Default199:
+      speed: 0
+      file_name: water_tiles.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [304, 144]
+  - Default:
+      speed: 0
+      file_name: waterfall.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [47, 60]
+            pos: [0, 0]
+  - Default:
+      speed: 0
+      file_name: waterfall.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [47, 60]
+            pos: [49, 0]
+  - Default:
+      speed: 0
+      file_name: waterfall.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [47, 60]
+            pos: [96, 0]
+  - Default:
+      speed: 0
+      file_name: waterfall.png
+      sprite_type: Tile
+      animations:
+        Default:
+          0:
+            size: [47, 60]
+            pos: [145, 0]
+  - Default0:
+      speed: 0
+      file_name: flowers.png
+      sprite_type: Prop
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [0, 0]
+  - Default1:
+      speed: 0
+      file_name: flowers.png
+      sprite_type: Prop
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [16, 0]
+  - Default2:
+      speed: 0
+      file_name: flowers.png
+      sprite_type: Prop
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [32, 0]
+  - Default3:
+      speed: 0
+      file_name: flowers.png
+      sprite_type: Prop
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [48, 0]
+  - Default4:
+      speed: 0
+      file_name: flowers.png
+      sprite_type: Prop
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [0, 16]
+  - Default5:
+      speed: 0
+      file_name: flowers.png
+      sprite_type: Prop
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [16, 16]
+  - Default6:
+      speed: 0
+      file_name: flowers.png
+      sprite_type: Prop
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [32, 16]
+  - Default7:
+      speed: 0
+      file_name: flowers.png
+      sprite_type: Prop
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [48, 16]
+  - Default8:
+      speed: 0
+      file_name: flowers.png
+      sprite_type: Prop
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [0, 32]
+  - Default9:
+      speed: 0
+      file_name: flowers.png
+      sprite_type: Prop
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [16, 32]
+  - Default10:
+      speed: 0
+      file_name: flowers.png
+      sprite_type: Prop
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [32, 32]
+  - Default11:
+      speed: 0
+      file_name: flowers.png
+      sprite_type: Prop
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [48, 32]
+  - Default12:
+      speed: 0
+      file_name: flowers.png
+      sprite_type: Prop
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [0, 48]
+  - Default13:
+      speed: 0
+      file_name: flowers.png
+      sprite_type: Prop
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [16, 48]
+  - Default14:
+      speed: 0
+      file_name: flowers.png
+      sprite_type: Prop
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [32, 48]
+  - Default15:
+      speed: 0
+      file_name: flowers.png
+      sprite_type: Prop
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [48, 48]
+  - Default16:
+      speed: 0
+      file_name: flowers.png
+      sprite_type: Prop
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [0, 64]
+  - Default17:
+      speed: 0
+      file_name: flowers.png
+      sprite_type: Prop
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [16, 64]
+  - Default18:
+      speed: 0
+      file_name: flowers.png
+      sprite_type: Prop
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [32, 64]
+  - Default19:
+      speed: 0
+      file_name: flowers.png
+      sprite_type: Prop
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [48, 64]
+  - Default20:
+      speed: 0
+      file_name: flowers.png
+      sprite_type: Prop
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [0, 80]
+  - Default21:
+      speed: 0
+      file_name: flowers.png
+      sprite_type: Prop
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [16, 80]
+  - Default22:
+      speed: 0
+      file_name: flowers.png
+      sprite_type: Prop
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [32, 80]
+  - Default23:
+      speed: 0
+      file_name: flowers.png
+      sprite_type: Prop
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [48, 80]
+  - Default:
+      speed: 0
+      file_name: rocks.png
+      sprite_type: Prop
+      animations:
+        Default:
+          0:
+            size: [16, 32]
+            pos: [0, 0]
+  - Default:
+      speed: 0
+      file_name: rocks.png
+      sprite_type: Prop
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [16, 16]
+  - Default0:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [0, 0]
+  - Default2:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [32, 0]
+  - Default3:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [48, 0]
+  - Default4:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [64, 0]
+  - Default5:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [80, 0]
+  - Default6:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [96, 0]
+  - Default7:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [112, 0]
+  - Default8:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [128, 0]
+  - Default9:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [0, 16]
+  - Default10:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [16, 16]
+  - Default12:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [48, 16]
+  - Default13:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [64, 16]
+  - Default14:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [80, 16]
+  - Default15:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [96, 16]
+  - Default16:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [112, 16]
+  - Default17:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [128, 16]
+  - Default18:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [0, 32]
+  - Default19:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [16, 32]
+  - Default20:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [32, 32]
+  - Default22:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [64, 32]
+  - Default23:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [80, 32]
+  - Default24:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [96, 32]
+  - Default25:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [112, 32]
+  - Default26:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [128, 32]
+  - Default27:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [0, 48]
+  - Default29:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [32, 48]
+  - Default30:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [48, 48]
+  - Default31:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [64, 48]
+  - Default32:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [80, 48]
+  - Default33:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [96, 48]
+  - Default34:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [112, 48]
+  - Default35:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [128, 48]
+  - Default36:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [0, 64]
+  - Default37:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [16, 64]
+  - Default39:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [48, 64]
+  - Default40:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [64, 64]
+  - Default41:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [80, 64]
+  - Default42:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [96, 64]
+  - Default43:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [112, 64]
+  - Default44:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [128, 64]
+  - Default45:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [0, 80]
+  - Default46:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [16, 80]
+  - Default47:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [32, 80]
+  - Default49:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [64, 80]
+  - Default50:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [80, 80]
+  - Default51:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [96, 80]
+  - Default52:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [112, 80]
+  - Default53:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [128, 80]
+  - Default54:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [0, 96]
+  - Default56:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [32, 96]
+  - Default57:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [48, 96]
+  - Default58:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [64, 96]
+  - Default59:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [80, 96]
+  - Default60:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [96, 96]
+  - Default61:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [112, 96]
+  - Default62:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [128, 96]
+  - Default63:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [0, 112]
+  - Default64:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [16, 112]
+  - Default66:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [48, 112]
+  - Default67:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [64, 112]
+  - Default68:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [80, 112]
+  - Default69:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [96, 112]
+  - Default70:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [112, 112]
+  - Default71:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [128, 112]
+  - Default72:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [0, 128]
+  - Default73:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [16, 128]
+  - Default74:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [32, 128]
+  - Default76:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [64, 128]
+  - Default77:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [80, 128]
+  - Default78:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [96, 128]
+  - Default79:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [112, 128]
+  - Default80:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [128, 128]
+  - Default90:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [0, 160]
+  - Default91:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [16, 160]
+  - Default92:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 16]
+            pos: [32, 160]
+  - Default93:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 18]
+            pos: [48, 160]
+  - Default94:
+      speed: 0
+      file_name: house_tileset.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [16, 18]
+            pos: [64, 160]
+  - Default:
+      speed: 0
+      file_name: roofs.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [100, 90]
+            pos: [6, 10]
+  - Default:
+      speed: 0
+      file_name: roofs.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [100, 90]
+            pos: [6, 105]
+  - Default:
+      speed: 0
+      file_name: roofs.png
+      sprite_type: Building
+      animations:
+        Default:
+          0:
+            size: [100, 90]
+            pos: [6, 200]
+  - Default:
+      speed: 15
+      file_name: character_spritesheet_01.png
+      sprite_type: Character
+      animations:
+        IdleDown:
+          0:
+            size: [16, 16]
+            pos: [16, 16]
+          1:
+            size: [16, 16]
+            pos: [64, 16]
+          2:
+            size: [16, 16]
+            pos: [112, 16]
+          3:
+            size: [16, 16]
+            pos: [160, 16]
+        IdleLeft:
+          0:
+            size: [16, 16]
+            pos: [16, 64]
+          1:
+            size: [16, 16]
+            pos: [64, 64]
+          2:
+            size: [16, 16]
+            pos: [112, 64]
+          3:
+            size: [16, 16]
+            pos: [160, 64]
+        IdleRight:
+          0:
+            size: [16, 16]
+            pos: [16, 112]
+          1:
+            size: [16, 16]
+            pos: [64, 112]
+          2:
+            size: [16, 16]
+            pos: [112, 112]
+          3:
+            size: [16, 16]
+            pos: [160, 112]
+        IdleUp:
+          0:
+            size: [16, 16]
+            pos: [16, 160]
+          1:
+            size: [16, 16]
+            pos: [64, 160]
+          2:
+            size: [16, 16]
+            pos: [112, 160]
+          3:
+            size: [16, 16]
+            pos: [160, 160]
+Audios:
+  []
+Fonts:
+  []
