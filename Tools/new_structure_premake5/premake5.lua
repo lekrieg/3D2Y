@@ -1,5 +1,23 @@
 require "clion"
 
+-- aux methods
+local systems = { "windows", "linux" }
+local architectures = { "x86_64" }
+local buildcfgs = { "Debug", "Release" }
+
+function createOutputDirs(targetFolder)
+    for _, sys in ipairs(systems) do
+        for _, arch in ipairs(architectures) do
+            for _, cfg in ipairs(buildcfgs) do
+                local dir = path.join(targetFolder, sys .. arch .. cfg)
+                if not os.isdir(dir) then
+                    os.mkdir(dir)
+                end
+            end
+        end
+    end
+end
+
 -- WORKSPACE STUFF
 workspace "SunRise"
     architecture "x64"
@@ -14,6 +32,7 @@ project "AbyssCore"
     kind "StaticLib"
     language "C++"
 
+    createOutputDirs("Lib");
 
 	targetdir ("Lib/%{cfg.system}%{cfg.architecture}%{cfg.buildcfg}/")
 	objdir ("Temp/%{cfg.system}%{cfg.architecture}%{cfg.buildcfg}/")
@@ -127,6 +146,8 @@ project "EngineEditor"
     language "C++"
     dependson "AbyssCore"
 
+    createOutputDirs("../EngineEditor");
+
     targetdir("../EngineEditor/%{cfg.system}%{cfg.architecture}%{cfg.buildcfg}/")
     objdir("Temp/%{cfg.system}%{cfg.architecture}%{cfg.buildcfg}/")
 
@@ -223,6 +244,8 @@ project "Game"
     language "C++"
     dependson "AbyssCore"
 
+    createOutputDirs("../Game");
+
     targetdir("../Game/%{cfg.system}%{cfg.architecture}%{cfg.buildcfg}/")
     objdir("Temp/%{cfg.system}%{cfg.architecture}%{cfg.buildcfg}/")
 
@@ -318,6 +341,7 @@ project "AssetCreator"
     kind "ConsoleApp"
     language "C++"
 
+    createOutputDirs("../AssetCreator");
 
 	targetdir ("../AssetCreator/%{cfg.system}%{cfg.architecture}%{cfg.buildcfg}/")
 	objdir ("Temp/%{cfg.system}%{cfg.architecture}%{cfg.buildcfg}/")
