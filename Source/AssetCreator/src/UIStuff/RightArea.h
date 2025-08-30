@@ -19,6 +19,7 @@ private:
 
     std::vector<std::string> m_spriteTypes;
     std::string m_assetFilePath;
+    std::string m_abyssPath;
 
 public:
 

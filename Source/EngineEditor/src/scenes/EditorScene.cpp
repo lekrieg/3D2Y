@@ -92,7 +92,7 @@ void editor::EditorScene::LoadLevel(const std::string &fileName)
 
 	std::shared_ptr<abyss::Entity> player = m_entityManager.AddEntity(abyss::enums::EntityTag::Player);
 
-	auto& s = m_application->GetAssets().GetSprites()["Character_1"];
+	auto& s = m_application->GetAssets().GetSprites()["Character1"];
 	m_componentManager.AddComponent(player->Id(),
 									abyss::components::Anim(abyss::CustomSprite(s, m_application->GetAssets().GetTextures()[s.path]), true));
 	m_componentManager.AddComponent(player->Id(), abyss::components::Transform(sf::Vector2f(512, 300)));

@@ -79,6 +79,7 @@ void RightArea::DrawTopMenuBar()
         if ((fileDialogType == FileDialogType::Load || fileDialogType == FileDialogType::Save) && m_app->GetFileDialog().HasSelected())
         {
             std::string path = m_app->GetFileDialog().GetSelected().string();
+            m_abyssPath = m_app->GetFileDialog().GetSelected().remove_filename().string();
 
             switch (fileDialogType)
             {
@@ -687,12 +688,16 @@ bool RightArea::Deserialize(const std::string &path)
         return false;
     }
 
-    char dataFileName[] = "data.abyss";
+    m_abyssPath += "data.abyss";
+    char* dataFileName = new char[m_abyssPath.size() + 1];
+    strcpy(dataFileName, m_abyssPath.c_str());
     m_app->GetArchiver().ReadArchiveFile(dataFileName);
 
     Serializer(m_app).Deserialize(root);
 
     m_app->GetArchiver().CloseArchive();
+
+    delete[] dataFileName;
     return true;
 }
 
@@ -729,7 +734,9 @@ bool RightArea::ArchiveData()
         fileNames.push_back(item.second);
     }
 
-    char dataFileName[] = "data.abyss";
+    m_abyssPath += "data.abyss";
+    char* dataFileName = new char[m_abyssPath.size() + 1];
+    strcpy(dataFileName, m_abyssPath.c_str());
     char tmpFolder[] = "tmpData";
 
     if (m_app->GetArchiver().ReadArchiveFile(dataFileName))
@@ -773,6 +780,7 @@ bool RightArea::ArchiveData()
     }
 
     delete[] headers;
+    delete[] dataFileName;
 
     m_app->GetArchiver().CloseArchive();
 
