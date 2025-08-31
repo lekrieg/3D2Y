@@ -71,7 +71,7 @@ namespace editor
 				Scene(editorApplication),
 				m_levelPath(levelPath),
 				m_gridText(commonFont),
-				m_levelsPathFolder("../../Game/linuxx86_64Debug/scenes")
+				m_levelsPathFolder("../../EngineEditor/linuxx86_64Debug/scenes")
 			{
 				Init(m_levelPath);
 			}

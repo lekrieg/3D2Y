@@ -608,11 +608,6 @@ void editor::EditorScene::AssetManagerGui()
 
 			if (ImGui::BeginTabBar("GameTabBar", tabBarFlags))
 			{
-				// TODO: resolver problemas dos botoes com comportamentos repetidos e criar itens do mesmo tipo no caso dos telhados
-				// o problema esta nos nomes, ta localizando o cara errado, posso:
-				//					tentar localizar por tipo, ai vou precisar passar a tag pra criacao e ajustar
-				//					ou
-				//					trocar o nome do asset por id e usar o nome apenas pra localizar as coisas no inspector do editor
 				for (auto& spritePerType : m_application->GetAssets().GetSpritesPerType())
 				{
 					if (ImGui::BeginTabItem(abyss::enums::SpriteTypeToString(spritePerType.first)))
@@ -717,33 +712,36 @@ void editor::EditorScene::SceneManagerGui()
 
 	static int item_selected_idx = 0;
 
-	const char *combo_preview_value = fileList[item_selected_idx].filename().c_str();
-	if (ImGui::BeginCombo("Level list", combo_preview_value, flags))
+	if (fileList.size() > 0)
 	{
-		for (int n = 0; n < fileList.size(); n++)
+		const char *combo_preview_value = fileList[item_selected_idx].filename().c_str();
+		if (ImGui::BeginCombo("Level list", combo_preview_value, flags))
 		{
-			const bool is_selected = (item_selected_idx == n);
-			if (ImGui::Selectable(fileList[n].filename().c_str(), is_selected))
-				item_selected_idx = n;
+			for (int n = 0; n < fileList.size(); n++)
+			{
+				const bool is_selected = (item_selected_idx == n);
+				if (ImGui::Selectable(fileList[n].filename().c_str(), is_selected))
+					item_selected_idx = n;
 
-			// Set the initial focus when opening the combo (scrolling + keyboard navigation focus)
-			if (is_selected)
-				ImGui::SetItemDefaultFocus();
+				// Set the initial focus when opening the combo (scrolling + keyboard navigation focus)
+				if (is_selected)
+					ImGui::SetItemDefaultFocus();
+			}
+			ImGui::EndCombo();
 		}
-		ImGui::EndCombo();
+
+		ImGui::Spacing();
+
+		if (ImGui::Button("Reload", ImVec2(100, 25)))
+		{
+			m_sceneName = fileList[item_selected_idx].filename();
+			Deserialize(fileList[item_selected_idx]);
+		}
+
+		ImGui::SameLine();
+
+		ImGui::Text("%s", fileList[item_selected_idx].filename().c_str());
 	}
-
-	ImGui::Spacing();
-
-	if (ImGui::Button("Reload", ImVec2(100, 25)))
-	{
-		m_sceneName = fileList[item_selected_idx].filename();
-		Deserialize(fileList[item_selected_idx]);
-	}
-
-	ImGui::SameLine();
-
-	ImGui::Text("%s", fileList[item_selected_idx].filename().c_str());
 
 	ImGui::End();
 
