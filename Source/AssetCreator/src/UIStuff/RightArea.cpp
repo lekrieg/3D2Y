@@ -135,20 +135,6 @@ void RightArea::DrawSpriteInfo()
 
         ImGui::Separator();
 
-        ImGui::Text(sprite->assetName);
-        ImGui::PushItemWidth(90);
-        if (ImGui::Button("Edit name"))
-        {
-            ImGui::OpenPopup("edit_name_popup");
-        }
-        if (ImGui::BeginPopup("edit_name_popup"))
-        {
-            ImGui::InputText("Name", sprite->assetName, IM_ARRAYSIZE(sprite->assetName));
-            ImGui::EndPopup();
-        }
-
-        ImGui::Separator();
-
         DrawAnimationArea();
     }
 
@@ -216,8 +202,8 @@ void RightArea::DrawSpritesStuff()
                     sprite->animations[0]->frames[0]->position.y),
                     sf::Vector2<int>(static_cast<int>(sprite->animations[0]->frames[0]->size.x), static_cast<int>(sprite->animations[0]->frames[0]->size.y))));
 
-                ImGui::PushID(imgButtonId);
-                if (ImGui::ImageButton("ImgButton##xx", s, sf::Vector2f(32, 32)))
+                ImGui::PushID(UniqueId(imgButtonId));
+                if (ImGui::ImageButton("ImgButton", s, sf::Vector2f(32, 32)))
                 {
                     m_app->GetFilePath() = sprite->filePath;
 
@@ -242,7 +228,7 @@ void RightArea::DrawSpritesStuff()
                 if (ImGui::BeginPopup(popupName.c_str()))
                 {
                     ImGui::PushItemWidth(90);
-                    ImGui::PushID("DeleteSprite" + imgButtonId);
+                    ImGui::PushID(UniqueId(imgButtonId));
                     if (ImGui::Button("Delete"))
                     {
                         sprite->isActive = false;
@@ -267,7 +253,7 @@ void RightArea::DrawAudiosStuff()
         auto& audios = m_app->GetAudios();
         auto& fileDialog = m_app->GetFileDialog();
 
-        ImGui::PushID("NewAudio");
+        ImGui::PushID(UniqueId(__LINE__));
         if (ImGui::Button("+"))
         {
             audios.emplace_back(std::make_shared<AudioAsset>());
@@ -276,25 +262,7 @@ void RightArea::DrawAudiosStuff()
 
         for (int i = 0; i < audios.size(); i++)
         {
-            ImGui::Text(audios[i]->assetName);
-            ImGui::PushItemWidth(90);
-
-            ImGui::PushID("AudioName" + i);
-            if (ImGui::Button("Edit name"))
-            {
-                ImGui::OpenPopup("edit_audio_name_popup" + i);
-            }
-
-            if (ImGui::BeginPopup("edit_audio_name_popup" + i))
-            {
-                ImGui::InputText("Name", audios[i]->assetName, IM_ARRAYSIZE(audios[i]->assetName));
-
-                ImGui::EndPopup();
-            }
-            ImGui::PopID();
-
-            ImGui::SameLine();
-            ImGui::PushID("DeleteAudio" + i);
+            ImGui::PushID(UniqueId(i + __LINE__));
             if (ImGui::Button("Delete"))
             {
                 audios[i]->isActive = false;
@@ -302,7 +270,7 @@ void RightArea::DrawAudiosStuff()
             ImGui::PopID();
 
             auto& fileDialogType = m_app->GetFileDialogType();
-            ImGui::PushID("SelectAudio" + i);
+            ImGui::PushID(UniqueId(i));
             if (ImGui::Button("Select audio"))
             {
                 fileDialogType = FileDialogType::Audio;
@@ -331,7 +299,7 @@ void RightArea::DrawAudiosStuff()
                 ImGui::TextColored(ImVec4(0.0f, 1.0f, 0.0f, 1.0f), "O");
             }
 
-            ImGui::PushID("AudioName" + i);
+            ImGui::PushID(UniqueId(i));
             ImGui::Text(audios[i]->fileName.c_str());
             ImGui::PopID();
 
@@ -347,7 +315,7 @@ void RightArea::DrawFontsStuff()
         auto& fonts = m_app->GetFonts();
         auto& fileDialog = m_app->GetFileDialog();
 
-        ImGui::PushID("NewFont");
+        ImGui::PushID(UniqueId(__LINE__));
         if (ImGui::Button("+"))
         {
             fonts.emplace_back(std::make_shared<FontAsset>());
@@ -356,26 +324,7 @@ void RightArea::DrawFontsStuff()
 
         for (int i = 0; i < fonts.size(); i++)
         {
-            ImGui::Text(fonts[i]->assetName);
-            ImGui::PushItemWidth(90);
-
-            ImGui::PushID("FontName" + i);
-            if (ImGui::Button("Edit name"))
-            {
-                ImGui::OpenPopup("edit_font_name_popup" + i);
-            }
-
-            if (ImGui::BeginPopup("edit_font_name_popup" + i))
-            {
-                ImGui::InputText("Name", fonts[i]->assetName, IM_ARRAYSIZE(fonts[i]->assetName));
-
-                ImGui::EndPopup();
-            }
-            ImGui::PopID();
-
-            ImGui::SameLine();
-            ImGui::PushItemWidth(90);
-            ImGui::PushID("DeleteFont" + i);
+            ImGui::PushID(UniqueId(i + __LINE__));
             if (ImGui::Button("Delete"))
             {
                 fonts[i]->isActive = false;
@@ -383,7 +332,7 @@ void RightArea::DrawFontsStuff()
             ImGui::PopID();
 
             auto& fileDialogType = m_app->GetFileDialogType();
-            ImGui::PushID("SelectFont" + i);
+            ImGui::PushID(UniqueId(i));
             if (ImGui::Button("Select font"))
             {
                 fileDialogType = FileDialogType::Font;
@@ -412,7 +361,7 @@ void RightArea::DrawFontsStuff()
                 ImGui::TextColored(ImVec4(0.0f, 1.0f, 0.0f, 1.0f), "O");
             }
 
-            ImGui::PushID("FontName" + i);
+            ImGui::PushID(UniqueId(i));
             ImGui::Text(fonts[i]->fileName.c_str());
             ImGui::PopID();
 
@@ -478,6 +427,7 @@ void RightArea::DrawAnimationArea()
 
     ImGui::SameLine(ImGui::GetWindowWidth() - 150 - ImGui::GetStyle().WindowPadding.x);
 
+    ImGui::PushItemWidth(90);
     ImGui::InputInt("Speed", &sprite->speed);
     sprite->speed = sprite->speed < 0 ? 0 : sprite->speed;
 
@@ -494,31 +444,36 @@ void RightArea::DrawAnimationArea()
         // Here we use PushID() to generate a unique base ID, and then the "" used as TreeNode id won't conflict.
         // An alternative to using 'PushID() + TreeNode("", ...)' to generate a unique ID is to use 'TreeNode((void*)(intptr_t)i, ...)',
         // aka generate a dummy pointer-sized value to be hashed. The demo below uses that technique. Both are fine.
-        ImGui::PushID(i);
-        if (ImGui::TreeNode("", anim->name))
+        ImGui::PushID(UniqueId(i));
+        if (ImGui::TreeNode("animations_tree_node", anim->name))
         {
-
             if (m_app->GetUsedTextures()[m_app->GetSelectedSprite()->filePath])
             {
                 DrawFrames(anim);
             }
 
             ImGui::PushItemWidth(90);
+            ImGui::PushID(UniqueId(i));
             if (ImGui::Button("Edit name"))
             {
                 ImGui::OpenPopup("edit_name_popup");
             }
+
             if (ImGui::BeginPopup("edit_name_popup"))
             {
-                ImGui::InputText("Name##" + i, anim->name, IM_ARRAYSIZE(anim->name));
+                ImGui::PushID(UniqueId(i));
+                ImGui::InputText("Name", anim->name, IM_ARRAYSIZE(anim->name));
+                ImGui::PopID();
+
                 ImGui::EndPopup();
             }
+            ImGui::PopID();
 
             if (sprite->animations.size() > 1)
             {
                 ImGui::SameLine();
                 ImGui::PushItemWidth(90);
-                ImGui::PushID("DeleteAnimation" + i);
+                ImGui::PushID(UniqueId(i));
                 if (ImGui::Button("Delete"))
                 {
                     anim->isActive = false;
@@ -536,7 +491,7 @@ void RightArea::DrawAnimationArea()
             for (int j = 0; j < anim->frames.size(); j++)
             {
                 float newSize[] = {anim->frames[j]->size.x, anim->frames[j]->size.y};
-                ImGui::PushID(j + i);
+                ImGui::PushID(UniqueId(j));
                 ImGui::InputFloat2("Size", newSize);
                 anim->SetSize(anim->frames[j], sf::Vector2f(newSize[0], newSize[1]));
                 ImGui::PopID();
@@ -545,7 +500,7 @@ void RightArea::DrawAnimationArea()
                 {
                     ImGui::PushItemWidth(90);
                     ImGui::SameLine(230);
-                    ImGui::PushID("DeleteFrame" + j);
+                    ImGui::PushID(UniqueId(j));
                     if (ImGui::Button("Delete"))
                     {
                         anim->frames[j]->isActive = false;
@@ -554,7 +509,7 @@ void RightArea::DrawAnimationArea()
                 }
 
                 int newPos[] = {anim->frames[j]->position.x, anim->frames[j]->position.y};
-                ImGui::PushID(j + i);
+                ImGui::PushID(UniqueId(j));
                 ImGui::InputInt2("Position", newPos);
                 anim->frames[j]->position.x = newPos[0];
                 anim->frames[j]->position.y = newPos[1];
@@ -632,8 +587,6 @@ void RightArea::DrawAutoCutStuff()
             int rowsAmount = static_cast<int>(textureSize[1] / size[1]);
             int columnsAmount = static_cast<int>(textureSize[0] / size[0]);
 
-            // TODO: fix name colliding problem
-            int spriteId = 0;
             for (int i = 0; i < rowsAmount; i++)
             {
                 for (int j = 0; j < columnsAmount; j++)
@@ -644,8 +597,6 @@ void RightArea::DrawAutoCutStuff()
                     }
 
                     auto s = std::make_shared<SpriteAsset>(m_app->GetFilePath());
-                    std::string n = "Default" + std::to_string(spriteId);
-                    strcpy(s->assetName, n.c_str());
                     s->fileName = m_app->GetFileName();
                     s->spriteType = sType;
                     s->AddAnimation();
@@ -653,8 +604,6 @@ void RightArea::DrawAutoCutStuff()
                     s->animations[0]->frames[0]->halfSize = sf::Vector2f(size[0] / 2, size[1] / 2);
                     s->animations[0]->frames[0]->position = sf::Vector2i(j * static_cast<int>(size[0]),  i * static_cast<int>(size[0]));
                     m_app->GetSprites().emplace_back(s);
-
-                    spriteId++;
                 }
             }
         }

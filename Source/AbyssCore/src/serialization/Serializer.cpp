@@ -195,13 +195,12 @@ void abyss::serializer::Serializer::DeserializeSprite(const YAML::Node& node, st
 
 			auto s = assets::SpriteAsset();
 			s.path = fileName;
-			s.name = internalNode.first.as<std::string>();
 
 			s.speed = internalNode.second["speed"].as<int>();
 			s.spriteType = enums::StringToSpriteType(internalNode.second["sprite_type"].as<std::string>().c_str());
 
 			for (const auto& animNode : internalNode.second["animations"])
-			{;
+			{
 				std::string animationName = animNode.first.as<std::string>();
 				s.animationNames.push_back(animationName);
 

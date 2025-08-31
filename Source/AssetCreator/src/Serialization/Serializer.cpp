@@ -60,7 +60,7 @@ void Serializer::SerializeSprite(YAML::Emitter &em, const std::shared_ptr<Sprite
 {
 
 	em << YAML::BeginMap;
-	em << YAML::Key << s->assetName << YAML::Value << YAML::BeginMap;
+	em << YAML::Key << s->GetId() << YAML::Value << YAML::BeginMap;
 	em << YAML::Key << "speed" << YAML::Value << s->speed;
 	em << YAML::Key << "file_name" << YAML::Value << s->fileName;
 	em << YAML::Key << "sprite_type" << YAML::Value << SpriteTypeToString(s->spriteType);
@@ -119,7 +119,7 @@ void Serializer::DeserializeSprite(const YAML::Node& node, std::vector<std::shar
 					ABYSS_ERROR("Failed to load texture!")
 				}
 
-					m_app->GetFilePath() = fileName;
+				m_app->GetFilePath() = fileName;
 
 				if (!m_app->GetRenderTexture().resize(m_app->GetUsedTextures()[fileName]->getSize()))
 				{
@@ -132,8 +132,6 @@ void Serializer::DeserializeSprite(const YAML::Node& node, std::vector<std::shar
 
 			const auto& s = std::make_shared<SpriteAsset>(fileName);
 			s->fileName = fileName;
-			auto sName = internalNode.first.as<std::string>();
-			strcpy(s->assetName, sName.c_str());
 
 			s->speed = internalNode.second["speed"].as<int>();
 			s->spriteType = StringToSpriteType(internalNode.second["sprite_type"].as<std::string>().c_str());
@@ -163,7 +161,6 @@ void Serializer::DeserializeSprite(const YAML::Node& node, std::vector<std::shar
 void Serializer::SerializeAudio(YAML::Emitter &em, const std::shared_ptr<AudioAsset>& a)
 {
 	em << YAML::BeginMap;
-	em << YAML::Key << a->assetName << YAML::Value << YAML::BeginMap;
 	em << YAML::Key << "file_name" << YAML::Value << a->fileName;
 	em << YAML::EndMap;
 	em << YAML::EndMap;
@@ -176,7 +173,6 @@ void Serializer::DeserializeAudio(const YAML::Node& node, std::vector<std::share
 		for (const auto& internalNode : audioNode)
 		{
 			const auto audio = std::make_shared<AudioAsset>();
-			strcpy(audio->assetName, internalNode.first.as<std::string>().c_str());
 			audio->fileName = internalNode.second["file_name"].as<std::string>();
 			audio->filePath = audio->fileName;
 
@@ -188,7 +184,6 @@ void Serializer::DeserializeAudio(const YAML::Node& node, std::vector<std::share
 void Serializer::SerializeFont(YAML::Emitter &em, const std::shared_ptr<FontAsset>& f)
 {
 	em << YAML::BeginMap;
-	em << YAML::Key << f->assetName << YAML::Value << YAML::BeginMap;
 	em << YAML::Key << "file_name" << YAML::Value << f->fileName;
 	em << YAML::EndMap;
 	em << YAML::EndMap;
@@ -201,7 +196,6 @@ void Serializer::DeserializeFont(const YAML::Node& node, std::vector<std::shared
 		for (const auto& internalNode : audioNode)
 		{
 			const auto font = std::make_shared<FontAsset>();
-			strcpy(font->assetName, internalNode.first.as<std::string>().c_str());
 			font->fileName = internalNode.second["file_name"].as<std::string>();
 			font->filePath = font->fileName;
 

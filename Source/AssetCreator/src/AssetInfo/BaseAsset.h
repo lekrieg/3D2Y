@@ -5,13 +5,32 @@
 #ifndef BASE_ASSET_H
 #define BASE_ASSET_H
 
+#include <string>
+
 class BaseAsset
 {
 public:
-    char assetName[128] = {"Default"};
+
     std::string filePath {};
     std::string fileName {};
     bool isActive = true;
+
+    BaseAsset()
+    {
+        internalId++;
+        assetId = internalId;
+    }
+
+    const unsigned int GetId() const
+    {
+        return assetId;
+    }
+
+private:
+
+    static unsigned int internalId;
+    unsigned int assetId {};
 };
 
 #endif //BASE_ASSET_H
+

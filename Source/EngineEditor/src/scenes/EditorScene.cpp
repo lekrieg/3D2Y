@@ -90,12 +90,12 @@ void editor::EditorScene::LoadLevel(const std::string &fileName)
 	m_componentManager.RegisterComponent<abyss::components::FollowPlayer>();
 	m_componentManager.RegisterComponent<abyss::components::Jump>();
 
-	std::shared_ptr<abyss::Entity> player = m_entityManager.AddEntity(abyss::enums::EntityTag::Player);
-
-	auto& s = m_application->GetAssets().GetSprites()["Character1"];
-	m_componentManager.AddComponent(player->Id(),
-									abyss::components::Anim(abyss::CustomSprite(s, m_application->GetAssets().GetTextures()[s.path]), true));
-	m_componentManager.AddComponent(player->Id(), abyss::components::Transform(sf::Vector2f(512, 300)));
+	// std::shared_ptr<abyss::Entity> player = m_entityManager.AddEntity(abyss::enums::EntityTag::Player);
+	//
+	// auto& s = m_application->GetAssets().GetSprites()["Character1"];
+	// m_componentManager.AddComponent(player->Id(),
+	// 								abyss::components::Anim(abyss::CustomSprite(s, m_application->GetAssets().GetTextures()[s.path]), true));
+	// m_componentManager.AddComponent(player->Id(), abyss::components::Transform(sf::Vector2f(512, 300)));
 
 	// std::ifstream ifs(fileName, std::ifstream::in);
 
@@ -608,6 +608,11 @@ void editor::EditorScene::AssetManagerGui()
 
 			if (ImGui::BeginTabBar("GameTabBar", tabBarFlags))
 			{
+				// TODO: resolver problemas dos botoes com comportamentos repetidos e criar itens do mesmo tipo no caso dos telhados
+				// o problema esta nos nomes, ta localizando o cara errado, posso:
+				//					tentar localizar por tipo, ai vou precisar passar a tag pra criacao e ajustar
+				//					ou
+				//					trocar o nome do asset por id e usar o nome apenas pra localizar as coisas no inspector do editor
 				for (auto& spritePerType : m_application->GetAssets().GetSpritesPerType())
 				{
 					if (ImGui::BeginTabItem(abyss::enums::SpriteTypeToString(spritePerType.first)))
@@ -624,7 +629,7 @@ void editor::EditorScene::AssetManagerGui()
 								s.setTextureRect(sf::IntRect(a.positions[a.animationNames[0]][0],
 									sf::Vector2<int>(static_cast<int>(a.sizes[a.animationNames[0]][0].x), static_cast<int>(a.sizes[a.animationNames[0]][0].y))));
 
-								if (ImGui::ImageButton(a.name.c_str(), s, sf::Vector2f(32, 32)))
+								if (ImGui::ImageButton(std::to_string(a.GetId()).c_str(), s, sf::Vector2f(32, 32)))
 								{
 									m_lastEntityToCreate = a.name;
 									m_dragEntity = CreateEntity(false, m_lastEntityToCreate.c_str());

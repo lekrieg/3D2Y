@@ -104,6 +104,17 @@ namespace editor
 			void AnimCompGui();
 			void BoundingBoxCompGui();
 			void InsertGuiToDraw(int index);
+
+			const char *UniqueId(int index = 0)
+			{
+				std::string tmpS(__FILE__);
+				tmpS.append(std::to_string(__LINE__));
+				tmpS.append(std::to_string(index));
+
+				char *id = new char[tmpS.size() + 1];
+				strcpy(id, tmpS.c_str());
+				return id;
+			}
 	};
 }
 

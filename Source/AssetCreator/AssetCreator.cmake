@@ -44,6 +44,7 @@
     "AssetCreator/src/imgui/imstb_textedit.h"
     "AssetCreator/src/imgui/imstb_truetype.h"
   "AssetCreator/src/main.cpp"
+        "AssetCreator/src/AssetInfo/BaseAsset.cpp"
 )
 if(CMAKE_BUILD_TYPE STREQUAL Debug)
   set_target_properties("AssetCreator" PROPERTIES
