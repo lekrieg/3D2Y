@@ -31,7 +31,7 @@ namespace abyss
 
         public:
 
-            std::string name;
+            unsigned int assetId;
             std::string path;
 
             enums::SpriteType spriteType{};
@@ -45,7 +45,7 @@ namespace abyss
 
                 this->path = path;
 
-                name = spriteAsset.name;
+                assetId = spriteAsset.assetId;
                 path = spriteAsset.path;
 
                 spriteType = spriteAsset.spriteType;

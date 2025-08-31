@@ -26,6 +26,7 @@ void abyss::serializer::Serializer::Serialize(YAML::Emitter &em)
 		{
 			em << YAML::Key << index << YAML::Value << YAML::BeginMap;
 
+			SerializeExtraData(em, e);
 			SerializeAnim(em, e);
 			SerializeTransform(em, e);
 			SerializeBoundingBox(em, e);
@@ -60,6 +61,7 @@ void abyss::serializer::Serializer::Deserialize(YAML::Node nodes)
 			{
 				auto e = m_entityManager->AddEntity(tag);
 				YAML::Node components = comp.second;
+				DeserializeExtraData(components, e);
 				DeserializeAnim(components, e);
 				DeserializeTransform(components, e);
 				DeserializeBoundingBox(components, e);
@@ -118,7 +120,7 @@ void abyss::serializer::Serializer::SerializeAnim(YAML::Emitter &em, std::shared
 		auto &t = m_componentManager->GetComponent<abyss::components::Anim>(e->Id());
 		em << YAML::Key << "AnimComponent" << YAML::Value << YAML::BeginMap;
 		em << YAML::Key << "repeat" << YAML::Value << t.repeat;
-		em << YAML::Key << "name" << YAML::Value << t.animation.GetAnimation()->name;
+		em << YAML::Key << "asset_id" << YAML::Value << t.animation.assetId;
 		em << YAML::Key << "speed" << YAML::Value << t.animation.speed;
 		em << YAML::EndMap;
 	}
@@ -128,7 +130,8 @@ void abyss::serializer::Serializer::DeserializeAnim(YAML::Node node, std::shared
 {
 	if (auto data = node["AnimComponent"])
 	{
-		auto& s = m_assets->GetSprites()[data["name"].as<std::string>()];
+		unsigned int assetId = data["asset_id"].as<unsigned int>();
+		auto& s = m_assets->GetSprites()[assetId];
         m_componentManager->AddComponent<abyss::components::Anim>(e->Id(), abyss::components::Anim(CustomSprite(s, m_assets->GetTextures()[s.path]),
 												 data["repeat"].as<bool>()));
         auto &anim = m_componentManager->GetComponent<abyss::components::Anim>(e->Id());
@@ -166,7 +169,24 @@ void abyss::serializer::Serializer::DeserializeBoundingBox(YAML::Node node, std:
 	}
 }
 
-void abyss::serializer::Serializer::DeserializeSprite(const YAML::Node& node, std::map<std::string, assets::SpriteAsset>& sprites)
+void abyss::serializer::Serializer::SerializeExtraData(YAML::Emitter &em, std::shared_ptr<abyss::Entity> e)
+{
+	em << YAML::Key << "ExtraData" << YAML::Value << YAML::BeginMap;
+	em << YAML::Key << "name" << YAML::Value << e->GetName();
+	em << YAML::Key << "layer" << YAML::Value << e->Layer();
+	em << YAML::EndMap;
+}
+
+void abyss::serializer::Serializer::DeserializeExtraData(YAML::Node node, std::shared_ptr<abyss::Entity> &e)
+{
+	if (auto data = node["ExtraData"])
+	{
+		e->SetLayer(data["layer"].as<size_t>());
+		strcpy(e->GetName(), data["name"].as<std::string>().c_str());
+	}
+}
+
+void abyss::serializer::Serializer::DeserializeSprite(const YAML::Node& node, std::map<int, assets::SpriteAsset>& sprites)
 {
 	for (const auto& mainNode : node)
 	{
@@ -193,7 +213,9 @@ void abyss::serializer::Serializer::DeserializeSprite(const YAML::Node& node, st
 			delete[] n;
 			delete[] buffer;
 
+			int id = internalNode.first.as<unsigned int>();
 			auto s = assets::SpriteAsset();
+			s.assetId = id;
 			s.path = fileName;
 
 			s.speed = internalNode.second["speed"].as<int>();
@@ -214,36 +236,38 @@ void abyss::serializer::Serializer::DeserializeSprite(const YAML::Node& node, st
 				}
 			}
 
-			sprites[s.name] = s;
+			sprites[s.assetId] = s;
 
 			m_assets->GetSpritesPerType()[s.spriteType].push_back(s);
 		}
 	}
 }
 
-void abyss::serializer::Serializer::DeserializeAudio(const YAML::Node& node, std::map<std::string, assets::AudioAsset>& audios)
+void abyss::serializer::Serializer::DeserializeAudio(const YAML::Node& node, std::map<int, assets::AudioAsset>& audios)
 {
 	for (const auto& audioNode : node)
 	{
 		for (const auto& internalNode : audioNode)
 		{
+			int id = internalNode.first.as<unsigned int>();
 			auto audio = assets::AudioAsset();
-			audio.name = internalNode.first.as<std::string>();
+			audio.assetId = id;
 			audio.path = internalNode.second["file_name"].as<std::string>();
 
-			audios[audio.name] = audio;
+			audios[audio.assetId] = audio;
 		}
 	}
 }
 
-void abyss::serializer::Serializer::DeserializeFont(const YAML::Node& node, std::map<std::string, sf::Font>& fonts)
+void abyss::serializer::Serializer::DeserializeFont(const YAML::Node& node, std::map<int, sf::Font>& fonts)
 {
 	for (const auto& audioNode : node)
 	{
 		for (const auto& internalNode : audioNode)
 		{
+			int id = internalNode.first.as<unsigned int>();
 			auto font = assets::FontAsset();
-			font.name = internalNode.first.as<std::string>();
+			font.assetId = id;
 			font.path = internalNode.second["file_name"].as<std::string>();
 
 			char* pathName = new char[font.path.size()];
@@ -256,7 +280,7 @@ void abyss::serializer::Serializer::DeserializeFont(const YAML::Node& node, std:
 			char* buffer = new char[header->GetSize()];
 			m_assets->GetArchiver().GetFileData(fileIndex, buffer, header->GetSize());
 
-			fonts[font.name] = sf::Font(buffer, header->GetSize());
+			fonts[font.assetId] = sf::Font(buffer, header->GetSize());
 		}
 	}
 }

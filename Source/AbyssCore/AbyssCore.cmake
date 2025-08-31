@@ -50,7 +50,6 @@
     "AbyssCore/src/serialization/Serializer.cpp"
     "AbyssCore/src/serialization/Serializer.h"
     "AbyssCore/src/serialization/Yaml.h"
-        "AbyssCore/src/assets/BaseAsset.cpp"
 )
 if(CMAKE_BUILD_TYPE STREQUAL Debug)
   set_target_properties("AbyssCore" PROPERTIES

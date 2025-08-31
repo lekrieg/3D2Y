@@ -16,11 +16,16 @@
 
 void editor::EditorApplication::Init(const std::string &configPath, const std::string &assetsPath)
 {
+	std::string str = "scenes/";
+
+	std::filesystem::path locationPath(str);
+	std::filesystem::create_directories(locationPath.parent_path());
+
 	m_assets.LoadFromFile(assetsPath);
 
 	m_window.create(sf::VideoMode(sf::Vector2u(1024, 768)), "Level Editor", sf::Style::Titlebar | sf::Style::Close);
 
-	m_scene = std::make_shared<editor::EditorScene>(this, "", GetAssets().GetFonts()["Default"]);
+	m_scene = std::make_shared<editor::EditorScene>(this, "", GetAssets().GetFonts()[0]);
 
 	if (!ImGui::SFML::Init(m_window))
 	{

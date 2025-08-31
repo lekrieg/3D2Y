@@ -12,19 +12,19 @@ std::map<std::string, sf::Texture> & abyss::Assets::GetTextures()
 	return m_textures;
 }
 
-std::map<std::string, abyss::assets::SpriteAsset> & abyss::Assets::GetSprites()
+std::map<int, abyss::assets::SpriteAsset> & abyss::Assets::GetSprites()
 {
 	return m_sprites;
 }
 
 // SoLoud wav dont stay on memory when it leaves the method, I am using string because of this
 // TODO: adicionar musica para os leveis
-std::map<std::string, abyss::assets::AudioAsset> & abyss::Assets::GetAudios()
+std::map<int, abyss::assets::AudioAsset> & abyss::Assets::GetAudios()
 {
 	return m_sounds;
 }
 
-std::map<std::string, sf::Font> & abyss::Assets::GetFonts()
+std::map<int, sf::Font> & abyss::Assets::GetFonts()
 {
 	return m_fonts;
 }

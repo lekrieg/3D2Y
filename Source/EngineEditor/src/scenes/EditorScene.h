@@ -20,7 +20,7 @@ namespace editor
 			std::shared_ptr<abyss::Entity> m_selectedEntity;
 			std::shared_ptr<abyss::Entity> m_dragEntity;
 			std::string m_levelPath;
-			std::string m_lastEntityToCreate;
+			int m_lastEntityToCreate;
 			bool m_drawTextures = true;
 			bool m_drawCollision = false;
 			bool m_drawGrid = false;
@@ -84,7 +84,7 @@ namespace editor
 			void AssetManagerGui();
 			void SceneManagerGui();
 			void InspectorGui();
-			std::shared_ptr<abyss::Entity> CreateEntity(bool clone = false, const char* animName = nullptr);
+			std::shared_ptr<abyss::Entity> CreateEntity(bool clone, const unsigned int& assetId);
 
 		private:
 
@@ -105,7 +105,7 @@ namespace editor
 			void BoundingBoxCompGui();
 			void InsertGuiToDraw(int index);
 
-			const char *UniqueId(int index = 0)
+			const char* UniqueId(int index = 0)
 			{
 				std::string tmpS(__FILE__);
 				tmpS.append(std::to_string(__LINE__));

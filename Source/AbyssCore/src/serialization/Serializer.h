@@ -46,9 +46,12 @@ namespace abyss
 				void SerializeBoundingBox(YAML::Emitter &em, std::shared_ptr<abyss::Entity> e);
 				void DeserializeBoundingBox(YAML::Node node, std::shared_ptr<abyss::Entity> &e);
 
-				void DeserializeSprite(const YAML::Node& node, std::map<std::string, assets::SpriteAsset>& sprites);
-				void DeserializeAudio(const YAML::Node& node, std::map<std::string, assets::AudioAsset>& audios);
-				void DeserializeFont(const YAML::Node& node, std::map<std::string, sf::Font>& fonts);
+				void SerializeExtraData(YAML::Emitter &em, std::shared_ptr<abyss::Entity> e);
+				void DeserializeExtraData(YAML::Node node, std::shared_ptr<abyss::Entity> &e);
+
+				void DeserializeSprite(const YAML::Node& node, std::map<int, assets::SpriteAsset>& sprites);
+				void DeserializeAudio(const YAML::Node& node, std::map<int, assets::AudioAsset>& audios);
+				void DeserializeFont(const YAML::Node& node, std::map<int, sf::Font>& fonts);
 		};
 	}
 }

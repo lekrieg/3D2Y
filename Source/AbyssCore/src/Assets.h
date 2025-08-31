@@ -21,20 +21,20 @@ namespace abyss
 		archiver::Archive m_archive;
 
 		std::map<std::string, sf::Texture> m_textures;
-		std::map<std::string, assets::SpriteAsset> m_sprites;
-		std::map<std::string, assets::AudioAsset> m_sounds;
-		std::map<std::string, sf::Font> m_fonts;
+		std::map<int, assets::SpriteAsset> m_sprites;
+		std::map<int, assets::AudioAsset> m_sounds;
+		std::map<int, sf::Font> m_fonts;
 
 		std::map<enums::SpriteType, std::vector<assets::SpriteAsset>> m_spritesPerType;
 
 	public:
 
-		Assets() =default;
+		Assets() = default;
 
 		std::map<std::string, sf::Texture>& GetTextures();
-		std::map<std::string, assets::SpriteAsset>& GetSprites();
-		std::map<std::string, assets::AudioAsset>& GetAudios();
-		std::map<std::string, sf::Font>& GetFonts();
+		std::map<int, assets::SpriteAsset>& GetSprites();
+		std::map<int, assets::AudioAsset>& GetAudios();
+		std::map<int, sf::Font>& GetFonts();
 
 		std::map<enums::SpriteType, std::vector<assets::SpriteAsset>>& GetSpritesPerType();
 

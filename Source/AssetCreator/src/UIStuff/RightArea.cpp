@@ -444,7 +444,7 @@ void RightArea::DrawAnimationArea()
         // Here we use PushID() to generate a unique base ID, and then the "" used as TreeNode id won't conflict.
         // An alternative to using 'PushID() + TreeNode("", ...)' to generate a unique ID is to use 'TreeNode((void*)(intptr_t)i, ...)',
         // aka generate a dummy pointer-sized value to be hashed. The demo below uses that technique. Both are fine.
-        ImGui::PushID(UniqueId(i));
+        ImGui::PushID(UniqueId(i + __LINE__));
         if (ImGui::TreeNode("animations_tree_node", anim->name))
         {
             if (m_app->GetUsedTextures()[m_app->GetSelectedSprite()->filePath])
@@ -473,7 +473,7 @@ void RightArea::DrawAnimationArea()
             {
                 ImGui::SameLine();
                 ImGui::PushItemWidth(90);
-                ImGui::PushID(UniqueId(i));
+                ImGui::PushID(UniqueId(i + __LINE__));
                 if (ImGui::Button("Delete"))
                 {
                     anim->isActive = false;

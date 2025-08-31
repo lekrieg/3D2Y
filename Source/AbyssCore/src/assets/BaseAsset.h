@@ -15,23 +15,7 @@ namespace abyss
         {
         public:
 
-            std::string name {};
             std::string path;
-
-            BaseAsset()
-            {
-                internalId++;
-                assetId = internalId;
-            }
-
-            const unsigned int GetId() const
-            {
-                return assetId;
-            }
-
-        private:
-
-            static unsigned int internalId;
             unsigned int assetId {};
         };
     }

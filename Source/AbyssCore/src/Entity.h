@@ -17,6 +17,7 @@ namespace abyss
 		size_t m_layer = 0;
 		enums::EntityTag m_tag = enums::EntityTag::Default;
 		bool m_alive = true;
+		char m_name[255] = { "Default" };
 
 	public:
 
@@ -57,6 +58,11 @@ namespace abyss
 		void SetLayer(const size_t& newLayer)
 		{
 			m_layer = newLayer;
+		}
+
+		char* GetName()
+		{
+			return m_name;
 		}
 	};
 }

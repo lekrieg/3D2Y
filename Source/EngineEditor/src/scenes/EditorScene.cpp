@@ -59,7 +59,7 @@ void editor::EditorScene::Init(const std::string &levelPath)
 	RegisterAction(sf::Keyboard::Key::Num3, "TOGGLE_SCENE_MANAGER");
 
 	m_gridText.setCharacterSize(8);
-	m_gridText.setFont(m_application->GetAssets().GetFonts()["Default"]);
+	m_gridText.setFont(m_application->GetAssets().GetFonts()[0]);
 
 	m_fileDialog.SetTitle("File dialog");
 	m_fileDialog.SetTypeFilters({ ".yaml" });
@@ -300,7 +300,7 @@ void editor::EditorScene::ExecuteAction(const abyss::Action &action)
 			else if (m_draggingEntity && m_entityCreation)
 			{
 				m_dragEntity = {};
-				m_dragEntity = CreateEntity(m_cloningEntity, m_lastEntityToCreate.c_str());
+				m_dragEntity = CreateEntity(m_cloningEntity, m_lastEntityToCreate);
 			}
 			else
 			{
@@ -463,7 +463,14 @@ void editor::EditorScene::EntityInfoGui()
 	ImGui::Begin("Entity Info", &m_isEntityInfoOpen);
 	if (ImGui::Button("C", ImVec2(25, 25)))
 	{
-		m_dragEntity = CreateEntity(true);
+		unsigned int id = 0;
+		if (m_componentManager.HasComponent<abyss::components::Anim>(m_selectedEntity->Id()))
+		{
+			auto a = m_componentManager.GetComponent<abyss::components::Anim>(m_selectedEntity->Id());
+			id = a.animation.assetId;
+		}
+
+		m_dragEntity = CreateEntity(true, id);
 		m_draggingEntity = true;
 		m_entityCreation = true;
 		m_cloningEntity = true;
@@ -485,24 +492,23 @@ void editor::EditorScene::EntityInfoGui()
 		return;
 	}
 
-	if (ImGui::Button("Add component", ImVec2(100, 25)))
+	ImGui::Text(m_selectedEntity->GetName());
+	ImGui::PushItemWidth(90);
+	auto tmpId = UniqueId(__LINE__);
+	ImGui::PushID(tmpId);
+	if (ImGui::Button("Edit name"))
 	{
-		ImGui::OpenPopup("my_add_component_popup");
+		ImGui::OpenPopup("edit_entity_name_popup");
 	}
-	if (ImGui::BeginPopup("my_add_component_popup"))
-	{
-		const char *names[] = { "Transform", "Anim", "Bounding box" };
 
-		for (int i = 0; i < IM_ARRAYSIZE(names); i++)
-		{
-			if (ImGui::Selectable(names[i]))
-			{
-				InsertGuiToDraw(i);
-			}
-		}
+	if (ImGui::BeginPopup("edit_entity_name_popup"))
+	{
+		ImGui::InputText("Name", m_selectedEntity->GetName(), 255);
 
 		ImGui::EndPopup();
 	}
+	ImGui::PopID();
+	delete[] tmpId;
 
 	int layer = m_selectedEntity->Layer();
 	ImGui::InputInt("Layer", &layer);
@@ -554,6 +560,25 @@ void editor::EditorScene::EntityInfoGui()
 			}
 		}
 		ImGui::EndCombo();
+	}
+
+	if (ImGui::Button("Add component", ImVec2(100, 25)))
+	{
+		ImGui::OpenPopup("my_add_component_popup");
+	}
+	if (ImGui::BeginPopup("my_add_component_popup"))
+	{
+		const char *names[] = { "Transform", "Anim", "Bounding box" };
+
+		for (int i = 0; i < IM_ARRAYSIZE(names); i++)
+		{
+			if (ImGui::Selectable(names[i]))
+			{
+				InsertGuiToDraw(i);
+			}
+		}
+
+		ImGui::EndPopup();
 	}
 
 	// button to clone the entity
@@ -624,10 +649,10 @@ void editor::EditorScene::AssetManagerGui()
 								s.setTextureRect(sf::IntRect(a.positions[a.animationNames[0]][0],
 									sf::Vector2<int>(static_cast<int>(a.sizes[a.animationNames[0]][0].x), static_cast<int>(a.sizes[a.animationNames[0]][0].y))));
 
-								if (ImGui::ImageButton(std::to_string(a.GetId()).c_str(), s, sf::Vector2f(32, 32)))
+								if (ImGui::ImageButton(std::to_string(a.assetId).c_str(), s, sf::Vector2f(32, 32)))
 								{
-									m_lastEntityToCreate = a.name;
-									m_dragEntity = CreateEntity(false, m_lastEntityToCreate.c_str());
+									m_lastEntityToCreate = a.assetId;
+									m_dragEntity = CreateEntity(false, m_lastEntityToCreate);
 
 									m_draggingEntity = true;
 									m_entityCreation = true;
@@ -658,7 +683,7 @@ void editor::EditorScene::SceneManagerGui()
 		return;
 	}
 
-	ImGui::Begin("Scene Manager", &m_isSceneManagerOpen, ImGuiWindowFlags_NoResize);
+	ImGui::Begin("Scene Manager", &m_isSceneManagerOpen);
 
 	// Scene: Name
 	ImGui::Text("Scene: %s", m_sceneName.c_str());
@@ -788,7 +813,7 @@ void editor::EditorScene::InspectorGui()
 	ImGui::End();
 }
 
-std::shared_ptr<abyss::Entity> editor::EditorScene::CreateEntity(const bool clone, const char* animName)
+std::shared_ptr<abyss::Entity> editor::EditorScene::CreateEntity(const bool clone, const unsigned int& assetId)
 {
 	auto entity = m_entityManager.AddEntity(abyss::enums::EntityTag::Default);
 
@@ -798,7 +823,7 @@ std::shared_ptr<abyss::Entity> editor::EditorScene::CreateEntity(const bool clon
 		{
 			auto a = m_componentManager.GetComponent<abyss::components::Anim>(m_selectedEntity->Id());
 
-			auto& s = m_application->GetAssets().GetSprites()[a.animation.name];
+			auto& s = m_application->GetAssets().GetSprites()[a.animation.assetId];
 			m_componentManager.AddComponent(entity->Id(), abyss::components::Anim(abyss::CustomSprite(s, m_application->GetAssets().GetTextures()[s.path]), a.repeat));
 		}
 
@@ -816,7 +841,7 @@ std::shared_ptr<abyss::Entity> editor::EditorScene::CreateEntity(const bool clon
 	}
 	else
 	{
-		auto& s = m_application->GetAssets().GetSprites()[std::string(animName)];
+		auto& s = m_application->GetAssets().GetSprites()[assetId];
 
 		m_componentManager.AddComponent<abyss::components::Anim>(
 			entity->Id(),

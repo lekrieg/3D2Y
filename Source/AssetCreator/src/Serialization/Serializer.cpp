@@ -161,6 +161,7 @@ void Serializer::DeserializeSprite(const YAML::Node& node, std::vector<std::shar
 void Serializer::SerializeAudio(YAML::Emitter &em, const std::shared_ptr<AudioAsset>& a)
 {
 	em << YAML::BeginMap;
+	em << YAML::Key << a->GetId() << YAML::Value << YAML::BeginMap;
 	em << YAML::Key << "file_name" << YAML::Value << a->fileName;
 	em << YAML::EndMap;
 	em << YAML::EndMap;
@@ -184,6 +185,7 @@ void Serializer::DeserializeAudio(const YAML::Node& node, std::vector<std::share
 void Serializer::SerializeFont(YAML::Emitter &em, const std::shared_ptr<FontAsset>& f)
 {
 	em << YAML::BeginMap;
+	em << YAML::Key << f->GetId() << YAML::Value << YAML::BeginMap;
 	em << YAML::Key << "file_name" << YAML::Value << f->fileName;
 	em << YAML::EndMap;
 	em << YAML::EndMap;
