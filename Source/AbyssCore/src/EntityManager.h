@@ -35,6 +35,7 @@ namespace abyss
 		void Clear();
 		void UpdateEntityTag(const std::shared_ptr<abyss::Entity>& entity, const enums::EntityTag& newTag);
 		void UpdateEntityLayer(const std::shared_ptr<abyss::Entity>& entity, size_t newLayer);
+		void SortLayers();
 
 	private:
 		void RemoveDeadEntities(EntityVec& vec);

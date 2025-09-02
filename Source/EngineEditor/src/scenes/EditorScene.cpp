@@ -155,7 +155,10 @@ void editor::EditorScene::Render()
 			animation.animation.SetPosition(sf::Vector2<float>(transform.pos.x, transform.pos.y));
 			animation.animation.SetScale(sf::Vector2<float>(transform.scale.x, transform.scale.y));
 
-			m_application->GetWindow().draw(animation.animation.GetSprite());
+			if (animation.shouldDraw)
+			{
+				m_application->GetWindow().draw(animation.animation.GetSprite());
+			}
 		}
 
 		if (m_drawCollision)
@@ -761,6 +764,7 @@ void editor::EditorScene::SceneManagerGui()
 		{
 			m_sceneName = fileList[item_selected_idx].filename();
 			Deserialize(fileList[item_selected_idx]);
+			m_entityManager.SortLayers();
 		}
 
 		ImGui::SameLine();
@@ -790,6 +794,7 @@ void editor::EditorScene::SceneManagerGui()
 				break;
 			case FileDialogState::Load:
 				Deserialize(path);
+				m_entityManager.SortLayers();
 				break;
 		}
 
@@ -819,6 +824,7 @@ std::shared_ptr<abyss::Entity> editor::EditorScene::CreateEntity(const bool clon
 
 	if (clone)
 	{
+		entity->SetLayer(m_selectedEntity->Layer());
 		if (m_componentManager.HasComponent<abyss::components::Anim>(m_selectedEntity->Id()))
 		{
 			auto a = m_componentManager.GetComponent<abyss::components::Anim>(m_selectedEntity->Id());
@@ -881,6 +887,7 @@ void editor::EditorScene::AnimCompGui()
 	if (ImGui::CollapsingHeader("Anim"))
 	{
 		auto &animation = m_componentManager.GetComponent<abyss::components::Anim>(m_selectedEntity->Id());
+		ImGui::Checkbox("Should draw", &animation.shouldDraw);
 		ImGui::InputInt("Speed", &animation.animation.speed);
 	}
 }
