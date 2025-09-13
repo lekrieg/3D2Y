@@ -1,7 +1,5 @@
 #include "PlayScene.h"
 
-#include "MenuScene.h"
-
 #include "Action.h"
 #include "Assets.h"
 #include "Physics.h"
@@ -12,7 +10,6 @@
 #include "components/State.h"
 #include "components/Transform.h"
 
-#include "FileData.h"
 #include "Logger.h"
 
 #include "SFML/Graphics/View.hpp"
@@ -21,8 +18,16 @@
 #include <cmath>
 #include <cstdlib>
 #include <fstream>
-#include <math.h>
 #include <string>
+
+#include "components/FollowPlayer.h"
+#include "components/Gravity.h"
+#include "components/Lifespan.h"
+#include "components/Patrol.h"
+#include "serialization/Serializer.h"
+#include "yaml-cpp/exceptions.h"
+#include "yaml-cpp/node/node.h"
+#include "yaml-cpp/node/parse.h"
 
 void game::PlayScene::Update(float deltaTime)
 {
@@ -53,9 +58,11 @@ void game::PlayScene::Init(const std::string &levelPath)
 	RegisterAction(sf::Keyboard::Key::Num1, "TOGGLE_ASSET_MANAGER");
 
 	m_gridText.setCharacterSize(12);
-	m_gridText.setFont(m_application->GetAssets().GetFont("elementalis"));
+	m_gridText.setFont(m_application->GetAssets().GetFonts()[0]);
 
 	LoadLevel(levelPath);
+
+	FillInfos();
 }
 
 void game::PlayScene::LoadLevel(const std::string &fileName)
@@ -67,19 +74,19 @@ void game::PlayScene::LoadLevel(const std::string &fileName)
 	// TODO: Check how to better reset the manager
 	m_entityManager = abyss::EntityManager();
 
-	std::ifstream ifs(fileName, std::ifstream::in);
+	m_componentManager = ComponentManager();
+	m_componentManager.RegisterComponent<abyss::components::Transform>();
+	m_componentManager.RegisterComponent<abyss::components::BoundingBox>();
+	m_componentManager.RegisterComponent<abyss::components::Input>();
+	m_componentManager.RegisterComponent<abyss::components::Lifespan>();
+	m_componentManager.RegisterComponent<abyss::components::Anim>();
+	m_componentManager.RegisterComponent<abyss::components::Gravity>();
+	m_componentManager.RegisterComponent<abyss::components::State>();
+	m_componentManager.RegisterComponent<abyss::components::Patrol>();
+	m_componentManager.RegisterComponent<abyss::components::FollowPlayer>();
+	m_componentManager.RegisterComponent<abyss::components::Jump>();
 
-	std::string itemType;
-	while (ifs.good())
-	{
-		ifs >> itemType;
-		if (itemType.compare("Player") == 0)
-		{
-			ifs >> m_playerInfo.gridLocation.x >> m_playerInfo.gridLocation.y >> m_playerInfo.boundingBoxSize.x >>
-				m_playerInfo.boundingBoxSize.y >> m_playerInfo.speed.x >> m_playerInfo.speed.y >>
-				m_playerInfo.maxSpeed >> m_playerInfo.gravity >> m_playerInfo.bulletAnimation;
-		}
-	}
+	Deserialize("scenes/scene1.yaml");
 
 	SpawnPlayer();
 
@@ -95,9 +102,9 @@ sf::Vector2f game::PlayScene::GridToMidPixel(float gridX, float gridY, std::shar
 	 * the bottom left corner of th animation should be with the bottom left of the grid cell
 	 */
 
-	auto &spriteSize = m_componentManager.GetComponent<abyss::components::Anim>(entity->Id()).animation.GetSize();
-	return sf::Vector2f((gridX * m_gridSize.x) + (spriteSize.x / 2.0f),
-						Height() - ((gridY * m_gridSize.y) + (spriteSize.y / 2.0f)));
+	auto &spriteSize = m_componentManager.GetComponent<abyss::components::Anim>(entity->Id()).animation.GetAnimation()->frames[0];
+	return sf::Vector2f((gridX * m_gridSize.x) + (spriteSize->size.x / 2.0f),
+						Height() - ((gridY * m_gridSize.y) + (spriteSize->size.x / 2.0f)));
 }
 
 void game::PlayScene::Render()
@@ -168,7 +175,7 @@ void game::PlayScene::Render()
 	sf::CircleShape circ;
 	circ.setFillColor(sf::Color::Red);
 	circ.setRadius(2.f);
-	circ.setPosition(m_componentManager.GetComponent<abyss::components::Anim>(m_player->Id()).animation.GetSprite().getPosition());
+	// circ.setPosition(m_componentManager.GetComponent<abyss::components::Anim>(m_player->Id()).animation.GetSprite().getPosition());
 	m_application->GetWindow().draw(circ);
 
 	// sf::Vertex v[] =
@@ -186,51 +193,52 @@ void game::PlayScene::Render()
 
 void game::PlayScene::MovementSystem()
 {
-	auto &playerTransform = m_componentManager.GetComponent<abyss::components::Transform>(m_player->Id());
-	// auto& playerJump = m_player->GetComponent<components::Jump>();
-	sf::Vector2f playerVelocity;
-
-	if (m_componentManager.HasComponent<abyss::components::Input>(m_player->Id()))
-	{
-		auto &playerInput = m_componentManager.GetComponent<abyss::components::Input>(m_player->Id());
-
-		if (playerInput.left)
-		{
-			playerVelocity.x -= m_playerInfo.speed.x;
-
-			m_componentManager.GetComponent<abyss::components::State>(m_player->Id()).state = "Left";
-		}
-		else if (playerInput.right)
-		{
-			playerVelocity.x += m_playerInfo.speed.x;
-
-			m_componentManager.GetComponent<abyss::components::State>(m_player->Id()).state = "Right";
-		}
-
-		if (playerInput.down)
-		{
-			playerVelocity.y += m_playerInfo.speed.y;
-
-			m_componentManager.GetComponent<abyss::components::State>(m_player->Id()).state = "Down";
-		}
-
-		if (playerInput.up)
-		{
-			playerVelocity.y -= m_playerInfo.speed.y;
-
-			m_componentManager.GetComponent<abyss::components::State>(m_player->Id()).state = "Up";
-		}
-	}
-
-	playerTransform.velocity = playerVelocity;
-
-	for (auto e : m_entityManager.GetEntities())
-	{
-		m_componentManager.GetComponent<abyss::components::Transform>(e->Id()).previousPos =
-			m_componentManager.GetComponent<abyss::components::Transform>(e->Id()).pos;
-		m_componentManager.GetComponent<abyss::components::Transform>(e->Id()).pos +=
-			m_componentManager.GetComponent<abyss::components::Transform>(e->Id()).velocity * m_application->DeltaTime();
-	}
+	// auto &playerTransform = m_componentManager.GetComponent<abyss::components::Transform>(m_player->Id());
+	// // auto& playerJump = m_player->GetComponent<components::Jump>();
+	// sf::Vector2f playerVelocity;
+	//
+	// if (m_componentManager.HasComponent<abyss::components::Input>(m_player->Id()))
+	// {
+	// 	auto &playerInput = m_componentManager.GetComponent<abyss::components::Input>(m_player->Id());
+	//
+	// 	if (playerInput.left)
+	// 	{
+	// 		// TODO: add a file with the entity configurations
+	// 		playerVelocity.x -= m_playerInfo.speed;
+	//
+	// 		m_componentManager.GetComponent<abyss::components::State>(m_player->Id()).state = "Left";
+	// 	}
+	// 	else if (playerInput.right)
+	// 	{
+	// 		playerVelocity.x += m_playerInfo.speed;
+	//
+	// 		m_componentManager.GetComponent<abyss::components::State>(m_player->Id()).state = "Right";
+	// 	}
+	//
+	// 	if (playerInput.down)
+	// 	{
+	// 		playerVelocity.y += m_playerInfo.speed;
+	//
+	// 		m_componentManager.GetComponent<abyss::components::State>(m_player->Id()).state = "Down";
+	// 	}
+	//
+	// 	if (playerInput.up)
+	// 	{
+	// 		playerVelocity.y -= m_playerInfo.speed;
+	//
+	// 		m_componentManager.GetComponent<abyss::components::State>(m_player->Id()).state = "Up";
+	// 	}
+	// }
+	//
+	// playerTransform.velocity = playerVelocity;
+	//
+	// for (auto e : m_entityManager.GetEntities())
+	// {
+	// 	m_componentManager.GetComponent<abyss::components::Transform>(e->Id()).previousPos =
+	// 		m_componentManager.GetComponent<abyss::components::Transform>(e->Id()).pos;
+	// 	m_componentManager.GetComponent<abyss::components::Transform>(e->Id()).pos +=
+	// 		m_componentManager.GetComponent<abyss::components::Transform>(e->Id()).velocity * m_application->DeltaTime();
+	// }
 }
 
 void game::PlayScene::EnemySpawnerSystem()
@@ -247,99 +255,92 @@ void game::PlayScene::CollisionSystem()
 	 *
 	 * TODO: implement bullet / tile collision
 	 * destroy the tile if it has brick collision
-	 *
-	 * TODO: make a better animation system
-	 *
-	 * TODO: dont let the player walk off the map (left or right)
-	 *
-	 * TODO: make a big collider to block top collision instead of multiple mini box colliders
 	 */
 
 	for (auto e : m_entityManager.GetEntities())
 	{
-		sf::Vector2f overlap = m_physics.GetOverlap(m_player, e, &m_componentManager);
-		if (overlap.x > 0 && overlap.y > 0)
-		{
-			auto &playerTransform = m_componentManager.GetComponent<abyss::components::Transform>(m_player->Id());
-			auto &eTransform = m_componentManager.GetComponent<abyss::components::Transform>(e->Id());
-			auto &playerBB = m_componentManager.GetComponent<abyss::components::BoundingBox>(m_player->Id());
-			auto &eBB = m_componentManager.GetComponent<abyss::components::BoundingBox>(e->Id());
-
-			sf::Vector2f previousOverlap = m_physics.GetPreviousOverlap(m_player, e, &m_componentManager);
-			if (!m_componentManager.GetComponent<abyss::components::BoundingBox>(e->Id()).isTrigger)
-			{
-
-				if (previousOverlap.y > 0)
-				{
-					if ((playerTransform.pos.x + playerBB.halfSize.x) < (eTransform.pos.x + eBB.halfSize.x))
-					{
-						playerTransform.pos.x -= overlap.x;
-					}
-					else if ((playerTransform.pos.x + playerBB.halfSize.x) > (eTransform.pos.x + eBB.halfSize.x))
-					{
-						playerTransform.pos.x += overlap.x;
-					}
-				}
-				else if (previousOverlap.x > 0)
-				{
-					if ((playerTransform.pos.y + playerBB.halfSize.y) < (eTransform.pos.y + eBB.halfSize.y))
-					{
-						playerTransform.pos.y -= overlap.y;
-						playerTransform.velocity.y = 0;
-
-						m_componentManager.GetComponent<abyss::components::Jump>(m_player->Id()).isJumping = false;
-						m_componentManager.GetComponent<abyss::components::Input>(m_player->Id()).hitCounter = 0;
-						m_componentManager.GetComponent<abyss::components::Jump>(m_player->Id()).jumpTime = 0;
-						// m_player->GetComponent<components::Input>().up = false;
-
-						// TODO: try using a modifier count so I can block going left and right
-					}
-					else if ((playerTransform.pos.y + playerBB.halfSize.y) > (eTransform.pos.y + eBB.halfSize.y))
-					{
-						playerTransform.pos.y += overlap.y;
-
-						m_componentManager.GetComponent<abyss::components::Jump>(m_player->Id()).jumpTime = 0.0f;
-						m_componentManager.GetComponent<abyss::components::Jump>(m_player->Id()).isJumping = false;
-						playerTransform.velocity = sf::Vector2f(0.0f, 0.0f);
-					}
-				}
-			}
-			else
-			{
-				if (e->Tag() == abyss::EntityTag::Dangerous)
-				{
-					if (playerTransform.pos.y + 0.2f > eTransform.pos.y)
-					{
-						if (playerTransform.pos.x < eTransform.pos.x - 50.0f ||
-							eTransform.pos.x + 50.0f < playerTransform.pos.x)
-						{
-							continue;
-						}
-
-						OnEnd();
-					}
-
-					// TODO: make the player respawn instead of returning to the menu
-					// TODO: maybe apply some damage and reset player position instead of returning to menu
-				}
-				else if (e->Tag() == abyss::EntityTag::Default)
-				{
-					if (playerTransform.pos.y + 0.2f > eTransform.pos.y)
-					{
-						if (playerTransform.pos.x < eTransform.pos.x - 50.0f ||
-							eTransform.pos.x + 50.0f < playerTransform.pos.x)
-						{
-							continue;
-						}
-
-						// int index = m_application->GetGameManager().sceneIndex;
-						// m_application->GetGameManager().clearedLevels[index] = true;
-
-						OnEnd();
-					}
-				}
-			}
-		}
+		// sf::Vector2f overlap = m_physics.GetOverlap(m_player, e, &m_componentManager);
+		// if (overlap.x > 0 && overlap.y > 0)
+		// {
+		// 	auto &playerTransform = m_componentManager.GetComponent<abyss::components::Transform>(m_player->Id());
+		// 	auto &eTransform = m_componentManager.GetComponent<abyss::components::Transform>(e->Id());
+		// 	auto &playerBB = m_componentManager.GetComponent<abyss::components::BoundingBox>(m_player->Id());
+		// 	auto &eBB = m_componentManager.GetComponent<abyss::components::BoundingBox>(e->Id());
+		//
+		// 	sf::Vector2f previousOverlap = m_physics.GetPreviousOverlap(m_player, e, &m_componentManager);
+		// 	if (!m_componentManager.GetComponent<abyss::components::BoundingBox>(e->Id()).isTrigger)
+		// 	{
+		//
+		// 		if (previousOverlap.y > 0)
+		// 		{
+		// 			if ((playerTransform.pos.x + playerBB.halfSize.x) < (eTransform.pos.x + eBB.halfSize.x))
+		// 			{
+		// 				playerTransform.pos.x -= overlap.x;
+		// 			}
+		// 			else if ((playerTransform.pos.x + playerBB.halfSize.x) > (eTransform.pos.x + eBB.halfSize.x))
+		// 			{
+		// 				playerTransform.pos.x += overlap.x;
+		// 			}
+		// 		}
+		// 		else if (previousOverlap.x > 0)
+		// 		{
+		// 			if ((playerTransform.pos.y + playerBB.halfSize.y) < (eTransform.pos.y + eBB.halfSize.y))
+		// 			{
+		// 				playerTransform.pos.y -= overlap.y;
+		// 				playerTransform.velocity.y = 0;
+		//
+		// 				m_componentManager.GetComponent<abyss::components::Jump>(m_player->Id()).isJumping = false;
+		// 				m_componentManager.GetComponent<abyss::components::Input>(m_player->Id()).hitCounter = 0;
+		// 				m_componentManager.GetComponent<abyss::components::Jump>(m_player->Id()).jumpTime = 0;
+		// 				// m_player->GetComponent<components::Input>().up = false;
+		//
+		// 				// TODO: try using a modifier count so I can block going left and right
+		// 			}
+		// 			else if ((playerTransform.pos.y + playerBB.halfSize.y) > (eTransform.pos.y + eBB.halfSize.y))
+		// 			{
+		// 				playerTransform.pos.y += overlap.y;
+		//
+		// 				m_componentManager.GetComponent<abyss::components::Jump>(m_player->Id()).jumpTime = 0.0f;
+		// 				m_componentManager.GetComponent<abyss::components::Jump>(m_player->Id()).isJumping = false;
+		// 				playerTransform.velocity = sf::Vector2f(0.0f, 0.0f);
+		// 			}
+		// 		}
+		// 	}
+		// 	else
+		// 	{
+		// 		if (e->Tag() == abyss::enums::EntityTag::Dangerous)
+		// 		{
+		// 			if (playerTransform.pos.y + 0.2f > eTransform.pos.y)
+		// 			{
+		// 				if (playerTransform.pos.x < eTransform.pos.x - 50.0f ||
+		// 					eTransform.pos.x + 50.0f < playerTransform.pos.x)
+		// 				{
+		// 					continue;
+		// 				}
+		//
+		// 				OnEnd();
+		// 			}
+		//
+		// 			// TODO: make the player respawn instead of returning to the menu
+		// 			// TODO: maybe apply some damage and reset player position instead of returning to menu
+		// 		}
+		// 		else if (e->Tag() == abyss::enums::EntityTag::Default)
+		// 		{
+		// 			if (playerTransform.pos.y + 0.2f > eTransform.pos.y)
+		// 			{
+		// 				if (playerTransform.pos.x < eTransform.pos.x - 50.0f ||
+		// 					eTransform.pos.x + 50.0f < playerTransform.pos.x)
+		// 				{
+		// 					continue;
+		// 				}
+		//
+		// 				// int index = m_application->GetGameManager().sceneIndex;
+		// 				// m_application->GetGameManager().clearedLevels[index] = true;
+		//
+		// 				OnEnd();
+		// 			}
+		// 		}
+		// 	}
 
 		// TODO: add enemy collision later
 	}
@@ -347,25 +348,26 @@ void game::PlayScene::CollisionSystem()
 
 void game::PlayScene::AnimationSystem()
 {
-	auto &playerInput = m_componentManager.GetComponent<abyss::components::Input>(m_player->Id());
-
-	if (m_componentManager.GetComponent<abyss::components::State>(m_player->Id()).state == "Down")
-	{
-		if (m_componentManager.GetComponent<abyss::components::Anim>(m_player->Id()).animation.GetName() != "Down")
-		{
-			m_componentManager.AddComponent<abyss::components::Anim>(m_player->Id(), abyss::components::Anim(m_application->GetAssets().GetAnimation("Down"), true));
-		}
-
-		/*auto& playerTransform = m_player->GetComponent<components::Transform>();
-		if (playerInput.left)
-		{
-			playerTransform.scale.x = -1;
-		}
-		else if (playerInput.right)
-		{
-			playerTransform.scale.x = 1;
-		}*/
-	}
+	// auto &playerInput = m_componentManager.GetComponent<abyss::components::Input>(m_player->Id());
+	//
+	// if (m_componentManager.GetComponent<abyss::components::State>(m_player->Id()).state == "WalkDown")
+	// {
+	// 	if (m_componentManager.GetComponent<abyss::components::Anim>(m_player->Id()).animation.GetAnimation()->name != "WalkDown")
+	// 	{
+	// 		auto& s = m_application->GetAssets().GetSprites()[274];
+	// 		m_componentManager.AddComponent<abyss::components::Anim>(m_player->Id(), abyss::components::Anim(abyss::CustomSprite(s, m_application->GetAssets().GetTextures()[s.path]), true));
+	// 	}
+	//
+	// 	/*auto& playerTransform = m_player->GetComponent<components::Transform>();
+	// 	if (playerInput.left)
+	// 	{
+	// 		playerTransform.scale.x = -1;
+	// 	}
+	// 	else if (playerInput.right)
+	// 	{
+	// 		playerTransform.scale.x = 1;
+	// 	}*/
+	// }
 	// else if (m_player->GetComponent<abyss::components::State>().state == "Up")
 	// {
 	// 	if (m_player->GetComponent<abyss::components::Anim>().animation.GetName() != "Up")
@@ -389,70 +391,71 @@ void game::PlayScene::AnimationSystem()
 	// }
 
 	// TEST, REMOVE THIS SHIT LATER
-	// for (auto e : m_entityManager.GetEntities())
-	// {
-	// 	if (e->HasComponent<abyss::components::Anim>())
-	// 	{
-	// 		e->GetComponent<abyss::components::Anim>().animation.Update();
+	for (auto e : m_entityManager.GetEntities())
+	{
+		if (m_componentManager.HasComponent<abyss::components::Anim>(e->Id()))
+		{
+			m_componentManager.GetComponent<abyss::components::Anim>(e->Id()).animation.Update();
 
-	// 		if (!e->GetComponent<abyss::components::Anim>().repeat)
-	// 		{
-	// 			e->Destroy();
-	// 		}
-	// 	}
-	// }
+			if (!m_componentManager.GetComponent<abyss::components::Anim>(e->Id()).repeat)
+			{
+				e->Destroy();
+			}
+		}
+	}
 }
 
 void game::PlayScene::CameraSystem()
 {
-	sf::View view = m_application->GetWindow().getView();
-	auto &t = m_componentManager.GetComponent<abyss::components::Transform>(m_player->Id());
-
-	// x room
-	if (t.pos.x < m_midPointX - m_halfWidth)
-	{
-		m_room.x--;
-		float x = m_room.x * Width();
-		m_midPointX = x == 0 ? m_halfWidth : x + m_halfWidth;
-	}
-	else if (t.pos.x > m_midPointX + m_halfWidth)
-	{
-		m_room.x++;
-		float x = m_room.x * Width();
-		m_midPointX = x == 0 ? m_halfWidth : x - m_halfWidth;
-	}
-
-	// y room
-	if (t.pos.y < m_midPointY - m_halfHeight)
-	{
-		m_room.y--;
-		float y = m_room.y * Height();
-		m_midPointY = y == 0 ? m_halfHeight : y + m_halfHeight;
-	}
-	else if (t.pos.y > m_midPointY + m_halfHeight)
-	{
-		m_room.y++;
-		float y = m_room.y * Height();
-		m_midPointY = y == 0 ? m_halfHeight : y - m_halfHeight;
-	}
-
-	if (m_follow)
-	{
-		// calculate view for player follow camera
-		view.setCenter(t.pos);
-	}
-	else
-	{
-		// calculate view for room-base camera
-		view.setCenter(sf::Vector2f(m_midPointX, m_midPointY));
-	}
-
-	m_application->GetWindow().setView(view);
+	// sf::View view = m_application->GetWindow().getView();
+	// auto &t = m_componentManager.GetComponent<abyss::components::Transform>(m_player->Id());
+	//
+	// // x room
+	// if (t.pos.x < m_midPointX - m_halfWidth)
+	// {
+	// 	m_room.x--;
+	// 	float x = m_room.x * Width();
+	// 	m_midPointX = x == 0 ? m_halfWidth : x + m_halfWidth;
+	// }
+	// else if (t.pos.x > m_midPointX + m_halfWidth)
+	// {
+	// 	m_room.x++;
+	// 	float x = m_room.x * Width();
+	// 	m_midPointX = x == 0 ? m_halfWidth : x - m_halfWidth;
+	// }
+	//
+	// // y room
+	// if (t.pos.y < m_midPointY - m_halfHeight)
+	// {
+	// 	m_room.y--;
+	// 	float y = m_room.y * Height();
+	// 	m_midPointY = y == 0 ? m_halfHeight : y + m_halfHeight;
+	// }
+	// else if (t.pos.y > m_midPointY + m_halfHeight)
+	// {
+	// 	m_room.y++;
+	// 	float y = m_room.y * Height();
+	// 	m_midPointY = y == 0 ? m_halfHeight : y - m_halfHeight;
+	// }
+	//
+	// if (m_follow)
+	// {
+	// 	// calculate view for player follow camera
+	// 	view.setCenter(t.pos);
+	// }
+	// else
+	// {
+	// 	// calculate view for room-base camera
+	// 	view.setCenter(sf::Vector2f(m_midPointX, m_midPointY));
+	// }
+	//
+	// m_application->GetWindow().setView(view);
 }
 
 void game::PlayScene::SpawnPlayer()
 {
-	m_player = m_entityManager.AddEntity(abyss::EntityTag::Player);
+	// m_player = m_entityManager.GetEntities(abyss::enums::EntityTag::Player)[0];
+	// m_componentManager.AddComponent(m_player->Id(), abyss::components::Input());
 
 	// always add the animation first, so that gridToMidPixel can compute correctly
 	// m_player->AddComponent<abyss::components::Anim>(m_application->GetAssets().GetAnimation("Down"), true);
@@ -463,12 +466,13 @@ void game::PlayScene::SpawnPlayer()
 
 void game::PlayScene::OnEnd()
 {
-	m_application->ChangeScene("MENU", std::make_shared<game::MenuScene>(m_application));
+	m_application->Quit();
+	// m_application->ChangeScene("MENU", std::make_shared<game::MenuScene>(m_application));
 }
 
 void game::PlayScene::ExecuteAction(const abyss::Action &action)
 {
-	if (action.State() == abyss::ActionState::Start)
+	if (action.State() == abyss::enums::ActionState::Start)
 	{
 		if (action.Name() == "TOGGLE_TEXTURE")
 		{
@@ -532,7 +536,7 @@ void game::PlayScene::ExecuteAction(const abyss::Action &action)
 		// 	m_player->GetComponent<abyss::components::Input>().down = true;
 		// }
 	}
-	else if (action.State() == abyss::ActionState::End)
+	else if (action.State() == abyss::enums::ActionState::End)
 	{
 		// if (action.Name() == "TO_LEFT")
 		// {
@@ -585,4 +589,18 @@ void game::PlayScene::DrawGrid()
 			m_application->GetWindow().draw(m_gridText);
 		}
 	}
+}
+
+void game::PlayScene::FillInfos()
+{
+	m_playerInfo.speed = 4;
+	m_playerInfo.maxSpeed = 6;
+
+	m_npcs["Npc1"].blockMove = true;
+	m_npcs["Npc1"].aiInfo.type = AiType::Patrol;
+	m_npcs["Npc1"].aiInfo.patrolPositions = {};
+
+	m_enemies["Bat"].blockMove = true;
+	m_enemies["Bat"].aiInfo.type = AiType::Patrol;
+	m_enemies["Bat"].aiInfo.patrolPositions = {};
 }

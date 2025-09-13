@@ -6,10 +6,9 @@
     "Game/src/managers/AudioManager.h"
     "Game/src/managers/GameManager.cpp"
     "Game/src/managers/GameManager.h"
-    "Game/src/scenes/MenuScene.cpp"
-    "Game/src/scenes/MenuScene.h"
     "Game/src/scenes/PlayScene.cpp"
     "Game/src/scenes/PlayScene.h"
+        "Game/src/gameData/GameData.h"
 )
 if(CMAKE_BUILD_TYPE STREQUAL Debug)
   add_dependencies("Game"

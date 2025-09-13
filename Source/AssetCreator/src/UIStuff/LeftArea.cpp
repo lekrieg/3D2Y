@@ -29,7 +29,7 @@ void LeftArea::DrawLeftPanel()
         auto& fileDialogType = m_app->GetFileDialogType();
         if (ImGui::Button("Open image"))
         {
-            ABYSS_INFO("IMG!")
+            ABYSS_INFO("IMG!");
 
             fileDialogType = FileDialogType::Texture;
             m_app->SpriteInfoOpen() = false;
@@ -53,14 +53,14 @@ void LeftArea::DrawLeftPanel()
 
             if (!m_app->GetUsedTextures()[path]->loadFromFile(path))
             {
-                ABYSS_ERROR("Failed to load texture!")
+                ABYSS_ERROR("Failed to load texture!");
             }
 
             m_app->GetFilePath() = path;
 
             if (!m_app->GetRenderTexture().resize(m_app->GetUsedTextures()[path]->getSize()))
             {
-                ABYSS_ERROR("Failed to resize render texture!")
+                ABYSS_ERROR("Failed to resize render texture!");
             }
 
             m_app->GetFileDialog().ClearSelected();

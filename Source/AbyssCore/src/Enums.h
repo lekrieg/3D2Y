@@ -33,6 +33,8 @@ namespace abyss
             SpecialAttack1,
             Tile,
             Dangerous,
+            Door,
+            Npc,
             Unknown,
         };
         const char* EntityTagToString(EntityTag tag);

@@ -103,6 +103,7 @@ namespace editor
 			void TransformCompGui();
 			void AnimCompGui();
 			void BoundingBoxCompGui();
+			void InputCompGui();
 			void InsertGuiToDraw(int index);
 
 			const char* UniqueId(int index = 0)

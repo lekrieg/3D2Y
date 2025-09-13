@@ -571,7 +571,7 @@ void editor::EditorScene::EntityInfoGui()
 	}
 	if (ImGui::BeginPopup("my_add_component_popup"))
 	{
-		const char *names[] = { "Transform", "Anim", "Bounding box" };
+		const char *names[] = { "Transform", "Anim", "Bounding box", "Input" };
 
 		for (int i = 0; i < IM_ARRAYSIZE(names); i++)
 		{
@@ -610,6 +610,11 @@ void editor::EditorScene::EntityInfoGui()
 	{
 		BoundingBoxCompGui();
 	}
+	if (m_componentManager.HasComponent<abyss::components::Input>(m_selectedEntity->Id()))
+	{
+		InputCompGui();
+	}
+
 
 	ImGui::End();
 }
@@ -917,6 +922,17 @@ void editor::EditorScene::BoundingBoxCompGui()
 	}
 }
 
+void editor::EditorScene::InputCompGui()
+{
+	if (ImGui::CollapsingHeader("Input"))
+	{
+		if (ImGui::Button("Remove", ImVec2(100, 25)))
+		{
+			m_componentManager.RemoveComponent<abyss::components::Input>(m_selectedEntity->Id());
+		}
+	}
+}
+
 void editor::EditorScene::InsertGuiToDraw(int index)
 {
 	switch (index)
@@ -941,9 +957,15 @@ void editor::EditorScene::InsertGuiToDraw(int index)
 		case 2:
 			if (!m_componentManager.HasComponent<abyss::components::BoundingBox>(m_selectedEntity->Id()))
 			{
-				ABYSS_INFO("Entrei aqui o/");
 				m_componentManager.AddComponent<abyss::components::BoundingBox>(
 					m_selectedEntity->Id(), abyss::components::BoundingBox(sf::Vector2f(), false));
+			}
+			break;
+		case 3:
+			if (!m_componentManager.HasComponent<abyss::components::Input>(m_selectedEntity->Id()))
+			{
+				m_componentManager.AddComponent<abyss::components::Input>(
+					m_selectedEntity->Id(), abyss::components::Input());
 			}
 			break;
 	}

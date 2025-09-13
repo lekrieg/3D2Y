@@ -19,6 +19,8 @@ const char *abyss::enums::EntityTagToString(const EntityTag tag)
         {EntityTag::SpecialAttack1, "SpecialAttack1"},
         {EntityTag::Tile, "Tile"},
         {EntityTag::Dangerous, "Dangerous"},
+        {EntityTag::Door, "Door"},
+        {EntityTag::Npc, "Npc"},
         {EntityTag::Unknown, "Unknown"},
     };
 
@@ -42,6 +44,8 @@ abyss::enums::EntityTag abyss::enums::StringToEntityTag(const char *tag)
         {"SpecialAttack1", EntityTag::SpecialAttack1},
         {"Tile", EntityTag::Tile},
         {"Dangerous", EntityTag::Dangerous},
+        {"Door", EntityTag::Door},
+        {"Npc", EntityTag::Npc},
         {"Unknown", EntityTag::Unknown},
     };
 
@@ -57,7 +61,7 @@ std::vector<std::string> abyss::enums::GetEntityTagNames()
 {
     std::vector<std::string> names;
 
-    constexpr int maxSize = 9;
+    constexpr int maxSize = 11;
     for (int i = 0; i < maxSize; i++)
     {
         names.emplace_back(EntityTagToString(static_cast<EntityTag>(i)));

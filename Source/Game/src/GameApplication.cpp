@@ -1,6 +1,5 @@
 #include "GameApplication.h"
 
-#include "ActionState.h"
 #include "Logger.h"
 #include "SFML/Graphics/Rect.hpp"
 #include "SFML/System/Vector2.hpp"
@@ -13,26 +12,24 @@
 
 void game::GameApplication::Init(const std::string &configPath, const std::string &assetsPath)
 {
-	m_audioManager = new game::AudioManager(this);
+	// m_audioManager = new game::AudioManager(this);
 
-	// TODO: checar se e possivel substituir isso pelo resource manager do livro
 	// TODO: read config file and fill the config things(windows size and etc)
 	m_assets.LoadFromFile(assetsPath);
 
-	m_window.create(sf::VideoMode(sf::Vector2u(800, 600)), "Assignment 3", sf::Style::Titlebar | sf::Style::Close);
+	m_window.create(sf::VideoMode(sf::Vector2u(800, 600)), "Demo", sf::Style::Titlebar | sf::Style::Close);
 
 	// TODO: add an option on settings to allow user limit this / activate VSync
 	// m_window.setFramerateLimit(60);
 
 	// ChangeScene("MENU", std::make_shared<scene::MenuScene>(this)); -> TODO: finish the menu level
 	// ChangeScene("MENU", std::make_shared<game::MenuScene>(this));
-	ChangeScene("PLAY",
-				std::make_shared<game::PlayScene>(this, "scenes/testScene.txt", GetAssets().GetFont("elementalis")));
+	ChangeScene("PLAY", std::make_shared<game::PlayScene>(this, "scenes/scene1.yaml", GetAssets().GetFonts()[0]), false);
 }
 
 game::GameApplication::~GameApplication()
 {
-	delete m_audioManager;
+	// delete m_audioManager;
 }
 
 void game::GameApplication::Run()
@@ -71,11 +68,11 @@ bool game::GameApplication::IsRunning()
 {
 	return m_running && m_window.isOpen();
 }
-
-game::AudioManager *game::GameApplication::GetAudioManager()
-{
-	return m_audioManager;
-}
+//
+// game::AudioManager *game::GameApplication::GetAudioManager()
+// {
+// 	return m_audioManager;
+// }
 
 abyss::Assets &game::GameApplication::GetAssets()
 {
@@ -168,7 +165,7 @@ void game::GameApplication::UserInputSystem()
 			}
 
 			GetCurrentScene()->ExecuteAction(
-				abyss::Action(GetCurrentScene()->GetActionMap().at(keyPressed->code), abyss::ActionState::Start));
+				abyss::Action(GetCurrentScene()->GetActionMap().at(keyPressed->code), abyss::enums::ActionState::Start));
 		}
 		else if (keyReleased)
 		{
@@ -178,12 +175,12 @@ void game::GameApplication::UserInputSystem()
 			}
 
 			GetCurrentScene()->ExecuteAction(
-				abyss::Action(GetCurrentScene()->GetActionMap().at(keyReleased->code), abyss::ActionState::End));
+				abyss::Action(GetCurrentScene()->GetActionMap().at(keyReleased->code), abyss::enums::ActionState::End));
 		}
 
 		if (mousePressed)
 		{
-			const abyss::ActionState actionState = abyss::ActionState::Start;
+			const abyss::enums::ActionState actionState = abyss::enums::ActionState::Start;
 
 			sf::Vector2i foo = sf::Mouse::getPosition(m_window);
 			// window().mapPixelToCoords(action.pos());
@@ -213,7 +210,7 @@ void game::GameApplication::UserInputSystem()
 
 		if (mouseReleased)
 		{
-			const abyss::ActionState actionState = abyss::ActionState::End;
+			const abyss::enums::ActionState actionState = abyss::enums::ActionState::End;
 
 			sf::Vector2i foo = sf::Mouse::getPosition(m_window);
 			// window().mapPixelToCoords(action.pos());

@@ -6,6 +6,7 @@
 #include "Physics.h"
 #include "SFML/Graphics/Font.hpp"
 #include "Scene.h"
+#include "../gameData/GameData.h"
 
 #include <string>
 
@@ -13,7 +14,6 @@ namespace game
 {
 	class PlayScene : public abyss::Scene
 	{
-			PlayerInfo m_playerInfo;
 			std::string m_levelPath;
 			std::shared_ptr<abyss::Entity> m_player;
 			bool m_drawTextures = true;
@@ -23,6 +23,10 @@ namespace game
 			sf::Vector2f m_gridSize = { 64, 64 };
 			sf::Text m_gridText;
 			abyss::Physics m_physics;
+
+			PlayerInfo m_playerInfo;
+			std::map<std::string, NpcInfo> m_npcs;
+			std::map<std::string, NpcInfo> m_enemies;
 
 			abyss::math::Vec2<int> m_room = { 0, 0 };
 			float m_leftXOffset = 0;
@@ -96,6 +100,8 @@ namespace game
 			// - shoulud play a slash sound
 
 			void DrawGrid();
+
+			void FillInfos();
 	};
 }
 

@@ -46,6 +46,9 @@ namespace abyss
 				void SerializeBoundingBox(YAML::Emitter &em, std::shared_ptr<abyss::Entity> e);
 				void DeserializeBoundingBox(YAML::Node node, std::shared_ptr<abyss::Entity> &e);
 
+				void SerializeInput(YAML::Emitter &em, std::shared_ptr<abyss::Entity> e);
+				void DeserializeInput(YAML::Node node, std::shared_ptr<abyss::Entity> &e);
+
 				void SerializeExtraData(YAML::Emitter &em, std::shared_ptr<abyss::Entity> e);
 				void DeserializeExtraData(YAML::Node node, std::shared_ptr<abyss::Entity> &e);
 

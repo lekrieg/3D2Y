@@ -16,7 +16,7 @@ namespace game
 	class GameApplication : public abyss::Application
 	{
 			game::GameManager m_gameManager;
-			game::AudioManager *m_audioManager; // TODO: think in a better way to make this stuff
+			// game::AudioManager *m_audioManager; // TODO: think in a better way to make this stuff
 
 			std::map<std::string, std::shared_ptr<abyss::Scene>> m_scenes;
 			sf::RenderWindow m_window;
@@ -37,19 +37,19 @@ namespace game
 				Init(configPath, assetsPath);
 			}
 
-			~GameApplication();
+			~GameApplication() override;
 
 			void Run() override;
 			void Quit() override;
 			bool IsRunning() override;
-			game::AudioManager *GetAudioManager();
+			// game::AudioManager *GetAudioManager();
 			abyss::Assets &GetAssets() override;
 			sf::RenderWindow &GetWindow() override;
 			game::GameManager &GetGameManager();
 			const float DeltaTime() const override;
 
 			void ChangeScene(const std::string &sceneName, std::shared_ptr<abyss::Scene> scene,
-							 bool endCurrentScene = false) override;
+							 bool endCurrentScene) override;
 
 		private:
 

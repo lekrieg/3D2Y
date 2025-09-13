@@ -5,6 +5,7 @@
 #include "SFML/System/Vector2.hpp"
 #include "../components/Anim.h"
 #include "../components/BoundingBox.h"
+#include "../components/Input.h"
 #include "../components/Transform.h"
 #include "yaml-cpp/node/node.h"
 
@@ -122,6 +123,7 @@ void abyss::serializer::Serializer::SerializeAnim(YAML::Emitter &em, std::shared
 		em << YAML::Key << "repeat" << YAML::Value << t.repeat;
 		em << YAML::Key << "asset_id" << YAML::Value << t.animation.assetId;
 		em << YAML::Key << "speed" << YAML::Value << t.animation.speed;
+		em << YAML::Key << "should_draw" << YAML::Value << t.shouldDraw;
 		em << YAML::EndMap;
 	}
 }
@@ -136,6 +138,7 @@ void abyss::serializer::Serializer::DeserializeAnim(YAML::Node node, std::shared
 												 data["repeat"].as<bool>()));
         auto &anim = m_componentManager->GetComponent<abyss::components::Anim>(e->Id());
 		anim.animation.speed = data["speed"].as<int>();
+		anim.shouldDraw = data["should_draw"].as<bool>();
 	}
 }
 
@@ -166,6 +169,23 @@ void abyss::serializer::Serializer::DeserializeBoundingBox(YAML::Node node, std:
 		bb.blockMove = data["blockMove"].as<bool>();
 		bb.blockVision = data["blockVision"].as<bool>();
 		bb.isTrigger = data["isTrigger"].as<bool>();
+	}
+}
+
+void abyss::serializer::Serializer::SerializeInput(YAML::Emitter &em, std::shared_ptr<abyss::Entity> e)
+{
+	if (m_componentManager->HasComponent<abyss::components::Input>(e->Id()))
+	{
+		em << YAML::Key << "InputComponent" << YAML::Value << YAML::BeginMap;
+		em << YAML::EndMap;
+	}
+}
+
+void abyss::serializer::Serializer::DeserializeInput(YAML::Node node, std::shared_ptr<abyss::Entity> &e)
+{
+	if (auto data = node["InputComponent"])
+	{
+		m_componentManager->AddComponent<abyss::components::Input>(e->Id(), abyss::components::Input());
 	}
 }
 
@@ -207,7 +227,7 @@ void abyss::serializer::Serializer::DeserializeSprite(const YAML::Node& node, st
 
 			if (!m_assets->GetTextures()[fileName].loadFromMemory(buffer, header->GetSize()))
 			{
-				ABYSS_ERROR("Failed to load texture!")
+				ABYSS_ERROR("Failed to load texture!");
 			}
 
 			delete[] n;
