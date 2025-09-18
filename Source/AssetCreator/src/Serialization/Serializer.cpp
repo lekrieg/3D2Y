@@ -116,14 +116,14 @@ void Serializer::DeserializeSprite(const YAML::Node& node, std::vector<std::shar
 
 				if (!m_app->GetUsedTextures()[fileName]->loadFromMemory(buffer, header->GetSize()))
 				{
-					ABYSS_ERROR("Failed to load texture!")
+					ABYSS_ERROR("Failed to load texture!");
 				}
 
 				m_app->GetFilePath() = fileName;
 
 				if (!m_app->GetRenderTexture().resize(m_app->GetUsedTextures()[fileName]->getSize()))
 				{
-					ABYSS_ERROR("Failed to resize render texture!")
+					ABYSS_ERROR("Failed to resize render texture!");
 				}
 
 				delete[] n;

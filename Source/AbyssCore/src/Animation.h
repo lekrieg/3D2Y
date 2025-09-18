@@ -16,7 +16,7 @@ namespace abyss
     class Animation
     {
     public:
-        char name[128] = {"Default"};
+        std::string name = {"Default"};
 
         std::vector<std::shared_ptr<Frame>> frames;
 

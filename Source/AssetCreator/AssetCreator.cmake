@@ -10,6 +10,7 @@
     "AssetCreator/src/Archiver/FileHelper.h"
     "AssetCreator/src/AssetInfo/Animation.h"
     "AssetCreator/src/AssetInfo/AudioAsset.h"
+    "AssetCreator/src/AssetInfo/BaseAsset.cpp"
     "AssetCreator/src/AssetInfo/BaseAsset.h"
     "AssetCreator/src/AssetInfo/FontAsset.h"
     "AssetCreator/src/AssetInfo/Frame.h"
@@ -44,7 +45,6 @@
     "AssetCreator/src/imgui/imstb_textedit.h"
     "AssetCreator/src/imgui/imstb_truetype.h"
   "AssetCreator/src/main.cpp"
-        "AssetCreator/src/AssetInfo/BaseAsset.cpp"
 )
 if(CMAKE_BUILD_TYPE STREQUAL Debug)
   set_target_properties("AssetCreator" PROPERTIES

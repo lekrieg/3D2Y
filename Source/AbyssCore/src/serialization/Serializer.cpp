@@ -31,6 +31,7 @@ void abyss::serializer::Serializer::Serialize(YAML::Emitter &em)
 			SerializeAnim(em, e);
 			SerializeTransform(em, e);
 			SerializeBoundingBox(em, e);
+			SerializeInput(em, e);
 
 			em << YAML::EndMap; // index
 
@@ -66,6 +67,7 @@ void abyss::serializer::Serializer::Deserialize(YAML::Node nodes)
 				DeserializeAnim(components, e);
 				DeserializeTransform(components, e);
 				DeserializeBoundingBox(components, e);
+				DeserializeInput(components, e);
 			}
 		}
 	}
@@ -255,6 +257,8 @@ void abyss::serializer::Serializer::DeserializeSprite(const YAML::Node& node, st
 					s.positions[animationName].push_back(pos);
 				}
 			}
+
+			// PROBLEMA COM O NOME DAS ANIMACOES
 
 			sprites[s.assetId] = s;
 

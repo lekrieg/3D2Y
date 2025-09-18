@@ -211,7 +211,7 @@ void RightArea::DrawSpritesStuff()
 
                     if (!m_app->GetRenderTexture().resize(m_app->GetUsedTextures()[sprite->filePath]->getSize()))
                     {
-                        ABYSS_ERROR("Failed to resize render texture!")
+                        ABYSS_ERROR("Failed to resize render texture!");
                     }
 
                     m_app->SetSelectedSprite(sprite);
@@ -720,11 +720,11 @@ bool RightArea::ArchiveData()
 
     if (m_app->GetArchiver().WriteArchiveFile(dataFileName, headers, filePaths, totalFiles))
     {
-        ABYSS_INFO("Archive %s created!", dataFileName)
+        ABYSS_INFO("Archive %s created!", dataFileName);
     }
     else
     {
-        ABYSS_ERROR("Error creating archive %s!", dataFileName)
+        ABYSS_ERROR("Error creating archive %s!", dataFileName);
         return false;
     }
 

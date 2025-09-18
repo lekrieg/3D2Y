@@ -2,13 +2,13 @@
   "Game/src/GameApplication.cpp"
   "Game/src/GameApplication.h"
   "Game/src/Main.cpp"
+    "Game/src/gameData/GameData.h"
     "Game/src/managers/AudioManager.cpp"
     "Game/src/managers/AudioManager.h"
     "Game/src/managers/GameManager.cpp"
     "Game/src/managers/GameManager.h"
     "Game/src/scenes/PlayScene.cpp"
     "Game/src/scenes/PlayScene.h"
-        "Game/src/gameData/GameData.h"
 )
 if(CMAKE_BUILD_TYPE STREQUAL Debug)
   add_dependencies("Game"
@@ -97,14 +97,14 @@ target_link_directories("Game" PRIVATE
 )
 target_link_libraries("Game"
   $<$<CONFIG:Release>:AbyssCore>
+  $<$<CONFIG:Release>:X11>
   $<$<CONFIG:Release>:sfml-graphics-s>
   $<$<CONFIG:Release>:sfml-audio-s>
   $<$<CONFIG:Release>:sfml-network-s>
-  $<$<CONFIG:Release>:sfml-system-s>
   $<$<CONFIG:Release>:sfml-window-s>
+  $<$<CONFIG:Release>:sfml-system-s>
   $<$<CONFIG:Release>:yaml-cpp>
   $<$<CONFIG:Release>:freetype>
-  $<$<CONFIG:Release>:X11>
   $<$<CONFIG:Release>:Xi>
   $<$<CONFIG:Release>:Xxf86vm>
   $<$<CONFIG:Release>:Xrandr>

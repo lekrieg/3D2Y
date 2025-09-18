@@ -17,7 +17,7 @@ namespace abyss
 			bool repeat = false;
 			bool shouldDraw = true;
 
-			Anim(CustomSprite  anim, const bool r) : animation{std::move( anim )}, repeat(r)
+			Anim(CustomSprite  anim, const bool r) : animation{std::move(anim)}, repeat(r)
 			{
 			}
 		};

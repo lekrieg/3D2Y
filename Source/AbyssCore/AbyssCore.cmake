@@ -131,8 +131,8 @@ target_link_libraries("AbyssCore"
   $<$<CONFIG:Release>:sfml-graphics-s>
   $<$<CONFIG:Release>:sfml-audio-s>
   $<$<CONFIG:Release>:sfml-network-s>
-  $<$<CONFIG:Release>:sfml-system-s>
   $<$<CONFIG:Release>:sfml-window-s>
+  $<$<CONFIG:Release>:sfml-system-s>
   $<$<CONFIG:Release>:yaml-cpp>
   $<$<CONFIG:Release>:freetype>
   $<$<CONFIG:Release>:X11>

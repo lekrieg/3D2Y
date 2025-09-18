@@ -88,6 +88,9 @@ void game::PlayScene::LoadLevel(const std::string &fileName)
 
 	Deserialize("scenes/scene1.yaml");
 
+	// update one time so the vectors are updated
+	m_entityManager.Update();
+
 	SpawnPlayer();
 
 	// should position the entity with the grid x,y read from the file
@@ -193,52 +196,52 @@ void game::PlayScene::Render()
 
 void game::PlayScene::MovementSystem()
 {
-	// auto &playerTransform = m_componentManager.GetComponent<abyss::components::Transform>(m_player->Id());
-	// // auto& playerJump = m_player->GetComponent<components::Jump>();
+	auto &playerTransform = m_componentManager.GetComponent<abyss::components::Transform>(m_player->Id());
+	// auto& playerJump = m_player->GetComponent<components::Jump>();
 	// sf::Vector2f playerVelocity;
-	//
-	// if (m_componentManager.HasComponent<abyss::components::Input>(m_player->Id()))
-	// {
-	// 	auto &playerInput = m_componentManager.GetComponent<abyss::components::Input>(m_player->Id());
-	//
-	// 	if (playerInput.left)
-	// 	{
-	// 		// TODO: add a file with the entity configurations
-	// 		playerVelocity.x -= m_playerInfo.speed;
-	//
-	// 		m_componentManager.GetComponent<abyss::components::State>(m_player->Id()).state = "Left";
-	// 	}
-	// 	else if (playerInput.right)
-	// 	{
-	// 		playerVelocity.x += m_playerInfo.speed;
-	//
-	// 		m_componentManager.GetComponent<abyss::components::State>(m_player->Id()).state = "Right";
-	// 	}
-	//
-	// 	if (playerInput.down)
-	// 	{
-	// 		playerVelocity.y += m_playerInfo.speed;
-	//
-	// 		m_componentManager.GetComponent<abyss::components::State>(m_player->Id()).state = "Down";
-	// 	}
-	//
-	// 	if (playerInput.up)
-	// 	{
-	// 		playerVelocity.y -= m_playerInfo.speed;
-	//
-	// 		m_componentManager.GetComponent<abyss::components::State>(m_player->Id()).state = "Up";
-	// 	}
-	// }
-	//
+
+	if (m_componentManager.HasComponent<abyss::components::Input>(m_player->Id()))
+	{
+		auto &playerInput = m_componentManager.GetComponent<abyss::components::Input>(m_player->Id());
+
+		if (playerInput.left)
+		{
+			// TODO: add a file with the entity configurations
+			// playerVelocity.x -= m_playerInfo.speed;
+
+			m_componentManager.GetComponent<abyss::components::Anim>(m_player->Id()).animation.SetAnimation("WalkLeft");
+		}
+		else if (playerInput.right)
+		{
+			// playerVelocity.x += m_playerInfo.speed;
+
+			m_componentManager.GetComponent<abyss::components::Anim>(m_player->Id()).animation.SetAnimation("WalkRight");
+		}
+
+		if (playerInput.down)
+		{
+			// playerVelocity.y += m_playerInfo.speed;
+
+			m_componentManager.GetComponent<abyss::components::Anim>(m_player->Id()).animation.SetAnimation("WalkDown");
+		}
+
+		if (playerInput.up)
+		{
+			// playerVelocity.y -= m_playerInfo.speed;
+
+			m_componentManager.GetComponent<abyss::components::Anim>(m_player->Id()).animation.SetAnimation("WalkUp");
+		}
+	}
+
 	// playerTransform.velocity = playerVelocity;
-	//
-	// for (auto e : m_entityManager.GetEntities())
-	// {
-	// 	m_componentManager.GetComponent<abyss::components::Transform>(e->Id()).previousPos =
-	// 		m_componentManager.GetComponent<abyss::components::Transform>(e->Id()).pos;
-	// 	m_componentManager.GetComponent<abyss::components::Transform>(e->Id()).pos +=
-	// 		m_componentManager.GetComponent<abyss::components::Transform>(e->Id()).velocity * m_application->DeltaTime();
-	// }
+
+	for (auto e : m_entityManager.GetEntities())
+	{
+		m_componentManager.GetComponent<abyss::components::Transform>(e->Id()).previousPos =
+			m_componentManager.GetComponent<abyss::components::Transform>(e->Id()).pos;
+		m_componentManager.GetComponent<abyss::components::Transform>(e->Id()).pos +=
+			m_componentManager.GetComponent<abyss::components::Transform>(e->Id()).velocity * m_application->DeltaTime();
+	}
 }
 
 void game::PlayScene::EnemySpawnerSystem()
@@ -350,12 +353,28 @@ void game::PlayScene::AnimationSystem()
 {
 	// auto &playerInput = m_componentManager.GetComponent<abyss::components::Input>(m_player->Id());
 	//
-	// if (m_componentManager.GetComponent<abyss::components::State>(m_player->Id()).state == "WalkDown")
+	// if (m_componentManager.GetComponent<abyss::components::Anim>(m_player->Id()).animation.GetAnimation()->name !=
+	// 		"WalkLeft")
 	// {
-	// 	if (m_componentManager.GetComponent<abyss::components::Anim>(m_player->Id()).animation.GetAnimation()->name != "WalkDown")
+	// 	auto &s = m_application->GetAssets().GetSprites()[274];
+	// 	m_componentManager.AddComponent<abyss::components::Anim>(m_player->Id(),
+	// 															 abyss::components::Anim(
+	// 																 abyss::CustomSprite(
+	// 																	 s, m_application->GetAssets().GetTextures()
+	// 																	 [s.path]), true));
+	// }
+
+	// if (m_componentManager.GetComponent<abyss::components::State>(m_player->Id()).state == "WalkLeft")
+	// {
+	// 	if (m_componentManager.GetComponent<abyss::components::Anim>(m_player->Id()).animation.GetAnimation()->name !=
+	// 	    "WalkLeft")
 	// 	{
-	// 		auto& s = m_application->GetAssets().GetSprites()[274];
-	// 		m_componentManager.AddComponent<abyss::components::Anim>(m_player->Id(), abyss::components::Anim(abyss::CustomSprite(s, m_application->GetAssets().GetTextures()[s.path]), true));
+	// 		auto &s = m_application->GetAssets().GetSprites()[274];
+	// 		m_componentManager.AddComponent<abyss::components::Anim>(m_player->Id(),
+	// 		                                                         abyss::components::Anim(
+	// 			                                                         abyss::CustomSprite(
+	// 				                                                         s, m_application->GetAssets().GetTextures()
+	// 				                                                         [s.path]), true));
 	// 	}
 	//
 	// 	/*auto& playerTransform = m_player->GetComponent<components::Transform>();
@@ -454,7 +473,7 @@ void game::PlayScene::CameraSystem()
 
 void game::PlayScene::SpawnPlayer()
 {
-	// m_player = m_entityManager.GetEntities(abyss::enums::EntityTag::Player)[0];
+	m_player = m_entityManager.GetEntities(abyss::enums::EntityTag::Player)[0];
 	// m_componentManager.AddComponent(m_player->Id(), abyss::components::Input());
 
 	// always add the animation first, so that gridToMidPixel can compute correctly
@@ -472,6 +491,7 @@ void game::PlayScene::OnEnd()
 
 void game::PlayScene::ExecuteAction(const abyss::Action &action)
 {
+	// TODO: change screen drag to middle button and let the left click only drag the entities
 	if (action.State() == abyss::enums::ActionState::Start)
 	{
 		if (action.Name() == "TOGGLE_TEXTURE")
@@ -519,41 +539,41 @@ void game::PlayScene::ExecuteAction(const abyss::Action &action)
 			// m_isAssetManagerOpen = !m_isAssetManagerOpen;
 		}
 
-		// if (action.Name() == "TO_LEFT")
-		// {
-		// 	m_player->GetComponent<abyss::components::Input>().left = true;
-		// }
-		// else if (action.Name() == "TO_RIGHT")
-		// {
-		// 	m_player->GetComponent<abyss::components::Input>().right = true;
-		// }
-		// else if (action.Name() == "TO_UP")
-		// {
-		// 	m_player->GetComponent<abyss::components::Input>().up = true;
-		// }
-		// else if (action.Name() == "TO_DOWN")
-		// {
-		// 	m_player->GetComponent<abyss::components::Input>().down = true;
-		// }
+		if (action.Name() == "TO_LEFT")
+		{
+			m_componentManager.GetComponent<abyss::components::Input>(m_player->Id()).left = true;
+		}
+		else if (action.Name() == "TO_RIGHT")
+		{
+			m_componentManager.GetComponent<abyss::components::Input>(m_player->Id()).right = true;
+		}
+		else if (action.Name() == "TO_UP")
+		{
+			m_componentManager.GetComponent<abyss::components::Input>(m_player->Id()).up = true;
+		}
+		else if (action.Name() == "TO_DOWN")
+		{
+			m_componentManager.GetComponent<abyss::components::Input>(m_player->Id()).down = true;
+		}
 	}
 	else if (action.State() == abyss::enums::ActionState::End)
 	{
-		// if (action.Name() == "TO_LEFT")
-		// {
-		// 	m_player->GetComponent<abyss::components::Input>().left = false;
-		// }
-		// else if (action.Name() == "TO_RIGHT")
-		// {
-		// 	m_player->GetComponent<abyss::components::Input>().right = false;
-		// }
-		// else if (action.Name() == "TO_UP")
-		// {
-		// 	m_player->GetComponent<abyss::components::Input>().up = false;
-		// }
-		// else if (action.Name() == "TO_DOWN")
-		// {
-		// 	m_player->GetComponent<abyss::components::Input>().down = false;
-		// }
+		if (action.Name() == "TO_LEFT")
+		{
+			m_componentManager.GetComponent<abyss::components::Input>(m_player->Id()).left = false;
+		}
+		else if (action.Name() == "TO_RIGHT")
+		{
+			m_componentManager.GetComponent<abyss::components::Input>(m_player->Id()).right = false;
+		}
+		else if (action.Name() == "TO_UP")
+		{
+			m_componentManager.GetComponent<abyss::components::Input>(m_player->Id()).up = false;
+		}
+		else if (action.Name() == "TO_DOWN")
+		{
+			m_componentManager.GetComponent<abyss::components::Input>(m_player->Id()).down = false;
+		}
 	}
 }
 

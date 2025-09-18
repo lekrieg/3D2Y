@@ -105,8 +105,8 @@ project "AbyssCore"
                 "sfml-graphics-s",
                 "sfml-audio-s",
                 "sfml-network-s",
-                "sfml-system-s",
                 "sfml-window-s",
+                "sfml-system-s",
                 "yaml-cpp",
                 "freetype",
                 "X11",
@@ -307,14 +307,14 @@ project "Game"
 
         filter "configurations:Release"
             links {
+                "X11",
                 "sfml-graphics-s",
                 "sfml-audio-s",
                 "sfml-network-s",
-                "sfml-system-s",
                 "sfml-window-s",
+                "sfml-system-s",
                 "yaml-cpp",
                 "freetype",
-                "X11",
                 "Xi",
                 "Xxf86vm",
                 "Xrandr",
@@ -329,6 +329,7 @@ project "Game"
                 -- "Xinerama",
                 "AbyssCore"
             }
+            -- buildoptions { "-O3" }
 
             defines { "ABYSS_RELEASE", "WITH_MINIAUDIO" }
             symbols "Off"

@@ -49,11 +49,18 @@ namespace abyss
                 path = spriteAsset.path;
 
                 spriteType = spriteAsset.spriteType;
+
+                // if (spriteType == abyss::enums::SpriteType::Character)
+                // {
+                //     speed++;
+                // }
+
                 speed = spriteAsset.speed;
 
                 for (const auto& animName : spriteAsset.animationNames)
                 {
                     auto anim = std::make_shared<Animation>();
+                    anim->name = animName;
                     for (int i = 0; i < spriteAsset.sizes[animName].size(); i++)
                     {
                         anim->AddFrame(spriteAsset.sizes[animName][i], spriteAsset.positions[animName][i]);
@@ -90,8 +97,9 @@ namespace abyss
 
             void SetAnimation(const std::string& animation)
             {
-                m_currentAnimation = *std::find_if(animations.begin(), animations.end(), [&](const std::shared_ptr<Animation>& val){ return strcmp(val->name, animation.c_str()) == 0; });
+                m_currentAnimation = *std::find_if(animations.begin(), animations.end(), [&](const std::shared_ptr<Animation>& val){ return strcmp(val->name.c_str(), animation.c_str()) == 0; });
             }
+
 
             const std::shared_ptr<Animation>& GetAnimation() const
             {
