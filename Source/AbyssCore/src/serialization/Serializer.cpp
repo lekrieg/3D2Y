@@ -6,6 +6,7 @@
 #include "../components/Anim.h"
 #include "../components/BoundingBox.h"
 #include "../components/Input.h"
+#include "../components/Patrol.h"
 #include "../components/Transform.h"
 #include "yaml-cpp/node/node.h"
 
@@ -32,6 +33,7 @@ void abyss::serializer::Serializer::Serialize(YAML::Emitter &em)
 			SerializeTransform(em, e);
 			SerializeBoundingBox(em, e);
 			SerializeInput(em, e);
+			SerializePatrol(em, e);
 
 			em << YAML::EndMap; // index
 
@@ -68,6 +70,7 @@ void abyss::serializer::Serializer::Deserialize(YAML::Node nodes)
 				DeserializeTransform(components, e);
 				DeserializeBoundingBox(components, e);
 				DeserializeInput(components, e);
+				DeserializePatrol(components, e);
 			}
 		}
 	}
@@ -205,6 +208,45 @@ void abyss::serializer::Serializer::DeserializeExtraData(YAML::Node node, std::s
 	{
 		e->SetLayer(data["layer"].as<size_t>());
 		strcpy(e->GetName(), data["name"].as<std::string>().c_str());
+	}
+}
+
+void abyss::serializer::Serializer::SerializePatrol(YAML::Emitter &em, std::shared_ptr<abyss::Entity> e)
+{
+	if (m_componentManager->HasComponent<abyss::components::Patrol>(e->Id()))
+	{
+		auto &t = m_componentManager->GetComponent<abyss::components::Patrol>(e->Id());
+		em << YAML::Key << "PatrolComponent" << YAML::Value << YAML::BeginMap;
+		em << YAML::Key << "Positions" << YAML::Value << YAML::BeginMap;
+
+		int index = 0;
+		for (const auto& pos : t.positions)
+		{
+			em << YAML::Key << index << YAML::Value << sf::Vector2f(pos.x, pos.y);
+			index++;
+		}
+		em << YAML::EndMap;
+
+		em << YAML::Key << "speed" << YAML::Value << t.speed;
+
+		em << YAML::EndMap;
+	}
+}
+
+void abyss::serializer::Serializer::DeserializePatrol(YAML::Node node, std::shared_ptr<abyss::Entity> &e)
+{
+	if (auto data = node["PatrolComponent"])
+	{
+		m_componentManager->AddComponent<abyss::components::Patrol>(e->Id(), abyss::components::Patrol());
+		auto &t = m_componentManager->GetComponent<abyss::components::Patrol>(e->Id());
+
+		for (const auto& pos : data["Positions"])
+		{
+			const auto& internalPos = pos.second.as<sf::Vector2f>();
+			t.positions.emplace_back(internalPos.x, internalPos.y);
+		}
+
+		t.speed = data["speed"].as<float>();
 	}
 }
 

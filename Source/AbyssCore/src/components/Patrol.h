@@ -18,11 +18,11 @@ namespace abyss
 			size_t currentPosition;
 			float speed;
 
-			Patrol()
+			Patrol() : currentPosition(0), speed(1.0f)
 			{
 			}
 
-			Patrol(std::vector<abyss::math::Vec2<float>>& pList, float s) : positions(pList), speed(s)
+			Patrol(const std::vector<abyss::math::Vec2<float>>& pList, float s) : positions(pList), speed(s)
 			{
 				currentPosition = 0;
 			}

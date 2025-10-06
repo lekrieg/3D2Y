@@ -104,6 +104,8 @@ namespace editor
 			void AnimCompGui();
 			void BoundingBoxCompGui();
 			void InputCompGui();
+			void PatrolCompGui();
+			void FollowPlayerGui();
 			void InsertGuiToDraw(int index);
 
 			const char* UniqueId(int index = 0)

@@ -35,6 +35,7 @@ namespace game
 
     struct NpcInfo
     {
+        float speed = 0;
         bool blockMove = false;
         bool blockVision = false;
         int maxHealth = 0;

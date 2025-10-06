@@ -571,7 +571,7 @@ void editor::EditorScene::EntityInfoGui()
 	}
 	if (ImGui::BeginPopup("my_add_component_popup"))
 	{
-		const char *names[] = { "Transform", "Anim", "Bounding box", "Input" };
+		const char *names[] = { "Transform", "Anim", "Bounding box", "Input", "Patrol" };
 
 		for (int i = 0; i < IM_ARRAYSIZE(names); i++)
 		{
@@ -613,6 +613,10 @@ void editor::EditorScene::EntityInfoGui()
 	if (m_componentManager.HasComponent<abyss::components::Input>(m_selectedEntity->Id()))
 	{
 		InputCompGui();
+	}
+	if (m_componentManager.HasComponent<abyss::components::Patrol>(m_selectedEntity->Id()))
+	{
+		PatrolCompGui();
 	}
 
 
@@ -933,6 +937,73 @@ void editor::EditorScene::InputCompGui()
 	}
 }
 
+void editor::EditorScene::PatrolCompGui()
+{
+	if (ImGui::CollapsingHeader("Patrol"))
+	{
+		ImGui::PushID(UniqueId(__LINE__));
+		if (ImGui::Button("Remove", ImVec2(100, 25)))
+		{
+			m_componentManager.RemoveComponent<abyss::components::Patrol>(m_selectedEntity->Id());
+			ImGui::PopID();
+
+			return;
+		}
+		ImGui::PopID();
+
+		auto &comp = m_componentManager.GetComponent<abyss::components::Patrol>(m_selectedEntity->Id());
+
+		ImGui::PushItemWidth(90);
+		ImGui::PushID(UniqueId(__LINE__));
+		ImGui::InputFloat("Speed", &comp.speed);
+		ImGui::PopID();
+
+		ImGui::Text("Positions");
+		ImGui::SameLine();
+		if (ImGui::Button("+"))
+		{
+			comp.positions.emplace_back(0, 0);
+		}
+
+		bool shouldDelete = false;
+		int indexToDelete = 0;
+
+		for (int j = 0; j < comp.positions.size(); j++)
+		{
+			float newSize[] = {comp.positions[j].x, comp.positions[j].y};
+			ImGui::PushID(UniqueId(j + __LINE__));
+			ImGui::InputFloat2("Pos", newSize);
+			comp.positions[j].x = newSize[0];
+			comp.positions[j].y = newSize[1];
+			ImGui::PopID();
+
+			if (!comp.positions.empty())
+			{
+				ImGui::PushItemWidth(90);
+				ImGui::SameLine(230);
+				ImGui::PushID(UniqueId(j + j + __LINE__));
+				if (ImGui::Button("Delete"))
+				{
+					shouldDelete = true;
+					indexToDelete = j;
+				}
+				ImGui::PopID();
+			}
+
+			ImGui::Separator();
+		}
+
+		if (shouldDelete)
+		{
+			comp.positions.erase(comp.positions.begin() + indexToDelete);
+		}
+	}
+}
+
+void editor::EditorScene::FollowPlayerGui()
+{
+}
+
 void editor::EditorScene::InsertGuiToDraw(int index)
 {
 	switch (index)
@@ -966,6 +1037,13 @@ void editor::EditorScene::InsertGuiToDraw(int index)
 			{
 				m_componentManager.AddComponent<abyss::components::Input>(
 					m_selectedEntity->Id(), abyss::components::Input());
+			}
+			break;
+		case 4:
+			if (!m_componentManager.HasComponent<abyss::components::Patrol>(m_selectedEntity->Id()))
+			{
+				m_componentManager.AddComponent<abyss::components::Patrol>(
+					m_selectedEntity->Id(), abyss::components::Patrol());
 			}
 			break;
 	}

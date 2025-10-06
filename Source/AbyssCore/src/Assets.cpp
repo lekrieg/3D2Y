@@ -60,3 +60,4 @@ void abyss::Assets::LoadFromFile(const std::string& path)
 
 	m_archive.CloseArchive();
 }
+
