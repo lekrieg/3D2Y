@@ -36,11 +36,12 @@ void game::PlayScene::Update(float deltaTime)
 	if (!m_paused)
 	{
 		MovementSystem();
+		AISystem();
 		CollisionSystem();
 		CameraSystem();
+		AnimationSystem();
 	}
 
-	AnimationSystem();
 }
 
 void game::PlayScene::Init(const std::string &levelPath)
@@ -424,6 +425,45 @@ void game::PlayScene::AnimationSystem()
 
 void game::PlayScene::AISystem()
 {
+	const float epsilon = 2.0f;
+	const float dt = m_application->DeltaTime();
+
+	for (const auto& e : m_entityManager.GetEntities())
+	{
+		if (m_componentManager.HasComponent<abyss::components::Patrol>(e->Id()) &&
+			m_componentManager.HasComponent<abyss::components::Transform>(e->Id()))
+		{
+			auto& pComp = m_componentManager.GetComponent<abyss::components::Patrol>(e->Id());
+			auto& tComp = m_componentManager.GetComponent<abyss::components::Transform>(e->Id());
+
+			if (pComp.positions.empty())
+			{
+				continue;
+			}
+
+			const auto& target = pComp.positions[pComp.currentPosition];
+
+			sf::Vector2f dir = sf::Vector2f(target.x, target.y) - tComp.pos;
+
+			float dist = std::sqrt(dir.x * dir.x + dir.y * dir.y);
+
+			if (dist < epsilon)
+			{
+				pComp.currentPosition = (pComp.currentPosition + 1) % pComp.positions.size();
+				continue;
+			}
+
+			if (dist > 0.0f)
+			{
+				dir /= dist;
+			}
+
+			tComp.velocity = dir * pComp.speed;
+
+			tComp.previousPos = tComp.pos;
+			tComp.pos += tComp.velocity * dt;
+		}
+	}
 }
 
 void game::PlayScene::CameraSystem()

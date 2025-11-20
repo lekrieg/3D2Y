@@ -39,6 +39,8 @@ void editor::EditorScene::Update(float deltaTime)
 	}
 
 	AnimationSystem();
+
+	m_particleSystem.Update();
 }
 
 void editor::EditorScene::Init(const std::string &levelPath)
@@ -67,6 +69,8 @@ void editor::EditorScene::Init(const std::string &levelPath)
 	m_entityTags = abyss::enums::GetEntityTagNames();
 
 	LoadLevel(levelPath);
+
+	m_particleSystem.Init(sf::Vector2f(0.0f, 0.0f));
 }
 
 void editor::EditorScene::LoadLevel(const std::string &fileName)
@@ -188,6 +192,8 @@ void editor::EditorScene::Render()
 	{
 		DrawGrid();
 	}
+
+	m_particleSystem.Draw(m_application->GetWindow());
 
 	ImGui::SFML::Render(m_application->GetWindow());
 

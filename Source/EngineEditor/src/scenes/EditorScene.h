@@ -11,12 +11,16 @@
 #include "../FileDialogState.h"
 
 #include <string>
+
+#include "ParticleSystem/ParticleSystem.h"
 // #include <vector>
 
 namespace editor
 {
 	class EditorScene : public abyss::Scene
 	{
+			ParticleSystem m_particleSystem;
+
 			std::shared_ptr<abyss::Entity> m_selectedEntity;
 			std::shared_ptr<abyss::Entity> m_dragEntity;
 			std::string m_levelPath;
