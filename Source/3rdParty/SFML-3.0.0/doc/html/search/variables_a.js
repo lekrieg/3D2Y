@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['left_0',['left',['../classsf_1_1Rect.html#aa49960fa465103d9cb7069ceb25c7c32',1,'sf::Rect']]],
-  ['length_1',['length',['../structsf_1_1Music_1_1Span.html#a509fdbef69a8fc0f8430ecb7b9e76221',1,'sf::Music::Span']]],
-  ['localhost_2',['LocalHost',['../classsf_1_1IpAddress.html#a594d3a8e2559f8fa8ab0a96fa597333b',1,'sf::IpAddress']]],
-  ['lsbdelta_3',['lsbDelta',['../classsf_1_1Glyph.html#ab82761e8995ebd05c03d47ff0e064100',1,'sf::Glyph']]]
+  ['magenta_0',['Magenta',['../classsf_1_1Color.html#a6fe70d90b65b2163dd066a84ac00426c',1,'sf::Color']]],
+  ['majorversion_1',['majorVersion',['../structsf_1_1ContextSettings.html#a99a680d5c15a7e34c935654155dd5166',1,'sf::ContextSettings']]],
+  ['maxdatagramsize_2',['MaxDatagramSize',['../classsf_1_1UdpSocket.html#a9a3612a4e887e10dbf396d2945b37548',1,'sf::UdpSocket']]],
+  ['minorversion_3',['minorVersion',['../structsf_1_1ContextSettings.html#aaeb0efe9d2658b840da93b30554b100f',1,'sf::ContextSettings']]]
 ];

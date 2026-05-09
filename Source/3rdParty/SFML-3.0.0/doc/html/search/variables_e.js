@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['position_0',['position',['../classsf_1_1Vertex.html#a8a4e0f4dfa7f1eb215c92e93d04f0ac0',1,'sf::Vertex::position()'],['../structsf_1_1Event_1_1JoystickMoveEvent.html#aba5a70815420161375fd2e756689c32a',1,'sf::Event::JoystickMoveEvent::position()']]],
-  ['productid_1',['productId',['../structsf_1_1Joystick_1_1Identification.html#a18c21317789f51f9a5f132677727ff77',1,'sf::Joystick::Identification']]]
+  ['r_0',['r',['../classsf_1_1Color.html#ac1dba0829698357e17069b6dba4d52fb',1,'sf::Color']]],
+  ['red_1',['Red',['../classsf_1_1Color.html#a127dbf55db9c07d0fa8f4bfcbb97594a',1,'sf::Color']]],
+  ['rsbdelta_2',['rsbDelta',['../structsf_1_1Glyph.html#affcf288079ac470f2d88765bbfef93fa',1,'sf::Glyph']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['noncopyable_0',['NonCopyable',['../classsf_1_1NonCopyable.html',1,'sf']]]
+  ['outputsoundfile_0',['OutputSoundFile',['../classsf_1_1OutputSoundFile.html',1,'sf']]]
 ];

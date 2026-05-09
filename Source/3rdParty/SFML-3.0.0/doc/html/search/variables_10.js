@@ -1,14 +1,9 @@
 var searchData=
 [
-  ['samplecount_0',['sampleCount',['../structsf_1_1SoundFileReader_1_1Info.html#a74b40b4693d7000571484736d1367167',1,'sf::SoundFileReader::Info::sampleCount()'],['../structsf_1_1SoundStream_1_1Chunk.html#af47f5d94012acf8b11f056ba77aff97a',1,'sf::SoundStream::Chunk::sampleCount()']]],
-  ['samplerate_1',['sampleRate',['../structsf_1_1SoundFileReader_1_1Info.html#a06ef71c19e7de190b294ae02c361f752',1,'sf::SoundFileReader::Info']]],
-  ['samples_2',['samples',['../structsf_1_1SoundStream_1_1Chunk.html#aa3b84d69adbe663a17a7671626076df4',1,'sf::SoundStream::Chunk']]],
-  ['scancode_3',['scancode',['../structsf_1_1Event_1_1KeyEvent.html#a182706c1c75e73c8fb85b796d1095ae1',1,'sf::Event::KeyEvent']]],
-  ['sensor_4',['sensor',['../classsf_1_1Event.html#acdeacbb321655b962e27d08eeec5a190',1,'sf::Event']]],
-  ['shader_5',['shader',['../classsf_1_1RenderStates.html#ad4f79ecdd0c60ed0d24fbe555b221bd8',1,'sf::RenderStates']]],
-  ['shift_6',['shift',['../structsf_1_1Event_1_1KeyEvent.html#a776af1a3ca79abeeec18ebf1c0065aa9',1,'sf::Event::KeyEvent']]],
-  ['size_7',['size',['../classsf_1_1Event.html#a85dae56a377eeffd39183c3f6fc96cb9',1,'sf::Event']]],
-  ['srgbcapable_8',['sRgbCapable',['../structsf_1_1ContextSettings.html#ac93b041bfb6cbd36034997797708a0a3',1,'sf::ContextSettings']]],
-  ['stencilbits_9',['stencilBits',['../structsf_1_1ContextSettings.html#ac2e788c201ca20e84fd38a28071abd29',1,'sf::ContextSettings']]],
-  ['system_10',['system',['../structsf_1_1Event_1_1KeyEvent.html#ac0557f7edc2a608ec65175fdd843afc5',1,'sf::Event::KeyEvent']]]
+  ['texcoords_0',['texCoords',['../structsf_1_1Vertex.html#a9e79bd05818d36c4789751908037097c',1,'sf::Vertex']]],
+  ['texture_1',['texture',['../structsf_1_1RenderStates.html#a457fc5a41731889de9cf39cf9b3436c3',1,'sf::RenderStates']]],
+  ['texturerect_2',['textureRect',['../structsf_1_1Glyph.html#a0d502d326449f8c49011ed91d2805f5b',1,'sf::Glyph']]],
+  ['transform_3',['transform',['../structsf_1_1RenderStates.html#a1f737981a0f2f0d4bb8dac866a8d1149',1,'sf::RenderStates']]],
+  ['transparent_4',['Transparent',['../classsf_1_1Color.html#a569b45471737f770656f50ae7bbac292',1,'sf::Color']]],
+  ['type_5',['type',['../structsf_1_1Event_1_1SensorChanged.html#a312d00af6eb10094508d0861368cd57f',1,'sf::Event::SensorChanged']]]
 ];

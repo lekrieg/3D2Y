@@ -1,2 +1,3 @@
 SFML-3.0.0
-yaml-cpp-0.8.0
+yaml-cpp-0.9.0
+OpenAL Soft v1.25.1-993b8c82

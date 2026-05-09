@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['coordinatetype_0',['CoordinateType',['../classsf_1_1Texture.html#aa6fd3bbe3c334b3c4428edfb2765a82e',1,'sf::Texture']]]
+  ['coordinatetype_0',['CoordinateType',['../group__graphics.html#ga3279cc83ec99c60693c4fe6d0d3fb98b',1,'sf']]]
 ];

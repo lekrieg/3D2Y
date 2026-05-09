@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['joystick_0',['Joystick',['../classsf_1_1Joystick.html',1,'sf']]],
-  ['joystickbuttonevent_1',['JoystickButtonEvent',['../structsf_1_1Event_1_1JoystickButtonEvent.html',1,'sf::Event']]],
-  ['joystickconnectevent_2',['JoystickConnectEvent',['../structsf_1_1Event_1_1JoystickConnectEvent.html',1,'sf::Event']]],
-  ['joystickmoveevent_3',['JoystickMoveEvent',['../structsf_1_1Event_1_1JoystickMoveEvent.html',1,'sf::Event']]]
+  ['joystickbuttonpressed_0',['JoystickButtonPressed',['../structsf_1_1Event_1_1JoystickButtonPressed.html',1,'sf::Event']]],
+  ['joystickbuttonreleased_1',['JoystickButtonReleased',['../structsf_1_1Event_1_1JoystickButtonReleased.html',1,'sf::Event']]],
+  ['joystickconnected_2',['JoystickConnected',['../structsf_1_1Event_1_1JoystickConnected.html',1,'sf::Event']]],
+  ['joystickdisconnected_3',['JoystickDisconnected',['../structsf_1_1Event_1_1JoystickDisconnected.html',1,'sf::Event']]],
+  ['joystickmoved_4',['JoystickMoved',['../structsf_1_1Event_1_1JoystickMoved.html',1,'sf::Event']]]
 ];

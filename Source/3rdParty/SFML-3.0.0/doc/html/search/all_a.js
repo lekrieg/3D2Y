@@ -1,12 +1,11 @@
 var searchData=
 [
-  ['k_0',['K',['../structsf_1_1Keyboard_1_1Scan.html#aa42fbf6954d6f81f7606e566c7abe875a1e65a1d66582b430961cfc4e7cc76816',1,'sf::Keyboard::Scan::K()'],['../classsf_1_1Keyboard.html#acb4cacd7cc5802dec45724cf3314a142a25beb62393ff666a4bec18ea2a66f3f2',1,'sf::Keyboard::K()']]],
-  ['keepalive_1',['keepAlive',['../classsf_1_1Ftp.html#aa1127d442b4acb2105aa8060a39d04fc',1,'sf::Ftp']]],
-  ['key_2',['key',['../classsf_1_1Event.html#a45b92fc6757ca7c193f06b302e424ab0',1,'sf::Event']]],
-  ['key_3',['Key',['../classsf_1_1Keyboard.html#acb4cacd7cc5802dec45724cf3314a142',1,'sf::Keyboard']]],
-  ['keyboard_4',['Keyboard',['../classsf_1_1Keyboard.html',1,'sf']]],
-  ['keycount_5',['KeyCount',['../classsf_1_1Keyboard.html#acb4cacd7cc5802dec45724cf3314a142a93e6ffa0320fe9b2f29aec14a58be36b',1,'sf::Keyboard']]],
-  ['keyevent_6',['KeyEvent',['../structsf_1_1Event_1_1KeyEvent.html',1,'sf::Event']]],
-  ['keypressed_7',['KeyPressed',['../classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aac3c7abfaa98c73bfe6be0b57df09c71b',1,'sf::Event']]],
-  ['keyreleased_8',['KeyReleased',['../classsf_1_1Event.html#af41fa9ed45c02449030699f671331d4aaa5bcc1e603d5a6f4c137af39558bd5d1',1,'sf::Event']]]
+  ['k_0',['K',['../namespacesf_1_1Keyboard.html#acb4cacd7cc5802dec45724cf3314a142aa5f3c6a11b03839d46af9fb43c97c188',1,'sf::Keyboard::K'],['../namespacesf_1_1Keyboard.html#aed978288ff367518d29cfe0c9e3b295faa5f3c6a11b03839d46af9fb43c97c188',1,'sf::Keyboard::K']]],
+  ['keep_1',['Keep',['../namespacesf.html#accf495a19b2f6b4f8d9cff3dac777bfda02bce93bff905887ad2233110bf9c49e',1,'sf']]],
+  ['keepalive_2',['keepAlive',['../classsf_1_1Ftp.html#aa1127d442b4acb2105aa8060a39d04fc',1,'sf::Ftp']]],
+  ['key_3',['Key',['../namespacesf_1_1Keyboard.html#acb4cacd7cc5802dec45724cf3314a142',1,'sf::Keyboard']]],
+  ['keyboard_2ehpp_4',['Keyboard.hpp',['../Keyboard_8hpp.html',1,'']]],
+  ['keycount_5',['KeyCount',['../namespacesf_1_1Keyboard.html#a1d05756904236ee9e096a25c3861a313',1,'sf::Keyboard']]],
+  ['keypressed_6',['KeyPressed',['../structsf_1_1Event_1_1KeyPressed.html',1,'sf::Event']]],
+  ['keyreleased_7',['KeyReleased',['../structsf_1_1Event_1_1KeyReleased.html',1,'sf::Event']]]
 ];

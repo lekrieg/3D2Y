@@ -1,9 +1,305 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
-<tagfile doxygen_version="1.9.6">
+<tagfile doxygen_version="1.12.0" doxygen_gitid="c73f5d30f9e8b1df5ba15a1d064ff2067cbb8267">
+  <compound kind="file">
+    <name>mainpage.hpp</name>
+    <path>doc/</path>
+    <filename>mainpage_8hpp.html</filename>
+  </compound>
+  <compound kind="file">
+    <name>Audio.hpp</name>
+    <path>include/SFML/</path>
+    <filename>Audio_8hpp.html</filename>
+    <includes id="InputSoundFile_8hpp" name="InputSoundFile.hpp" local="no" import="no" module="no" objc="no">SFML/Audio/InputSoundFile.hpp</includes>
+    <includes id="Listener_8hpp" name="Listener.hpp" local="no" import="no" module="no" objc="no">SFML/Audio/Listener.hpp</includes>
+    <includes id="Music_8hpp" name="Music.hpp" local="no" import="no" module="no" objc="no">SFML/Audio/Music.hpp</includes>
+    <includes id="OutputSoundFile_8hpp" name="OutputSoundFile.hpp" local="no" import="no" module="no" objc="no">SFML/Audio/OutputSoundFile.hpp</includes>
+    <includes id="PlaybackDevice_8hpp" name="PlaybackDevice.hpp" local="no" import="no" module="no" objc="no">SFML/Audio/PlaybackDevice.hpp</includes>
+    <includes id="Sound_8hpp" name="Sound.hpp" local="no" import="no" module="no" objc="no">SFML/Audio/Sound.hpp</includes>
+    <includes id="SoundBuffer_8hpp" name="SoundBuffer.hpp" local="no" import="no" module="no" objc="no">SFML/Audio/SoundBuffer.hpp</includes>
+    <includes id="SoundBufferRecorder_8hpp" name="SoundBufferRecorder.hpp" local="no" import="no" module="no" objc="no">SFML/Audio/SoundBufferRecorder.hpp</includes>
+    <includes id="SoundFileFactory_8hpp" name="SoundFileFactory.hpp" local="no" import="no" module="no" objc="no">SFML/Audio/SoundFileFactory.hpp</includes>
+    <includes id="SoundFileReader_8hpp" name="SoundFileReader.hpp" local="no" import="no" module="no" objc="no">SFML/Audio/SoundFileReader.hpp</includes>
+    <includes id="SoundFileWriter_8hpp" name="SoundFileWriter.hpp" local="no" import="no" module="no" objc="no">SFML/Audio/SoundFileWriter.hpp</includes>
+    <includes id="SoundRecorder_8hpp" name="SoundRecorder.hpp" local="no" import="no" module="no" objc="no">SFML/Audio/SoundRecorder.hpp</includes>
+    <includes id="SoundSource_8hpp" name="SoundSource.hpp" local="no" import="no" module="no" objc="no">SFML/Audio/SoundSource.hpp</includes>
+    <includes id="SoundStream_8hpp" name="SoundStream.hpp" local="no" import="no" module="no" objc="no">SFML/Audio/SoundStream.hpp</includes>
+    <includes id="System_8hpp" name="System.hpp" local="no" import="no" module="no" objc="no">SFML/System.hpp</includes>
+  </compound>
+  <compound kind="file">
+    <name>AudioResource.hpp</name>
+    <path>include/SFML/Audio/</path>
+    <filename>AudioResource_8hpp.html</filename>
+    <includes id="Audio_2Export_8hpp" name="Audio/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Audio/Export.hpp</includes>
+    <class kind="class">sf::AudioResource</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>Audio/Export.hpp</name>
+    <path>include/SFML/Audio/</path>
+    <filename>Audio_2Export_8hpp.html</filename>
+    <includes id="Config_8hpp" name="Config.hpp" local="no" import="no" module="no" objc="no">SFML/Config.hpp</includes>
+    <member kind="define">
+      <type>#define</type>
+      <name>SFML_AUDIO_API</name>
+      <anchorfile>Audio_2Export_8hpp.html</anchorfile>
+      <anchor>a4d34c0f253824ac49bdd93545913eb89</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>Graphics/Export.hpp</name>
+    <path>include/SFML/Graphics/</path>
+    <filename>Graphics_2Export_8hpp.html</filename>
+    <includes id="Config_8hpp" name="Config.hpp" local="no" import="no" module="no" objc="no">SFML/Config.hpp</includes>
+    <member kind="define">
+      <type>#define</type>
+      <name>SFML_GRAPHICS_API</name>
+      <anchorfile>Graphics_2Export_8hpp.html</anchorfile>
+      <anchor>ab84c9f1035e146917de3bc0f98d72b35</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>Network/Export.hpp</name>
+    <path>include/SFML/Network/</path>
+    <filename>Network_2Export_8hpp.html</filename>
+    <includes id="Config_8hpp" name="Config.hpp" local="no" import="no" module="no" objc="no">SFML/Config.hpp</includes>
+    <member kind="define">
+      <type>#define</type>
+      <name>SFML_NETWORK_API</name>
+      <anchorfile>Network_2Export_8hpp.html</anchorfile>
+      <anchor>ac5d46d4ffd98e947e28c54d051b338e7</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>System/Export.hpp</name>
+    <path>include/SFML/System/</path>
+    <filename>System_2Export_8hpp.html</filename>
+    <includes id="Config_8hpp" name="Config.hpp" local="no" import="no" module="no" objc="no">SFML/Config.hpp</includes>
+    <member kind="define">
+      <type>#define</type>
+      <name>SFML_SYSTEM_API</name>
+      <anchorfile>System_2Export_8hpp.html</anchorfile>
+      <anchor>a6476c9e422606477a4c23d92b1d79a1f</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>Window/Export.hpp</name>
+    <path>include/SFML/Window/</path>
+    <filename>Window_2Export_8hpp.html</filename>
+    <includes id="Config_8hpp" name="Config.hpp" local="no" import="no" module="no" objc="no">SFML/Config.hpp</includes>
+    <member kind="define">
+      <type>#define</type>
+      <name>SFML_WINDOW_API</name>
+      <anchorfile>Window_2Export_8hpp.html</anchorfile>
+      <anchor>a1ab885b7907ee088350359516d68be64</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>InputSoundFile.hpp</name>
+    <path>include/SFML/Audio/</path>
+    <filename>InputSoundFile_8hpp.html</filename>
+    <includes id="Audio_2Export_8hpp" name="Audio/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Audio/Export.hpp</includes>
+    <includes id="SoundFileReader_8hpp" name="SoundFileReader.hpp" local="no" import="no" module="no" objc="no">SFML/Audio/SoundFileReader.hpp</includes>
+    <class kind="class">sf::InputSoundFile</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>Listener.hpp</name>
+    <path>include/SFML/Audio/</path>
+    <filename>Listener_8hpp.html</filename>
+    <includes id="Audio_2Export_8hpp" name="Audio/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Audio/Export.hpp</includes>
+    <includes id="Angle_8hpp" name="Angle.hpp" local="no" import="no" module="no" objc="no">SFML/System/Angle.hpp</includes>
+    <includes id="Vector3_8hpp" name="Vector3.hpp" local="no" import="no" module="no" objc="no">SFML/System/Vector3.hpp</includes>
+    <class kind="struct">sf::Listener::Cone</class>
+    <namespace>sf</namespace>
+    <namespace>sf::Listener</namespace>
+  </compound>
+  <compound kind="file">
+    <name>Music.hpp</name>
+    <path>include/SFML/Audio/</path>
+    <filename>Music_8hpp.html</filename>
+    <includes id="Audio_2Export_8hpp" name="Audio/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Audio/Export.hpp</includes>
+    <includes id="SoundStream_8hpp" name="SoundStream.hpp" local="no" import="no" module="no" objc="no">SFML/Audio/SoundStream.hpp</includes>
+    <class kind="class">sf::Music</class>
+    <class kind="struct">sf::Music::Span</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>OutputSoundFile.hpp</name>
+    <path>include/SFML/Audio/</path>
+    <filename>OutputSoundFile_8hpp.html</filename>
+    <includes id="Audio_2Export_8hpp" name="Audio/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Audio/Export.hpp</includes>
+    <includes id="SoundChannel_8hpp" name="SoundChannel.hpp" local="no" import="no" module="no" objc="no">SFML/Audio/SoundChannel.hpp</includes>
+    <includes id="SoundFileWriter_8hpp" name="SoundFileWriter.hpp" local="no" import="no" module="no" objc="no">SFML/Audio/SoundFileWriter.hpp</includes>
+    <class kind="class">sf::OutputSoundFile</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>PlaybackDevice.hpp</name>
+    <path>include/SFML/Audio/</path>
+    <filename>PlaybackDevice_8hpp.html</filename>
+    <includes id="Audio_2Export_8hpp" name="Audio/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Audio/Export.hpp</includes>
+    <namespace>sf</namespace>
+    <namespace>sf::PlaybackDevice</namespace>
+  </compound>
+  <compound kind="file">
+    <name>Sound.hpp</name>
+    <path>include/SFML/Audio/</path>
+    <filename>Sound_8hpp.html</filename>
+    <includes id="Audio_2Export_8hpp" name="Audio/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Audio/Export.hpp</includes>
+    <includes id="SoundSource_8hpp" name="SoundSource.hpp" local="no" import="no" module="no" objc="no">SFML/Audio/SoundSource.hpp</includes>
+    <class kind="class">sf::Sound</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>SoundBuffer.hpp</name>
+    <path>include/SFML/Audio/</path>
+    <filename>SoundBuffer_8hpp.html</filename>
+    <includes id="Audio_2Export_8hpp" name="Audio/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Audio/Export.hpp</includes>
+    <includes id="SoundChannel_8hpp" name="SoundChannel.hpp" local="no" import="no" module="no" objc="no">SFML/Audio/SoundChannel.hpp</includes>
+    <includes id="Time_8hpp" name="Time.hpp" local="no" import="no" module="no" objc="no">SFML/System/Time.hpp</includes>
+    <class kind="class">sf::SoundBuffer</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>SoundBufferRecorder.hpp</name>
+    <path>include/SFML/Audio/</path>
+    <filename>SoundBufferRecorder_8hpp.html</filename>
+    <includes id="Audio_2Export_8hpp" name="Audio/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Audio/Export.hpp</includes>
+    <includes id="SoundBuffer_8hpp" name="SoundBuffer.hpp" local="no" import="no" module="no" objc="no">SFML/Audio/SoundBuffer.hpp</includes>
+    <includes id="SoundRecorder_8hpp" name="SoundRecorder.hpp" local="no" import="no" module="no" objc="no">SFML/Audio/SoundRecorder.hpp</includes>
+    <class kind="class">sf::SoundBufferRecorder</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>SoundChannel.hpp</name>
+    <path>include/SFML/Audio/</path>
+    <filename>SoundChannel_8hpp.html</filename>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>SoundFileFactory.hpp</name>
+    <path>include/SFML/Audio/</path>
+    <filename>SoundFileFactory_8hpp.html</filename>
+    <includes id="Audio_2Export_8hpp" name="Audio/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Audio/Export.hpp</includes>
+    <class kind="class">sf::SoundFileFactory</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>SoundFileReader.hpp</name>
+    <path>include/SFML/Audio/</path>
+    <filename>SoundFileReader_8hpp.html</filename>
+    <includes id="Audio_2Export_8hpp" name="Audio/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Audio/Export.hpp</includes>
+    <includes id="SoundChannel_8hpp" name="SoundChannel.hpp" local="no" import="no" module="no" objc="no">SFML/Audio/SoundChannel.hpp</includes>
+    <class kind="class">sf::SoundFileReader</class>
+    <class kind="struct">sf::SoundFileReader::Info</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>SoundFileWriter.hpp</name>
+    <path>include/SFML/Audio/</path>
+    <filename>SoundFileWriter_8hpp.html</filename>
+    <includes id="Audio_2Export_8hpp" name="Audio/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Audio/Export.hpp</includes>
+    <includes id="SoundChannel_8hpp" name="SoundChannel.hpp" local="no" import="no" module="no" objc="no">SFML/Audio/SoundChannel.hpp</includes>
+    <class kind="class">sf::SoundFileWriter</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>SoundRecorder.hpp</name>
+    <path>include/SFML/Audio/</path>
+    <filename>SoundRecorder_8hpp.html</filename>
+    <includes id="Audio_2Export_8hpp" name="Audio/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Audio/Export.hpp</includes>
+    <includes id="SoundChannel_8hpp" name="SoundChannel.hpp" local="no" import="no" module="no" objc="no">SFML/Audio/SoundChannel.hpp</includes>
+    <class kind="class">sf::SoundRecorder</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>SoundSource.hpp</name>
+    <path>include/SFML/Audio/</path>
+    <filename>SoundSource_8hpp.html</filename>
+    <includes id="Audio_2Export_8hpp" name="Audio/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Audio/Export.hpp</includes>
+    <includes id="AudioResource_8hpp" name="AudioResource.hpp" local="no" import="no" module="no" objc="no">SFML/Audio/AudioResource.hpp</includes>
+    <includes id="Angle_8hpp" name="Angle.hpp" local="no" import="no" module="no" objc="no">SFML/System/Angle.hpp</includes>
+    <includes id="Vector3_8hpp" name="Vector3.hpp" local="no" import="no" module="no" objc="no">SFML/System/Vector3.hpp</includes>
+    <class kind="class">sf::SoundSource</class>
+    <class kind="struct">sf::SoundSource::Cone</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>SoundStream.hpp</name>
+    <path>include/SFML/Audio/</path>
+    <filename>SoundStream_8hpp.html</filename>
+    <includes id="Audio_2Export_8hpp" name="Audio/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Audio/Export.hpp</includes>
+    <includes id="SoundChannel_8hpp" name="SoundChannel.hpp" local="no" import="no" module="no" objc="no">SFML/Audio/SoundChannel.hpp</includes>
+    <includes id="SoundSource_8hpp" name="SoundSource.hpp" local="no" import="no" module="no" objc="no">SFML/Audio/SoundSource.hpp</includes>
+    <includes id="Time_8hpp" name="Time.hpp" local="no" import="no" module="no" objc="no">SFML/System/Time.hpp</includes>
+    <class kind="class">sf::SoundStream</class>
+    <class kind="struct">sf::SoundStream::Chunk</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>Config.hpp</name>
+    <path>include/SFML/</path>
+    <filename>Config_8hpp.html</filename>
+    <member kind="define">
+      <type>#define</type>
+      <name>SFML_VERSION_MAJOR</name>
+      <anchorfile>Config_8hpp.html</anchorfile>
+      <anchor>ab601e78ee9806b7ef75b242681af3bf2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SFML_VERSION_MINOR</name>
+      <anchorfile>Config_8hpp.html</anchorfile>
+      <anchor>a91a4f1f9aeae335e13bb4cfa8f018865</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SFML_VERSION_PATCH</name>
+      <anchorfile>Config_8hpp.html</anchorfile>
+      <anchor>acccd4412c83e570fbc4d1d5638b035b3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SFML_VERSION_IS_RELEASE</name>
+      <anchorfile>Config_8hpp.html</anchorfile>
+      <anchor>a6b743aa20bf47f6b9fd532b02757c272</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SFML_DEBUG</name>
+      <anchorfile>Config_8hpp.html</anchorfile>
+      <anchor>a90cd534d01b83efcf7e6769551c2a3db</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SFML_API_EXPORT</name>
+      <anchorfile>Config_8hpp.html</anchorfile>
+      <anchor>ab2d9ba01221055369f9707a4d7b528c2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>SFML_API_IMPORT</name>
+      <anchorfile>Config_8hpp.html</anchorfile>
+      <anchor>aba0bbe5791bee6633caa835c7f6a12a4</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
   <compound kind="file">
     <name>GpuPreference.hpp</name>
     <path>include/SFML/</path>
     <filename>GpuPreference_8hpp.html</filename>
+    <includes id="Config_8hpp" name="Config.hpp" local="no" import="no" module="no" objc="no">SFML/Config.hpp</includes>
     <member kind="define">
       <type>#define</type>
       <name>SFML_DEFINE_DISCRETE_GPU_PREFERENCE</name>
@@ -12,21 +308,1098 @@
       <arglist></arglist>
     </member>
   </compound>
+  <compound kind="file">
+    <name>Graphics.hpp</name>
+    <path>include/SFML/</path>
+    <filename>Graphics_8hpp.html</filename>
+    <includes id="BlendMode_8hpp" name="BlendMode.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/BlendMode.hpp</includes>
+    <includes id="CircleShape_8hpp" name="CircleShape.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/CircleShape.hpp</includes>
+    <includes id="Color_8hpp" name="Color.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Color.hpp</includes>
+    <includes id="ConvexShape_8hpp" name="ConvexShape.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/ConvexShape.hpp</includes>
+    <includes id="Drawable_8hpp" name="Drawable.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Drawable.hpp</includes>
+    <includes id="Font_8hpp" name="Font.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Font.hpp</includes>
+    <includes id="Glyph_8hpp" name="Glyph.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Glyph.hpp</includes>
+    <includes id="Image_8hpp" name="Image.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Image.hpp</includes>
+    <includes id="PrimitiveType_8hpp" name="PrimitiveType.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/PrimitiveType.hpp</includes>
+    <includes id="Rect_8hpp" name="Rect.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Rect.hpp</includes>
+    <includes id="RectangleShape_8hpp" name="RectangleShape.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/RectangleShape.hpp</includes>
+    <includes id="RenderStates_8hpp" name="RenderStates.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/RenderStates.hpp</includes>
+    <includes id="RenderTarget_8hpp" name="RenderTarget.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/RenderTarget.hpp</includes>
+    <includes id="RenderTexture_8hpp" name="RenderTexture.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/RenderTexture.hpp</includes>
+    <includes id="RenderWindow_8hpp" name="RenderWindow.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/RenderWindow.hpp</includes>
+    <includes id="Shader_8hpp" name="Shader.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Shader.hpp</includes>
+    <includes id="Shape_8hpp" name="Shape.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Shape.hpp</includes>
+    <includes id="Sprite_8hpp" name="Sprite.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Sprite.hpp</includes>
+    <includes id="StencilMode_8hpp" name="StencilMode.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/StencilMode.hpp</includes>
+    <includes id="Text_8hpp" name="Text.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Text.hpp</includes>
+    <includes id="Texture_8hpp" name="Texture.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Texture.hpp</includes>
+    <includes id="Transform_8hpp" name="Transform.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Transform.hpp</includes>
+    <includes id="Transformable_8hpp" name="Transformable.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Transformable.hpp</includes>
+    <includes id="Vertex_8hpp" name="Vertex.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Vertex.hpp</includes>
+    <includes id="VertexArray_8hpp" name="VertexArray.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/VertexArray.hpp</includes>
+    <includes id="VertexBuffer_8hpp" name="VertexBuffer.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/VertexBuffer.hpp</includes>
+    <includes id="View_8hpp" name="View.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/View.hpp</includes>
+    <includes id="Window_8hpp" name="Window.hpp" local="no" import="no" module="no" objc="no">SFML/Window.hpp</includes>
+  </compound>
+  <compound kind="file">
+    <name>BlendMode.hpp</name>
+    <path>include/SFML/Graphics/</path>
+    <filename>BlendMode_8hpp.html</filename>
+    <includes id="Graphics_2Export_8hpp" name="Graphics/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Export.hpp</includes>
+    <class kind="class">sf::BlendMode</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>CircleShape.hpp</name>
+    <path>include/SFML/Graphics/</path>
+    <filename>CircleShape_8hpp.html</filename>
+    <includes id="Graphics_2Export_8hpp" name="Graphics/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Export.hpp</includes>
+    <includes id="Shape_8hpp" name="Shape.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Shape.hpp</includes>
+    <includes id="Vector2_8hpp" name="Vector2.hpp" local="no" import="no" module="no" objc="no">SFML/System/Vector2.hpp</includes>
+    <class kind="class">sf::CircleShape</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>Color.hpp</name>
+    <path>include/SFML/Graphics/</path>
+    <filename>Color_8hpp.html</filename>
+    <class kind="class">sf::Color</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>ConvexShape.hpp</name>
+    <path>include/SFML/Graphics/</path>
+    <filename>ConvexShape_8hpp.html</filename>
+    <includes id="Graphics_2Export_8hpp" name="Graphics/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Export.hpp</includes>
+    <includes id="Shape_8hpp" name="Shape.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Shape.hpp</includes>
+    <class kind="class">sf::ConvexShape</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>CoordinateType.hpp</name>
+    <path>include/SFML/Graphics/</path>
+    <filename>CoordinateType_8hpp.html</filename>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>Drawable.hpp</name>
+    <path>include/SFML/Graphics/</path>
+    <filename>Drawable_8hpp.html</filename>
+    <includes id="Graphics_2Export_8hpp" name="Graphics/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Export.hpp</includes>
+    <class kind="class">sf::Drawable</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>Font.hpp</name>
+    <path>include/SFML/Graphics/</path>
+    <filename>Font_8hpp.html</filename>
+    <includes id="Graphics_2Export_8hpp" name="Graphics/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Export.hpp</includes>
+    <includes id="Glyph_8hpp" name="Glyph.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Glyph.hpp</includes>
+    <includes id="Rect_8hpp" name="Rect.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Rect.hpp</includes>
+    <includes id="Texture_8hpp" name="Texture.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Texture.hpp</includes>
+    <includes id="Vector2_8hpp" name="Vector2.hpp" local="no" import="no" module="no" objc="no">SFML/System/Vector2.hpp</includes>
+    <class kind="class">sf::Font</class>
+    <class kind="struct">sf::Font::Info</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>Glsl.hpp</name>
+    <path>include/SFML/Graphics/</path>
+    <filename>Glsl_8hpp.html</filename>
+    <includes id="Vector2_8hpp" name="Vector2.hpp" local="no" import="no" module="no" objc="no">SFML/System/Vector2.hpp</includes>
+    <includes id="Vector3_8hpp" name="Vector3.hpp" local="no" import="no" module="no" objc="no">SFML/System/Vector3.hpp</includes>
+    <namespace>sf</namespace>
+    <namespace>sf::Glsl</namespace>
+  </compound>
+  <compound kind="file">
+    <name>Glyph.hpp</name>
+    <path>include/SFML/Graphics/</path>
+    <filename>Glyph_8hpp.html</filename>
+    <includes id="Graphics_2Export_8hpp" name="Graphics/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Export.hpp</includes>
+    <includes id="Rect_8hpp" name="Rect.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Rect.hpp</includes>
+    <class kind="struct">sf::Glyph</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>Image.hpp</name>
+    <path>include/SFML/Graphics/</path>
+    <filename>Image_8hpp.html</filename>
+    <includes id="Graphics_2Export_8hpp" name="Graphics/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Export.hpp</includes>
+    <includes id="Color_8hpp" name="Color.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Color.hpp</includes>
+    <includes id="Rect_8hpp" name="Rect.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Rect.hpp</includes>
+    <includes id="Vector2_8hpp" name="Vector2.hpp" local="no" import="no" module="no" objc="no">SFML/System/Vector2.hpp</includes>
+    <class kind="class">sf::Image</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>PrimitiveType.hpp</name>
+    <path>include/SFML/Graphics/</path>
+    <filename>PrimitiveType_8hpp.html</filename>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>Rect.hpp</name>
+    <path>include/SFML/Graphics/</path>
+    <filename>Rect_8hpp.html</filename>
+    <includes id="Vector2_8hpp" name="Vector2.hpp" local="no" import="no" module="no" objc="no">SFML/System/Vector2.hpp</includes>
+    <class kind="class">sf::Rect</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>RectangleShape.hpp</name>
+    <path>include/SFML/Graphics/</path>
+    <filename>RectangleShape_8hpp.html</filename>
+    <includes id="Graphics_2Export_8hpp" name="Graphics/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Export.hpp</includes>
+    <includes id="Shape_8hpp" name="Shape.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Shape.hpp</includes>
+    <includes id="Vector2_8hpp" name="Vector2.hpp" local="no" import="no" module="no" objc="no">SFML/System/Vector2.hpp</includes>
+    <class kind="class">sf::RectangleShape</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>RenderStates.hpp</name>
+    <path>include/SFML/Graphics/</path>
+    <filename>RenderStates_8hpp.html</filename>
+    <includes id="Graphics_2Export_8hpp" name="Graphics/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Export.hpp</includes>
+    <includes id="BlendMode_8hpp" name="BlendMode.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/BlendMode.hpp</includes>
+    <includes id="CoordinateType_8hpp" name="CoordinateType.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/CoordinateType.hpp</includes>
+    <includes id="StencilMode_8hpp" name="StencilMode.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/StencilMode.hpp</includes>
+    <includes id="Transform_8hpp" name="Transform.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Transform.hpp</includes>
+    <class kind="class">sf::RenderStates</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>RenderTarget.hpp</name>
+    <path>include/SFML/Graphics/</path>
+    <filename>RenderTarget_8hpp.html</filename>
+    <includes id="Graphics_2Export_8hpp" name="Graphics/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Export.hpp</includes>
+    <includes id="BlendMode_8hpp" name="BlendMode.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/BlendMode.hpp</includes>
+    <includes id="Color_8hpp" name="Color.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Color.hpp</includes>
+    <includes id="CoordinateType_8hpp" name="CoordinateType.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/CoordinateType.hpp</includes>
+    <includes id="PrimitiveType_8hpp" name="PrimitiveType.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/PrimitiveType.hpp</includes>
+    <includes id="Rect_8hpp" name="Rect.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Rect.hpp</includes>
+    <includes id="RenderStates_8hpp" name="RenderStates.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/RenderStates.hpp</includes>
+    <includes id="StencilMode_8hpp" name="StencilMode.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/StencilMode.hpp</includes>
+    <includes id="Vertex_8hpp" name="Vertex.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Vertex.hpp</includes>
+    <includes id="View_8hpp" name="View.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/View.hpp</includes>
+    <includes id="Vector2_8hpp" name="Vector2.hpp" local="no" import="no" module="no" objc="no">SFML/System/Vector2.hpp</includes>
+    <class kind="class">sf::RenderTarget</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>RenderTexture.hpp</name>
+    <path>include/SFML/Graphics/</path>
+    <filename>RenderTexture_8hpp.html</filename>
+    <includes id="Graphics_2Export_8hpp" name="Graphics/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Export.hpp</includes>
+    <includes id="RenderTarget_8hpp" name="RenderTarget.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/RenderTarget.hpp</includes>
+    <includes id="Texture_8hpp" name="Texture.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Texture.hpp</includes>
+    <includes id="ContextSettings_8hpp" name="ContextSettings.hpp" local="no" import="no" module="no" objc="no">SFML/Window/ContextSettings.hpp</includes>
+    <includes id="Vector2_8hpp" name="Vector2.hpp" local="no" import="no" module="no" objc="no">SFML/System/Vector2.hpp</includes>
+    <class kind="class">sf::RenderTexture</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>RenderWindow.hpp</name>
+    <path>include/SFML/Graphics/</path>
+    <filename>RenderWindow_8hpp.html</filename>
+    <includes id="Graphics_2Export_8hpp" name="Graphics/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Export.hpp</includes>
+    <includes id="RenderTarget_8hpp" name="RenderTarget.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/RenderTarget.hpp</includes>
+    <includes id="ContextSettings_8hpp" name="ContextSettings.hpp" local="no" import="no" module="no" objc="no">SFML/Window/ContextSettings.hpp</includes>
+    <includes id="VideoMode_8hpp" name="VideoMode.hpp" local="no" import="no" module="no" objc="no">SFML/Window/VideoMode.hpp</includes>
+    <includes id="Window_2Window_8hpp" name="Window/Window.hpp" local="no" import="no" module="no" objc="no">SFML/Window/Window.hpp</includes>
+    <includes id="WindowEnums_8hpp" name="WindowEnums.hpp" local="no" import="no" module="no" objc="no">SFML/Window/WindowEnums.hpp</includes>
+    <includes id="WindowHandle_8hpp" name="WindowHandle.hpp" local="no" import="no" module="no" objc="no">SFML/Window/WindowHandle.hpp</includes>
+    <includes id="Vector2_8hpp" name="Vector2.hpp" local="no" import="no" module="no" objc="no">SFML/System/Vector2.hpp</includes>
+    <class kind="class">sf::RenderWindow</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>Shader.hpp</name>
+    <path>include/SFML/Graphics/</path>
+    <filename>Shader_8hpp.html</filename>
+    <includes id="Graphics_2Export_8hpp" name="Graphics/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Export.hpp</includes>
+    <includes id="Glsl_8hpp" name="Glsl.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Glsl.hpp</includes>
+    <includes id="GlResource_8hpp" name="GlResource.hpp" local="no" import="no" module="no" objc="no">SFML/Window/GlResource.hpp</includes>
+    <class kind="class">sf::Shader</class>
+    <class kind="struct">sf::Shader::CurrentTextureType</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>Shape.hpp</name>
+    <path>include/SFML/Graphics/</path>
+    <filename>Shape_8hpp.html</filename>
+    <includes id="Graphics_2Export_8hpp" name="Graphics/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Export.hpp</includes>
+    <includes id="Color_8hpp" name="Color.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Color.hpp</includes>
+    <includes id="Drawable_8hpp" name="Drawable.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Drawable.hpp</includes>
+    <includes id="PrimitiveType_8hpp" name="PrimitiveType.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/PrimitiveType.hpp</includes>
+    <includes id="Rect_8hpp" name="Rect.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Rect.hpp</includes>
+    <includes id="RenderStates_8hpp" name="RenderStates.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/RenderStates.hpp</includes>
+    <includes id="Transformable_8hpp" name="Transformable.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Transformable.hpp</includes>
+    <includes id="VertexArray_8hpp" name="VertexArray.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/VertexArray.hpp</includes>
+    <includes id="Vector2_8hpp" name="Vector2.hpp" local="no" import="no" module="no" objc="no">SFML/System/Vector2.hpp</includes>
+    <class kind="class">sf::Shape</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>Sprite.hpp</name>
+    <path>include/SFML/Graphics/</path>
+    <filename>Sprite_8hpp.html</filename>
+    <includes id="Graphics_2Export_8hpp" name="Graphics/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Export.hpp</includes>
+    <includes id="Drawable_8hpp" name="Drawable.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Drawable.hpp</includes>
+    <includes id="Rect_8hpp" name="Rect.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Rect.hpp</includes>
+    <includes id="RenderStates_8hpp" name="RenderStates.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/RenderStates.hpp</includes>
+    <includes id="Transformable_8hpp" name="Transformable.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Transformable.hpp</includes>
+    <includes id="Vertex_8hpp" name="Vertex.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Vertex.hpp</includes>
+    <class kind="class">sf::Sprite</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>StencilMode.hpp</name>
+    <path>include/SFML/Graphics/</path>
+    <filename>StencilMode_8hpp.html</filename>
+    <includes id="Graphics_2Export_8hpp" name="Graphics/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Export.hpp</includes>
+    <class kind="struct">sf::StencilValue</class>
+    <class kind="class">sf::StencilMode</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>Text.hpp</name>
+    <path>include/SFML/Graphics/</path>
+    <filename>Text_8hpp.html</filename>
+    <includes id="Graphics_2Export_8hpp" name="Graphics/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Export.hpp</includes>
+    <includes id="Color_8hpp" name="Color.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Color.hpp</includes>
+    <includes id="Drawable_8hpp" name="Drawable.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Drawable.hpp</includes>
+    <includes id="PrimitiveType_8hpp" name="PrimitiveType.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/PrimitiveType.hpp</includes>
+    <includes id="Rect_8hpp" name="Rect.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Rect.hpp</includes>
+    <includes id="RenderStates_8hpp" name="RenderStates.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/RenderStates.hpp</includes>
+    <includes id="Transformable_8hpp" name="Transformable.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Transformable.hpp</includes>
+    <includes id="VertexArray_8hpp" name="VertexArray.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/VertexArray.hpp</includes>
+    <includes id="String_8hpp" name="String.hpp" local="no" import="no" module="no" objc="no">SFML/System/String.hpp</includes>
+    <includes id="Vector2_8hpp" name="Vector2.hpp" local="no" import="no" module="no" objc="no">SFML/System/Vector2.hpp</includes>
+    <class kind="class">sf::Text</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>Texture.hpp</name>
+    <path>include/SFML/Graphics/</path>
+    <filename>Texture_8hpp.html</filename>
+    <includes id="Graphics_2Export_8hpp" name="Graphics/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Export.hpp</includes>
+    <includes id="CoordinateType_8hpp" name="CoordinateType.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/CoordinateType.hpp</includes>
+    <includes id="Rect_8hpp" name="Rect.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Rect.hpp</includes>
+    <includes id="GlResource_8hpp" name="GlResource.hpp" local="no" import="no" module="no" objc="no">SFML/Window/GlResource.hpp</includes>
+    <includes id="Vector2_8hpp" name="Vector2.hpp" local="no" import="no" module="no" objc="no">SFML/System/Vector2.hpp</includes>
+    <class kind="class">sf::Texture</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>Transform.hpp</name>
+    <path>include/SFML/Graphics/</path>
+    <filename>Transform_8hpp.html</filename>
+    <includes id="Graphics_2Export_8hpp" name="Graphics/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Export.hpp</includes>
+    <includes id="Rect_8hpp" name="Rect.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Rect.hpp</includes>
+    <includes id="Vector2_8hpp" name="Vector2.hpp" local="no" import="no" module="no" objc="no">SFML/System/Vector2.hpp</includes>
+    <class kind="class">sf::Transform</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>Transformable.hpp</name>
+    <path>include/SFML/Graphics/</path>
+    <filename>Transformable_8hpp.html</filename>
+    <includes id="Graphics_2Export_8hpp" name="Graphics/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Export.hpp</includes>
+    <includes id="Transform_8hpp" name="Transform.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Transform.hpp</includes>
+    <includes id="Angle_8hpp" name="Angle.hpp" local="no" import="no" module="no" objc="no">SFML/System/Angle.hpp</includes>
+    <class kind="class">sf::Transformable</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>Vertex.hpp</name>
+    <path>include/SFML/Graphics/</path>
+    <filename>Vertex_8hpp.html</filename>
+    <includes id="Color_8hpp" name="Color.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Color.hpp</includes>
+    <includes id="Vector2_8hpp" name="Vector2.hpp" local="no" import="no" module="no" objc="no">SFML/System/Vector2.hpp</includes>
+    <class kind="struct">sf::Vertex</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>VertexArray.hpp</name>
+    <path>include/SFML/Graphics/</path>
+    <filename>VertexArray_8hpp.html</filename>
+    <includes id="Graphics_2Export_8hpp" name="Graphics/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Export.hpp</includes>
+    <includes id="Drawable_8hpp" name="Drawable.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Drawable.hpp</includes>
+    <includes id="PrimitiveType_8hpp" name="PrimitiveType.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/PrimitiveType.hpp</includes>
+    <includes id="Rect_8hpp" name="Rect.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Rect.hpp</includes>
+    <includes id="RenderStates_8hpp" name="RenderStates.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/RenderStates.hpp</includes>
+    <includes id="Vertex_8hpp" name="Vertex.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Vertex.hpp</includes>
+    <class kind="class">sf::VertexArray</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>VertexBuffer.hpp</name>
+    <path>include/SFML/Graphics/</path>
+    <filename>VertexBuffer_8hpp.html</filename>
+    <includes id="Graphics_2Export_8hpp" name="Graphics/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Export.hpp</includes>
+    <includes id="Drawable_8hpp" name="Drawable.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Drawable.hpp</includes>
+    <includes id="PrimitiveType_8hpp" name="PrimitiveType.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/PrimitiveType.hpp</includes>
+    <includes id="RenderStates_8hpp" name="RenderStates.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/RenderStates.hpp</includes>
+    <includes id="GlResource_8hpp" name="GlResource.hpp" local="no" import="no" module="no" objc="no">SFML/Window/GlResource.hpp</includes>
+    <class kind="class">sf::VertexBuffer</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>View.hpp</name>
+    <path>include/SFML/Graphics/</path>
+    <filename>View_8hpp.html</filename>
+    <includes id="Graphics_2Export_8hpp" name="Graphics/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Export.hpp</includes>
+    <includes id="Rect_8hpp" name="Rect.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Rect.hpp</includes>
+    <includes id="Transform_8hpp" name="Transform.hpp" local="no" import="no" module="no" objc="no">SFML/Graphics/Transform.hpp</includes>
+    <includes id="Angle_8hpp" name="Angle.hpp" local="no" import="no" module="no" objc="no">SFML/System/Angle.hpp</includes>
+    <includes id="Vector2_8hpp" name="Vector2.hpp" local="no" import="no" module="no" objc="no">SFML/System/Vector2.hpp</includes>
+    <class kind="class">sf::View</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>Main.hpp</name>
+    <path>include/SFML/</path>
+    <filename>Main_8hpp.html</filename>
+    <includes id="Config_8hpp" name="Config.hpp" local="no" import="no" module="no" objc="no">SFML/Config.hpp</includes>
+  </compound>
+  <compound kind="file">
+    <name>Network.hpp</name>
+    <path>include/SFML/</path>
+    <filename>Network_8hpp.html</filename>
+    <includes id="Ftp_8hpp" name="Ftp.hpp" local="no" import="no" module="no" objc="no">SFML/Network/Ftp.hpp</includes>
+    <includes id="Http_8hpp" name="Http.hpp" local="no" import="no" module="no" objc="no">SFML/Network/Http.hpp</includes>
+    <includes id="IpAddress_8hpp" name="IpAddress.hpp" local="no" import="no" module="no" objc="no">SFML/Network/IpAddress.hpp</includes>
+    <includes id="Packet_8hpp" name="Packet.hpp" local="no" import="no" module="no" objc="no">SFML/Network/Packet.hpp</includes>
+    <includes id="Socket_8hpp" name="Socket.hpp" local="no" import="no" module="no" objc="no">SFML/Network/Socket.hpp</includes>
+    <includes id="SocketHandle_8hpp" name="SocketHandle.hpp" local="no" import="no" module="no" objc="no">SFML/Network/SocketHandle.hpp</includes>
+    <includes id="SocketSelector_8hpp" name="SocketSelector.hpp" local="no" import="no" module="no" objc="no">SFML/Network/SocketSelector.hpp</includes>
+    <includes id="TcpListener_8hpp" name="TcpListener.hpp" local="no" import="no" module="no" objc="no">SFML/Network/TcpListener.hpp</includes>
+    <includes id="TcpSocket_8hpp" name="TcpSocket.hpp" local="no" import="no" module="no" objc="no">SFML/Network/TcpSocket.hpp</includes>
+    <includes id="UdpSocket_8hpp" name="UdpSocket.hpp" local="no" import="no" module="no" objc="no">SFML/Network/UdpSocket.hpp</includes>
+    <includes id="System_8hpp" name="System.hpp" local="no" import="no" module="no" objc="no">SFML/System.hpp</includes>
+  </compound>
+  <compound kind="file">
+    <name>Ftp.hpp</name>
+    <path>include/SFML/Network/</path>
+    <filename>Ftp_8hpp.html</filename>
+    <includes id="Network_2Export_8hpp" name="Network/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Network/Export.hpp</includes>
+    <includes id="TcpSocket_8hpp" name="TcpSocket.hpp" local="no" import="no" module="no" objc="no">SFML/Network/TcpSocket.hpp</includes>
+    <includes id="Time_8hpp" name="Time.hpp" local="no" import="no" module="no" objc="no">SFML/System/Time.hpp</includes>
+    <class kind="class">sf::Ftp</class>
+    <class kind="class">sf::Ftp::Response</class>
+    <class kind="class">sf::Ftp::DirectoryResponse</class>
+    <class kind="class">sf::Ftp::ListingResponse</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>Http.hpp</name>
+    <path>include/SFML/Network/</path>
+    <filename>Http_8hpp.html</filename>
+    <includes id="Network_2Export_8hpp" name="Network/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Network/Export.hpp</includes>
+    <includes id="IpAddress_8hpp" name="IpAddress.hpp" local="no" import="no" module="no" objc="no">SFML/Network/IpAddress.hpp</includes>
+    <includes id="TcpSocket_8hpp" name="TcpSocket.hpp" local="no" import="no" module="no" objc="no">SFML/Network/TcpSocket.hpp</includes>
+    <includes id="Time_8hpp" name="Time.hpp" local="no" import="no" module="no" objc="no">SFML/System/Time.hpp</includes>
+    <class kind="class">sf::Http</class>
+    <class kind="class">sf::Http::Request</class>
+    <class kind="class">sf::Http::Response</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>IpAddress.hpp</name>
+    <path>include/SFML/Network/</path>
+    <filename>IpAddress_8hpp.html</filename>
+    <includes id="Network_2Export_8hpp" name="Network/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Network/Export.hpp</includes>
+    <includes id="Time_8hpp" name="Time.hpp" local="no" import="no" module="no" objc="no">SFML/System/Time.hpp</includes>
+    <class kind="class">sf::IpAddress</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>Packet.hpp</name>
+    <path>include/SFML/Network/</path>
+    <filename>Packet_8hpp.html</filename>
+    <includes id="Network_2Export_8hpp" name="Network/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Network/Export.hpp</includes>
+    <class kind="class">sf::Packet</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>Socket.hpp</name>
+    <path>include/SFML/Network/</path>
+    <filename>Socket_8hpp.html</filename>
+    <includes id="Network_2Export_8hpp" name="Network/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Network/Export.hpp</includes>
+    <includes id="SocketHandle_8hpp" name="SocketHandle.hpp" local="no" import="no" module="no" objc="no">SFML/Network/SocketHandle.hpp</includes>
+    <class kind="class">sf::Socket</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>SocketHandle.hpp</name>
+    <path>include/SFML/Network/</path>
+    <filename>SocketHandle_8hpp.html</filename>
+    <includes id="Config_8hpp" name="Config.hpp" local="no" import="no" module="no" objc="no">SFML/Config.hpp</includes>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>SocketSelector.hpp</name>
+    <path>include/SFML/Network/</path>
+    <filename>SocketSelector_8hpp.html</filename>
+    <includes id="Network_2Export_8hpp" name="Network/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Network/Export.hpp</includes>
+    <includes id="Time_8hpp" name="Time.hpp" local="no" import="no" module="no" objc="no">SFML/System/Time.hpp</includes>
+    <class kind="class">sf::SocketSelector</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>TcpListener.hpp</name>
+    <path>include/SFML/Network/</path>
+    <filename>TcpListener_8hpp.html</filename>
+    <includes id="Network_2Export_8hpp" name="Network/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Network/Export.hpp</includes>
+    <includes id="IpAddress_8hpp" name="IpAddress.hpp" local="no" import="no" module="no" objc="no">SFML/Network/IpAddress.hpp</includes>
+    <includes id="Socket_8hpp" name="Socket.hpp" local="no" import="no" module="no" objc="no">SFML/Network/Socket.hpp</includes>
+    <class kind="class">sf::TcpListener</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>TcpSocket.hpp</name>
+    <path>include/SFML/Network/</path>
+    <filename>TcpSocket_8hpp.html</filename>
+    <includes id="Network_2Export_8hpp" name="Network/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Network/Export.hpp</includes>
+    <includes id="Socket_8hpp" name="Socket.hpp" local="no" import="no" module="no" objc="no">SFML/Network/Socket.hpp</includes>
+    <includes id="Time_8hpp" name="Time.hpp" local="no" import="no" module="no" objc="no">SFML/System/Time.hpp</includes>
+    <class kind="class">sf::TcpSocket</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>UdpSocket.hpp</name>
+    <path>include/SFML/Network/</path>
+    <filename>UdpSocket_8hpp.html</filename>
+    <includes id="Network_2Export_8hpp" name="Network/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Network/Export.hpp</includes>
+    <includes id="IpAddress_8hpp" name="IpAddress.hpp" local="no" import="no" module="no" objc="no">SFML/Network/IpAddress.hpp</includes>
+    <includes id="Socket_8hpp" name="Socket.hpp" local="no" import="no" module="no" objc="no">SFML/Network/Socket.hpp</includes>
+    <class kind="class">sf::UdpSocket</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>OpenGL.hpp</name>
+    <path>include/SFML/</path>
+    <filename>OpenGL_8hpp.html</filename>
+    <includes id="Config_8hpp" name="Config.hpp" local="no" import="no" module="no" objc="no">SFML/Config.hpp</includes>
+  </compound>
+  <compound kind="file">
+    <name>System.hpp</name>
+    <path>include/SFML/</path>
+    <filename>System_8hpp.html</filename>
+    <includes id="Config_8hpp" name="Config.hpp" local="no" import="no" module="no" objc="no">SFML/Config.hpp</includes>
+    <includes id="Angle_8hpp" name="Angle.hpp" local="no" import="no" module="no" objc="no">SFML/System/Angle.hpp</includes>
+    <includes id="Clock_8hpp" name="Clock.hpp" local="no" import="no" module="no" objc="no">SFML/System/Clock.hpp</includes>
+    <includes id="Err_8hpp" name="Err.hpp" local="no" import="no" module="no" objc="no">SFML/System/Err.hpp</includes>
+    <includes id="Exception_8hpp" name="Exception.hpp" local="no" import="no" module="no" objc="no">SFML/System/Exception.hpp</includes>
+    <includes id="FileInputStream_8hpp" name="FileInputStream.hpp" local="no" import="no" module="no" objc="no">SFML/System/FileInputStream.hpp</includes>
+    <includes id="InputStream_8hpp" name="InputStream.hpp" local="no" import="no" module="no" objc="no">SFML/System/InputStream.hpp</includes>
+    <includes id="MemoryInputStream_8hpp" name="MemoryInputStream.hpp" local="no" import="no" module="no" objc="no">SFML/System/MemoryInputStream.hpp</includes>
+    <includes id="Sleep_8hpp" name="Sleep.hpp" local="no" import="no" module="no" objc="no">SFML/System/Sleep.hpp</includes>
+    <includes id="String_8hpp" name="String.hpp" local="no" import="no" module="no" objc="no">SFML/System/String.hpp</includes>
+    <includes id="Time_8hpp" name="Time.hpp" local="no" import="no" module="no" objc="no">SFML/System/Time.hpp</includes>
+    <includes id="Utf_8hpp" name="Utf.hpp" local="no" import="no" module="no" objc="no">SFML/System/Utf.hpp</includes>
+    <includes id="Vector2_8hpp" name="Vector2.hpp" local="no" import="no" module="no" objc="no">SFML/System/Vector2.hpp</includes>
+    <includes id="Vector3_8hpp" name="Vector3.hpp" local="no" import="no" module="no" objc="no">SFML/System/Vector3.hpp</includes>
+  </compound>
+  <compound kind="file">
+    <name>Angle.hpp</name>
+    <path>include/SFML/System/</path>
+    <filename>Angle_8hpp.html</filename>
+    <class kind="class">sf::Angle</class>
+    <namespace>sf</namespace>
+    <namespace>sf::Literals</namespace>
+  </compound>
+  <compound kind="file">
+    <name>Clock.hpp</name>
+    <path>include/SFML/System/</path>
+    <filename>Clock_8hpp.html</filename>
+    <includes id="System_2Export_8hpp" name="System/Export.hpp" local="no" import="no" module="no" objc="no">SFML/System/Export.hpp</includes>
+    <class kind="class">sf::Clock</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>Err.hpp</name>
+    <path>include/SFML/System/</path>
+    <filename>Err_8hpp.html</filename>
+    <includes id="System_2Export_8hpp" name="System/Export.hpp" local="no" import="no" module="no" objc="no">SFML/System/Export.hpp</includes>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>Exception.hpp</name>
+    <path>include/SFML/System/</path>
+    <filename>Exception_8hpp.html</filename>
+    <includes id="System_2Export_8hpp" name="System/Export.hpp" local="no" import="no" module="no" objc="no">SFML/System/Export.hpp</includes>
+    <class kind="class">sf::Exception</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>FileInputStream.hpp</name>
+    <path>include/SFML/System/</path>
+    <filename>FileInputStream_8hpp.html</filename>
+    <includes id="Config_8hpp" name="Config.hpp" local="no" import="no" module="no" objc="no">SFML/Config.hpp</includes>
+    <includes id="System_2Export_8hpp" name="System/Export.hpp" local="no" import="no" module="no" objc="no">SFML/System/Export.hpp</includes>
+    <includes id="InputStream_8hpp" name="InputStream.hpp" local="no" import="no" module="no" objc="no">SFML/System/InputStream.hpp</includes>
+    <class kind="class">sf::FileInputStream</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>InputStream.hpp</name>
+    <path>include/SFML/System/</path>
+    <filename>InputStream_8hpp.html</filename>
+    <includes id="Config_8hpp" name="Config.hpp" local="no" import="no" module="no" objc="no">SFML/Config.hpp</includes>
+    <includes id="System_2Export_8hpp" name="System/Export.hpp" local="no" import="no" module="no" objc="no">SFML/System/Export.hpp</includes>
+    <class kind="class">sf::InputStream</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>MemoryInputStream.hpp</name>
+    <path>include/SFML/System/</path>
+    <filename>MemoryInputStream_8hpp.html</filename>
+    <includes id="Config_8hpp" name="Config.hpp" local="no" import="no" module="no" objc="no">SFML/Config.hpp</includes>
+    <includes id="System_2Export_8hpp" name="System/Export.hpp" local="no" import="no" module="no" objc="no">SFML/System/Export.hpp</includes>
+    <includes id="InputStream_8hpp" name="InputStream.hpp" local="no" import="no" module="no" objc="no">SFML/System/InputStream.hpp</includes>
+    <class kind="class">sf::MemoryInputStream</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>NativeActivity.hpp</name>
+    <path>include/SFML/System/</path>
+    <filename>NativeActivity_8hpp.html</filename>
+    <includes id="System_2Export_8hpp" name="System/Export.hpp" local="no" import="no" module="no" objc="no">SFML/System/Export.hpp</includes>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>Sleep.hpp</name>
+    <path>include/SFML/System/</path>
+    <filename>Sleep_8hpp.html</filename>
+    <includes id="System_2Export_8hpp" name="System/Export.hpp" local="no" import="no" module="no" objc="no">SFML/System/Export.hpp</includes>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>String.hpp</name>
+    <path>include/SFML/System/</path>
+    <filename>String_8hpp.html</filename>
+    <includes id="System_2Export_8hpp" name="System/Export.hpp" local="no" import="no" module="no" objc="no">SFML/System/Export.hpp</includes>
+    <includes id="Utf_8hpp" name="Utf.hpp" local="no" import="no" module="no" objc="no">SFML/System/Utf.hpp</includes>
+    <class kind="struct">sf::U8StringCharTraits</class>
+    <class kind="class">sf::String</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>SuspendAwareClock.hpp</name>
+    <path>include/SFML/System/</path>
+    <filename>SuspendAwareClock_8hpp.html</filename>
+    <includes id="System_2Export_8hpp" name="System/Export.hpp" local="no" import="no" module="no" objc="no">SFML/System/Export.hpp</includes>
+    <class kind="struct">sf::SuspendAwareClock</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>Time.hpp</name>
+    <path>include/SFML/System/</path>
+    <filename>Time_8hpp.html</filename>
+    <class kind="class">sf::Time</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>Utf.hpp</name>
+    <path>include/SFML/System/</path>
+    <filename>Utf_8hpp.html</filename>
+    <includes id="Config_8hpp" name="Config.hpp" local="no" import="no" module="no" objc="no">SFML/Config.hpp</includes>
+    <class kind="class">sf::Utf&lt; 8 &gt;</class>
+    <class kind="class">sf::Utf&lt; 16 &gt;</class>
+    <class kind="class">sf::Utf&lt; 32 &gt;</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>Vector2.hpp</name>
+    <path>include/SFML/System/</path>
+    <filename>Vector2_8hpp.html</filename>
+    <includes id="System_2Export_8hpp" name="System/Export.hpp" local="no" import="no" module="no" objc="no">SFML/System/Export.hpp</includes>
+    <includes id="Angle_8hpp" name="Angle.hpp" local="no" import="no" module="no" objc="no">SFML/System/Angle.hpp</includes>
+    <class kind="class">sf::Vector2</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>Vector3.hpp</name>
+    <path>include/SFML/System/</path>
+    <filename>Vector3_8hpp.html</filename>
+    <includes id="System_2Export_8hpp" name="System/Export.hpp" local="no" import="no" module="no" objc="no">SFML/System/Export.hpp</includes>
+    <class kind="class">sf::Vector3</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>Clipboard.hpp</name>
+    <path>include/SFML/Window/</path>
+    <filename>Clipboard_8hpp.html</filename>
+    <includes id="Window_2Export_8hpp" name="Window/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Window/Export.hpp</includes>
+    <namespace>sf</namespace>
+    <namespace>sf::Clipboard</namespace>
+  </compound>
+  <compound kind="file">
+    <name>Context.hpp</name>
+    <path>include/SFML/Window/</path>
+    <filename>Context_8hpp.html</filename>
+    <includes id="Window_2Export_8hpp" name="Window/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Window/Export.hpp</includes>
+    <includes id="GlResource_8hpp" name="GlResource.hpp" local="no" import="no" module="no" objc="no">SFML/Window/GlResource.hpp</includes>
+    <includes id="Vector2_8hpp" name="Vector2.hpp" local="no" import="no" module="no" objc="no">SFML/System/Vector2.hpp</includes>
+    <class kind="class">sf::Context</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>ContextSettings.hpp</name>
+    <path>include/SFML/Window/</path>
+    <filename>ContextSettings_8hpp.html</filename>
+    <includes id="Config_8hpp" name="Config.hpp" local="no" import="no" module="no" objc="no">SFML/Config.hpp</includes>
+    <class kind="class">sf::ContextSettings</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>Cursor.hpp</name>
+    <path>include/SFML/Window/</path>
+    <filename>Cursor_8hpp.html</filename>
+    <includes id="Window_2Export_8hpp" name="Window/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Window/Export.hpp</includes>
+    <includes id="Vector2_8hpp" name="Vector2.hpp" local="no" import="no" module="no" objc="no">SFML/System/Vector2.hpp</includes>
+    <class kind="class">sf::Cursor</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>Event.hpp</name>
+    <path>include/SFML/Window/</path>
+    <filename>Event_8hpp.html</filename>
+    <includes id="Joystick_8hpp" name="Joystick.hpp" local="no" import="no" module="no" objc="no">SFML/Window/Joystick.hpp</includes>
+    <includes id="Keyboard_8hpp" name="Keyboard.hpp" local="no" import="no" module="no" objc="no">SFML/Window/Keyboard.hpp</includes>
+    <includes id="Mouse_8hpp" name="Mouse.hpp" local="no" import="no" module="no" objc="no">SFML/Window/Mouse.hpp</includes>
+    <includes id="Sensor_8hpp" name="Sensor.hpp" local="no" import="no" module="no" objc="no">SFML/Window/Sensor.hpp</includes>
+    <includes id="Vector2_8hpp" name="Vector2.hpp" local="no" import="no" module="no" objc="no">SFML/System/Vector2.hpp</includes>
+    <class kind="class">sf::Event</class>
+    <class kind="struct">sf::Event::Closed</class>
+    <class kind="struct">sf::Event::Resized</class>
+    <class kind="struct">sf::Event::FocusLost</class>
+    <class kind="struct">sf::Event::FocusGained</class>
+    <class kind="struct">sf::Event::TextEntered</class>
+    <class kind="struct">sf::Event::KeyPressed</class>
+    <class kind="struct">sf::Event::KeyReleased</class>
+    <class kind="struct">sf::Event::MouseWheelScrolled</class>
+    <class kind="struct">sf::Event::MouseButtonPressed</class>
+    <class kind="struct">sf::Event::MouseButtonReleased</class>
+    <class kind="struct">sf::Event::MouseMoved</class>
+    <class kind="struct">sf::Event::MouseMovedRaw</class>
+    <class kind="struct">sf::Event::MouseEntered</class>
+    <class kind="struct">sf::Event::MouseLeft</class>
+    <class kind="struct">sf::Event::JoystickButtonPressed</class>
+    <class kind="struct">sf::Event::JoystickButtonReleased</class>
+    <class kind="struct">sf::Event::JoystickMoved</class>
+    <class kind="struct">sf::Event::JoystickConnected</class>
+    <class kind="struct">sf::Event::JoystickDisconnected</class>
+    <class kind="struct">sf::Event::TouchBegan</class>
+    <class kind="struct">sf::Event::TouchMoved</class>
+    <class kind="struct">sf::Event::TouchEnded</class>
+    <class kind="struct">sf::Event::SensorChanged</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>GlResource.hpp</name>
+    <path>include/SFML/Window/</path>
+    <filename>GlResource_8hpp.html</filename>
+    <includes id="Window_2Export_8hpp" name="Window/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Window/Export.hpp</includes>
+    <class kind="class">sf::GlResource</class>
+    <class kind="class">sf::GlResource::TransientContextLock</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>Joystick.hpp</name>
+    <path>include/SFML/Window/</path>
+    <filename>Joystick_8hpp.html</filename>
+    <includes id="Window_2Export_8hpp" name="Window/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Window/Export.hpp</includes>
+    <includes id="String_8hpp" name="String.hpp" local="no" import="no" module="no" objc="no">SFML/System/String.hpp</includes>
+    <class kind="struct">sf::Joystick::Identification</class>
+    <namespace>sf</namespace>
+    <namespace>sf::Joystick</namespace>
+  </compound>
+  <compound kind="file">
+    <name>Keyboard.hpp</name>
+    <path>include/SFML/Window/</path>
+    <filename>Keyboard_8hpp.html</filename>
+    <includes id="Window_2Export_8hpp" name="Window/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Window/Export.hpp</includes>
+    <namespace>sf</namespace>
+    <namespace>sf::Keyboard</namespace>
+  </compound>
+  <compound kind="file">
+    <name>Mouse.hpp</name>
+    <path>include/SFML/Window/</path>
+    <filename>Mouse_8hpp.html</filename>
+    <includes id="Window_2Export_8hpp" name="Window/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Window/Export.hpp</includes>
+    <includes id="Vector2_8hpp" name="Vector2.hpp" local="no" import="no" module="no" objc="no">SFML/System/Vector2.hpp</includes>
+    <namespace>sf</namespace>
+    <namespace>sf::Mouse</namespace>
+  </compound>
+  <compound kind="file">
+    <name>Sensor.hpp</name>
+    <path>include/SFML/Window/</path>
+    <filename>Sensor_8hpp.html</filename>
+    <includes id="Window_2Export_8hpp" name="Window/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Window/Export.hpp</includes>
+    <includes id="Vector3_8hpp" name="Vector3.hpp" local="no" import="no" module="no" objc="no">SFML/System/Vector3.hpp</includes>
+    <namespace>sf</namespace>
+    <namespace>sf::Sensor</namespace>
+  </compound>
+  <compound kind="file">
+    <name>Touch.hpp</name>
+    <path>include/SFML/Window/</path>
+    <filename>Touch_8hpp.html</filename>
+    <includes id="Window_2Export_8hpp" name="Window/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Window/Export.hpp</includes>
+    <includes id="Vector2_8hpp" name="Vector2.hpp" local="no" import="no" module="no" objc="no">SFML/System/Vector2.hpp</includes>
+    <namespace>sf</namespace>
+    <namespace>sf::Touch</namespace>
+  </compound>
+  <compound kind="file">
+    <name>VideoMode.hpp</name>
+    <path>include/SFML/Window/</path>
+    <filename>VideoMode_8hpp.html</filename>
+    <includes id="Window_2Export_8hpp" name="Window/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Window/Export.hpp</includes>
+    <includes id="Vector2_8hpp" name="Vector2.hpp" local="no" import="no" module="no" objc="no">SFML/System/Vector2.hpp</includes>
+    <class kind="class">sf::VideoMode</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>Vulkan.hpp</name>
+    <path>include/SFML/Window/</path>
+    <filename>Vulkan_8hpp.html</filename>
+    <includes id="Window_2Export_8hpp" name="Window/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Window/Export.hpp</includes>
+    <namespace>sf</namespace>
+    <namespace>sf::Vulkan</namespace>
+    <member kind="typedef">
+      <type>struct VkInstance_T *</type>
+      <name>VkInstance</name>
+      <anchorfile>Vulkan_8hpp.html</anchorfile>
+      <anchor>a09bfb88ab06300f8c5448e7bc53acd9b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>std::uint64_t</type>
+      <name>VkSurfaceKHR</name>
+      <anchorfile>Vulkan_8hpp.html</anchorfile>
+      <anchor>a103b6ae069efe31b9adef4ce0b6b6273</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>Window.hpp</name>
+    <path>include/SFML/</path>
+    <filename>Window_8hpp.html</filename>
+    <includes id="Clipboard_8hpp" name="Clipboard.hpp" local="no" import="no" module="no" objc="no">SFML/Window/Clipboard.hpp</includes>
+    <includes id="Context_8hpp" name="Context.hpp" local="no" import="no" module="no" objc="no">SFML/Window/Context.hpp</includes>
+    <includes id="ContextSettings_8hpp" name="ContextSettings.hpp" local="no" import="no" module="no" objc="no">SFML/Window/ContextSettings.hpp</includes>
+    <includes id="Cursor_8hpp" name="Cursor.hpp" local="no" import="no" module="no" objc="no">SFML/Window/Cursor.hpp</includes>
+    <includes id="Event_8hpp" name="Event.hpp" local="no" import="no" module="no" objc="no">SFML/Window/Event.hpp</includes>
+    <includes id="Joystick_8hpp" name="Joystick.hpp" local="no" import="no" module="no" objc="no">SFML/Window/Joystick.hpp</includes>
+    <includes id="Keyboard_8hpp" name="Keyboard.hpp" local="no" import="no" module="no" objc="no">SFML/Window/Keyboard.hpp</includes>
+    <includes id="Mouse_8hpp" name="Mouse.hpp" local="no" import="no" module="no" objc="no">SFML/Window/Mouse.hpp</includes>
+    <includes id="Sensor_8hpp" name="Sensor.hpp" local="no" import="no" module="no" objc="no">SFML/Window/Sensor.hpp</includes>
+    <includes id="Touch_8hpp" name="Touch.hpp" local="no" import="no" module="no" objc="no">SFML/Window/Touch.hpp</includes>
+    <includes id="VideoMode_8hpp" name="VideoMode.hpp" local="no" import="no" module="no" objc="no">SFML/Window/VideoMode.hpp</includes>
+    <includes id="Window_2Window_8hpp" name="Window/Window.hpp" local="no" import="no" module="no" objc="no">SFML/Window/Window.hpp</includes>
+    <includes id="WindowEnums_8hpp" name="WindowEnums.hpp" local="no" import="no" module="no" objc="no">SFML/Window/WindowEnums.hpp</includes>
+    <includes id="WindowHandle_8hpp" name="WindowHandle.hpp" local="no" import="no" module="no" objc="no">SFML/Window/WindowHandle.hpp</includes>
+    <includes id="System_8hpp" name="System.hpp" local="no" import="no" module="no" objc="no">SFML/System.hpp</includes>
+  </compound>
+  <compound kind="file">
+    <name>Window/Window.hpp</name>
+    <path>include/SFML/Window/</path>
+    <filename>Window_2Window_8hpp.html</filename>
+    <includes id="ContextSettings_8hpp" name="ContextSettings.hpp" local="no" import="no" module="no" objc="no">SFML/Window/ContextSettings.hpp</includes>
+    <includes id="GlResource_8hpp" name="GlResource.hpp" local="no" import="no" module="no" objc="no">SFML/Window/GlResource.hpp</includes>
+    <includes id="WindowBase_8hpp" name="WindowBase.hpp" local="no" import="no" module="no" objc="no">SFML/Window/WindowBase.hpp</includes>
+    <includes id="WindowEnums_8hpp" name="WindowEnums.hpp" local="no" import="no" module="no" objc="no">SFML/Window/WindowEnums.hpp</includes>
+    <includes id="WindowHandle_8hpp" name="WindowHandle.hpp" local="no" import="no" module="no" objc="no">SFML/Window/WindowHandle.hpp</includes>
+    <includes id="Clock_8hpp" name="Clock.hpp" local="no" import="no" module="no" objc="no">SFML/System/Clock.hpp</includes>
+    <includes id="Time_8hpp" name="Time.hpp" local="no" import="no" module="no" objc="no">SFML/System/Time.hpp</includes>
+    <class kind="class">sf::Window</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>WindowBase.hpp</name>
+    <path>include/SFML/Window/</path>
+    <filename>WindowBase_8hpp.html</filename>
+    <includes id="Window_2Export_8hpp" name="Window/Export.hpp" local="no" import="no" module="no" objc="no">SFML/Window/Export.hpp</includes>
+    <includes id="Vulkan_8hpp" name="Vulkan.hpp" local="no" import="no" module="no" objc="no">SFML/Window/Vulkan.hpp</includes>
+    <includes id="WindowEnums_8hpp" name="WindowEnums.hpp" local="no" import="no" module="no" objc="no">SFML/Window/WindowEnums.hpp</includes>
+    <includes id="WindowHandle_8hpp" name="WindowHandle.hpp" local="no" import="no" module="no" objc="no">SFML/Window/WindowHandle.hpp</includes>
+    <includes id="Time_8hpp" name="Time.hpp" local="no" import="no" module="no" objc="no">SFML/System/Time.hpp</includes>
+    <includes id="Vector2_8hpp" name="Vector2.hpp" local="no" import="no" module="no" objc="no">SFML/System/Vector2.hpp</includes>
+    <class kind="class">sf::WindowBase</class>
+    <namespace>sf</namespace>
+  </compound>
+  <compound kind="file">
+    <name>WindowEnums.hpp</name>
+    <path>include/SFML/Window/</path>
+    <filename>WindowEnums_8hpp.html</filename>
+    <namespace>sf</namespace>
+    <namespace>sf::Style</namespace>
+  </compound>
+  <compound kind="file">
+    <name>WindowHandle.hpp</name>
+    <path>include/SFML/Window/</path>
+    <filename>WindowHandle_8hpp.html</filename>
+    <includes id="Config_8hpp" name="Config.hpp" local="no" import="no" module="no" objc="no">SFML/Config.hpp</includes>
+    <namespace>sf</namespace>
+  </compound>
   <compound kind="class">
-    <name>sf::AlResource</name>
-    <filename>classsf_1_1AlResource.html</filename>
-    <member kind="function" protection="protected">
+    <name>sf::Angle</name>
+    <filename>classsf_1_1Angle.html</filename>
+    <member kind="function">
+      <type>constexpr</type>
+      <name>Angle</name>
+      <anchorfile>classsf_1_1Angle.html</anchorfile>
+      <anchor>a03ff432e9d05a4da4d2d0455a0beb546</anchor>
+      <arglist>()=default</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr float</type>
+      <name>asDegrees</name>
+      <anchorfile>classsf_1_1Angle.html</anchorfile>
+      <anchor>ae724c2b5595a2b4423cdba21ac229c67</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr float</type>
+      <name>asRadians</name>
+      <anchorfile>classsf_1_1Angle.html</anchorfile>
+      <anchor>a2e5b70ac8b02cd528deb652b25d3137f</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr Angle</type>
+      <name>wrapSigned</name>
+      <anchorfile>classsf_1_1Angle.html</anchorfile>
+      <anchor>a71452e36bce7d8d9b380f86ff6d72f72</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr Angle</type>
+      <name>wrapUnsigned</name>
+      <anchorfile>classsf_1_1Angle.html</anchorfile>
+      <anchor>ad83d33d157a5836f406e148dfad66b01</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static const Angle</type>
+      <name>Zero</name>
+      <anchorfile>classsf_1_1Angle.html</anchorfile>
+      <anchor>a13738f6595cccce8ec61b25f510ffbef</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="friend" protection="private">
+      <type>friend constexpr Angle</type>
+      <name>degrees</name>
+      <anchorfile>classsf_1_1Angle.html</anchorfile>
+      <anchor>a97d979192b0069419fec49a8135f137b</anchor>
+      <arglist>(float angle)</arglist>
+    </member>
+    <member kind="friend" protection="private">
+      <type>friend constexpr Angle</type>
+      <name>radians</name>
+      <anchorfile>classsf_1_1Angle.html</anchorfile>
+      <anchor>a8738691f6b62b7fcebf5c7e9b47c4a24</anchor>
+      <arglist>(float angle)</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr bool</type>
+      <name>operator==</name>
+      <anchorfile>classsf_1_1Angle.html</anchorfile>
+      <anchor>add23bc8ee8c4b737b41961bf7176e9b3</anchor>
+      <arglist>(Angle left, Angle right)</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr bool</type>
+      <name>operator!=</name>
+      <anchorfile>classsf_1_1Angle.html</anchorfile>
+      <anchor>ab585ca2f7b544f66e8bce026033e0927</anchor>
+      <arglist>(Angle left, Angle right)</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr bool</type>
+      <name>operator&lt;</name>
+      <anchorfile>classsf_1_1Angle.html</anchorfile>
+      <anchor>ab70b42c856d65494cc659277885be880</anchor>
+      <arglist>(Angle left, Angle right)</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr bool</type>
+      <name>operator&gt;</name>
+      <anchorfile>classsf_1_1Angle.html</anchorfile>
+      <anchor>ab5a377022476a85a4777aa634d2f9a53</anchor>
+      <arglist>(Angle left, Angle right)</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr bool</type>
+      <name>operator&lt;=</name>
+      <anchorfile>classsf_1_1Angle.html</anchorfile>
+      <anchor>a4c18a619d89e6536a8197aedf5f9f6c3</anchor>
+      <arglist>(Angle left, Angle right)</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr bool</type>
+      <name>operator&gt;=</name>
+      <anchorfile>classsf_1_1Angle.html</anchorfile>
+      <anchor>ab1ea955c756682a7b94c1b9416c28d6f</anchor>
+      <arglist>(Angle left, Angle right)</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr Angle</type>
+      <name>operator-</name>
+      <anchorfile>classsf_1_1Angle.html</anchorfile>
+      <anchor>a767d13966f1c7de873187f72563424e1</anchor>
+      <arglist>(Angle right)</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr Angle</type>
+      <name>operator+</name>
+      <anchorfile>classsf_1_1Angle.html</anchorfile>
+      <anchor>ab1ca136284e10037264d86cac130e4d5</anchor>
+      <arglist>(Angle left, Angle right)</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr Angle &amp;</type>
+      <name>operator+=</name>
+      <anchorfile>classsf_1_1Angle.html</anchorfile>
+      <anchor>a434f34a8e4d8cd124c9c569895973c99</anchor>
+      <arglist>(Angle &amp;left, Angle right)</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr Angle</type>
+      <name>operator-</name>
+      <anchorfile>classsf_1_1Angle.html</anchorfile>
+      <anchor>adf370cb38ddd5fcf41040a423d26f3e3</anchor>
+      <arglist>(Angle left, Angle right)</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr Angle &amp;</type>
+      <name>operator-=</name>
+      <anchorfile>classsf_1_1Angle.html</anchorfile>
+      <anchor>a77c4a6309adb952f5f59291fca4a5f78</anchor>
+      <arglist>(Angle &amp;left, Angle right)</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr Angle</type>
+      <name>operator*</name>
+      <anchorfile>classsf_1_1Angle.html</anchorfile>
+      <anchor>a3a8e7e235a2da76ab6f20119b1874ab1</anchor>
+      <arglist>(Angle left, float right)</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr Angle</type>
+      <name>operator*</name>
+      <anchorfile>classsf_1_1Angle.html</anchorfile>
+      <anchor>a5d3036e1cad3e16ffbce9bce6f40e673</anchor>
+      <arglist>(float left, Angle right)</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr Angle &amp;</type>
+      <name>operator*=</name>
+      <anchorfile>classsf_1_1Angle.html</anchorfile>
+      <anchor>a56bff6731e27ed103afb2e98d069b279</anchor>
+      <arglist>(Angle &amp;left, float right)</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr Angle</type>
+      <name>operator/</name>
+      <anchorfile>classsf_1_1Angle.html</anchorfile>
+      <anchor>afc96803bc7280646edafc58dfe2509cb</anchor>
+      <arglist>(Angle left, float right)</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr Angle &amp;</type>
+      <name>operator/=</name>
+      <anchorfile>classsf_1_1Angle.html</anchorfile>
+      <anchor>a9d2271bb2d99d9550830aa7911e4c33b</anchor>
+      <arglist>(Angle &amp;left, float right)</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr float</type>
+      <name>operator/</name>
+      <anchorfile>classsf_1_1Angle.html</anchorfile>
+      <anchor>a88adc72b221ae5bfce0cc5789aade3ae</anchor>
+      <arglist>(Angle left, Angle right)</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr Angle</type>
+      <name>operator%</name>
+      <anchorfile>classsf_1_1Angle.html</anchorfile>
+      <anchor>a3b34fc6b41f09403f5c4d340945b779e</anchor>
+      <arglist>(Angle left, Angle right)</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr Angle &amp;</type>
+      <name>operator%=</name>
+      <anchorfile>classsf_1_1Angle.html</anchorfile>
+      <anchor>af84876d28b91ae3d48d85ed289f22b2f</anchor>
+      <arglist>(Angle &amp;left, Angle right)</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr Angle</type>
+      <name>operator&quot;&quot;_deg</name>
+      <anchorfile>classsf_1_1Angle.html</anchorfile>
+      <anchor>aa7a9f6031e78ae80c13d1c6a0514e30c</anchor>
+      <arglist>(long double angle)</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr Angle</type>
+      <name>operator&quot;&quot;_deg</name>
+      <anchorfile>classsf_1_1Angle.html</anchorfile>
+      <anchor>aa8b7a0df76eb64d8e8708149c4e699fc</anchor>
+      <arglist>(unsigned long long int angle)</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr Angle</type>
+      <name>operator&quot;&quot;_rad</name>
+      <anchorfile>classsf_1_1Angle.html</anchorfile>
+      <anchor>a4050a514756e4ef21aa072dd3320efd4</anchor>
+      <arglist>(long double angle)</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr Angle</type>
+      <name>operator&quot;&quot;_rad</name>
+      <anchorfile>classsf_1_1Angle.html</anchorfile>
+      <anchor>ac38a4807665f259bffe9a91a2aa8ae62</anchor>
+      <arglist>(unsigned long long int angle)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>sf::AudioResource</name>
+    <filename>classsf_1_1AudioResource.html</filename>
+    <member kind="function">
       <type></type>
-      <name>AlResource</name>
-      <anchorfile>classsf_1_1AlResource.html</anchorfile>
-      <anchor>a51b4f3a825c5d68386f8683e3e1053d7</anchor>
-      <arglist>()</arglist>
+      <name>AudioResource</name>
+      <anchorfile>classsf_1_1AudioResource.html</anchorfile>
+      <anchor>a18cd9db0051286196dd97ec12a4e4b48</anchor>
+      <arglist>(const AudioResource &amp;)=default</arglist>
+    </member>
+    <member kind="function">
+      <type>AudioResource &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classsf_1_1AudioResource.html</anchorfile>
+      <anchor>aa1ea5824a8c7a83998e5962790a5512a</anchor>
+      <arglist>(const AudioResource &amp;)=default</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>AudioResource</name>
+      <anchorfile>classsf_1_1AudioResource.html</anchorfile>
+      <anchor>a68d51ea98040c6e756af5970cb0b4ac0</anchor>
+      <arglist>(AudioResource &amp;&amp;) noexcept=default</arglist>
+    </member>
+    <member kind="function">
+      <type>AudioResource &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classsf_1_1AudioResource.html</anchorfile>
+      <anchor>a3b034852fc3be42497d04f69ebad328c</anchor>
+      <arglist>(AudioResource &amp;&amp;) noexcept=default</arglist>
     </member>
     <member kind="function" protection="protected">
       <type></type>
-      <name>~AlResource</name>
-      <anchorfile>classsf_1_1AlResource.html</anchorfile>
-      <anchor>a74ad78198cddcb6e5d847177364049db</anchor>
+      <name>AudioResource</name>
+      <anchorfile>classsf_1_1AudioResource.html</anchorfile>
+      <anchor>acdff57800064eb0d6ca5ce1773182705</anchor>
       <arglist>()</arglist>
     </member>
   </compound>
@@ -39,66 +1412,16 @@
       <anchorfile>structsf_1_1BlendMode.html</anchorfile>
       <anchor>afb9852caf356b53bb0de460c58a9ebbb</anchor>
       <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Zero</name>
-      <anchorfile>structsf_1_1BlendMode.html</anchorfile>
-      <anchor>afb9852caf356b53bb0de460c58a9ebbbafda2d66c3c3da15cd3b42338fbf6d2ba</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>One</name>
-      <anchorfile>structsf_1_1BlendMode.html</anchorfile>
-      <anchor>afb9852caf356b53bb0de460c58a9ebbbaa2d3ba8b8bb2233c9d357cbb94bf4181</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SrcColor</name>
-      <anchorfile>structsf_1_1BlendMode.html</anchorfile>
-      <anchor>afb9852caf356b53bb0de460c58a9ebbbad679bb0ecaf15c188d7f2e1fab572188</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>OneMinusSrcColor</name>
-      <anchorfile>structsf_1_1BlendMode.html</anchorfile>
-      <anchor>afb9852caf356b53bb0de460c58a9ebbba5971ffdbca63382058ccba76bfce219e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>DstColor</name>
-      <anchorfile>structsf_1_1BlendMode.html</anchorfile>
-      <anchor>afb9852caf356b53bb0de460c58a9ebbba3d85281c3eab7153f2bd9faae3e7523a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>OneMinusDstColor</name>
-      <anchorfile>structsf_1_1BlendMode.html</anchorfile>
-      <anchor>afb9852caf356b53bb0de460c58a9ebbbac8198db20d14506a841d1091ced1cae2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SrcAlpha</name>
-      <anchorfile>structsf_1_1BlendMode.html</anchorfile>
-      <anchor>afb9852caf356b53bb0de460c58a9ebbbaac0ae68df2930b4d616c3e7abeec7d41</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>OneMinusSrcAlpha</name>
-      <anchorfile>structsf_1_1BlendMode.html</anchorfile>
-      <anchor>afb9852caf356b53bb0de460c58a9ebbbaab57e8616bf4c21d8ee923178acdf2c8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>DstAlpha</name>
-      <anchorfile>structsf_1_1BlendMode.html</anchorfile>
-      <anchor>afb9852caf356b53bb0de460c58a9ebbba5e3dc9a6f117aaa5f7433e1f4662a5f7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>OneMinusDstAlpha</name>
-      <anchorfile>structsf_1_1BlendMode.html</anchorfile>
-      <anchor>afb9852caf356b53bb0de460c58a9ebbbab4e5c63f189f26075e5939ad1a2ce4e4</anchor>
-      <arglist></arglist>
+      <enumvalue file="structsf_1_1BlendMode.html" anchor="afb9852caf356b53bb0de460c58a9ebbbad7ed4ee1df437474d005188535f74875">Zero</enumvalue>
+      <enumvalue file="structsf_1_1BlendMode.html" anchor="afb9852caf356b53bb0de460c58a9ebbba06c2cea18679d64399783748fa367bdd">One</enumvalue>
+      <enumvalue file="structsf_1_1BlendMode.html" anchor="afb9852caf356b53bb0de460c58a9ebbba2ad714e29d37896d79187312086bc6fe">SrcColor</enumvalue>
+      <enumvalue file="structsf_1_1BlendMode.html" anchor="afb9852caf356b53bb0de460c58a9ebbba09d3240b4e2481b1a729da24e9bfddf7">OneMinusSrcColor</enumvalue>
+      <enumvalue file="structsf_1_1BlendMode.html" anchor="afb9852caf356b53bb0de460c58a9ebbbafaedf511c99a5461048fd6a3b73da26c">DstColor</enumvalue>
+      <enumvalue file="structsf_1_1BlendMode.html" anchor="afb9852caf356b53bb0de460c58a9ebbba09f1a054ebd4d3850fd248bd2fa7b325">OneMinusDstColor</enumvalue>
+      <enumvalue file="structsf_1_1BlendMode.html" anchor="afb9852caf356b53bb0de460c58a9ebbbad5c7b7f0102df3f7305c43f73fc3a498">SrcAlpha</enumvalue>
+      <enumvalue file="structsf_1_1BlendMode.html" anchor="afb9852caf356b53bb0de460c58a9ebbbac00a6016489cff63d50d489ce52254cc">OneMinusSrcAlpha</enumvalue>
+      <enumvalue file="structsf_1_1BlendMode.html" anchor="afb9852caf356b53bb0de460c58a9ebbbaf72dbe2436b38a39e5927ed644e6818b">DstAlpha</enumvalue>
+      <enumvalue file="structsf_1_1BlendMode.html" anchor="afb9852caf356b53bb0de460c58a9ebbba4132e4b87a8d461be2c6ee8fc620cfb2">OneMinusDstAlpha</enumvalue>
     </member>
     <member kind="enumeration">
       <type></type>
@@ -106,140 +1429,25 @@
       <anchorfile>structsf_1_1BlendMode.html</anchorfile>
       <anchor>a7bce470e2e384c4f9c8d9595faef7c32</anchor>
       <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Add</name>
-      <anchorfile>structsf_1_1BlendMode.html</anchorfile>
-      <anchor>a7bce470e2e384c4f9c8d9595faef7c32a50c081d8f36cf7b77632966e15d38966</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Subtract</name>
-      <anchorfile>structsf_1_1BlendMode.html</anchorfile>
-      <anchor>a7bce470e2e384c4f9c8d9595faef7c32a14c825be24f8412fc5ed5b49f19bc0d0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ReverseSubtract</name>
-      <anchorfile>structsf_1_1BlendMode.html</anchorfile>
-      <anchor>a7bce470e2e384c4f9c8d9595faef7c32a2d04acf59e91811128e7d0ef076f65f0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Min</name>
-      <anchorfile>structsf_1_1BlendMode.html</anchorfile>
-      <anchor>a7bce470e2e384c4f9c8d9595faef7c32aaaac595afe61d785aa8fd4b401acffc5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Max</name>
-      <anchorfile>structsf_1_1BlendMode.html</anchorfile>
-      <anchor>a7bce470e2e384c4f9c8d9595faef7c32a40ddfddfaafccc8b58478eeef52e4281</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Zero</name>
-      <anchorfile>structsf_1_1BlendMode.html</anchorfile>
-      <anchor>afb9852caf356b53bb0de460c58a9ebbbafda2d66c3c3da15cd3b42338fbf6d2ba</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>One</name>
-      <anchorfile>structsf_1_1BlendMode.html</anchorfile>
-      <anchor>afb9852caf356b53bb0de460c58a9ebbbaa2d3ba8b8bb2233c9d357cbb94bf4181</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SrcColor</name>
-      <anchorfile>structsf_1_1BlendMode.html</anchorfile>
-      <anchor>afb9852caf356b53bb0de460c58a9ebbbad679bb0ecaf15c188d7f2e1fab572188</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>OneMinusSrcColor</name>
-      <anchorfile>structsf_1_1BlendMode.html</anchorfile>
-      <anchor>afb9852caf356b53bb0de460c58a9ebbba5971ffdbca63382058ccba76bfce219e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>DstColor</name>
-      <anchorfile>structsf_1_1BlendMode.html</anchorfile>
-      <anchor>afb9852caf356b53bb0de460c58a9ebbba3d85281c3eab7153f2bd9faae3e7523a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>OneMinusDstColor</name>
-      <anchorfile>structsf_1_1BlendMode.html</anchorfile>
-      <anchor>afb9852caf356b53bb0de460c58a9ebbbac8198db20d14506a841d1091ced1cae2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SrcAlpha</name>
-      <anchorfile>structsf_1_1BlendMode.html</anchorfile>
-      <anchor>afb9852caf356b53bb0de460c58a9ebbbaac0ae68df2930b4d616c3e7abeec7d41</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>OneMinusSrcAlpha</name>
-      <anchorfile>structsf_1_1BlendMode.html</anchorfile>
-      <anchor>afb9852caf356b53bb0de460c58a9ebbbaab57e8616bf4c21d8ee923178acdf2c8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>DstAlpha</name>
-      <anchorfile>structsf_1_1BlendMode.html</anchorfile>
-      <anchor>afb9852caf356b53bb0de460c58a9ebbba5e3dc9a6f117aaa5f7433e1f4662a5f7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>OneMinusDstAlpha</name>
-      <anchorfile>structsf_1_1BlendMode.html</anchorfile>
-      <anchor>afb9852caf356b53bb0de460c58a9ebbbab4e5c63f189f26075e5939ad1a2ce4e4</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Add</name>
-      <anchorfile>structsf_1_1BlendMode.html</anchorfile>
-      <anchor>a7bce470e2e384c4f9c8d9595faef7c32a50c081d8f36cf7b77632966e15d38966</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Subtract</name>
-      <anchorfile>structsf_1_1BlendMode.html</anchorfile>
-      <anchor>a7bce470e2e384c4f9c8d9595faef7c32a14c825be24f8412fc5ed5b49f19bc0d0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ReverseSubtract</name>
-      <anchorfile>structsf_1_1BlendMode.html</anchorfile>
-      <anchor>a7bce470e2e384c4f9c8d9595faef7c32a2d04acf59e91811128e7d0ef076f65f0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Min</name>
-      <anchorfile>structsf_1_1BlendMode.html</anchorfile>
-      <anchor>a7bce470e2e384c4f9c8d9595faef7c32aaaac595afe61d785aa8fd4b401acffc5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Max</name>
-      <anchorfile>structsf_1_1BlendMode.html</anchorfile>
-      <anchor>a7bce470e2e384c4f9c8d9595faef7c32a40ddfddfaafccc8b58478eeef52e4281</anchor>
-      <arglist></arglist>
+      <enumvalue file="structsf_1_1BlendMode.html" anchor="a7bce470e2e384c4f9c8d9595faef7c32aec211f7c20af43e742bf2570c3cb84f9">Add</enumvalue>
+      <enumvalue file="structsf_1_1BlendMode.html" anchor="a7bce470e2e384c4f9c8d9595faef7c32a1d9baf077ee87921f57a8fe42d510b65">Subtract</enumvalue>
+      <enumvalue file="structsf_1_1BlendMode.html" anchor="a7bce470e2e384c4f9c8d9595faef7c32abd5458190996e76988cb2f27a820c685">ReverseSubtract</enumvalue>
+      <enumvalue file="structsf_1_1BlendMode.html" anchor="a7bce470e2e384c4f9c8d9595faef7c32a78d811e98514cd165dda532286610fd2">Min</enumvalue>
+      <enumvalue file="structsf_1_1BlendMode.html" anchor="a7bce470e2e384c4f9c8d9595faef7c32a6a061313d22e51e0f25b7cd4dc065233">Max</enumvalue>
     </member>
     <member kind="function">
       <type></type>
       <name>BlendMode</name>
       <anchorfile>structsf_1_1BlendMode.html</anchorfile>
-      <anchor>a7faef75eae1fb47bbe93f45f38e3d345</anchor>
-      <arglist>()</arglist>
+      <anchor>a4bb8a066a2d88e7c18e9e7fe04008d98</anchor>
+      <arglist>()=default</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>BlendMode</name>
       <anchorfile>structsf_1_1BlendMode.html</anchorfile>
-      <anchor>a23c7452cc8e9eb943c3aea6234ce4297</anchor>
-      <arglist>(Factor sourceFactor, Factor destinationFactor, Equation blendEquation=Add)</arglist>
+      <anchor>a6ca312911698dcdf0994c2f5c0b65dfe</anchor>
+      <arglist>(Factor sourceFactor, Factor destinationFactor, Equation blendEquation=Equation::Add)</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -309,10 +1517,10 @@
     <name>sf::SoundStream::Chunk</name>
     <filename>structsf_1_1SoundStream_1_1Chunk.html</filename>
     <member kind="variable">
-      <type>const Int16 *</type>
+      <type>const std::int16_t *</type>
       <name>samples</name>
       <anchorfile>structsf_1_1SoundStream_1_1Chunk.html</anchorfile>
-      <anchor>aa3b84d69adbe663a17a7671626076df4</anchor>
+      <anchor>a345381b86035523e1fcc8fecc0081531</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -355,19 +1563,26 @@
       <anchor>a16590ee7bdf5c9f752275468a4997bed</anchor>
       <arglist>(std::size_t count)</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual std::size_t</type>
+    <member kind="function">
+      <type>std::size_t</type>
       <name>getPointCount</name>
       <anchorfile>classsf_1_1CircleShape.html</anchorfile>
-      <anchor>a014d29ec11e8afa4dce50e7047d99601</anchor>
-      <arglist>() const</arglist>
+      <anchor>ad925730e69777099e486124c3ae0ae09</anchor>
+      <arglist>() const override</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual Vector2f</type>
+    <member kind="function">
+      <type>Vector2f</type>
       <name>getPoint</name>
       <anchorfile>classsf_1_1CircleShape.html</anchorfile>
-      <anchor>a2d7f9715502b960b92387102fddb8736</anchor>
-      <arglist>(std::size_t index) const</arglist>
+      <anchor>ad5ebbace7f549ac2188c66357b66be77</anchor>
+      <arglist>(std::size_t index) const override</arglist>
+    </member>
+    <member kind="function">
+      <type>Vector2f</type>
+      <name>getGeometricCenter</name>
+      <anchorfile>classsf_1_1CircleShape.html</anchorfile>
+      <anchor>a6ecb13116e7c4fbd0486ebda47d9e354</anchor>
+      <arglist>() const override</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -387,15 +1602,15 @@
       <type>void</type>
       <name>setFillColor</name>
       <anchorfile>classsf_1_1Shape.html</anchorfile>
-      <anchor>a3506f9b5d916fec14d583d16f23c2485</anchor>
-      <arglist>(const Color &amp;color)</arglist>
+      <anchor>a44f64a14eada7ccceb2e03f655b8d666</anchor>
+      <arglist>(Color color)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>setOutlineColor</name>
       <anchorfile>classsf_1_1Shape.html</anchorfile>
-      <anchor>a5978f41ee349ac3c52942996dcb184f7</anchor>
-      <arglist>(const Color &amp;color)</arglist>
+      <anchor>a7dbbed35b7544a9e592acd3908713256</anchor>
+      <arglist>(Color color)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -419,17 +1634,17 @@
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>const Color &amp;</type>
+      <type>Color</type>
       <name>getFillColor</name>
       <anchorfile>classsf_1_1Shape.html</anchorfile>
-      <anchor>aa5da23e522d2dd11e3e7661c26164c78</anchor>
+      <anchor>a6444edeb0639112234c0dfa47da8f9af</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>const Color &amp;</type>
+      <type>Color</type>
       <name>getOutlineColor</name>
       <anchorfile>classsf_1_1Shape.html</anchorfile>
-      <anchor>a4aa05b59851468e948ac9682b9c71abb</anchor>
+      <anchor>abbdd704351300cd65d56b0e89f834808</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
@@ -457,113 +1672,78 @@
       <type>void</type>
       <name>setPosition</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a4dbfb1a7c80688b0b4c477d706550208</anchor>
-      <arglist>(float x, float y)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>setPosition</name>
-      <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>af1a42209ce2b5d3f07b00f917bcd8015</anchor>
-      <arglist>(const Vector2f &amp;position)</arglist>
+      <anchor>a47c1375b57cbb0e513286e8d11f6dd4d</anchor>
+      <arglist>(Vector2f position)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>setRotation</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a32baf2bf1a74699b03bf8c95030a38ed</anchor>
-      <arglist>(float angle)</arglist>
+      <anchor>a1b4bfa83da965c03ef523c7c33df991f</anchor>
+      <arglist>(Angle angle)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>setScale</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>aaec50b46b3f41b054763304d1e727471</anchor>
-      <arglist>(float factorX, float factorY)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>setScale</name>
-      <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a4c48a87f1626047e448f9c1a68ff167e</anchor>
-      <arglist>(const Vector2f &amp;factors)</arglist>
+      <anchor>a60b82c58502e86f258c9844a1a58400b</anchor>
+      <arglist>(Vector2f factors)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>setOrigin</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a56c67bd80aae8418d13fb96c034d25ec</anchor>
-      <arglist>(float x, float y)</arglist>
+      <anchor>a26788f72ade7ffadb8ba594c3332c4a8</anchor>
+      <arglist>(Vector2f origin)</arglist>
     </member>
     <member kind="function">
-      <type>void</type>
-      <name>setOrigin</name>
-      <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>aa93a835ffbf3bee2098dfbbc695a7f05</anchor>
-      <arglist>(const Vector2f &amp;origin)</arglist>
-    </member>
-    <member kind="function">
-      <type>const Vector2f &amp;</type>
+      <type>Vector2f</type>
       <name>getPosition</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>aea8b18e91a7bf7be589851bb9dd11241</anchor>
+      <anchor>a88a224d0831261591beace74cd3ad67b</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>float</type>
+      <type>Angle</type>
       <name>getRotation</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>aa00b5c5d4a06ac24a94dd72c56931d3a</anchor>
+      <anchor>a11ca740731d6c2cdde3cc8ae3bda3785</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>const Vector2f &amp;</type>
+      <type>Vector2f</type>
       <name>getScale</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a7bcae0e924213f2e89edd8926f2453af</anchor>
+      <anchor>a86fe2b0a7479713d33b71907191f654c</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>const Vector2f &amp;</type>
+      <type>Vector2f</type>
       <name>getOrigin</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a898b33eb6513161eb5c747a072364f15</anchor>
+      <anchor>aa32ea5e8c64716f07d0939252d8d7e31</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>move</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a86b461d6a941ad390c2ad8b6a4a20391</anchor>
-      <arglist>(float offsetX, float offsetY)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>move</name>
-      <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>ab9ca691522f6ddc1a40406849b87c469</anchor>
-      <arglist>(const Vector2f &amp;offset)</arglist>
+      <anchor>a860e50085b49a46a71cd028f7f5d8f6d</anchor>
+      <arglist>(Vector2f offset)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>rotate</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>af8a5ffddc0d93f238fee3bf8efe1ebda</anchor>
-      <arglist>(float angle)</arglist>
+      <anchor>aacd4c9a92b44f5a0cd95e2fe3741f8f1</anchor>
+      <arglist>(Angle angle)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>scale</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a3de0c6d8957f3cf318092f3f60656391</anchor>
-      <arglist>(float factorX, float factorY)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>scale</name>
-      <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>adecaa6c69b1f27dd5194b067d96bb694</anchor>
-      <arglist>(const Vector2f &amp;factor)</arglist>
+      <anchor>a24060d4216813d6f39698cf1cc82be98</anchor>
+      <arglist>(Vector2f factor)</arglist>
     </member>
     <member kind="function">
       <type>const Transform &amp;</type>
@@ -588,33 +1768,8 @@
     </member>
   </compound>
   <compound kind="class">
-    <name>sf::Clipboard</name>
-    <filename>classsf_1_1Clipboard.html</filename>
-    <member kind="function" static="yes">
-      <type>static String</type>
-      <name>getString</name>
-      <anchorfile>classsf_1_1Clipboard.html</anchorfile>
-      <anchor>a3c385cc2b6d78a3d0cfa29928a7d6eb8</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static void</type>
-      <name>setString</name>
-      <anchorfile>classsf_1_1Clipboard.html</anchorfile>
-      <anchor>a29c597c2165d3ca3a89c17f31ff7413d</anchor>
-      <arglist>(const String &amp;text)</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
     <name>sf::Clock</name>
     <filename>classsf_1_1Clock.html</filename>
-    <member kind="function">
-      <type></type>
-      <name>Clock</name>
-      <anchorfile>classsf_1_1Clock.html</anchorfile>
-      <anchor>abbc959c7830ca7c3a4da133cb506d3fd</anchor>
-      <arglist>()</arglist>
-    </member>
     <member kind="function">
       <type>Time</type>
       <name>getElapsedTime</name>
@@ -623,70 +1778,102 @@
       <arglist>() const</arglist>
     </member>
     <member kind="function">
+      <type>bool</type>
+      <name>isRunning</name>
+      <anchorfile>classsf_1_1Clock.html</anchorfile>
+      <anchor>a5ddfada924bece9f59f35a61eca15525</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>start</name>
+      <anchorfile>classsf_1_1Clock.html</anchorfile>
+      <anchor>a85ba4e3474ac4bb279ba7b9c9e396cea</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>stop</name>
+      <anchorfile>classsf_1_1Clock.html</anchorfile>
+      <anchor>ad2ce991ea1ccb35de32d33bf18d2a1b9</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
       <type>Time</type>
       <name>restart</name>
       <anchorfile>classsf_1_1Clock.html</anchorfile>
       <anchor>a123e2627f2943e5ecaa1db0c7df3231b</anchor>
       <arglist>()</arglist>
     </member>
+    <member kind="function">
+      <type>Time</type>
+      <name>reset</name>
+      <anchorfile>classsf_1_1Clock.html</anchorfile>
+      <anchor>a564522bc9caf98b412aa0c6f39a81d75</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>sf::Event::Closed</name>
+    <filename>structsf_1_1Event_1_1Closed.html</filename>
   </compound>
   <compound kind="class">
     <name>sf::Color</name>
     <filename>classsf_1_1Color.html</filename>
     <member kind="function">
-      <type></type>
+      <type>constexpr</type>
       <name>Color</name>
       <anchorfile>classsf_1_1Color.html</anchorfile>
-      <anchor>ac2eb4393fb11ad3fa3ccf34e92fe08e4</anchor>
-      <arglist>()</arglist>
+      <anchor>ab368083e898a764e5c1f17ef4f9921f7</anchor>
+      <arglist>()=default</arglist>
     </member>
     <member kind="function">
-      <type></type>
+      <type>constexpr</type>
       <name>Color</name>
       <anchorfile>classsf_1_1Color.html</anchorfile>
-      <anchor>ac791dc61be4c60baac50fe700f1c9850</anchor>
-      <arglist>(Uint8 red, Uint8 green, Uint8 blue, Uint8 alpha=255)</arglist>
+      <anchor>a56ca605a1787469b7c7f635f411f3a02</anchor>
+      <arglist>(std::uint8_t red, std::uint8_t green, std::uint8_t blue, std::uint8_t alpha=255)</arglist>
     </member>
     <member kind="function">
-      <type></type>
+      <type>constexpr</type>
       <name>Color</name>
       <anchorfile>classsf_1_1Color.html</anchorfile>
-      <anchor>a5449f4b2b9a78230d40ce2c223c9ab2e</anchor>
-      <arglist>(Uint32 color)</arglist>
+      <anchor>a1c77f5f98994bb32dfe51e9f62e60ba0</anchor>
+      <arglist>(std::uint32_t color)</arglist>
     </member>
     <member kind="function">
-      <type>Uint32</type>
+      <type>constexpr std::uint32_t</type>
       <name>toInteger</name>
       <anchorfile>classsf_1_1Color.html</anchorfile>
-      <anchor>abb46e6942c4fe0d221574a46e642caa9</anchor>
+      <anchor>ad8997461be94561405e1600fa6fbd4e4</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="variable">
-      <type>Uint8</type>
+      <type>std::uint8_t</type>
       <name>r</name>
       <anchorfile>classsf_1_1Color.html</anchorfile>
-      <anchor>a6a5256ca24a4f9f0e0808f6fc23e01e1</anchor>
+      <anchor>ac1dba0829698357e17069b6dba4d52fb</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>Uint8</type>
+      <type>std::uint8_t</type>
       <name>g</name>
       <anchorfile>classsf_1_1Color.html</anchorfile>
-      <anchor>a591daf9c3c55dea830c76c962d6ba1a5</anchor>
+      <anchor>a99828a474afe3b42d004680cb74c2a11</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>Uint8</type>
+      <type>std::uint8_t</type>
       <name>b</name>
       <anchorfile>classsf_1_1Color.html</anchorfile>
-      <anchor>a6707aedd0609c8920e12df5d7abc53cb</anchor>
+      <anchor>a691f539f0d05f08eb7360ca2feeb6b9b</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>Uint8</type>
+      <type>std::uint8_t</type>
       <name>a</name>
       <anchorfile>classsf_1_1Color.html</anchorfile>
-      <anchor>a56dbdb47d5f040d9b78ac6a0b8b3a831</anchor>
+      <anchor>a5a6825483a21a680a890379ed8a213a2</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable" static="yes">
@@ -753,67 +1940,116 @@
       <arglist></arglist>
     </member>
     <member kind="function">
-      <type>bool</type>
+      <type>constexpr bool</type>
       <name>operator==</name>
       <anchorfile>classsf_1_1Color.html</anchorfile>
-      <anchor>a2adc3f68860f7aa5e4d7c79dcbb31d30</anchor>
-      <arglist>(const Color &amp;left, const Color &amp;right)</arglist>
+      <anchor>a91b106e5b049d1098a1e2aeaf51c1c68</anchor>
+      <arglist>(Color left, Color right)</arglist>
     </member>
     <member kind="function">
-      <type>bool</type>
+      <type>constexpr bool</type>
       <name>operator!=</name>
       <anchorfile>classsf_1_1Color.html</anchorfile>
-      <anchor>a394c3495753c4b17f9cd45556ef00b8c</anchor>
-      <arglist>(const Color &amp;left, const Color &amp;right)</arglist>
+      <anchor>a7a0d15349c2be766ae40125e77b231af</anchor>
+      <arglist>(Color left, Color right)</arglist>
     </member>
     <member kind="function">
-      <type>Color</type>
+      <type>constexpr Color</type>
       <name>operator+</name>
       <anchorfile>classsf_1_1Color.html</anchorfile>
-      <anchor>a0355ba6bfd2f83ffd8f8fafdca26cdd0</anchor>
-      <arglist>(const Color &amp;left, const Color &amp;right)</arglist>
+      <anchor>a86ee43c374e3f196810608d48c861e13</anchor>
+      <arglist>(Color left, Color right)</arglist>
     </member>
     <member kind="function">
-      <type>Color</type>
+      <type>constexpr Color</type>
       <name>operator-</name>
       <anchorfile>classsf_1_1Color.html</anchorfile>
-      <anchor>a4586e31d668f183fc46576511169bf2c</anchor>
-      <arglist>(const Color &amp;left, const Color &amp;right)</arglist>
+      <anchor>a1a2e23f9eea8dceabf24a0926027e82f</anchor>
+      <arglist>(Color left, Color right)</arglist>
     </member>
     <member kind="function">
-      <type>Color</type>
+      <type>constexpr Color</type>
       <name>operator*</name>
       <anchorfile>classsf_1_1Color.html</anchorfile>
-      <anchor>a1bae779fb49bb92dbf820a65e45a6602</anchor>
-      <arglist>(const Color &amp;left, const Color &amp;right)</arglist>
+      <anchor>a53b824ec09b5d362f2def75a2328f24b</anchor>
+      <arglist>(Color left, Color right)</arglist>
     </member>
     <member kind="function">
-      <type>Color &amp;</type>
+      <type>constexpr Color &amp;</type>
       <name>operator+=</name>
       <anchorfile>classsf_1_1Color.html</anchorfile>
-      <anchor>af39790b2e677c9ab418787f5ff4583ef</anchor>
-      <arglist>(Color &amp;left, const Color &amp;right)</arglist>
+      <anchor>a715846f73a140a74f2378764e9a1ef66</anchor>
+      <arglist>(Color &amp;left, Color right)</arglist>
     </member>
     <member kind="function">
-      <type>Color &amp;</type>
+      <type>constexpr Color &amp;</type>
       <name>operator-=</name>
       <anchorfile>classsf_1_1Color.html</anchorfile>
-      <anchor>a6927a7dba8b0d330f912fefb43b0c148</anchor>
-      <arglist>(Color &amp;left, const Color &amp;right)</arglist>
+      <anchor>a4953ae630c16973a32eb22c294403590</anchor>
+      <arglist>(Color &amp;left, Color right)</arglist>
     </member>
     <member kind="function">
-      <type>Color &amp;</type>
+      <type>constexpr Color &amp;</type>
       <name>operator*=</name>
       <anchorfile>classsf_1_1Color.html</anchorfile>
-      <anchor>a7d1ea2b9bd5dbe29bb2e54feba9b4b38</anchor>
-      <arglist>(Color &amp;left, const Color &amp;right)</arglist>
+      <anchor>ab82b06e6ca47847f4b4a9b623e559d84</anchor>
+      <arglist>(Color &amp;left, Color right)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>sf::Listener::Cone</name>
+    <filename>structsf_1_1Listener_1_1Cone.html</filename>
+    <member kind="variable">
+      <type>Angle</type>
+      <name>innerAngle</name>
+      <anchorfile>structsf_1_1Listener_1_1Cone.html</anchorfile>
+      <anchor>ad9a2d0ea2d4027704a428ee4205434cc</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>Angle</type>
+      <name>outerAngle</name>
+      <anchorfile>structsf_1_1Listener_1_1Cone.html</anchorfile>
+      <anchor>a0a322dae5af955f160a72a5c3b4cc4a6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>float</type>
+      <name>outerGain</name>
+      <anchorfile>structsf_1_1Listener_1_1Cone.html</anchorfile>
+      <anchor>a052639b27595027b9c5923657e409c1e</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>sf::SoundSource::Cone</name>
+    <filename>structsf_1_1SoundSource_1_1Cone.html</filename>
+    <member kind="variable">
+      <type>Angle</type>
+      <name>innerAngle</name>
+      <anchorfile>structsf_1_1SoundSource_1_1Cone.html</anchorfile>
+      <anchor>a73c38ee899500723e0a85cbf502a3dc9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>Angle</type>
+      <name>outerAngle</name>
+      <anchorfile>structsf_1_1SoundSource_1_1Cone.html</anchorfile>
+      <anchor>ae307babc913b4f1e933a06764e738fa4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>float</type>
+      <name>outerGain</name>
+      <anchorfile>structsf_1_1SoundSource_1_1Cone.html</anchorfile>
+      <anchor>a3fbc1e2928b40387bd6ffd820bc30a01</anchor>
+      <arglist></arglist>
     </member>
   </compound>
   <compound kind="class">
     <name>sf::Context</name>
     <filename>classsf_1_1Context.html</filename>
     <base protection="private">sf::GlResource</base>
-    <base protection="private">sf::NonCopyable</base>
     <member kind="function">
       <type></type>
       <name>Context</name>
@@ -827,6 +2063,34 @@
       <anchorfile>classsf_1_1Context.html</anchorfile>
       <anchor>a805b1bbdb3e52b1fda7c9bf2cd6ca86b</anchor>
       <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Context</name>
+      <anchorfile>classsf_1_1Context.html</anchorfile>
+      <anchor>a440bf2797184d9b32e62d73a0ee25d5d</anchor>
+      <arglist>(const Context &amp;)=delete</arglist>
+    </member>
+    <member kind="function">
+      <type>Context &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classsf_1_1Context.html</anchorfile>
+      <anchor>a097dbb40552a5668b48652a4c814aaaf</anchor>
+      <arglist>(const Context &amp;)=delete</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Context</name>
+      <anchorfile>classsf_1_1Context.html</anchorfile>
+      <anchor>a8f3a0ea8319ab541e8f523343f411b79</anchor>
+      <arglist>(Context &amp;&amp;context) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>Context &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classsf_1_1Context.html</anchorfile>
+      <anchor>aa185333dde2d69041b0c6ea37a9f4f98</anchor>
+      <arglist>(Context &amp;&amp;context) noexcept</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
@@ -846,15 +2110,15 @@
       <type></type>
       <name>Context</name>
       <anchorfile>classsf_1_1Context.html</anchorfile>
-      <anchor>a2a9e3529e48919120e6b6fc10bad296c</anchor>
-      <arglist>(const ContextSettings &amp;settings, unsigned int width, unsigned int height)</arglist>
+      <anchor>a6b76f5cb410f9b8180310daa759272f8</anchor>
+      <arglist>(const ContextSettings &amp;settings, Vector2u size)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static bool</type>
       <name>isExtensionAvailable</name>
       <anchorfile>classsf_1_1Context.html</anchorfile>
-      <anchor>a163c7f72c0c20133606657d895faa147</anchor>
-      <arglist>(const char *name)</arglist>
+      <anchor>a95a91e99cffafb0a2109efa28483246c</anchor>
+      <arglist>(std::string_view name)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static GlFunctionPointer</type>
@@ -871,10 +2135,10 @@
       <arglist>()</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static Uint64</type>
+      <type>static std::uint64_t</type>
       <name>getActiveContextId</name>
       <anchorfile>classsf_1_1Context.html</anchorfile>
-      <anchor>a61b1cb0a99b8e3ce56579d70aa41fb70</anchor>
+      <anchor>adb15bd398a3b2995e48032ff74f5ad6e</anchor>
       <arglist>()</arglist>
     </member>
   </compound>
@@ -924,13 +2188,6 @@
       <anchor>af2e91e57e8d26c40afe2ec8efaa32a2ca6043f67afb3d48918d5336474eabaafc</anchor>
       <arglist></arglist>
     </member>
-    <member kind="function">
-      <type></type>
-      <name>ContextSettings</name>
-      <anchorfile>structsf_1_1ContextSettings.html</anchorfile>
-      <anchor>ac56869ccbb6bf0df48b88880754e12b7</anchor>
-      <arglist>(unsigned int depth=0, unsigned int stencil=0, unsigned int antialiasing=0, unsigned int major=1, unsigned int minor=1, unsigned int attributes=Default, bool sRgb=false)</arglist>
-    </member>
     <member kind="variable">
       <type>unsigned int</type>
       <name>depthBits</name>
@@ -947,9 +2204,9 @@
     </member>
     <member kind="variable">
       <type>unsigned int</type>
-      <name>antialiasingLevel</name>
+      <name>antiAliasingLevel</name>
       <anchorfile>structsf_1_1ContextSettings.html</anchorfile>
-      <anchor>ac4a097be18994dba38d73f36b0418bdc</anchor>
+      <anchor>aade35a756f9b1a36155cbb9812a309ea</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -967,10 +2224,10 @@
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>Uint32</type>
+      <type>std::uint32_t</type>
       <name>attributeFlags</name>
       <anchorfile>structsf_1_1ContextSettings.html</anchorfile>
-      <anchor>a0ef3fc53802bc0197d2739466915ada5</anchor>
+      <anchor>aabdf465074e9092b65670b4176d73f15</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -999,26 +2256,26 @@
       <anchor>a56e6e79ade6dd651cc1a0e39cb68deae</anchor>
       <arglist>(std::size_t count)</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual std::size_t</type>
+    <member kind="function">
+      <type>std::size_t</type>
       <name>getPointCount</name>
       <anchorfile>classsf_1_1ConvexShape.html</anchorfile>
-      <anchor>a0c54b8d48fe4e13414f6e667dbfc22a3</anchor>
-      <arglist>() const</arglist>
+      <anchor>a10ab81b7646e7b94c2d0390c99cb67cd</anchor>
+      <arglist>() const override</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>setPoint</name>
       <anchorfile>classsf_1_1ConvexShape.html</anchorfile>
-      <anchor>a5929e0ab0ba5ca1f102b40c234a8e92d</anchor>
-      <arglist>(std::size_t index, const Vector2f &amp;point)</arglist>
+      <anchor>a24eccc14ac5589e05f9f7cdbc6decf2c</anchor>
+      <arglist>(std::size_t index, Vector2f point)</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual Vector2f</type>
+    <member kind="function">
+      <type>Vector2f</type>
       <name>getPoint</name>
       <anchorfile>classsf_1_1ConvexShape.html</anchorfile>
-      <anchor>a72a97bc426d8daf4d682a20fcb7f3fe7</anchor>
-      <arglist>(std::size_t index) const</arglist>
+      <anchor>ae2afef8cb7f19c2d612bb408157b669b</anchor>
+      <arglist>(std::size_t index) const override</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -1038,15 +2295,15 @@
       <type>void</type>
       <name>setFillColor</name>
       <anchorfile>classsf_1_1Shape.html</anchorfile>
-      <anchor>a3506f9b5d916fec14d583d16f23c2485</anchor>
-      <arglist>(const Color &amp;color)</arglist>
+      <anchor>a44f64a14eada7ccceb2e03f655b8d666</anchor>
+      <arglist>(Color color)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>setOutlineColor</name>
       <anchorfile>classsf_1_1Shape.html</anchorfile>
-      <anchor>a5978f41ee349ac3c52942996dcb184f7</anchor>
-      <arglist>(const Color &amp;color)</arglist>
+      <anchor>a7dbbed35b7544a9e592acd3908713256</anchor>
+      <arglist>(Color color)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -1070,17 +2327,17 @@
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>const Color &amp;</type>
+      <type>Color</type>
       <name>getFillColor</name>
       <anchorfile>classsf_1_1Shape.html</anchorfile>
-      <anchor>aa5da23e522d2dd11e3e7661c26164c78</anchor>
+      <anchor>a6444edeb0639112234c0dfa47da8f9af</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>const Color &amp;</type>
+      <type>Color</type>
       <name>getOutlineColor</name>
       <anchorfile>classsf_1_1Shape.html</anchorfile>
-      <anchor>a4aa05b59851468e948ac9682b9c71abb</anchor>
+      <anchor>abbdd704351300cd65d56b0e89f834808</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
@@ -1088,6 +2345,13 @@
       <name>getOutlineThickness</name>
       <anchorfile>classsf_1_1Shape.html</anchorfile>
       <anchor>a1d4d5299c573a905e5833fc4dce783a7</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual Vector2f</type>
+      <name>getGeometricCenter</name>
+      <anchorfile>classsf_1_1Shape.html</anchorfile>
+      <anchor>a5aa1935f3a532fbecf4a417d14247aed</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
@@ -1108,113 +2372,78 @@
       <type>void</type>
       <name>setPosition</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a4dbfb1a7c80688b0b4c477d706550208</anchor>
-      <arglist>(float x, float y)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>setPosition</name>
-      <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>af1a42209ce2b5d3f07b00f917bcd8015</anchor>
-      <arglist>(const Vector2f &amp;position)</arglist>
+      <anchor>a47c1375b57cbb0e513286e8d11f6dd4d</anchor>
+      <arglist>(Vector2f position)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>setRotation</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a32baf2bf1a74699b03bf8c95030a38ed</anchor>
-      <arglist>(float angle)</arglist>
+      <anchor>a1b4bfa83da965c03ef523c7c33df991f</anchor>
+      <arglist>(Angle angle)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>setScale</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>aaec50b46b3f41b054763304d1e727471</anchor>
-      <arglist>(float factorX, float factorY)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>setScale</name>
-      <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a4c48a87f1626047e448f9c1a68ff167e</anchor>
-      <arglist>(const Vector2f &amp;factors)</arglist>
+      <anchor>a60b82c58502e86f258c9844a1a58400b</anchor>
+      <arglist>(Vector2f factors)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>setOrigin</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a56c67bd80aae8418d13fb96c034d25ec</anchor>
-      <arglist>(float x, float y)</arglist>
+      <anchor>a26788f72ade7ffadb8ba594c3332c4a8</anchor>
+      <arglist>(Vector2f origin)</arglist>
     </member>
     <member kind="function">
-      <type>void</type>
-      <name>setOrigin</name>
-      <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>aa93a835ffbf3bee2098dfbbc695a7f05</anchor>
-      <arglist>(const Vector2f &amp;origin)</arglist>
-    </member>
-    <member kind="function">
-      <type>const Vector2f &amp;</type>
+      <type>Vector2f</type>
       <name>getPosition</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>aea8b18e91a7bf7be589851bb9dd11241</anchor>
+      <anchor>a88a224d0831261591beace74cd3ad67b</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>float</type>
+      <type>Angle</type>
       <name>getRotation</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>aa00b5c5d4a06ac24a94dd72c56931d3a</anchor>
+      <anchor>a11ca740731d6c2cdde3cc8ae3bda3785</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>const Vector2f &amp;</type>
+      <type>Vector2f</type>
       <name>getScale</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a7bcae0e924213f2e89edd8926f2453af</anchor>
+      <anchor>a86fe2b0a7479713d33b71907191f654c</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>const Vector2f &amp;</type>
+      <type>Vector2f</type>
       <name>getOrigin</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a898b33eb6513161eb5c747a072364f15</anchor>
+      <anchor>aa32ea5e8c64716f07d0939252d8d7e31</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>move</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a86b461d6a941ad390c2ad8b6a4a20391</anchor>
-      <arglist>(float offsetX, float offsetY)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>move</name>
-      <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>ab9ca691522f6ddc1a40406849b87c469</anchor>
-      <arglist>(const Vector2f &amp;offset)</arglist>
+      <anchor>a860e50085b49a46a71cd028f7f5d8f6d</anchor>
+      <arglist>(Vector2f offset)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>rotate</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>af8a5ffddc0d93f238fee3bf8efe1ebda</anchor>
-      <arglist>(float angle)</arglist>
+      <anchor>aacd4c9a92b44f5a0cd95e2fe3741f8f1</anchor>
+      <arglist>(Angle angle)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>scale</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a3de0c6d8957f3cf318092f3f60656391</anchor>
-      <arglist>(float factorX, float factorY)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>scale</name>
-      <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>adecaa6c69b1f27dd5194b067d96bb694</anchor>
-      <arglist>(const Vector2f &amp;factor)</arglist>
+      <anchor>a24060d4216813d6f39698cf1cc82be98</anchor>
+      <arglist>(Vector2f factor)</arglist>
     </member>
     <member kind="function">
       <type>const Transform &amp;</type>
@@ -1245,272 +2474,33 @@
   <compound kind="class">
     <name>sf::Cursor</name>
     <filename>classsf_1_1Cursor.html</filename>
-    <base protection="private">sf::NonCopyable</base>
     <member kind="enumeration">
       <type></type>
       <name>Type</name>
       <anchorfile>classsf_1_1Cursor.html</anchorfile>
       <anchor>ab9ab152aec1f8a4955e34ccae08f930a</anchor>
       <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Arrow</name>
-      <anchorfile>classsf_1_1Cursor.html</anchorfile>
-      <anchor>ab9ab152aec1f8a4955e34ccae08f930aa8d9a9cd284dabb4246ab4f147ba779a3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ArrowWait</name>
-      <anchorfile>classsf_1_1Cursor.html</anchorfile>
-      <anchor>ab9ab152aec1f8a4955e34ccae08f930aa16c3acb967f2175434d6bbad7f1300bf</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Wait</name>
-      <anchorfile>classsf_1_1Cursor.html</anchorfile>
-      <anchor>ab9ab152aec1f8a4955e34ccae08f930aabeb51ea58e48e4477ab802d46ad2cbdd</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Text</name>
-      <anchorfile>classsf_1_1Cursor.html</anchorfile>
-      <anchor>ab9ab152aec1f8a4955e34ccae08f930aa1a9979392de58ff11d5b4ab330e6393d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Hand</name>
-      <anchorfile>classsf_1_1Cursor.html</anchorfile>
-      <anchor>ab9ab152aec1f8a4955e34ccae08f930aae826935374aa0414723918ba79f13368</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SizeHorizontal</name>
-      <anchorfile>classsf_1_1Cursor.html</anchorfile>
-      <anchor>ab9ab152aec1f8a4955e34ccae08f930aa0131508eaa8802dba34b8c9b41aec6e9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SizeVertical</name>
-      <anchorfile>classsf_1_1Cursor.html</anchorfile>
-      <anchor>ab9ab152aec1f8a4955e34ccae08f930aab3cefa56d3a0fe9fe64680c7ec11eab5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SizeTopLeftBottomRight</name>
-      <anchorfile>classsf_1_1Cursor.html</anchorfile>
-      <anchor>ab9ab152aec1f8a4955e34ccae08f930aa934ddc380262a94358ccb5a4ab7bbe1c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SizeBottomLeftTopRight</name>
-      <anchorfile>classsf_1_1Cursor.html</anchorfile>
-      <anchor>ab9ab152aec1f8a4955e34ccae08f930aac047cea5795b6074fbb4d6479452e8ef</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SizeLeft</name>
-      <anchorfile>classsf_1_1Cursor.html</anchorfile>
-      <anchor>ab9ab152aec1f8a4955e34ccae08f930aa4725e9d5f8117997732f8dcccce45be4</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SizeRight</name>
-      <anchorfile>classsf_1_1Cursor.html</anchorfile>
-      <anchor>ab9ab152aec1f8a4955e34ccae08f930aaebc3670bd27360a7de429daa07921a4d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SizeTop</name>
-      <anchorfile>classsf_1_1Cursor.html</anchorfile>
-      <anchor>ab9ab152aec1f8a4955e34ccae08f930aa605e36bf335a0d801b4e7d67995a9e85</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SizeBottom</name>
-      <anchorfile>classsf_1_1Cursor.html</anchorfile>
-      <anchor>ab9ab152aec1f8a4955e34ccae08f930aaafd57cfee8747f202db04a549057e185</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SizeTopLeft</name>
-      <anchorfile>classsf_1_1Cursor.html</anchorfile>
-      <anchor>ab9ab152aec1f8a4955e34ccae08f930aa2cc42c06dd701af7211f351333b629ca</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SizeBottomRight</name>
-      <anchorfile>classsf_1_1Cursor.html</anchorfile>
-      <anchor>ab9ab152aec1f8a4955e34ccae08f930aa581edf98abd0b4905329b516a45eeef8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SizeBottomLeft</name>
-      <anchorfile>classsf_1_1Cursor.html</anchorfile>
-      <anchor>ab9ab152aec1f8a4955e34ccae08f930aa62fb130f4aa6ecf39c8366e0de549cc2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SizeTopRight</name>
-      <anchorfile>classsf_1_1Cursor.html</anchorfile>
-      <anchor>ab9ab152aec1f8a4955e34ccae08f930aa84d9478fdeef2f727f06f3fe5bdb1be6</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SizeAll</name>
-      <anchorfile>classsf_1_1Cursor.html</anchorfile>
-      <anchor>ab9ab152aec1f8a4955e34ccae08f930aa256a64be04f0347e6a44cbf84e5410bd</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Cross</name>
-      <anchorfile>classsf_1_1Cursor.html</anchorfile>
-      <anchor>ab9ab152aec1f8a4955e34ccae08f930aaf3b3213aad68863c7dec96587681fecd</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Help</name>
-      <anchorfile>classsf_1_1Cursor.html</anchorfile>
-      <anchor>ab9ab152aec1f8a4955e34ccae08f930aaf2c0ed3674b334ebf8365aee243186f5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NotAllowed</name>
-      <anchorfile>classsf_1_1Cursor.html</anchorfile>
-      <anchor>ab9ab152aec1f8a4955e34ccae08f930aadb1ec726725dd81ec9906cbe06fec805</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Arrow</name>
-      <anchorfile>classsf_1_1Cursor.html</anchorfile>
-      <anchor>ab9ab152aec1f8a4955e34ccae08f930aa8d9a9cd284dabb4246ab4f147ba779a3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ArrowWait</name>
-      <anchorfile>classsf_1_1Cursor.html</anchorfile>
-      <anchor>ab9ab152aec1f8a4955e34ccae08f930aa16c3acb967f2175434d6bbad7f1300bf</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Wait</name>
-      <anchorfile>classsf_1_1Cursor.html</anchorfile>
-      <anchor>ab9ab152aec1f8a4955e34ccae08f930aabeb51ea58e48e4477ab802d46ad2cbdd</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Text</name>
-      <anchorfile>classsf_1_1Cursor.html</anchorfile>
-      <anchor>ab9ab152aec1f8a4955e34ccae08f930aa1a9979392de58ff11d5b4ab330e6393d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Hand</name>
-      <anchorfile>classsf_1_1Cursor.html</anchorfile>
-      <anchor>ab9ab152aec1f8a4955e34ccae08f930aae826935374aa0414723918ba79f13368</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SizeHorizontal</name>
-      <anchorfile>classsf_1_1Cursor.html</anchorfile>
-      <anchor>ab9ab152aec1f8a4955e34ccae08f930aa0131508eaa8802dba34b8c9b41aec6e9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SizeVertical</name>
-      <anchorfile>classsf_1_1Cursor.html</anchorfile>
-      <anchor>ab9ab152aec1f8a4955e34ccae08f930aab3cefa56d3a0fe9fe64680c7ec11eab5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SizeTopLeftBottomRight</name>
-      <anchorfile>classsf_1_1Cursor.html</anchorfile>
-      <anchor>ab9ab152aec1f8a4955e34ccae08f930aa934ddc380262a94358ccb5a4ab7bbe1c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SizeBottomLeftTopRight</name>
-      <anchorfile>classsf_1_1Cursor.html</anchorfile>
-      <anchor>ab9ab152aec1f8a4955e34ccae08f930aac047cea5795b6074fbb4d6479452e8ef</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SizeLeft</name>
-      <anchorfile>classsf_1_1Cursor.html</anchorfile>
-      <anchor>ab9ab152aec1f8a4955e34ccae08f930aa4725e9d5f8117997732f8dcccce45be4</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SizeRight</name>
-      <anchorfile>classsf_1_1Cursor.html</anchorfile>
-      <anchor>ab9ab152aec1f8a4955e34ccae08f930aaebc3670bd27360a7de429daa07921a4d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SizeTop</name>
-      <anchorfile>classsf_1_1Cursor.html</anchorfile>
-      <anchor>ab9ab152aec1f8a4955e34ccae08f930aa605e36bf335a0d801b4e7d67995a9e85</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SizeBottom</name>
-      <anchorfile>classsf_1_1Cursor.html</anchorfile>
-      <anchor>ab9ab152aec1f8a4955e34ccae08f930aaafd57cfee8747f202db04a549057e185</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SizeTopLeft</name>
-      <anchorfile>classsf_1_1Cursor.html</anchorfile>
-      <anchor>ab9ab152aec1f8a4955e34ccae08f930aa2cc42c06dd701af7211f351333b629ca</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SizeBottomRight</name>
-      <anchorfile>classsf_1_1Cursor.html</anchorfile>
-      <anchor>ab9ab152aec1f8a4955e34ccae08f930aa581edf98abd0b4905329b516a45eeef8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SizeBottomLeft</name>
-      <anchorfile>classsf_1_1Cursor.html</anchorfile>
-      <anchor>ab9ab152aec1f8a4955e34ccae08f930aa62fb130f4aa6ecf39c8366e0de549cc2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SizeTopRight</name>
-      <anchorfile>classsf_1_1Cursor.html</anchorfile>
-      <anchor>ab9ab152aec1f8a4955e34ccae08f930aa84d9478fdeef2f727f06f3fe5bdb1be6</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SizeAll</name>
-      <anchorfile>classsf_1_1Cursor.html</anchorfile>
-      <anchor>ab9ab152aec1f8a4955e34ccae08f930aa256a64be04f0347e6a44cbf84e5410bd</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Cross</name>
-      <anchorfile>classsf_1_1Cursor.html</anchorfile>
-      <anchor>ab9ab152aec1f8a4955e34ccae08f930aaf3b3213aad68863c7dec96587681fecd</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Help</name>
-      <anchorfile>classsf_1_1Cursor.html</anchorfile>
-      <anchor>ab9ab152aec1f8a4955e34ccae08f930aaf2c0ed3674b334ebf8365aee243186f5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NotAllowed</name>
-      <anchorfile>classsf_1_1Cursor.html</anchorfile>
-      <anchor>ab9ab152aec1f8a4955e34ccae08f930aadb1ec726725dd81ec9906cbe06fec805</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>Cursor</name>
-      <anchorfile>classsf_1_1Cursor.html</anchorfile>
-      <anchor>a6a36a0a5943b22b77b00cac839dd715c</anchor>
-      <arglist>()</arglist>
+      <enumvalue file="classsf_1_1Cursor.html" anchor="ab9ab152aec1f8a4955e34ccae08f930aa0f4e1aaabd074689b7d3ead824d1ee8e">Arrow</enumvalue>
+      <enumvalue file="classsf_1_1Cursor.html" anchor="ab9ab152aec1f8a4955e34ccae08f930aae2315b2069e368f88915c29b53b0b211">ArrowWait</enumvalue>
+      <enumvalue file="classsf_1_1Cursor.html" anchor="ab9ab152aec1f8a4955e34ccae08f930aa0f68101772bd5397ef8eb1b632798652">Wait</enumvalue>
+      <enumvalue file="classsf_1_1Cursor.html" anchor="ab9ab152aec1f8a4955e34ccae08f930aa9dffbf69ffba8bc38bc4e01abf4b1675">Text</enumvalue>
+      <enumvalue file="classsf_1_1Cursor.html" anchor="ab9ab152aec1f8a4955e34ccae08f930aaa78b1ac16c0cd02168097fc9a9bd7604">Hand</enumvalue>
+      <enumvalue file="classsf_1_1Cursor.html" anchor="ab9ab152aec1f8a4955e34ccae08f930aa2bcbe975c410bda244e4b5cdc76acb92">SizeHorizontal</enumvalue>
+      <enumvalue file="classsf_1_1Cursor.html" anchor="ab9ab152aec1f8a4955e34ccae08f930aa0081a84c822d1216a7fb598b28580a63">SizeVertical</enumvalue>
+      <enumvalue file="classsf_1_1Cursor.html" anchor="ab9ab152aec1f8a4955e34ccae08f930aa29fa98d79e5d4fbcd58f51c289932856">SizeTopLeftBottomRight</enumvalue>
+      <enumvalue file="classsf_1_1Cursor.html" anchor="ab9ab152aec1f8a4955e34ccae08f930aae0b4a2835909038962ad4513bc3ada18">SizeBottomLeftTopRight</enumvalue>
+      <enumvalue file="classsf_1_1Cursor.html" anchor="ab9ab152aec1f8a4955e34ccae08f930aa2d63e85c849c2364e6bfb33c3e0738a8">SizeLeft</enumvalue>
+      <enumvalue file="classsf_1_1Cursor.html" anchor="ab9ab152aec1f8a4955e34ccae08f930aae9fca55e52735b9cdad7feb6e9e2a13e">SizeRight</enumvalue>
+      <enumvalue file="classsf_1_1Cursor.html" anchor="ab9ab152aec1f8a4955e34ccae08f930aaaf0ff4ba0b413f0de34c318d978e2a79">SizeTop</enumvalue>
+      <enumvalue file="classsf_1_1Cursor.html" anchor="ab9ab152aec1f8a4955e34ccae08f930aa35d3d1d5c34e6a124d2d57e39014356f">SizeBottom</enumvalue>
+      <enumvalue file="classsf_1_1Cursor.html" anchor="ab9ab152aec1f8a4955e34ccae08f930aa46e9c0755cc2152213a4997d6a26c3b0">SizeTopLeft</enumvalue>
+      <enumvalue file="classsf_1_1Cursor.html" anchor="ab9ab152aec1f8a4955e34ccae08f930aa574c1fd63a9f58096aabd2c78b73c429">SizeBottomRight</enumvalue>
+      <enumvalue file="classsf_1_1Cursor.html" anchor="ab9ab152aec1f8a4955e34ccae08f930aada08d08fe4d17077b7f622815e84ad11">SizeBottomLeft</enumvalue>
+      <enumvalue file="classsf_1_1Cursor.html" anchor="ab9ab152aec1f8a4955e34ccae08f930aa84f7ef771196cacbd7eab64c1e901504">SizeTopRight</enumvalue>
+      <enumvalue file="classsf_1_1Cursor.html" anchor="ab9ab152aec1f8a4955e34ccae08f930aa6ba8042ceea48823ba6c4c72b9354cea">SizeAll</enumvalue>
+      <enumvalue file="classsf_1_1Cursor.html" anchor="ab9ab152aec1f8a4955e34ccae08f930aae76b449b9fc8536af7557ffa6321d269">Cross</enumvalue>
+      <enumvalue file="classsf_1_1Cursor.html" anchor="ab9ab152aec1f8a4955e34ccae08f930aa6a26f548831e6a8c26bfbbd9f6ec61e0">Help</enumvalue>
+      <enumvalue file="classsf_1_1Cursor.html" anchor="ab9ab152aec1f8a4955e34ccae08f930aafa89fcc81e9dcfd52671c968fe4e6ddf">NotAllowed</enumvalue>
     </member>
     <member kind="function">
       <type></type>
@@ -1520,18 +2510,67 @@
       <arglist>()</arglist>
     </member>
     <member kind="function">
-      <type>bool</type>
-      <name>loadFromPixels</name>
+      <type></type>
+      <name>Cursor</name>
       <anchorfile>classsf_1_1Cursor.html</anchorfile>
-      <anchor>ac24ecf82ac7d9ba6703389397f948b3a</anchor>
-      <arglist>(const Uint8 *pixels, Vector2u size, Vector2u hotspot)</arglist>
+      <anchor>a7b36ce9b5170fc02680930d2c9a5e50d</anchor>
+      <arglist>(const Cursor &amp;)=delete</arglist>
     </member>
     <member kind="function">
-      <type>bool</type>
-      <name>loadFromSystem</name>
+      <type>Cursor &amp;</type>
+      <name>operator=</name>
       <anchorfile>classsf_1_1Cursor.html</anchorfile>
-      <anchor>ad41999c8633c2fbaa2364e379c1ab25b</anchor>
+      <anchor>ad8e095e04a7c4e13ded1032f0b9e8964</anchor>
+      <arglist>(const Cursor &amp;)=delete</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Cursor</name>
+      <anchorfile>classsf_1_1Cursor.html</anchorfile>
+      <anchor>af9dc9a1a23f2788299e61c0cc96621cf</anchor>
+      <arglist>(Cursor &amp;&amp;) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>Cursor &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classsf_1_1Cursor.html</anchorfile>
+      <anchor>a5908279cc320b21c43854de08612a932</anchor>
+      <arglist>(Cursor &amp;&amp;) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Cursor</name>
+      <anchorfile>classsf_1_1Cursor.html</anchorfile>
+      <anchor>a890e7bcde7c0ca3fe650fda1d516ad88</anchor>
+      <arglist>(const std::uint8_t *pixels, Vector2u size, Vector2u hotspot)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Cursor</name>
+      <anchorfile>classsf_1_1Cursor.html</anchorfile>
+      <anchor>a130a381ab68eac1e92d0e554b6efa290</anchor>
       <arglist>(Type type)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static std::optional&lt; Cursor &gt;</type>
+      <name>createFromPixels</name>
+      <anchorfile>classsf_1_1Cursor.html</anchorfile>
+      <anchor>a93aa2dfcc8c4f27513c6632153521fa7</anchor>
+      <arglist>(const std::uint8_t *pixels, Vector2u size, Vector2u hotspot)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static std::optional&lt; Cursor &gt;</type>
+      <name>createFromSystem</name>
+      <anchorfile>classsf_1_1Cursor.html</anchorfile>
+      <anchor>a3385d2f53bc5b3b296f0409f79a57116</anchor>
+      <arglist>(Type type)</arglist>
+    </member>
+    <member kind="friend" protection="private">
+      <type>friend class</type>
+      <name>WindowBase</name>
+      <anchorfile>classsf_1_1Cursor.html</anchorfile>
+      <anchor>a041a37646cfea08c96a1a656c37e84f4</anchor>
+      <arglist></arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -1544,522 +2583,49 @@
       <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
       <anchor>af81738f06b6f571761696291276acb3b</anchor>
       <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>RestartMarkerReply</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba07e06d3326ba2d078583bef93930d909</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ServiceReadySoon</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba22413357ade6b586f6ceb0d704f35075</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>DataConnectionAlreadyOpened</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3bafa52d19bc813d69055f4cc390d4a76ca</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>OpeningDataConnection</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba794ebe743688be611447638bf9e49d86</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Ok</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3baa956e229ba6c0cdf0d88b0e05b286210</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>PointlessCommand</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba38adc424f1adcd332745de8cd3b7737a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SystemStatus</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba9bdd02ae119b8be639e778859ee74060</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>DirectoryStatus</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba8729460a695013cc96330e2fced0ae1f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>FileStatus</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3baebddfc7997dca289c83068dff3f47dce</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HelpMessage</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba840fd2a1872fd4310b046541f57fdeb7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SystemType</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba78391f73aa11f07f1514c7d070b93c08</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ServiceReady</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3baea2ee2007d7843c21108bb686ef03757</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ClosingConnection</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3bab23931490fc2d1df3081d651fe0f4d6e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>DataConnectionOpened</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3badc78ed87d5bddb174fa3c16707ac2f2d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ClosingDataConnection</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3bac723ebc8a38913bbf0d9504556cbaaa6</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>EnteringPassiveMode</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba48314fc47a72ad0aacdea93b91756f6e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>LoggedIn</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba54a88210386cb72e35d737813a221754</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>FileActionOk</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3baf988b69b0a5f55f8122da5ba001932e0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>DirectoryOk</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba06d26e95a170fc422af13def415e0437</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NeedPassword</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba9249e3fe9818eb93f181fbbf3ae3bc56</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NeedAccountToLogIn</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba9e048185f253f6eb6f5ff9e063b712fa</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NeedInformation</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba02e6f05964ecb829e9b6fb6020d6528a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ServiceUnavailable</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba43022ddf49b68a4f5aff0bea7e09e89f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>DataConnectionUnavailable</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba757b89ff1f236941f7759b0ed0c28b88</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>TransferAborted</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba7cfefcc586c12ba70f752353fde7126e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>FileActionAborted</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3baf822d1b0abf3e9ae7dd44684549d512d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>LocalError</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3bae54e84baaca95a7b36271ca3f3fdb900</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>InsufficientStorageSpace</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba5d9f3666222c808553c27e4e099c7c6d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CommandUnknown</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba75bdf0b6844fa9c07b3c25647d22c269</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ParametersUnknown</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3baf4c7c88815981bbb7c3a3461f9f48b67</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CommandNotImplemented</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba2ca4834c756c81b924ebed696fcba0a8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>BadCommandSequence</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3bad0c7ab07f01c1f7af16a1852650d7c47</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ParameterNotImplemented</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba8807473b8590e1debfb3740b7a3d081c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NotLoggedIn</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3bafcfbaff2c6fed941b6bcbc0999db764e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NeedAccountToStore</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba1af0f173062a471739b50d8e0f40d5f7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>FileUnavailable</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba3f8f931e499936fde6b750d81f5ecfef</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>PageTypeUnknown</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3bad220bc12dc45593af6e5079ea6c532c3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NotEnoughMemory</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3baf418e54753e0b8f9cb0325dd618acd14</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>FilenameNotAllowed</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba03254aba823298179a98056e15568c5b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>InvalidResponse</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba59e041e4ef186e8ae8d6035973fc46bd</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ConnectionFailed</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba51aa367cc1e85a45ea3c7be48730e990</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ConnectionClosed</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3bad1e5dcf298ce30c528261435f1a2eb53</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>InvalidFile</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3baed2c74a9f335dee1463ca1a4f41c6478</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>RestartMarkerReply</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba07e06d3326ba2d078583bef93930d909</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ServiceReadySoon</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba22413357ade6b586f6ceb0d704f35075</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>DataConnectionAlreadyOpened</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3bafa52d19bc813d69055f4cc390d4a76ca</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>OpeningDataConnection</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba794ebe743688be611447638bf9e49d86</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Ok</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3baa956e229ba6c0cdf0d88b0e05b286210</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>PointlessCommand</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba38adc424f1adcd332745de8cd3b7737a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SystemStatus</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba9bdd02ae119b8be639e778859ee74060</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>DirectoryStatus</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba8729460a695013cc96330e2fced0ae1f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>FileStatus</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3baebddfc7997dca289c83068dff3f47dce</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HelpMessage</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba840fd2a1872fd4310b046541f57fdeb7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SystemType</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba78391f73aa11f07f1514c7d070b93c08</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ServiceReady</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3baea2ee2007d7843c21108bb686ef03757</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ClosingConnection</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3bab23931490fc2d1df3081d651fe0f4d6e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>DataConnectionOpened</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3badc78ed87d5bddb174fa3c16707ac2f2d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ClosingDataConnection</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3bac723ebc8a38913bbf0d9504556cbaaa6</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>EnteringPassiveMode</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba48314fc47a72ad0aacdea93b91756f6e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>LoggedIn</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba54a88210386cb72e35d737813a221754</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>FileActionOk</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3baf988b69b0a5f55f8122da5ba001932e0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>DirectoryOk</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba06d26e95a170fc422af13def415e0437</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NeedPassword</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba9249e3fe9818eb93f181fbbf3ae3bc56</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NeedAccountToLogIn</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba9e048185f253f6eb6f5ff9e063b712fa</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NeedInformation</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba02e6f05964ecb829e9b6fb6020d6528a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ServiceUnavailable</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba43022ddf49b68a4f5aff0bea7e09e89f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>DataConnectionUnavailable</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba757b89ff1f236941f7759b0ed0c28b88</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>TransferAborted</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba7cfefcc586c12ba70f752353fde7126e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>FileActionAborted</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3baf822d1b0abf3e9ae7dd44684549d512d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>LocalError</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3bae54e84baaca95a7b36271ca3f3fdb900</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>InsufficientStorageSpace</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba5d9f3666222c808553c27e4e099c7c6d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CommandUnknown</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba75bdf0b6844fa9c07b3c25647d22c269</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ParametersUnknown</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3baf4c7c88815981bbb7c3a3461f9f48b67</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CommandNotImplemented</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba2ca4834c756c81b924ebed696fcba0a8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>BadCommandSequence</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3bad0c7ab07f01c1f7af16a1852650d7c47</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ParameterNotImplemented</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba8807473b8590e1debfb3740b7a3d081c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NotLoggedIn</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3bafcfbaff2c6fed941b6bcbc0999db764e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NeedAccountToStore</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba1af0f173062a471739b50d8e0f40d5f7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>FileUnavailable</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba3f8f931e499936fde6b750d81f5ecfef</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>PageTypeUnknown</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3bad220bc12dc45593af6e5079ea6c532c3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NotEnoughMemory</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3baf418e54753e0b8f9cb0325dd618acd14</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>FilenameNotAllowed</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba03254aba823298179a98056e15568c5b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>InvalidResponse</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba59e041e4ef186e8ae8d6035973fc46bd</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ConnectionFailed</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba51aa367cc1e85a45ea3c7be48730e990</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ConnectionClosed</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3bad1e5dcf298ce30c528261435f1a2eb53</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>InvalidFile</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3baed2c74a9f335dee1463ca1a4f41c6478</anchor>
-      <arglist></arglist>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3bac0b42b170282ed195d27160a83a79f2e">RestartMarkerReply</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba3268bd93693ac38c4f6086aea8be4db4">ServiceReadySoon</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba6cceba8a149b75b284777e8bc71e1b67">DataConnectionAlreadyOpened</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3bae33af3d7120d23ad7089653fd48bdd38">OpeningDataConnection</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3baa60852f204ed8028c1c58808b746d115">Ok</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3bacd4761523f0302440343fb1e4ec8a4e6">PointlessCommand</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba01de3f2739691336a2b125aa4945d633">SystemStatus</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba57e6d000fdbeb626a29fea4c8eff8edc">DirectoryStatus</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba198600159850bece356f7abee0f36e83">FileStatus</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba2edc83b16e6b8274c62900e85f318f3a">HelpMessage</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba4baf768371cfea0277777bde6689cec6">SystemType</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3bac9a5248c2aa6a434ce1a4da00750feb3">ServiceReady</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba2465f163ac38bfe7c1930b33aa05679b">ClosingConnection</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3bab607cbbc2d207ded4b7377acb6a549b2">DataConnectionOpened</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3baaf83fd439861065d31334292d3f8a4c3">ClosingDataConnection</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3bac224fccedd07f300696a569009fba0d2">EnteringPassiveMode</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3bafebcd1edf6010db4858e623d1dd2f3bc">LoggedIn</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3baf6f364356584aab000eea95805599ebb">FileActionOk</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3bad20154b051d400d9537edafca04a30bd">DirectoryOk</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba6cc610dcae244b511d24cd39d2509b14">NeedPassword</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3baf6cb6d98e4d4f7b4b93e7783a9e6866c">NeedAccountToLogIn</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3bad5c4ffa569fc398c4ff8713a484dc615">NeedInformation</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba2a4581043d849bcb0e4747970ef1489b">ServiceUnavailable</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba0a36dcc11a897c222c2471ae9272daa9">DataConnectionUnavailable</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba896d3e0a1567d35b8f74c19c67edc53f">TransferAborted</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3bacab1b18dabff5d854ecd0abb345eac94">FileActionAborted</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3baa74af6d76d74a4a8223ba094a33ab60c">LocalError</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3bac7434ca62773f4494fbbfa7b72903de4">InsufficientStorageSpace</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba53a48f970f3d5208e7d306d55efd4baa">CommandUnknown</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba6ac12706c8a5d211d4c4772dfe15cc82">ParametersUnknown</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba114a12ef342b629d489aa3c77ebdd436">CommandNotImplemented</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3baad20df740a4a87c2b5e77375ec408b52">BadCommandSequence</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba39173a703db2fce4762e56cdedce7df0">ParameterNotImplemented</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba68118f8d291e5a67d4d9c3408a083c69">NotLoggedIn</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba3c513c9aa990fa446158b8c218be762e">NeedAccountToStore</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba5674886af759856707ed5279f0a2a6a6">FileUnavailable</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba5ee25da5e669e314a80052cdac9465ce">PageTypeUnknown</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba0b3b296dcb39c4f03e7277194b906791">NotEnoughMemory</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3bae21058ad65c95b5baf4de1d8282c6fd4">FilenameNotAllowed</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba33f317695948b584444f4b7525da594e">InvalidResponse</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3baaf98071f760be899f4fcf1d53a29ba17">ConnectionFailed</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba318ec526e76502a583acd94f49817cf2">ConnectionClosed</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3babb149a06efb0aa1a2ea6711f20c82bbe">InvalidFile</enumvalue>
     </member>
     <member kind="function">
       <type></type>
@@ -2069,10 +2635,10 @@
       <arglist>(const Response &amp;response)</arglist>
     </member>
     <member kind="function">
-      <type>const std::string &amp;</type>
+      <type>const std::filesystem::path &amp;</type>
       <name>getDirectory</name>
       <anchorfile>classsf_1_1Ftp_1_1DirectoryResponse.html</anchorfile>
-      <anchor>a983b0ce3d99c687e0862212040158d67</anchor>
+      <anchor>a407f96f0a473f52d9b12b5bf2505a5d5</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
@@ -2104,8 +2670,8 @@
       <type>virtual</type>
       <name>~Drawable</name>
       <anchorfile>classsf_1_1Drawable.html</anchorfile>
-      <anchor>a906002f2df7beb5edbddf5bbef96f120</anchor>
-      <arglist>()</arglist>
+      <anchor>a1cae9fd79c6372775f6f3a0e2d04021e</anchor>
+      <arglist>()=default</arglist>
     </member>
     <member kind="function" protection="protected" virtualness="pure">
       <type>virtual void</type>
@@ -2114,414 +2680,77 @@
       <anchor>a90d2c88bba9b035a0844eccb380ef631</anchor>
       <arglist>(RenderTarget &amp;target, RenderStates states) const =0</arglist>
     </member>
+    <member kind="friend" protection="protected">
+      <type>friend class</type>
+      <name>RenderTarget</name>
+      <anchorfile>classsf_1_1Drawable.html</anchorfile>
+      <anchor>aa5afc6f82b7b587ed5ada4d227ce32aa</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="class">
     <name>sf::Event</name>
     <filename>classsf_1_1Event.html</filename>
-    <class kind="struct">sf::Event::JoystickButtonEvent</class>
-    <class kind="struct">sf::Event::JoystickConnectEvent</class>
-    <class kind="struct">sf::Event::JoystickMoveEvent</class>
-    <class kind="struct">sf::Event::KeyEvent</class>
-    <class kind="struct">sf::Event::MouseButtonEvent</class>
-    <class kind="struct">sf::Event::MouseMoveEvent</class>
-    <class kind="struct">sf::Event::MouseWheelEvent</class>
-    <class kind="struct">sf::Event::MouseWheelScrollEvent</class>
-    <class kind="struct">sf::Event::SensorEvent</class>
-    <class kind="struct">sf::Event::SizeEvent</class>
-    <class kind="struct">sf::Event::TextEvent</class>
-    <class kind="struct">sf::Event::TouchEvent</class>
-    <member kind="enumeration">
+    <class kind="struct">sf::Event::Closed</class>
+    <class kind="struct">sf::Event::FocusGained</class>
+    <class kind="struct">sf::Event::FocusLost</class>
+    <class kind="struct">sf::Event::JoystickButtonPressed</class>
+    <class kind="struct">sf::Event::JoystickButtonReleased</class>
+    <class kind="struct">sf::Event::JoystickConnected</class>
+    <class kind="struct">sf::Event::JoystickDisconnected</class>
+    <class kind="struct">sf::Event::JoystickMoved</class>
+    <class kind="struct">sf::Event::KeyPressed</class>
+    <class kind="struct">sf::Event::KeyReleased</class>
+    <class kind="struct">sf::Event::MouseButtonPressed</class>
+    <class kind="struct">sf::Event::MouseButtonReleased</class>
+    <class kind="struct">sf::Event::MouseEntered</class>
+    <class kind="struct">sf::Event::MouseLeft</class>
+    <class kind="struct">sf::Event::MouseMoved</class>
+    <class kind="struct">sf::Event::MouseMovedRaw</class>
+    <class kind="struct">sf::Event::MouseWheelScrolled</class>
+    <class kind="struct">sf::Event::Resized</class>
+    <class kind="struct">sf::Event::SensorChanged</class>
+    <class kind="struct">sf::Event::TextEntered</class>
+    <class kind="struct">sf::Event::TouchBegan</class>
+    <class kind="struct">sf::Event::TouchEnded</class>
+    <class kind="struct">sf::Event::TouchMoved</class>
+    <member kind="function">
       <type></type>
-      <name>EventType</name>
+      <name>Event</name>
       <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>af41fa9ed45c02449030699f671331d4a</anchor>
-      <arglist></arglist>
+      <anchor>a9972ec2d645cb27f66948760d867c169</anchor>
+      <arglist>(const TEventSubtype &amp;eventSubtype)</arglist>
     </member>
-    <member kind="enumvalue">
-      <name>Closed</name>
+    <member kind="function">
+      <type>bool</type>
+      <name>is</name>
       <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>af41fa9ed45c02449030699f671331d4aa316e4212e083f1dce79efd8d9e9c0a95</anchor>
-      <arglist></arglist>
+      <anchor>a40df10cc639742089960c7dbe9144343</anchor>
+      <arglist>() const</arglist>
     </member>
-    <member kind="enumvalue">
-      <name>Resized</name>
+    <member kind="function">
+      <type>const TEventSubtype *</type>
+      <name>getIf</name>
       <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>af41fa9ed45c02449030699f671331d4aa67fd26d7e520bc6722db3ff47ef24941</anchor>
-      <arglist></arglist>
+      <anchor>a2f7d5c82b6401ae288a252c295129a32</anchor>
+      <arglist>() const</arglist>
     </member>
-    <member kind="enumvalue">
-      <name>LostFocus</name>
+    <member kind="function">
+      <type>decltype(auto)</type>
+      <name>visit</name>
       <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>af41fa9ed45c02449030699f671331d4aabd7877b5011a337268357c973e8347bd</anchor>
-      <arglist></arglist>
+      <anchor>af8d4d0891f8919074891416d0d6474d8</anchor>
+      <arglist>(T &amp;&amp;visitor) const</arglist>
     </member>
-    <member kind="enumvalue">
-      <name>GainedFocus</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>af41fa9ed45c02449030699f671331d4aa8c5003ced508499933d540df8a6023ec</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>TextEntered</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>af41fa9ed45c02449030699f671331d4aa7e09871dc984080ff528e4f7e073e874</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>KeyPressed</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>af41fa9ed45c02449030699f671331d4aac3c7abfaa98c73bfe6be0b57df09c71b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>KeyReleased</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>af41fa9ed45c02449030699f671331d4aaa5bcc1e603d5a6f4c137af39558bd5d1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>MouseWheelMoved</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>af41fa9ed45c02449030699f671331d4aa5cc9d3941af2a36049f4f9922c934a80</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>MouseWheelScrolled</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>af41fa9ed45c02449030699f671331d4aa2fb6925eb3e7f3d468faf639dbd129ad</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>MouseButtonPressed</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>af41fa9ed45c02449030699f671331d4aa55a3dcc8bf6c40e37f9ff2cdf606481f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>MouseButtonReleased</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>af41fa9ed45c02449030699f671331d4aa9be69ecc07e484467ebbb133182fe5c1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>MouseMoved</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>af41fa9ed45c02449030699f671331d4aa4ff4fc3b3dc857e3617a63feb54be209</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>MouseEntered</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>af41fa9ed45c02449030699f671331d4aa50d98590a953e74c7ccf3dabadb22067</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>MouseLeft</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>af41fa9ed45c02449030699f671331d4aaa90b8526b328e0246d04b026de17c6e7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>JoystickButtonPressed</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>af41fa9ed45c02449030699f671331d4aa6d46855f0253f065689b69cd09437222</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>JoystickButtonReleased</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>af41fa9ed45c02449030699f671331d4aa2246ef5ee33f7fa4b2a53f042ceeac3d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>JoystickMoved</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>af41fa9ed45c02449030699f671331d4aa4d6ad228485c135967831be16ec074dd</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>JoystickConnected</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>af41fa9ed45c02449030699f671331d4aaabb8877ec2f0c92904170deded09321e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>JoystickDisconnected</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>af41fa9ed45c02449030699f671331d4aab6e161dab7abaf154cc1c7b554558cb6</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>TouchBegan</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>af41fa9ed45c02449030699f671331d4aae6f8231ad6013d063929a09b6c28f515</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>TouchMoved</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>af41fa9ed45c02449030699f671331d4aa9524b7d7665212c6d56f623b5b8311a9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>TouchEnded</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>af41fa9ed45c02449030699f671331d4aabc7123492dbca320da5c03fea1a141e5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SensorChanged</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>af41fa9ed45c02449030699f671331d4aaadf9a44c788eb9467a83c074fbf12613</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Count</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>af41fa9ed45c02449030699f671331d4aae51749211243cab2ab270b29cdc32a70</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Closed</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>af41fa9ed45c02449030699f671331d4aa316e4212e083f1dce79efd8d9e9c0a95</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Resized</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>af41fa9ed45c02449030699f671331d4aa67fd26d7e520bc6722db3ff47ef24941</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>LostFocus</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>af41fa9ed45c02449030699f671331d4aabd7877b5011a337268357c973e8347bd</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>GainedFocus</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>af41fa9ed45c02449030699f671331d4aa8c5003ced508499933d540df8a6023ec</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>TextEntered</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>af41fa9ed45c02449030699f671331d4aa7e09871dc984080ff528e4f7e073e874</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>KeyPressed</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>af41fa9ed45c02449030699f671331d4aac3c7abfaa98c73bfe6be0b57df09c71b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>KeyReleased</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>af41fa9ed45c02449030699f671331d4aaa5bcc1e603d5a6f4c137af39558bd5d1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>MouseWheelMoved</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>af41fa9ed45c02449030699f671331d4aa5cc9d3941af2a36049f4f9922c934a80</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>MouseWheelScrolled</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>af41fa9ed45c02449030699f671331d4aa2fb6925eb3e7f3d468faf639dbd129ad</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>MouseButtonPressed</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>af41fa9ed45c02449030699f671331d4aa55a3dcc8bf6c40e37f9ff2cdf606481f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>MouseButtonReleased</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>af41fa9ed45c02449030699f671331d4aa9be69ecc07e484467ebbb133182fe5c1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>MouseMoved</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>af41fa9ed45c02449030699f671331d4aa4ff4fc3b3dc857e3617a63feb54be209</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>MouseEntered</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>af41fa9ed45c02449030699f671331d4aa50d98590a953e74c7ccf3dabadb22067</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>MouseLeft</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>af41fa9ed45c02449030699f671331d4aaa90b8526b328e0246d04b026de17c6e7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>JoystickButtonPressed</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>af41fa9ed45c02449030699f671331d4aa6d46855f0253f065689b69cd09437222</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>JoystickButtonReleased</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>af41fa9ed45c02449030699f671331d4aa2246ef5ee33f7fa4b2a53f042ceeac3d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>JoystickMoved</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>af41fa9ed45c02449030699f671331d4aa4d6ad228485c135967831be16ec074dd</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>JoystickConnected</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>af41fa9ed45c02449030699f671331d4aaabb8877ec2f0c92904170deded09321e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>JoystickDisconnected</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>af41fa9ed45c02449030699f671331d4aab6e161dab7abaf154cc1c7b554558cb6</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>TouchBegan</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>af41fa9ed45c02449030699f671331d4aae6f8231ad6013d063929a09b6c28f515</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>TouchMoved</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>af41fa9ed45c02449030699f671331d4aa9524b7d7665212c6d56f623b5b8311a9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>TouchEnded</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>af41fa9ed45c02449030699f671331d4aabc7123492dbca320da5c03fea1a141e5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SensorChanged</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>af41fa9ed45c02449030699f671331d4aaadf9a44c788eb9467a83c074fbf12613</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Count</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>af41fa9ed45c02449030699f671331d4aae51749211243cab2ab270b29cdc32a70</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>EventType</type>
-      <name>type</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>adf2f8044f713fd9d6019077b0d1ffe0a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>SizeEvent</type>
-      <name>size</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>a85dae56a377eeffd39183c3f6fc96cb9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>KeyEvent</type>
-      <name>key</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>a45b92fc6757ca7c193f06b302e424ab0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>TextEvent</type>
-      <name>text</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>a00c7bba6bee892791847ec22440e0a83</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>MouseMoveEvent</type>
-      <name>mouseMove</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>a786620ec4315d40c7c4cf4ddf3a1881f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>MouseButtonEvent</type>
-      <name>mouseButton</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>a20886a16ab7624de070b97145bb1dcac</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>MouseWheelEvent</type>
-      <name>mouseWheel</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>a8758c6d7998757978fd9146099a02a1e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>MouseWheelScrollEvent</type>
-      <name>mouseWheelScroll</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>a5fd91c82198a31a0cd3dc93c4d1ae4c6</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>JoystickMoveEvent</type>
-      <name>joystickMove</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>ac479e8351cc2024d5c1094dc33970f7f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>JoystickButtonEvent</type>
-      <name>joystickButton</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>a42aad27a054c1c05bd5c3d020e1db174</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>JoystickConnectEvent</type>
-      <name>joystickConnect</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>aa354335c9ad73362442bc54ffe81118f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>TouchEvent</type>
-      <name>touch</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>a5f6ed8e499a4c3d171ff1baab469b2ee</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>SensorEvent</type>
-      <name>sensor</name>
-      <anchorfile>classsf_1_1Event.html</anchorfile>
-      <anchor>acdeacbb321655b962e27d08eeec5a190</anchor>
-      <arglist></arglist>
-    </member>
+  </compound>
+  <compound kind="class">
+    <name>sf::Exception</name>
+    <filename>classsf_1_1Exception.html</filename>
   </compound>
   <compound kind="class">
     <name>sf::FileInputStream</name>
     <filename>classsf_1_1FileInputStream.html</filename>
     <base>sf::InputStream</base>
-    <base protection="private">sf::NonCopyable</base>
     <member kind="function">
       <type></type>
       <name>FileInputStream</name>
@@ -2529,48 +2758,91 @@
       <anchor>a9a321e273f41ff7f187899061fcae9be</anchor>
       <arglist>()</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual</type>
+    <member kind="function">
+      <type></type>
       <name>~FileInputStream</name>
       <anchorfile>classsf_1_1FileInputStream.html</anchorfile>
-      <anchor>ad49ae2025ff2183f80067943a7d0276d</anchor>
-      <arglist>()</arglist>
+      <anchor>ad48c7557b9a259d30aa4a1bf3dede9b7</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>FileInputStream</name>
+      <anchorfile>classsf_1_1FileInputStream.html</anchorfile>
+      <anchor>a775cbc26c73b22e3a4d4528d96948467</anchor>
+      <arglist>(const FileInputStream &amp;)=delete</arglist>
+    </member>
+    <member kind="function">
+      <type>FileInputStream &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classsf_1_1FileInputStream.html</anchorfile>
+      <anchor>adfd055fb4070ca4a19587f9ce2b19cfc</anchor>
+      <arglist>(const FileInputStream &amp;)=delete</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>FileInputStream</name>
+      <anchorfile>classsf_1_1FileInputStream.html</anchorfile>
+      <anchor>aaeaeb1abfa0dd040a5b4781b0ec2bdb1</anchor>
+      <arglist>(FileInputStream &amp;&amp;) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>FileInputStream &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classsf_1_1FileInputStream.html</anchorfile>
+      <anchor>a6c60301457920167477aa32a0e6b35a8</anchor>
+      <arglist>(FileInputStream &amp;&amp;) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>FileInputStream</name>
+      <anchorfile>classsf_1_1FileInputStream.html</anchorfile>
+      <anchor>a0bc37e902c60db7c309d2b9adca31861</anchor>
+      <arglist>(const std::filesystem::path &amp;filename)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>open</name>
       <anchorfile>classsf_1_1FileInputStream.html</anchorfile>
-      <anchor>a87a95dc3a71746097a99c86ee58bb353</anchor>
-      <arglist>(const std::string &amp;filename)</arglist>
+      <anchor>ab3a62ca25f1e487ce77dc5180e60e33e</anchor>
+      <arglist>(const std::filesystem::path &amp;filename)</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual Int64</type>
+    <member kind="function">
+      <type>std::optional&lt; std::size_t &gt;</type>
       <name>read</name>
       <anchorfile>classsf_1_1FileInputStream.html</anchorfile>
-      <anchor>ad1e94c4152429f485db224c44ee1eb50</anchor>
-      <arglist>(void *data, Int64 size)</arglist>
+      <anchor>a179a69a4b7acdd19000af0e32601fdca</anchor>
+      <arglist>(void *data, std::size_t size) override</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual Int64</type>
+    <member kind="function">
+      <type>std::optional&lt; std::size_t &gt;</type>
       <name>seek</name>
       <anchorfile>classsf_1_1FileInputStream.html</anchorfile>
-      <anchor>abdaf5700d4e1de07568e7829106b4eb9</anchor>
-      <arglist>(Int64 position)</arglist>
+      <anchor>a3e989548005120c4a3d0ae05d3efa671</anchor>
+      <arglist>(std::size_t position) override</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual Int64</type>
+    <member kind="function">
+      <type>std::optional&lt; std::size_t &gt;</type>
       <name>tell</name>
       <anchorfile>classsf_1_1FileInputStream.html</anchorfile>
-      <anchor>a768c5fdb3be79e2d71d1bce911f8741c</anchor>
-      <arglist>()</arglist>
+      <anchor>a61deec14469a0f0c568147a95d5f387c</anchor>
+      <arglist>() override</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual Int64</type>
+    <member kind="function">
+      <type>std::optional&lt; std::size_t &gt;</type>
       <name>getSize</name>
       <anchorfile>classsf_1_1FileInputStream.html</anchorfile>
-      <anchor>aabdcaa315e088e008eeb9711ecc796e8</anchor>
-      <arglist>()</arglist>
+      <anchor>a0d3e4a80753bb4dad741e90cc67df9a1</anchor>
+      <arglist>() override</arglist>
     </member>
+  </compound>
+  <compound kind="struct">
+    <name>sf::Event::FocusGained</name>
+    <filename>structsf_1_1Event_1_1FocusGained.html</filename>
+  </compound>
+  <compound kind="struct">
+    <name>sf::Event::FocusLost</name>
+    <filename>structsf_1_1Event_1_1FocusLost.html</filename>
   </compound>
   <compound kind="class">
     <name>sf::Font</name>
@@ -2580,42 +2852,49 @@
       <type></type>
       <name>Font</name>
       <anchorfile>classsf_1_1Font.html</anchorfile>
-      <anchor>a506404655b8869ed60d1e7709812f583</anchor>
-      <arglist>()</arglist>
+      <anchor>ae63f472497a676ff6dee6b73e30921e7</anchor>
+      <arglist>()=default</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>Font</name>
       <anchorfile>classsf_1_1Font.html</anchorfile>
-      <anchor>a72d7322b355ee2f1be4500f530e98081</anchor>
-      <arglist>(const Font &amp;copy)</arglist>
+      <anchor>a77841b6392ac862455b7933df9a28274</anchor>
+      <arglist>(const std::filesystem::path &amp;filename)</arglist>
     </member>
     <member kind="function">
       <type></type>
-      <name>~Font</name>
+      <name>Font</name>
       <anchorfile>classsf_1_1Font.html</anchorfile>
-      <anchor>aa18a3c62e6e01e9a21c531b5cad4b7f2</anchor>
-      <arglist>()</arglist>
+      <anchor>a79605392b672795f0929e0d8a3c6b0c5</anchor>
+      <arglist>(const void *data, std::size_t sizeInBytes)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Font</name>
+      <anchorfile>classsf_1_1Font.html</anchorfile>
+      <anchor>a6f5ee9a3fad34886c58e78b7feb4addc</anchor>
+      <arglist>(InputStream &amp;stream)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
-      <name>loadFromFile</name>
+      <name>openFromFile</name>
       <anchorfile>classsf_1_1Font.html</anchorfile>
-      <anchor>ab020052ef4e01f6c749a85571c0f3fd1</anchor>
-      <arglist>(const std::string &amp;filename)</arglist>
+      <anchor>aef926ed551d52cf35b79161791c38254</anchor>
+      <arglist>(const std::filesystem::path &amp;filename)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
-      <name>loadFromMemory</name>
+      <name>openFromMemory</name>
       <anchorfile>classsf_1_1Font.html</anchorfile>
-      <anchor>abf2f8d6de31eb4e1db02e061c323e346</anchor>
+      <anchor>a148b67c336afc5c80d18328542719b08</anchor>
       <arglist>(const void *data, std::size_t sizeInBytes)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
-      <name>loadFromStream</name>
+      <name>openFromStream</name>
       <anchorfile>classsf_1_1Font.html</anchorfile>
-      <anchor>abc3f37a354ce8b9a21f8eb93bd9fdafb</anchor>
+      <anchor>ac9ed783dfa17f461614a167efebe654e</anchor>
       <arglist>(InputStream &amp;stream)</arglist>
     </member>
     <member kind="function">
@@ -2629,22 +2908,22 @@
       <type>const Glyph &amp;</type>
       <name>getGlyph</name>
       <anchorfile>classsf_1_1Font.html</anchorfile>
-      <anchor>a4fa68953025b5357b5683297a3104070</anchor>
-      <arglist>(Uint32 codePoint, unsigned int characterSize, bool bold, float outlineThickness=0) const</arglist>
+      <anchor>a9f49163495c3c12bc188f60255d52501</anchor>
+      <arglist>(char32_t codePoint, unsigned int characterSize, bool bold, float outlineThickness=0) const</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>hasGlyph</name>
       <anchorfile>classsf_1_1Font.html</anchorfile>
-      <anchor>ae577efa14d9f538208c98ded59a3f68e</anchor>
-      <arglist>(Uint32 codePoint) const</arglist>
+      <anchor>af3004df15f0db3d5420ff9e852945f18</anchor>
+      <arglist>(char32_t codePoint) const</arglist>
     </member>
     <member kind="function">
       <type>float</type>
       <name>getKerning</name>
       <anchorfile>classsf_1_1Font.html</anchorfile>
-      <anchor>ab357e3e0e158f1dfc454a78e111cb5d6</anchor>
-      <arglist>(Uint32 first, Uint32 second, unsigned int characterSize, bool bold=false) const</arglist>
+      <anchor>ab92c0eb62d334b0f54dfe67d34b25e00</anchor>
+      <arglist>(std::uint32_t first, std::uint32_t second, unsigned int characterSize, bool bold=false) const</arglist>
     </member>
     <member kind="function">
       <type>float</type>
@@ -2688,18 +2967,10 @@
       <anchor>ae5b59162507d5dd35f3ea0ee91e322ca</anchor>
       <arglist>() const</arglist>
     </member>
-    <member kind="function">
-      <type>Font &amp;</type>
-      <name>operator=</name>
-      <anchorfile>classsf_1_1Font.html</anchorfile>
-      <anchor>af9be4336df9121ec1b6f14fa9063e46e</anchor>
-      <arglist>(const Font &amp;right)</arglist>
-    </member>
   </compound>
   <compound kind="class">
     <name>sf::Ftp</name>
     <filename>classsf_1_1Ftp.html</filename>
-    <base protection="private">sf::NonCopyable</base>
     <class kind="class">sf::Ftp::DirectoryResponse</class>
     <class kind="class">sf::Ftp::ListingResponse</class>
     <class kind="class">sf::Ftp::Response</class>
@@ -2709,42 +2980,16 @@
       <anchorfile>classsf_1_1Ftp.html</anchorfile>
       <anchor>a1cd6b89ad23253f6d97e6d4ca4d558cb</anchor>
       <arglist></arglist>
+      <enumvalue file="classsf_1_1Ftp.html" anchor="a1cd6b89ad23253f6d97e6d4ca4d558cba6ce976e8f061b2b5cfe4d0c50c3405dd">Binary</enumvalue>
+      <enumvalue file="classsf_1_1Ftp.html" anchor="a1cd6b89ad23253f6d97e6d4ca4d558cba76b8d0dcd02ccaf203c167ced6d7ef31">Ascii</enumvalue>
+      <enumvalue file="classsf_1_1Ftp.html" anchor="a1cd6b89ad23253f6d97e6d4ca4d558cbae9cd99e58c6a9a4c44b4b8694af338f0">Ebcdic</enumvalue>
     </member>
-    <member kind="enumvalue">
-      <name>Binary</name>
+    <member kind="function">
+      <type></type>
+      <name>Ftp</name>
       <anchorfile>classsf_1_1Ftp.html</anchorfile>
-      <anchor>a1cd6b89ad23253f6d97e6d4ca4d558cba6f253b362639fb5e059dc292762a21ee</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Ascii</name>
-      <anchorfile>classsf_1_1Ftp.html</anchorfile>
-      <anchor>a1cd6b89ad23253f6d97e6d4ca4d558cbac9e544a22dce8ef3177449cb235d15c2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Ebcdic</name>
-      <anchorfile>classsf_1_1Ftp.html</anchorfile>
-      <anchor>a1cd6b89ad23253f6d97e6d4ca4d558cbabb1e34435231e73c96534c71090be7f4</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Binary</name>
-      <anchorfile>classsf_1_1Ftp.html</anchorfile>
-      <anchor>a1cd6b89ad23253f6d97e6d4ca4d558cba6f253b362639fb5e059dc292762a21ee</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Ascii</name>
-      <anchorfile>classsf_1_1Ftp.html</anchorfile>
-      <anchor>a1cd6b89ad23253f6d97e6d4ca4d558cbac9e544a22dce8ef3177449cb235d15c2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Ebcdic</name>
-      <anchorfile>classsf_1_1Ftp.html</anchorfile>
-      <anchor>a1cd6b89ad23253f6d97e6d4ca4d558cbabb1e34435231e73c96534c71090be7f4</anchor>
-      <arglist></arglist>
+      <anchor>ac3fc00b6b4719459d5f5e21c83d58684</anchor>
+      <arglist>()=default</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -2754,11 +2999,25 @@
       <arglist>()</arglist>
     </member>
     <member kind="function">
+      <type></type>
+      <name>Ftp</name>
+      <anchorfile>classsf_1_1Ftp.html</anchorfile>
+      <anchor>aadb86adf5c7b495dfb88382d2608252c</anchor>
+      <arglist>(const Ftp &amp;)=delete</arglist>
+    </member>
+    <member kind="function">
+      <type>Ftp &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classsf_1_1Ftp.html</anchorfile>
+      <anchor>add953d6d8524b3914f984c0c5eef1492</anchor>
+      <arglist>(const Ftp &amp;)=delete</arglist>
+    </member>
+    <member kind="function">
       <type>Response</type>
       <name>connect</name>
       <anchorfile>classsf_1_1Ftp.html</anchorfile>
-      <anchor>af02fb3de3f450a50a27981961c69c860</anchor>
-      <arglist>(const IpAddress &amp;server, unsigned short port=21, Time timeout=Time::Zero)</arglist>
+      <anchor>a4bf67543024815d11717ffe02cb8e1ef</anchor>
+      <arglist>(IpAddress server, unsigned short port=21, Time timeout=Time::Zero)</arglist>
     </member>
     <member kind="function">
       <type>Response</type>
@@ -2834,29 +3093,29 @@
       <type>Response</type>
       <name>renameFile</name>
       <anchorfile>classsf_1_1Ftp.html</anchorfile>
-      <anchor>a8f99251d7153e1dc26723e4006deb764</anchor>
-      <arglist>(const std::string &amp;file, const std::string &amp;newName)</arglist>
+      <anchor>a96cff0afc5d03e60452f7356f1cac7f2</anchor>
+      <arglist>(const std::filesystem::path &amp;file, const std::filesystem::path &amp;newName)</arglist>
     </member>
     <member kind="function">
       <type>Response</type>
       <name>deleteFile</name>
       <anchorfile>classsf_1_1Ftp.html</anchorfile>
-      <anchor>a8aa272b0eb7769a850006e70fcad370f</anchor>
-      <arglist>(const std::string &amp;name)</arglist>
+      <anchor>a1dad32d3fe649b9f60a91ace18f440e7</anchor>
+      <arglist>(const std::filesystem::path &amp;name)</arglist>
     </member>
     <member kind="function">
       <type>Response</type>
       <name>download</name>
       <anchorfile>classsf_1_1Ftp.html</anchorfile>
-      <anchor>a20c1600ec5fd6f5a2ad1429ab8aa5df4</anchor>
-      <arglist>(const std::string &amp;remoteFile, const std::string &amp;localPath, TransferMode mode=Binary)</arglist>
+      <anchor>a960cae5522a9b90585536abf20b17543</anchor>
+      <arglist>(const std::filesystem::path &amp;remoteFile, const std::filesystem::path &amp;localPath, TransferMode mode=TransferMode::Binary)</arglist>
     </member>
     <member kind="function">
       <type>Response</type>
       <name>upload</name>
       <anchorfile>classsf_1_1Ftp.html</anchorfile>
-      <anchor>a0402d2cec27a197ffba34c88ffaddeac</anchor>
-      <arglist>(const std::string &amp;localFile, const std::string &amp;remotePath, TransferMode mode=Binary, bool append=false)</arglist>
+      <anchor>adcc40761d3061e5b0d9d208eb5420f9b</anchor>
+      <arglist>(const std::filesystem::path &amp;localFile, const std::filesystem::path &amp;remotePath, TransferMode mode=TransferMode::Binary, bool append=false)</arglist>
     </member>
     <member kind="function">
       <type>Response</type>
@@ -2864,6 +3123,13 @@
       <anchorfile>classsf_1_1Ftp.html</anchorfile>
       <anchor>a44e095103ecbce175a33eaf0820440ff</anchor>
       <arglist>(const std::string &amp;command, const std::string &amp;parameter=&quot;&quot;)</arglist>
+    </member>
+    <member kind="friend" protection="private">
+      <type>friend class</type>
+      <name>DataChannel</name>
+      <anchorfile>classsf_1_1Ftp.html</anchorfile>
+      <anchor>a8dee57337b6a7e183bfe21d178757b0c</anchor>
+      <arglist></arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -2877,63 +3143,56 @@
       <anchor>ad8fb7a0674f0f77e530dacc2a3b0dc6a</anchor>
       <arglist>()</arglist>
     </member>
-    <member kind="function" protection="protected">
-      <type></type>
-      <name>~GlResource</name>
+    <member kind="function" protection="protected" static="yes">
+      <type>static void</type>
+      <name>registerUnsharedGlObject</name>
       <anchorfile>classsf_1_1GlResource.html</anchorfile>
-      <anchor>ab99035b67052331d1e8cf67abd93de98</anchor>
-      <arglist>()</arglist>
+      <anchor>af505ffd2358a82c5476f17a55525cf49</anchor>
+      <arglist>(std::shared_ptr&lt; void &gt; object)</arglist>
     </member>
     <member kind="function" protection="protected" static="yes">
       <type>static void</type>
-      <name>registerContextDestroyCallback</name>
+      <name>unregisterUnsharedGlObject</name>
       <anchorfile>classsf_1_1GlResource.html</anchorfile>
-      <anchor>ab171bdaf5eb36789da14b30a846db471</anchor>
-      <arglist>(ContextDestroyCallback callback, void *arg)</arglist>
+      <anchor>abd97569347bc381cb98bbc792f2f81be</anchor>
+      <arglist>(std::shared_ptr&lt; void &gt; object)</arglist>
     </member>
   </compound>
-  <compound kind="class">
+  <compound kind="struct">
     <name>sf::Glyph</name>
-    <filename>classsf_1_1Glyph.html</filename>
-    <member kind="function">
-      <type></type>
-      <name>Glyph</name>
-      <anchorfile>classsf_1_1Glyph.html</anchorfile>
-      <anchor>ab15cfc37eb7b40a94b3b3aedf934010b</anchor>
-      <arglist>()</arglist>
-    </member>
+    <filename>structsf_1_1Glyph.html</filename>
     <member kind="variable">
       <type>float</type>
       <name>advance</name>
-      <anchorfile>classsf_1_1Glyph.html</anchorfile>
+      <anchorfile>structsf_1_1Glyph.html</anchorfile>
       <anchor>aeac19b97ec11409147191606b784deda</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>int</type>
       <name>lsbDelta</name>
-      <anchorfile>classsf_1_1Glyph.html</anchorfile>
+      <anchorfile>structsf_1_1Glyph.html</anchorfile>
       <anchor>ab82761e8995ebd05c03d47ff0e064100</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>int</type>
       <name>rsbDelta</name>
-      <anchorfile>classsf_1_1Glyph.html</anchorfile>
+      <anchorfile>structsf_1_1Glyph.html</anchorfile>
       <anchor>affcf288079ac470f2d88765bbfef93fa</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>FloatRect</type>
       <name>bounds</name>
-      <anchorfile>classsf_1_1Glyph.html</anchorfile>
+      <anchorfile>structsf_1_1Glyph.html</anchorfile>
       <anchor>a6f3c892093167914adc31e52e5923f4b</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>IntRect</type>
       <name>textureRect</name>
-      <anchorfile>classsf_1_1Glyph.html</anchorfile>
+      <anchorfile>structsf_1_1Glyph.html</anchorfile>
       <anchor>a0d502d326449f8c49011ed91d2805f5b</anchor>
       <arglist></arglist>
     </member>
@@ -2941,15 +3200,14 @@
   <compound kind="class">
     <name>sf::Http</name>
     <filename>classsf_1_1Http.html</filename>
-    <base protection="private">sf::NonCopyable</base>
     <class kind="class">sf::Http::Request</class>
     <class kind="class">sf::Http::Response</class>
     <member kind="function">
       <type></type>
       <name>Http</name>
       <anchorfile>classsf_1_1Http.html</anchorfile>
-      <anchor>abe2360194f99bdde402c9f97a85cf067</anchor>
-      <arglist>()</arglist>
+      <anchor>ae08a48d8c0951a76229b8979ac8c1ce1</anchor>
+      <arglist>()=default</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -2957,6 +3215,20 @@
       <anchorfile>classsf_1_1Http.html</anchorfile>
       <anchor>a79efd844a735f083fcce0edbf1092385</anchor>
       <arglist>(const std::string &amp;host, unsigned short port=0)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Http</name>
+      <anchorfile>classsf_1_1Http.html</anchorfile>
+      <anchor>a2d3319d73fbb11f6cd83cc6714057807</anchor>
+      <arglist>(const Http &amp;)=delete</arglist>
+    </member>
+    <member kind="function">
+      <type>Http &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classsf_1_1Http.html</anchorfile>
+      <anchor>a6520f1898410657f1884f3ed7aad39ac</anchor>
+      <arglist>(const Http &amp;)=delete</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -3005,36 +3277,64 @@
       <type></type>
       <name>Image</name>
       <anchorfile>classsf_1_1Image.html</anchorfile>
-      <anchor>abb4caf3cb167b613345ebe36fc883f12</anchor>
-      <arglist>()</arglist>
+      <anchor>a873f8f575fda36b0db84ffd3c87771a3</anchor>
+      <arglist>()=default</arglist>
     </member>
     <member kind="function">
       <type></type>
-      <name>~Image</name>
+      <name>Image</name>
       <anchorfile>classsf_1_1Image.html</anchorfile>
-      <anchor>a0ba22a38e6c96e3b37dd88198046de83</anchor>
-      <arglist>()</arglist>
+      <anchor>ac951e9aefdc4dbdaf40b1ebb4c4d29a6</anchor>
+      <arglist>(Vector2u size, Color color=Color::Black)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Image</name>
+      <anchorfile>classsf_1_1Image.html</anchorfile>
+      <anchor>a41d99a89e89a382a77bcb49ab1a86cba</anchor>
+      <arglist>(Vector2u size, const std::uint8_t *pixels)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Image</name>
+      <anchorfile>classsf_1_1Image.html</anchorfile>
+      <anchor>a296b659653dfca1870d7e102ea5ec11b</anchor>
+      <arglist>(const std::filesystem::path &amp;filename)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Image</name>
+      <anchorfile>classsf_1_1Image.html</anchorfile>
+      <anchor>a614aa78ae9099db95f317d9473562464</anchor>
+      <arglist>(const void *data, std::size_t size)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Image</name>
+      <anchorfile>classsf_1_1Image.html</anchorfile>
+      <anchor>ad326f41d1857dc762208d9b5cfb12222</anchor>
+      <arglist>(InputStream &amp;stream)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
-      <name>create</name>
+      <name>resize</name>
       <anchorfile>classsf_1_1Image.html</anchorfile>
-      <anchor>a2a67930e2fd9ad97cf004e918cf5832b</anchor>
-      <arglist>(unsigned int width, unsigned int height, const Color &amp;color=Color(0, 0, 0))</arglist>
+      <anchor>afff96ca305f83a4ee76e13cf0a846347</anchor>
+      <arglist>(Vector2u size, Color color=Color::Black)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
-      <name>create</name>
+      <name>resize</name>
       <anchorfile>classsf_1_1Image.html</anchorfile>
-      <anchor>a1c2b960ea12bdbb29e80934ce5268ebf</anchor>
-      <arglist>(unsigned int width, unsigned int height, const Uint8 *pixels)</arglist>
+      <anchor>a95997001f36f3b3ae53966e8f140986f</anchor>
+      <arglist>(Vector2u size, const std::uint8_t *pixels)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>loadFromFile</name>
       <anchorfile>classsf_1_1Image.html</anchorfile>
-      <anchor>a9e4f2aa8e36d0cabde5ed5a4ef80290b</anchor>
-      <arglist>(const std::string &amp;filename)</arglist>
+      <anchor>ad2fe161c9acf3ddfb2b52853721ebd57</anchor>
+      <arglist>(const std::filesystem::path &amp;filename)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
@@ -3054,15 +3354,15 @@
       <type>bool</type>
       <name>saveToFile</name>
       <anchorfile>classsf_1_1Image.html</anchorfile>
-      <anchor>a51537fb667f47cbe80395cfd7f9e72a4</anchor>
-      <arglist>(const std::string &amp;filename) const</arglist>
+      <anchor>a3e5834cd9862f4dc77ed495b78f67f2d</anchor>
+      <arglist>(const std::filesystem::path &amp;filename) const</arglist>
     </member>
     <member kind="function">
-      <type>bool</type>
+      <type>std::optional&lt; std::vector&lt; std::uint8_t &gt; &gt;</type>
       <name>saveToMemory</name>
       <anchorfile>classsf_1_1Image.html</anchorfile>
-      <anchor>ae33432a31031ee501674efa9b6dc3f40</anchor>
-      <arglist>(std::vector&lt; sf::Uint8 &gt; &amp;output, const std::string &amp;format) const</arglist>
+      <anchor>a5cf18de1b6539d07886f53a91f841b6f</anchor>
+      <arglist>(std::string_view format) const</arglist>
     </member>
     <member kind="function">
       <type>Vector2u</type>
@@ -3075,35 +3375,35 @@
       <type>void</type>
       <name>createMaskFromColor</name>
       <anchorfile>classsf_1_1Image.html</anchorfile>
-      <anchor>a22f13f8c242a6b38eb73cc176b37ae34</anchor>
-      <arglist>(const Color &amp;color, Uint8 alpha=0)</arglist>
+      <anchor>a6d4cd23e775ffa611d12a414cd53ac6d</anchor>
+      <arglist>(Color color, std::uint8_t alpha=0)</arglist>
     </member>
     <member kind="function">
-      <type>void</type>
+      <type>bool</type>
       <name>copy</name>
       <anchorfile>classsf_1_1Image.html</anchorfile>
-      <anchor>ab2fa337c956f85f93377dcb52153a45a</anchor>
-      <arglist>(const Image &amp;source, unsigned int destX, unsigned int destY, const IntRect &amp;sourceRect=IntRect(0, 0, 0, 0), bool applyAlpha=false)</arglist>
+      <anchor>a5399551f13bd86c9f1b2d96ad52812ca</anchor>
+      <arglist>(const Image &amp;source, Vector2u dest, const IntRect &amp;sourceRect={}, bool applyAlpha=false)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>setPixel</name>
       <anchorfile>classsf_1_1Image.html</anchorfile>
-      <anchor>a9fd329b8cd7d4439e07fb5d3bb2d9744</anchor>
-      <arglist>(unsigned int x, unsigned int y, const Color &amp;color)</arglist>
+      <anchor>ae002b4678fd489c212a1fda487c06761</anchor>
+      <arglist>(Vector2u coords, Color color)</arglist>
     </member>
     <member kind="function">
       <type>Color</type>
       <name>getPixel</name>
       <anchorfile>classsf_1_1Image.html</anchorfile>
-      <anchor>acf278760458433b2c3626a6980388a95</anchor>
-      <arglist>(unsigned int x, unsigned int y) const</arglist>
+      <anchor>a166e09f1c57c5d186c77682ae898f852</anchor>
+      <arglist>(Vector2u coords) const</arglist>
     </member>
     <member kind="function">
-      <type>const Uint8 *</type>
+      <type>const std::uint8_t *</type>
       <name>getPixelsPtr</name>
       <anchorfile>classsf_1_1Image.html</anchorfile>
-      <anchor>a2f49e69b6c6257b19b4d911993075c40</anchor>
+      <anchor>a85c60ac531015bc629737ea48a75cfda</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
@@ -3136,10 +3436,10 @@
     <name>sf::SoundFileReader::Info</name>
     <filename>structsf_1_1SoundFileReader_1_1Info.html</filename>
     <member kind="variable">
-      <type>Uint64</type>
+      <type>std::uint64_t</type>
       <name>sampleCount</name>
       <anchorfile>structsf_1_1SoundFileReader_1_1Info.html</anchorfile>
-      <anchor>a74b40b4693d7000571484736d1367167</anchor>
+      <anchor>a922005c739be22c7ccca7b1af0d72b7b</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -3156,31 +3456,51 @@
       <anchor>a06ef71c19e7de190b294ae02c361f752</anchor>
       <arglist></arglist>
     </member>
+    <member kind="variable">
+      <type>std::vector&lt; SoundChannel &gt;</type>
+      <name>channelMap</name>
+      <anchorfile>structsf_1_1SoundFileReader_1_1Info.html</anchorfile>
+      <anchor>ab6bb6c2e42d2e7691662f2beaffe003a</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="class">
     <name>sf::InputSoundFile</name>
     <filename>classsf_1_1InputSoundFile.html</filename>
-    <base protection="private">sf::NonCopyable</base>
     <member kind="function">
       <type></type>
       <name>InputSoundFile</name>
       <anchorfile>classsf_1_1InputSoundFile.html</anchorfile>
-      <anchor>a3b95347de25d1d93a3230287cf47a077</anchor>
-      <arglist>()</arglist>
+      <anchor>a656b5b198b7fc216915989b05b6ae51e</anchor>
+      <arglist>()=default</arglist>
     </member>
     <member kind="function">
       <type></type>
-      <name>~InputSoundFile</name>
+      <name>InputSoundFile</name>
       <anchorfile>classsf_1_1InputSoundFile.html</anchorfile>
-      <anchor>a326a1a486587038123de0c187bf5c635</anchor>
-      <arglist>()</arglist>
+      <anchor>a0729e8109a29eed7d844294ce254e137</anchor>
+      <arglist>(const std::filesystem::path &amp;filename)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>InputSoundFile</name>
+      <anchorfile>classsf_1_1InputSoundFile.html</anchorfile>
+      <anchor>a3d893678827ac5b81012656978243707</anchor>
+      <arglist>(const void *data, std::size_t sizeInBytes)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>InputSoundFile</name>
+      <anchorfile>classsf_1_1InputSoundFile.html</anchorfile>
+      <anchor>a95c3344624ab189e38f5b69333bf4076</anchor>
+      <arglist>(InputStream &amp;stream)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>openFromFile</name>
       <anchorfile>classsf_1_1InputSoundFile.html</anchorfile>
-      <anchor>af68e54bc9bfac19554c84601156fe93f</anchor>
-      <arglist>(const std::string &amp;filename)</arglist>
+      <anchor>a4ca76fd9f563158d462bef20c6ed09cc</anchor>
+      <arglist>(const std::filesystem::path &amp;filename)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
@@ -3197,10 +3517,10 @@
       <arglist>(InputStream &amp;stream)</arglist>
     </member>
     <member kind="function">
-      <type>Uint64</type>
+      <type>std::uint64_t</type>
       <name>getSampleCount</name>
       <anchorfile>classsf_1_1InputSoundFile.html</anchorfile>
-      <anchor>a665b7fed6cdca3e0c622909e5a6655e4</anchor>
+      <anchor>a5516ece930e7d1923ad19a8b3750e4f8</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
@@ -3218,6 +3538,13 @@
       <arglist>() const</arglist>
     </member>
     <member kind="function">
+      <type>const std::vector&lt; SoundChannel &gt; &amp;</type>
+      <name>getChannelMap</name>
+      <anchorfile>classsf_1_1InputSoundFile.html</anchorfile>
+      <anchor>aa1ec832743a0dfcc4f72caca77d8d5c5</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
       <type>Time</type>
       <name>getDuration</name>
       <anchorfile>classsf_1_1InputSoundFile.html</anchorfile>
@@ -3232,18 +3559,18 @@
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>Uint64</type>
+      <type>std::uint64_t</type>
       <name>getSampleOffset</name>
       <anchorfile>classsf_1_1InputSoundFile.html</anchorfile>
-      <anchor>a73a99f159e8aca6e39478f6cf686d7ad</anchor>
+      <anchor>a861013e6105643881596dbaeffdb1ca2</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>seek</name>
       <anchorfile>classsf_1_1InputSoundFile.html</anchorfile>
-      <anchor>aaf97be15020a42e159ff88f76f22af20</anchor>
-      <arglist>(Uint64 sampleOffset)</arglist>
+      <anchor>afc98f7c941fbac7c2c0f697014b03b92</anchor>
+      <arglist>(std::uint64_t sampleOffset)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -3253,11 +3580,11 @@
       <arglist>(Time timeOffset)</arglist>
     </member>
     <member kind="function">
-      <type>Uint64</type>
+      <type>std::uint64_t</type>
       <name>read</name>
       <anchorfile>classsf_1_1InputSoundFile.html</anchorfile>
-      <anchor>a83d6f64617456601edeb0daf9d14a17f</anchor>
-      <arglist>(Int16 *samples, Uint64 maxCount)</arglist>
+      <anchor>ace52e5a9baca072799366cb181a70280</anchor>
+      <arglist>(std::int16_t *samples, std::uint64_t maxCount)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -3274,35 +3601,35 @@
       <type>virtual</type>
       <name>~InputStream</name>
       <anchorfile>classsf_1_1InputStream.html</anchorfile>
-      <anchor>a4b2eb0f92323e630bd0542bc6191682e</anchor>
-      <arglist>()</arglist>
+      <anchor>ad13ffa81ecdae8a97b596144b7f824c3</anchor>
+      <arglist>()=default</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual Int64</type>
+      <type>virtual std::optional&lt; std::size_t &gt;</type>
       <name>read</name>
       <anchorfile>classsf_1_1InputStream.html</anchorfile>
-      <anchor>a8dd89c74c1acb693203f50e750c6ae53</anchor>
-      <arglist>(void *data, Int64 size)=0</arglist>
+      <anchor>a966518d3a4cba44ae5c28847865c487d</anchor>
+      <arglist>(void *data, std::size_t size)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual Int64</type>
+      <type>virtual std::optional&lt; std::size_t &gt;</type>
       <name>seek</name>
       <anchorfile>classsf_1_1InputStream.html</anchorfile>
-      <anchor>a76aba8e5d5cf9b1c5902d5e04f7864fc</anchor>
-      <arglist>(Int64 position)=0</arglist>
+      <anchor>ab53feb45aa824cc2117362ab79b38352</anchor>
+      <arglist>(std::size_t position)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual Int64</type>
+      <type>virtual std::optional&lt; std::size_t &gt;</type>
       <name>tell</name>
       <anchorfile>classsf_1_1InputStream.html</anchorfile>
-      <anchor>a599515b9ccdbddb6fef5a98424fd559c</anchor>
+      <anchor>a03ec284866fd46ef2a3673e022f89895</anchor>
       <arglist>()=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual Int64</type>
+      <type>virtual std::optional&lt; std::size_t &gt;</type>
       <name>getSize</name>
       <anchorfile>classsf_1_1InputStream.html</anchorfile>
-      <anchor>a311eaaaa65d636728e5153b574b72d5d</anchor>
+      <anchor>a2d735fa531dd65747f743b09331ea7c8</anchor>
       <arglist>()=0</arglist>
     </member>
   </compound>
@@ -3313,36 +3640,15 @@
       <type></type>
       <name>IpAddress</name>
       <anchorfile>classsf_1_1IpAddress.html</anchorfile>
-      <anchor>af32a0574baa0f46e48deb2d83ca7658b</anchor>
-      <arglist>()</arglist>
+      <anchor>ab2e921c95ab881f6e11ae674f9045d53</anchor>
+      <arglist>(std::uint8_t byte0, std::uint8_t byte1, std::uint8_t byte2, std::uint8_t byte3)</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>IpAddress</name>
       <anchorfile>classsf_1_1IpAddress.html</anchorfile>
-      <anchor>a656b7445ab04cabaa7398685bc09c3f7</anchor>
-      <arglist>(const std::string &amp;address)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>IpAddress</name>
-      <anchorfile>classsf_1_1IpAddress.html</anchorfile>
-      <anchor>a92f2a9be74334a61b96c2fc79fe6eb78</anchor>
-      <arglist>(const char *address)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>IpAddress</name>
-      <anchorfile>classsf_1_1IpAddress.html</anchorfile>
-      <anchor>a1d289dcb9ce7a64c600c6f84cba88cc6</anchor>
-      <arglist>(Uint8 byte0, Uint8 byte1, Uint8 byte2, Uint8 byte3)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>IpAddress</name>
-      <anchorfile>classsf_1_1IpAddress.html</anchorfile>
-      <anchor>a8ed34ba3a40d70eb9f09ac5ae779a162</anchor>
-      <arglist>(Uint32 address)</arglist>
+      <anchor>a56ac2b07f1cb6dab4b86c9748e86273b</anchor>
+      <arglist>(std::uint32_t address)</arglist>
     </member>
     <member kind="function">
       <type>std::string</type>
@@ -3352,32 +3658,32 @@
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>Uint32</type>
+      <type>std::uint32_t</type>
       <name>toInteger</name>
       <anchorfile>classsf_1_1IpAddress.html</anchorfile>
-      <anchor>ae7911c5ea9562f9602c3e29cd54b15e9</anchor>
+      <anchor>a53f10b972ade854a076394de4f2c1866</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static IpAddress</type>
+      <type>static std::optional&lt; IpAddress &gt;</type>
+      <name>resolve</name>
+      <anchorfile>classsf_1_1IpAddress.html</anchorfile>
+      <anchor>a4a78be2d092625c1216820037c2920c0</anchor>
+      <arglist>(std::string_view address)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static std::optional&lt; IpAddress &gt;</type>
       <name>getLocalAddress</name>
       <anchorfile>classsf_1_1IpAddress.html</anchorfile>
-      <anchor>a4c31622ad87edca48adbb8e8ed00ee4a</anchor>
+      <anchor>a3076aa9ae952698930cb886d1ab0a1cc</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static IpAddress</type>
+      <type>static std::optional&lt; IpAddress &gt;</type>
       <name>getPublicAddress</name>
       <anchorfile>classsf_1_1IpAddress.html</anchorfile>
-      <anchor>a5c5cbf67e4aacf23c24f2ad991df4c55</anchor>
+      <anchor>a361755453fb74920253e633c8523454b</anchor>
       <arglist>(Time timeout=Time::Zero)</arglist>
-    </member>
-    <member kind="variable" static="yes">
-      <type>static const IpAddress</type>
-      <name>None</name>
-      <anchorfile>classsf_1_1IpAddress.html</anchorfile>
-      <anchor>a4619b4abbe3c8fef056e7299db967404</anchor>
-      <arglist></arglist>
     </member>
     <member kind="variable" static="yes">
       <type>static const IpAddress</type>
@@ -3404,1756 +3710,183 @@
       <type>friend bool</type>
       <name>operator&lt;</name>
       <anchorfile>classsf_1_1IpAddress.html</anchorfile>
-      <anchor>a4886da3f195b8c30d415a94a7009fdd7</anchor>
-      <arglist>(const IpAddress &amp;left, const IpAddress &amp;right)</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>sf::Joystick</name>
-    <filename>classsf_1_1Joystick.html</filename>
-    <class kind="struct">sf::Joystick::Identification</class>
-    <member kind="enumvalue">
-      <name>Count</name>
-      <anchorfile>classsf_1_1Joystick.html</anchorfile>
-      <anchor>aee00dd432eacd8369d279b47c3ab4cc5a6e0a2a95bc1da277610c04d80f52715e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ButtonCount</name>
-      <anchorfile>classsf_1_1Joystick.html</anchorfile>
-      <anchor>aee00dd432eacd8369d279b47c3ab4cc5a2f1b8a0a59f2c12a4775c0e1e69e1816</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>AxisCount</name>
-      <anchorfile>classsf_1_1Joystick.html</anchorfile>
-      <anchor>aee00dd432eacd8369d279b47c3ab4cc5accf3e487c9f6ee2f384351323626a42c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>Axis</name>
-      <anchorfile>classsf_1_1Joystick.html</anchorfile>
-      <anchor>a48db337092c2e263774f94de6d50baa7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>X</name>
-      <anchorfile>classsf_1_1Joystick.html</anchorfile>
-      <anchor>a48db337092c2e263774f94de6d50baa7a95dc8b9bf7b0a2157fc67891c54c401e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Y</name>
-      <anchorfile>classsf_1_1Joystick.html</anchorfile>
-      <anchor>a48db337092c2e263774f94de6d50baa7a51ef1455f7511ad4a78ba241d66593ce</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Z</name>
-      <anchorfile>classsf_1_1Joystick.html</anchorfile>
-      <anchor>a48db337092c2e263774f94de6d50baa7a7c37a1240b2dafbbfc5c1a0e23911315</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>R</name>
-      <anchorfile>classsf_1_1Joystick.html</anchorfile>
-      <anchor>a48db337092c2e263774f94de6d50baa7aeebbcdb0828850f4d69e6a084801fab8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>U</name>
-      <anchorfile>classsf_1_1Joystick.html</anchorfile>
-      <anchor>a48db337092c2e263774f94de6d50baa7a0a901f61e75292dd2f642b6e4f33a214</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>V</name>
-      <anchorfile>classsf_1_1Joystick.html</anchorfile>
-      <anchor>a48db337092c2e263774f94de6d50baa7aa2e2c8ffa1837e7911ee0c7d045bf8f4</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>PovX</name>
-      <anchorfile>classsf_1_1Joystick.html</anchorfile>
-      <anchor>a48db337092c2e263774f94de6d50baa7a06420f7714e4dfd8b841885a0b5f3954</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>PovY</name>
-      <anchorfile>classsf_1_1Joystick.html</anchorfile>
-      <anchor>a48db337092c2e263774f94de6d50baa7a0f8ffb2dcddf91b98ab910a4f8327ad9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Count</name>
-      <anchorfile>classsf_1_1Joystick.html</anchorfile>
-      <anchor>aee00dd432eacd8369d279b47c3ab4cc5a6e0a2a95bc1da277610c04d80f52715e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ButtonCount</name>
-      <anchorfile>classsf_1_1Joystick.html</anchorfile>
-      <anchor>aee00dd432eacd8369d279b47c3ab4cc5a2f1b8a0a59f2c12a4775c0e1e69e1816</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>AxisCount</name>
-      <anchorfile>classsf_1_1Joystick.html</anchorfile>
-      <anchor>aee00dd432eacd8369d279b47c3ab4cc5accf3e487c9f6ee2f384351323626a42c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>X</name>
-      <anchorfile>classsf_1_1Joystick.html</anchorfile>
-      <anchor>a48db337092c2e263774f94de6d50baa7a95dc8b9bf7b0a2157fc67891c54c401e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Y</name>
-      <anchorfile>classsf_1_1Joystick.html</anchorfile>
-      <anchor>a48db337092c2e263774f94de6d50baa7a51ef1455f7511ad4a78ba241d66593ce</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Z</name>
-      <anchorfile>classsf_1_1Joystick.html</anchorfile>
-      <anchor>a48db337092c2e263774f94de6d50baa7a7c37a1240b2dafbbfc5c1a0e23911315</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>R</name>
-      <anchorfile>classsf_1_1Joystick.html</anchorfile>
-      <anchor>a48db337092c2e263774f94de6d50baa7aeebbcdb0828850f4d69e6a084801fab8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>U</name>
-      <anchorfile>classsf_1_1Joystick.html</anchorfile>
-      <anchor>a48db337092c2e263774f94de6d50baa7a0a901f61e75292dd2f642b6e4f33a214</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>V</name>
-      <anchorfile>classsf_1_1Joystick.html</anchorfile>
-      <anchor>a48db337092c2e263774f94de6d50baa7aa2e2c8ffa1837e7911ee0c7d045bf8f4</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>PovX</name>
-      <anchorfile>classsf_1_1Joystick.html</anchorfile>
-      <anchor>a48db337092c2e263774f94de6d50baa7a06420f7714e4dfd8b841885a0b5f3954</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>PovY</name>
-      <anchorfile>classsf_1_1Joystick.html</anchorfile>
-      <anchor>a48db337092c2e263774f94de6d50baa7a0f8ffb2dcddf91b98ab910a4f8327ad9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static bool</type>
-      <name>isConnected</name>
-      <anchorfile>classsf_1_1Joystick.html</anchorfile>
-      <anchor>ac7d4e1923e9f9420174f26703ea63d6c</anchor>
-      <arglist>(unsigned int joystick)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static unsigned int</type>
-      <name>getButtonCount</name>
-      <anchorfile>classsf_1_1Joystick.html</anchorfile>
-      <anchor>a4de9f445c6582bfe9f0873f695682885</anchor>
-      <arglist>(unsigned int joystick)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static bool</type>
-      <name>hasAxis</name>
-      <anchorfile>classsf_1_1Joystick.html</anchorfile>
-      <anchor>a268e8f2a11ae6af4a47c727cb4ab4d95</anchor>
-      <arglist>(unsigned int joystick, Axis axis)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static bool</type>
-      <name>isButtonPressed</name>
-      <anchorfile>classsf_1_1Joystick.html</anchorfile>
-      <anchor>ae0d97a4b84268cbe6a7078e1b2717835</anchor>
-      <arglist>(unsigned int joystick, unsigned int button)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static float</type>
-      <name>getAxisPosition</name>
-      <anchorfile>classsf_1_1Joystick.html</anchorfile>
-      <anchor>aea4930193331df1851b709f3060ba58b</anchor>
-      <arglist>(unsigned int joystick, Axis axis)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static Identification</type>
-      <name>getIdentification</name>
-      <anchorfile>classsf_1_1Joystick.html</anchorfile>
-      <anchor>aa917c9435330e6e0368d3893672d1b74</anchor>
-      <arglist>(unsigned int joystick)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static void</type>
-      <name>update</name>
-      <anchorfile>classsf_1_1Joystick.html</anchorfile>
-      <anchor>ab85fa9175b4edd3e5a07ee3cde0b0f48</anchor>
-      <arglist>()</arglist>
+      <anchor>ab1f8de4e6229dfa27fa74086b3e3b56e</anchor>
+      <arglist>(IpAddress left, IpAddress right)</arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>sf::Event::JoystickButtonEvent</name>
-    <filename>structsf_1_1Event_1_1JoystickButtonEvent.html</filename>
+    <name>sf::Event::JoystickButtonPressed</name>
+    <filename>structsf_1_1Event_1_1JoystickButtonPressed.html</filename>
     <member kind="variable">
       <type>unsigned int</type>
       <name>joystickId</name>
-      <anchorfile>structsf_1_1Event_1_1JoystickButtonEvent.html</anchorfile>
-      <anchor>a2f80ecdb964a5ae0fc30726a404c41ec</anchor>
+      <anchorfile>structsf_1_1Event_1_1JoystickButtonPressed.html</anchorfile>
+      <anchor>a628d89c9b5ae5bd99d7dd74ce9a15bff</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>unsigned int</type>
       <name>button</name>
-      <anchorfile>structsf_1_1Event_1_1JoystickButtonEvent.html</anchorfile>
-      <anchor>a6412e698a2f7904c5aa875a0d1b34da4</anchor>
+      <anchorfile>structsf_1_1Event_1_1JoystickButtonPressed.html</anchorfile>
+      <anchor>a2258d3416bec2b63485d65d0b842571f</anchor>
       <arglist></arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>sf::Event::JoystickConnectEvent</name>
-    <filename>structsf_1_1Event_1_1JoystickConnectEvent.html</filename>
+    <name>sf::Event::JoystickButtonReleased</name>
+    <filename>structsf_1_1Event_1_1JoystickButtonReleased.html</filename>
     <member kind="variable">
       <type>unsigned int</type>
       <name>joystickId</name>
-      <anchorfile>structsf_1_1Event_1_1JoystickConnectEvent.html</anchorfile>
-      <anchor>a08e58e8559d3e4fe4654855fec79194b</anchor>
+      <anchorfile>structsf_1_1Event_1_1JoystickButtonReleased.html</anchorfile>
+      <anchor>aafd3630358ed9e00ac74ff6b76803609</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>unsigned int</type>
+      <name>button</name>
+      <anchorfile>structsf_1_1Event_1_1JoystickButtonReleased.html</anchorfile>
+      <anchor>a99de976352240b1c3cdcbbaf1a824ccc</anchor>
       <arglist></arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>sf::Event::JoystickMoveEvent</name>
-    <filename>structsf_1_1Event_1_1JoystickMoveEvent.html</filename>
+    <name>sf::Event::JoystickConnected</name>
+    <filename>structsf_1_1Event_1_1JoystickConnected.html</filename>
     <member kind="variable">
       <type>unsigned int</type>
       <name>joystickId</name>
-      <anchorfile>structsf_1_1Event_1_1JoystickMoveEvent.html</anchorfile>
-      <anchor>a7bf2b2f2941a21ed26a67c95f5e4232f</anchor>
+      <anchorfile>structsf_1_1Event_1_1JoystickConnected.html</anchorfile>
+      <anchor>a0ff751ccabb36225f040d5c60d1eb38b</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>sf::Event::JoystickDisconnected</name>
+    <filename>structsf_1_1Event_1_1JoystickDisconnected.html</filename>
+    <member kind="variable">
+      <type>unsigned int</type>
+      <name>joystickId</name>
+      <anchorfile>structsf_1_1Event_1_1JoystickDisconnected.html</anchorfile>
+      <anchor>a7b96e66218e4ae84aedec4e8c7f0d49f</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>sf::Event::JoystickMoved</name>
+    <filename>structsf_1_1Event_1_1JoystickMoved.html</filename>
+    <member kind="variable">
+      <type>unsigned int</type>
+      <name>joystickId</name>
+      <anchorfile>structsf_1_1Event_1_1JoystickMoved.html</anchorfile>
+      <anchor>a1f0dc41a3f7f3ced3e08e7daac917396</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>Joystick::Axis</type>
       <name>axis</name>
-      <anchorfile>structsf_1_1Event_1_1JoystickMoveEvent.html</anchorfile>
-      <anchor>add22e8126b7974271991dc6380cbdee3</anchor>
+      <anchorfile>structsf_1_1Event_1_1JoystickMoved.html</anchorfile>
+      <anchor>a60f21fbcb7697e4685f997b9b5dc8c48</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>float</type>
       <name>position</name>
-      <anchorfile>structsf_1_1Event_1_1JoystickMoveEvent.html</anchorfile>
-      <anchor>aba5a70815420161375fd2e756689c32a</anchor>
+      <anchorfile>structsf_1_1Event_1_1JoystickMoved.html</anchorfile>
+      <anchor>aa0ced59d8ddc52442ae5bb71360527fb</anchor>
       <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>sf::Keyboard</name>
-    <filename>classsf_1_1Keyboard.html</filename>
-    <class kind="struct">sf::Keyboard::Scan</class>
-    <member kind="enumeration">
-      <type></type>
-      <name>Key</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Unknown</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a840c43fa8e05ff854f6fe9a86c7c939e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>A</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a9d06fa7ac9af597034ea724fb08b991e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>B</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142aca3142235e5c4199f0b8b45d8368ef94</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>C</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a0d586c4ec0cd6b537cb6f49180fedecc</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>D</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142ae778600bd3e878b59df1dbdd5877ba7a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>E</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a0e027c08438a8bf77e2e1e5d5d75bd84</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142ab8021fbbe5483bc98f124df6f7090002</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>G</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142aafb9e3d7679d88d86afc608d79c251f7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>H</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142adfa19328304890e17f4a3f4263eed04d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>I</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142abaef09665b4d94ebbed50345cab3981e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>J</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a948c634009beacdab42c3419253a5e85</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>K</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a25beb62393ff666a4bec18ea2a66f3f2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>L</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a5ef1839ffe19b7e9c24f2ca017614ff9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>M</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a9718de9940f723c956587dcb90450a0a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>N</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142ab652ed6b308db95a74dc4ff5229ac9c8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>O</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a7739288cc628dfa8c50ba712be7c03e1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>P</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142aaeac1db209a64a0221277a835de986e6</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Q</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a27e3d50587c9789d2592d275d22fbada</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>R</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142add852cadaa6fff2d982bbab3551c31d0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>S</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142aca13014bf9ed5887d347060a0334ea5a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>T</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a19f59109111fc5271d3581bcd0c43187</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>U</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142ab4f30ae34848ee934dd4f5496a8fb4a1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>V</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142aec9074abd2d41628d1ecdc14e1b2cd96</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>W</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a258aa89e9c6c9aad1ccbaeb41839c5e0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>X</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a012f5ee9d518e9e24caa087fbddc0594</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Y</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a5d877e63d1353e0fc0a0757a87a7bd0e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Z</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a4e12efd6478a2d174264f29b0b41ab43</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Num0</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142af026fd133ee93a0bd8c70762cc3be4bc</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Num1</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a506bd962cab80722a8c5a4b178912c59</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Num2</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a2d6eb5118179bb140fdb3485bb08c182</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Num3</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142aee78e5ed27d31598fc285400166c0dd5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Num4</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a5fbd8a089460dc33c22f68b36e1fdc98</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Num5</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a1dc7e87810b8d4b7039e202b0adcc4ee</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Num6</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142af86dafb69d922ad2b0f4bd4c37696575</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Num7</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a8fa0056a0a6f5a7d9fcef3402c9c916d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Num8</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142adb9f2549fd57bfd99d4713ff1845c530</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Num9</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a9bc0d0727958bef97e2b6a58e23743db</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Escape</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a64b7ecb543c5d03bec8383dde123c95d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>LControl</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142acc76c9dec76d8ae806ae9d6515066e53</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>LShift</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a270db49f76cb4dbe72da36153d3aa45c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>LAlt</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a000ecf5145296d7d52b6871c54e6718d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>LSystem</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a718171426307a0f5f26b4ae82a322b24</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>RControl</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a275d3fd207a9c0b22ce404012c71dc17</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>RShift</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a5be69e3b2f25bd5f4eed75d063f42b90</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>RAlt</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a21dcf098233296462bc7c632b93369cc</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>RSystem</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142ac1b3fd7424feeda242cedbb64f3f5a7f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Menu</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a4aac50ce7c4923f96323fe84d592b139</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>LBracket</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142afbe21cad5f264d685cf7f25060004184</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>RBracket</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a578253a70b48e61830aa08292d44680f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Semicolon</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142ab50635b9c913837d1bd4453eec7cb506</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Comma</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142ab7374f48cc79e3085739160b8e3ef2f9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Period</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142ac72ba959ab1946957e8dfd4f81ea811d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Apostrophe</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a77b44e1f040360d71126fa1c4ad12bec</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Slash</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a7424bf901434a587a6c202c423e6786c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Backslash</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142adbd7d6f90a1009e91acf7bb1dc068512</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Grave</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a2da2429e6db8efbf923151f00a9b21e0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Equal</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142ae55c35f6b6417e1dbbfa351c64dfc743</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Hyphen</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a5bde2cf47e6182e6f45d0d2197223c35</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Space</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a6fdaa93b6b8d1a2b73bc239e9ada94ef</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Enter</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a59e26db0965305492875d7da68f6a990</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Backspace</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142aa7c1581bac0f20164512572e6c60e98e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Tab</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a20c552c39c8356b1078f1cfff7936b4a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>PageUp</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142aa24fe33bba1c3639c3aeaa317bd89d7e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>PageDown</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a21c73323d9a8b6017f3bac0cb8c8ac1a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>End</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a4478343b2b7efc310f995fd4251a264d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Home</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142af41ae7c3927cc5ea8b43ee2fefe890e8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Insert</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a616c8cae362d229155c5c6e10b969943</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Delete</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142ab66187002fc7f6695ef3d05237b93a38</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Add</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a158c586cbe8609031d1a7932e1a8dba2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Subtract</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a68983f67bd30d27b27c90d6794c78aa2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Multiply</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a10623ae71db8a6b5d97189fc21fb91ae</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Divide</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142afae3dc28752954f0bfe298ac52f58cb6</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Left</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142ac3fe5df11d15b57317c053a2ae13d9a9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Right</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a2aeb083dea103a8e36b6850b51ef3632</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Up</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142ac4cf6ef2d2632445e9e26c8f2b70e82d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Down</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a33dd676edbdf0817d7a65b21df3d0dca</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Numpad0</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142af0b2af83a7a8c358f7b8f7c403089a4e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Numpad1</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a03536d369ae55cc18024f7e4a341a5ac</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Numpad2</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a8ad9ccf62631d583f44f06aebd662093</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Numpad3</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142ab63ae26e90126b1842bde25d6dedb205</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Numpad4</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a65336d823bd823a0d246a872ff90e08a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Numpad5</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a8bc5041f12fdfbefba1dbd823c7e1054</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Numpad6</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142aaf28fdf0d3da6a18030e685478e3a713</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Numpad7</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a3f9bf9835d65a0df5cce2d3842a40541</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Numpad8</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a25dcd4e4183ceceb3ac06c72995bae49</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Numpad9</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a365eb80f54003670a78e3b850c28df21</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F1</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142ae59c7e28858e970c9d4f0e418179b632</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F2</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a6a2faa5f876a1e75f24a596b658ff413</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F3</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a1fb58d66f9c0183db3e70b2b0576074e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F4</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a71311e21238cf2c0df1bbf096bba68f2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F5</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a01fd2f93eddf2887186ea91180a789a8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F6</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142ac756a19b31eb28cd2c35c29d8e54ea04</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F7</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a060d30d36a3e08208b2bc46d0f549b6c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F8</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142ade468cd27716b9c2a0d0158afa2f8621</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F9</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a3c5c2342003a7191de6636b5ef44e1b9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F10</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142aec695ecf296e7084a8f7f3ec408e16ac</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F11</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142af9a8de90d90a7a7582269bc5c41f5afd</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F12</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142af9d8807117d946de5e403bcbd4d7161d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F13</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a9e28e971941ca2900c1eea17cda50a04</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F14</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a9a0327a4ef876338d5f3c34c514f190c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F15</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a8949ce79077cc8bf64f4fa42bb6a2808</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Pause</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a95daf340fcc3d5c2846f69d184170d9b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>KeyCount</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a93e6ffa0320fe9b2f29aec14a58be36b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Tilde</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a90be0882086bccb516e3afc5c7fb82eb</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Dash</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a401a183dcfde0a06cb60fe6c91fa1e39</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>BackSpace</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a33aeaab900abcd01eebf2fcc4f6d97e2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>BackSlash</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a536df84e73859aa44e11e192459470b6</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SemiColon</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a460ab09a36f9ed230504b89b9815de88</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Return</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142ac291de81bdee518d636bc359f2ca77de</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Quote</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142af031edb6bcf319734a6664388958c475</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Unknown</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a840c43fa8e05ff854f6fe9a86c7c939e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>A</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a9d06fa7ac9af597034ea724fb08b991e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>B</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142aca3142235e5c4199f0b8b45d8368ef94</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>C</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a0d586c4ec0cd6b537cb6f49180fedecc</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>D</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142ae778600bd3e878b59df1dbdd5877ba7a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>E</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a0e027c08438a8bf77e2e1e5d5d75bd84</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142ab8021fbbe5483bc98f124df6f7090002</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>G</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142aafb9e3d7679d88d86afc608d79c251f7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>H</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142adfa19328304890e17f4a3f4263eed04d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>I</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142abaef09665b4d94ebbed50345cab3981e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>J</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a948c634009beacdab42c3419253a5e85</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>K</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a25beb62393ff666a4bec18ea2a66f3f2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>L</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a5ef1839ffe19b7e9c24f2ca017614ff9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>M</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a9718de9940f723c956587dcb90450a0a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>N</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142ab652ed6b308db95a74dc4ff5229ac9c8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>O</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a7739288cc628dfa8c50ba712be7c03e1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>P</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142aaeac1db209a64a0221277a835de986e6</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Q</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a27e3d50587c9789d2592d275d22fbada</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>R</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142add852cadaa6fff2d982bbab3551c31d0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>S</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142aca13014bf9ed5887d347060a0334ea5a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>T</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a19f59109111fc5271d3581bcd0c43187</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>U</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142ab4f30ae34848ee934dd4f5496a8fb4a1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>V</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142aec9074abd2d41628d1ecdc14e1b2cd96</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>W</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a258aa89e9c6c9aad1ccbaeb41839c5e0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>X</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a012f5ee9d518e9e24caa087fbddc0594</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Y</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a5d877e63d1353e0fc0a0757a87a7bd0e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Z</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a4e12efd6478a2d174264f29b0b41ab43</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Num0</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142af026fd133ee93a0bd8c70762cc3be4bc</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Num1</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a506bd962cab80722a8c5a4b178912c59</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Num2</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a2d6eb5118179bb140fdb3485bb08c182</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Num3</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142aee78e5ed27d31598fc285400166c0dd5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Num4</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a5fbd8a089460dc33c22f68b36e1fdc98</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Num5</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a1dc7e87810b8d4b7039e202b0adcc4ee</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Num6</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142af86dafb69d922ad2b0f4bd4c37696575</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Num7</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a8fa0056a0a6f5a7d9fcef3402c9c916d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Num8</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142adb9f2549fd57bfd99d4713ff1845c530</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Num9</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a9bc0d0727958bef97e2b6a58e23743db</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Escape</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a64b7ecb543c5d03bec8383dde123c95d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>LControl</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142acc76c9dec76d8ae806ae9d6515066e53</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>LShift</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a270db49f76cb4dbe72da36153d3aa45c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>LAlt</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a000ecf5145296d7d52b6871c54e6718d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>LSystem</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a718171426307a0f5f26b4ae82a322b24</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>RControl</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a275d3fd207a9c0b22ce404012c71dc17</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>RShift</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a5be69e3b2f25bd5f4eed75d063f42b90</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>RAlt</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a21dcf098233296462bc7c632b93369cc</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>RSystem</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142ac1b3fd7424feeda242cedbb64f3f5a7f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Menu</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a4aac50ce7c4923f96323fe84d592b139</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>LBracket</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142afbe21cad5f264d685cf7f25060004184</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>RBracket</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a578253a70b48e61830aa08292d44680f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Semicolon</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142ab50635b9c913837d1bd4453eec7cb506</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Comma</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142ab7374f48cc79e3085739160b8e3ef2f9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Period</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142ac72ba959ab1946957e8dfd4f81ea811d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Apostrophe</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a77b44e1f040360d71126fa1c4ad12bec</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Slash</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a7424bf901434a587a6c202c423e6786c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Backslash</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142adbd7d6f90a1009e91acf7bb1dc068512</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Grave</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a2da2429e6db8efbf923151f00a9b21e0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Equal</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142ae55c35f6b6417e1dbbfa351c64dfc743</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Hyphen</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a5bde2cf47e6182e6f45d0d2197223c35</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Space</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a6fdaa93b6b8d1a2b73bc239e9ada94ef</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Enter</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a59e26db0965305492875d7da68f6a990</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Backspace</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142aa7c1581bac0f20164512572e6c60e98e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Tab</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a20c552c39c8356b1078f1cfff7936b4a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>PageUp</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142aa24fe33bba1c3639c3aeaa317bd89d7e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>PageDown</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a21c73323d9a8b6017f3bac0cb8c8ac1a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>End</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a4478343b2b7efc310f995fd4251a264d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Home</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142af41ae7c3927cc5ea8b43ee2fefe890e8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Insert</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a616c8cae362d229155c5c6e10b969943</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Delete</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142ab66187002fc7f6695ef3d05237b93a38</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Add</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a158c586cbe8609031d1a7932e1a8dba2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Subtract</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a68983f67bd30d27b27c90d6794c78aa2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Multiply</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a10623ae71db8a6b5d97189fc21fb91ae</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Divide</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142afae3dc28752954f0bfe298ac52f58cb6</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Left</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142ac3fe5df11d15b57317c053a2ae13d9a9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Right</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a2aeb083dea103a8e36b6850b51ef3632</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Up</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142ac4cf6ef2d2632445e9e26c8f2b70e82d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Down</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a33dd676edbdf0817d7a65b21df3d0dca</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Numpad0</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142af0b2af83a7a8c358f7b8f7c403089a4e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Numpad1</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a03536d369ae55cc18024f7e4a341a5ac</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Numpad2</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a8ad9ccf62631d583f44f06aebd662093</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Numpad3</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142ab63ae26e90126b1842bde25d6dedb205</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Numpad4</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a65336d823bd823a0d246a872ff90e08a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Numpad5</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a8bc5041f12fdfbefba1dbd823c7e1054</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Numpad6</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142aaf28fdf0d3da6a18030e685478e3a713</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Numpad7</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a3f9bf9835d65a0df5cce2d3842a40541</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Numpad8</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a25dcd4e4183ceceb3ac06c72995bae49</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Numpad9</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a365eb80f54003670a78e3b850c28df21</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F1</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142ae59c7e28858e970c9d4f0e418179b632</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F2</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a6a2faa5f876a1e75f24a596b658ff413</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F3</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a1fb58d66f9c0183db3e70b2b0576074e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F4</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a71311e21238cf2c0df1bbf096bba68f2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F5</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a01fd2f93eddf2887186ea91180a789a8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F6</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142ac756a19b31eb28cd2c35c29d8e54ea04</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F7</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a060d30d36a3e08208b2bc46d0f549b6c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F8</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142ade468cd27716b9c2a0d0158afa2f8621</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F9</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a3c5c2342003a7191de6636b5ef44e1b9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F10</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142aec695ecf296e7084a8f7f3ec408e16ac</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F11</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142af9a8de90d90a7a7582269bc5c41f5afd</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F12</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142af9d8807117d946de5e403bcbd4d7161d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F13</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a9e28e971941ca2900c1eea17cda50a04</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F14</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a9a0327a4ef876338d5f3c34c514f190c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F15</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a8949ce79077cc8bf64f4fa42bb6a2808</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Pause</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a95daf340fcc3d5c2846f69d184170d9b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>KeyCount</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a93e6ffa0320fe9b2f29aec14a58be36b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Tilde</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a90be0882086bccb516e3afc5c7fb82eb</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Dash</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a401a183dcfde0a06cb60fe6c91fa1e39</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>BackSpace</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a33aeaab900abcd01eebf2fcc4f6d97e2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>BackSlash</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a536df84e73859aa44e11e192459470b6</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SemiColon</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142a460ab09a36f9ed230504b89b9815de88</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Return</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142ac291de81bdee518d636bc359f2ca77de</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Quote</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>acb4cacd7cc5802dec45724cf3314a142af031edb6bcf319734a6664388958c475</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static bool</type>
-      <name>isKeyPressed</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>a80a04b2f53005886957f49eee3531599</anchor>
-      <arglist>(Key key)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static bool</type>
-      <name>isKeyPressed</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>a8364065ca899275ce3e9314cce98ed3e</anchor>
-      <arglist>(Scancode code)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static Key</type>
-      <name>localize</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>a4f77c97de21fbb14b9df79e320b12d9a</anchor>
-      <arglist>(Scancode code)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static Scancode</type>
-      <name>delocalize</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>af9fd530c73b8a2cd6094d373e879eb00</anchor>
-      <arglist>(Key key)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static String</type>
-      <name>getDescription</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>aab9652b25d81d6526b72bdc876d92d41</anchor>
-      <arglist>(Scancode code)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static void</type>
-      <name>setVirtualKeyboardVisible</name>
-      <anchorfile>classsf_1_1Keyboard.html</anchorfile>
-      <anchor>ad61fee7e793242d444a8c5acd662fe5b</anchor>
-      <arglist>(bool visible)</arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>sf::Event::KeyEvent</name>
-    <filename>structsf_1_1Event_1_1KeyEvent.html</filename>
+    <name>sf::Event::KeyPressed</name>
+    <filename>structsf_1_1Event_1_1KeyPressed.html</filename>
     <member kind="variable">
       <type>Keyboard::Key</type>
       <name>code</name>
-      <anchorfile>structsf_1_1Event_1_1KeyEvent.html</anchorfile>
-      <anchor>a2879fdab8a68cb1c6ecc45730a2d0e61</anchor>
+      <anchorfile>structsf_1_1Event_1_1KeyPressed.html</anchorfile>
+      <anchor>a8d0e09b379708f01b22f390810994613</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>Keyboard::Scancode</type>
       <name>scancode</name>
-      <anchorfile>structsf_1_1Event_1_1KeyEvent.html</anchorfile>
-      <anchor>a182706c1c75e73c8fb85b796d1095ae1</anchor>
+      <anchorfile>structsf_1_1Event_1_1KeyPressed.html</anchorfile>
+      <anchor>ada98a5d7f8ccc5a2cbdb1c76d9441ea0</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>bool</type>
       <name>alt</name>
-      <anchorfile>structsf_1_1Event_1_1KeyEvent.html</anchorfile>
-      <anchor>a915a483317de67d995188a855701fbd7</anchor>
+      <anchorfile>structsf_1_1Event_1_1KeyPressed.html</anchorfile>
+      <anchor>a593c73fc3009844773ef1aea1bfebd3c</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>bool</type>
       <name>control</name>
-      <anchorfile>structsf_1_1Event_1_1KeyEvent.html</anchorfile>
-      <anchor>a9255861c2f88501d80ad6b44a310b62f</anchor>
+      <anchorfile>structsf_1_1Event_1_1KeyPressed.html</anchorfile>
+      <anchor>a2f9bd39699a4d7a21ee13dfe00219fe3</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>bool</type>
       <name>shift</name>
-      <anchorfile>structsf_1_1Event_1_1KeyEvent.html</anchorfile>
-      <anchor>a776af1a3ca79abeeec18ebf1c0065aa9</anchor>
+      <anchorfile>structsf_1_1Event_1_1KeyPressed.html</anchorfile>
+      <anchor>a339d98e26c0d9d48b4821b0e3bc3651b</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>bool</type>
       <name>system</name>
-      <anchorfile>structsf_1_1Event_1_1KeyEvent.html</anchorfile>
-      <anchor>ac0557f7edc2a608ec65175fdd843afc5</anchor>
+      <anchorfile>structsf_1_1Event_1_1KeyPressed.html</anchorfile>
+      <anchor>a07abad6ab8c1abc565853091a2df3b6f</anchor>
       <arglist></arglist>
     </member>
   </compound>
-  <compound kind="class">
-    <name>sf::Listener</name>
-    <filename>classsf_1_1Listener.html</filename>
-    <member kind="function" static="yes">
-      <type>static void</type>
-      <name>setGlobalVolume</name>
-      <anchorfile>classsf_1_1Listener.html</anchorfile>
-      <anchor>a803a24a1fc04620cacc9f88c6fbc0e3a</anchor>
-      <arglist>(float volume)</arglist>
+  <compound kind="struct">
+    <name>sf::Event::KeyReleased</name>
+    <filename>structsf_1_1Event_1_1KeyReleased.html</filename>
+    <member kind="variable">
+      <type>Keyboard::Key</type>
+      <name>code</name>
+      <anchorfile>structsf_1_1Event_1_1KeyReleased.html</anchorfile>
+      <anchor>aa6db1f2d21cbfcfc33902f444a1ee027</anchor>
+      <arglist></arglist>
     </member>
-    <member kind="function" static="yes">
-      <type>static float</type>
-      <name>getGlobalVolume</name>
-      <anchorfile>classsf_1_1Listener.html</anchorfile>
-      <anchor>a137ea535799bdf70be6ec969673d4d33</anchor>
-      <arglist>()</arglist>
+    <member kind="variable">
+      <type>Keyboard::Scancode</type>
+      <name>scancode</name>
+      <anchorfile>structsf_1_1Event_1_1KeyReleased.html</anchorfile>
+      <anchor>ae3bedd5b0b0c97bb1a0d7a86775d4c8a</anchor>
+      <arglist></arglist>
     </member>
-    <member kind="function" static="yes">
-      <type>static void</type>
-      <name>setPosition</name>
-      <anchorfile>classsf_1_1Listener.html</anchorfile>
-      <anchor>a5bc2d8d18ea2d8f339d23cbf17678564</anchor>
-      <arglist>(float x, float y, float z)</arglist>
+    <member kind="variable">
+      <type>bool</type>
+      <name>alt</name>
+      <anchorfile>structsf_1_1Event_1_1KeyReleased.html</anchorfile>
+      <anchor>a61c09330d00d283ac7d043f14609c666</anchor>
+      <arglist></arglist>
     </member>
-    <member kind="function" static="yes">
-      <type>static void</type>
-      <name>setPosition</name>
-      <anchorfile>classsf_1_1Listener.html</anchorfile>
-      <anchor>a28a27d85cfbf8065c535c39176898fcb</anchor>
-      <arglist>(const Vector3f &amp;position)</arglist>
+    <member kind="variable">
+      <type>bool</type>
+      <name>control</name>
+      <anchorfile>structsf_1_1Event_1_1KeyReleased.html</anchorfile>
+      <anchor>a779d36144c9ecafc3e32fbc652fd1a2a</anchor>
+      <arglist></arglist>
     </member>
-    <member kind="function" static="yes">
-      <type>static Vector3f</type>
-      <name>getPosition</name>
-      <anchorfile>classsf_1_1Listener.html</anchorfile>
-      <anchor>acd7ee65bc948ca38e1c669aa12340c54</anchor>
-      <arglist>()</arglist>
+    <member kind="variable">
+      <type>bool</type>
+      <name>shift</name>
+      <anchorfile>structsf_1_1Event_1_1KeyReleased.html</anchorfile>
+      <anchor>a8593f74ee7e43ec525002c0cbee40075</anchor>
+      <arglist></arglist>
     </member>
-    <member kind="function" static="yes">
-      <type>static void</type>
-      <name>setDirection</name>
-      <anchorfile>classsf_1_1Listener.html</anchorfile>
-      <anchor>ae479dc15513c6557984d26e32d06d06e</anchor>
-      <arglist>(float x, float y, float z)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static void</type>
-      <name>setDirection</name>
-      <anchorfile>classsf_1_1Listener.html</anchorfile>
-      <anchor>a1d99d9457c6ddad93449ecb4f504c2bf</anchor>
-      <arglist>(const Vector3f &amp;direction)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static Vector3f</type>
-      <name>getDirection</name>
-      <anchorfile>classsf_1_1Listener.html</anchorfile>
-      <anchor>a54e91baba51d4431474f53ff7f9309f9</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static void</type>
-      <name>setUpVector</name>
-      <anchorfile>classsf_1_1Listener.html</anchorfile>
-      <anchor>a0ea9b3083a994b2b90253543bc4e3ad6</anchor>
-      <arglist>(float x, float y, float z)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static void</type>
-      <name>setUpVector</name>
-      <anchorfile>classsf_1_1Listener.html</anchorfile>
-      <anchor>a281e8cd44d3411d891b5e83b0cb6b9d4</anchor>
-      <arglist>(const Vector3f &amp;upVector)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static Vector3f</type>
-      <name>getUpVector</name>
-      <anchorfile>classsf_1_1Listener.html</anchorfile>
-      <anchor>ae1427dd7e9b425b0c23b7b766bd6c6e6</anchor>
-      <arglist>()</arglist>
+    <member kind="variable">
+      <type>bool</type>
+      <name>system</name>
+      <anchorfile>structsf_1_1Event_1_1KeyReleased.html</anchorfile>
+      <anchor>a89422254b7f0968cba83bc219a9e68f1</anchor>
+      <arglist></arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -5166,522 +3899,49 @@
       <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
       <anchor>af81738f06b6f571761696291276acb3b</anchor>
       <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>RestartMarkerReply</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba07e06d3326ba2d078583bef93930d909</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ServiceReadySoon</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba22413357ade6b586f6ceb0d704f35075</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>DataConnectionAlreadyOpened</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3bafa52d19bc813d69055f4cc390d4a76ca</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>OpeningDataConnection</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba794ebe743688be611447638bf9e49d86</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Ok</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3baa956e229ba6c0cdf0d88b0e05b286210</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>PointlessCommand</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba38adc424f1adcd332745de8cd3b7737a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SystemStatus</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba9bdd02ae119b8be639e778859ee74060</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>DirectoryStatus</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba8729460a695013cc96330e2fced0ae1f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>FileStatus</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3baebddfc7997dca289c83068dff3f47dce</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HelpMessage</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba840fd2a1872fd4310b046541f57fdeb7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SystemType</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba78391f73aa11f07f1514c7d070b93c08</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ServiceReady</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3baea2ee2007d7843c21108bb686ef03757</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ClosingConnection</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3bab23931490fc2d1df3081d651fe0f4d6e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>DataConnectionOpened</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3badc78ed87d5bddb174fa3c16707ac2f2d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ClosingDataConnection</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3bac723ebc8a38913bbf0d9504556cbaaa6</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>EnteringPassiveMode</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba48314fc47a72ad0aacdea93b91756f6e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>LoggedIn</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba54a88210386cb72e35d737813a221754</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>FileActionOk</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3baf988b69b0a5f55f8122da5ba001932e0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>DirectoryOk</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba06d26e95a170fc422af13def415e0437</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NeedPassword</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba9249e3fe9818eb93f181fbbf3ae3bc56</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NeedAccountToLogIn</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba9e048185f253f6eb6f5ff9e063b712fa</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NeedInformation</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba02e6f05964ecb829e9b6fb6020d6528a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ServiceUnavailable</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba43022ddf49b68a4f5aff0bea7e09e89f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>DataConnectionUnavailable</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba757b89ff1f236941f7759b0ed0c28b88</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>TransferAborted</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba7cfefcc586c12ba70f752353fde7126e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>FileActionAborted</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3baf822d1b0abf3e9ae7dd44684549d512d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>LocalError</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3bae54e84baaca95a7b36271ca3f3fdb900</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>InsufficientStorageSpace</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba5d9f3666222c808553c27e4e099c7c6d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CommandUnknown</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba75bdf0b6844fa9c07b3c25647d22c269</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ParametersUnknown</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3baf4c7c88815981bbb7c3a3461f9f48b67</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CommandNotImplemented</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba2ca4834c756c81b924ebed696fcba0a8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>BadCommandSequence</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3bad0c7ab07f01c1f7af16a1852650d7c47</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ParameterNotImplemented</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba8807473b8590e1debfb3740b7a3d081c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NotLoggedIn</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3bafcfbaff2c6fed941b6bcbc0999db764e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NeedAccountToStore</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba1af0f173062a471739b50d8e0f40d5f7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>FileUnavailable</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba3f8f931e499936fde6b750d81f5ecfef</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>PageTypeUnknown</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3bad220bc12dc45593af6e5079ea6c532c3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NotEnoughMemory</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3baf418e54753e0b8f9cb0325dd618acd14</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>FilenameNotAllowed</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba03254aba823298179a98056e15568c5b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>InvalidResponse</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba59e041e4ef186e8ae8d6035973fc46bd</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ConnectionFailed</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba51aa367cc1e85a45ea3c7be48730e990</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ConnectionClosed</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3bad1e5dcf298ce30c528261435f1a2eb53</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>InvalidFile</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3baed2c74a9f335dee1463ca1a4f41c6478</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>RestartMarkerReply</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba07e06d3326ba2d078583bef93930d909</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ServiceReadySoon</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba22413357ade6b586f6ceb0d704f35075</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>DataConnectionAlreadyOpened</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3bafa52d19bc813d69055f4cc390d4a76ca</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>OpeningDataConnection</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba794ebe743688be611447638bf9e49d86</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Ok</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3baa956e229ba6c0cdf0d88b0e05b286210</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>PointlessCommand</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba38adc424f1adcd332745de8cd3b7737a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SystemStatus</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba9bdd02ae119b8be639e778859ee74060</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>DirectoryStatus</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba8729460a695013cc96330e2fced0ae1f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>FileStatus</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3baebddfc7997dca289c83068dff3f47dce</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HelpMessage</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba840fd2a1872fd4310b046541f57fdeb7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SystemType</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba78391f73aa11f07f1514c7d070b93c08</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ServiceReady</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3baea2ee2007d7843c21108bb686ef03757</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ClosingConnection</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3bab23931490fc2d1df3081d651fe0f4d6e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>DataConnectionOpened</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3badc78ed87d5bddb174fa3c16707ac2f2d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ClosingDataConnection</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3bac723ebc8a38913bbf0d9504556cbaaa6</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>EnteringPassiveMode</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba48314fc47a72ad0aacdea93b91756f6e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>LoggedIn</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba54a88210386cb72e35d737813a221754</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>FileActionOk</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3baf988b69b0a5f55f8122da5ba001932e0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>DirectoryOk</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba06d26e95a170fc422af13def415e0437</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NeedPassword</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba9249e3fe9818eb93f181fbbf3ae3bc56</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NeedAccountToLogIn</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba9e048185f253f6eb6f5ff9e063b712fa</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NeedInformation</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba02e6f05964ecb829e9b6fb6020d6528a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ServiceUnavailable</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba43022ddf49b68a4f5aff0bea7e09e89f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>DataConnectionUnavailable</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba757b89ff1f236941f7759b0ed0c28b88</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>TransferAborted</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba7cfefcc586c12ba70f752353fde7126e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>FileActionAborted</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3baf822d1b0abf3e9ae7dd44684549d512d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>LocalError</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3bae54e84baaca95a7b36271ca3f3fdb900</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>InsufficientStorageSpace</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba5d9f3666222c808553c27e4e099c7c6d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CommandUnknown</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba75bdf0b6844fa9c07b3c25647d22c269</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ParametersUnknown</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3baf4c7c88815981bbb7c3a3461f9f48b67</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CommandNotImplemented</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba2ca4834c756c81b924ebed696fcba0a8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>BadCommandSequence</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3bad0c7ab07f01c1f7af16a1852650d7c47</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ParameterNotImplemented</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba8807473b8590e1debfb3740b7a3d081c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NotLoggedIn</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3bafcfbaff2c6fed941b6bcbc0999db764e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NeedAccountToStore</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba1af0f173062a471739b50d8e0f40d5f7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>FileUnavailable</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba3f8f931e499936fde6b750d81f5ecfef</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>PageTypeUnknown</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3bad220bc12dc45593af6e5079ea6c532c3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NotEnoughMemory</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3baf418e54753e0b8f9cb0325dd618acd14</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>FilenameNotAllowed</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba03254aba823298179a98056e15568c5b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>InvalidResponse</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba59e041e4ef186e8ae8d6035973fc46bd</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ConnectionFailed</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba51aa367cc1e85a45ea3c7be48730e990</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ConnectionClosed</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3bad1e5dcf298ce30c528261435f1a2eb53</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>InvalidFile</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3baed2c74a9f335dee1463ca1a4f41c6478</anchor>
-      <arglist></arglist>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3bac0b42b170282ed195d27160a83a79f2e">RestartMarkerReply</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba3268bd93693ac38c4f6086aea8be4db4">ServiceReadySoon</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba6cceba8a149b75b284777e8bc71e1b67">DataConnectionAlreadyOpened</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3bae33af3d7120d23ad7089653fd48bdd38">OpeningDataConnection</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3baa60852f204ed8028c1c58808b746d115">Ok</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3bacd4761523f0302440343fb1e4ec8a4e6">PointlessCommand</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba01de3f2739691336a2b125aa4945d633">SystemStatus</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba57e6d000fdbeb626a29fea4c8eff8edc">DirectoryStatus</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba198600159850bece356f7abee0f36e83">FileStatus</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba2edc83b16e6b8274c62900e85f318f3a">HelpMessage</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba4baf768371cfea0277777bde6689cec6">SystemType</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3bac9a5248c2aa6a434ce1a4da00750feb3">ServiceReady</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba2465f163ac38bfe7c1930b33aa05679b">ClosingConnection</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3bab607cbbc2d207ded4b7377acb6a549b2">DataConnectionOpened</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3baaf83fd439861065d31334292d3f8a4c3">ClosingDataConnection</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3bac224fccedd07f300696a569009fba0d2">EnteringPassiveMode</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3bafebcd1edf6010db4858e623d1dd2f3bc">LoggedIn</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3baf6f364356584aab000eea95805599ebb">FileActionOk</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3bad20154b051d400d9537edafca04a30bd">DirectoryOk</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba6cc610dcae244b511d24cd39d2509b14">NeedPassword</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3baf6cb6d98e4d4f7b4b93e7783a9e6866c">NeedAccountToLogIn</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3bad5c4ffa569fc398c4ff8713a484dc615">NeedInformation</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba2a4581043d849bcb0e4747970ef1489b">ServiceUnavailable</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba0a36dcc11a897c222c2471ae9272daa9">DataConnectionUnavailable</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba896d3e0a1567d35b8f74c19c67edc53f">TransferAborted</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3bacab1b18dabff5d854ecd0abb345eac94">FileActionAborted</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3baa74af6d76d74a4a8223ba094a33ab60c">LocalError</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3bac7434ca62773f4494fbbfa7b72903de4">InsufficientStorageSpace</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba53a48f970f3d5208e7d306d55efd4baa">CommandUnknown</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba6ac12706c8a5d211d4c4772dfe15cc82">ParametersUnknown</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba114a12ef342b629d489aa3c77ebdd436">CommandNotImplemented</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3baad20df740a4a87c2b5e77375ec408b52">BadCommandSequence</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba39173a703db2fce4762e56cdedce7df0">ParameterNotImplemented</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba68118f8d291e5a67d4d9c3408a083c69">NotLoggedIn</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba3c513c9aa990fa446158b8c218be762e">NeedAccountToStore</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba5674886af759856707ed5279f0a2a6a6">FileUnavailable</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba5ee25da5e669e314a80052cdac9465ce">PageTypeUnknown</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba0b3b296dcb39c4f03e7277194b906791">NotEnoughMemory</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3bae21058ad65c95b5baf4de1d8282c6fd4">FilenameNotAllowed</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba33f317695948b584444f4b7525da594e">InvalidResponse</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3baaf98071f760be899f4fcf1d53a29ba17">ConnectionFailed</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba318ec526e76502a583acd94f49817cf2">ConnectionClosed</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3babb149a06efb0aa1a2ea6711f20c82bbe">InvalidFile</enumvalue>
     </member>
     <member kind="function">
       <type></type>
@@ -5720,25 +3980,6 @@
     </member>
   </compound>
   <compound kind="class">
-    <name>sf::Lock</name>
-    <filename>classsf_1_1Lock.html</filename>
-    <base protection="private">sf::NonCopyable</base>
-    <member kind="function">
-      <type></type>
-      <name>Lock</name>
-      <anchorfile>classsf_1_1Lock.html</anchorfile>
-      <anchor>a1a4c5d7a15da61103d85c9aa7f118920</anchor>
-      <arglist>(Mutex &amp;mutex)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>~Lock</name>
-      <anchorfile>classsf_1_1Lock.html</anchorfile>
-      <anchor>a8168b36323a18ccf5b6bc531d964aec5</anchor>
-      <arglist>()</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
     <name>sf::MemoryInputStream</name>
     <filename>classsf_1_1MemoryInputStream.html</filename>
     <base>sf::InputStream</base>
@@ -5746,291 +3987,126 @@
       <type></type>
       <name>MemoryInputStream</name>
       <anchorfile>classsf_1_1MemoryInputStream.html</anchorfile>
-      <anchor>a2d78851a69a8956a79872be41bcdfe0e</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>open</name>
-      <anchorfile>classsf_1_1MemoryInputStream.html</anchorfile>
-      <anchor>ad3cfb4f4f915f7803d6a0784e394ac19</anchor>
+      <anchor>a3f2281ba28ef90b27573e1059119c20f</anchor>
       <arglist>(const void *data, std::size_t sizeInBytes)</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual Int64</type>
+    <member kind="function">
+      <type>std::optional&lt; std::size_t &gt;</type>
       <name>read</name>
       <anchorfile>classsf_1_1MemoryInputStream.html</anchorfile>
-      <anchor>adff5270c521819639154d42d76fd4c34</anchor>
-      <arglist>(void *data, Int64 size)</arglist>
+      <anchor>a326c6f46abfcb93efd9657464a19d167</anchor>
+      <arglist>(void *data, std::size_t size) override</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual Int64</type>
+    <member kind="function">
+      <type>std::optional&lt; std::size_t &gt;</type>
       <name>seek</name>
       <anchorfile>classsf_1_1MemoryInputStream.html</anchorfile>
-      <anchor>aa2ac8fda2bdb4c95248ae90c71633034</anchor>
-      <arglist>(Int64 position)</arglist>
+      <anchor>a4ff6b44dddfb2589af7ed1236bd97278</anchor>
+      <arglist>(std::size_t position) override</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual Int64</type>
+    <member kind="function">
+      <type>std::optional&lt; std::size_t &gt;</type>
       <name>tell</name>
       <anchorfile>classsf_1_1MemoryInputStream.html</anchorfile>
-      <anchor>a7ad4bdf721f29de8f66421ff29e23ee4</anchor>
-      <arglist>()</arglist>
+      <anchor>aee76d370a82ab66d05af35f0b131756a</anchor>
+      <arglist>() override</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual Int64</type>
+    <member kind="function">
+      <type>std::optional&lt; std::size_t &gt;</type>
       <name>getSize</name>
       <anchorfile>classsf_1_1MemoryInputStream.html</anchorfile>
-      <anchor>a6ade3ca45de361ffa0a718595f0b6763</anchor>
-      <arglist>()</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>sf::Mouse</name>
-    <filename>classsf_1_1Mouse.html</filename>
-    <member kind="enumeration">
-      <type></type>
-      <name>Button</name>
-      <anchorfile>classsf_1_1Mouse.html</anchorfile>
-      <anchor>a4fb128be433f9aafe66bc0c605daaa90</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Left</name>
-      <anchorfile>classsf_1_1Mouse.html</anchorfile>
-      <anchor>a4fb128be433f9aafe66bc0c605daaa90a8bb4856e1ec7f6b6a8605effdfc0eee8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Right</name>
-      <anchorfile>classsf_1_1Mouse.html</anchorfile>
-      <anchor>a4fb128be433f9aafe66bc0c605daaa90af2cff24ab6c26daf079b11189f982fc4</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Middle</name>
-      <anchorfile>classsf_1_1Mouse.html</anchorfile>
-      <anchor>a4fb128be433f9aafe66bc0c605daaa90a2c353189c4b11cf216d7caddafcc609d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>XButton1</name>
-      <anchorfile>classsf_1_1Mouse.html</anchorfile>
-      <anchor>a4fb128be433f9aafe66bc0c605daaa90aecc7f3ce9ad6a60b9b0027876446b8d7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>XButton2</name>
-      <anchorfile>classsf_1_1Mouse.html</anchorfile>
-      <anchor>a4fb128be433f9aafe66bc0c605daaa90a03fa056fd0dd9d629c205d91a8ef1b5a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ButtonCount</name>
-      <anchorfile>classsf_1_1Mouse.html</anchorfile>
-      <anchor>a4fb128be433f9aafe66bc0c605daaa90a52a1d434289774240ddaa22496762402</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>Wheel</name>
-      <anchorfile>classsf_1_1Mouse.html</anchorfile>
-      <anchor>a60dd479a43f26f200e7957aa11803ff4</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>VerticalWheel</name>
-      <anchorfile>classsf_1_1Mouse.html</anchorfile>
-      <anchor>a60dd479a43f26f200e7957aa11803ff4abd571de908d2b2c4b9f165f29c678496</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HorizontalWheel</name>
-      <anchorfile>classsf_1_1Mouse.html</anchorfile>
-      <anchor>a60dd479a43f26f200e7957aa11803ff4a785768d5e33c77de9fdcfdd02219f4e2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Left</name>
-      <anchorfile>classsf_1_1Mouse.html</anchorfile>
-      <anchor>a4fb128be433f9aafe66bc0c605daaa90a8bb4856e1ec7f6b6a8605effdfc0eee8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Right</name>
-      <anchorfile>classsf_1_1Mouse.html</anchorfile>
-      <anchor>a4fb128be433f9aafe66bc0c605daaa90af2cff24ab6c26daf079b11189f982fc4</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Middle</name>
-      <anchorfile>classsf_1_1Mouse.html</anchorfile>
-      <anchor>a4fb128be433f9aafe66bc0c605daaa90a2c353189c4b11cf216d7caddafcc609d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>XButton1</name>
-      <anchorfile>classsf_1_1Mouse.html</anchorfile>
-      <anchor>a4fb128be433f9aafe66bc0c605daaa90aecc7f3ce9ad6a60b9b0027876446b8d7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>XButton2</name>
-      <anchorfile>classsf_1_1Mouse.html</anchorfile>
-      <anchor>a4fb128be433f9aafe66bc0c605daaa90a03fa056fd0dd9d629c205d91a8ef1b5a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ButtonCount</name>
-      <anchorfile>classsf_1_1Mouse.html</anchorfile>
-      <anchor>a4fb128be433f9aafe66bc0c605daaa90a52a1d434289774240ddaa22496762402</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>VerticalWheel</name>
-      <anchorfile>classsf_1_1Mouse.html</anchorfile>
-      <anchor>a60dd479a43f26f200e7957aa11803ff4abd571de908d2b2c4b9f165f29c678496</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HorizontalWheel</name>
-      <anchorfile>classsf_1_1Mouse.html</anchorfile>
-      <anchor>a60dd479a43f26f200e7957aa11803ff4a785768d5e33c77de9fdcfdd02219f4e2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static bool</type>
-      <name>isButtonPressed</name>
-      <anchorfile>classsf_1_1Mouse.html</anchorfile>
-      <anchor>ab647159eb88e369a0332a9c5a7ba6687</anchor>
-      <arglist>(Button button)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static Vector2i</type>
-      <name>getPosition</name>
-      <anchorfile>classsf_1_1Mouse.html</anchorfile>
-      <anchor>ac368680f797b7f6e4f50b5b7928c1387</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static Vector2i</type>
-      <name>getPosition</name>
-      <anchorfile>classsf_1_1Mouse.html</anchorfile>
-      <anchor>ac9934f761e377da97993de5aab75006b</anchor>
-      <arglist>(const WindowBase &amp;relativeTo)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static void</type>
-      <name>setPosition</name>
-      <anchorfile>classsf_1_1Mouse.html</anchorfile>
-      <anchor>a1222e16c583be9e3d176d86e0b7817d7</anchor>
-      <arglist>(const Vector2i &amp;position)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static void</type>
-      <name>setPosition</name>
-      <anchorfile>classsf_1_1Mouse.html</anchorfile>
-      <anchor>a698c41e9bce6f30ceb4063c21f869fc5</anchor>
-      <arglist>(const Vector2i &amp;position, const WindowBase &amp;relativeTo)</arglist>
+      <anchor>a9d726aa826f5fff217f50147fc5da7c3</anchor>
+      <arglist>() override</arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>sf::Event::MouseButtonEvent</name>
-    <filename>structsf_1_1Event_1_1MouseButtonEvent.html</filename>
+    <name>sf::Event::MouseButtonPressed</name>
+    <filename>structsf_1_1Event_1_1MouseButtonPressed.html</filename>
     <member kind="variable">
       <type>Mouse::Button</type>
       <name>button</name>
-      <anchorfile>structsf_1_1Event_1_1MouseButtonEvent.html</anchorfile>
-      <anchor>a5f53725aa7b647705486eeb95f723024</anchor>
+      <anchorfile>structsf_1_1Event_1_1MouseButtonPressed.html</anchorfile>
+      <anchor>ade09e3382f11ae8d4c0ab7bf850c10e0</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>int</type>
-      <name>x</name>
-      <anchorfile>structsf_1_1Event_1_1MouseButtonEvent.html</anchorfile>
-      <anchor>a49b937b311729174950787781aafcdc7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>int</type>
-      <name>y</name>
-      <anchorfile>structsf_1_1Event_1_1MouseButtonEvent.html</anchorfile>
-      <anchor>aae4735071868d4411d1782bf67619d64</anchor>
+      <type>Vector2i</type>
+      <name>position</name>
+      <anchorfile>structsf_1_1Event_1_1MouseButtonPressed.html</anchorfile>
+      <anchor>a9752a69c84a75425f5c3ccd0b4557b46</anchor>
       <arglist></arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>sf::Event::MouseMoveEvent</name>
-    <filename>structsf_1_1Event_1_1MouseMoveEvent.html</filename>
+    <name>sf::Event::MouseButtonReleased</name>
+    <filename>structsf_1_1Event_1_1MouseButtonReleased.html</filename>
     <member kind="variable">
-      <type>int</type>
-      <name>x</name>
-      <anchorfile>structsf_1_1Event_1_1MouseMoveEvent.html</anchorfile>
-      <anchor>aa3a23809afb905cbb52c66d8512e21fd</anchor>
+      <type>Mouse::Button</type>
+      <name>button</name>
+      <anchorfile>structsf_1_1Event_1_1MouseButtonReleased.html</anchorfile>
+      <anchor>a9fc43d99fc8e905a4aec0ea1579a4f99</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>int</type>
-      <name>y</name>
-      <anchorfile>structsf_1_1Event_1_1MouseMoveEvent.html</anchorfile>
-      <anchor>a86d78a2fba5b3abda16ca059f2392ad4</anchor>
+      <type>Vector2i</type>
+      <name>position</name>
+      <anchorfile>structsf_1_1Event_1_1MouseButtonReleased.html</anchorfile>
+      <anchor>a4471a4643d7b7e3d7286eed0390b5d04</anchor>
       <arglist></arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>sf::Event::MouseWheelEvent</name>
-    <filename>structsf_1_1Event_1_1MouseWheelEvent.html</filename>
+    <name>sf::Event::MouseEntered</name>
+    <filename>structsf_1_1Event_1_1MouseEntered.html</filename>
+  </compound>
+  <compound kind="struct">
+    <name>sf::Event::MouseLeft</name>
+    <filename>structsf_1_1Event_1_1MouseLeft.html</filename>
+  </compound>
+  <compound kind="struct">
+    <name>sf::Event::MouseMoved</name>
+    <filename>structsf_1_1Event_1_1MouseMoved.html</filename>
     <member kind="variable">
-      <type>int</type>
+      <type>Vector2i</type>
+      <name>position</name>
+      <anchorfile>structsf_1_1Event_1_1MouseMoved.html</anchorfile>
+      <anchor>ad28578ff7dc681f819dbbf629662ee32</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>sf::Event::MouseMovedRaw</name>
+    <filename>structsf_1_1Event_1_1MouseMovedRaw.html</filename>
+    <member kind="variable">
+      <type>Vector2i</type>
       <name>delta</name>
-      <anchorfile>structsf_1_1Event_1_1MouseWheelEvent.html</anchorfile>
-      <anchor>a4d02b524b5530c7863e7b0f211fa522c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>int</type>
-      <name>x</name>
-      <anchorfile>structsf_1_1Event_1_1MouseWheelEvent.html</anchorfile>
-      <anchor>a3079803f836ed7208f43b60332ab053e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>int</type>
-      <name>y</name>
-      <anchorfile>structsf_1_1Event_1_1MouseWheelEvent.html</anchorfile>
-      <anchor>a7ea1b8d8c28e2f530c6e9e6d9a5d32d3</anchor>
+      <anchorfile>structsf_1_1Event_1_1MouseMovedRaw.html</anchorfile>
+      <anchor>acdf6da3297c13359b5b1cb0a8af29359</anchor>
       <arglist></arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>sf::Event::MouseWheelScrollEvent</name>
-    <filename>structsf_1_1Event_1_1MouseWheelScrollEvent.html</filename>
+    <name>sf::Event::MouseWheelScrolled</name>
+    <filename>structsf_1_1Event_1_1MouseWheelScrolled.html</filename>
     <member kind="variable">
       <type>Mouse::Wheel</type>
       <name>wheel</name>
-      <anchorfile>structsf_1_1Event_1_1MouseWheelScrollEvent.html</anchorfile>
-      <anchor>a1d82dccecc46968d517b2fc66639dd74</anchor>
+      <anchorfile>structsf_1_1Event_1_1MouseWheelScrolled.html</anchorfile>
+      <anchor>a02d581d6baf283dcbf6ea38a6e1f8d04</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>float</type>
       <name>delta</name>
-      <anchorfile>structsf_1_1Event_1_1MouseWheelScrollEvent.html</anchorfile>
-      <anchor>ac45c164997a594d424071e74b53b5817</anchor>
+      <anchorfile>structsf_1_1Event_1_1MouseWheelScrolled.html</anchorfile>
+      <anchor>a7c78e2320d061bafa10af92055c69172</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>int</type>
-      <name>x</name>
-      <anchorfile>structsf_1_1Event_1_1MouseWheelScrollEvent.html</anchorfile>
-      <anchor>a3d17cae0568d18083f879655abdc8ae4</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>int</type>
-      <name>y</name>
-      <anchorfile>structsf_1_1Event_1_1MouseWheelScrollEvent.html</anchorfile>
-      <anchor>aa38bf23704162024eed19917eef3853c</anchor>
+      <type>Vector2i</type>
+      <name>position</name>
+      <anchorfile>structsf_1_1Event_1_1MouseWheelScrolled.html</anchorfile>
+      <anchor>a50ebfbc800ccba96defa6d3a1f54feda</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -6039,47 +4115,28 @@
     <filename>classsf_1_1Music.html</filename>
     <base>sf::SoundStream</base>
     <class kind="struct">sf::Music::Span</class>
+    <member kind="typedef">
+      <type>Span&lt; Time &gt;</type>
+      <name>TimeSpan</name>
+      <anchorfile>classsf_1_1Music.html</anchorfile>
+      <anchor>a8f92f34d1714edb7178ba2a8a5a845e8</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="enumeration">
       <type></type>
       <name>Status</name>
       <anchorfile>classsf_1_1SoundSource.html</anchorfile>
       <anchor>ac43af72c98c077500b239bc75b812f03</anchor>
       <arglist></arglist>
+      <enumvalue file="classsf_1_1SoundSource.html" anchor="ac43af72c98c077500b239bc75b812f03ac23e2b09ebe6bf4cb5e2a9abe85c0be2">Stopped</enumvalue>
+      <enumvalue file="classsf_1_1SoundSource.html" anchor="ac43af72c98c077500b239bc75b812f03ae99180abf47a8b3a856e0bcb2656990a">Paused</enumvalue>
+      <enumvalue file="classsf_1_1SoundSource.html" anchor="ac43af72c98c077500b239bc75b812f03ac9dbb2b7c84159b632d71e512eba8428">Playing</enumvalue>
     </member>
-    <member kind="enumvalue">
-      <name>Stopped</name>
+    <member kind="typedef">
+      <type>std::function&lt; void(const float *inputFrames, unsigned int &amp;inputFrameCount, float *outputFrames, unsigned int &amp;outputFrameCount, unsigned int frameChannelCount)&gt;</type>
+      <name>EffectProcessor</name>
       <anchorfile>classsf_1_1SoundSource.html</anchorfile>
-      <anchor>ac43af72c98c077500b239bc75b812f03adabb01e8aa85b2f54b344890addf764a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Paused</name>
-      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
-      <anchor>ac43af72c98c077500b239bc75b812f03ac3ca1fcc0394267c9bdbe3dc0a8a7e41</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Playing</name>
-      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
-      <anchor>ac43af72c98c077500b239bc75b812f03af07bdea9f70ef7606dfc9f955beeee18</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Stopped</name>
-      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
-      <anchor>ac43af72c98c077500b239bc75b812f03adabb01e8aa85b2f54b344890addf764a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Paused</name>
-      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
-      <anchor>ac43af72c98c077500b239bc75b812f03ac3ca1fcc0394267c9bdbe3dc0a8a7e41</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Playing</name>
-      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
-      <anchor>ac43af72c98c077500b239bc75b812f03af07bdea9f70ef7606dfc9f955beeee18</anchor>
+      <anchor>ab13ce12bd2ef4856511824557b07cce5</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -6091,17 +4148,52 @@
     </member>
     <member kind="function">
       <type></type>
+      <name>Music</name>
+      <anchorfile>classsf_1_1Music.html</anchorfile>
+      <anchor>a8cf69ccb581b452f442eb01b9348efda</anchor>
+      <arglist>(const std::filesystem::path &amp;filename)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Music</name>
+      <anchorfile>classsf_1_1Music.html</anchorfile>
+      <anchor>acc7af0cebb8ca0ca4ab8edccd46499ab</anchor>
+      <arglist>(const void *data, std::size_t sizeInBytes)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Music</name>
+      <anchorfile>classsf_1_1Music.html</anchorfile>
+      <anchor>ac762a80c77e26eef4ba5dcf6d4bbd4bd</anchor>
+      <arglist>(InputStream &amp;stream)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
       <name>~Music</name>
       <anchorfile>classsf_1_1Music.html</anchorfile>
-      <anchor>a4c65860fed2f01d0eaa6c4199870414b</anchor>
-      <arglist>()</arglist>
+      <anchor>afbf878e783aa23be86edaeda32f967a4</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Music</name>
+      <anchorfile>classsf_1_1Music.html</anchorfile>
+      <anchor>a5b7618e529f9a9898bd9dac217f41e78</anchor>
+      <arglist>(Music &amp;&amp;) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>Music &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classsf_1_1Music.html</anchorfile>
+      <anchor>a45592644dd5d8b916ee98c0f98039020</anchor>
+      <arglist>(Music &amp;&amp;) noexcept</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>openFromFile</name>
       <anchorfile>classsf_1_1Music.html</anchorfile>
-      <anchor>a3edc66e5f5b3f11e84b90eaec9c7d7c0</anchor>
-      <arglist>(const std::string &amp;filename)</arglist>
+      <anchor>a9493f462e07423d891f117a8b4c613fe</anchor>
+      <arglist>(const std::filesystem::path &amp;filename)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
@@ -6142,22 +4234,22 @@
       <type>void</type>
       <name>play</name>
       <anchorfile>classsf_1_1SoundStream.html</anchorfile>
-      <anchor>afdc08b69cab5f243d9324940a85a1144</anchor>
-      <arglist>()</arglist>
+      <anchor>af05290eb2c6a316790fb18c5912a5dd6</anchor>
+      <arglist>() override</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>pause</name>
       <anchorfile>classsf_1_1SoundStream.html</anchorfile>
-      <anchor>a932ff181e661503cad288b4bb6fe45ca</anchor>
-      <arglist>()</arglist>
+      <anchor>a2285cedcbcb5f3c97828c664934dc0de</anchor>
+      <arglist>() override</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>stop</name>
       <anchorfile>classsf_1_1SoundStream.html</anchorfile>
-      <anchor>a16cc6a0404b32e42c4dce184bb94d0f4</anchor>
-      <arglist>()</arglist>
+      <anchor>a781fe51135fdc5679fe22a5665110143</anchor>
+      <arglist>() override</arglist>
     </member>
     <member kind="function">
       <type>unsigned int</type>
@@ -6174,11 +4266,18 @@
       <arglist>() const</arglist>
     </member>
     <member kind="function">
+      <type>std::vector&lt; SoundChannel &gt;</type>
+      <name>getChannelMap</name>
+      <anchorfile>classsf_1_1SoundStream.html</anchorfile>
+      <anchor>a1ae6bfce0ec385a11e87697323227799</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
       <type>Status</type>
       <name>getStatus</name>
       <anchorfile>classsf_1_1SoundStream.html</anchorfile>
-      <anchor>a64a8193ed728da37c115c65de015849f</anchor>
-      <arglist>() const</arglist>
+      <anchor>a607e74492ca84764be563f36d75a1384</anchor>
+      <arglist>() const override</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -6196,17 +4295,24 @@
     </member>
     <member kind="function">
       <type>void</type>
-      <name>setLoop</name>
+      <name>setLooping</name>
       <anchorfile>classsf_1_1SoundStream.html</anchorfile>
-      <anchor>a43fade018ffba7e4f847a9f00b353f3d</anchor>
+      <anchor>a0c14b35d1dc64bf10e02b7a876540966</anchor>
       <arglist>(bool loop)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
-      <name>getLoop</name>
+      <name>isLooping</name>
       <anchorfile>classsf_1_1SoundStream.html</anchorfile>
-      <anchor>a49d263f9bbaefec4b019bd05fda59b25</anchor>
+      <anchor>a4f72aa9d4e185b4c02ffbb97075c7e82</anchor>
       <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setEffectProcessor</name>
+      <anchorfile>classsf_1_1SoundStream.html</anchorfile>
+      <anchor>a7593f4e30cde575c057d62ff1c47f1b3</anchor>
+      <arglist>(EffectProcessor effectProcessor) override</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -6217,6 +4323,13 @@
     </member>
     <member kind="function">
       <type>void</type>
+      <name>setPan</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>ad08a99b6f3492b940a2ef20c8d3cbc72</anchor>
+      <arglist>(float pan)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
       <name>setVolume</name>
       <anchorfile>classsf_1_1SoundSource.html</anchorfile>
       <anchor>a2f192f2b49fb8e2b82f3498d3663fcc2</anchor>
@@ -6224,10 +4337,10 @@
     </member>
     <member kind="function">
       <type>void</type>
-      <name>setPosition</name>
+      <name>setSpatializationEnabled</name>
       <anchorfile>classsf_1_1SoundSource.html</anchorfile>
-      <anchor>a0480257ea25d986eba6cc3c1a6f8d7c2</anchor>
-      <arglist>(float x, float y, float z)</arglist>
+      <anchor>a6586a19a8d1060bdf93e3c4b6ee039a7</anchor>
+      <arglist>(bool enabled)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -6235,6 +4348,41 @@
       <anchorfile>classsf_1_1SoundSource.html</anchorfile>
       <anchor>a17ba9ed01925395652181a7b2a7d3aef</anchor>
       <arglist>(const Vector3f &amp;position)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setDirection</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>ac46223c70c01f43bb6a443001cdd0599</anchor>
+      <arglist>(const Vector3f &amp;direction)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setCone</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>aba2cbcc0be18840880b54a112a0e69a1</anchor>
+      <arglist>(const Cone &amp;cone)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setVelocity</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>a3ed894bdb323e26518c9e1548fc3488c</anchor>
+      <arglist>(const Vector3f &amp;velocity)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setDopplerFactor</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>a2d229ff4e5f5d61bb12c1a6b94841f96</anchor>
+      <arglist>(float factor)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setDirectionalAttenuationFactor</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>aeae4c21b585e54814b6a8ca8542ddf49</anchor>
+      <arglist>(float factor)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -6252,6 +4400,27 @@
     </member>
     <member kind="function">
       <type>void</type>
+      <name>setMaxDistance</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>a484275e6ecfa041ea9e690a8635c2212</anchor>
+      <arglist>(float distance)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setMinGain</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>ae6789b20e1a7525d6a7611466e955f50</anchor>
+      <arglist>(float gain)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setMaxGain</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>aaf799cceb2a8b3d5a93320c35a955fb1</anchor>
+      <arglist>(float gain)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
       <name>setAttenuation</name>
       <anchorfile>classsf_1_1SoundSource.html</anchorfile>
       <anchor>aa2adff44cd2f8b4e3c7315d7c2a45626</anchor>
@@ -6266,9 +4435,23 @@
     </member>
     <member kind="function">
       <type>float</type>
+      <name>getPan</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>a0fbe0259aa4fc8440d34d156bb8dd901</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
       <name>getVolume</name>
       <anchorfile>classsf_1_1SoundSource.html</anchorfile>
       <anchor>a04243fb5edf64561689b1d58953fc4ce</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isSpatializationEnabled</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>a805a8bba4ce7ac1f04fdb073974fee9b</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
@@ -6276,6 +4459,41 @@
       <name>getPosition</name>
       <anchorfile>classsf_1_1SoundSource.html</anchorfile>
       <anchor>a8d199521f55550c7a3b2b0f6950dffa1</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>Vector3f</type>
+      <name>getDirection</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>a2d9b249242e403d0f2638977357995fd</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>Cone</type>
+      <name>getCone</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>adee94455dfe9d1a87ec45d1afe09e092</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>Vector3f</type>
+      <name>getVelocity</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>a9ae37256230fe3bce3ddab5edf8936a1</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
+      <name>getDopplerFactor</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>af6eb03a66214b68bc2f4edb42952e6f5</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
+      <name>getDirectionalAttenuationFactor</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>aa1ac48f196605eb96521344bc8eb93b5</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
@@ -6294,148 +4512,91 @@
     </member>
     <member kind="function">
       <type>float</type>
+      <name>getMaxDistance</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>a471e2644f3599ac583bca92072ed3eec</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
+      <name>getMinGain</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>a08a8b71fc60a4549db55add457209829</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
+      <name>getMaxGain</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>a706eddad92fa4cf16b108b8942b72f26</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
       <name>getAttenuation</name>
       <anchorfile>classsf_1_1SoundSource.html</anchorfile>
       <anchor>a8ad7dafb4f1b4afbc638cebe24f48cc9</anchor>
       <arglist>() const</arglist>
     </member>
-    <member kind="enumvalue" protection="protected">
-      <name>NoLoop</name>
-      <anchorfile>classsf_1_1SoundStream.html</anchorfile>
-      <anchor>a7707214e7cd4ffcf1c123e7bcab4092aa2f2c638731fdff0d6fe4e3e82b6f6146</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue" protection="protected">
-      <name>NoLoop</name>
-      <anchorfile>classsf_1_1SoundStream.html</anchorfile>
-      <anchor>a7707214e7cd4ffcf1c123e7bcab4092aa2f2c638731fdff0d6fe4e3e82b6f6146</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="function" protection="protected" virtualness="virtual">
-      <type>virtual bool</type>
+    <member kind="function" protection="protected">
+      <type>bool</type>
       <name>onGetData</name>
       <anchorfile>classsf_1_1Music.html</anchorfile>
-      <anchor>aca1bcb4e5d56a854133e74bd86374463</anchor>
-      <arglist>(Chunk &amp;data)</arglist>
+      <anchor>a7f6dd1344f23285e13a26a46d1bb9f5c</anchor>
+      <arglist>(Chunk &amp;data) override</arglist>
     </member>
-    <member kind="function" protection="protected" virtualness="virtual">
-      <type>virtual void</type>
+    <member kind="function" protection="protected">
+      <type>void</type>
       <name>onSeek</name>
       <anchorfile>classsf_1_1Music.html</anchorfile>
-      <anchor>a15119cc0419c16bb334fa0698699c02e</anchor>
-      <arglist>(Time timeOffset)</arglist>
+      <anchor>a1256e51d366ae951408dc287f4cf486c</anchor>
+      <arglist>(Time timeOffset) override</arglist>
     </member>
-    <member kind="function" protection="protected" virtualness="virtual">
-      <type>virtual Int64</type>
+    <member kind="function" protection="protected">
+      <type>std::optional&lt; std::uint64_t &gt;</type>
       <name>onLoop</name>
       <anchorfile>classsf_1_1Music.html</anchorfile>
-      <anchor>aa68a64bdaf5d16e9ed64f202f5c45e03</anchor>
-      <arglist>()</arglist>
+      <anchor>a1edba64c835fd76ba474965dee216aaf</anchor>
+      <arglist>() override</arglist>
     </member>
     <member kind="function" protection="protected">
       <type>void</type>
       <name>initialize</name>
       <anchorfile>classsf_1_1SoundStream.html</anchorfile>
-      <anchor>a9c351711198ee1aa77c2fefd3ced4d2c</anchor>
-      <arglist>(unsigned int channelCount, unsigned int sampleRate)</arglist>
-    </member>
-    <member kind="function" protection="protected">
-      <type>void</type>
-      <name>setProcessingInterval</name>
-      <anchorfile>classsf_1_1SoundStream.html</anchorfile>
-      <anchor>a3a38d317279163f3766da2e538fbde93</anchor>
-      <arglist>(Time interval)</arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>unsigned int</type>
-      <name>m_source</name>
-      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
-      <anchor>a0223cef4b1c587e6e1e17b4c92c4479c</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>sf::Mutex</name>
-    <filename>classsf_1_1Mutex.html</filename>
-    <base protection="private">sf::NonCopyable</base>
-    <member kind="function">
-      <type></type>
-      <name>Mutex</name>
-      <anchorfile>classsf_1_1Mutex.html</anchorfile>
-      <anchor>a9bd52a48320fd7b6db8a78037aad276e</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>~Mutex</name>
-      <anchorfile>classsf_1_1Mutex.html</anchorfile>
-      <anchor>a9f76a67b7b6d3918131a692179b4e3f2</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>lock</name>
-      <anchorfile>classsf_1_1Mutex.html</anchorfile>
-      <anchor>a1a16956a6bbea764480c1b80f2e45763</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>unlock</name>
-      <anchorfile>classsf_1_1Mutex.html</anchorfile>
-      <anchor>ade71268ffc5e80756652058b01c23c33</anchor>
-      <arglist>()</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>sf::NonCopyable</name>
-    <filename>classsf_1_1NonCopyable.html</filename>
-    <member kind="function" protection="protected">
-      <type></type>
-      <name>NonCopyable</name>
-      <anchorfile>classsf_1_1NonCopyable.html</anchorfile>
-      <anchor>a2110add170580fdb946f887719da6860</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function" protection="protected">
-      <type></type>
-      <name>~NonCopyable</name>
-      <anchorfile>classsf_1_1NonCopyable.html</anchorfile>
-      <anchor>a8274ffbf46014f5f7f364befb52c7728</anchor>
-      <arglist>()</arglist>
+      <anchor>a4a698d4096306ac1792fa320068aa5d0</anchor>
+      <arglist>(unsigned int channelCount, unsigned int sampleRate, const std::vector&lt; SoundChannel &gt; &amp;channelMap)</arglist>
     </member>
   </compound>
   <compound kind="class">
     <name>sf::OutputSoundFile</name>
     <filename>classsf_1_1OutputSoundFile.html</filename>
-    <base protection="private">sf::NonCopyable</base>
     <member kind="function">
       <type></type>
       <name>OutputSoundFile</name>
       <anchorfile>classsf_1_1OutputSoundFile.html</anchorfile>
-      <anchor>a7ae9f2dbd0991fa9394726a3d58bb19e</anchor>
-      <arglist>()</arglist>
+      <anchor>a8b1952831dd7061ed189687bffebf79f</anchor>
+      <arglist>()=default</arglist>
     </member>
     <member kind="function">
       <type></type>
-      <name>~OutputSoundFile</name>
+      <name>OutputSoundFile</name>
       <anchorfile>classsf_1_1OutputSoundFile.html</anchorfile>
-      <anchor>a1492adbfef1f391d720afb56f068182e</anchor>
-      <arglist>()</arglist>
+      <anchor>a6367d6b6733b211b6e42a68fa7d137bd</anchor>
+      <arglist>(const std::filesystem::path &amp;filename, unsigned int sampleRate, unsigned int channelCount, const std::vector&lt; SoundChannel &gt; &amp;channelMap)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>openFromFile</name>
       <anchorfile>classsf_1_1OutputSoundFile.html</anchorfile>
-      <anchor>ae5e55f01c53c1422c44eaed2eed67fce</anchor>
-      <arglist>(const std::string &amp;filename, unsigned int sampleRate, unsigned int channelCount)</arglist>
+      <anchor>a8831d62f1ffabadb8a0de24908e16a88</anchor>
+      <arglist>(const std::filesystem::path &amp;filename, unsigned int sampleRate, unsigned int channelCount, const std::vector&lt; SoundChannel &gt; &amp;channelMap)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>write</name>
       <anchorfile>classsf_1_1OutputSoundFile.html</anchorfile>
-      <anchor>adfcf525fced71121f336fa89faac3d67</anchor>
-      <arglist>(const Int16 *samples, Uint64 count)</arglist>
+      <anchor>a1a66a72c3e5b973ff720cfd17c0bf0b0</anchor>
+      <arglist>(const std::int16_t *samples, std::uint64_t count)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -6452,15 +4613,43 @@
       <type></type>
       <name>Packet</name>
       <anchorfile>classsf_1_1Packet.html</anchorfile>
-      <anchor>a786e5d4ced83992ceefa1799963ea858</anchor>
-      <arglist>()</arglist>
+      <anchor>a7cf6fae63bcf55d0b434a87865a70228</anchor>
+      <arglist>()=default</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual</type>
       <name>~Packet</name>
       <anchorfile>classsf_1_1Packet.html</anchorfile>
-      <anchor>adc0490ca3c7c3d1e321bd742e5213913</anchor>
-      <arglist>()</arglist>
+      <anchor>aa9282b80b1bd36dbb6ec344ac1549a90</anchor>
+      <arglist>()=default</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Packet</name>
+      <anchorfile>classsf_1_1Packet.html</anchorfile>
+      <anchor>ad687cec99e27bfb69828535a234e298e</anchor>
+      <arglist>(const Packet &amp;)=default</arglist>
+    </member>
+    <member kind="function">
+      <type>Packet &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classsf_1_1Packet.html</anchorfile>
+      <anchor>a03e3f3f9b8fbef859be8901b5b215bb2</anchor>
+      <arglist>(const Packet &amp;)=default</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Packet</name>
+      <anchorfile>classsf_1_1Packet.html</anchorfile>
+      <anchor>a39cdcdb426c9f81f111ee95840afaf6d</anchor>
+      <arglist>(Packet &amp;&amp;) noexcept=default</arglist>
+    </member>
+    <member kind="function">
+      <type>Packet &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classsf_1_1Packet.html</anchorfile>
+      <anchor>a256e13eac488cdc9d03eff2da08f529c</anchor>
+      <arglist>(Packet &amp;&amp;) noexcept=default</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -6506,9 +4695,9 @@
     </member>
     <member kind="function">
       <type></type>
-      <name>operator BoolType</name>
+      <name>operator bool</name>
       <anchorfile>classsf_1_1Packet.html</anchorfile>
-      <anchor>a8ab20be4a63921b7cb1a4d8ca5c30f75</anchor>
+      <anchor>a8863ff08b73f728a341c775758abbfb4</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
@@ -6522,57 +4711,57 @@
       <type>Packet &amp;</type>
       <name>operator&gt;&gt;</name>
       <anchorfile>classsf_1_1Packet.html</anchorfile>
-      <anchor>a1c7814f9dbc637986ac498094add5ca5</anchor>
-      <arglist>(Int8 &amp;data)</arglist>
+      <anchor>ae44f412c1b4e3bffffe7a65ff70f7f2a</anchor>
+      <arglist>(std::int8_t &amp;data)</arglist>
     </member>
     <member kind="function">
       <type>Packet &amp;</type>
       <name>operator&gt;&gt;</name>
       <anchorfile>classsf_1_1Packet.html</anchorfile>
-      <anchor>a48df8986fc24551f1287144d3e990859</anchor>
-      <arglist>(Uint8 &amp;data)</arglist>
+      <anchor>ab64e609a2cf46356f5f9a00f36111090</anchor>
+      <arglist>(std::uint8_t &amp;data)</arglist>
     </member>
     <member kind="function">
       <type>Packet &amp;</type>
       <name>operator&gt;&gt;</name>
       <anchorfile>classsf_1_1Packet.html</anchorfile>
-      <anchor>ae455be24bfd8dbaa4cd5097e0fb70ecd</anchor>
-      <arglist>(Int16 &amp;data)</arglist>
+      <anchor>a3113773cdbb07e18f8ba9a8d3e846f85</anchor>
+      <arglist>(std::int16_t &amp;data)</arglist>
     </member>
     <member kind="function">
       <type>Packet &amp;</type>
       <name>operator&gt;&gt;</name>
       <anchorfile>classsf_1_1Packet.html</anchorfile>
-      <anchor>a6bc20f1be9a63407079e6d26171ac71f</anchor>
-      <arglist>(Uint16 &amp;data)</arglist>
+      <anchor>a9f53a2c54cf09727285f3d953933c372</anchor>
+      <arglist>(std::uint16_t &amp;data)</arglist>
     </member>
     <member kind="function">
       <type>Packet &amp;</type>
       <name>operator&gt;&gt;</name>
       <anchorfile>classsf_1_1Packet.html</anchorfile>
-      <anchor>a663e71b25a9352e3c4ddf4a3ce9db921</anchor>
-      <arglist>(Int32 &amp;data)</arglist>
+      <anchor>a534f51c0d24174f2ef1d72616ed8ba92</anchor>
+      <arglist>(std::int32_t &amp;data)</arglist>
     </member>
     <member kind="function">
       <type>Packet &amp;</type>
       <name>operator&gt;&gt;</name>
       <anchorfile>classsf_1_1Packet.html</anchorfile>
-      <anchor>aa3b0fabe6c14bcfa29bb04844b8bb987</anchor>
-      <arglist>(Uint32 &amp;data)</arglist>
+      <anchor>a5fb6d71162e35662e70ec229ca6cc3ec</anchor>
+      <arglist>(std::uint32_t &amp;data)</arglist>
     </member>
     <member kind="function">
       <type>Packet &amp;</type>
       <name>operator&gt;&gt;</name>
       <anchorfile>classsf_1_1Packet.html</anchorfile>
-      <anchor>ae76105996a6c2217bb3a4571603e92f6</anchor>
-      <arglist>(Int64 &amp;data)</arglist>
+      <anchor>a10fc2ab9f5fb7b8aa09ea3e016335bf1</anchor>
+      <arglist>(std::int64_t &amp;data)</arglist>
     </member>
     <member kind="function">
       <type>Packet &amp;</type>
       <name>operator&gt;&gt;</name>
       <anchorfile>classsf_1_1Packet.html</anchorfile>
-      <anchor>a79f7c144fd07a4036ffc7b0870a36613</anchor>
-      <arglist>(Uint64 &amp;data)</arglist>
+      <anchor>a819152d58f0e87111e6ff5eda34e9d6b</anchor>
+      <arglist>(std::uint64_t &amp;data)</arglist>
     </member>
     <member kind="function">
       <type>Packet &amp;</type>
@@ -6634,57 +4823,57 @@
       <type>Packet &amp;</type>
       <name>operator&lt;&lt;</name>
       <anchorfile>classsf_1_1Packet.html</anchorfile>
-      <anchor>a97aa4ecba66b8f528438fc41ed020825</anchor>
-      <arglist>(Int8 data)</arglist>
+      <anchor>ac63b8ccaa7e08ad0b2c32f15fbe31488</anchor>
+      <arglist>(std::int8_t data)</arglist>
     </member>
     <member kind="function">
       <type>Packet &amp;</type>
       <name>operator&lt;&lt;</name>
       <anchorfile>classsf_1_1Packet.html</anchorfile>
-      <anchor>ad5cc1857ed14878ab7a8509db8d99335</anchor>
-      <arglist>(Uint8 data)</arglist>
+      <anchor>a7542b9842e51f3ea4690fff9e6cb267f</anchor>
+      <arglist>(std::uint8_t data)</arglist>
     </member>
     <member kind="function">
       <type>Packet &amp;</type>
       <name>operator&lt;&lt;</name>
       <anchorfile>classsf_1_1Packet.html</anchorfile>
-      <anchor>a9d9c5a1bef415046aa46d51e7d2a9f1c</anchor>
-      <arglist>(Int16 data)</arglist>
+      <anchor>afb0fa0fcdac192af1dcc474ab3771c0e</anchor>
+      <arglist>(std::int16_t data)</arglist>
     </member>
     <member kind="function">
       <type>Packet &amp;</type>
       <name>operator&lt;&lt;</name>
       <anchorfile>classsf_1_1Packet.html</anchorfile>
-      <anchor>afb6b2958f8a55923297da432c2a4f3e9</anchor>
-      <arglist>(Uint16 data)</arglist>
+      <anchor>a345afa315ea0b638ea0c2be666c0243b</anchor>
+      <arglist>(std::uint16_t data)</arglist>
     </member>
     <member kind="function">
       <type>Packet &amp;</type>
       <name>operator&lt;&lt;</name>
       <anchorfile>classsf_1_1Packet.html</anchorfile>
-      <anchor>af7f5c31c2d2749d3088783525f9fc974</anchor>
-      <arglist>(Int32 data)</arglist>
+      <anchor>ad89227a67ffd0526f275cd05888a4269</anchor>
+      <arglist>(std::int32_t data)</arglist>
     </member>
     <member kind="function">
       <type>Packet &amp;</type>
       <name>operator&lt;&lt;</name>
       <anchorfile>classsf_1_1Packet.html</anchorfile>
-      <anchor>ad1837e0990f71e3727e0e118ab9fd20e</anchor>
-      <arglist>(Uint32 data)</arglist>
+      <anchor>a0ac5e4f188a74301e310751d9d0804ba</anchor>
+      <arglist>(std::uint32_t data)</arglist>
     </member>
     <member kind="function">
       <type>Packet &amp;</type>
       <name>operator&lt;&lt;</name>
       <anchorfile>classsf_1_1Packet.html</anchorfile>
-      <anchor>a6dc89edcfcf19daf781b776439aba94a</anchor>
-      <arglist>(Int64 data)</arglist>
+      <anchor>a1f9d66489418bc05810b9e9ca8c21ba8</anchor>
+      <arglist>(std::int64_t data)</arglist>
     </member>
     <member kind="function">
       <type>Packet &amp;</type>
       <name>operator&lt;&lt;</name>
       <anchorfile>classsf_1_1Packet.html</anchorfile>
-      <anchor>af3802406ed3430e20259e8551fa6554b</anchor>
-      <arglist>(Uint64 data)</arglist>
+      <anchor>a95233cc63de8733eb451de7107e834a0</anchor>
+      <arglist>(std::uint64_t data)</arglist>
     </member>
     <member kind="function">
       <type>Packet &amp;</type>
@@ -6749,122 +4938,94 @@
       <anchor>ab71a31ef0f1d5d856de6f9fc75434128</anchor>
       <arglist>(const void *data, std::size_t size)</arglist>
     </member>
+    <member kind="friend" protection="protected">
+      <type>friend class</type>
+      <name>TcpSocket</name>
+      <anchorfile>classsf_1_1Packet.html</anchorfile>
+      <anchor>aa8b32310b01d4bb702d6bcb969d5f130</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="friend" protection="protected">
+      <type>friend class</type>
+      <name>UdpSocket</name>
+      <anchorfile>classsf_1_1Packet.html</anchorfile>
+      <anchor>ae128c6687ced82c6157c5f865f8dec5c</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="class">
     <name>sf::Rect</name>
     <filename>classsf_1_1Rect.html</filename>
     <templarg>typename T</templarg>
     <member kind="function">
-      <type></type>
+      <type>constexpr</type>
       <name>Rect</name>
       <anchorfile>classsf_1_1Rect.html</anchorfile>
-      <anchor>a0f87ebaef9722a6222fd2e04ce8efb37</anchor>
-      <arglist>()</arglist>
+      <anchor>a6f3f354000c9141599b34ed2e63ee9aa</anchor>
+      <arglist>()=default</arglist>
     </member>
     <member kind="function">
-      <type></type>
+      <type>constexpr</type>
       <name>Rect</name>
       <anchorfile>classsf_1_1Rect.html</anchorfile>
-      <anchor>a15cdbc5a1aed3a8fc7be1bd5004f19f9</anchor>
-      <arglist>(T rectLeft, T rectTop, T rectWidth, T rectHeight)</arglist>
+      <anchor>a18ce7808a7cf4b1b98f6b997301fe5e7</anchor>
+      <arglist>(Vector2&lt; T &gt; position, Vector2&lt; T &gt; size)</arglist>
     </member>
     <member kind="function">
-      <type></type>
-      <name>Rect</name>
+      <type>constexpr</type>
+      <name>operator Rect&lt; U &gt;</name>
       <anchorfile>classsf_1_1Rect.html</anchorfile>
-      <anchor>a27fdf85caa6d12caeeff78913cc59936</anchor>
-      <arglist>(const Vector2&lt; T &gt; &amp;position, const Vector2&lt; T &gt; &amp;size)</arglist>
+      <anchor>a006f1450f51ed7bec69f2b45966b33ac</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type></type>
-      <name>Rect</name>
-      <anchorfile>classsf_1_1Rect.html</anchorfile>
-      <anchor>a6fff2bb7e93677839461a66bc2957de0</anchor>
-      <arglist>(const Rect&lt; U &gt; &amp;rectangle)</arglist>
-    </member>
-    <member kind="function">
-      <type>bool</type>
+      <type>constexpr bool</type>
       <name>contains</name>
       <anchorfile>classsf_1_1Rect.html</anchorfile>
-      <anchor>a910b998c92756157e1407e1363f93212</anchor>
-      <arglist>(T x, T y) const</arglist>
+      <anchor>ad18bdd7a9c322178c50a8893d8b15995</anchor>
+      <arglist>(Vector2&lt; T &gt; point) const</arglist>
     </member>
     <member kind="function">
-      <type>bool</type>
-      <name>contains</name>
+      <type>constexpr std::optional&lt; Rect&lt; T &gt; &gt;</type>
+      <name>findIntersection</name>
       <anchorfile>classsf_1_1Rect.html</anchorfile>
-      <anchor>a45c77c073a7a4d9232218ab2838f41bb</anchor>
-      <arglist>(const Vector2&lt; T &gt; &amp;point) const</arglist>
-    </member>
-    <member kind="function">
-      <type>bool</type>
-      <name>intersects</name>
-      <anchorfile>classsf_1_1Rect.html</anchorfile>
-      <anchor>ac77531698f39203e4bbe023097bb6a13</anchor>
+      <anchor>a7ef2a5f472d397bc4835a4fb7df99518</anchor>
       <arglist>(const Rect&lt; T &gt; &amp;rectangle) const</arglist>
     </member>
     <member kind="function">
-      <type>bool</type>
-      <name>intersects</name>
+      <type>constexpr Vector2&lt; T &gt;</type>
+      <name>getCenter</name>
       <anchorfile>classsf_1_1Rect.html</anchorfile>
-      <anchor>ad512c4a1127279e2d7464d0ace62500d</anchor>
-      <arglist>(const Rect&lt; T &gt; &amp;rectangle, Rect&lt; T &gt; &amp;intersection) const</arglist>
-    </member>
-    <member kind="function">
-      <type>sf::Vector2&lt; T &gt;</type>
-      <name>getPosition</name>
-      <anchorfile>classsf_1_1Rect.html</anchorfile>
-      <anchor>a846489bc985f7d1655150cad65961bbd</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type>sf::Vector2&lt; T &gt;</type>
-      <name>getSize</name>
-      <anchorfile>classsf_1_1Rect.html</anchorfile>
-      <anchor>ab1fd0936386404646ebe708652a66d09</anchor>
+      <anchor>ab37812f2b0ffd121d666c5859fc9fab6</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="variable">
-      <type>T</type>
-      <name>left</name>
+      <type>Vector2&lt; T &gt;</type>
+      <name>position</name>
       <anchorfile>classsf_1_1Rect.html</anchorfile>
-      <anchor>aa49960fa465103d9cb7069ceb25c7c32</anchor>
+      <anchor>a561ce610acfafc975647c19db1c76bce</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>T</type>
-      <name>top</name>
+      <type>Vector2&lt; T &gt;</type>
+      <name>size</name>
       <anchorfile>classsf_1_1Rect.html</anchorfile>
-      <anchor>abd3d3a2d0ad211ef0082bd0aa1a5c0e3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>T</type>
-      <name>width</name>
-      <anchorfile>classsf_1_1Rect.html</anchorfile>
-      <anchor>a4dd5b9d4333bebbc51bd309298fd500f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>T</type>
-      <name>height</name>
-      <anchorfile>classsf_1_1Rect.html</anchorfile>
-      <anchor>a6fa0fc7de1636d78cae1a1b54eef95cd</anchor>
+      <anchor>a39912541f559c5f780e4400831595acc</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
-      <type>bool</type>
+      <type>constexpr bool</type>
       <name>operator==</name>
       <anchorfile>classsf_1_1Rect.html</anchorfile>
-      <anchor>ab3488b5dbd0e587c4d7cb80605affc46</anchor>
-      <arglist>(const Rect&lt; T &gt; &amp;left, const Rect&lt; T &gt; &amp;right)</arglist>
+      <anchor>a9fd43df62132ae04873de6d034591895</anchor>
+      <arglist>(const Rect&lt; T &gt; &amp;lhs, const Rect&lt; T &gt; &amp;rhs)</arglist>
     </member>
     <member kind="function">
-      <type>bool</type>
+      <type>constexpr bool</type>
       <name>operator!=</name>
       <anchorfile>classsf_1_1Rect.html</anchorfile>
-      <anchor>a03fc4c105687b7d0f07b6b4ed4b45581</anchor>
-      <arglist>(const Rect&lt; T &gt; &amp;left, const Rect&lt; T &gt; &amp;right)</arglist>
+      <anchor>a3e687a68a85f552a6b253dd068e9a007</anchor>
+      <arglist>(const Rect&lt; T &gt; &amp;lhs, const Rect&lt; T &gt; &amp;rhs)</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -6875,36 +5036,43 @@
       <type></type>
       <name>RectangleShape</name>
       <anchorfile>classsf_1_1RectangleShape.html</anchorfile>
-      <anchor>a83a2be157ebee85c95ed491c3e78dd7c</anchor>
-      <arglist>(const Vector2f &amp;size=Vector2f(0, 0))</arglist>
+      <anchor>aae50c1fb670fb88ec4c63eaf7af826c4</anchor>
+      <arglist>(Vector2f size={})</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>setSize</name>
       <anchorfile>classsf_1_1RectangleShape.html</anchorfile>
-      <anchor>a5c65d374d4a259dfdc24efdd24a5dbec</anchor>
-      <arglist>(const Vector2f &amp;size)</arglist>
+      <anchor>a9a07ce94a8f8da13164e6fc316d36fb8</anchor>
+      <arglist>(Vector2f size)</arglist>
     </member>
     <member kind="function">
-      <type>const Vector2f &amp;</type>
+      <type>Vector2f</type>
       <name>getSize</name>
       <anchorfile>classsf_1_1RectangleShape.html</anchorfile>
-      <anchor>af6819a7b842b83863f21e7a9c63097e7</anchor>
+      <anchor>a6f0d9c7f7434fe7703cc1a6e7c4e2ecd</anchor>
       <arglist>() const</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual std::size_t</type>
+    <member kind="function">
+      <type>std::size_t</type>
       <name>getPointCount</name>
       <anchorfile>classsf_1_1RectangleShape.html</anchorfile>
-      <anchor>adfb2f429e5720c9ccdb26d5996c3ae33</anchor>
-      <arglist>() const</arglist>
+      <anchor>ae15232e7e0bda1c5a46925e6c9a96a3d</anchor>
+      <arglist>() const override</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual Vector2f</type>
+    <member kind="function">
+      <type>Vector2f</type>
       <name>getPoint</name>
       <anchorfile>classsf_1_1RectangleShape.html</anchorfile>
-      <anchor>a3909f1a1946930ff5ae17c26206c0f81</anchor>
-      <arglist>(std::size_t index) const</arglist>
+      <anchor>a784a6b8e2096220fb4ef2201e3fcbeaf</anchor>
+      <arglist>(std::size_t index) const override</arglist>
+    </member>
+    <member kind="function">
+      <type>Vector2f</type>
+      <name>getGeometricCenter</name>
+      <anchorfile>classsf_1_1RectangleShape.html</anchorfile>
+      <anchor>aaa54f725abcdf0af9be2a499a582c670</anchor>
+      <arglist>() const override</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -6924,15 +5092,15 @@
       <type>void</type>
       <name>setFillColor</name>
       <anchorfile>classsf_1_1Shape.html</anchorfile>
-      <anchor>a3506f9b5d916fec14d583d16f23c2485</anchor>
-      <arglist>(const Color &amp;color)</arglist>
+      <anchor>a44f64a14eada7ccceb2e03f655b8d666</anchor>
+      <arglist>(Color color)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>setOutlineColor</name>
       <anchorfile>classsf_1_1Shape.html</anchorfile>
-      <anchor>a5978f41ee349ac3c52942996dcb184f7</anchor>
-      <arglist>(const Color &amp;color)</arglist>
+      <anchor>a7dbbed35b7544a9e592acd3908713256</anchor>
+      <arglist>(Color color)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -6956,17 +5124,17 @@
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>const Color &amp;</type>
+      <type>Color</type>
       <name>getFillColor</name>
       <anchorfile>classsf_1_1Shape.html</anchorfile>
-      <anchor>aa5da23e522d2dd11e3e7661c26164c78</anchor>
+      <anchor>a6444edeb0639112234c0dfa47da8f9af</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>const Color &amp;</type>
+      <type>Color</type>
       <name>getOutlineColor</name>
       <anchorfile>classsf_1_1Shape.html</anchorfile>
-      <anchor>a4aa05b59851468e948ac9682b9c71abb</anchor>
+      <anchor>abbdd704351300cd65d56b0e89f834808</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
@@ -6994,113 +5162,78 @@
       <type>void</type>
       <name>setPosition</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a4dbfb1a7c80688b0b4c477d706550208</anchor>
-      <arglist>(float x, float y)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>setPosition</name>
-      <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>af1a42209ce2b5d3f07b00f917bcd8015</anchor>
-      <arglist>(const Vector2f &amp;position)</arglist>
+      <anchor>a47c1375b57cbb0e513286e8d11f6dd4d</anchor>
+      <arglist>(Vector2f position)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>setRotation</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a32baf2bf1a74699b03bf8c95030a38ed</anchor>
-      <arglist>(float angle)</arglist>
+      <anchor>a1b4bfa83da965c03ef523c7c33df991f</anchor>
+      <arglist>(Angle angle)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>setScale</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>aaec50b46b3f41b054763304d1e727471</anchor>
-      <arglist>(float factorX, float factorY)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>setScale</name>
-      <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a4c48a87f1626047e448f9c1a68ff167e</anchor>
-      <arglist>(const Vector2f &amp;factors)</arglist>
+      <anchor>a60b82c58502e86f258c9844a1a58400b</anchor>
+      <arglist>(Vector2f factors)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>setOrigin</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a56c67bd80aae8418d13fb96c034d25ec</anchor>
-      <arglist>(float x, float y)</arglist>
+      <anchor>a26788f72ade7ffadb8ba594c3332c4a8</anchor>
+      <arglist>(Vector2f origin)</arglist>
     </member>
     <member kind="function">
-      <type>void</type>
-      <name>setOrigin</name>
-      <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>aa93a835ffbf3bee2098dfbbc695a7f05</anchor>
-      <arglist>(const Vector2f &amp;origin)</arglist>
-    </member>
-    <member kind="function">
-      <type>const Vector2f &amp;</type>
+      <type>Vector2f</type>
       <name>getPosition</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>aea8b18e91a7bf7be589851bb9dd11241</anchor>
+      <anchor>a88a224d0831261591beace74cd3ad67b</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>float</type>
+      <type>Angle</type>
       <name>getRotation</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>aa00b5c5d4a06ac24a94dd72c56931d3a</anchor>
+      <anchor>a11ca740731d6c2cdde3cc8ae3bda3785</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>const Vector2f &amp;</type>
+      <type>Vector2f</type>
       <name>getScale</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a7bcae0e924213f2e89edd8926f2453af</anchor>
+      <anchor>a86fe2b0a7479713d33b71907191f654c</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>const Vector2f &amp;</type>
+      <type>Vector2f</type>
       <name>getOrigin</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a898b33eb6513161eb5c747a072364f15</anchor>
+      <anchor>aa32ea5e8c64716f07d0939252d8d7e31</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>move</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a86b461d6a941ad390c2ad8b6a4a20391</anchor>
-      <arglist>(float offsetX, float offsetY)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>move</name>
-      <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>ab9ca691522f6ddc1a40406849b87c469</anchor>
-      <arglist>(const Vector2f &amp;offset)</arglist>
+      <anchor>a860e50085b49a46a71cd028f7f5d8f6d</anchor>
+      <arglist>(Vector2f offset)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>rotate</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>af8a5ffddc0d93f238fee3bf8efe1ebda</anchor>
-      <arglist>(float angle)</arglist>
+      <anchor>aacd4c9a92b44f5a0cd95e2fe3741f8f1</anchor>
+      <arglist>(Angle angle)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>scale</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a3de0c6d8957f3cf318092f3f60656391</anchor>
-      <arglist>(float factorX, float factorY)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>scale</name>
-      <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>adecaa6c69b1f27dd5194b067d96bb694</anchor>
-      <arglist>(const Vector2f &amp;factor)</arglist>
+      <anchor>a24060d4216813d6f39698cf1cc82be98</anchor>
+      <arglist>(Vector2f factor)</arglist>
     </member>
     <member kind="function">
       <type>const Transform &amp;</type>
@@ -7126,81 +5259,102 @@
   </compound>
   <compound kind="class">
     <name>sf::RenderStates</name>
-    <filename>classsf_1_1RenderStates.html</filename>
+    <filename>structsf_1_1RenderStates.html</filename>
     <member kind="function">
       <type></type>
       <name>RenderStates</name>
-      <anchorfile>classsf_1_1RenderStates.html</anchorfile>
-      <anchor>a885bf14070d0d5391f062f62b270b7d0</anchor>
-      <arglist>()</arglist>
+      <anchorfile>structsf_1_1RenderStates.html</anchorfile>
+      <anchor>a0ac56c8fe228c922f8b8b2bcdf043c80</anchor>
+      <arglist>()=default</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>RenderStates</name>
-      <anchorfile>classsf_1_1RenderStates.html</anchorfile>
+      <anchorfile>structsf_1_1RenderStates.html</anchorfile>
       <anchor>acac8830a593c8a4523ac2fdf3cac8a01</anchor>
       <arglist>(const BlendMode &amp;theBlendMode)</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>RenderStates</name>
-      <anchorfile>classsf_1_1RenderStates.html</anchorfile>
+      <anchorfile>structsf_1_1RenderStates.html</anchorfile>
+      <anchor>adf9f457f98a69b8d84b07b0f42b92b4a</anchor>
+      <arglist>(const StencilMode &amp;theStencilMode)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>RenderStates</name>
+      <anchorfile>structsf_1_1RenderStates.html</anchorfile>
       <anchor>a3e99cad6ab05971d40357949930ed890</anchor>
       <arglist>(const Transform &amp;theTransform)</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>RenderStates</name>
-      <anchorfile>classsf_1_1RenderStates.html</anchorfile>
+      <anchorfile>structsf_1_1RenderStates.html</anchorfile>
       <anchor>a8f4ca3be0e27dafea0c4ab8547439bb1</anchor>
       <arglist>(const Texture *theTexture)</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>RenderStates</name>
-      <anchorfile>classsf_1_1RenderStates.html</anchorfile>
+      <anchorfile>structsf_1_1RenderStates.html</anchorfile>
       <anchor>a39f94233f464739d8d8522f3aefe97d0</anchor>
       <arglist>(const Shader *theShader)</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>RenderStates</name>
-      <anchorfile>classsf_1_1RenderStates.html</anchorfile>
-      <anchor>ab5eda13cd8c79c74eba3b1b0df817d67</anchor>
-      <arglist>(const BlendMode &amp;theBlendMode, const Transform &amp;theTransform, const Texture *theTexture, const Shader *theShader)</arglist>
+      <anchorfile>structsf_1_1RenderStates.html</anchorfile>
+      <anchor>a7bfde40a90f019cde12f1977b64e50b2</anchor>
+      <arglist>(const BlendMode &amp;theBlendMode, const StencilMode &amp;theStencilMode, const Transform &amp;theTransform, CoordinateType theCoordinateType, const Texture *theTexture, const Shader *theShader)</arglist>
     </member>
     <member kind="variable">
       <type>BlendMode</type>
       <name>blendMode</name>
-      <anchorfile>classsf_1_1RenderStates.html</anchorfile>
+      <anchorfile>structsf_1_1RenderStates.html</anchorfile>
       <anchor>ad6ac87f1b5006dae7ebfee4b5d40f5a8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>StencilMode</type>
+      <name>stencilMode</name>
+      <anchorfile>structsf_1_1RenderStates.html</anchorfile>
+      <anchor>a9d918d3da1c7f0eabfe8ff5e5b10c313</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>Transform</type>
       <name>transform</name>
-      <anchorfile>classsf_1_1RenderStates.html</anchorfile>
+      <anchorfile>structsf_1_1RenderStates.html</anchorfile>
       <anchor>a1f737981a0f2f0d4bb8dac866a8d1149</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>CoordinateType</type>
+      <name>coordinateType</name>
+      <anchorfile>structsf_1_1RenderStates.html</anchorfile>
+      <anchor>a8a0b8a84151fa5598ce0fc8c88b5f475</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const Texture *</type>
       <name>texture</name>
-      <anchorfile>classsf_1_1RenderStates.html</anchorfile>
+      <anchorfile>structsf_1_1RenderStates.html</anchorfile>
       <anchor>a457fc5a41731889de9cf39cf9b3436c3</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>const Shader *</type>
       <name>shader</name>
-      <anchorfile>classsf_1_1RenderStates.html</anchorfile>
+      <anchorfile>structsf_1_1RenderStates.html</anchorfile>
       <anchor>ad4f79ecdd0c60ed0d24fbe555b221bd8</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable" static="yes">
       <type>static const RenderStates</type>
       <name>Default</name>
-      <anchorfile>classsf_1_1RenderStates.html</anchorfile>
+      <anchorfile>structsf_1_1RenderStates.html</anchorfile>
       <anchor>ad29672df29f19ce50c3021d95f2bb062</anchor>
       <arglist></arglist>
     </member>
@@ -7208,20 +5362,61 @@
   <compound kind="class">
     <name>sf::RenderTarget</name>
     <filename>classsf_1_1RenderTarget.html</filename>
-    <base protection="private">sf::NonCopyable</base>
     <member kind="function" virtualness="virtual">
       <type>virtual</type>
       <name>~RenderTarget</name>
       <anchorfile>classsf_1_1RenderTarget.html</anchorfile>
-      <anchor>a9abd1654a99fba46f6887b9c625b9b06</anchor>
-      <arglist>()</arglist>
+      <anchor>ab7da7ccb48bd3983b33fe359258ca71d</anchor>
+      <arglist>()=default</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>RenderTarget</name>
+      <anchorfile>classsf_1_1RenderTarget.html</anchorfile>
+      <anchor>aec429e06ee84e7fbeaf00632afde191c</anchor>
+      <arglist>(const RenderTarget &amp;)=delete</arglist>
+    </member>
+    <member kind="function">
+      <type>RenderTarget &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classsf_1_1RenderTarget.html</anchorfile>
+      <anchor>ab18bb39bb3a26766582fad362516ac2e</anchor>
+      <arglist>(const RenderTarget &amp;)=delete</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>RenderTarget</name>
+      <anchorfile>classsf_1_1RenderTarget.html</anchorfile>
+      <anchor>aa076083f766b1b57d30ceb61cf216dff</anchor>
+      <arglist>(RenderTarget &amp;&amp;) noexcept=default</arglist>
+    </member>
+    <member kind="function">
+      <type>RenderTarget &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classsf_1_1RenderTarget.html</anchorfile>
+      <anchor>ae94e144a10d39e6f84d50bea6e18cb10</anchor>
+      <arglist>(RenderTarget &amp;&amp;) noexcept=default</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>clear</name>
       <anchorfile>classsf_1_1RenderTarget.html</anchorfile>
-      <anchor>a6bb6f0ba348f2b1e2f46114aeaf60f26</anchor>
-      <arglist>(const Color &amp;color=Color(0, 0, 0, 255))</arglist>
+      <anchor>aee353fc2cd35edf0747e710301af3e4c</anchor>
+      <arglist>(Color color=Color::Black)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>clearStencil</name>
+      <anchorfile>classsf_1_1RenderTarget.html</anchorfile>
+      <anchor>a5756ecc36a0ad169809063f8f2563cbe</anchor>
+      <arglist>(StencilValue stencilValue)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>clear</name>
+      <anchorfile>classsf_1_1RenderTarget.html</anchorfile>
+      <anchor>a6b4dd9e35771ba842f0feb4ba52cebb9</anchor>
+      <arglist>(Color color, StencilValue stencilValue)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -7252,32 +5447,39 @@
       <arglist>(const View &amp;view) const</arglist>
     </member>
     <member kind="function">
-      <type>Vector2f</type>
-      <name>mapPixelToCoords</name>
+      <type>IntRect</type>
+      <name>getScissor</name>
       <anchorfile>classsf_1_1RenderTarget.html</anchorfile>
-      <anchor>a0103ebebafa43a97e6e6414f8560d5e3</anchor>
-      <arglist>(const Vector2i &amp;point) const</arglist>
+      <anchor>a28db5c204007c2ccc806462ed6712da6</anchor>
+      <arglist>(const View &amp;view) const</arglist>
     </member>
     <member kind="function">
       <type>Vector2f</type>
       <name>mapPixelToCoords</name>
       <anchorfile>classsf_1_1RenderTarget.html</anchorfile>
-      <anchor>a2d3e9d7c4a1f5ea7e52b06f53e3011f9</anchor>
-      <arglist>(const Vector2i &amp;point, const View &amp;view) const</arglist>
+      <anchor>a5ce02e4fd30e065c4dbeec239ae579b3</anchor>
+      <arglist>(Vector2i point) const</arglist>
+    </member>
+    <member kind="function">
+      <type>Vector2f</type>
+      <name>mapPixelToCoords</name>
+      <anchorfile>classsf_1_1RenderTarget.html</anchorfile>
+      <anchor>af7c5ec0787ffdcabfcee0f2b88dd4536</anchor>
+      <arglist>(Vector2i point, const View &amp;view) const</arglist>
     </member>
     <member kind="function">
       <type>Vector2i</type>
       <name>mapCoordsToPixel</name>
       <anchorfile>classsf_1_1RenderTarget.html</anchorfile>
-      <anchor>ad92a9f0283aa5f3f67e473c1105b68cf</anchor>
-      <arglist>(const Vector2f &amp;point) const</arglist>
+      <anchor>ab473e0723ba16cf913deb03774c8458c</anchor>
+      <arglist>(Vector2f point) const</arglist>
     </member>
     <member kind="function">
       <type>Vector2i</type>
       <name>mapCoordsToPixel</name>
       <anchorfile>classsf_1_1RenderTarget.html</anchorfile>
-      <anchor>a848eee44b72ac3f16fa9182df26e83bc</anchor>
-      <arglist>(const Vector2f &amp;point, const View &amp;view) const</arglist>
+      <anchor>a07a8da6e2a9e3ce5f36344e3d8e7c41a</anchor>
+      <arglist>(Vector2f point, const View &amp;view) const</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -7353,8 +5555,8 @@
       <type></type>
       <name>RenderTarget</name>
       <anchorfile>classsf_1_1RenderTarget.html</anchorfile>
-      <anchor>a2997c96cbd93cb8ce0aba2ddae35b86f</anchor>
-      <arglist>()</arglist>
+      <anchor>a72f1cf9433b40b3f54a2efd9a2fe9a49</anchor>
+      <arglist>()=default</arglist>
     </member>
     <member kind="function" protection="protected">
       <type>void</type>
@@ -7375,26 +5577,54 @@
       <anchor>a19ee6e5b4c40ad251803389b3953a9c6</anchor>
       <arglist>()</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual</type>
+    <member kind="function">
+      <type></type>
+      <name>RenderTexture</name>
+      <anchorfile>classsf_1_1RenderTexture.html</anchorfile>
+      <anchor>aaf267822e1f7b6c5564ba46b0a982389</anchor>
+      <arglist>(Vector2u size, const ContextSettings &amp;settings={})</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
       <name>~RenderTexture</name>
       <anchorfile>classsf_1_1RenderTexture.html</anchorfile>
-      <anchor>a94b84ab9335be84d2a014c964d973304</anchor>
-      <arglist>()</arglist>
+      <anchor>a3fe70797441f914c9b3ce424b8a289ad</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>RenderTexture</name>
+      <anchorfile>classsf_1_1RenderTexture.html</anchorfile>
+      <anchor>a772a33c6df251d005aa51d717ed11dfa</anchor>
+      <arglist>(const RenderTexture &amp;)=delete</arglist>
+    </member>
+    <member kind="function">
+      <type>RenderTexture &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classsf_1_1RenderTexture.html</anchorfile>
+      <anchor>a3057db6c6cfacf0f7e73ad2dd3ce7fdc</anchor>
+      <arglist>(const RenderTexture &amp;)=delete</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>RenderTexture</name>
+      <anchorfile>classsf_1_1RenderTexture.html</anchorfile>
+      <anchor>a500782991bde6ab68a2b4ab3a91b6f2b</anchor>
+      <arglist>(RenderTexture &amp;&amp;) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>RenderTexture &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classsf_1_1RenderTexture.html</anchorfile>
+      <anchor>a6eac4f331fafbcae9d4bca1fe3e705e5</anchor>
+      <arglist>(RenderTexture &amp;&amp;) noexcept</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
-      <name>create</name>
+      <name>resize</name>
       <anchorfile>classsf_1_1RenderTexture.html</anchorfile>
-      <anchor>a0e945c4ce7703591c7f240b169744603</anchor>
-      <arglist>(unsigned int width, unsigned int height, bool depthBuffer)</arglist>
-    </member>
-    <member kind="function">
-      <type>bool</type>
-      <name>create</name>
-      <anchorfile>classsf_1_1RenderTexture.html</anchorfile>
-      <anchor>a49b7b723a80f89bc409a942364351dc3</anchor>
-      <arglist>(unsigned int width, unsigned int height, const ContextSettings &amp;settings=ContextSettings())</arglist>
+      <anchor>acaa6b97ea84ce82289f6925d1d198035</anchor>
+      <arglist>(Vector2u size, const ContextSettings &amp;settings={})</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -7435,8 +5665,8 @@
       <type>bool</type>
       <name>setActive</name>
       <anchorfile>classsf_1_1RenderTexture.html</anchorfile>
-      <anchor>a5da95ecdbce615a80bb78399012508cf</anchor>
-      <arglist>(bool active=true)</arglist>
+      <anchor>a30eda291b7b7179e7a0d1506c953a424</anchor>
+      <arglist>(bool active=true) override</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -7445,19 +5675,19 @@
       <anchor>af92886d5faef3916caff9fa9ab32c555</anchor>
       <arglist>()</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual Vector2u</type>
+    <member kind="function">
+      <type>Vector2u</type>
       <name>getSize</name>
       <anchorfile>classsf_1_1RenderTexture.html</anchorfile>
-      <anchor>a6685315b5c4c25a5dcb75b4280b381ba</anchor>
-      <arglist>() const</arglist>
+      <anchor>a7acc31207ad749f94805cbf4fa2acf03</anchor>
+      <arglist>() const override</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual bool</type>
+    <member kind="function">
+      <type>bool</type>
       <name>isSrgb</name>
       <anchorfile>classsf_1_1RenderTexture.html</anchorfile>
-      <anchor>a994f2fa5a4235cbbdb60d9d9a5eed07b</anchor>
-      <arglist>() const</arglist>
+      <anchor>ac9c9abcd802917012c50009f7b662c0c</anchor>
+      <arglist>() const override</arglist>
     </member>
     <member kind="function">
       <type>const Texture &amp;</type>
@@ -7470,8 +5700,22 @@
       <type>void</type>
       <name>clear</name>
       <anchorfile>classsf_1_1RenderTarget.html</anchorfile>
-      <anchor>a6bb6f0ba348f2b1e2f46114aeaf60f26</anchor>
-      <arglist>(const Color &amp;color=Color(0, 0, 0, 255))</arglist>
+      <anchor>aee353fc2cd35edf0747e710301af3e4c</anchor>
+      <arglist>(Color color=Color::Black)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>clear</name>
+      <anchorfile>classsf_1_1RenderTarget.html</anchorfile>
+      <anchor>a6b4dd9e35771ba842f0feb4ba52cebb9</anchor>
+      <arglist>(Color color, StencilValue stencilValue)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>clearStencil</name>
+      <anchorfile>classsf_1_1RenderTarget.html</anchorfile>
+      <anchor>a5756ecc36a0ad169809063f8f2563cbe</anchor>
+      <arglist>(StencilValue stencilValue)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -7502,32 +5746,39 @@
       <arglist>(const View &amp;view) const</arglist>
     </member>
     <member kind="function">
-      <type>Vector2f</type>
-      <name>mapPixelToCoords</name>
+      <type>IntRect</type>
+      <name>getScissor</name>
       <anchorfile>classsf_1_1RenderTarget.html</anchorfile>
-      <anchor>a0103ebebafa43a97e6e6414f8560d5e3</anchor>
-      <arglist>(const Vector2i &amp;point) const</arglist>
+      <anchor>a28db5c204007c2ccc806462ed6712da6</anchor>
+      <arglist>(const View &amp;view) const</arglist>
     </member>
     <member kind="function">
       <type>Vector2f</type>
       <name>mapPixelToCoords</name>
       <anchorfile>classsf_1_1RenderTarget.html</anchorfile>
-      <anchor>a2d3e9d7c4a1f5ea7e52b06f53e3011f9</anchor>
-      <arglist>(const Vector2i &amp;point, const View &amp;view) const</arglist>
+      <anchor>a5ce02e4fd30e065c4dbeec239ae579b3</anchor>
+      <arglist>(Vector2i point) const</arglist>
+    </member>
+    <member kind="function">
+      <type>Vector2f</type>
+      <name>mapPixelToCoords</name>
+      <anchorfile>classsf_1_1RenderTarget.html</anchorfile>
+      <anchor>af7c5ec0787ffdcabfcee0f2b88dd4536</anchor>
+      <arglist>(Vector2i point, const View &amp;view) const</arglist>
     </member>
     <member kind="function">
       <type>Vector2i</type>
       <name>mapCoordsToPixel</name>
       <anchorfile>classsf_1_1RenderTarget.html</anchorfile>
-      <anchor>ad92a9f0283aa5f3f67e473c1105b68cf</anchor>
-      <arglist>(const Vector2f &amp;point) const</arglist>
+      <anchor>ab473e0723ba16cf913deb03774c8458c</anchor>
+      <arglist>(Vector2f point) const</arglist>
     </member>
     <member kind="function">
       <type>Vector2i</type>
       <name>mapCoordsToPixel</name>
       <anchorfile>classsf_1_1RenderTarget.html</anchorfile>
-      <anchor>a848eee44b72ac3f16fa9182df26e83bc</anchor>
-      <arglist>(const Vector2f &amp;point, const View &amp;view) const</arglist>
+      <anchor>a07a8da6e2a9e3ce5f36344e3d8e7c41a</anchor>
+      <arglist>(Vector2f point, const View &amp;view) const</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -7580,9 +5831,9 @@
     </member>
     <member kind="function" static="yes">
       <type>static unsigned int</type>
-      <name>getMaximumAntialiasingLevel</name>
+      <name>getMaximumAntiAliasingLevel</name>
       <anchorfile>classsf_1_1RenderTexture.html</anchorfile>
-      <anchor>ab0849fc3e064b744ffae1ab1d85ee12b</anchor>
+      <anchor>a8fead30a35e73a6b2c307de4f152792c</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function" protection="protected">
@@ -7602,78 +5853,92 @@
       <type></type>
       <name>RenderWindow</name>
       <anchorfile>classsf_1_1RenderWindow.html</anchorfile>
-      <anchor>a839bbf336bdcafb084dafc3076fc9021</anchor>
-      <arglist>()</arglist>
+      <anchor>add082448ad1384c0bd475a70cf4f7df1</anchor>
+      <arglist>()=default</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>RenderWindow</name>
       <anchorfile>classsf_1_1RenderWindow.html</anchorfile>
-      <anchor>aebef983e01f677bf5a66cefc4d547647</anchor>
-      <arglist>(VideoMode mode, const String &amp;title, Uint32 style=Style::Default, const ContextSettings &amp;settings=ContextSettings())</arglist>
+      <anchor>a417c0ea193537b0104b6f6c52e9d7163</anchor>
+      <arglist>(VideoMode mode, const String &amp;title, std::uint32_t style=Style::Default, State state=State::Windowed, const ContextSettings &amp;settings={})</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>RenderWindow</name>
       <anchorfile>classsf_1_1RenderWindow.html</anchorfile>
-      <anchor>a25c0af7d515e710b6eebc9c6be952aa5</anchor>
-      <arglist>(WindowHandle handle, const ContextSettings &amp;settings=ContextSettings())</arglist>
+      <anchor>af405d17c1e5e042886afff04b3a77f97</anchor>
+      <arglist>(VideoMode mode, const String &amp;title, State state, const ContextSettings &amp;settings={})</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual</type>
-      <name>~RenderWindow</name>
+    <member kind="function">
+      <type></type>
+      <name>RenderWindow</name>
       <anchorfile>classsf_1_1RenderWindow.html</anchorfile>
-      <anchor>a3407e36bfc1752d723140438a825365c</anchor>
-      <arglist>()</arglist>
+      <anchor>a19debea720c5cb4b7c19886f464ae1c7</anchor>
+      <arglist>(WindowHandle handle, const ContextSettings &amp;settings={})</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual Vector2u</type>
+    <member kind="function">
+      <type>Vector2u</type>
       <name>getSize</name>
       <anchorfile>classsf_1_1RenderWindow.html</anchorfile>
-      <anchor>ae3eacf93661c8068fca7a78d57dc7e14</anchor>
-      <arglist>() const</arglist>
+      <anchor>af5d9a6263e05fd4ed4b31a5c202cc642</anchor>
+      <arglist>() const override</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual bool</type>
+    <member kind="function">
+      <type>void</type>
+      <name>setIcon</name>
+      <anchorfile>classsf_1_1RenderWindow.html</anchorfile>
+      <anchor>aba4d2434d6c2d058485d8a35b10afb25</anchor>
+      <arglist>(const Image &amp;icon)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
       <name>isSrgb</name>
       <anchorfile>classsf_1_1RenderWindow.html</anchorfile>
-      <anchor>ad943b4797fe6e1d609f12ce413b6a093</anchor>
-      <arglist>() const</arglist>
+      <anchor>a1e57e5284d9abf1095171d157dd27b3f</anchor>
+      <arglist>() const override</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>setActive</name>
       <anchorfile>classsf_1_1RenderWindow.html</anchorfile>
-      <anchor>aee6c53eced675e885931eb3e91f11155</anchor>
-      <arglist>(bool active=true)</arglist>
+      <anchor>a3f5476821139d5a7f0e4df19dab69b56</anchor>
+      <arglist>(bool active=true) override</arglist>
     </member>
     <member kind="function">
-      <type>Image</type>
-      <name>capture</name>
-      <anchorfile>classsf_1_1RenderWindow.html</anchorfile>
-      <anchor>a5a784b8a09bf4a8bc97ef9e0a8957c35</anchor>
-      <arglist>() const</arglist>
+      <type>void</type>
+      <name>create</name>
+      <anchorfile>classsf_1_1Window.html</anchorfile>
+      <anchor>ae77f112046c240b477963326e2363e18</anchor>
+      <arglist>(VideoMode mode, const String &amp;title, std::uint32_t style=Style::Default, State state=State::Windowed) override</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
       <name>create</name>
       <anchorfile>classsf_1_1Window.html</anchorfile>
-      <anchor>ac6a58d9c26a18f0e70888d0f53e154c1</anchor>
-      <arglist>(VideoMode mode, const String &amp;title, Uint32 style=Style::Default)</arglist>
+      <anchor>ace10c7fc5904ddff72a0fede61758679</anchor>
+      <arglist>(VideoMode mode, const String &amp;title, std::uint32_t style, State state, const ContextSettings &amp;settings)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>create</name>
+      <anchorfile>classsf_1_1Window.html</anchorfile>
+      <anchor>a17af5e75b858635f45ad46ce91668ce8</anchor>
+      <arglist>(VideoMode mode, const String &amp;title, State state) override</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
       <name>create</name>
       <anchorfile>classsf_1_1Window.html</anchorfile>
-      <anchor>a6518b989614750e90d9784f4d05ce02c</anchor>
-      <arglist>(VideoMode mode, const String &amp;title, Uint32 style, const ContextSettings &amp;settings)</arglist>
+      <anchor>a3667f889b2b288c13fe8f039cbad9931</anchor>
+      <arglist>(VideoMode mode, const String &amp;title, State state, const ContextSettings &amp;settings)</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual void</type>
+    <member kind="function">
+      <type>void</type>
       <name>create</name>
       <anchorfile>classsf_1_1Window.html</anchorfile>
-      <anchor>a5ee0c5262df6cc4e1a8031ae6848437f</anchor>
-      <arglist>(WindowHandle handle)</arglist>
+      <anchor>a5246d47ddea8ad787be150e09df1fc53</anchor>
+      <arglist>(WindowHandle handle) override</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
@@ -7682,12 +5947,12 @@
       <anchor>a064dd5dd7bb337fb9f5635f580081a1e</anchor>
       <arglist>(WindowHandle handle, const ContextSettings &amp;settings)</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual void</type>
+    <member kind="function">
+      <type>void</type>
       <name>close</name>
       <anchorfile>classsf_1_1Window.html</anchorfile>
-      <anchor>a7355b916852af56cfe3cc00feed9f419</anchor>
-      <arglist>()</arglist>
+      <anchor>ab1d808a3682db8d113d67354bcbd717d</anchor>
+      <arglist>() override</arglist>
     </member>
     <member kind="function">
       <type>const ContextSettings &amp;</type>
@@ -7732,18 +5997,25 @@
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>bool</type>
+      <type>std::optional&lt; Event &gt;</type>
       <name>pollEvent</name>
       <anchorfile>classsf_1_1WindowBase.html</anchorfile>
-      <anchor>a6a143de089c8716bd42c38c781268f7f</anchor>
-      <arglist>(Event &amp;event)</arglist>
+      <anchor>a6090926b477e9d0a83854b94b9e1fd35</anchor>
+      <arglist>()</arglist>
     </member>
     <member kind="function">
-      <type>bool</type>
+      <type>std::optional&lt; Event &gt;</type>
       <name>waitEvent</name>
       <anchorfile>classsf_1_1WindowBase.html</anchorfile>
-      <anchor>aa1c100a69b5bc0c84e23a4652d51ac41</anchor>
-      <arglist>(Event &amp;event)</arglist>
+      <anchor>ab5975f6f6a06ecd6c18fa0f62cd1edf7</anchor>
+      <arglist>(Time timeout=Time::Zero)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>handleEvents</name>
+      <anchorfile>classsf_1_1WindowBase.html</anchorfile>
+      <anchor>ad86ae79ff4e2da25af1ca3cd06f79557</anchor>
+      <arglist>(Ts &amp;&amp;... handlers)</arglist>
     </member>
     <member kind="function">
       <type>Vector2i</type>
@@ -7756,15 +6028,29 @@
       <type>void</type>
       <name>setPosition</name>
       <anchorfile>classsf_1_1WindowBase.html</anchorfile>
-      <anchor>ab5b8d500fa5acd3ac2908c9221fe2019</anchor>
-      <arglist>(const Vector2i &amp;position)</arglist>
+      <anchor>a7282bbf43820f20f41c704c2ab5b86f8</anchor>
+      <arglist>(Vector2i position)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>setSize</name>
       <anchorfile>classsf_1_1WindowBase.html</anchorfile>
-      <anchor>a7edca32bca3000d2e241dba720034bd6</anchor>
-      <arglist>(const Vector2u &amp;size)</arglist>
+      <anchor>abd2581f59f35bd379307ea5b6254631c</anchor>
+      <arglist>(Vector2u size)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setMinimumSize</name>
+      <anchorfile>classsf_1_1WindowBase.html</anchorfile>
+      <anchor>a742a8f386668f58fe27c0b5f5929de7e</anchor>
+      <arglist>(const std::optional&lt; Vector2u &gt; &amp;minimumSize)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setMaximumSize</name>
+      <anchorfile>classsf_1_1WindowBase.html</anchorfile>
+      <anchor>a65f856835295a85a2959c962a1616cad</anchor>
+      <arglist>(const std::optional&lt; Vector2u &gt; &amp;maximumSize)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -7777,8 +6063,8 @@
       <type>void</type>
       <name>setIcon</name>
       <anchorfile>classsf_1_1WindowBase.html</anchorfile>
-      <anchor>add42ae12c13012e6aab74d9e34591719</anchor>
-      <arglist>(unsigned int width, unsigned int height, const Uint8 *pixels)</arglist>
+      <anchor>a07ab1f9f9dc2312ad0ee83d1ffee9715</anchor>
+      <arglist>(Vector2u size, const std::uint8_t *pixels)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -7838,24 +6124,38 @@
     </member>
     <member kind="function">
       <type>WindowHandle</type>
-      <name>getSystemHandle</name>
+      <name>getNativeHandle</name>
       <anchorfile>classsf_1_1WindowBase.html</anchorfile>
-      <anchor>af9e56181556545bf6e6d7ed969edae21</anchor>
+      <anchor>af360bb48167c6db4d13e47d23d9c35da</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>createVulkanSurface</name>
       <anchorfile>classsf_1_1WindowBase.html</anchorfile>
-      <anchor>a4bcb435cdb954f991f493976263a2fc1</anchor>
-      <arglist>(const VkInstance &amp;instance, VkSurfaceKHR &amp;surface, const VkAllocationCallbacks *allocator=0)</arglist>
+      <anchor>a1401a44aa18cff4c23184f909aae82df</anchor>
+      <arglist>(const VkInstance &amp;instance, VkSurfaceKHR &amp;surface, const VkAllocationCallbacks *allocator=nullptr)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>clear</name>
       <anchorfile>classsf_1_1RenderTarget.html</anchorfile>
-      <anchor>a6bb6f0ba348f2b1e2f46114aeaf60f26</anchor>
-      <arglist>(const Color &amp;color=Color(0, 0, 0, 255))</arglist>
+      <anchor>aee353fc2cd35edf0747e710301af3e4c</anchor>
+      <arglist>(Color color=Color::Black)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>clear</name>
+      <anchorfile>classsf_1_1RenderTarget.html</anchorfile>
+      <anchor>a6b4dd9e35771ba842f0feb4ba52cebb9</anchor>
+      <arglist>(Color color, StencilValue stencilValue)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>clearStencil</name>
+      <anchorfile>classsf_1_1RenderTarget.html</anchorfile>
+      <anchor>a5756ecc36a0ad169809063f8f2563cbe</anchor>
+      <arglist>(StencilValue stencilValue)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -7886,32 +6186,39 @@
       <arglist>(const View &amp;view) const</arglist>
     </member>
     <member kind="function">
-      <type>Vector2f</type>
-      <name>mapPixelToCoords</name>
+      <type>IntRect</type>
+      <name>getScissor</name>
       <anchorfile>classsf_1_1RenderTarget.html</anchorfile>
-      <anchor>a0103ebebafa43a97e6e6414f8560d5e3</anchor>
-      <arglist>(const Vector2i &amp;point) const</arglist>
+      <anchor>a28db5c204007c2ccc806462ed6712da6</anchor>
+      <arglist>(const View &amp;view) const</arglist>
     </member>
     <member kind="function">
       <type>Vector2f</type>
       <name>mapPixelToCoords</name>
       <anchorfile>classsf_1_1RenderTarget.html</anchorfile>
-      <anchor>a2d3e9d7c4a1f5ea7e52b06f53e3011f9</anchor>
-      <arglist>(const Vector2i &amp;point, const View &amp;view) const</arglist>
+      <anchor>a5ce02e4fd30e065c4dbeec239ae579b3</anchor>
+      <arglist>(Vector2i point) const</arglist>
+    </member>
+    <member kind="function">
+      <type>Vector2f</type>
+      <name>mapPixelToCoords</name>
+      <anchorfile>classsf_1_1RenderTarget.html</anchorfile>
+      <anchor>af7c5ec0787ffdcabfcee0f2b88dd4536</anchor>
+      <arglist>(Vector2i point, const View &amp;view) const</arglist>
     </member>
     <member kind="function">
       <type>Vector2i</type>
       <name>mapCoordsToPixel</name>
       <anchorfile>classsf_1_1RenderTarget.html</anchorfile>
-      <anchor>ad92a9f0283aa5f3f67e473c1105b68cf</anchor>
-      <arglist>(const Vector2f &amp;point) const</arglist>
+      <anchor>ab473e0723ba16cf913deb03774c8458c</anchor>
+      <arglist>(Vector2f point) const</arglist>
     </member>
     <member kind="function">
       <type>Vector2i</type>
       <name>mapCoordsToPixel</name>
       <anchorfile>classsf_1_1RenderTarget.html</anchorfile>
-      <anchor>a848eee44b72ac3f16fa9182df26e83bc</anchor>
-      <arglist>(const Vector2f &amp;point, const View &amp;view) const</arglist>
+      <anchor>a07a8da6e2a9e3ce5f36344e3d8e7c41a</anchor>
+      <arglist>(Vector2f point, const View &amp;view) const</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -7962,19 +6269,19 @@
       <anchor>aac7504990d27dada4bfe3c7866920765</anchor>
       <arglist>()</arglist>
     </member>
-    <member kind="function" protection="protected" virtualness="virtual">
-      <type>virtual void</type>
+    <member kind="function" protection="protected">
+      <type>void</type>
       <name>onCreate</name>
       <anchorfile>classsf_1_1RenderWindow.html</anchorfile>
-      <anchor>a5bef0040b0fa87bed9fbd459c980d53a</anchor>
-      <arglist>()</arglist>
+      <anchor>aab231189dcb7d529d7d535772ac5ab01</anchor>
+      <arglist>() override</arglist>
     </member>
-    <member kind="function" protection="protected" virtualness="virtual">
-      <type>virtual void</type>
+    <member kind="function" protection="protected">
+      <type>void</type>
       <name>onResize</name>
       <anchorfile>classsf_1_1RenderWindow.html</anchorfile>
-      <anchor>a5c85fe482313562d33ffd24a194b6fef</anchor>
-      <arglist>()</arglist>
+      <anchor>a5223392a3ebd6581bd7b2c5e211ba072</anchor>
+      <arglist>() override</arglist>
     </member>
     <member kind="function" protection="protected">
       <type>void</type>
@@ -7993,73 +6300,18 @@
       <anchorfile>classsf_1_1Http_1_1Request.html</anchorfile>
       <anchor>a620f8bff6f43e1378f321bf53fbf5598</anchor>
       <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Get</name>
-      <anchorfile>classsf_1_1Http_1_1Request.html</anchorfile>
-      <anchor>a620f8bff6f43e1378f321bf53fbf5598ab822baed393f3d0353621e5378b9fcb4</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Post</name>
-      <anchorfile>classsf_1_1Http_1_1Request.html</anchorfile>
-      <anchor>a620f8bff6f43e1378f321bf53fbf5598ae8ec4048b9550f8d0747d4199603141a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Head</name>
-      <anchorfile>classsf_1_1Http_1_1Request.html</anchorfile>
-      <anchor>a620f8bff6f43e1378f321bf53fbf5598a4df23138be7ed60f47aba6548ba65e7b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Put</name>
-      <anchorfile>classsf_1_1Http_1_1Request.html</anchorfile>
-      <anchor>a620f8bff6f43e1378f321bf53fbf5598a523b94f9af069c1f35061d32011e2495</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Delete</name>
-      <anchorfile>classsf_1_1Http_1_1Request.html</anchorfile>
-      <anchor>a620f8bff6f43e1378f321bf53fbf5598abc9555b94c1b896185015ec3990999f9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Get</name>
-      <anchorfile>classsf_1_1Http_1_1Request.html</anchorfile>
-      <anchor>a620f8bff6f43e1378f321bf53fbf5598ab822baed393f3d0353621e5378b9fcb4</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Post</name>
-      <anchorfile>classsf_1_1Http_1_1Request.html</anchorfile>
-      <anchor>a620f8bff6f43e1378f321bf53fbf5598ae8ec4048b9550f8d0747d4199603141a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Head</name>
-      <anchorfile>classsf_1_1Http_1_1Request.html</anchorfile>
-      <anchor>a620f8bff6f43e1378f321bf53fbf5598a4df23138be7ed60f47aba6548ba65e7b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Put</name>
-      <anchorfile>classsf_1_1Http_1_1Request.html</anchorfile>
-      <anchor>a620f8bff6f43e1378f321bf53fbf5598a523b94f9af069c1f35061d32011e2495</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Delete</name>
-      <anchorfile>classsf_1_1Http_1_1Request.html</anchorfile>
-      <anchor>a620f8bff6f43e1378f321bf53fbf5598abc9555b94c1b896185015ec3990999f9</anchor>
-      <arglist></arglist>
+      <enumvalue file="classsf_1_1Http_1_1Request.html" anchor="a620f8bff6f43e1378f321bf53fbf5598ac55582518cba2c464f29f5bae1c68def">Get</enumvalue>
+      <enumvalue file="classsf_1_1Http_1_1Request.html" anchor="a620f8bff6f43e1378f321bf53fbf5598a03d947a2158373c3b9d74325850cb8b9">Post</enumvalue>
+      <enumvalue file="classsf_1_1Http_1_1Request.html" anchor="a620f8bff6f43e1378f321bf53fbf5598a98921133d10fbdb0fb6dbb7b2648befe">Head</enumvalue>
+      <enumvalue file="classsf_1_1Http_1_1Request.html" anchor="a620f8bff6f43e1378f321bf53fbf5598ad0bf1810982e9728fcf3ac444a015373">Put</enumvalue>
+      <enumvalue file="classsf_1_1Http_1_1Request.html" anchor="a620f8bff6f43e1378f321bf53fbf5598af2a6c498fb90ee345d997f888fce3b18">Delete</enumvalue>
     </member>
     <member kind="function">
       <type></type>
       <name>Request</name>
       <anchorfile>classsf_1_1Http_1_1Request.html</anchorfile>
-      <anchor>a8e89d9e8ffcc1163259b35d79809a61c</anchor>
-      <arglist>(const std::string &amp;uri=&quot;/&quot;, Method method=Get, const std::string &amp;body=&quot;&quot;)</arglist>
+      <anchor>ac99217bf71027d0358c7ac8aee2bc963</anchor>
+      <arglist>(const std::string &amp;uri=&quot;/&quot;, Method method=Method::Get, const std::string &amp;body=&quot;&quot;)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -8096,6 +6348,24 @@
       <anchor>ae9f61ec3fa1639c70e9b5780cb35578e</anchor>
       <arglist>(const std::string &amp;body)</arglist>
     </member>
+    <member kind="friend" protection="private">
+      <type>friend class</type>
+      <name>Http</name>
+      <anchorfile>classsf_1_1Http_1_1Request.html</anchorfile>
+      <anchor>aba95e2a7762bb5df986048b05d03a22e</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>sf::Event::Resized</name>
+    <filename>structsf_1_1Event_1_1Resized.html</filename>
+    <member kind="variable">
+      <type>Vector2u</type>
+      <name>size</name>
+      <anchorfile>structsf_1_1Event_1_1Resized.html</anchorfile>
+      <anchor>a23159621438eda3eb8b1c75ec8117336</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="class">
     <name>sf::Ftp::Response</name>
@@ -8106,529 +6376,56 @@
       <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
       <anchor>af81738f06b6f571761696291276acb3b</anchor>
       <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>RestartMarkerReply</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba07e06d3326ba2d078583bef93930d909</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ServiceReadySoon</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba22413357ade6b586f6ceb0d704f35075</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>DataConnectionAlreadyOpened</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3bafa52d19bc813d69055f4cc390d4a76ca</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>OpeningDataConnection</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba794ebe743688be611447638bf9e49d86</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Ok</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3baa956e229ba6c0cdf0d88b0e05b286210</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>PointlessCommand</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba38adc424f1adcd332745de8cd3b7737a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SystemStatus</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba9bdd02ae119b8be639e778859ee74060</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>DirectoryStatus</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba8729460a695013cc96330e2fced0ae1f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>FileStatus</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3baebddfc7997dca289c83068dff3f47dce</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HelpMessage</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba840fd2a1872fd4310b046541f57fdeb7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SystemType</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba78391f73aa11f07f1514c7d070b93c08</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ServiceReady</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3baea2ee2007d7843c21108bb686ef03757</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ClosingConnection</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3bab23931490fc2d1df3081d651fe0f4d6e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>DataConnectionOpened</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3badc78ed87d5bddb174fa3c16707ac2f2d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ClosingDataConnection</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3bac723ebc8a38913bbf0d9504556cbaaa6</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>EnteringPassiveMode</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba48314fc47a72ad0aacdea93b91756f6e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>LoggedIn</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba54a88210386cb72e35d737813a221754</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>FileActionOk</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3baf988b69b0a5f55f8122da5ba001932e0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>DirectoryOk</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba06d26e95a170fc422af13def415e0437</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NeedPassword</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba9249e3fe9818eb93f181fbbf3ae3bc56</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NeedAccountToLogIn</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba9e048185f253f6eb6f5ff9e063b712fa</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NeedInformation</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba02e6f05964ecb829e9b6fb6020d6528a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ServiceUnavailable</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba43022ddf49b68a4f5aff0bea7e09e89f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>DataConnectionUnavailable</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba757b89ff1f236941f7759b0ed0c28b88</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>TransferAborted</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba7cfefcc586c12ba70f752353fde7126e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>FileActionAborted</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3baf822d1b0abf3e9ae7dd44684549d512d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>LocalError</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3bae54e84baaca95a7b36271ca3f3fdb900</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>InsufficientStorageSpace</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba5d9f3666222c808553c27e4e099c7c6d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CommandUnknown</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba75bdf0b6844fa9c07b3c25647d22c269</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ParametersUnknown</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3baf4c7c88815981bbb7c3a3461f9f48b67</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CommandNotImplemented</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba2ca4834c756c81b924ebed696fcba0a8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>BadCommandSequence</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3bad0c7ab07f01c1f7af16a1852650d7c47</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ParameterNotImplemented</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba8807473b8590e1debfb3740b7a3d081c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NotLoggedIn</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3bafcfbaff2c6fed941b6bcbc0999db764e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NeedAccountToStore</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba1af0f173062a471739b50d8e0f40d5f7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>FileUnavailable</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba3f8f931e499936fde6b750d81f5ecfef</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>PageTypeUnknown</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3bad220bc12dc45593af6e5079ea6c532c3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NotEnoughMemory</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3baf418e54753e0b8f9cb0325dd618acd14</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>FilenameNotAllowed</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba03254aba823298179a98056e15568c5b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>InvalidResponse</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba59e041e4ef186e8ae8d6035973fc46bd</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ConnectionFailed</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba51aa367cc1e85a45ea3c7be48730e990</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ConnectionClosed</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3bad1e5dcf298ce30c528261435f1a2eb53</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>InvalidFile</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3baed2c74a9f335dee1463ca1a4f41c6478</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>RestartMarkerReply</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba07e06d3326ba2d078583bef93930d909</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ServiceReadySoon</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba22413357ade6b586f6ceb0d704f35075</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>DataConnectionAlreadyOpened</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3bafa52d19bc813d69055f4cc390d4a76ca</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>OpeningDataConnection</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba794ebe743688be611447638bf9e49d86</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Ok</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3baa956e229ba6c0cdf0d88b0e05b286210</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>PointlessCommand</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba38adc424f1adcd332745de8cd3b7737a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SystemStatus</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba9bdd02ae119b8be639e778859ee74060</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>DirectoryStatus</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba8729460a695013cc96330e2fced0ae1f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>FileStatus</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3baebddfc7997dca289c83068dff3f47dce</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HelpMessage</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba840fd2a1872fd4310b046541f57fdeb7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SystemType</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba78391f73aa11f07f1514c7d070b93c08</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ServiceReady</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3baea2ee2007d7843c21108bb686ef03757</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ClosingConnection</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3bab23931490fc2d1df3081d651fe0f4d6e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>DataConnectionOpened</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3badc78ed87d5bddb174fa3c16707ac2f2d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ClosingDataConnection</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3bac723ebc8a38913bbf0d9504556cbaaa6</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>EnteringPassiveMode</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba48314fc47a72ad0aacdea93b91756f6e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>LoggedIn</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba54a88210386cb72e35d737813a221754</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>FileActionOk</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3baf988b69b0a5f55f8122da5ba001932e0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>DirectoryOk</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba06d26e95a170fc422af13def415e0437</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NeedPassword</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba9249e3fe9818eb93f181fbbf3ae3bc56</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NeedAccountToLogIn</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba9e048185f253f6eb6f5ff9e063b712fa</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NeedInformation</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba02e6f05964ecb829e9b6fb6020d6528a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ServiceUnavailable</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba43022ddf49b68a4f5aff0bea7e09e89f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>DataConnectionUnavailable</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba757b89ff1f236941f7759b0ed0c28b88</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>TransferAborted</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba7cfefcc586c12ba70f752353fde7126e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>FileActionAborted</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3baf822d1b0abf3e9ae7dd44684549d512d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>LocalError</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3bae54e84baaca95a7b36271ca3f3fdb900</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>InsufficientStorageSpace</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba5d9f3666222c808553c27e4e099c7c6d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CommandUnknown</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba75bdf0b6844fa9c07b3c25647d22c269</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ParametersUnknown</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3baf4c7c88815981bbb7c3a3461f9f48b67</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CommandNotImplemented</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba2ca4834c756c81b924ebed696fcba0a8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>BadCommandSequence</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3bad0c7ab07f01c1f7af16a1852650d7c47</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ParameterNotImplemented</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba8807473b8590e1debfb3740b7a3d081c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NotLoggedIn</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3bafcfbaff2c6fed941b6bcbc0999db764e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NeedAccountToStore</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba1af0f173062a471739b50d8e0f40d5f7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>FileUnavailable</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba3f8f931e499936fde6b750d81f5ecfef</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>PageTypeUnknown</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3bad220bc12dc45593af6e5079ea6c532c3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NotEnoughMemory</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3baf418e54753e0b8f9cb0325dd618acd14</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>FilenameNotAllowed</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba03254aba823298179a98056e15568c5b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>InvalidResponse</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba59e041e4ef186e8ae8d6035973fc46bd</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ConnectionFailed</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3ba51aa367cc1e85a45ea3c7be48730e990</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ConnectionClosed</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3bad1e5dcf298ce30c528261435f1a2eb53</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>InvalidFile</name>
-      <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af81738f06b6f571761696291276acb3baed2c74a9f335dee1463ca1a4f41c6478</anchor>
-      <arglist></arglist>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3bac0b42b170282ed195d27160a83a79f2e">RestartMarkerReply</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba3268bd93693ac38c4f6086aea8be4db4">ServiceReadySoon</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba6cceba8a149b75b284777e8bc71e1b67">DataConnectionAlreadyOpened</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3bae33af3d7120d23ad7089653fd48bdd38">OpeningDataConnection</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3baa60852f204ed8028c1c58808b746d115">Ok</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3bacd4761523f0302440343fb1e4ec8a4e6">PointlessCommand</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba01de3f2739691336a2b125aa4945d633">SystemStatus</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba57e6d000fdbeb626a29fea4c8eff8edc">DirectoryStatus</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba198600159850bece356f7abee0f36e83">FileStatus</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba2edc83b16e6b8274c62900e85f318f3a">HelpMessage</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba4baf768371cfea0277777bde6689cec6">SystemType</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3bac9a5248c2aa6a434ce1a4da00750feb3">ServiceReady</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba2465f163ac38bfe7c1930b33aa05679b">ClosingConnection</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3bab607cbbc2d207ded4b7377acb6a549b2">DataConnectionOpened</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3baaf83fd439861065d31334292d3f8a4c3">ClosingDataConnection</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3bac224fccedd07f300696a569009fba0d2">EnteringPassiveMode</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3bafebcd1edf6010db4858e623d1dd2f3bc">LoggedIn</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3baf6f364356584aab000eea95805599ebb">FileActionOk</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3bad20154b051d400d9537edafca04a30bd">DirectoryOk</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba6cc610dcae244b511d24cd39d2509b14">NeedPassword</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3baf6cb6d98e4d4f7b4b93e7783a9e6866c">NeedAccountToLogIn</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3bad5c4ffa569fc398c4ff8713a484dc615">NeedInformation</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba2a4581043d849bcb0e4747970ef1489b">ServiceUnavailable</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba0a36dcc11a897c222c2471ae9272daa9">DataConnectionUnavailable</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba896d3e0a1567d35b8f74c19c67edc53f">TransferAborted</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3bacab1b18dabff5d854ecd0abb345eac94">FileActionAborted</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3baa74af6d76d74a4a8223ba094a33ab60c">LocalError</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3bac7434ca62773f4494fbbfa7b72903de4">InsufficientStorageSpace</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba53a48f970f3d5208e7d306d55efd4baa">CommandUnknown</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba6ac12706c8a5d211d4c4772dfe15cc82">ParametersUnknown</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba114a12ef342b629d489aa3c77ebdd436">CommandNotImplemented</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3baad20df740a4a87c2b5e77375ec408b52">BadCommandSequence</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba39173a703db2fce4762e56cdedce7df0">ParameterNotImplemented</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba68118f8d291e5a67d4d9c3408a083c69">NotLoggedIn</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba3c513c9aa990fa446158b8c218be762e">NeedAccountToStore</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba5674886af759856707ed5279f0a2a6a6">FileUnavailable</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba5ee25da5e669e314a80052cdac9465ce">PageTypeUnknown</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba0b3b296dcb39c4f03e7277194b906791">NotEnoughMemory</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3bae21058ad65c95b5baf4de1d8282c6fd4">FilenameNotAllowed</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba33f317695948b584444f4b7525da594e">InvalidResponse</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3baaf98071f760be899f4fcf1d53a29ba17">ConnectionFailed</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3ba318ec526e76502a583acd94f49817cf2">ConnectionClosed</enumvalue>
+      <enumvalue file="classsf_1_1Ftp_1_1Response.html" anchor="af81738f06b6f571761696291276acb3babb149a06efb0aa1a2ea6711f20c82bbe">InvalidFile</enumvalue>
     </member>
     <member kind="function">
       <type></type>
       <name>Response</name>
       <anchorfile>classsf_1_1Ftp_1_1Response.html</anchorfile>
-      <anchor>af300fffd4862774102f978eb22f85d9b</anchor>
-      <arglist>(Status code=InvalidResponse, const std::string &amp;message=&quot;&quot;)</arglist>
+      <anchor>a77c1fc79e29243926e8a2d450af99c2c</anchor>
+      <arglist>(Status code=Status::InvalidResponse, std::string message=&quot;&quot;)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
@@ -8661,289 +6458,29 @@
       <anchorfile>classsf_1_1Http_1_1Response.html</anchorfile>
       <anchor>a663e071978e30fbbeb20ed045be874d8</anchor>
       <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Ok</name>
-      <anchorfile>classsf_1_1Http_1_1Response.html</anchorfile>
-      <anchor>a663e071978e30fbbeb20ed045be874d8a0158f932254d3f09647dd1f64bd43832</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Created</name>
-      <anchorfile>classsf_1_1Http_1_1Response.html</anchorfile>
-      <anchor>a663e071978e30fbbeb20ed045be874d8a0a6e8bafa9365a0ed10b8a9cbfd0649b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Accepted</name>
-      <anchorfile>classsf_1_1Http_1_1Response.html</anchorfile>
-      <anchor>a663e071978e30fbbeb20ed045be874d8ad328945457bd2f0d65107ba6b5ccd443</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NoContent</name>
-      <anchorfile>classsf_1_1Http_1_1Response.html</anchorfile>
-      <anchor>a663e071978e30fbbeb20ed045be874d8aefde9e4abf5682dcd314d63143be42e0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ResetContent</name>
-      <anchorfile>classsf_1_1Http_1_1Response.html</anchorfile>
-      <anchor>a663e071978e30fbbeb20ed045be874d8a77327cc2a5e34cc64030b322e61d12a8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>PartialContent</name>
-      <anchorfile>classsf_1_1Http_1_1Response.html</anchorfile>
-      <anchor>a663e071978e30fbbeb20ed045be874d8a0cfae3ab0469b73dfddc54312a5e6a8a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>MultipleChoices</name>
-      <anchorfile>classsf_1_1Http_1_1Response.html</anchorfile>
-      <anchor>a663e071978e30fbbeb20ed045be874d8add95cbd8fa27516821f763488557f96b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>MovedPermanently</name>
-      <anchorfile>classsf_1_1Http_1_1Response.html</anchorfile>
-      <anchor>a663e071978e30fbbeb20ed045be874d8a2f91651db3a09628faf68cbcefa0810a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>MovedTemporarily</name>
-      <anchorfile>classsf_1_1Http_1_1Response.html</anchorfile>
-      <anchor>a663e071978e30fbbeb20ed045be874d8a05c50d7b17c844e0b909e5802d5f1587</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NotModified</name>
-      <anchorfile>classsf_1_1Http_1_1Response.html</anchorfile>
-      <anchor>a663e071978e30fbbeb20ed045be874d8a060ebc3af266e6bfe045b89e298e2545</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>BadRequest</name>
-      <anchorfile>classsf_1_1Http_1_1Response.html</anchorfile>
-      <anchor>a663e071978e30fbbeb20ed045be874d8a3f88a714cf5483ee22f9051e5a3c080a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Unauthorized</name>
-      <anchorfile>classsf_1_1Http_1_1Response.html</anchorfile>
-      <anchor>a663e071978e30fbbeb20ed045be874d8ab7a79b7bff50fb1902c19eecbb4e2a2d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Forbidden</name>
-      <anchorfile>classsf_1_1Http_1_1Response.html</anchorfile>
-      <anchor>a663e071978e30fbbeb20ed045be874d8a64492842e823ebe12a85539b6b454986</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NotFound</name>
-      <anchorfile>classsf_1_1Http_1_1Response.html</anchorfile>
-      <anchor>a663e071978e30fbbeb20ed045be874d8affca8a8319a62d98bd3ef90ff5cfc030</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>RangeNotSatisfiable</name>
-      <anchorfile>classsf_1_1Http_1_1Response.html</anchorfile>
-      <anchor>a663e071978e30fbbeb20ed045be874d8a12533d00093b190e6d4c0076577e2239</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>InternalServerError</name>
-      <anchorfile>classsf_1_1Http_1_1Response.html</anchorfile>
-      <anchor>a663e071978e30fbbeb20ed045be874d8adae2b2a936414349d55b4ed8c583fed1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NotImplemented</name>
-      <anchorfile>classsf_1_1Http_1_1Response.html</anchorfile>
-      <anchor>a663e071978e30fbbeb20ed045be874d8a6920ba06d7e2bcf0b325da23ee95ef68</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>BadGateway</name>
-      <anchorfile>classsf_1_1Http_1_1Response.html</anchorfile>
-      <anchor>a663e071978e30fbbeb20ed045be874d8aad0cbad4cdaf448beb763e86bc1f747c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ServiceNotAvailable</name>
-      <anchorfile>classsf_1_1Http_1_1Response.html</anchorfile>
-      <anchor>a663e071978e30fbbeb20ed045be874d8ac4fffba9d5ad4c14171a1bbe4f6adf87</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>GatewayTimeout</name>
-      <anchorfile>classsf_1_1Http_1_1Response.html</anchorfile>
-      <anchor>a663e071978e30fbbeb20ed045be874d8a215935d823ab44694709a184a71353b0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>VersionNotSupported</name>
-      <anchorfile>classsf_1_1Http_1_1Response.html</anchorfile>
-      <anchor>a663e071978e30fbbeb20ed045be874d8aeb32a1a087d5fcf1a42663eb40c3c305</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>InvalidResponse</name>
-      <anchorfile>classsf_1_1Http_1_1Response.html</anchorfile>
-      <anchor>a663e071978e30fbbeb20ed045be874d8a0af0090420e60bf54da4860749345c95</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ConnectionFailed</name>
-      <anchorfile>classsf_1_1Http_1_1Response.html</anchorfile>
-      <anchor>a663e071978e30fbbeb20ed045be874d8a7f307376f13bdc06b24fc274ecd2aa60</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Ok</name>
-      <anchorfile>classsf_1_1Http_1_1Response.html</anchorfile>
-      <anchor>a663e071978e30fbbeb20ed045be874d8a0158f932254d3f09647dd1f64bd43832</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Created</name>
-      <anchorfile>classsf_1_1Http_1_1Response.html</anchorfile>
-      <anchor>a663e071978e30fbbeb20ed045be874d8a0a6e8bafa9365a0ed10b8a9cbfd0649b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Accepted</name>
-      <anchorfile>classsf_1_1Http_1_1Response.html</anchorfile>
-      <anchor>a663e071978e30fbbeb20ed045be874d8ad328945457bd2f0d65107ba6b5ccd443</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NoContent</name>
-      <anchorfile>classsf_1_1Http_1_1Response.html</anchorfile>
-      <anchor>a663e071978e30fbbeb20ed045be874d8aefde9e4abf5682dcd314d63143be42e0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ResetContent</name>
-      <anchorfile>classsf_1_1Http_1_1Response.html</anchorfile>
-      <anchor>a663e071978e30fbbeb20ed045be874d8a77327cc2a5e34cc64030b322e61d12a8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>PartialContent</name>
-      <anchorfile>classsf_1_1Http_1_1Response.html</anchorfile>
-      <anchor>a663e071978e30fbbeb20ed045be874d8a0cfae3ab0469b73dfddc54312a5e6a8a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>MultipleChoices</name>
-      <anchorfile>classsf_1_1Http_1_1Response.html</anchorfile>
-      <anchor>a663e071978e30fbbeb20ed045be874d8add95cbd8fa27516821f763488557f96b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>MovedPermanently</name>
-      <anchorfile>classsf_1_1Http_1_1Response.html</anchorfile>
-      <anchor>a663e071978e30fbbeb20ed045be874d8a2f91651db3a09628faf68cbcefa0810a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>MovedTemporarily</name>
-      <anchorfile>classsf_1_1Http_1_1Response.html</anchorfile>
-      <anchor>a663e071978e30fbbeb20ed045be874d8a05c50d7b17c844e0b909e5802d5f1587</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NotModified</name>
-      <anchorfile>classsf_1_1Http_1_1Response.html</anchorfile>
-      <anchor>a663e071978e30fbbeb20ed045be874d8a060ebc3af266e6bfe045b89e298e2545</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>BadRequest</name>
-      <anchorfile>classsf_1_1Http_1_1Response.html</anchorfile>
-      <anchor>a663e071978e30fbbeb20ed045be874d8a3f88a714cf5483ee22f9051e5a3c080a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Unauthorized</name>
-      <anchorfile>classsf_1_1Http_1_1Response.html</anchorfile>
-      <anchor>a663e071978e30fbbeb20ed045be874d8ab7a79b7bff50fb1902c19eecbb4e2a2d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Forbidden</name>
-      <anchorfile>classsf_1_1Http_1_1Response.html</anchorfile>
-      <anchor>a663e071978e30fbbeb20ed045be874d8a64492842e823ebe12a85539b6b454986</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NotFound</name>
-      <anchorfile>classsf_1_1Http_1_1Response.html</anchorfile>
-      <anchor>a663e071978e30fbbeb20ed045be874d8affca8a8319a62d98bd3ef90ff5cfc030</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>RangeNotSatisfiable</name>
-      <anchorfile>classsf_1_1Http_1_1Response.html</anchorfile>
-      <anchor>a663e071978e30fbbeb20ed045be874d8a12533d00093b190e6d4c0076577e2239</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>InternalServerError</name>
-      <anchorfile>classsf_1_1Http_1_1Response.html</anchorfile>
-      <anchor>a663e071978e30fbbeb20ed045be874d8adae2b2a936414349d55b4ed8c583fed1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NotImplemented</name>
-      <anchorfile>classsf_1_1Http_1_1Response.html</anchorfile>
-      <anchor>a663e071978e30fbbeb20ed045be874d8a6920ba06d7e2bcf0b325da23ee95ef68</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>BadGateway</name>
-      <anchorfile>classsf_1_1Http_1_1Response.html</anchorfile>
-      <anchor>a663e071978e30fbbeb20ed045be874d8aad0cbad4cdaf448beb763e86bc1f747c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ServiceNotAvailable</name>
-      <anchorfile>classsf_1_1Http_1_1Response.html</anchorfile>
-      <anchor>a663e071978e30fbbeb20ed045be874d8ac4fffba9d5ad4c14171a1bbe4f6adf87</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>GatewayTimeout</name>
-      <anchorfile>classsf_1_1Http_1_1Response.html</anchorfile>
-      <anchor>a663e071978e30fbbeb20ed045be874d8a215935d823ab44694709a184a71353b0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>VersionNotSupported</name>
-      <anchorfile>classsf_1_1Http_1_1Response.html</anchorfile>
-      <anchor>a663e071978e30fbbeb20ed045be874d8aeb32a1a087d5fcf1a42663eb40c3c305</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>InvalidResponse</name>
-      <anchorfile>classsf_1_1Http_1_1Response.html</anchorfile>
-      <anchor>a663e071978e30fbbeb20ed045be874d8a0af0090420e60bf54da4860749345c95</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ConnectionFailed</name>
-      <anchorfile>classsf_1_1Http_1_1Response.html</anchorfile>
-      <anchor>a663e071978e30fbbeb20ed045be874d8a7f307376f13bdc06b24fc274ecd2aa60</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>Response</name>
-      <anchorfile>classsf_1_1Http_1_1Response.html</anchorfile>
-      <anchor>a2e51c89356fe6a007c448a841a9ec08c</anchor>
-      <arglist>()</arglist>
+      <enumvalue file="classsf_1_1Http_1_1Response.html" anchor="a663e071978e30fbbeb20ed045be874d8aa60852f204ed8028c1c58808b746d115">Ok</enumvalue>
+      <enumvalue file="classsf_1_1Http_1_1Response.html" anchor="a663e071978e30fbbeb20ed045be874d8a0eceeb45861f9585dd7a97a3e36f85c6">Created</enumvalue>
+      <enumvalue file="classsf_1_1Http_1_1Response.html" anchor="a663e071978e30fbbeb20ed045be874d8a382ab522931673c11e398ead1b7b1678">Accepted</enumvalue>
+      <enumvalue file="classsf_1_1Http_1_1Response.html" anchor="a663e071978e30fbbeb20ed045be874d8acd447f1ec89f564ebac583d60087df12">NoContent</enumvalue>
+      <enumvalue file="classsf_1_1Http_1_1Response.html" anchor="a663e071978e30fbbeb20ed045be874d8a4e9202c31896211f63be5b7345a897ed">ResetContent</enumvalue>
+      <enumvalue file="classsf_1_1Http_1_1Response.html" anchor="a663e071978e30fbbeb20ed045be874d8a750de7eda10d780b3bbaefb57128c24b">PartialContent</enumvalue>
+      <enumvalue file="classsf_1_1Http_1_1Response.html" anchor="a663e071978e30fbbeb20ed045be874d8aa589749d075c3423333bdc93e3b4e774">MultipleChoices</enumvalue>
+      <enumvalue file="classsf_1_1Http_1_1Response.html" anchor="a663e071978e30fbbeb20ed045be874d8a32638c25f4c913fce6214c2c4afff9dc">MovedPermanently</enumvalue>
+      <enumvalue file="classsf_1_1Http_1_1Response.html" anchor="a663e071978e30fbbeb20ed045be874d8a9f435b66870d2ee1ac8bd7e912cd16b0">MovedTemporarily</enumvalue>
+      <enumvalue file="classsf_1_1Http_1_1Response.html" anchor="a663e071978e30fbbeb20ed045be874d8ac169e6d9a1b9442001384de8dcf49ab9">NotModified</enumvalue>
+      <enumvalue file="classsf_1_1Http_1_1Response.html" anchor="a663e071978e30fbbeb20ed045be874d8a9edf8fbf00a57d95a0af4923c9a1ec6f">BadRequest</enumvalue>
+      <enumvalue file="classsf_1_1Http_1_1Response.html" anchor="a663e071978e30fbbeb20ed045be874d8ae06d1ba70f1331e9f9a113cc2f887d3f">Unauthorized</enumvalue>
+      <enumvalue file="classsf_1_1Http_1_1Response.html" anchor="a663e071978e30fbbeb20ed045be874d8a722969577a96ca3953e84e3d949dee81">Forbidden</enumvalue>
+      <enumvalue file="classsf_1_1Http_1_1Response.html" anchor="a663e071978e30fbbeb20ed045be874d8a38c300f4fc9ce8a77aad4a30de05cad8">NotFound</enumvalue>
+      <enumvalue file="classsf_1_1Http_1_1Response.html" anchor="a663e071978e30fbbeb20ed045be874d8a9283ef01c36e7e4793b3e1395d764dfe">RangeNotSatisfiable</enumvalue>
+      <enumvalue file="classsf_1_1Http_1_1Response.html" anchor="a663e071978e30fbbeb20ed045be874d8aecbf01325f1c744e9d7bb586ac2eb5ed">InternalServerError</enumvalue>
+      <enumvalue file="classsf_1_1Http_1_1Response.html" anchor="a663e071978e30fbbeb20ed045be874d8a997ca4ce119685f40f03a9a8a6c5346e">NotImplemented</enumvalue>
+      <enumvalue file="classsf_1_1Http_1_1Response.html" anchor="a663e071978e30fbbeb20ed045be874d8a0e7c9ad08be0653518bf456c9994ace5">BadGateway</enumvalue>
+      <enumvalue file="classsf_1_1Http_1_1Response.html" anchor="a663e071978e30fbbeb20ed045be874d8a235bfc2933fb3f929cee883b642be632">ServiceNotAvailable</enumvalue>
+      <enumvalue file="classsf_1_1Http_1_1Response.html" anchor="a663e071978e30fbbeb20ed045be874d8ada405cbc74723dfdda615e3f679ef2be">GatewayTimeout</enumvalue>
+      <enumvalue file="classsf_1_1Http_1_1Response.html" anchor="a663e071978e30fbbeb20ed045be874d8acf5b5f39afef6631b6830254885d2bb1">VersionNotSupported</enumvalue>
+      <enumvalue file="classsf_1_1Http_1_1Response.html" anchor="a663e071978e30fbbeb20ed045be874d8a33f317695948b584444f4b7525da594e">InvalidResponse</enumvalue>
+      <enumvalue file="classsf_1_1Http_1_1Response.html" anchor="a663e071978e30fbbeb20ed045be874d8aaf98071f760be899f4fcf1d53a29ba17">ConnectionFailed</enumvalue>
     </member>
     <member kind="function">
       <type>const std::string &amp;</type>
@@ -8980,1939 +6517,29 @@
       <anchor>ac59e2b11cae4b6232c737547a3ca9850</anchor>
       <arglist>() const</arglist>
     </member>
-  </compound>
-  <compound kind="struct">
-    <name>sf::Keyboard::Scan</name>
-    <filename>structsf_1_1Keyboard_1_1Scan.html</filename>
-    <member kind="enumeration">
-      <type></type>
-      <name>Scancode</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875</anchor>
+    <member kind="friend" protection="private">
+      <type>friend class</type>
+      <name>Http</name>
+      <anchorfile>classsf_1_1Http_1_1Response.html</anchorfile>
+      <anchor>aba95e2a7762bb5df986048b05d03a22e</anchor>
       <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Unknown</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875af29c5f0133653ccd3cbc947b51e97895</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>A</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875af835596d7ce007d5c34c356dee6740c6</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>B</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a5a277726531303b8ba5212999e9664cb</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>C</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ad3acc09d4a2dc958837e48b80af01a4c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>D</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a96ec4a613d00dce6f8d90adc8728864a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>E</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875adc59d37687890a0efbac55992448e41f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a2d87edd4fa1f6ae355cabcccb5844ea3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>G</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a21dc36f8ac9ff44d3c6aca6a66503264</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>H</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a40615dc67be807478f924c9aabf81915</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>I</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875acfe0506f6ce3d306b47134e99260d984</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>J</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875aaf9b207522e37466a19f92b8dc836735</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>K</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a1e65a1d66582b430961cfc4e7cc76816</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>L</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ab6da0281265c57b9570de8be294d73b8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>M</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a5a8351cbbb24d61c47f146f414ef825d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>N</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a72b52a30a5f3aee77dc52e7c54c8db9f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>O</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875aafe949e3a5c03b8981026f5b9621154b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>P</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a0943cf62e03a8616a8a41b72539ded38</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Q</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875af9b34314661202a2f73c2d71d95fcfeb</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>R</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875af04c2611e3ee0855a044927d5bd0e194</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>S</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a3c650be640718237a3241e8da1602dae</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>T</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a55bee4759c12cb033659e8d8de796ae9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>U</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875aeaecd56929398797033710d1cb274003</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>V</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875acf235c9f74c25df943ead5f38a01945a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>W</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a287b960abc4c422a8f4c1bbfc0dfd2a9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>X</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875af4f6ad0b93dd6bc360badd5abe812a67</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Y</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a6305407064e0beb4f0499166e087ff22</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Z</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a2aca2d41fc86e4e31be7220d81ce589a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Num1</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875adbf8eb09afd75e2081b009ad7a3596ef</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Num2</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a16cfef5671ce6401aaf00316c88c0c7b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Num3</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a3301c6093c6f2a78158c1e44e3431227</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Num4</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a15943e415124e0848e6b065d24b1b1e7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Num5</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875abf2de94b5156b86a228d7e5ec66d056a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Num6</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a6cd9d57ae648639eedcd16cb83da1af5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Num7</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875aaf5540b714391414c06503b8aaee908a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Num8</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875aee7fee4dc6a4dbfe9e038a5366cc1e4b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Num9</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875af003329d2c5a26d0262caf3ddef0a45e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Num0</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875adb7e8aa25d5d5204de03a5aa1ee0b390</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Enter</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875adb4984ca4b4e90eae95e32bb0de29c8e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Escape</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ac8409d6faf55c88bc01c722c51e99b93</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Backspace</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a6621384ae8e5b8f0faf0b879c7813817</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Tab</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875aa724a5e6b812f12b06957717fd78d4a3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Space</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a37fceb15fd79c29859aeb30e4b34237d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Hyphen</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ae6888d3715971e533b4379452cbae94a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Equal</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a6cd11681bbd83c0565c9c63e4d512a86</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>LBracket</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a3e4bb5cf828df8c4660d323df8589c43</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>RBracket</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a5b278a8f7b97c3972ec572412d855660</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Backslash</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a01ce415ff140d34d25a7bdbbbb785287</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Semicolon</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a60e05ed7eb42bf7d283d7ea4aafeef90</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Apostrophe</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ac391cefe75135833aea37c75293db820</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Grave</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a813711cd9de71dab611b7155b36880f5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Comma</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a035f3ce4c48fecfd7d2c77987710e5fa</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Period</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ae09b8ab0fa58ee31f499678d3e93a411</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Slash</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a5c37f9adf66e083d85950db1597c45f5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F1</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a60bdd99ca0d0ab177a65078a185333a6</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F2</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a3ea5468548feaccb419a8c4c160c16b0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F3</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875af2e1be02540c0794302ec9e1d2262ef4</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F4</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ae4a9bcd1df4becc4994c676f44a5a101</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F5</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a4fe3daf6c23906249b87f0ffffb458be</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F6</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a3c3934e6efc54b366de1e27f5099276e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F7</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a5dc33031068713ce55bb332672d9bb9a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F8</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ae1faf360e99035dff729917bee051daa</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F9</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ae0cb68ca4ec3844548d4e089ec9ea8c5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F10</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875aee4c9257be218585114cf27602892572</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F11</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a5047f3be2633e101840945b58867be6e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F12</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875aa068df80ff6d72b0bdab149e3a3d26af</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F13</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875af3416f863ce92ae05b26aed80e72a52f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F14</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a8589f17d8b4170b7f51711c1d6611f21</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F15</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875acad0fde63b2171cc56d42a1d23d679ba</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F16</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a1c3d4ce6fc1826f1da081b942676cccd</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F17</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875aa416a15ec21b4957d740992f446a5224</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F18</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ae50807a7d06cc5324eac783bf4d0b96d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F19</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a51ff7425b98bbcd8e777908de15f3d10</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F20</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a06d01cd179c76fe33c2f61006176f076</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F21</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ad86a6e71ba08ffc8167d003b92cadb77</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F22</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a538c92aa44eae29b23ef3c096c1b571b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F23</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ac66a8fea90d7307b434b4a09b0822202</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F24</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a069f7f10bbdb13aeea8cfdebee4752f4</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CapsLock</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a6a1c1f6a4dfac0c5170296a88da1dd57</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>PrintScreen</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a8699683af17a0a4031bccf52f5222302</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ScrollLock</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875abbf3aeeb831834f97684647c1495d333</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Pause</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a40a805122e3ce91bde95d98ac43be234</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Insert</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a8935170f7f2ea9ea6586c3c686edc72a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Home</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ae5d4c031080001f1449e3d55e8571e3a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>PageUp</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a0c1f655bf99a3c7d2052814385fb222d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Delete</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a2f071cf261d91b0facc044c2ba11ae94</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>End</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a60da82f685e98127043da8ffd04b7442</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>PageDown</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a395ec644184fe789a12ee2ed98d19ee3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Right</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a03d293668313031e7ff7eb9b7894e5c7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Left</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a24060c475e1887a28d821b6174df10c9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Down</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a18774f082756cdee120731cd53689008</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Up</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a6b3aa7f474aba344035fb34c037cdc05</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NumLock</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ad1d1d7ce47ea768bcb565633fe9962b5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NumpadDivide</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ac3dc3e9289a9b7db8aa346c3f02b327d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NumpadMultiply</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875abd043b0e9270f97b4c1d6c2e4bf94288</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NumpadMinus</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ae48b0805330de77fbf671644d446a9ef</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NumpadPlus</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875abb76cfff74d39902a4c7b286520f1d5b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NumpadEqual</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a5b96402c34611cd5a7661c9c93e8dc0a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NumpadEnter</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ad6da599320b8c485ca42eb16e81d0ad0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NumpadDecimal</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a62ce565c4d62bcbd9a9af09f8d4f80df</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Numpad1</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ac17746b6b36dc8b79a222fa73ef2501e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Numpad2</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a53e419e5206289bcc16b4500bd8105af</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Numpad3</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a185a36e136a349d9073312919cede6a7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Numpad4</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a25c36d972efaf310f4f9d4ec23b89df5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Numpad5</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a8e370bc5b50d37f1ed280453fa6d47f6</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Numpad6</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a58523c54f6cfb3844021e7a9526eb34b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Numpad7</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a3d0502d5ad29d2e8bdfd5e4ab03252ee</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Numpad8</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a74fda39289bc3e8ff17d4aec863b7029</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Numpad9</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a335a1aa0289d7e582fdc924ca710cbc1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Numpad0</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a5852c4163a2cacb7979415d09412d500</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NonUsBackslash</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a44a8cbe245638c8431b233930f543a87</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Application</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a5a7f9d3ad8d2528dc7648b682b069211</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Execute</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a12c94b4dc55153a952283aff554ae3a0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ModeChange</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875adbd3b55bd8d0f7c790f30d5a5bb6660c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Help</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a4e8eeeae3acd3740053d2041e22dbf95</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Menu</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ad74c4a46669c3bd59ef93154e4669632</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Select</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a30a8160d16b2ee9cc2d56a1a3394efa1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Redo</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ad7b33839e3d1dc8048ed4e32297113ad</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Undo</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ac7476165cf08ca489e6949441d4e0715</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Cut</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875af5b15a621ad19b8f357821f7adfc6bb1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Copy</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a7ecdffb69ce6c849414e4a818d3103a7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Paste</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ab5417583410afc02cad51e66cb97b196</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>VolumeMute</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a3af7a1640f764386171d4cba53e6d5e2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>VolumeUp</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875aa76641e5826ca3a7fb09cefa4d922270</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>VolumeDown</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875aa32039062878ff1d9ed8fb062949f976</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>MediaPlayPause</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a421303fdaaa4cbcf571ff6905808b69b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>MediaStop</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a6afe82e357291a40a03c85773eae734d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>MediaNextTrack</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a08b48a760a2a550f21b3b6b184797742</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>MediaPreviousTrack</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ac2ac37264e076dcab002e24e54090dbc</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>LControl</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875aa81bc64b2e4ca7eae223891075a1d754</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>LShift</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a99aa94c6db970fe2d06d6a0b265084d7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>LAlt</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a9d640314aaa812b4646178409910043d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>LSystem</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a5e1b12c4476475396c6f04eccbbf04f7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>RControl</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ab80b18e7c688d4cd1bbb52b40b9699fe</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>RShift</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a81b7e74173912d98493b62b13a7ed648</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>RAlt</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a2d6f466aef0f34d0d794d79362002ae3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>RSystem</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a62f3504c695ca7968e710cfdc1d8c61b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Back</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ae5c30910d66a7706ec731fff17e552d2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Forward</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875adb5993c42ae3794c0e755f8e4b4666ea</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Refresh</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a21a543fae6b497b61df6e58d315f9e12</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Stop</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a03a70c06d505acb1473f68a63c712faa</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Search</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a1b0d59ec95a4d6b585cdc7f0756ff6f0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Favorites</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ad54aa9735cb59fe6fbd9a54939dadb53</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HomePage</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a97afbc93fdb29797ed0fbfe45b93b80d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>LaunchApplication1</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ac195d6bb66bd43b6c89f70df8ecc7d4d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>LaunchApplication2</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a7fd8f0dfcbccd3e4c72269f8159b2170</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>LaunchMail</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ab91775c7cc9288d35cadc11bc65b6994</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>LaunchMediaSelect</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a200b5a6f78bebcf697bb4e046c41fe4c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ScancodeCount</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a28c5ad8524e1e653b43440e660d441d0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Unknown</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875af29c5f0133653ccd3cbc947b51e97895</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>A</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875af835596d7ce007d5c34c356dee6740c6</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>B</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a5a277726531303b8ba5212999e9664cb</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>C</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ad3acc09d4a2dc958837e48b80af01a4c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>D</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a96ec4a613d00dce6f8d90adc8728864a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>E</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875adc59d37687890a0efbac55992448e41f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a2d87edd4fa1f6ae355cabcccb5844ea3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>G</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a21dc36f8ac9ff44d3c6aca6a66503264</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>H</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a40615dc67be807478f924c9aabf81915</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>I</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875acfe0506f6ce3d306b47134e99260d984</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>J</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875aaf9b207522e37466a19f92b8dc836735</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>K</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a1e65a1d66582b430961cfc4e7cc76816</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>L</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ab6da0281265c57b9570de8be294d73b8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>M</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a5a8351cbbb24d61c47f146f414ef825d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>N</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a72b52a30a5f3aee77dc52e7c54c8db9f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>O</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875aafe949e3a5c03b8981026f5b9621154b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>P</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a0943cf62e03a8616a8a41b72539ded38</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Q</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875af9b34314661202a2f73c2d71d95fcfeb</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>R</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875af04c2611e3ee0855a044927d5bd0e194</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>S</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a3c650be640718237a3241e8da1602dae</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>T</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a55bee4759c12cb033659e8d8de796ae9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>U</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875aeaecd56929398797033710d1cb274003</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>V</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875acf235c9f74c25df943ead5f38a01945a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>W</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a287b960abc4c422a8f4c1bbfc0dfd2a9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>X</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875af4f6ad0b93dd6bc360badd5abe812a67</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Y</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a6305407064e0beb4f0499166e087ff22</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Z</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a2aca2d41fc86e4e31be7220d81ce589a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Num1</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875adbf8eb09afd75e2081b009ad7a3596ef</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Num2</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a16cfef5671ce6401aaf00316c88c0c7b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Num3</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a3301c6093c6f2a78158c1e44e3431227</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Num4</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a15943e415124e0848e6b065d24b1b1e7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Num5</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875abf2de94b5156b86a228d7e5ec66d056a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Num6</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a6cd9d57ae648639eedcd16cb83da1af5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Num7</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875aaf5540b714391414c06503b8aaee908a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Num8</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875aee7fee4dc6a4dbfe9e038a5366cc1e4b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Num9</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875af003329d2c5a26d0262caf3ddef0a45e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Num0</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875adb7e8aa25d5d5204de03a5aa1ee0b390</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Enter</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875adb4984ca4b4e90eae95e32bb0de29c8e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Escape</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ac8409d6faf55c88bc01c722c51e99b93</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Backspace</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a6621384ae8e5b8f0faf0b879c7813817</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Tab</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875aa724a5e6b812f12b06957717fd78d4a3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Space</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a37fceb15fd79c29859aeb30e4b34237d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Hyphen</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ae6888d3715971e533b4379452cbae94a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Equal</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a6cd11681bbd83c0565c9c63e4d512a86</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>LBracket</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a3e4bb5cf828df8c4660d323df8589c43</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>RBracket</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a5b278a8f7b97c3972ec572412d855660</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Backslash</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a01ce415ff140d34d25a7bdbbbb785287</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Semicolon</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a60e05ed7eb42bf7d283d7ea4aafeef90</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Apostrophe</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ac391cefe75135833aea37c75293db820</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Grave</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a813711cd9de71dab611b7155b36880f5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Comma</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a035f3ce4c48fecfd7d2c77987710e5fa</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Period</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ae09b8ab0fa58ee31f499678d3e93a411</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Slash</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a5c37f9adf66e083d85950db1597c45f5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F1</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a60bdd99ca0d0ab177a65078a185333a6</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F2</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a3ea5468548feaccb419a8c4c160c16b0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F3</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875af2e1be02540c0794302ec9e1d2262ef4</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F4</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ae4a9bcd1df4becc4994c676f44a5a101</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F5</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a4fe3daf6c23906249b87f0ffffb458be</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F6</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a3c3934e6efc54b366de1e27f5099276e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F7</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a5dc33031068713ce55bb332672d9bb9a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F8</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ae1faf360e99035dff729917bee051daa</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F9</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ae0cb68ca4ec3844548d4e089ec9ea8c5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F10</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875aee4c9257be218585114cf27602892572</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F11</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a5047f3be2633e101840945b58867be6e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F12</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875aa068df80ff6d72b0bdab149e3a3d26af</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F13</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875af3416f863ce92ae05b26aed80e72a52f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F14</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a8589f17d8b4170b7f51711c1d6611f21</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F15</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875acad0fde63b2171cc56d42a1d23d679ba</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F16</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a1c3d4ce6fc1826f1da081b942676cccd</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F17</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875aa416a15ec21b4957d740992f446a5224</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F18</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ae50807a7d06cc5324eac783bf4d0b96d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F19</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a51ff7425b98bbcd8e777908de15f3d10</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F20</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a06d01cd179c76fe33c2f61006176f076</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F21</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ad86a6e71ba08ffc8167d003b92cadb77</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F22</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a538c92aa44eae29b23ef3c096c1b571b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F23</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ac66a8fea90d7307b434b4a09b0822202</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>F24</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a069f7f10bbdb13aeea8cfdebee4752f4</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CapsLock</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a6a1c1f6a4dfac0c5170296a88da1dd57</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>PrintScreen</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a8699683af17a0a4031bccf52f5222302</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ScrollLock</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875abbf3aeeb831834f97684647c1495d333</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Pause</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a40a805122e3ce91bde95d98ac43be234</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Insert</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a8935170f7f2ea9ea6586c3c686edc72a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Home</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ae5d4c031080001f1449e3d55e8571e3a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>PageUp</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a0c1f655bf99a3c7d2052814385fb222d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Delete</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a2f071cf261d91b0facc044c2ba11ae94</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>End</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a60da82f685e98127043da8ffd04b7442</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>PageDown</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a395ec644184fe789a12ee2ed98d19ee3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Right</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a03d293668313031e7ff7eb9b7894e5c7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Left</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a24060c475e1887a28d821b6174df10c9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Down</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a18774f082756cdee120731cd53689008</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Up</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a6b3aa7f474aba344035fb34c037cdc05</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NumLock</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ad1d1d7ce47ea768bcb565633fe9962b5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NumpadDivide</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ac3dc3e9289a9b7db8aa346c3f02b327d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NumpadMultiply</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875abd043b0e9270f97b4c1d6c2e4bf94288</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NumpadMinus</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ae48b0805330de77fbf671644d446a9ef</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NumpadPlus</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875abb76cfff74d39902a4c7b286520f1d5b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NumpadEqual</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a5b96402c34611cd5a7661c9c93e8dc0a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NumpadEnter</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ad6da599320b8c485ca42eb16e81d0ad0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NumpadDecimal</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a62ce565c4d62bcbd9a9af09f8d4f80df</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Numpad1</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ac17746b6b36dc8b79a222fa73ef2501e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Numpad2</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a53e419e5206289bcc16b4500bd8105af</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Numpad3</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a185a36e136a349d9073312919cede6a7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Numpad4</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a25c36d972efaf310f4f9d4ec23b89df5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Numpad5</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a8e370bc5b50d37f1ed280453fa6d47f6</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Numpad6</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a58523c54f6cfb3844021e7a9526eb34b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Numpad7</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a3d0502d5ad29d2e8bdfd5e4ab03252ee</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Numpad8</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a74fda39289bc3e8ff17d4aec863b7029</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Numpad9</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a335a1aa0289d7e582fdc924ca710cbc1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Numpad0</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a5852c4163a2cacb7979415d09412d500</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NonUsBackslash</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a44a8cbe245638c8431b233930f543a87</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Application</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a5a7f9d3ad8d2528dc7648b682b069211</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Execute</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a12c94b4dc55153a952283aff554ae3a0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ModeChange</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875adbd3b55bd8d0f7c790f30d5a5bb6660c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Help</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a4e8eeeae3acd3740053d2041e22dbf95</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Menu</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ad74c4a46669c3bd59ef93154e4669632</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Select</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a30a8160d16b2ee9cc2d56a1a3394efa1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Redo</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ad7b33839e3d1dc8048ed4e32297113ad</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Undo</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ac7476165cf08ca489e6949441d4e0715</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Cut</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875af5b15a621ad19b8f357821f7adfc6bb1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Copy</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a7ecdffb69ce6c849414e4a818d3103a7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Paste</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ab5417583410afc02cad51e66cb97b196</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>VolumeMute</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a3af7a1640f764386171d4cba53e6d5e2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>VolumeUp</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875aa76641e5826ca3a7fb09cefa4d922270</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>VolumeDown</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875aa32039062878ff1d9ed8fb062949f976</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>MediaPlayPause</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a421303fdaaa4cbcf571ff6905808b69b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>MediaStop</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a6afe82e357291a40a03c85773eae734d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>MediaNextTrack</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a08b48a760a2a550f21b3b6b184797742</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>MediaPreviousTrack</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ac2ac37264e076dcab002e24e54090dbc</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>LControl</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875aa81bc64b2e4ca7eae223891075a1d754</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>LShift</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a99aa94c6db970fe2d06d6a0b265084d7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>LAlt</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a9d640314aaa812b4646178409910043d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>LSystem</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a5e1b12c4476475396c6f04eccbbf04f7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>RControl</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ab80b18e7c688d4cd1bbb52b40b9699fe</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>RShift</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a81b7e74173912d98493b62b13a7ed648</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>RAlt</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a2d6f466aef0f34d0d794d79362002ae3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>RSystem</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a62f3504c695ca7968e710cfdc1d8c61b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Back</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ae5c30910d66a7706ec731fff17e552d2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Forward</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875adb5993c42ae3794c0e755f8e4b4666ea</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Refresh</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a21a543fae6b497b61df6e58d315f9e12</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Stop</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a03a70c06d505acb1473f68a63c712faa</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Search</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a1b0d59ec95a4d6b585cdc7f0756ff6f0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Favorites</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ad54aa9735cb59fe6fbd9a54939dadb53</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HomePage</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a97afbc93fdb29797ed0fbfe45b93b80d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>LaunchApplication1</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ac195d6bb66bd43b6c89f70df8ecc7d4d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>LaunchApplication2</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a7fd8f0dfcbccd3e4c72269f8159b2170</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>LaunchMail</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875ab91775c7cc9288d35cadc11bc65b6994</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>LaunchMediaSelect</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a200b5a6f78bebcf697bb4e046c41fe4c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ScancodeCount</name>
-      <anchorfile>structsf_1_1Keyboard_1_1Scan.html</anchorfile>
-      <anchor>aa42fbf6954d6f81f7606e566c7abe875a28c5ad8524e1e653b43440e660d441d0</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>sf::Sensor</name>
-    <filename>classsf_1_1Sensor.html</filename>
-    <member kind="enumeration">
-      <type></type>
-      <name>Type</name>
-      <anchorfile>classsf_1_1Sensor.html</anchorfile>
-      <anchor>a687375af3ab77b818fca73735bcaea84</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Accelerometer</name>
-      <anchorfile>classsf_1_1Sensor.html</anchorfile>
-      <anchor>a687375af3ab77b818fca73735bcaea84a11bc58199593e217de23641755ecc867</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Gyroscope</name>
-      <anchorfile>classsf_1_1Sensor.html</anchorfile>
-      <anchor>a687375af3ab77b818fca73735bcaea84a1c43984aacd29b1fda5356883fb19656</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Magnetometer</name>
-      <anchorfile>classsf_1_1Sensor.html</anchorfile>
-      <anchor>a687375af3ab77b818fca73735bcaea84ae706bb678bde8d3c370e246ffde6a63d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Gravity</name>
-      <anchorfile>classsf_1_1Sensor.html</anchorfile>
-      <anchor>a687375af3ab77b818fca73735bcaea84afab4d098cc64e791a0c4a9ef6b32db92</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>UserAcceleration</name>
-      <anchorfile>classsf_1_1Sensor.html</anchorfile>
-      <anchor>a687375af3ab77b818fca73735bcaea84ad3a399e0025892b7c53e8767cebb9215</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Orientation</name>
-      <anchorfile>classsf_1_1Sensor.html</anchorfile>
-      <anchor>a687375af3ab77b818fca73735bcaea84aa428c5260446555de87c69b65f6edf00</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Count</name>
-      <anchorfile>classsf_1_1Sensor.html</anchorfile>
-      <anchor>a687375af3ab77b818fca73735bcaea84afcb4a80eb9e3f927c5837207a1b9eb29</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Accelerometer</name>
-      <anchorfile>classsf_1_1Sensor.html</anchorfile>
-      <anchor>a687375af3ab77b818fca73735bcaea84a11bc58199593e217de23641755ecc867</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Gyroscope</name>
-      <anchorfile>classsf_1_1Sensor.html</anchorfile>
-      <anchor>a687375af3ab77b818fca73735bcaea84a1c43984aacd29b1fda5356883fb19656</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Magnetometer</name>
-      <anchorfile>classsf_1_1Sensor.html</anchorfile>
-      <anchor>a687375af3ab77b818fca73735bcaea84ae706bb678bde8d3c370e246ffde6a63d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Gravity</name>
-      <anchorfile>classsf_1_1Sensor.html</anchorfile>
-      <anchor>a687375af3ab77b818fca73735bcaea84afab4d098cc64e791a0c4a9ef6b32db92</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>UserAcceleration</name>
-      <anchorfile>classsf_1_1Sensor.html</anchorfile>
-      <anchor>a687375af3ab77b818fca73735bcaea84ad3a399e0025892b7c53e8767cebb9215</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Orientation</name>
-      <anchorfile>classsf_1_1Sensor.html</anchorfile>
-      <anchor>a687375af3ab77b818fca73735bcaea84aa428c5260446555de87c69b65f6edf00</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Count</name>
-      <anchorfile>classsf_1_1Sensor.html</anchorfile>
-      <anchor>a687375af3ab77b818fca73735bcaea84afcb4a80eb9e3f927c5837207a1b9eb29</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static bool</type>
-      <name>isAvailable</name>
-      <anchorfile>classsf_1_1Sensor.html</anchorfile>
-      <anchor>a7b7a2570218221781233bd495323abf0</anchor>
-      <arglist>(Type sensor)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static void</type>
-      <name>setEnabled</name>
-      <anchorfile>classsf_1_1Sensor.html</anchorfile>
-      <anchor>afb31c5697d2e0a5fec70d702ec1d6cd9</anchor>
-      <arglist>(Type sensor, bool enabled)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static Vector3f</type>
-      <name>getValue</name>
-      <anchorfile>classsf_1_1Sensor.html</anchorfile>
-      <anchor>ab9a2710f55ead2f7b4e1b0bead34457e</anchor>
-      <arglist>(Type sensor)</arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>sf::Event::SensorEvent</name>
-    <filename>structsf_1_1Event_1_1SensorEvent.html</filename>
+    <name>sf::Event::SensorChanged</name>
+    <filename>structsf_1_1Event_1_1SensorChanged.html</filename>
     <member kind="variable">
       <type>Sensor::Type</type>
       <name>type</name>
-      <anchorfile>structsf_1_1Event_1_1SensorEvent.html</anchorfile>
-      <anchor>abee7d67bf0947fd1138e4466011e2436</anchor>
+      <anchorfile>structsf_1_1Event_1_1SensorChanged.html</anchorfile>
+      <anchor>a312d00af6eb10094508d0861368cd57f</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>float</type>
-      <name>x</name>
-      <anchorfile>structsf_1_1Event_1_1SensorEvent.html</anchorfile>
-      <anchor>aa6ccbd13c181b866a6467462158d93d9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>float</type>
-      <name>y</name>
-      <anchorfile>structsf_1_1Event_1_1SensorEvent.html</anchorfile>
-      <anchor>aecafcd25ecb3ba486e42284e4bb69a57</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>float</type>
-      <name>z</name>
-      <anchorfile>structsf_1_1Event_1_1SensorEvent.html</anchorfile>
-      <anchor>a5704e0d0b82b07f051cc858894f3ea43</anchor>
+      <type>Vector3f</type>
+      <name>value</name>
+      <anchorfile>structsf_1_1Event_1_1SensorChanged.html</anchorfile>
+      <anchor>a46dc2e8291b183572021194761b342d2</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -10920,7 +6547,6 @@
     <name>sf::Shader</name>
     <filename>classsf_1_1Shader.html</filename>
     <base protection="private">sf::GlResource</base>
-    <base protection="private">sf::NonCopyable</base>
     <class kind="struct">sf::Shader::CurrentTextureType</class>
     <member kind="enumeration">
       <type></type>
@@ -10928,49 +6554,16 @@
       <anchorfile>classsf_1_1Shader.html</anchorfile>
       <anchor>afaa1aa65e5de37b74d047da9def9f9b3</anchor>
       <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Vertex</name>
-      <anchorfile>classsf_1_1Shader.html</anchorfile>
-      <anchor>afaa1aa65e5de37b74d047da9def9f9b3a8718008f827eb32e29bbdd1791c62dce</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Geometry</name>
-      <anchorfile>classsf_1_1Shader.html</anchorfile>
-      <anchor>afaa1aa65e5de37b74d047da9def9f9b3a812421100fd57456727375938fb62788</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Fragment</name>
-      <anchorfile>classsf_1_1Shader.html</anchorfile>
-      <anchor>afaa1aa65e5de37b74d047da9def9f9b3ace6e88eec3a56b2e55ee3c8e64e9b89a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Vertex</name>
-      <anchorfile>classsf_1_1Shader.html</anchorfile>
-      <anchor>afaa1aa65e5de37b74d047da9def9f9b3a8718008f827eb32e29bbdd1791c62dce</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Geometry</name>
-      <anchorfile>classsf_1_1Shader.html</anchorfile>
-      <anchor>afaa1aa65e5de37b74d047da9def9f9b3a812421100fd57456727375938fb62788</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Fragment</name>
-      <anchorfile>classsf_1_1Shader.html</anchorfile>
-      <anchor>afaa1aa65e5de37b74d047da9def9f9b3ace6e88eec3a56b2e55ee3c8e64e9b89a</anchor>
-      <arglist></arglist>
+      <enumvalue file="classsf_1_1Shader.html" anchor="afaa1aa65e5de37b74d047da9def9f9b3ab22b929ba52471a02d18bb3a4e4472e6">Vertex</enumvalue>
+      <enumvalue file="classsf_1_1Shader.html" anchor="afaa1aa65e5de37b74d047da9def9f9b3ad9c6333623e6357515fcbf17be806273">Geometry</enumvalue>
+      <enumvalue file="classsf_1_1Shader.html" anchor="afaa1aa65e5de37b74d047da9def9f9b3a37d01b98065725fe3a1d30acf3a0064a">Fragment</enumvalue>
     </member>
     <member kind="function">
       <type></type>
       <name>Shader</name>
       <anchorfile>classsf_1_1Shader.html</anchorfile>
-      <anchor>a1d7f28f26b4122959fcafec871c2c3c5</anchor>
-      <arglist>()</arglist>
+      <anchor>ab78797e89296ddd93a00236e977d4368</anchor>
+      <arglist>()=default</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -10980,46 +6573,137 @@
       <arglist>()</arglist>
     </member>
     <member kind="function">
-      <type>bool</type>
-      <name>loadFromFile</name>
+      <type></type>
+      <name>Shader</name>
       <anchorfile>classsf_1_1Shader.html</anchorfile>
-      <anchor>a053a5632848ebaca2fcd8ba29abe9e6e</anchor>
-      <arglist>(const std::string &amp;filename, Type type)</arglist>
+      <anchor>aa15f7fd1dd27fd8fc1f902dd9bfb0213</anchor>
+      <arglist>(const Shader &amp;)=delete</arglist>
+    </member>
+    <member kind="function">
+      <type>Shader &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classsf_1_1Shader.html</anchorfile>
+      <anchor>a40f012bc22cc7f06764069a68827a017</anchor>
+      <arglist>(const Shader &amp;)=delete</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Shader</name>
+      <anchorfile>classsf_1_1Shader.html</anchorfile>
+      <anchor>a2cf0a1893411c4025ed4edd1b1b308fe</anchor>
+      <arglist>(Shader &amp;&amp;source) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>Shader &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classsf_1_1Shader.html</anchorfile>
+      <anchor>a0f5a19963776d51a37333eb1a787b729</anchor>
+      <arglist>(Shader &amp;&amp;right) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Shader</name>
+      <anchorfile>classsf_1_1Shader.html</anchorfile>
+      <anchor>a553df5f875196bb37dec24c10b2264c7</anchor>
+      <arglist>(const std::filesystem::path &amp;filename, Type type)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Shader</name>
+      <anchorfile>classsf_1_1Shader.html</anchorfile>
+      <anchor>afa0e8d813fd14205afc8435684ac6670</anchor>
+      <arglist>(const std::filesystem::path &amp;vertexShaderFilename, const std::filesystem::path &amp;fragmentShaderFilename)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Shader</name>
+      <anchorfile>classsf_1_1Shader.html</anchorfile>
+      <anchor>a1c2667765fd4bd42fdc8acaf1e2e6feb</anchor>
+      <arglist>(const std::filesystem::path &amp;vertexShaderFilename, const std::filesystem::path &amp;geometryShaderFilename, const std::filesystem::path &amp;fragmentShaderFilename)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Shader</name>
+      <anchorfile>classsf_1_1Shader.html</anchorfile>
+      <anchor>af139675cc9d0f49618316fbff01e434c</anchor>
+      <arglist>(std::string_view shader, Type type)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Shader</name>
+      <anchorfile>classsf_1_1Shader.html</anchorfile>
+      <anchor>ac4b2cdd1c2a34602898021502b098b44</anchor>
+      <arglist>(std::string_view vertexShader, std::string_view fragmentShader)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Shader</name>
+      <anchorfile>classsf_1_1Shader.html</anchorfile>
+      <anchor>aed276e30031b2964c1643284731ea7b5</anchor>
+      <arglist>(std::string_view vertexShader, std::string_view geometryShader, std::string_view fragmentShader)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Shader</name>
+      <anchorfile>classsf_1_1Shader.html</anchorfile>
+      <anchor>a1bde98c36b5fb56bc014b0f105b3efbd</anchor>
+      <arglist>(InputStream &amp;stream, Type type)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Shader</name>
+      <anchorfile>classsf_1_1Shader.html</anchorfile>
+      <anchor>a8bf91ee6135e498bae1378e9136d1904</anchor>
+      <arglist>(InputStream &amp;vertexShaderStream, InputStream &amp;fragmentShaderStream)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Shader</name>
+      <anchorfile>classsf_1_1Shader.html</anchorfile>
+      <anchor>af220be3da7cf11a29f335e51591bcf56</anchor>
+      <arglist>(InputStream &amp;vertexShaderStream, InputStream &amp;geometryShaderStream, InputStream &amp;fragmentShaderStream)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>loadFromFile</name>
       <anchorfile>classsf_1_1Shader.html</anchorfile>
-      <anchor>ac9d7289966fcef562eeb92271c03e3dc</anchor>
-      <arglist>(const std::string &amp;vertexShaderFilename, const std::string &amp;fragmentShaderFilename)</arglist>
+      <anchor>a638d43cf5ec37333b3a3f4573851fd31</anchor>
+      <arglist>(const std::filesystem::path &amp;filename, Type type)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>loadFromFile</name>
       <anchorfile>classsf_1_1Shader.html</anchorfile>
-      <anchor>a295d8468811ca15bf9c5401a7a7d4f54</anchor>
-      <arglist>(const std::string &amp;vertexShaderFilename, const std::string &amp;geometryShaderFilename, const std::string &amp;fragmentShaderFilename)</arglist>
+      <anchor>a8359d1ba28c362ad6986d94a4e08d9ff</anchor>
+      <arglist>(const std::filesystem::path &amp;vertexShaderFilename, const std::filesystem::path &amp;fragmentShaderFilename)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>loadFromFile</name>
+      <anchorfile>classsf_1_1Shader.html</anchorfile>
+      <anchor>a31149ff12459945086847e8a8537ab16</anchor>
+      <arglist>(const std::filesystem::path &amp;vertexShaderFilename, const std::filesystem::path &amp;geometryShaderFilename, const std::filesystem::path &amp;fragmentShaderFilename)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>loadFromMemory</name>
       <anchorfile>classsf_1_1Shader.html</anchorfile>
-      <anchor>ac92d46bf71dff2d791117e4e472148aa</anchor>
-      <arglist>(const std::string &amp;shader, Type type)</arglist>
+      <anchor>ade120804b58f6f9b1b1803ad3f97da07</anchor>
+      <arglist>(std::string_view shader, Type type)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>loadFromMemory</name>
       <anchorfile>classsf_1_1Shader.html</anchorfile>
-      <anchor>ae34e94070d7547a890166b7993658a9b</anchor>
-      <arglist>(const std::string &amp;vertexShader, const std::string &amp;fragmentShader)</arglist>
+      <anchor>a8629b13e5ffbfb0f5514ad864d5a75b9</anchor>
+      <arglist>(std::string_view vertexShader, std::string_view fragmentShader)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>loadFromMemory</name>
       <anchorfile>classsf_1_1Shader.html</anchorfile>
-      <anchor>ab8c8b715b02aba2cf7c0a0e0c0984250</anchor>
-      <arglist>(const std::string &amp;vertexShader, const std::string &amp;geometryShader, const std::string &amp;fragmentShader)</arglist>
+      <anchor>afa694f4b219011ea28c1f262a63df1c2</anchor>
+      <arglist>(std::string_view vertexShader, std::string_view geometryShader, std::string_view fragmentShader)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
@@ -11053,8 +6737,8 @@
       <type>void</type>
       <name>setUniform</name>
       <anchorfile>classsf_1_1Shader.html</anchorfile>
-      <anchor>a4a2c673c41e37b17d67e4af1298b679f</anchor>
-      <arglist>(const std::string &amp;name, const Glsl::Vec2 &amp;vector)</arglist>
+      <anchor>a72d88533a2a67ca97cf94e083b23f015</anchor>
+      <arglist>(const std::string &amp;name, Glsl::Vec2 vector)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -11081,8 +6765,8 @@
       <type>void</type>
       <name>setUniform</name>
       <anchorfile>classsf_1_1Shader.html</anchorfile>
-      <anchor>a2ccb5bae59cedc7d6a9b533c97f7d1ed</anchor>
-      <arglist>(const std::string &amp;name, const Glsl::Ivec2 &amp;vector)</arglist>
+      <anchor>a9f7cae650d9b5a127b575b1c4045f86d</anchor>
+      <arglist>(const std::string &amp;name, Glsl::Ivec2 vector)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -11109,8 +6793,8 @@
       <type>void</type>
       <name>setUniform</name>
       <anchorfile>classsf_1_1Shader.html</anchorfile>
-      <anchor>ab2518b8dd0762e682b452a5d5005f2bf</anchor>
-      <arglist>(const std::string &amp;name, const Glsl::Bvec2 &amp;vector)</arglist>
+      <anchor>a8624c9d5fcab073f26b41d1088b871fd</anchor>
+      <arglist>(const std::string &amp;name, Glsl::Bvec2 vector)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -11146,6 +6830,13 @@
       <anchorfile>classsf_1_1Shader.html</anchorfile>
       <anchor>a7806a29ffbd0ee9251256a9e7265d479</anchor>
       <arglist>(const std::string &amp;name, const Texture &amp;texture)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setUniform</name>
+      <anchorfile>classsf_1_1Shader.html</anchorfile>
+      <anchor>ad152e92cb6132d4f87ed0a9a0f4ef9a0</anchor>
+      <arglist>(const std::string &amp;name, const Texture &amp;&amp;texture)=delete</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -11197,76 +6888,6 @@
       <arglist>(const std::string &amp;name, const Glsl::Mat4 *matrixArray, std::size_t length)</arglist>
     </member>
     <member kind="function">
-      <type>void</type>
-      <name>setParameter</name>
-      <anchorfile>classsf_1_1Shader.html</anchorfile>
-      <anchor>a47e4dd78f0752ae08664b4ee616db1cf</anchor>
-      <arglist>(const std::string &amp;name, float x)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>setParameter</name>
-      <anchorfile>classsf_1_1Shader.html</anchorfile>
-      <anchor>ab8d379f40810b8e3eadebee81aedd231</anchor>
-      <arglist>(const std::string &amp;name, float x, float y)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>setParameter</name>
-      <anchorfile>classsf_1_1Shader.html</anchorfile>
-      <anchor>a7e36e044d6b8adca8339f40c5a4b1801</anchor>
-      <arglist>(const std::string &amp;name, float x, float y, float z)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>setParameter</name>
-      <anchorfile>classsf_1_1Shader.html</anchorfile>
-      <anchor>aeb468f1bc2d26750b96b74f1e19027fb</anchor>
-      <arglist>(const std::string &amp;name, float x, float y, float z, float w)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>setParameter</name>
-      <anchorfile>classsf_1_1Shader.html</anchorfile>
-      <anchor>a3ac473ece2c6fa26dc5032c07fd7288e</anchor>
-      <arglist>(const std::string &amp;name, const Vector2f &amp;vector)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>setParameter</name>
-      <anchorfile>classsf_1_1Shader.html</anchorfile>
-      <anchor>a87d4a0c6dc70ae68aecc0dda3f343c07</anchor>
-      <arglist>(const std::string &amp;name, const Vector3f &amp;vector)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>setParameter</name>
-      <anchorfile>classsf_1_1Shader.html</anchorfile>
-      <anchor>aa8618119ed4399df3fd33e78ee96b4fc</anchor>
-      <arglist>(const std::string &amp;name, const Color &amp;color)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>setParameter</name>
-      <anchorfile>classsf_1_1Shader.html</anchorfile>
-      <anchor>a8599ee1348407025039b89ddf3f7cb62</anchor>
-      <arglist>(const std::string &amp;name, const Transform &amp;transform)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>setParameter</name>
-      <anchorfile>classsf_1_1Shader.html</anchorfile>
-      <anchor>a7f58ab5c0a1084f238dfcec86602daa1</anchor>
-      <arglist>(const std::string &amp;name, const Texture &amp;texture)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>setParameter</name>
-      <anchorfile>classsf_1_1Shader.html</anchorfile>
-      <anchor>af06b4cba0bab915fa01032b063909044</anchor>
-      <arglist>(const std::string &amp;name, CurrentTextureType)</arglist>
-    </member>
-    <member kind="function">
       <type>unsigned int</type>
       <name>getNativeHandle</name>
       <anchorfile>classsf_1_1Shader.html</anchorfile>
@@ -11307,13 +6928,6 @@
     <filename>classsf_1_1Shape.html</filename>
     <base>sf::Drawable</base>
     <base>sf::Transformable</base>
-    <member kind="function" virtualness="virtual">
-      <type>virtual</type>
-      <name>~Shape</name>
-      <anchorfile>classsf_1_1Shape.html</anchorfile>
-      <anchor>a2262aceb9df52d4275c19633592f19bf</anchor>
-      <arglist>()</arglist>
-    </member>
     <member kind="function">
       <type>void</type>
       <name>setTexture</name>
@@ -11332,15 +6946,15 @@
       <type>void</type>
       <name>setFillColor</name>
       <anchorfile>classsf_1_1Shape.html</anchorfile>
-      <anchor>a3506f9b5d916fec14d583d16f23c2485</anchor>
-      <arglist>(const Color &amp;color)</arglist>
+      <anchor>a44f64a14eada7ccceb2e03f655b8d666</anchor>
+      <arglist>(Color color)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>setOutlineColor</name>
       <anchorfile>classsf_1_1Shape.html</anchorfile>
-      <anchor>a5978f41ee349ac3c52942996dcb184f7</anchor>
-      <arglist>(const Color &amp;color)</arglist>
+      <anchor>a7dbbed35b7544a9e592acd3908713256</anchor>
+      <arglist>(Color color)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -11364,17 +6978,17 @@
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>const Color &amp;</type>
+      <type>Color</type>
       <name>getFillColor</name>
       <anchorfile>classsf_1_1Shape.html</anchorfile>
-      <anchor>aa5da23e522d2dd11e3e7661c26164c78</anchor>
+      <anchor>a6444edeb0639112234c0dfa47da8f9af</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>const Color &amp;</type>
+      <type>Color</type>
       <name>getOutlineColor</name>
       <anchorfile>classsf_1_1Shape.html</anchorfile>
-      <anchor>a4aa05b59851468e948ac9682b9c71abb</anchor>
+      <anchor>abbdd704351300cd65d56b0e89f834808</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
@@ -11398,6 +7012,13 @@
       <anchor>a40e5d83713eb9f0c999944cf96458085</anchor>
       <arglist>(std::size_t index) const =0</arglist>
     </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual Vector2f</type>
+      <name>getGeometricCenter</name>
+      <anchorfile>classsf_1_1Shape.html</anchorfile>
+      <anchor>a5aa1935f3a532fbecf4a417d14247aed</anchor>
+      <arglist>() const</arglist>
+    </member>
     <member kind="function">
       <type>FloatRect</type>
       <name>getLocalBounds</name>
@@ -11416,113 +7037,78 @@
       <type>void</type>
       <name>setPosition</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a4dbfb1a7c80688b0b4c477d706550208</anchor>
-      <arglist>(float x, float y)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>setPosition</name>
-      <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>af1a42209ce2b5d3f07b00f917bcd8015</anchor>
-      <arglist>(const Vector2f &amp;position)</arglist>
+      <anchor>a47c1375b57cbb0e513286e8d11f6dd4d</anchor>
+      <arglist>(Vector2f position)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>setRotation</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a32baf2bf1a74699b03bf8c95030a38ed</anchor>
-      <arglist>(float angle)</arglist>
+      <anchor>a1b4bfa83da965c03ef523c7c33df991f</anchor>
+      <arglist>(Angle angle)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>setScale</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>aaec50b46b3f41b054763304d1e727471</anchor>
-      <arglist>(float factorX, float factorY)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>setScale</name>
-      <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a4c48a87f1626047e448f9c1a68ff167e</anchor>
-      <arglist>(const Vector2f &amp;factors)</arglist>
+      <anchor>a60b82c58502e86f258c9844a1a58400b</anchor>
+      <arglist>(Vector2f factors)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>setOrigin</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a56c67bd80aae8418d13fb96c034d25ec</anchor>
-      <arglist>(float x, float y)</arglist>
+      <anchor>a26788f72ade7ffadb8ba594c3332c4a8</anchor>
+      <arglist>(Vector2f origin)</arglist>
     </member>
     <member kind="function">
-      <type>void</type>
-      <name>setOrigin</name>
-      <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>aa93a835ffbf3bee2098dfbbc695a7f05</anchor>
-      <arglist>(const Vector2f &amp;origin)</arglist>
-    </member>
-    <member kind="function">
-      <type>const Vector2f &amp;</type>
+      <type>Vector2f</type>
       <name>getPosition</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>aea8b18e91a7bf7be589851bb9dd11241</anchor>
+      <anchor>a88a224d0831261591beace74cd3ad67b</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>float</type>
+      <type>Angle</type>
       <name>getRotation</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>aa00b5c5d4a06ac24a94dd72c56931d3a</anchor>
+      <anchor>a11ca740731d6c2cdde3cc8ae3bda3785</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>const Vector2f &amp;</type>
+      <type>Vector2f</type>
       <name>getScale</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a7bcae0e924213f2e89edd8926f2453af</anchor>
+      <anchor>a86fe2b0a7479713d33b71907191f654c</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>const Vector2f &amp;</type>
+      <type>Vector2f</type>
       <name>getOrigin</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a898b33eb6513161eb5c747a072364f15</anchor>
+      <anchor>aa32ea5e8c64716f07d0939252d8d7e31</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>move</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a86b461d6a941ad390c2ad8b6a4a20391</anchor>
-      <arglist>(float offsetX, float offsetY)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>move</name>
-      <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>ab9ca691522f6ddc1a40406849b87c469</anchor>
-      <arglist>(const Vector2f &amp;offset)</arglist>
+      <anchor>a860e50085b49a46a71cd028f7f5d8f6d</anchor>
+      <arglist>(Vector2f offset)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>rotate</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>af8a5ffddc0d93f238fee3bf8efe1ebda</anchor>
-      <arglist>(float angle)</arglist>
+      <anchor>aacd4c9a92b44f5a0cd95e2fe3741f8f1</anchor>
+      <arglist>(Angle angle)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>scale</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a3de0c6d8957f3cf318092f3f60656391</anchor>
-      <arglist>(float factorX, float factorY)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>scale</name>
-      <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>adecaa6c69b1f27dd5194b067d96bb694</anchor>
-      <arglist>(const Vector2f &amp;factor)</arglist>
+      <anchor>a24060d4216813d6f39698cf1cc82be98</anchor>
+      <arglist>(Vector2f factor)</arglist>
     </member>
     <member kind="function">
       <type>const Transform &amp;</type>
@@ -11539,13 +7125,6 @@
       <arglist>() const</arglist>
     </member>
     <member kind="function" protection="protected">
-      <type></type>
-      <name>Shape</name>
-      <anchorfile>classsf_1_1Shape.html</anchorfile>
-      <anchor>a413a457f720835b9f5d8e97ca8b80960</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function" protection="protected">
       <type>void</type>
       <name>update</name>
       <anchorfile>classsf_1_1Shape.html</anchorfile>
@@ -11553,106 +7132,20 @@
       <arglist>()</arglist>
     </member>
   </compound>
-  <compound kind="struct">
-    <name>sf::Event::SizeEvent</name>
-    <filename>structsf_1_1Event_1_1SizeEvent.html</filename>
-    <member kind="variable">
-      <type>unsigned int</type>
-      <name>width</name>
-      <anchorfile>structsf_1_1Event_1_1SizeEvent.html</anchorfile>
-      <anchor>a20ea1b78c9bb1604432f8f0067bbfd94</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>unsigned int</type>
-      <name>height</name>
-      <anchorfile>structsf_1_1Event_1_1SizeEvent.html</anchorfile>
-      <anchor>af0f76a599d5f48189cb8d78d4e5facdb</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
   <compound kind="class">
     <name>sf::Socket</name>
     <filename>classsf_1_1Socket.html</filename>
-    <base protection="private">sf::NonCopyable</base>
     <member kind="enumeration">
       <type></type>
       <name>Status</name>
       <anchorfile>classsf_1_1Socket.html</anchorfile>
       <anchor>a51bf0fd51057b98a10fbb866246176dc</anchor>
       <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Done</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a51bf0fd51057b98a10fbb866246176dca1de3a85bc56d3ae85b3d0f3cfd04ae90</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NotReady</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a51bf0fd51057b98a10fbb866246176dca8554848daae98f996e131bdeed076c09</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Partial</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a51bf0fd51057b98a10fbb866246176dca181c163fad2eaea927185d127c392706</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Disconnected</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a51bf0fd51057b98a10fbb866246176dcab215141f756acdc23c67fad149710eb1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Error</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a51bf0fd51057b98a10fbb866246176dca1dc9854433a28c22e192721179a2df5d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>AnyPort</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>aa3e6c984bcb81a35234dcc9cc8369d75a5a3c30fd128895403afc11076f461b19</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Done</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a51bf0fd51057b98a10fbb866246176dca1de3a85bc56d3ae85b3d0f3cfd04ae90</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NotReady</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a51bf0fd51057b98a10fbb866246176dca8554848daae98f996e131bdeed076c09</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Partial</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a51bf0fd51057b98a10fbb866246176dca181c163fad2eaea927185d127c392706</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Disconnected</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a51bf0fd51057b98a10fbb866246176dcab215141f756acdc23c67fad149710eb1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Error</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a51bf0fd51057b98a10fbb866246176dca1dc9854433a28c22e192721179a2df5d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>AnyPort</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>aa3e6c984bcb81a35234dcc9cc8369d75a5a3c30fd128895403afc11076f461b19</anchor>
-      <arglist></arglist>
+      <enumvalue file="classsf_1_1Socket.html" anchor="a51bf0fd51057b98a10fbb866246176dcaf92965e2c8a7afb3c1b9a5c09a263636">Done</enumvalue>
+      <enumvalue file="classsf_1_1Socket.html" anchor="a51bf0fd51057b98a10fbb866246176dcadd353567e8118a2b8df4e822e59084ab">NotReady</enumvalue>
+      <enumvalue file="classsf_1_1Socket.html" anchor="a51bf0fd51057b98a10fbb866246176dca44ffd38a6dea695cbe2b34efdcc6cf27">Partial</enumvalue>
+      <enumvalue file="classsf_1_1Socket.html" anchor="a51bf0fd51057b98a10fbb866246176dcaef70e46fd3bbc21e3e1f0b6815e750c0">Disconnected</enumvalue>
+      <enumvalue file="classsf_1_1Socket.html" anchor="a51bf0fd51057b98a10fbb866246176dca902b0d55fddef6f8d651fe1035b7d4bd">Error</enumvalue>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual</type>
@@ -11660,6 +7153,34 @@
       <anchorfile>classsf_1_1Socket.html</anchorfile>
       <anchor>a79a4b5918f0b34a2f8db449089694788</anchor>
       <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Socket</name>
+      <anchorfile>classsf_1_1Socket.html</anchorfile>
+      <anchor>a8243a0b79e9b18e4433ab5b8571895b4</anchor>
+      <arglist>(const Socket &amp;)=delete</arglist>
+    </member>
+    <member kind="function">
+      <type>Socket &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classsf_1_1Socket.html</anchorfile>
+      <anchor>a191786b937937279dcf78152311132c9</anchor>
+      <arglist>(const Socket &amp;)=delete</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Socket</name>
+      <anchorfile>classsf_1_1Socket.html</anchorfile>
+      <anchor>a4b67cd169f65316ad27af67a399bda8a</anchor>
+      <arglist>(Socket &amp;&amp;socket) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>Socket &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classsf_1_1Socket.html</anchorfile>
+      <anchor>a78d057f96b18192640fbc8177625e09f</anchor>
+      <arglist>(Socket &amp;&amp;socket) noexcept</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -11675,36 +7196,21 @@
       <anchor>ab1ceca9ac114b8baeeda3b34a0aca468</anchor>
       <arglist>() const</arglist>
     </member>
+    <member kind="variable" static="yes">
+      <type>static constexpr unsigned short</type>
+      <name>AnyPort</name>
+      <anchorfile>classsf_1_1Socket.html</anchorfile>
+      <anchor>a16dfada3e5ba1773ac434bc70510221f</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="enumeration" protection="protected">
       <type></type>
       <name>Type</name>
       <anchorfile>classsf_1_1Socket.html</anchorfile>
       <anchor>a5d3ff44e56e68f02816bb0fabc34adf8</anchor>
       <arglist></arglist>
-    </member>
-    <member kind="enumvalue" protection="protected">
-      <name>Tcp</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a5d3ff44e56e68f02816bb0fabc34adf8acc02e97e90234b957eaad4dff7f22214</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue" protection="protected">
-      <name>Udp</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a5d3ff44e56e68f02816bb0fabc34adf8a6ebf3094830db4820191a327f3cc6ce2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue" protection="protected">
-      <name>Tcp</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a5d3ff44e56e68f02816bb0fabc34adf8acc02e97e90234b957eaad4dff7f22214</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue" protection="protected">
-      <name>Udp</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a5d3ff44e56e68f02816bb0fabc34adf8a6ebf3094830db4820191a327f3cc6ce2</anchor>
-      <arglist></arglist>
+      <enumvalue file="classsf_1_1Socket.html" anchor="a5d3ff44e56e68f02816bb0fabc34adf8a30b7fdeebc36988717d0e274cc2e7520">Tcp</enumvalue>
+      <enumvalue file="classsf_1_1Socket.html" anchor="a5d3ff44e56e68f02816bb0fabc34adf8a81baba40274ccb30f9fdfa2c73cf0482">Udp</enumvalue>
     </member>
     <member kind="function" protection="protected">
       <type></type>
@@ -11715,9 +7221,9 @@
     </member>
     <member kind="function" protection="protected">
       <type>SocketHandle</type>
-      <name>getHandle</name>
+      <name>getNativeHandle</name>
       <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a675457784284ae2f5640bbbe16729393</anchor>
+      <anchor>a67fe286629b47a62c723478b846ab2c4</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function" protection="protected">
@@ -11741,6 +7247,13 @@
       <anchor>a71f2f5c2aa99e01cafe824fee4c573be</anchor>
       <arglist>()</arglist>
     </member>
+    <member kind="friend" protection="private">
+      <type>friend class</type>
+      <name>SocketSelector</name>
+      <anchorfile>classsf_1_1Socket.html</anchorfile>
+      <anchor>a23fafd48278ea4f8f9c25f1f0f43693c</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="class">
     <name>sf::SocketSelector</name>
@@ -11754,17 +7267,38 @@
     </member>
     <member kind="function">
       <type></type>
+      <name>~SocketSelector</name>
+      <anchorfile>classsf_1_1SocketSelector.html</anchorfile>
+      <anchor>a9069cd61208260b8ed9cf233afa1f73d</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
       <name>SocketSelector</name>
       <anchorfile>classsf_1_1SocketSelector.html</anchorfile>
       <anchor>a50b1b955eb7ecb2e7c2764f3f4722fbf</anchor>
       <arglist>(const SocketSelector &amp;copy)</arglist>
     </member>
     <member kind="function">
-      <type></type>
-      <name>~SocketSelector</name>
+      <type>SocketSelector &amp;</type>
+      <name>operator=</name>
       <anchorfile>classsf_1_1SocketSelector.html</anchorfile>
-      <anchor>a9069cd61208260b8ed9cf233afa1f73d</anchor>
-      <arglist>()</arglist>
+      <anchor>af7247f1c8badd43932f3adcbc1fec7e8</anchor>
+      <arglist>(const SocketSelector &amp;right)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>SocketSelector</name>
+      <anchorfile>classsf_1_1SocketSelector.html</anchorfile>
+      <anchor>a85ee03894a17c4ce8606c5f121988235</anchor>
+      <arglist>(SocketSelector &amp;&amp;) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>SocketSelector &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classsf_1_1SocketSelector.html</anchorfile>
+      <anchor>a6547251d0c9066f5b7aab88c5b95ff2c</anchor>
+      <arglist>(SocketSelector &amp;&amp;) noexcept</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -11801,13 +7335,6 @@
       <anchor>a917a4bac708290a6782e6686fd3bf889</anchor>
       <arglist>(Socket &amp;socket) const</arglist>
     </member>
-    <member kind="function">
-      <type>SocketSelector &amp;</type>
-      <name>operator=</name>
-      <anchorfile>classsf_1_1SocketSelector.html</anchorfile>
-      <anchor>af7247f1c8badd43932f3adcbc1fec7e8</anchor>
-      <arglist>(const SocketSelector &amp;right)</arglist>
-    </member>
   </compound>
   <compound kind="class">
     <name>sf::Sound</name>
@@ -11819,49 +7346,16 @@
       <anchorfile>classsf_1_1SoundSource.html</anchorfile>
       <anchor>ac43af72c98c077500b239bc75b812f03</anchor>
       <arglist></arglist>
+      <enumvalue file="classsf_1_1SoundSource.html" anchor="ac43af72c98c077500b239bc75b812f03ac23e2b09ebe6bf4cb5e2a9abe85c0be2">Stopped</enumvalue>
+      <enumvalue file="classsf_1_1SoundSource.html" anchor="ac43af72c98c077500b239bc75b812f03ae99180abf47a8b3a856e0bcb2656990a">Paused</enumvalue>
+      <enumvalue file="classsf_1_1SoundSource.html" anchor="ac43af72c98c077500b239bc75b812f03ac9dbb2b7c84159b632d71e512eba8428">Playing</enumvalue>
     </member>
-    <member kind="enumvalue">
-      <name>Stopped</name>
+    <member kind="typedef">
+      <type>std::function&lt; void(const float *inputFrames, unsigned int &amp;inputFrameCount, float *outputFrames, unsigned int &amp;outputFrameCount, unsigned int frameChannelCount)&gt;</type>
+      <name>EffectProcessor</name>
       <anchorfile>classsf_1_1SoundSource.html</anchorfile>
-      <anchor>ac43af72c98c077500b239bc75b812f03adabb01e8aa85b2f54b344890addf764a</anchor>
+      <anchor>ab13ce12bd2ef4856511824557b07cce5</anchor>
       <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Paused</name>
-      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
-      <anchor>ac43af72c98c077500b239bc75b812f03ac3ca1fcc0394267c9bdbe3dc0a8a7e41</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Playing</name>
-      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
-      <anchor>ac43af72c98c077500b239bc75b812f03af07bdea9f70ef7606dfc9f955beeee18</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Stopped</name>
-      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
-      <anchor>ac43af72c98c077500b239bc75b812f03adabb01e8aa85b2f54b344890addf764a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Paused</name>
-      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
-      <anchor>ac43af72c98c077500b239bc75b812f03ac3ca1fcc0394267c9bdbe3dc0a8a7e41</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Playing</name>
-      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
-      <anchor>ac43af72c98c077500b239bc75b812f03af07bdea9f70ef7606dfc9f955beeee18</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>Sound</name>
-      <anchorfile>classsf_1_1Sound.html</anchorfile>
-      <anchor>a36ab74beaaa953d9879c933ddd246282</anchor>
-      <arglist>()</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -11874,6 +7368,13 @@
       <type></type>
       <name>Sound</name>
       <anchorfile>classsf_1_1Sound.html</anchorfile>
+      <anchor>a3cda0c4057a9b0d751a3e44539a36621</anchor>
+      <arglist>(const SoundBuffer &amp;&amp;buffer)=delete</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Sound</name>
+      <anchorfile>classsf_1_1Sound.html</anchorfile>
       <anchor>ae05eeed6377932694d86b3011be366c0</anchor>
       <arglist>(const Sound &amp;copy)</arglist>
     </member>
@@ -11881,29 +7382,29 @@
       <type></type>
       <name>~Sound</name>
       <anchorfile>classsf_1_1Sound.html</anchorfile>
-      <anchor>ad0792c35310eba2dffd8489c80fad076</anchor>
-      <arglist>()</arglist>
+      <anchor>a24f981166efa844dcd8f2658ff8210ce</anchor>
+      <arglist>() override</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>play</name>
       <anchorfile>classsf_1_1Sound.html</anchorfile>
-      <anchor>a2953ffe632536e72e696fd880ced2532</anchor>
-      <arglist>()</arglist>
+      <anchor>a969d9c9c5e742ba91a39f7f12fed9096</anchor>
+      <arglist>() override</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>pause</name>
       <anchorfile>classsf_1_1Sound.html</anchorfile>
-      <anchor>a5eeb25815bfa8cdc4a6cc000b7b19ad5</anchor>
-      <arglist>()</arglist>
+      <anchor>a24b31c90af33c6bdc302f876abdf8a39</anchor>
+      <arglist>() override</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>stop</name>
       <anchorfile>classsf_1_1Sound.html</anchorfile>
-      <anchor>aa9c91c34f7c6d344d5ee9b997511f754</anchor>
-      <arglist>()</arglist>
+      <anchor>a90c9112782d5bc424a8e9e3ee7ecef19</anchor>
+      <arglist>() override</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -11914,9 +7415,16 @@
     </member>
     <member kind="function">
       <type>void</type>
-      <name>setLoop</name>
+      <name>setBuffer</name>
       <anchorfile>classsf_1_1Sound.html</anchorfile>
-      <anchor>af23ab4f78f975bbabac031102321612b</anchor>
+      <anchor>aa5f8eddbb8f545db03d0873675c918bc</anchor>
+      <arglist>(const SoundBuffer &amp;&amp;buffer)=delete</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setLooping</name>
+      <anchorfile>classsf_1_1Sound.html</anchorfile>
+      <anchor>a29762d42795128ec837907617edf2b8e</anchor>
       <arglist>(bool loop)</arglist>
     </member>
     <member kind="function">
@@ -11927,17 +7435,24 @@
       <arglist>(Time timeOffset)</arglist>
     </member>
     <member kind="function">
-      <type>const SoundBuffer *</type>
+      <type>void</type>
+      <name>setEffectProcessor</name>
+      <anchorfile>classsf_1_1Sound.html</anchorfile>
+      <anchor>ad35759080c15af30afec2493b59bec61</anchor>
+      <arglist>(EffectProcessor effectProcessor) override</arglist>
+    </member>
+    <member kind="function">
+      <type>const SoundBuffer &amp;</type>
       <name>getBuffer</name>
       <anchorfile>classsf_1_1Sound.html</anchorfile>
-      <anchor>a7c0f6033856909eeefa2e6696db96ef2</anchor>
+      <anchor>ab63abf13fd126bd1c391cb6a278bd0f3</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
-      <name>getLoop</name>
+      <name>isLooping</name>
       <anchorfile>classsf_1_1Sound.html</anchorfile>
-      <anchor>a054da07266ce8f39229495146e3041eb</anchor>
+      <anchor>a48d0c7667063feffc36f3dd0025f8ca2</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
@@ -11951,8 +7466,8 @@
       <type>Status</type>
       <name>getStatus</name>
       <anchorfile>classsf_1_1Sound.html</anchorfile>
-      <anchor>a406fc363594a7718a53ebef49a870f51</anchor>
-      <arglist>() const</arglist>
+      <anchor>a1291b375d4fe31a313ab969dac814517</anchor>
+      <arglist>() const override</arglist>
     </member>
     <member kind="function">
       <type>Sound &amp;</type>
@@ -11963,17 +7478,17 @@
     </member>
     <member kind="function">
       <type>void</type>
-      <name>resetBuffer</name>
-      <anchorfile>classsf_1_1Sound.html</anchorfile>
-      <anchor>acb7289d45e06fb76b8292ac84beb82a7</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
       <name>setPitch</name>
       <anchorfile>classsf_1_1SoundSource.html</anchorfile>
       <anchor>a72a13695ed48b7f7b55e7cd4431f4bb6</anchor>
       <arglist>(float pitch)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setPan</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>ad08a99b6f3492b940a2ef20c8d3cbc72</anchor>
+      <arglist>(float pan)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -11984,10 +7499,10 @@
     </member>
     <member kind="function">
       <type>void</type>
-      <name>setPosition</name>
+      <name>setSpatializationEnabled</name>
       <anchorfile>classsf_1_1SoundSource.html</anchorfile>
-      <anchor>a0480257ea25d986eba6cc3c1a6f8d7c2</anchor>
-      <arglist>(float x, float y, float z)</arglist>
+      <anchor>a6586a19a8d1060bdf93e3c4b6ee039a7</anchor>
+      <arglist>(bool enabled)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -11995,6 +7510,41 @@
       <anchorfile>classsf_1_1SoundSource.html</anchorfile>
       <anchor>a17ba9ed01925395652181a7b2a7d3aef</anchor>
       <arglist>(const Vector3f &amp;position)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setDirection</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>ac46223c70c01f43bb6a443001cdd0599</anchor>
+      <arglist>(const Vector3f &amp;direction)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setCone</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>aba2cbcc0be18840880b54a112a0e69a1</anchor>
+      <arglist>(const Cone &amp;cone)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setVelocity</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>a3ed894bdb323e26518c9e1548fc3488c</anchor>
+      <arglist>(const Vector3f &amp;velocity)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setDopplerFactor</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>a2d229ff4e5f5d61bb12c1a6b94841f96</anchor>
+      <arglist>(float factor)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setDirectionalAttenuationFactor</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>aeae4c21b585e54814b6a8ca8542ddf49</anchor>
+      <arglist>(float factor)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -12012,6 +7562,27 @@
     </member>
     <member kind="function">
       <type>void</type>
+      <name>setMaxDistance</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>a484275e6ecfa041ea9e690a8635c2212</anchor>
+      <arglist>(float distance)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setMinGain</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>ae6789b20e1a7525d6a7611466e955f50</anchor>
+      <arglist>(float gain)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setMaxGain</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>aaf799cceb2a8b3d5a93320c35a955fb1</anchor>
+      <arglist>(float gain)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
       <name>setAttenuation</name>
       <anchorfile>classsf_1_1SoundSource.html</anchorfile>
       <anchor>aa2adff44cd2f8b4e3c7315d7c2a45626</anchor>
@@ -12026,9 +7597,23 @@
     </member>
     <member kind="function">
       <type>float</type>
+      <name>getPan</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>a0fbe0259aa4fc8440d34d156bb8dd901</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
       <name>getVolume</name>
       <anchorfile>classsf_1_1SoundSource.html</anchorfile>
       <anchor>a04243fb5edf64561689b1d58953fc4ce</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isSpatializationEnabled</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>a805a8bba4ce7ac1f04fdb073974fee9b</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
@@ -12036,6 +7621,41 @@
       <name>getPosition</name>
       <anchorfile>classsf_1_1SoundSource.html</anchorfile>
       <anchor>a8d199521f55550c7a3b2b0f6950dffa1</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>Vector3f</type>
+      <name>getDirection</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>a2d9b249242e403d0f2638977357995fd</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>Cone</type>
+      <name>getCone</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>adee94455dfe9d1a87ec45d1afe09e092</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>Vector3f</type>
+      <name>getVelocity</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>a9ae37256230fe3bce3ddab5edf8936a1</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
+      <name>getDopplerFactor</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>af6eb03a66214b68bc2f4edb42952e6f5</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
+      <name>getDirectionalAttenuationFactor</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>aa1ac48f196605eb96521344bc8eb93b5</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
@@ -12054,29 +7674,49 @@
     </member>
     <member kind="function">
       <type>float</type>
+      <name>getMaxDistance</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>a471e2644f3599ac583bca92072ed3eec</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
+      <name>getMinGain</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>a08a8b71fc60a4549db55add457209829</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
+      <name>getMaxGain</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>a706eddad92fa4cf16b108b8942b72f26</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
       <name>getAttenuation</name>
       <anchorfile>classsf_1_1SoundSource.html</anchorfile>
       <anchor>a8ad7dafb4f1b4afbc638cebe24f48cc9</anchor>
       <arglist>() const</arglist>
     </member>
-    <member kind="variable" protection="protected">
-      <type>unsigned int</type>
-      <name>m_source</name>
-      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
-      <anchor>a0223cef4b1c587e6e1e17b4c92c4479c</anchor>
+    <member kind="friend" protection="private">
+      <type>friend class</type>
+      <name>SoundBuffer</name>
+      <anchorfile>classsf_1_1Sound.html</anchorfile>
+      <anchor>a4ddd3b9947da90e78c95c2d8249798c4</anchor>
       <arglist></arglist>
     </member>
   </compound>
   <compound kind="class">
     <name>sf::SoundBuffer</name>
     <filename>classsf_1_1SoundBuffer.html</filename>
-    <base protection="private">sf::AlResource</base>
     <member kind="function">
       <type></type>
       <name>SoundBuffer</name>
       <anchorfile>classsf_1_1SoundBuffer.html</anchorfile>
-      <anchor>a0cabfbfe19b831bf7d5c9592d92ef233</anchor>
-      <arglist>()</arglist>
+      <anchor>a7e322e6d110d54650e729c41112c4666</anchor>
+      <arglist>()=default</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -12084,6 +7724,34 @@
       <anchorfile>classsf_1_1SoundBuffer.html</anchorfile>
       <anchor>aaf000fc741ff27015907e8588263f4a6</anchor>
       <arglist>(const SoundBuffer &amp;copy)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>SoundBuffer</name>
+      <anchorfile>classsf_1_1SoundBuffer.html</anchorfile>
+      <anchor>a1b2344bb0444fd4ce864369a95df00c2</anchor>
+      <arglist>(const std::filesystem::path &amp;filename)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>SoundBuffer</name>
+      <anchorfile>classsf_1_1SoundBuffer.html</anchorfile>
+      <anchor>af34d1a5bb6db60aead02493090600891</anchor>
+      <arglist>(const void *data, std::size_t sizeInBytes)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>SoundBuffer</name>
+      <anchorfile>classsf_1_1SoundBuffer.html</anchorfile>
+      <anchor>aee16d82812f9c803a55159bb44df891c</anchor>
+      <arglist>(InputStream &amp;stream)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>SoundBuffer</name>
+      <anchorfile>classsf_1_1SoundBuffer.html</anchorfile>
+      <anchor>a4a1a60c07dac5f12d189f2b628fb607a</anchor>
+      <arglist>(const std::int16_t *samples, std::uint64_t sampleCount, unsigned int channelCount, unsigned int sampleRate, const std::vector&lt; SoundChannel &gt; &amp;channelMap)</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -12096,8 +7764,8 @@
       <type>bool</type>
       <name>loadFromFile</name>
       <anchorfile>classsf_1_1SoundBuffer.html</anchorfile>
-      <anchor>a2be6a8025c97eb622a7dff6cf2594394</anchor>
-      <arglist>(const std::string &amp;filename)</arglist>
+      <anchor>a54a9a27b31c1a787fd0ae65936f6a09d</anchor>
+      <arglist>(const std::filesystem::path &amp;filename)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
@@ -12117,28 +7785,28 @@
       <type>bool</type>
       <name>loadFromSamples</name>
       <anchorfile>classsf_1_1SoundBuffer.html</anchorfile>
-      <anchor>a42d51ce4bb3b60c7ea06f63c273fd063</anchor>
-      <arglist>(const Int16 *samples, Uint64 sampleCount, unsigned int channelCount, unsigned int sampleRate)</arglist>
+      <anchor>a8189b2f4dc98bfaeefa49cd2c5a0fc33</anchor>
+      <arglist>(const std::int16_t *samples, std::uint64_t sampleCount, unsigned int channelCount, unsigned int sampleRate, const std::vector&lt; SoundChannel &gt; &amp;channelMap)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>saveToFile</name>
       <anchorfile>classsf_1_1SoundBuffer.html</anchorfile>
-      <anchor>aade64260c6375580a085314a30be007e</anchor>
-      <arglist>(const std::string &amp;filename) const</arglist>
+      <anchor>ab6a37b1508233b505db66a0e47304ae8</anchor>
+      <arglist>(const std::filesystem::path &amp;filename) const</arglist>
     </member>
     <member kind="function">
-      <type>const Int16 *</type>
+      <type>const std::int16_t *</type>
       <name>getSamples</name>
       <anchorfile>classsf_1_1SoundBuffer.html</anchorfile>
-      <anchor>a3d5571a5231d3aea0d2cea933c38cc9e</anchor>
+      <anchor>a5ae1d0f4170add05ed9a8345f4745674</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>Uint64</type>
+      <type>std::uint64_t</type>
       <name>getSampleCount</name>
       <anchorfile>classsf_1_1SoundBuffer.html</anchorfile>
-      <anchor>aebe2a4bdbfbd9249353748da3f6a4fa1</anchor>
+      <anchor>a7dc9181bddf117b596e15cb5ffbf7c97</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
@@ -12156,6 +7824,13 @@
       <arglist>() const</arglist>
     </member>
     <member kind="function">
+      <type>std::vector&lt; SoundChannel &gt;</type>
+      <name>getChannelMap</name>
+      <anchorfile>classsf_1_1SoundBuffer.html</anchorfile>
+      <anchor>a604d63466e4b89f9495147a215d4415c</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
       <type>Time</type>
       <name>getDuration</name>
       <anchorfile>classsf_1_1SoundBuffer.html</anchorfile>
@@ -12169,6 +7844,13 @@
       <anchor>ad0b6f45d3008cd7d29d340195e68459a</anchor>
       <arglist>(const SoundBuffer &amp;right)</arglist>
     </member>
+    <member kind="friend" protection="private">
+      <type>friend class</type>
+      <name>Sound</name>
+      <anchorfile>classsf_1_1SoundBuffer.html</anchorfile>
+      <anchor>a50914f77c7cf4fb97616c898c5291f4b</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="class">
     <name>sf::SoundBufferRecorder</name>
@@ -12178,8 +7860,8 @@
       <type></type>
       <name>~SoundBufferRecorder</name>
       <anchorfile>classsf_1_1SoundBufferRecorder.html</anchorfile>
-      <anchor>a350f7f885ccfd12b4c6c120c23695637</anchor>
-      <arglist>()</arglist>
+      <anchor>ac123487df9d13a4f4ab427bfeb433012</anchor>
+      <arglist>() override</arglist>
     </member>
     <member kind="function">
       <type>const SoundBuffer &amp;</type>
@@ -12237,6 +7919,13 @@
       <anchor>a610e98e7a73b316ce26b7c55234f86e9</anchor>
       <arglist>() const</arglist>
     </member>
+    <member kind="function">
+      <type>const std::vector&lt; SoundChannel &gt; &amp;</type>
+      <name>getChannelMap</name>
+      <anchorfile>classsf_1_1SoundRecorder.html</anchorfile>
+      <anchor>a1be96e9dc3298ea4f25ca37b147d3036</anchor>
+      <arglist>() const</arglist>
+    </member>
     <member kind="function" static="yes">
       <type>static std::vector&lt; std::string &gt;</type>
       <name>getAvailableDevices</name>
@@ -12258,33 +7947,26 @@
       <anchor>aab2bd0fee9e48d6cfd449b1cb078ce5a</anchor>
       <arglist>()</arglist>
     </member>
-    <member kind="function" protection="protected" virtualness="virtual">
-      <type>virtual bool</type>
+    <member kind="function" protection="protected">
+      <type>bool</type>
       <name>onStart</name>
       <anchorfile>classsf_1_1SoundBufferRecorder.html</anchorfile>
-      <anchor>a531a7445fc8a48eaf9fc039c83f17c6f</anchor>
-      <arglist>()</arglist>
+      <anchor>a5975467f5ba31bd5ba83508eb464cfea</anchor>
+      <arglist>() override</arglist>
     </member>
-    <member kind="function" protection="protected" virtualness="virtual">
-      <type>virtual bool</type>
+    <member kind="function" protection="protected">
+      <type>bool</type>
       <name>onProcessSamples</name>
       <anchorfile>classsf_1_1SoundBufferRecorder.html</anchorfile>
-      <anchor>a9ceb94de14632ae8c1b78faf603b4767</anchor>
-      <arglist>(const Int16 *samples, std::size_t sampleCount)</arglist>
-    </member>
-    <member kind="function" protection="protected" virtualness="virtual">
-      <type>virtual void</type>
-      <name>onStop</name>
-      <anchorfile>classsf_1_1SoundBufferRecorder.html</anchorfile>
-      <anchor>ab8e53849312413431873a5869d509f1e</anchor>
-      <arglist>()</arglist>
+      <anchor>a6bf6422aaeb27a8ee1ecc31db2331608</anchor>
+      <arglist>(const std::int16_t *samples, std::size_t sampleCount) override</arglist>
     </member>
     <member kind="function" protection="protected">
       <type>void</type>
-      <name>setProcessingInterval</name>
-      <anchorfile>classsf_1_1SoundRecorder.html</anchorfile>
-      <anchor>a85b7fb8a86c08b5084f8f142767bccf6</anchor>
-      <arglist>(Time interval)</arglist>
+      <name>onStop</name>
+      <anchorfile>classsf_1_1SoundBufferRecorder.html</anchorfile>
+      <anchor>a9e94cf274b429b1bdc728b73c02a122f</anchor>
+      <arglist>() override</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -12305,6 +7987,13 @@
       <arglist>()</arglist>
     </member>
     <member kind="function" static="yes">
+      <type>static bool</type>
+      <name>isReaderRegistered</name>
+      <anchorfile>classsf_1_1SoundFileFactory.html</anchorfile>
+      <anchor>aef31ea113ce51e1952d2b2447e15cc3d</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" static="yes">
       <type>static void</type>
       <name>registerWriter</name>
       <anchorfile>classsf_1_1SoundFileFactory.html</anchorfile>
@@ -12319,32 +8008,39 @@
       <arglist>()</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static SoundFileReader *</type>
-      <name>createReaderFromFilename</name>
+      <type>static bool</type>
+      <name>isWriterRegistered</name>
       <anchorfile>classsf_1_1SoundFileFactory.html</anchorfile>
-      <anchor>ae68185540db5e2a451d626be45036fe0</anchor>
-      <arglist>(const std::string &amp;filename)</arglist>
+      <anchor>af841dde1a45182a9d4a7ae73ce194256</anchor>
+      <arglist>()</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static SoundFileReader *</type>
+      <type>static std::unique_ptr&lt; SoundFileReader &gt;</type>
+      <name>createReaderFromFilename</name>
+      <anchorfile>classsf_1_1SoundFileFactory.html</anchorfile>
+      <anchor>a1ca32d668aa8982fb7b5d45b131d373f</anchor>
+      <arglist>(const std::filesystem::path &amp;filename)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static std::unique_ptr&lt; SoundFileReader &gt;</type>
       <name>createReaderFromMemory</name>
       <anchorfile>classsf_1_1SoundFileFactory.html</anchorfile>
-      <anchor>a2384ed647b08c5b2bbf43566d5d7b5fd</anchor>
+      <anchor>a714f540f8ed8c3cdd770833ab2c1ec89</anchor>
       <arglist>(const void *data, std::size_t sizeInBytes)</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static SoundFileReader *</type>
+      <type>static std::unique_ptr&lt; SoundFileReader &gt;</type>
       <name>createReaderFromStream</name>
       <anchorfile>classsf_1_1SoundFileFactory.html</anchorfile>
-      <anchor>af64ce454cde415ebd3ca5442801d87d8</anchor>
+      <anchor>a46fca68efa236f379d5370f0c673b3ef</anchor>
       <arglist>(InputStream &amp;stream)</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static SoundFileWriter *</type>
+      <type>static std::unique_ptr&lt; SoundFileWriter &gt;</type>
       <name>createWriterFromFilename</name>
       <anchorfile>classsf_1_1SoundFileFactory.html</anchorfile>
-      <anchor>a2bc9da55d78be2c41a273bbbea4c0978</anchor>
-      <arglist>(const std::string &amp;filename)</arglist>
+      <anchor>a273158ab5da4c484ca49d735de5f0454</anchor>
+      <arglist>(const std::filesystem::path &amp;filename)</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -12355,29 +8051,29 @@
       <type>virtual</type>
       <name>~SoundFileReader</name>
       <anchorfile>classsf_1_1SoundFileReader.html</anchorfile>
-      <anchor>a34163297f302d15818c76b54f815acc8</anchor>
-      <arglist>()</arglist>
+      <anchor>a970f3fcf831511a9bbbf1547d4f97a8e</anchor>
+      <arglist>()=default</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
+      <type>virtual std::optional&lt; Info &gt;</type>
       <name>open</name>
       <anchorfile>classsf_1_1SoundFileReader.html</anchorfile>
-      <anchor>aa1d2fee2ba8f359c833ab74590d55935</anchor>
-      <arglist>(InputStream &amp;stream, Info &amp;info)=0</arglist>
+      <anchor>a6b2fdac6bac532ad92567877f70c8ef0</anchor>
+      <arglist>(InputStream &amp;stream)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>seek</name>
       <anchorfile>classsf_1_1SoundFileReader.html</anchorfile>
-      <anchor>a1e18ade5ffe882bdfa20a2ebe7e2b015</anchor>
-      <arglist>(Uint64 sampleOffset)=0</arglist>
+      <anchor>aeca1cdc8b1f7ccb131d71802c4c22d26</anchor>
+      <arglist>(std::uint64_t sampleOffset)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
-      <type>virtual Uint64</type>
+      <type>virtual std::uint64_t</type>
       <name>read</name>
       <anchorfile>classsf_1_1SoundFileReader.html</anchorfile>
-      <anchor>a3b7d86769ea07e24e7b0f0486bed7591</anchor>
-      <arglist>(Int16 *samples, Uint64 maxCount)=0</arglist>
+      <anchor>af69875a2a6352c25ad58e2d5d1884f31</anchor>
+      <arglist>(std::int16_t *samples, std::uint64_t maxCount)=0</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -12387,28 +8083,27 @@
       <type>virtual</type>
       <name>~SoundFileWriter</name>
       <anchorfile>classsf_1_1SoundFileWriter.html</anchorfile>
-      <anchor>a76944fc158688f35050bd5b592c90270</anchor>
-      <arglist>()</arglist>
+      <anchor>a566338f5ef844496209e0b6d5fdb0f0b</anchor>
+      <arglist>()=default</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual bool</type>
       <name>open</name>
       <anchorfile>classsf_1_1SoundFileWriter.html</anchorfile>
-      <anchor>a5c92bcaaa880ef4d3eaab18dae1d3d07</anchor>
-      <arglist>(const std::string &amp;filename, unsigned int sampleRate, unsigned int channelCount)=0</arglist>
+      <anchor>a48ab92439e669bd1417e0bbfbc2b44c9</anchor>
+      <arglist>(const std::filesystem::path &amp;filename, unsigned int sampleRate, unsigned int channelCount, const std::vector&lt; SoundChannel &gt; &amp;channelMap)=0</arglist>
     </member>
     <member kind="function" virtualness="pure">
       <type>virtual void</type>
       <name>write</name>
       <anchorfile>classsf_1_1SoundFileWriter.html</anchorfile>
-      <anchor>a4ce597e7682d22c5b2c98d77e931a1da</anchor>
-      <arglist>(const Int16 *samples, Uint64 count)=0</arglist>
+      <anchor>a53c63daec28b53db4697bd4024ea3dd4</anchor>
+      <arglist>(const std::int16_t *samples, std::uint64_t count)=0</arglist>
     </member>
   </compound>
   <compound kind="class">
     <name>sf::SoundRecorder</name>
     <filename>classsf_1_1SoundRecorder.html</filename>
-    <base protection="private">sf::AlResource</base>
     <member kind="function" virtualness="virtual">
       <type>virtual</type>
       <name>~SoundRecorder</name>
@@ -12465,6 +8160,13 @@
       <anchor>a610e98e7a73b316ce26b7c55234f86e9</anchor>
       <arglist>() const</arglist>
     </member>
+    <member kind="function">
+      <type>const std::vector&lt; SoundChannel &gt; &amp;</type>
+      <name>getChannelMap</name>
+      <anchorfile>classsf_1_1SoundRecorder.html</anchorfile>
+      <anchor>a1be96e9dc3298ea4f25ca37b147d3036</anchor>
+      <arglist>() const</arglist>
+    </member>
     <member kind="function" static="yes">
       <type>static std::vector&lt; std::string &gt;</type>
       <name>getAvailableDevices</name>
@@ -12493,13 +8195,6 @@
       <anchor>a50ebad413c4f157408a0fa49f23212a9</anchor>
       <arglist>()</arglist>
     </member>
-    <member kind="function" protection="protected">
-      <type>void</type>
-      <name>setProcessingInterval</name>
-      <anchorfile>classsf_1_1SoundRecorder.html</anchorfile>
-      <anchor>a85b7fb8a86c08b5084f8f142767bccf6</anchor>
-      <arglist>(Time interval)</arglist>
-    </member>
     <member kind="function" protection="protected" virtualness="virtual">
       <type>virtual bool</type>
       <name>onStart</name>
@@ -12511,8 +8206,8 @@
       <type>virtual bool</type>
       <name>onProcessSamples</name>
       <anchorfile>classsf_1_1SoundRecorder.html</anchorfile>
-      <anchor>a2670124cbe7a87c7e46b4840807f4fd7</anchor>
-      <arglist>(const Int16 *samples, std::size_t sampleCount)=0</arglist>
+      <anchor>acc3e296fe4fa08a4b0486ec6b17ed4d6</anchor>
+      <arglist>(const std::int16_t *samples, std::size_t sampleCount)=0</arglist>
     </member>
     <member kind="function" protection="protected" virtualness="virtual">
       <type>virtual void</type>
@@ -12525,63 +8220,52 @@
   <compound kind="class">
     <name>sf::SoundSource</name>
     <filename>classsf_1_1SoundSource.html</filename>
-    <base protection="private">sf::AlResource</base>
+    <base protection="protected">sf::AudioResource</base>
+    <class kind="struct">sf::SoundSource::Cone</class>
     <member kind="enumeration">
       <type></type>
       <name>Status</name>
       <anchorfile>classsf_1_1SoundSource.html</anchorfile>
       <anchor>ac43af72c98c077500b239bc75b812f03</anchor>
       <arglist></arglist>
+      <enumvalue file="classsf_1_1SoundSource.html" anchor="ac43af72c98c077500b239bc75b812f03ac23e2b09ebe6bf4cb5e2a9abe85c0be2">Stopped</enumvalue>
+      <enumvalue file="classsf_1_1SoundSource.html" anchor="ac43af72c98c077500b239bc75b812f03ae99180abf47a8b3a856e0bcb2656990a">Paused</enumvalue>
+      <enumvalue file="classsf_1_1SoundSource.html" anchor="ac43af72c98c077500b239bc75b812f03ac9dbb2b7c84159b632d71e512eba8428">Playing</enumvalue>
     </member>
-    <member kind="enumvalue">
-      <name>Stopped</name>
+    <member kind="typedef">
+      <type>std::function&lt; void(const float *inputFrames, unsigned int &amp;inputFrameCount, float *outputFrames, unsigned int &amp;outputFrameCount, unsigned int frameChannelCount)&gt;</type>
+      <name>EffectProcessor</name>
       <anchorfile>classsf_1_1SoundSource.html</anchorfile>
-      <anchor>ac43af72c98c077500b239bc75b812f03adabb01e8aa85b2f54b344890addf764a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Paused</name>
-      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
-      <anchor>ac43af72c98c077500b239bc75b812f03ac3ca1fcc0394267c9bdbe3dc0a8a7e41</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Playing</name>
-      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
-      <anchor>ac43af72c98c077500b239bc75b812f03af07bdea9f70ef7606dfc9f955beeee18</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Stopped</name>
-      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
-      <anchor>ac43af72c98c077500b239bc75b812f03adabb01e8aa85b2f54b344890addf764a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Paused</name>
-      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
-      <anchor>ac43af72c98c077500b239bc75b812f03ac3ca1fcc0394267c9bdbe3dc0a8a7e41</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Playing</name>
-      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
-      <anchor>ac43af72c98c077500b239bc75b812f03af07bdea9f70ef7606dfc9f955beeee18</anchor>
+      <anchor>ab13ce12bd2ef4856511824557b07cce5</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>SoundSource</name>
       <anchorfile>classsf_1_1SoundSource.html</anchorfile>
-      <anchor>ae0c7728c1449fdebe65749ab6fcb3170</anchor>
-      <arglist>(const SoundSource &amp;copy)</arglist>
+      <anchor>a6ce8c6dd7a8700d4f3be3f2dcc605e56</anchor>
+      <arglist>(const SoundSource &amp;)=default</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>SoundSource</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>a51ddcc26cad71ea06a8ca9bda6559f76</anchor>
+      <arglist>(SoundSource &amp;&amp;) noexcept=default</arglist>
+    </member>
+    <member kind="function">
+      <type>SoundSource &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>aef012cb2878441921a68bb476e38fda0</anchor>
+      <arglist>(SoundSource &amp;&amp;) noexcept=default</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual</type>
       <name>~SoundSource</name>
       <anchorfile>classsf_1_1SoundSource.html</anchorfile>
-      <anchor>a77c7c1524f8cb81df2de9375b0f87c5c</anchor>
-      <arglist>()</arglist>
+      <anchor>afa948f51e57183c24922dc477371cbbf</anchor>
+      <arglist>()=default</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -12592,6 +8276,13 @@
     </member>
     <member kind="function">
       <type>void</type>
+      <name>setPan</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>ad08a99b6f3492b940a2ef20c8d3cbc72</anchor>
+      <arglist>(float pan)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
       <name>setVolume</name>
       <anchorfile>classsf_1_1SoundSource.html</anchorfile>
       <anchor>a2f192f2b49fb8e2b82f3498d3663fcc2</anchor>
@@ -12599,10 +8290,10 @@
     </member>
     <member kind="function">
       <type>void</type>
-      <name>setPosition</name>
+      <name>setSpatializationEnabled</name>
       <anchorfile>classsf_1_1SoundSource.html</anchorfile>
-      <anchor>a0480257ea25d986eba6cc3c1a6f8d7c2</anchor>
-      <arglist>(float x, float y, float z)</arglist>
+      <anchor>a6586a19a8d1060bdf93e3c4b6ee039a7</anchor>
+      <arglist>(bool enabled)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -12610,6 +8301,41 @@
       <anchorfile>classsf_1_1SoundSource.html</anchorfile>
       <anchor>a17ba9ed01925395652181a7b2a7d3aef</anchor>
       <arglist>(const Vector3f &amp;position)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setDirection</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>ac46223c70c01f43bb6a443001cdd0599</anchor>
+      <arglist>(const Vector3f &amp;direction)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setCone</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>aba2cbcc0be18840880b54a112a0e69a1</anchor>
+      <arglist>(const Cone &amp;cone)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setVelocity</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>a3ed894bdb323e26518c9e1548fc3488c</anchor>
+      <arglist>(const Vector3f &amp;velocity)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setDopplerFactor</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>a2d229ff4e5f5d61bb12c1a6b94841f96</anchor>
+      <arglist>(float factor)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setDirectionalAttenuationFactor</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>aeae4c21b585e54814b6a8ca8542ddf49</anchor>
+      <arglist>(float factor)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -12627,10 +8353,38 @@
     </member>
     <member kind="function">
       <type>void</type>
+      <name>setMaxDistance</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>a484275e6ecfa041ea9e690a8635c2212</anchor>
+      <arglist>(float distance)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setMinGain</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>ae6789b20e1a7525d6a7611466e955f50</anchor>
+      <arglist>(float gain)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setMaxGain</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>aaf799cceb2a8b3d5a93320c35a955fb1</anchor>
+      <arglist>(float gain)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
       <name>setAttenuation</name>
       <anchorfile>classsf_1_1SoundSource.html</anchorfile>
       <anchor>aa2adff44cd2f8b4e3c7315d7c2a45626</anchor>
       <arglist>(float attenuation)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>setEffectProcessor</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>a93f431c479da8b7774af4f393099ada4</anchor>
+      <arglist>(EffectProcessor effectProcessor)</arglist>
     </member>
     <member kind="function">
       <type>float</type>
@@ -12641,9 +8395,23 @@
     </member>
     <member kind="function">
       <type>float</type>
+      <name>getPan</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>a0fbe0259aa4fc8440d34d156bb8dd901</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
       <name>getVolume</name>
       <anchorfile>classsf_1_1SoundSource.html</anchorfile>
       <anchor>a04243fb5edf64561689b1d58953fc4ce</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isSpatializationEnabled</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>a805a8bba4ce7ac1f04fdb073974fee9b</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
@@ -12651,6 +8419,41 @@
       <name>getPosition</name>
       <anchorfile>classsf_1_1SoundSource.html</anchorfile>
       <anchor>a8d199521f55550c7a3b2b0f6950dffa1</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>Vector3f</type>
+      <name>getDirection</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>a2d9b249242e403d0f2638977357995fd</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>Cone</type>
+      <name>getCone</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>adee94455dfe9d1a87ec45d1afe09e092</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>Vector3f</type>
+      <name>getVelocity</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>a9ae37256230fe3bce3ddab5edf8936a1</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
+      <name>getDopplerFactor</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>af6eb03a66214b68bc2f4edb42952e6f5</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
+      <name>getDirectionalAttenuationFactor</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>aa1ac48f196605eb96521344bc8eb93b5</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
@@ -12665,6 +8468,27 @@
       <name>getMinDistance</name>
       <anchorfile>classsf_1_1SoundSource.html</anchorfile>
       <anchor>a605ca7f359ec1c36fcccdcd4696562ac</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
+      <name>getMaxDistance</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>a471e2644f3599ac583bca92072ed3eec</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
+      <name>getMinGain</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>a08a8b71fc60a4549db55add457209829</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
+      <name>getMaxGain</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>a706eddad92fa4cf16b108b8942b72f26</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
@@ -12702,26 +8526,19 @@
       <anchor>a06501a25b12376befcc7ee1ed4865fda</anchor>
       <arglist>()=0</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
+    <member kind="function" virtualness="pure">
       <type>virtual Status</type>
       <name>getStatus</name>
       <anchorfile>classsf_1_1SoundSource.html</anchorfile>
-      <anchor>aa8d313c31b968159582a999aa66e5ed7</anchor>
-      <arglist>() const</arglist>
+      <anchor>ab4d68d465eb18709d38e164a5c0ee2c4</anchor>
+      <arglist>() const =0</arglist>
     </member>
     <member kind="function" protection="protected">
       <type></type>
       <name>SoundSource</name>
       <anchorfile>classsf_1_1SoundSource.html</anchorfile>
-      <anchor>aefa4bd4460f387d81a0637d293979436</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>unsigned int</type>
-      <name>m_source</name>
-      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
-      <anchor>a0223cef4b1c587e6e1e17b4c92c4479c</anchor>
-      <arglist></arglist>
+      <anchor>aae9b0f8e38214e66d1b54759d6e4ebad</anchor>
+      <arglist>()=default</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -12735,70 +8552,58 @@
       <anchorfile>classsf_1_1SoundSource.html</anchorfile>
       <anchor>ac43af72c98c077500b239bc75b812f03</anchor>
       <arglist></arglist>
+      <enumvalue file="classsf_1_1SoundSource.html" anchor="ac43af72c98c077500b239bc75b812f03ac23e2b09ebe6bf4cb5e2a9abe85c0be2">Stopped</enumvalue>
+      <enumvalue file="classsf_1_1SoundSource.html" anchor="ac43af72c98c077500b239bc75b812f03ae99180abf47a8b3a856e0bcb2656990a">Paused</enumvalue>
+      <enumvalue file="classsf_1_1SoundSource.html" anchor="ac43af72c98c077500b239bc75b812f03ac9dbb2b7c84159b632d71e512eba8428">Playing</enumvalue>
     </member>
-    <member kind="enumvalue">
-      <name>Stopped</name>
+    <member kind="typedef">
+      <type>std::function&lt; void(const float *inputFrames, unsigned int &amp;inputFrameCount, float *outputFrames, unsigned int &amp;outputFrameCount, unsigned int frameChannelCount)&gt;</type>
+      <name>EffectProcessor</name>
       <anchorfile>classsf_1_1SoundSource.html</anchorfile>
-      <anchor>ac43af72c98c077500b239bc75b812f03adabb01e8aa85b2f54b344890addf764a</anchor>
+      <anchor>ab13ce12bd2ef4856511824557b07cce5</anchor>
       <arglist></arglist>
     </member>
-    <member kind="enumvalue">
-      <name>Paused</name>
-      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
-      <anchor>ac43af72c98c077500b239bc75b812f03ac3ca1fcc0394267c9bdbe3dc0a8a7e41</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Playing</name>
-      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
-      <anchor>ac43af72c98c077500b239bc75b812f03af07bdea9f70ef7606dfc9f955beeee18</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Stopped</name>
-      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
-      <anchor>ac43af72c98c077500b239bc75b812f03adabb01e8aa85b2f54b344890addf764a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Paused</name>
-      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
-      <anchor>ac43af72c98c077500b239bc75b812f03ac3ca1fcc0394267c9bdbe3dc0a8a7e41</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Playing</name>
-      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
-      <anchor>ac43af72c98c077500b239bc75b812f03af07bdea9f70ef7606dfc9f955beeee18</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual</type>
+    <member kind="function">
+      <type></type>
       <name>~SoundStream</name>
       <anchorfile>classsf_1_1SoundStream.html</anchorfile>
-      <anchor>a1fafb9f1ca572d23d7d6a17921860d85</anchor>
-      <arglist>()</arglist>
+      <anchor>ad0cec94fbf9e886dd9bdce19d98f4729</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>SoundStream</name>
+      <anchorfile>classsf_1_1SoundStream.html</anchorfile>
+      <anchor>a1b60edd617d16ed4e056715b76928de4</anchor>
+      <arglist>(SoundStream &amp;&amp;) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>SoundStream &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classsf_1_1SoundStream.html</anchorfile>
+      <anchor>a25ebfb535c173096524f656fa63ede23</anchor>
+      <arglist>(SoundStream &amp;&amp;) noexcept</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>play</name>
       <anchorfile>classsf_1_1SoundStream.html</anchorfile>
-      <anchor>afdc08b69cab5f243d9324940a85a1144</anchor>
-      <arglist>()</arglist>
+      <anchor>af05290eb2c6a316790fb18c5912a5dd6</anchor>
+      <arglist>() override</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>pause</name>
       <anchorfile>classsf_1_1SoundStream.html</anchorfile>
-      <anchor>a932ff181e661503cad288b4bb6fe45ca</anchor>
-      <arglist>()</arglist>
+      <anchor>a2285cedcbcb5f3c97828c664934dc0de</anchor>
+      <arglist>() override</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>stop</name>
       <anchorfile>classsf_1_1SoundStream.html</anchorfile>
-      <anchor>a16cc6a0404b32e42c4dce184bb94d0f4</anchor>
-      <arglist>()</arglist>
+      <anchor>a781fe51135fdc5679fe22a5665110143</anchor>
+      <arglist>() override</arglist>
     </member>
     <member kind="function">
       <type>unsigned int</type>
@@ -12815,11 +8620,18 @@
       <arglist>() const</arglist>
     </member>
     <member kind="function">
+      <type>std::vector&lt; SoundChannel &gt;</type>
+      <name>getChannelMap</name>
+      <anchorfile>classsf_1_1SoundStream.html</anchorfile>
+      <anchor>a1ae6bfce0ec385a11e87697323227799</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
       <type>Status</type>
       <name>getStatus</name>
       <anchorfile>classsf_1_1SoundStream.html</anchorfile>
-      <anchor>a64a8193ed728da37c115c65de015849f</anchor>
-      <arglist>() const</arglist>
+      <anchor>a607e74492ca84764be563f36d75a1384</anchor>
+      <arglist>() const override</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -12837,17 +8649,24 @@
     </member>
     <member kind="function">
       <type>void</type>
-      <name>setLoop</name>
+      <name>setLooping</name>
       <anchorfile>classsf_1_1SoundStream.html</anchorfile>
-      <anchor>a43fade018ffba7e4f847a9f00b353f3d</anchor>
+      <anchor>a0c14b35d1dc64bf10e02b7a876540966</anchor>
       <arglist>(bool loop)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
-      <name>getLoop</name>
+      <name>isLooping</name>
       <anchorfile>classsf_1_1SoundStream.html</anchorfile>
-      <anchor>a49d263f9bbaefec4b019bd05fda59b25</anchor>
+      <anchor>a4f72aa9d4e185b4c02ffbb97075c7e82</anchor>
       <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setEffectProcessor</name>
+      <anchorfile>classsf_1_1SoundStream.html</anchorfile>
+      <anchor>a7593f4e30cde575c057d62ff1c47f1b3</anchor>
+      <arglist>(EffectProcessor effectProcessor) override</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -12858,6 +8677,13 @@
     </member>
     <member kind="function">
       <type>void</type>
+      <name>setPan</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>ad08a99b6f3492b940a2ef20c8d3cbc72</anchor>
+      <arglist>(float pan)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
       <name>setVolume</name>
       <anchorfile>classsf_1_1SoundSource.html</anchorfile>
       <anchor>a2f192f2b49fb8e2b82f3498d3663fcc2</anchor>
@@ -12865,10 +8691,10 @@
     </member>
     <member kind="function">
       <type>void</type>
-      <name>setPosition</name>
+      <name>setSpatializationEnabled</name>
       <anchorfile>classsf_1_1SoundSource.html</anchorfile>
-      <anchor>a0480257ea25d986eba6cc3c1a6f8d7c2</anchor>
-      <arglist>(float x, float y, float z)</arglist>
+      <anchor>a6586a19a8d1060bdf93e3c4b6ee039a7</anchor>
+      <arglist>(bool enabled)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -12876,6 +8702,41 @@
       <anchorfile>classsf_1_1SoundSource.html</anchorfile>
       <anchor>a17ba9ed01925395652181a7b2a7d3aef</anchor>
       <arglist>(const Vector3f &amp;position)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setDirection</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>ac46223c70c01f43bb6a443001cdd0599</anchor>
+      <arglist>(const Vector3f &amp;direction)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setCone</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>aba2cbcc0be18840880b54a112a0e69a1</anchor>
+      <arglist>(const Cone &amp;cone)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setVelocity</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>a3ed894bdb323e26518c9e1548fc3488c</anchor>
+      <arglist>(const Vector3f &amp;velocity)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setDopplerFactor</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>a2d229ff4e5f5d61bb12c1a6b94841f96</anchor>
+      <arglist>(float factor)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setDirectionalAttenuationFactor</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>aeae4c21b585e54814b6a8ca8542ddf49</anchor>
+      <arglist>(float factor)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -12893,6 +8754,27 @@
     </member>
     <member kind="function">
       <type>void</type>
+      <name>setMaxDistance</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>a484275e6ecfa041ea9e690a8635c2212</anchor>
+      <arglist>(float distance)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setMinGain</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>ae6789b20e1a7525d6a7611466e955f50</anchor>
+      <arglist>(float gain)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setMaxGain</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>aaf799cceb2a8b3d5a93320c35a955fb1</anchor>
+      <arglist>(float gain)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
       <name>setAttenuation</name>
       <anchorfile>classsf_1_1SoundSource.html</anchorfile>
       <anchor>aa2adff44cd2f8b4e3c7315d7c2a45626</anchor>
@@ -12907,9 +8789,23 @@
     </member>
     <member kind="function">
       <type>float</type>
+      <name>getPan</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>a0fbe0259aa4fc8440d34d156bb8dd901</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
       <name>getVolume</name>
       <anchorfile>classsf_1_1SoundSource.html</anchorfile>
       <anchor>a04243fb5edf64561689b1d58953fc4ce</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isSpatializationEnabled</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>a805a8bba4ce7ac1f04fdb073974fee9b</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
@@ -12917,6 +8813,41 @@
       <name>getPosition</name>
       <anchorfile>classsf_1_1SoundSource.html</anchorfile>
       <anchor>a8d199521f55550c7a3b2b0f6950dffa1</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>Vector3f</type>
+      <name>getDirection</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>a2d9b249242e403d0f2638977357995fd</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>Cone</type>
+      <name>getCone</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>adee94455dfe9d1a87ec45d1afe09e092</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>Vector3f</type>
+      <name>getVelocity</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>a9ae37256230fe3bce3ddab5edf8936a1</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
+      <name>getDopplerFactor</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>af6eb03a66214b68bc2f4edb42952e6f5</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
+      <name>getDirectionalAttenuationFactor</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>aa1ac48f196605eb96521344bc8eb93b5</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
@@ -12935,22 +8866,31 @@
     </member>
     <member kind="function">
       <type>float</type>
+      <name>getMaxDistance</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>a471e2644f3599ac583bca92072ed3eec</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
+      <name>getMinGain</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>a08a8b71fc60a4549db55add457209829</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
+      <name>getMaxGain</name>
+      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
+      <anchor>a706eddad92fa4cf16b108b8942b72f26</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
       <name>getAttenuation</name>
       <anchorfile>classsf_1_1SoundSource.html</anchorfile>
       <anchor>a8ad7dafb4f1b4afbc638cebe24f48cc9</anchor>
       <arglist>() const</arglist>
-    </member>
-    <member kind="enumvalue" protection="protected">
-      <name>NoLoop</name>
-      <anchorfile>classsf_1_1SoundStream.html</anchorfile>
-      <anchor>a7707214e7cd4ffcf1c123e7bcab4092aa2f2c638731fdff0d6fe4e3e82b6f6146</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue" protection="protected">
-      <name>NoLoop</name>
-      <anchorfile>classsf_1_1SoundStream.html</anchorfile>
-      <anchor>a7707214e7cd4ffcf1c123e7bcab4092aa2f2c638731fdff0d6fe4e3e82b6f6146</anchor>
-      <arglist></arglist>
     </member>
     <member kind="function" protection="protected">
       <type></type>
@@ -12963,8 +8903,8 @@
       <type>void</type>
       <name>initialize</name>
       <anchorfile>classsf_1_1SoundStream.html</anchorfile>
-      <anchor>a9c351711198ee1aa77c2fefd3ced4d2c</anchor>
-      <arglist>(unsigned int channelCount, unsigned int sampleRate)</arglist>
+      <anchor>a4a698d4096306ac1792fa320068aa5d0</anchor>
+      <arglist>(unsigned int channelCount, unsigned int sampleRate, const std::vector&lt; SoundChannel &gt; &amp;channelMap)</arglist>
     </member>
     <member kind="function" protection="protected" virtualness="pure">
       <type>virtual bool</type>
@@ -12981,45 +8921,17 @@
       <arglist>(Time timeOffset)=0</arglist>
     </member>
     <member kind="function" protection="protected" virtualness="virtual">
-      <type>virtual Int64</type>
+      <type>virtual std::optional&lt; std::uint64_t &gt;</type>
       <name>onLoop</name>
       <anchorfile>classsf_1_1SoundStream.html</anchorfile>
-      <anchor>a3f717d18846f261fc375d71d6c7e41da</anchor>
+      <anchor>ac7c8b90227522b48f357ac856d6e0853</anchor>
       <arglist>()</arglist>
-    </member>
-    <member kind="function" protection="protected">
-      <type>void</type>
-      <name>setProcessingInterval</name>
-      <anchorfile>classsf_1_1SoundStream.html</anchorfile>
-      <anchor>a3a38d317279163f3766da2e538fbde93</anchor>
-      <arglist>(Time interval)</arglist>
-    </member>
-    <member kind="variable" protection="protected">
-      <type>unsigned int</type>
-      <name>m_source</name>
-      <anchorfile>classsf_1_1SoundSource.html</anchorfile>
-      <anchor>a0223cef4b1c587e6e1e17b4c92c4479c</anchor>
-      <arglist></arglist>
     </member>
   </compound>
   <compound kind="struct">
     <name>sf::Music::Span</name>
     <filename>structsf_1_1Music_1_1Span.html</filename>
     <templarg>typename T</templarg>
-    <member kind="function">
-      <type></type>
-      <name>Span</name>
-      <anchorfile>structsf_1_1Music_1_1Span.html</anchorfile>
-      <anchor>a71e6200a586f650ce002e7e99929ae85</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>Span</name>
-      <anchorfile>structsf_1_1Music_1_1Span.html</anchorfile>
-      <anchor>a935db12207fa3da4c2461cd5e1f9fa0d</anchor>
-      <arglist>(T off, T len)</arglist>
-    </member>
     <member kind="variable">
       <type>T</type>
       <name>offset</name>
@@ -13044,15 +8956,15 @@
       <type></type>
       <name>Sprite</name>
       <anchorfile>classsf_1_1Sprite.html</anchorfile>
-      <anchor>a92559fbca895a96758abf5eabab96984</anchor>
-      <arglist>()</arglist>
+      <anchor>a2a9fca374d7abf084bb1c143a879ff4a</anchor>
+      <arglist>(const Texture &amp;texture)</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>Sprite</name>
       <anchorfile>classsf_1_1Sprite.html</anchorfile>
-      <anchor>a2a9fca374d7abf084bb1c143a879ff4a</anchor>
-      <arglist>(const Texture &amp;texture)</arglist>
+      <anchor>a435bce19c80d0e81e5b421497e6bc6b9</anchor>
+      <arglist>(const Texture &amp;&amp;texture)=delete</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -13062,11 +8974,25 @@
       <arglist>(const Texture &amp;texture, const IntRect &amp;rectangle)</arglist>
     </member>
     <member kind="function">
+      <type></type>
+      <name>Sprite</name>
+      <anchorfile>classsf_1_1Sprite.html</anchorfile>
+      <anchor>aa8b4b6d5a98e8fa6c09f146c04c0d472</anchor>
+      <arglist>(const Texture &amp;&amp;texture, const IntRect &amp;rectangle)=delete</arglist>
+    </member>
+    <member kind="function">
       <type>void</type>
       <name>setTexture</name>
       <anchorfile>classsf_1_1Sprite.html</anchorfile>
       <anchor>a3729c88d88ac38c19317c18e87242560</anchor>
       <arglist>(const Texture &amp;texture, bool resetRect=false)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setTexture</name>
+      <anchorfile>classsf_1_1Sprite.html</anchorfile>
+      <anchor>a4ae0447240b8ddc93e74ed832c570409</anchor>
+      <arglist>(const Texture &amp;&amp;texture, bool resetRect=false)=delete</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -13079,14 +9005,14 @@
       <type>void</type>
       <name>setColor</name>
       <anchorfile>classsf_1_1Sprite.html</anchorfile>
-      <anchor>a14def44da6437bfea20c4df5e71aba4c</anchor>
-      <arglist>(const Color &amp;color)</arglist>
+      <anchor>a2ce64c561193c124cd63d5adb1750ad4</anchor>
+      <arglist>(Color color)</arglist>
     </member>
     <member kind="function">
-      <type>const Texture *</type>
+      <type>const Texture &amp;</type>
       <name>getTexture</name>
       <anchorfile>classsf_1_1Sprite.html</anchorfile>
-      <anchor>a6d0f107b5dd5976be50bc5b163ba21aa</anchor>
+      <anchor>a1fa65388fd2751a8d4ca93722dabdd96</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
@@ -13097,10 +9023,10 @@
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>const Color &amp;</type>
+      <type>Color</type>
       <name>getColor</name>
       <anchorfile>classsf_1_1Sprite.html</anchorfile>
-      <anchor>af4a3ee8177fdd6e472a360a0a837d7cf</anchor>
+      <anchor>a54562d0a2d0a65a37829ee58ca02c289</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
@@ -13121,113 +9047,78 @@
       <type>void</type>
       <name>setPosition</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a4dbfb1a7c80688b0b4c477d706550208</anchor>
-      <arglist>(float x, float y)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>setPosition</name>
-      <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>af1a42209ce2b5d3f07b00f917bcd8015</anchor>
-      <arglist>(const Vector2f &amp;position)</arglist>
+      <anchor>a47c1375b57cbb0e513286e8d11f6dd4d</anchor>
+      <arglist>(Vector2f position)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>setRotation</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a32baf2bf1a74699b03bf8c95030a38ed</anchor>
-      <arglist>(float angle)</arglist>
+      <anchor>a1b4bfa83da965c03ef523c7c33df991f</anchor>
+      <arglist>(Angle angle)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>setScale</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>aaec50b46b3f41b054763304d1e727471</anchor>
-      <arglist>(float factorX, float factorY)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>setScale</name>
-      <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a4c48a87f1626047e448f9c1a68ff167e</anchor>
-      <arglist>(const Vector2f &amp;factors)</arglist>
+      <anchor>a60b82c58502e86f258c9844a1a58400b</anchor>
+      <arglist>(Vector2f factors)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>setOrigin</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a56c67bd80aae8418d13fb96c034d25ec</anchor>
-      <arglist>(float x, float y)</arglist>
+      <anchor>a26788f72ade7ffadb8ba594c3332c4a8</anchor>
+      <arglist>(Vector2f origin)</arglist>
     </member>
     <member kind="function">
-      <type>void</type>
-      <name>setOrigin</name>
-      <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>aa93a835ffbf3bee2098dfbbc695a7f05</anchor>
-      <arglist>(const Vector2f &amp;origin)</arglist>
-    </member>
-    <member kind="function">
-      <type>const Vector2f &amp;</type>
+      <type>Vector2f</type>
       <name>getPosition</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>aea8b18e91a7bf7be589851bb9dd11241</anchor>
+      <anchor>a88a224d0831261591beace74cd3ad67b</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>float</type>
+      <type>Angle</type>
       <name>getRotation</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>aa00b5c5d4a06ac24a94dd72c56931d3a</anchor>
+      <anchor>a11ca740731d6c2cdde3cc8ae3bda3785</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>const Vector2f &amp;</type>
+      <type>Vector2f</type>
       <name>getScale</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a7bcae0e924213f2e89edd8926f2453af</anchor>
+      <anchor>a86fe2b0a7479713d33b71907191f654c</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>const Vector2f &amp;</type>
+      <type>Vector2f</type>
       <name>getOrigin</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a898b33eb6513161eb5c747a072364f15</anchor>
+      <anchor>aa32ea5e8c64716f07d0939252d8d7e31</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>move</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a86b461d6a941ad390c2ad8b6a4a20391</anchor>
-      <arglist>(float offsetX, float offsetY)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>move</name>
-      <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>ab9ca691522f6ddc1a40406849b87c469</anchor>
-      <arglist>(const Vector2f &amp;offset)</arglist>
+      <anchor>a860e50085b49a46a71cd028f7f5d8f6d</anchor>
+      <arglist>(Vector2f offset)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>rotate</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>af8a5ffddc0d93f238fee3bf8efe1ebda</anchor>
-      <arglist>(float angle)</arglist>
+      <anchor>aacd4c9a92b44f5a0cd95e2fe3741f8f1</anchor>
+      <arglist>(Angle angle)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>scale</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a3de0c6d8957f3cf318092f3f60656391</anchor>
-      <arglist>(float factorX, float factorY)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>scale</name>
-      <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>adecaa6c69b1f27dd5194b067d96bb694</anchor>
-      <arglist>(const Vector2f &amp;factor)</arglist>
+      <anchor>a24060d4216813d6f39698cf1cc82be98</anchor>
+      <arglist>(Vector2f factor)</arglist>
     </member>
     <member kind="function">
       <type>const Transform &amp;</type>
@@ -13245,35 +9136,127 @@
     </member>
   </compound>
   <compound kind="class">
+    <name>sf::StencilMode</name>
+    <filename>structsf_1_1StencilMode.html</filename>
+    <member kind="variable">
+      <type>StencilComparison</type>
+      <name>stencilComparison</name>
+      <anchorfile>structsf_1_1StencilMode.html</anchorfile>
+      <anchor>ad1b247f2844eb8dae366c4c8d8977ed2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>StencilUpdateOperation</type>
+      <name>stencilUpdateOperation</name>
+      <anchorfile>structsf_1_1StencilMode.html</anchorfile>
+      <anchor>a4685ec755a0e33523c3f046636670011</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>StencilValue</type>
+      <name>stencilReference</name>
+      <anchorfile>structsf_1_1StencilMode.html</anchorfile>
+      <anchor>a4e39c228d32fce4822b4c0fce708b15a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>StencilValue</type>
+      <name>stencilMask</name>
+      <anchorfile>structsf_1_1StencilMode.html</anchorfile>
+      <anchor>ae36b6ff4d2a4abcd5d50e21e1a7dbd00</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>bool</type>
+      <name>stencilOnly</name>
+      <anchorfile>structsf_1_1StencilMode.html</anchorfile>
+      <anchor>a85ea4a3427e49de1e788a3d0a5969d51</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>operator==</name>
+      <anchorfile>structsf_1_1StencilMode.html</anchorfile>
+      <anchor>a51fba8b31d810e1a958c3feb2da1447e</anchor>
+      <arglist>(const StencilMode &amp;left, const StencilMode &amp;right)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>operator!=</name>
+      <anchorfile>structsf_1_1StencilMode.html</anchorfile>
+      <anchor>ad8233e8089756c2f13ecb37a721224a6</anchor>
+      <arglist>(const StencilMode &amp;left, const StencilMode &amp;right)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>sf::StencilValue</name>
+    <filename>structsf_1_1StencilValue.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>StencilValue</name>
+      <anchorfile>structsf_1_1StencilValue.html</anchorfile>
+      <anchor>a8ac79cb138ad833aa99bacf2bbafaffd</anchor>
+      <arglist>(int theValue)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>StencilValue</name>
+      <anchorfile>structsf_1_1StencilValue.html</anchorfile>
+      <anchor>a9e0667c23fc87d91c067cfce4e6d7f39</anchor>
+      <arglist>(unsigned int theValue)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>StencilValue</name>
+      <anchorfile>structsf_1_1StencilValue.html</anchorfile>
+      <anchor>a98eb5123c9a5aeff6293b17613cc1eef</anchor>
+      <arglist>(T)=delete</arglist>
+    </member>
+    <member kind="variable">
+      <type>unsigned int</type>
+      <name>value</name>
+      <anchorfile>structsf_1_1StencilValue.html</anchorfile>
+      <anchor>a6c770b37b495d6f2a3ad76a93c8e442b</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
     <name>sf::String</name>
     <filename>classsf_1_1String.html</filename>
     <member kind="typedef">
-      <type>std::basic_string&lt; Uint32 &gt;::iterator</type>
+      <type>std::u32string::iterator</type>
       <name>Iterator</name>
       <anchorfile>classsf_1_1String.html</anchorfile>
-      <anchor>ac90f2b7b28f703020f8d027e98806235</anchor>
+      <anchor>aea5ef84201f199e64a00f19d02a38c7a</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
-      <type>std::basic_string&lt; Uint32 &gt;::const_iterator</type>
+      <type>std::u32string::const_iterator</type>
       <name>ConstIterator</name>
       <anchorfile>classsf_1_1String.html</anchorfile>
-      <anchor>a8e18efc2e8464f6eb82818902d527efa</anchor>
+      <anchor>ac59fdada9f3d871d45eb1b48e488dd41</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>String</name>
       <anchorfile>classsf_1_1String.html</anchorfile>
-      <anchor>a9563a4e93f692e0c8e8702b374ef8692</anchor>
-      <arglist>()</arglist>
+      <anchor>a15f73445dc4c9ba203e090daec352434</anchor>
+      <arglist>()=default</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>String</name>
       <anchorfile>classsf_1_1String.html</anchorfile>
-      <anchor>ac9df7f7696cff164794e338f3c89ccc5</anchor>
-      <arglist>(char ansiChar, const std::locale &amp;locale=std::locale())</arglist>
+      <anchor>afcb9432f007259c7f73258b8c8fab652</anchor>
+      <arglist>(std::nullptr_t, const std::locale &amp;={})=delete</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>String</name>
+      <anchorfile>classsf_1_1String.html</anchorfile>
+      <anchor>a49df0509c95eec3e715464c4a9e8f08b</anchor>
+      <arglist>(char ansiChar, const std::locale &amp;locale={})</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -13286,22 +9269,22 @@
       <type></type>
       <name>String</name>
       <anchorfile>classsf_1_1String.html</anchorfile>
-      <anchor>a8e1a5027416d121187908e2ed77079ff</anchor>
-      <arglist>(Uint32 utf32Char)</arglist>
+      <anchor>aafbfb927c8f747e63736ec16cd6762cc</anchor>
+      <arglist>(char32_t utf32Char)</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>String</name>
       <anchorfile>classsf_1_1String.html</anchorfile>
-      <anchor>a57d2b8c289f9894f859564cad034bfc7</anchor>
-      <arglist>(const char *ansiString, const std::locale &amp;locale=std::locale())</arglist>
+      <anchor>a80dfeec3f7a585d386fe1fc364f385af</anchor>
+      <arglist>(const char *ansiString, const std::locale &amp;locale={})</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>String</name>
       <anchorfile>classsf_1_1String.html</anchorfile>
-      <anchor>a0aa41dcbd17b0c36c74d03d3b0147f1e</anchor>
-      <arglist>(const std::string &amp;ansiString, const std::locale &amp;locale=std::locale())</arglist>
+      <anchor>a10cd2998619996c033499751b80f2505</anchor>
+      <arglist>(const std::string &amp;ansiString, const std::locale &amp;locale={})</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -13321,22 +9304,15 @@
       <type></type>
       <name>String</name>
       <anchorfile>classsf_1_1String.html</anchorfile>
-      <anchor>aea3629adf19f9fe713d4946f6c75b214</anchor>
-      <arglist>(const Uint32 *utf32String)</arglist>
+      <anchor>acd4661f257ca19be320d83beccf4c706</anchor>
+      <arglist>(const char32_t *utf32String)</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>String</name>
       <anchorfile>classsf_1_1String.html</anchorfile>
-      <anchor>a6eee86dbe75d16bbcc26e97416c2e1ca</anchor>
-      <arglist>(const std::basic_string&lt; Uint32 &gt; &amp;utf32String)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>String</name>
-      <anchorfile>classsf_1_1String.html</anchorfile>
-      <anchor>af862594d3c4070d8ddbf08cf8dce4f59</anchor>
-      <arglist>(const String &amp;copy)</arglist>
+      <anchor>a38d69200909ad15a74ad6ef866db917a</anchor>
+      <arglist>(std::u32string utf32String)</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -13356,8 +9332,8 @@
       <type>std::string</type>
       <name>toAnsiString</name>
       <anchorfile>classsf_1_1String.html</anchorfile>
-      <anchor>ada5d5bba4528aceb0a1e298553e6c30a</anchor>
-      <arglist>(const std::locale &amp;locale=std::locale()) const</arglist>
+      <anchor>a12d6659486d24cf323b4cb70533e5d38</anchor>
+      <arglist>(const std::locale &amp;locale={}) const</arglist>
     </member>
     <member kind="function">
       <type>std::wstring</type>
@@ -13367,32 +9343,25 @@
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>std::basic_string&lt; Uint8 &gt;</type>
+      <type>sf::U8String</type>
       <name>toUtf8</name>
       <anchorfile>classsf_1_1String.html</anchorfile>
-      <anchor>a2a4f366d5db833ae818881507b46e13a</anchor>
+      <anchor>a2143c53e099dcc167e97ea7deeecff05</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>std::basic_string&lt; Uint16 &gt;</type>
+      <type>std::u16string</type>
       <name>toUtf16</name>
       <anchorfile>classsf_1_1String.html</anchorfile>
-      <anchor>ab805f230a0b2e972f9f32ac4cf11d912</anchor>
+      <anchor>ab285f398a27d65fa60e116da99f6a39e</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>std::basic_string&lt; Uint32 &gt;</type>
+      <type>std::u32string</type>
       <name>toUtf32</name>
       <anchorfile>classsf_1_1String.html</anchorfile>
-      <anchor>aef4f51ebe43465c665c78692d0262e43</anchor>
+      <anchor>a5c2406161cf358a357ae95db25bddad8</anchor>
       <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type>String &amp;</type>
-      <name>operator=</name>
-      <anchorfile>classsf_1_1String.html</anchorfile>
-      <anchor>af14c8e1bf351cf18486f0258c36260d7</anchor>
-      <arglist>(const String &amp;right)</arglist>
     </member>
     <member kind="function">
       <type>String &amp;</type>
@@ -13402,17 +9371,17 @@
       <arglist>(const String &amp;right)</arglist>
     </member>
     <member kind="function">
-      <type>Uint32</type>
+      <type>char32_t</type>
       <name>operator[]</name>
       <anchorfile>classsf_1_1String.html</anchorfile>
-      <anchor>a035c1b585a0ebed81e773ecafed57926</anchor>
+      <anchor>a66b67d7f21d642c65c9b4e48e88e3e93</anchor>
       <arglist>(std::size_t index) const</arglist>
     </member>
     <member kind="function">
-      <type>Uint32 &amp;</type>
+      <type>char32_t &amp;</type>
       <name>operator[]</name>
       <anchorfile>classsf_1_1String.html</anchorfile>
-      <anchor>a3e2041bd9ae84d223e6b12e46e5aa5d6</anchor>
+      <anchor>ac509d36dd836c8499a2813299dea865f</anchor>
       <arglist>(std::size_t index)</arglist>
     </member>
     <member kind="function">
@@ -13479,10 +9448,10 @@
       <arglist>(std::size_t position, std::size_t length=InvalidPos) const</arglist>
     </member>
     <member kind="function">
-      <type>const Uint32 *</type>
+      <type>const char32_t *</type>
       <name>getData</name>
       <anchorfile>classsf_1_1String.html</anchorfile>
-      <anchor>a3ed7f3ad41659a2b31a8d8e99a7b8199</anchor>
+      <anchor>a0f6c1b6979e822a52ee5d150f1e8d4c0</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
@@ -13541,6 +9510,20 @@
       <anchor>abaadecaf12a6b41c54d725c75fd28527</anchor>
       <arglist></arglist>
     </member>
+    <member kind="friend" protection="private">
+      <type>friend bool</type>
+      <name>operator==</name>
+      <anchorfile>classsf_1_1String.html</anchorfile>
+      <anchor>a483931724196c580552b68751fb4d837</anchor>
+      <arglist>(const String &amp;left, const String &amp;right)</arglist>
+    </member>
+    <member kind="friend" protection="private">
+      <type>friend bool</type>
+      <name>operator&lt;</name>
+      <anchorfile>classsf_1_1String.html</anchorfile>
+      <anchor>a5158a142e0966685ec7fb4e147b24ef0</anchor>
+      <arglist>(const String &amp;left, const String &amp;right)</arglist>
+    </member>
     <member kind="function">
       <type>bool</type>
       <name>operator==</name>
@@ -13591,6 +9574,52 @@
       <arglist>(const String &amp;left, const String &amp;right)</arglist>
     </member>
   </compound>
+  <compound kind="struct">
+    <name>sf::SuspendAwareClock</name>
+    <filename>structsf_1_1SuspendAwareClock.html</filename>
+    <member kind="typedef">
+      <type>std::chrono::nanoseconds</type>
+      <name>duration</name>
+      <anchorfile>structsf_1_1SuspendAwareClock.html</anchorfile>
+      <anchor>a88fd661b62a98c615ac674dac4a70ea3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>duration::rep</type>
+      <name>rep</name>
+      <anchorfile>structsf_1_1SuspendAwareClock.html</anchorfile>
+      <anchor>a6bc755988f5e0b9e64fc8c29e9805c37</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>duration::period</type>
+      <name>period</name>
+      <anchorfile>structsf_1_1SuspendAwareClock.html</anchorfile>
+      <anchor>a2e9f23faea43462470afc6263315a496</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>std::chrono::time_point&lt; SuspendAwareClock, duration &gt;</type>
+      <name>time_point</name>
+      <anchorfile>structsf_1_1SuspendAwareClock.html</anchorfile>
+      <anchor>a4a86b0b99e92f831f29a50f8e6caaf0f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static time_point</type>
+      <name>now</name>
+      <anchorfile>structsf_1_1SuspendAwareClock.html</anchorfile>
+      <anchor>a3d2fa25134213a987e63d6e049ad654e</anchor>
+      <arglist>() noexcept</arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static constexpr bool</type>
+      <name>is_steady</name>
+      <anchorfile>structsf_1_1SuspendAwareClock.html</anchorfile>
+      <anchor>a73791665d7fdce46d724f63890f815ed</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
   <compound kind="class">
     <name>sf::TcpListener</name>
     <filename>classsf_1_1TcpListener.html</filename>
@@ -13601,78 +9630,11 @@
       <anchorfile>classsf_1_1Socket.html</anchorfile>
       <anchor>a51bf0fd51057b98a10fbb866246176dc</anchor>
       <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Done</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a51bf0fd51057b98a10fbb866246176dca1de3a85bc56d3ae85b3d0f3cfd04ae90</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NotReady</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a51bf0fd51057b98a10fbb866246176dca8554848daae98f996e131bdeed076c09</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Partial</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a51bf0fd51057b98a10fbb866246176dca181c163fad2eaea927185d127c392706</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Disconnected</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a51bf0fd51057b98a10fbb866246176dcab215141f756acdc23c67fad149710eb1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Error</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a51bf0fd51057b98a10fbb866246176dca1dc9854433a28c22e192721179a2df5d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>AnyPort</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>aa3e6c984bcb81a35234dcc9cc8369d75a5a3c30fd128895403afc11076f461b19</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Done</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a51bf0fd51057b98a10fbb866246176dca1de3a85bc56d3ae85b3d0f3cfd04ae90</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NotReady</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a51bf0fd51057b98a10fbb866246176dca8554848daae98f996e131bdeed076c09</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Partial</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a51bf0fd51057b98a10fbb866246176dca181c163fad2eaea927185d127c392706</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Disconnected</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a51bf0fd51057b98a10fbb866246176dcab215141f756acdc23c67fad149710eb1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Error</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a51bf0fd51057b98a10fbb866246176dca1dc9854433a28c22e192721179a2df5d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>AnyPort</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>aa3e6c984bcb81a35234dcc9cc8369d75a5a3c30fd128895403afc11076f461b19</anchor>
-      <arglist></arglist>
+      <enumvalue file="classsf_1_1Socket.html" anchor="a51bf0fd51057b98a10fbb866246176dcaf92965e2c8a7afb3c1b9a5c09a263636">Done</enumvalue>
+      <enumvalue file="classsf_1_1Socket.html" anchor="a51bf0fd51057b98a10fbb866246176dcadd353567e8118a2b8df4e822e59084ab">NotReady</enumvalue>
+      <enumvalue file="classsf_1_1Socket.html" anchor="a51bf0fd51057b98a10fbb866246176dca44ffd38a6dea695cbe2b34efdcc6cf27">Partial</enumvalue>
+      <enumvalue file="classsf_1_1Socket.html" anchor="a51bf0fd51057b98a10fbb866246176dcaef70e46fd3bbc21e3e1f0b6815e750c0">Disconnected</enumvalue>
+      <enumvalue file="classsf_1_1Socket.html" anchor="a51bf0fd51057b98a10fbb866246176dca902b0d55fddef6f8d651fe1035b7d4bd">Error</enumvalue>
     </member>
     <member kind="function">
       <type></type>
@@ -13692,8 +9654,8 @@
       <type>Status</type>
       <name>listen</name>
       <anchorfile>classsf_1_1TcpListener.html</anchorfile>
-      <anchor>a9504758ea3570e62cb20b209c11776a1</anchor>
-      <arglist>(unsigned short port, const IpAddress &amp;address=IpAddress::Any)</arglist>
+      <anchor>a4e1610356eb74ff5c699b673e550ea82</anchor>
+      <arglist>(unsigned short port, IpAddress address=IpAddress::Any)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -13723,42 +9685,27 @@
       <anchor>ab1ceca9ac114b8baeeda3b34a0aca468</anchor>
       <arglist>() const</arglist>
     </member>
+    <member kind="variable" static="yes">
+      <type>static constexpr unsigned short</type>
+      <name>AnyPort</name>
+      <anchorfile>classsf_1_1Socket.html</anchorfile>
+      <anchor>a16dfada3e5ba1773ac434bc70510221f</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="enumeration" protection="protected">
       <type></type>
       <name>Type</name>
       <anchorfile>classsf_1_1Socket.html</anchorfile>
       <anchor>a5d3ff44e56e68f02816bb0fabc34adf8</anchor>
       <arglist></arglist>
-    </member>
-    <member kind="enumvalue" protection="protected">
-      <name>Tcp</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a5d3ff44e56e68f02816bb0fabc34adf8acc02e97e90234b957eaad4dff7f22214</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue" protection="protected">
-      <name>Udp</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a5d3ff44e56e68f02816bb0fabc34adf8a6ebf3094830db4820191a327f3cc6ce2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue" protection="protected">
-      <name>Tcp</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a5d3ff44e56e68f02816bb0fabc34adf8acc02e97e90234b957eaad4dff7f22214</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue" protection="protected">
-      <name>Udp</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a5d3ff44e56e68f02816bb0fabc34adf8a6ebf3094830db4820191a327f3cc6ce2</anchor>
-      <arglist></arglist>
+      <enumvalue file="classsf_1_1Socket.html" anchor="a5d3ff44e56e68f02816bb0fabc34adf8a30b7fdeebc36988717d0e274cc2e7520">Tcp</enumvalue>
+      <enumvalue file="classsf_1_1Socket.html" anchor="a5d3ff44e56e68f02816bb0fabc34adf8a81baba40274ccb30f9fdfa2c73cf0482">Udp</enumvalue>
     </member>
     <member kind="function" protection="protected">
       <type>SocketHandle</type>
-      <name>getHandle</name>
+      <name>getNativeHandle</name>
       <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a675457784284ae2f5640bbbe16729393</anchor>
+      <anchor>a67fe286629b47a62c723478b846ab2c4</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function" protection="protected">
@@ -13786,78 +9733,11 @@
       <anchorfile>classsf_1_1Socket.html</anchorfile>
       <anchor>a51bf0fd51057b98a10fbb866246176dc</anchor>
       <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Done</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a51bf0fd51057b98a10fbb866246176dca1de3a85bc56d3ae85b3d0f3cfd04ae90</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NotReady</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a51bf0fd51057b98a10fbb866246176dca8554848daae98f996e131bdeed076c09</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Partial</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a51bf0fd51057b98a10fbb866246176dca181c163fad2eaea927185d127c392706</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Disconnected</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a51bf0fd51057b98a10fbb866246176dcab215141f756acdc23c67fad149710eb1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Error</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a51bf0fd51057b98a10fbb866246176dca1dc9854433a28c22e192721179a2df5d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>AnyPort</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>aa3e6c984bcb81a35234dcc9cc8369d75a5a3c30fd128895403afc11076f461b19</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Done</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a51bf0fd51057b98a10fbb866246176dca1de3a85bc56d3ae85b3d0f3cfd04ae90</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NotReady</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a51bf0fd51057b98a10fbb866246176dca8554848daae98f996e131bdeed076c09</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Partial</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a51bf0fd51057b98a10fbb866246176dca181c163fad2eaea927185d127c392706</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Disconnected</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a51bf0fd51057b98a10fbb866246176dcab215141f756acdc23c67fad149710eb1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Error</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a51bf0fd51057b98a10fbb866246176dca1dc9854433a28c22e192721179a2df5d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>AnyPort</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>aa3e6c984bcb81a35234dcc9cc8369d75a5a3c30fd128895403afc11076f461b19</anchor>
-      <arglist></arglist>
+      <enumvalue file="classsf_1_1Socket.html" anchor="a51bf0fd51057b98a10fbb866246176dcaf92965e2c8a7afb3c1b9a5c09a263636">Done</enumvalue>
+      <enumvalue file="classsf_1_1Socket.html" anchor="a51bf0fd51057b98a10fbb866246176dcadd353567e8118a2b8df4e822e59084ab">NotReady</enumvalue>
+      <enumvalue file="classsf_1_1Socket.html" anchor="a51bf0fd51057b98a10fbb866246176dca44ffd38a6dea695cbe2b34efdcc6cf27">Partial</enumvalue>
+      <enumvalue file="classsf_1_1Socket.html" anchor="a51bf0fd51057b98a10fbb866246176dcaef70e46fd3bbc21e3e1f0b6815e750c0">Disconnected</enumvalue>
+      <enumvalue file="classsf_1_1Socket.html" anchor="a51bf0fd51057b98a10fbb866246176dca902b0d55fddef6f8d651fe1035b7d4bd">Error</enumvalue>
     </member>
     <member kind="function">
       <type></type>
@@ -13874,10 +9754,10 @@
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>IpAddress</type>
+      <type>std::optional&lt; IpAddress &gt;</type>
       <name>getRemoteAddress</name>
       <anchorfile>classsf_1_1TcpSocket.html</anchorfile>
-      <anchor>aa8579c203b1fd21beb74d7f76444a94c</anchor>
+      <anchor>a34ec1e129aeff8877881fd66627056b8</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
@@ -13891,8 +9771,8 @@
       <type>Status</type>
       <name>connect</name>
       <anchorfile>classsf_1_1TcpSocket.html</anchorfile>
-      <anchor>a68cd42d5ab70ab54b16787f555951c40</anchor>
-      <arglist>(const IpAddress &amp;remoteAddress, unsigned short remotePort, Time timeout=Time::Zero)</arglist>
+      <anchor>a5c7aa7c9115151b435835e6a9e954974</anchor>
+      <arglist>(IpAddress remoteAddress, unsigned short remotePort, Time timeout=Time::Zero)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -13950,42 +9830,27 @@
       <anchor>ab1ceca9ac114b8baeeda3b34a0aca468</anchor>
       <arglist>() const</arglist>
     </member>
+    <member kind="variable" static="yes">
+      <type>static constexpr unsigned short</type>
+      <name>AnyPort</name>
+      <anchorfile>classsf_1_1Socket.html</anchorfile>
+      <anchor>a16dfada3e5ba1773ac434bc70510221f</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="enumeration" protection="protected">
       <type></type>
       <name>Type</name>
       <anchorfile>classsf_1_1Socket.html</anchorfile>
       <anchor>a5d3ff44e56e68f02816bb0fabc34adf8</anchor>
       <arglist></arglist>
-    </member>
-    <member kind="enumvalue" protection="protected">
-      <name>Tcp</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a5d3ff44e56e68f02816bb0fabc34adf8acc02e97e90234b957eaad4dff7f22214</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue" protection="protected">
-      <name>Udp</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a5d3ff44e56e68f02816bb0fabc34adf8a6ebf3094830db4820191a327f3cc6ce2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue" protection="protected">
-      <name>Tcp</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a5d3ff44e56e68f02816bb0fabc34adf8acc02e97e90234b957eaad4dff7f22214</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue" protection="protected">
-      <name>Udp</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a5d3ff44e56e68f02816bb0fabc34adf8a6ebf3094830db4820191a327f3cc6ce2</anchor>
-      <arglist></arglist>
+      <enumvalue file="classsf_1_1Socket.html" anchor="a5d3ff44e56e68f02816bb0fabc34adf8a30b7fdeebc36988717d0e274cc2e7520">Tcp</enumvalue>
+      <enumvalue file="classsf_1_1Socket.html" anchor="a5d3ff44e56e68f02816bb0fabc34adf8a81baba40274ccb30f9fdfa2c73cf0482">Udp</enumvalue>
     </member>
     <member kind="function" protection="protected">
       <type>SocketHandle</type>
-      <name>getHandle</name>
+      <name>getNativeHandle</name>
       <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a675457784284ae2f5640bbbe16729393</anchor>
+      <anchor>a67fe286629b47a62c723478b846ab2c4</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function" protection="protected">
@@ -14008,6 +9873,13 @@
       <anchorfile>classsf_1_1Socket.html</anchorfile>
       <anchor>a71f2f5c2aa99e01cafe824fee4c573be</anchor>
       <arglist>()</arglist>
+    </member>
+    <member kind="friend" protection="private">
+      <type>friend class</type>
+      <name>TcpListener</name>
+      <anchorfile>classsf_1_1TcpSocket.html</anchorfile>
+      <anchor>a2b2dd140834917bd44b512236bddea7c</anchor>
+      <arglist></arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -14086,15 +9958,15 @@
       <type></type>
       <name>Text</name>
       <anchorfile>classsf_1_1Text.html</anchorfile>
-      <anchor>aff7cab6a92e5948c9d1481cb2d87eb84</anchor>
-      <arglist>()</arglist>
+      <anchor>a079df9be2747038b3a56f1545e7aadbb</anchor>
+      <arglist>(const Font &amp;font, String string=&quot;&quot;, unsigned int characterSize=30)</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>Text</name>
       <anchorfile>classsf_1_1Text.html</anchorfile>
-      <anchor>a614019e0b5c0ed39a99d32483a51f2c5</anchor>
-      <arglist>(const String &amp;string, const Font &amp;font, unsigned int characterSize=30)</arglist>
+      <anchor>adabd297b6496cbabbe11c7f04c723133</anchor>
+      <arglist>(const Font &amp;&amp;font, String string=&quot;&quot;, unsigned int characterSize=30)=delete</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -14109,6 +9981,13 @@
       <anchorfile>classsf_1_1Text.html</anchorfile>
       <anchor>a2927805d1ae92d57f15034ea34756b81</anchor>
       <arglist>(const Font &amp;font)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setFont</name>
+      <anchorfile>classsf_1_1Text.html</anchorfile>
+      <anchor>a5473741f392e37dd9e000aa4e62ef88f</anchor>
+      <arglist>(const Font &amp;&amp;font)=delete</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -14135,29 +10014,22 @@
       <type>void</type>
       <name>setStyle</name>
       <anchorfile>classsf_1_1Text.html</anchorfile>
-      <anchor>ad791702bc2d1b6590a1719aa60635edf</anchor>
-      <arglist>(Uint32 style)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>setColor</name>
-      <anchorfile>classsf_1_1Text.html</anchorfile>
-      <anchor>afd1742fca1adb6b0ea98357250ffb634</anchor>
-      <arglist>(const Color &amp;color)</arglist>
+      <anchor>a9f0012b71935a59722765eedfa4337f4</anchor>
+      <arglist>(std::uint32_t style)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>setFillColor</name>
       <anchorfile>classsf_1_1Text.html</anchorfile>
-      <anchor>ab7bb3babac5a6da1802b2c3e1a3e6dcc</anchor>
-      <arglist>(const Color &amp;color)</arglist>
+      <anchor>a3a6d47cf82d12412e976272f002e80ce</anchor>
+      <arglist>(Color color)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>setOutlineColor</name>
       <anchorfile>classsf_1_1Text.html</anchorfile>
-      <anchor>aa19ec69c3b894e963602a6804ca68fe4</anchor>
-      <arglist>(const Color &amp;color)</arglist>
+      <anchor>a70a9069f55939e14993034b6555ed7fa</anchor>
+      <arglist>(Color color)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -14174,10 +10046,10 @@
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>const Font *</type>
+      <type>const Font &amp;</type>
       <name>getFont</name>
       <anchorfile>classsf_1_1Text.html</anchorfile>
-      <anchor>ad947a43bddaddf54d008df600699599b</anchor>
+      <anchor>a005bc6b6cc684ab96613640f52b2adba</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
@@ -14202,31 +10074,24 @@
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>Uint32</type>
+      <type>std::uint32_t</type>
       <name>getStyle</name>
       <anchorfile>classsf_1_1Text.html</anchorfile>
-      <anchor>a0da79b0c057f4bb51592465a205c35d7</anchor>
+      <anchor>a8a55d05379e4e5e0f2c0cadd34bd739f</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>const Color &amp;</type>
-      <name>getColor</name>
-      <anchorfile>classsf_1_1Text.html</anchorfile>
-      <anchor>ab367e86c9e9e6cd3806c362ab8e79101</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type>const Color &amp;</type>
+      <type>Color</type>
       <name>getFillColor</name>
       <anchorfile>classsf_1_1Text.html</anchorfile>
-      <anchor>a10400757492ec7fa97454488314ca39b</anchor>
+      <anchor>adb67de4b849ae0a1d856a8c064fa141e</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>const Color &amp;</type>
+      <type>Color</type>
       <name>getOutlineColor</name>
       <anchorfile>classsf_1_1Text.html</anchorfile>
-      <anchor>ade9256ff9d43c9481fcf5f4003fe0141</anchor>
+      <anchor>aa973d3f7a4d60ca01e643749de84ddb5</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
@@ -14261,113 +10126,78 @@
       <type>void</type>
       <name>setPosition</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a4dbfb1a7c80688b0b4c477d706550208</anchor>
-      <arglist>(float x, float y)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>setPosition</name>
-      <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>af1a42209ce2b5d3f07b00f917bcd8015</anchor>
-      <arglist>(const Vector2f &amp;position)</arglist>
+      <anchor>a47c1375b57cbb0e513286e8d11f6dd4d</anchor>
+      <arglist>(Vector2f position)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>setRotation</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a32baf2bf1a74699b03bf8c95030a38ed</anchor>
-      <arglist>(float angle)</arglist>
+      <anchor>a1b4bfa83da965c03ef523c7c33df991f</anchor>
+      <arglist>(Angle angle)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>setScale</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>aaec50b46b3f41b054763304d1e727471</anchor>
-      <arglist>(float factorX, float factorY)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>setScale</name>
-      <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a4c48a87f1626047e448f9c1a68ff167e</anchor>
-      <arglist>(const Vector2f &amp;factors)</arglist>
+      <anchor>a60b82c58502e86f258c9844a1a58400b</anchor>
+      <arglist>(Vector2f factors)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>setOrigin</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a56c67bd80aae8418d13fb96c034d25ec</anchor>
-      <arglist>(float x, float y)</arglist>
+      <anchor>a26788f72ade7ffadb8ba594c3332c4a8</anchor>
+      <arglist>(Vector2f origin)</arglist>
     </member>
     <member kind="function">
-      <type>void</type>
-      <name>setOrigin</name>
-      <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>aa93a835ffbf3bee2098dfbbc695a7f05</anchor>
-      <arglist>(const Vector2f &amp;origin)</arglist>
-    </member>
-    <member kind="function">
-      <type>const Vector2f &amp;</type>
+      <type>Vector2f</type>
       <name>getPosition</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>aea8b18e91a7bf7be589851bb9dd11241</anchor>
+      <anchor>a88a224d0831261591beace74cd3ad67b</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>float</type>
+      <type>Angle</type>
       <name>getRotation</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>aa00b5c5d4a06ac24a94dd72c56931d3a</anchor>
+      <anchor>a11ca740731d6c2cdde3cc8ae3bda3785</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>const Vector2f &amp;</type>
+      <type>Vector2f</type>
       <name>getScale</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a7bcae0e924213f2e89edd8926f2453af</anchor>
+      <anchor>a86fe2b0a7479713d33b71907191f654c</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>const Vector2f &amp;</type>
+      <type>Vector2f</type>
       <name>getOrigin</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a898b33eb6513161eb5c747a072364f15</anchor>
+      <anchor>aa32ea5e8c64716f07d0939252d8d7e31</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>move</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a86b461d6a941ad390c2ad8b6a4a20391</anchor>
-      <arglist>(float offsetX, float offsetY)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>move</name>
-      <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>ab9ca691522f6ddc1a40406849b87c469</anchor>
-      <arglist>(const Vector2f &amp;offset)</arglist>
+      <anchor>a860e50085b49a46a71cd028f7f5d8f6d</anchor>
+      <arglist>(Vector2f offset)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>rotate</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>af8a5ffddc0d93f238fee3bf8efe1ebda</anchor>
-      <arglist>(float angle)</arglist>
+      <anchor>aacd4c9a92b44f5a0cd95e2fe3741f8f1</anchor>
+      <arglist>(Angle angle)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>scale</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a3de0c6d8957f3cf318092f3f60656391</anchor>
-      <arglist>(float factorX, float factorY)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>scale</name>
-      <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>adecaa6c69b1f27dd5194b067d96bb694</anchor>
-      <arglist>(const Vector2f &amp;factor)</arglist>
+      <anchor>a24060d4216813d6f39698cf1cc82be98</anchor>
+      <arglist>(Vector2f factor)</arglist>
     </member>
     <member kind="function">
       <type>const Transform &amp;</type>
@@ -14385,13 +10215,13 @@
     </member>
   </compound>
   <compound kind="struct">
-    <name>sf::Event::TextEvent</name>
-    <filename>structsf_1_1Event_1_1TextEvent.html</filename>
+    <name>sf::Event::TextEntered</name>
+    <filename>structsf_1_1Event_1_1TextEntered.html</filename>
     <member kind="variable">
-      <type>Uint32</type>
+      <type>char32_t</type>
       <name>unicode</name>
-      <anchorfile>structsf_1_1Event_1_1TextEvent.html</anchorfile>
-      <anchor>a00d96b1a5328a1d7cbc276e161befcb0</anchor>
+      <anchorfile>structsf_1_1Event_1_1TextEntered.html</anchorfile>
+      <anchor>abde9dc42f895f727d1f1ebb41c33b780</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -14399,42 +10229,18 @@
     <name>sf::Texture</name>
     <filename>classsf_1_1Texture.html</filename>
     <base protection="private">sf::GlResource</base>
-    <member kind="enumeration">
-      <type></type>
-      <name>CoordinateType</name>
-      <anchorfile>classsf_1_1Texture.html</anchorfile>
-      <anchor>aa6fd3bbe3c334b3c4428edfb2765a82e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Normalized</name>
-      <anchorfile>classsf_1_1Texture.html</anchorfile>
-      <anchor>aa6fd3bbe3c334b3c4428edfb2765a82ea69d6228950882e4d68be4ba4dbe7df73</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Pixels</name>
-      <anchorfile>classsf_1_1Texture.html</anchorfile>
-      <anchor>aa6fd3bbe3c334b3c4428edfb2765a82ea6372f9c3a10203a7a69d8d5da59d82ff</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Normalized</name>
-      <anchorfile>classsf_1_1Texture.html</anchorfile>
-      <anchor>aa6fd3bbe3c334b3c4428edfb2765a82ea69d6228950882e4d68be4ba4dbe7df73</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Pixels</name>
-      <anchorfile>classsf_1_1Texture.html</anchorfile>
-      <anchor>aa6fd3bbe3c334b3c4428edfb2765a82ea6372f9c3a10203a7a69d8d5da59d82ff</anchor>
-      <arglist></arglist>
-    </member>
     <member kind="function">
       <type></type>
       <name>Texture</name>
       <anchorfile>classsf_1_1Texture.html</anchorfile>
       <anchor>a3e04674853b8533bf981db3173e3a4a7</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~Texture</name>
+      <anchorfile>classsf_1_1Texture.html</anchorfile>
+      <anchor>a9c5354ad40eb1c5aeeeb21f57ccd7e6c</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
@@ -14445,46 +10251,123 @@
       <arglist>(const Texture &amp;copy)</arglist>
     </member>
     <member kind="function">
-      <type></type>
-      <name>~Texture</name>
+      <type>Texture &amp;</type>
+      <name>operator=</name>
       <anchorfile>classsf_1_1Texture.html</anchorfile>
-      <anchor>a9c5354ad40eb1c5aeeeb21f57ccd7e6c</anchor>
-      <arglist>()</arglist>
+      <anchor>a5c367f5b523126270ddc92f3775e275f</anchor>
+      <arglist>(const Texture &amp;)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Texture</name>
+      <anchorfile>classsf_1_1Texture.html</anchorfile>
+      <anchor>a82114d6745e2c7a72bb5628e9e2cf5c1</anchor>
+      <arglist>(Texture &amp;&amp;) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>Texture &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classsf_1_1Texture.html</anchorfile>
+      <anchor>ac516add37466f0644fe4fd2ee2ec02c5</anchor>
+      <arglist>(Texture &amp;&amp;) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Texture</name>
+      <anchorfile>classsf_1_1Texture.html</anchorfile>
+      <anchor>a7c8e0c560808589b7c0baa7edcb0afc8</anchor>
+      <arglist>(const std::filesystem::path &amp;filename, bool sRgb=false)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Texture</name>
+      <anchorfile>classsf_1_1Texture.html</anchorfile>
+      <anchor>a9ecabd6ee1ff50fbb3845e0824eee2c9</anchor>
+      <arglist>(const std::filesystem::path &amp;filename, bool sRgb, const IntRect &amp;area)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Texture</name>
+      <anchorfile>classsf_1_1Texture.html</anchorfile>
+      <anchor>ac7638970bd080015e0982eae7212c703</anchor>
+      <arglist>(const void *data, std::size_t size, bool sRgb=false)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Texture</name>
+      <anchorfile>classsf_1_1Texture.html</anchorfile>
+      <anchor>a4898788e648ed7507818d49d32d613d3</anchor>
+      <arglist>(const void *data, std::size_t size, bool sRgb, const IntRect &amp;area)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Texture</name>
+      <anchorfile>classsf_1_1Texture.html</anchorfile>
+      <anchor>a378029d730e45eb3218c193f6ed0a024</anchor>
+      <arglist>(InputStream &amp;stream, bool sRgb=false)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Texture</name>
+      <anchorfile>classsf_1_1Texture.html</anchorfile>
+      <anchor>aa4a2400f27a2960774ecbf960a5928b8</anchor>
+      <arglist>(InputStream &amp;stream, bool sRgb, const IntRect &amp;area)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Texture</name>
+      <anchorfile>classsf_1_1Texture.html</anchorfile>
+      <anchor>ae07054c598ad20535665d8d41ff00fc9</anchor>
+      <arglist>(const Image &amp;image, bool sRgb=false)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Texture</name>
+      <anchorfile>classsf_1_1Texture.html</anchorfile>
+      <anchor>af30fe609e89b5b2465f7907bee46a7d5</anchor>
+      <arglist>(const Image &amp;image, bool sRgb, const IntRect &amp;area)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Texture</name>
+      <anchorfile>classsf_1_1Texture.html</anchorfile>
+      <anchor>a5fd40286ce5bcec2e25519ea8e5d5b99</anchor>
+      <arglist>(Vector2u size, bool sRgb=false)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
-      <name>create</name>
+      <name>resize</name>
       <anchorfile>classsf_1_1Texture.html</anchorfile>
-      <anchor>a89b4c7d204acf1033c3a1b6e0a3ad0a3</anchor>
-      <arglist>(unsigned int width, unsigned int height)</arglist>
+      <anchor>afdb3948ab1e12217ba8e8d88c2c17da2</anchor>
+      <arglist>(Vector2u size, bool sRgb=false)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>loadFromFile</name>
       <anchorfile>classsf_1_1Texture.html</anchorfile>
-      <anchor>a8e1b56eabfe33e2e0e1cb03712c7fcc7</anchor>
-      <arglist>(const std::string &amp;filename, const IntRect &amp;area=IntRect())</arglist>
+      <anchor>a9d6d90f015446eecb9a1e4cef8dc17b1</anchor>
+      <arglist>(const std::filesystem::path &amp;filename, bool sRgb=false, const IntRect &amp;area={})</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>loadFromMemory</name>
       <anchorfile>classsf_1_1Texture.html</anchorfile>
-      <anchor>a2c4adb19dd4cbee0a588eeb85e52a249</anchor>
-      <arglist>(const void *data, std::size_t size, const IntRect &amp;area=IntRect())</arglist>
+      <anchor>aa368fb192f16a9e5d91e3c3221c02730</anchor>
+      <arglist>(const void *data, std::size_t size, bool sRgb=false, const IntRect &amp;area={})</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>loadFromStream</name>
       <anchorfile>classsf_1_1Texture.html</anchorfile>
-      <anchor>a786b486a46b1c6d1c16ff4af61ecc601</anchor>
-      <arglist>(InputStream &amp;stream, const IntRect &amp;area=IntRect())</arglist>
+      <anchor>a69b245af8060fc7765b7eed4a6b1467d</anchor>
+      <arglist>(InputStream &amp;stream, bool sRgb=false, const IntRect &amp;area={})</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>loadFromImage</name>
       <anchorfile>classsf_1_1Texture.html</anchorfile>
-      <anchor>abec4567ad9856a3596dc74803f26fba2</anchor>
-      <arglist>(const Image &amp;image, const IntRect &amp;area=IntRect())</arglist>
+      <anchor>aee0c1bcf723e19e2a2c5bdeee61dbfc3</anchor>
+      <arglist>(const Image &amp;image, bool sRgb=false, const IntRect &amp;area={})</arglist>
     </member>
     <member kind="function">
       <type>Vector2u</type>
@@ -14504,15 +10387,15 @@
       <type>void</type>
       <name>update</name>
       <anchorfile>classsf_1_1Texture.html</anchorfile>
-      <anchor>ae4eab5c6781316840b0c50ad08370963</anchor>
-      <arglist>(const Uint8 *pixels)</arglist>
+      <anchor>aeaf40495f5860120b95d190def4f8bbc</anchor>
+      <arglist>(const std::uint8_t *pixels)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>update</name>
       <anchorfile>classsf_1_1Texture.html</anchorfile>
-      <anchor>a1352d8e16c2aeb4df586ed65dd2c36b9</anchor>
-      <arglist>(const Uint8 *pixels, unsigned int width, unsigned int height, unsigned int x, unsigned int y)</arglist>
+      <anchor>a441454e2ab99b4da7201970e4ef14b76</anchor>
+      <arglist>(const std::uint8_t *pixels, Vector2u size, Vector2u dest)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -14525,8 +10408,8 @@
       <type>void</type>
       <name>update</name>
       <anchorfile>classsf_1_1Texture.html</anchorfile>
-      <anchor>a89beb474da1da84b5e38c9fc0b441fe4</anchor>
-      <arglist>(const Texture &amp;texture, unsigned int x, unsigned int y)</arglist>
+      <anchor>a52160e5c928f05f31adf5700908067c6</anchor>
+      <arglist>(const Texture &amp;texture, Vector2u dest)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -14539,8 +10422,8 @@
       <type>void</type>
       <name>update</name>
       <anchorfile>classsf_1_1Texture.html</anchorfile>
-      <anchor>a87f916490b757fe900798eedf3abf3ba</anchor>
-      <arglist>(const Image &amp;image, unsigned int x, unsigned int y)</arglist>
+      <anchor>abe76f6c20c15483253a60c463846f502</anchor>
+      <arglist>(const Image &amp;image, Vector2u dest)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -14553,8 +10436,8 @@
       <type>void</type>
       <name>update</name>
       <anchorfile>classsf_1_1Texture.html</anchorfile>
-      <anchor>a154f246eb8059b602076009ab1cfd175</anchor>
-      <arglist>(const Window &amp;window, unsigned int x, unsigned int y)</arglist>
+      <anchor>abbdd185b65785a2b5ef5c7dc8114feae</anchor>
+      <arglist>(const Window &amp;window, Vector2u dest)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -14569,13 +10452,6 @@
       <anchorfile>classsf_1_1Texture.html</anchorfile>
       <anchor>a3ebb050b5a71e1d40ba66eb1a060e103</anchor>
       <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>setSrgb</name>
-      <anchorfile>classsf_1_1Texture.html</anchorfile>
-      <anchor>af8a38872c50a33ff074bd0865db19dd4</anchor>
-      <arglist>(bool sRgb)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
@@ -14606,18 +10482,11 @@
       <arglist>()</arglist>
     </member>
     <member kind="function">
-      <type>Texture &amp;</type>
-      <name>operator=</name>
-      <anchorfile>classsf_1_1Texture.html</anchorfile>
-      <anchor>a8d856e3b5865984d6ba0c25ac04fbedb</anchor>
-      <arglist>(const Texture &amp;right)</arglist>
-    </member>
-    <member kind="function">
       <type>void</type>
       <name>swap</name>
       <anchorfile>classsf_1_1Texture.html</anchorfile>
-      <anchor>a9243470c64b7ff0d231e00663e495798</anchor>
-      <arglist>(Texture &amp;right)</arglist>
+      <anchor>aa34ea4d761ca4d1bb4a9a9e3d581fa51</anchor>
+      <arglist>(Texture &amp;right) noexcept</arglist>
     </member>
     <member kind="function">
       <type>unsigned int</type>
@@ -14630,8 +10499,8 @@
       <type>static void</type>
       <name>bind</name>
       <anchorfile>classsf_1_1Texture.html</anchorfile>
-      <anchor>ae9a4274e7b95ebf7244d09c7445833b0</anchor>
-      <arglist>(const Texture *texture, CoordinateType coordinateType=Normalized)</arglist>
+      <anchor>a2f78031f82912436804d9b76290b3534</anchor>
+      <arglist>(const Texture *texture, CoordinateType coordinateType=CoordinateType::Normalized)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static unsigned int</type>
@@ -14640,171 +10509,78 @@
       <anchor>a0bf905d487b104b758549c2e9e20a3fb</anchor>
       <arglist>()</arglist>
     </member>
-  </compound>
-  <compound kind="class">
-    <name>sf::Thread</name>
-    <filename>classsf_1_1Thread.html</filename>
-    <base protection="private">sf::NonCopyable</base>
-    <member kind="function">
-      <type></type>
-      <name>Thread</name>
-      <anchorfile>classsf_1_1Thread.html</anchorfile>
-      <anchor>a4cc65399bbb111cf8132537783b8e96c</anchor>
-      <arglist>(F function)</arglist>
+    <member kind="friend" protection="private">
+      <type>friend class</type>
+      <name>Text</name>
+      <anchorfile>classsf_1_1Texture.html</anchorfile>
+      <anchor>aee0ad1dafe471596e6d25530d9fbaf0c</anchor>
+      <arglist></arglist>
     </member>
-    <member kind="function">
-      <type></type>
-      <name>Thread</name>
-      <anchorfile>classsf_1_1Thread.html</anchorfile>
-      <anchor>a719b2cc067d92d52c35064a49d850a53</anchor>
-      <arglist>(F function, A argument)</arglist>
+    <member kind="friend" protection="private">
+      <type>friend class</type>
+      <name>RenderTexture</name>
+      <anchorfile>classsf_1_1Texture.html</anchorfile>
+      <anchor>a2548fc9744f5e43e0276d5627ca178de</anchor>
+      <arglist></arglist>
     </member>
-    <member kind="function">
-      <type></type>
-      <name>Thread</name>
-      <anchorfile>classsf_1_1Thread.html</anchorfile>
-      <anchor>aa9f473c8cbb078900c62b1fd14a83a34</anchor>
-      <arglist>(void(C::*function)(), C *object)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>~Thread</name>
-      <anchorfile>classsf_1_1Thread.html</anchorfile>
-      <anchor>af77942fc1730af7c31bc4c3a913a9c1d</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>launch</name>
-      <anchorfile>classsf_1_1Thread.html</anchorfile>
-      <anchor>a74f75a9e86e1eb47479496314048b5f6</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>wait</name>
-      <anchorfile>classsf_1_1Thread.html</anchorfile>
-      <anchor>a724b1f94c2d54f84280f2f78bde95fa0</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>terminate</name>
-      <anchorfile>classsf_1_1Thread.html</anchorfile>
-      <anchor>ad6b205d4f1ce38b8d44bba0f5501477c</anchor>
-      <arglist>()</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>sf::ThreadLocal</name>
-    <filename>classsf_1_1ThreadLocal.html</filename>
-    <base protection="private">sf::NonCopyable</base>
-    <member kind="function">
-      <type></type>
-      <name>ThreadLocal</name>
-      <anchorfile>classsf_1_1ThreadLocal.html</anchorfile>
-      <anchor>a44ea3c4be4eef118080275cbf4cf04cd</anchor>
-      <arglist>(void *value=NULL)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>~ThreadLocal</name>
-      <anchorfile>classsf_1_1ThreadLocal.html</anchorfile>
-      <anchor>acc612bddfd0f0507b1c5da8b3b8c75c2</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>setValue</name>
-      <anchorfile>classsf_1_1ThreadLocal.html</anchorfile>
-      <anchor>ab7e334c83d77644a8e67ee31c3230007</anchor>
-      <arglist>(void *value)</arglist>
-    </member>
-    <member kind="function">
-      <type>void *</type>
-      <name>getValue</name>
-      <anchorfile>classsf_1_1ThreadLocal.html</anchorfile>
-      <anchor>a3273f1976f96a838e386937eae33fc21</anchor>
-      <arglist>() const</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
-    <name>sf::ThreadLocalPtr</name>
-    <filename>classsf_1_1ThreadLocalPtr.html</filename>
-    <templarg>typename T</templarg>
-    <base protection="private">sf::ThreadLocal</base>
-    <member kind="function">
-      <type></type>
-      <name>ThreadLocalPtr</name>
-      <anchorfile>classsf_1_1ThreadLocalPtr.html</anchorfile>
-      <anchor>a8c678211d7828d2a8c41cb534422d649</anchor>
-      <arglist>(T *value=NULL)</arglist>
-    </member>
-    <member kind="function">
-      <type>T &amp;</type>
-      <name>operator*</name>
-      <anchorfile>classsf_1_1ThreadLocalPtr.html</anchorfile>
-      <anchor>adcbb45ae077df714bf9c61e936d97770</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type>T *</type>
-      <name>operator-&gt;</name>
-      <anchorfile>classsf_1_1ThreadLocalPtr.html</anchorfile>
-      <anchor>a25646e1014a933d1a45b9ce17bab7703</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>operator T*</name>
-      <anchorfile>classsf_1_1ThreadLocalPtr.html</anchorfile>
-      <anchor>a81ca089ae5cda72c7470ca93041c3cb2</anchor>
-      <arglist>() const</arglist>
-    </member>
-    <member kind="function">
-      <type>ThreadLocalPtr&lt; T &gt; &amp;</type>
-      <name>operator=</name>
-      <anchorfile>classsf_1_1ThreadLocalPtr.html</anchorfile>
-      <anchor>a14dcf1cdf5f6b3bcdd633014b2b671f5</anchor>
-      <arglist>(T *value)</arglist>
-    </member>
-    <member kind="function">
-      <type>ThreadLocalPtr&lt; T &gt; &amp;</type>
-      <name>operator=</name>
-      <anchorfile>classsf_1_1ThreadLocalPtr.html</anchorfile>
-      <anchor>a6792a6a808af06f0d13e3ceecf2fc947</anchor>
-      <arglist>(const ThreadLocalPtr&lt; T &gt; &amp;right)</arglist>
+    <member kind="friend" protection="private">
+      <type>friend class</type>
+      <name>RenderTarget</name>
+      <anchorfile>classsf_1_1Texture.html</anchorfile>
+      <anchor>aa5afc6f82b7b587ed5ada4d227ce32aa</anchor>
+      <arglist></arglist>
     </member>
   </compound>
   <compound kind="class">
     <name>sf::Time</name>
     <filename>classsf_1_1Time.html</filename>
     <member kind="function">
-      <type></type>
+      <type>constexpr</type>
       <name>Time</name>
       <anchorfile>classsf_1_1Time.html</anchorfile>
-      <anchor>acba0cfbc49e3a09a22a8e079eb67a05c</anchor>
-      <arglist>()</arglist>
+      <anchor>ac71085f83ee2bd74e005fc63d7a47a41</anchor>
+      <arglist>()=default</arglist>
     </member>
     <member kind="function">
-      <type>float</type>
+      <type>constexpr</type>
+      <name>Time</name>
+      <anchorfile>classsf_1_1Time.html</anchorfile>
+      <anchor>a3a6c40bd35091c0115b4a9bf57feec86</anchor>
+      <arglist>(const std::chrono::duration&lt; Rep, Period &gt; &amp;duration)</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr float</type>
       <name>asSeconds</name>
       <anchorfile>classsf_1_1Time.html</anchorfile>
-      <anchor>aa3df2f992d0b0041b4eb02258d43f0e3</anchor>
+      <anchor>a0284a68194143e17451b9fd2c9292518</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>Int32</type>
+      <type>constexpr std::int32_t</type>
       <name>asMilliseconds</name>
       <anchorfile>classsf_1_1Time.html</anchorfile>
-      <anchor>aa16858ca030a07eb18958c321f256e5a</anchor>
+      <anchor>a94ca72624d95cf0c2fef2ed52c4a42f8</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>Int64</type>
+      <type>constexpr std::int64_t</type>
       <name>asMicroseconds</name>
       <anchorfile>classsf_1_1Time.html</anchorfile>
-      <anchor>a000c2c64b74658ebd228b9294a464275</anchor>
+      <anchor>a7617b1387d7b3a6f8c7019155aa25ccc</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr std::chrono::microseconds</type>
+      <name>toDuration</name>
+      <anchorfile>classsf_1_1Time.html</anchorfile>
+      <anchor>a88959f93515b6c8a6d3dc0fe8dcf4e05</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr</type>
+      <name>operator std::chrono::duration&lt; Rep, Period &gt;</name>
+      <anchorfile>classsf_1_1Time.html</anchorfile>
+      <anchor>a7ea9b8c1c377eb7a8f2818de3e07d4bd</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="variable" static="yes">
@@ -14815,242 +10591,246 @@
       <arglist></arglist>
     </member>
     <member kind="function">
-      <type>Time</type>
+      <type>constexpr Time</type>
       <name>seconds</name>
       <anchorfile>classsf_1_1Time.html</anchorfile>
-      <anchor>af9fc40a6c0e687e3430da1cf296385b1</anchor>
+      <anchor>a561d4c49cd1acfa0ba68ef5d57c5e307</anchor>
       <arglist>(float amount)</arglist>
     </member>
     <member kind="function">
-      <type>Time</type>
+      <type>constexpr Time</type>
       <name>milliseconds</name>
       <anchorfile>classsf_1_1Time.html</anchorfile>
-      <anchor>a9231f886d925a24d181c8dcfa6448d87</anchor>
-      <arglist>(Int32 amount)</arglist>
+      <anchor>ac7ee116c400a4b23ce4efed703060dff</anchor>
+      <arglist>(std::int32_t amount)</arglist>
     </member>
     <member kind="function">
-      <type>Time</type>
+      <type>constexpr Time</type>
       <name>microseconds</name>
       <anchorfile>classsf_1_1Time.html</anchorfile>
-      <anchor>a8a6ae28a1962198a69b92355649c6aa0</anchor>
-      <arglist>(Int64 amount)</arglist>
+      <anchor>a1fc6c84fffe4da77282c440d5a45c876</anchor>
+      <arglist>(std::int64_t amount)</arglist>
     </member>
     <member kind="function">
-      <type>bool</type>
+      <type>constexpr bool</type>
       <name>operator==</name>
       <anchorfile>classsf_1_1Time.html</anchorfile>
-      <anchor>a9bbb2368cf012149f1001535a20c664a</anchor>
+      <anchor>acfe5a60e84291c9551a35ac6b553368f</anchor>
       <arglist>(Time left, Time right)</arglist>
     </member>
     <member kind="function">
-      <type>bool</type>
+      <type>constexpr bool</type>
       <name>operator!=</name>
       <anchorfile>classsf_1_1Time.html</anchorfile>
-      <anchor>a3a142729f295af8b1baf2d8762bc39ac</anchor>
+      <anchor>a695d94368803d064efac89db0fd02e0f</anchor>
       <arglist>(Time left, Time right)</arglist>
     </member>
     <member kind="function">
-      <type>bool</type>
+      <type>constexpr bool</type>
       <name>operator&lt;</name>
       <anchorfile>classsf_1_1Time.html</anchorfile>
-      <anchor>a3bad89721b8c026e80082a7aa539f244</anchor>
+      <anchor>aa4f8eba1dfd9204faf42e0daf9d7d91f</anchor>
       <arglist>(Time left, Time right)</arglist>
     </member>
     <member kind="function">
-      <type>bool</type>
+      <type>constexpr bool</type>
       <name>operator&gt;</name>
       <anchorfile>classsf_1_1Time.html</anchorfile>
-      <anchor>a9a472ce6d82aa0caf8e20af4a4b309f2</anchor>
+      <anchor>a91da933bb82e683d219173ba06233e53</anchor>
       <arglist>(Time left, Time right)</arglist>
     </member>
     <member kind="function">
-      <type>bool</type>
+      <type>constexpr bool</type>
       <name>operator&lt;=</name>
       <anchorfile>classsf_1_1Time.html</anchorfile>
-      <anchor>aafb9de87ed6047956cd9487ab807371f</anchor>
+      <anchor>ab0e0d143fc1208d6466042458c9600c2</anchor>
       <arglist>(Time left, Time right)</arglist>
     </member>
     <member kind="function">
-      <type>bool</type>
+      <type>constexpr bool</type>
       <name>operator&gt;=</name>
       <anchorfile>classsf_1_1Time.html</anchorfile>
-      <anchor>a158c5f9a6abf575651b7b2f6af8aedaa</anchor>
+      <anchor>ae84a8cb944f4c7a98454bb3834d27d42</anchor>
       <arglist>(Time left, Time right)</arglist>
     </member>
     <member kind="function">
-      <type>Time</type>
+      <type>constexpr Time</type>
       <name>operator-</name>
       <anchorfile>classsf_1_1Time.html</anchorfile>
-      <anchor>acaead0aa2de9f82a548fcd8208a40f70</anchor>
+      <anchor>a016aff628d3524e6463b6d7d145704dc</anchor>
       <arglist>(Time right)</arglist>
     </member>
     <member kind="function">
-      <type>Time</type>
+      <type>constexpr Time</type>
       <name>operator+</name>
       <anchorfile>classsf_1_1Time.html</anchorfile>
-      <anchor>a8249d3a28c8062c7c46cc426186f76c8</anchor>
+      <anchor>a95131c14851a1054ece3ea9a38f9923a</anchor>
       <arglist>(Time left, Time right)</arglist>
     </member>
     <member kind="function">
-      <type>Time &amp;</type>
+      <type>constexpr Time &amp;</type>
       <name>operator+=</name>
       <anchorfile>classsf_1_1Time.html</anchorfile>
-      <anchor>a34b983deefecaf2725131771d54631e0</anchor>
+      <anchor>afba6ee96926e764dc641133c103601fd</anchor>
       <arglist>(Time &amp;left, Time right)</arglist>
     </member>
     <member kind="function">
-      <type>Time</type>
+      <type>constexpr Time</type>
       <name>operator-</name>
       <anchorfile>classsf_1_1Time.html</anchorfile>
-      <anchor>aebd95ec0cd0b2dc5d858e70149ccd136</anchor>
+      <anchor>a3d55ba2445371ccaee3a7a2284ebc41c</anchor>
       <arglist>(Time left, Time right)</arglist>
     </member>
     <member kind="function">
-      <type>Time &amp;</type>
+      <type>constexpr Time &amp;</type>
       <name>operator-=</name>
       <anchorfile>classsf_1_1Time.html</anchorfile>
-      <anchor>ae0a16136d024a44bbaa4ca49ac172c8f</anchor>
+      <anchor>aad77545e22916a65218549a787a115a7</anchor>
       <arglist>(Time &amp;left, Time right)</arglist>
     </member>
     <member kind="function">
-      <type>Time</type>
+      <type>constexpr Time</type>
       <name>operator*</name>
       <anchorfile>classsf_1_1Time.html</anchorfile>
-      <anchor>ab891d4f3dbb454f6c1c484a7844bb581</anchor>
+      <anchor>aa2545df8f7c63d406a76665c90807855</anchor>
       <arglist>(Time left, float right)</arglist>
     </member>
     <member kind="function">
-      <type>Time</type>
+      <type>constexpr Time</type>
       <name>operator*</name>
       <anchorfile>classsf_1_1Time.html</anchorfile>
-      <anchor>a667d1568893f4e2520a223fa4e2b6ee2</anchor>
-      <arglist>(Time left, Int64 right)</arglist>
+      <anchor>a3dd0f83b493a16f851b5b35195b0860d</anchor>
+      <arglist>(Time left, std::int64_t right)</arglist>
     </member>
     <member kind="function">
-      <type>Time</type>
+      <type>constexpr Time</type>
       <name>operator*</name>
       <anchorfile>classsf_1_1Time.html</anchorfile>
-      <anchor>a61e3255c79b3d98a1a04ed8968a87863</anchor>
+      <anchor>ad62d769a1574c41002d331f44a4defb8</anchor>
       <arglist>(float left, Time right)</arglist>
     </member>
     <member kind="function">
-      <type>Time</type>
+      <type>constexpr Time</type>
       <name>operator*</name>
       <anchorfile>classsf_1_1Time.html</anchorfile>
-      <anchor>a998a2ae6bd79e753bf9f4dea5b06370c</anchor>
-      <arglist>(Int64 left, Time right)</arglist>
+      <anchor>a6333ee9224cd7458afd592cc2f5fd666</anchor>
+      <arglist>(std::int64_t left, Time right)</arglist>
     </member>
     <member kind="function">
-      <type>Time &amp;</type>
+      <type>constexpr Time &amp;</type>
       <name>operator*=</name>
       <anchorfile>classsf_1_1Time.html</anchorfile>
-      <anchor>a3f7baa961b8961fc5e6a37dea7de10e3</anchor>
+      <anchor>ac1b2666d325329bb2181915266a39cac</anchor>
       <arglist>(Time &amp;left, float right)</arglist>
     </member>
     <member kind="function">
-      <type>Time &amp;</type>
+      <type>constexpr Time &amp;</type>
       <name>operator*=</name>
       <anchorfile>classsf_1_1Time.html</anchorfile>
-      <anchor>ac883749b4e0a72c32e166ad802220539</anchor>
-      <arglist>(Time &amp;left, Int64 right)</arglist>
+      <anchor>a1a94d8aef48b68ee270056d7d6cb6ca7</anchor>
+      <arglist>(Time &amp;left, std::int64_t right)</arglist>
     </member>
     <member kind="function">
-      <type>Time</type>
+      <type>constexpr Time</type>
       <name>operator/</name>
       <anchorfile>classsf_1_1Time.html</anchorfile>
-      <anchor>a67510d018fd010819ee075db2cbd004f</anchor>
+      <anchor>ae4a58c5ceb1231a56f154688d2230608</anchor>
       <arglist>(Time left, float right)</arglist>
     </member>
     <member kind="function">
-      <type>Time</type>
+      <type>constexpr Time</type>
       <name>operator/</name>
       <anchorfile>classsf_1_1Time.html</anchorfile>
-      <anchor>a5f7b24dd13c0068d5cba678e1d5db9a6</anchor>
-      <arglist>(Time left, Int64 right)</arglist>
+      <anchor>a892b338d16fcec9f2d0ca0cf97727f5a</anchor>
+      <arglist>(Time left, std::int64_t right)</arglist>
     </member>
     <member kind="function">
-      <type>Time &amp;</type>
+      <type>constexpr Time &amp;</type>
       <name>operator/=</name>
       <anchorfile>classsf_1_1Time.html</anchorfile>
-      <anchor>ad513a413be41bc66feb0ff2b29d5f947</anchor>
+      <anchor>af5b1c440f2897ca88a6634a0b804a3dc</anchor>
       <arglist>(Time &amp;left, float right)</arglist>
     </member>
     <member kind="function">
-      <type>Time &amp;</type>
+      <type>constexpr Time &amp;</type>
       <name>operator/=</name>
       <anchorfile>classsf_1_1Time.html</anchorfile>
-      <anchor>ac4b8df6ef282ee71808fd185f91490aa</anchor>
-      <arglist>(Time &amp;left, Int64 right)</arglist>
+      <anchor>ae91d4fa85f66d8ceb6b1f901d0f0870c</anchor>
+      <arglist>(Time &amp;left, std::int64_t right)</arglist>
     </member>
     <member kind="function">
-      <type>float</type>
+      <type>constexpr float</type>
       <name>operator/</name>
       <anchorfile>classsf_1_1Time.html</anchorfile>
-      <anchor>a097cf1326d2d50e0043ff4e865c1bbac</anchor>
+      <anchor>a66d61765dbe55cb25919048c36a493c8</anchor>
       <arglist>(Time left, Time right)</arglist>
     </member>
     <member kind="function">
-      <type>Time</type>
+      <type>constexpr Time</type>
       <name>operator%</name>
       <anchorfile>classsf_1_1Time.html</anchorfile>
-      <anchor>abe7206e15c2bf7ce8695f82219d466d2</anchor>
+      <anchor>a1639b34ec62b6320bcf3e581555f3c22</anchor>
       <arglist>(Time left, Time right)</arglist>
     </member>
     <member kind="function">
-      <type>Time &amp;</type>
+      <type>constexpr Time &amp;</type>
       <name>operator%=</name>
       <anchorfile>classsf_1_1Time.html</anchorfile>
-      <anchor>a880fb0137cd426bd4457fd9e4a2f9d83</anchor>
+      <anchor>a4689b0962f2154efa3d51b344cef7c0d</anchor>
       <arglist>(Time &amp;left, Time right)</arglist>
     </member>
   </compound>
-  <compound kind="class">
-    <name>sf::Touch</name>
-    <filename>classsf_1_1Touch.html</filename>
-    <member kind="function" static="yes">
-      <type>static bool</type>
-      <name>isDown</name>
-      <anchorfile>classsf_1_1Touch.html</anchorfile>
-      <anchor>a2f85297123ea4e401d02c346e50d48a3</anchor>
-      <arglist>(unsigned int finger)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static Vector2i</type>
-      <name>getPosition</name>
-      <anchorfile>classsf_1_1Touch.html</anchorfile>
-      <anchor>af1b7035be709091c7475075e43e2bc23</anchor>
-      <arglist>(unsigned int finger)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static Vector2i</type>
-      <name>getPosition</name>
-      <anchorfile>classsf_1_1Touch.html</anchorfile>
-      <anchor>a8a1456574d2825d4249fcf72f11d4398</anchor>
-      <arglist>(unsigned int finger, const WindowBase &amp;relativeTo)</arglist>
-    </member>
-  </compound>
   <compound kind="struct">
-    <name>sf::Event::TouchEvent</name>
-    <filename>structsf_1_1Event_1_1TouchEvent.html</filename>
+    <name>sf::Event::TouchBegan</name>
+    <filename>structsf_1_1Event_1_1TouchBegan.html</filename>
     <member kind="variable">
       <type>unsigned int</type>
       <name>finger</name>
-      <anchorfile>structsf_1_1Event_1_1TouchEvent.html</anchorfile>
-      <anchor>a9a79fe86bf9ac3c16ec7326f96feb61a</anchor>
+      <anchorfile>structsf_1_1Event_1_1TouchBegan.html</anchorfile>
+      <anchor>acfdcf51fabda85a32ac76c7772ec9814</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>int</type>
-      <name>x</name>
-      <anchorfile>structsf_1_1Event_1_1TouchEvent.html</anchorfile>
-      <anchor>a8993963790b850caa68b98d3cad2be45</anchor>
+      <type>Vector2i</type>
+      <name>position</name>
+      <anchorfile>structsf_1_1Event_1_1TouchBegan.html</anchorfile>
+      <anchor>a514712f9b5bffddc9422efa6321ddc5f</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>sf::Event::TouchEnded</name>
+    <filename>structsf_1_1Event_1_1TouchEnded.html</filename>
+    <member kind="variable">
+      <type>unsigned int</type>
+      <name>finger</name>
+      <anchorfile>structsf_1_1Event_1_1TouchEnded.html</anchorfile>
+      <anchor>ae875e9ca00ddf52f101197a6f3a3775f</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>int</type>
-      <name>y</name>
-      <anchorfile>structsf_1_1Event_1_1TouchEvent.html</anchorfile>
-      <anchor>add80639dc68bc37e3275744d501cdbe0</anchor>
+      <type>Vector2i</type>
+      <name>position</name>
+      <anchorfile>structsf_1_1Event_1_1TouchEnded.html</anchorfile>
+      <anchor>ae6997d678a68380dddb5c3995abf3858</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>sf::Event::TouchMoved</name>
+    <filename>structsf_1_1Event_1_1TouchMoved.html</filename>
+    <member kind="variable">
+      <type>unsigned int</type>
+      <name>finger</name>
+      <anchorfile>structsf_1_1Event_1_1TouchMoved.html</anchorfile>
+      <anchor>aa6856eab50d6ee8573c8c8257fa681b1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>Vector2i</type>
+      <name>position</name>
+      <anchorfile>structsf_1_1Event_1_1TouchMoved.html</anchorfile>
+      <anchor>a163a5db3ac0250bc7600b6d1c365af60</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -15058,123 +10838,88 @@
     <name>sf::Transform</name>
     <filename>classsf_1_1Transform.html</filename>
     <member kind="function">
-      <type></type>
+      <type>constexpr</type>
       <name>Transform</name>
       <anchorfile>classsf_1_1Transform.html</anchorfile>
-      <anchor>ac32de51bd0b9f3d52fbe0838225ee83b</anchor>
-      <arglist>()</arglist>
+      <anchor>a77f097203662eb2de0ab9baa2bfe44c4</anchor>
+      <arglist>()=default</arglist>
     </member>
     <member kind="function">
-      <type></type>
+      <type>constexpr</type>
       <name>Transform</name>
       <anchorfile>classsf_1_1Transform.html</anchorfile>
-      <anchor>a78c48677712fcf41122d02f1301d71a3</anchor>
+      <anchor>a475928bf989a8e23deffa2e5ab5e1c22</anchor>
       <arglist>(float a00, float a01, float a02, float a10, float a11, float a12, float a20, float a21, float a22)</arglist>
     </member>
     <member kind="function">
-      <type>const float *</type>
+      <type>constexpr const float *</type>
       <name>getMatrix</name>
       <anchorfile>classsf_1_1Transform.html</anchorfile>
-      <anchor>ab85cb4194f42a965d337a8f02783c534</anchor>
+      <anchor>af74f38379f76fc926acb06378f68ab98</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>Transform</type>
+      <type>constexpr Transform</type>
       <name>getInverse</name>
       <anchorfile>classsf_1_1Transform.html</anchorfile>
-      <anchor>a14f49e81af44aabcff7611f6703a1e4a</anchor>
+      <anchor>ae1f21cb9c981394e48abc183c55cd7bf</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>Vector2f</type>
+      <type>constexpr Vector2f</type>
       <name>transformPoint</name>
       <anchorfile>classsf_1_1Transform.html</anchorfile>
-      <anchor>af2e38c3c077d28898686662558b41135</anchor>
-      <arglist>(float x, float y) const</arglist>
+      <anchor>a64eb34f1465339dd28f801ad85f881d3</anchor>
+      <arglist>(Vector2f point) const</arglist>
     </member>
     <member kind="function">
-      <type>Vector2f</type>
-      <name>transformPoint</name>
-      <anchorfile>classsf_1_1Transform.html</anchorfile>
-      <anchor>ab42a0bb7a252c6d221004f6372ce5fdc</anchor>
-      <arglist>(const Vector2f &amp;point) const</arglist>
-    </member>
-    <member kind="function">
-      <type>FloatRect</type>
+      <type>constexpr FloatRect</type>
       <name>transformRect</name>
       <anchorfile>classsf_1_1Transform.html</anchorfile>
-      <anchor>a3824a20505d81a94bc22be1ffee57d3d</anchor>
+      <anchor>a7fc4d0e5221d792de5cbcafb44414887</anchor>
       <arglist>(const FloatRect &amp;rectangle) const</arglist>
     </member>
     <member kind="function">
-      <type>Transform &amp;</type>
+      <type>constexpr Transform &amp;</type>
       <name>combine</name>
       <anchorfile>classsf_1_1Transform.html</anchorfile>
-      <anchor>ad8403f888799b5c9f781cb9f3757f2a4</anchor>
+      <anchor>adcd62a1198c278851c2031b1de1f906e</anchor>
       <arglist>(const Transform &amp;transform)</arglist>
     </member>
     <member kind="function">
-      <type>Transform &amp;</type>
+      <type>constexpr Transform &amp;</type>
       <name>translate</name>
       <anchorfile>classsf_1_1Transform.html</anchorfile>
-      <anchor>a053cd024e320ae719837386d126d0f51</anchor>
-      <arglist>(float x, float y)</arglist>
-    </member>
-    <member kind="function">
-      <type>Transform &amp;</type>
-      <name>translate</name>
-      <anchorfile>classsf_1_1Transform.html</anchorfile>
-      <anchor>a2426209f1fd3cc02129dec373a3c6f69</anchor>
-      <arglist>(const Vector2f &amp;offset)</arglist>
+      <anchor>a92e1b0572a4703d9c23b01428f6494e3</anchor>
+      <arglist>(Vector2f offset)</arglist>
     </member>
     <member kind="function">
       <type>Transform &amp;</type>
       <name>rotate</name>
       <anchorfile>classsf_1_1Transform.html</anchorfile>
-      <anchor>ad09ce22a1fb08709f66f30befc7b2e7b</anchor>
-      <arglist>(float angle)</arglist>
+      <anchor>a7172312b6e9aefce6a8cce4473363a69</anchor>
+      <arglist>(Angle angle)</arglist>
     </member>
     <member kind="function">
       <type>Transform &amp;</type>
       <name>rotate</name>
       <anchorfile>classsf_1_1Transform.html</anchorfile>
-      <anchor>ad78237e81d1de866d1b3c040ad003971</anchor>
-      <arglist>(float angle, float centerX, float centerY)</arglist>
+      <anchor>ace37c565cb78b73b9c5009e7842bcd73</anchor>
+      <arglist>(Angle angle, Vector2f center)</arglist>
     </member>
     <member kind="function">
-      <type>Transform &amp;</type>
-      <name>rotate</name>
-      <anchorfile>classsf_1_1Transform.html</anchorfile>
-      <anchor>a11aa9a4fbd9254e7d22b96f92f018d09</anchor>
-      <arglist>(float angle, const Vector2f &amp;center)</arglist>
-    </member>
-    <member kind="function">
-      <type>Transform &amp;</type>
+      <type>constexpr Transform &amp;</type>
       <name>scale</name>
       <anchorfile>classsf_1_1Transform.html</anchorfile>
-      <anchor>a846e9ff8567f50adea9b3ce4c70c1554</anchor>
-      <arglist>(float scaleX, float scaleY)</arglist>
+      <anchor>ab0a14d89a99fe085164bdd083c88953a</anchor>
+      <arglist>(Vector2f factors)</arglist>
     </member>
     <member kind="function">
-      <type>Transform &amp;</type>
+      <type>constexpr Transform &amp;</type>
       <name>scale</name>
       <anchorfile>classsf_1_1Transform.html</anchorfile>
-      <anchor>af1ad4ae13dacaf812b6411142243042b</anchor>
-      <arglist>(float scaleX, float scaleY, float centerX, float centerY)</arglist>
-    </member>
-    <member kind="function">
-      <type>Transform &amp;</type>
-      <name>scale</name>
-      <anchorfile>classsf_1_1Transform.html</anchorfile>
-      <anchor>a23fe4e63821354600b7592be90f2d65e</anchor>
-      <arglist>(const Vector2f &amp;factors)</arglist>
-    </member>
-    <member kind="function">
-      <type>Transform &amp;</type>
-      <name>scale</name>
-      <anchorfile>classsf_1_1Transform.html</anchorfile>
-      <anchor>a486a4a1946208a883c7f8ec1e9cf2e35</anchor>
-      <arglist>(const Vector2f &amp;factors, const Vector2f &amp;center)</arglist>
+      <anchor>a6746da32321c7cfec595bfaff5243d0d</anchor>
+      <arglist>(Vector2f factors, Vector2f center)</arglist>
     </member>
     <member kind="variable" static="yes">
       <type>static const Transform</type>
@@ -15184,38 +10929,38 @@
       <arglist></arglist>
     </member>
     <member kind="function">
-      <type>Transform</type>
+      <type>constexpr Transform</type>
       <name>operator*</name>
       <anchorfile>classsf_1_1Transform.html</anchorfile>
-      <anchor>a85ea4e5539795f9b2ceb7d4b06736c8f</anchor>
+      <anchor>afe3eefbdbe67540f2f7468f7262edf62</anchor>
       <arglist>(const Transform &amp;left, const Transform &amp;right)</arglist>
     </member>
     <member kind="function">
-      <type>Transform &amp;</type>
+      <type>constexpr Transform &amp;</type>
       <name>operator*=</name>
       <anchorfile>classsf_1_1Transform.html</anchorfile>
-      <anchor>a189899674616490f6250953ac581ac30</anchor>
+      <anchor>a3aee0009a8c1675802c5d4565b592fd7</anchor>
       <arglist>(Transform &amp;left, const Transform &amp;right)</arglist>
     </member>
     <member kind="function">
-      <type>Vector2f</type>
+      <type>constexpr Vector2f</type>
       <name>operator*</name>
       <anchorfile>classsf_1_1Transform.html</anchorfile>
-      <anchor>a4eeee49125c3c72c250062eef35ceb75</anchor>
-      <arglist>(const Transform &amp;left, const Vector2f &amp;right)</arglist>
+      <anchor>a18b2481b28513108db3aca07dc77d3a3</anchor>
+      <arglist>(const Transform &amp;left, Vector2f right)</arglist>
     </member>
     <member kind="function">
-      <type>bool</type>
+      <type>constexpr bool</type>
       <name>operator==</name>
       <anchorfile>classsf_1_1Transform.html</anchorfile>
-      <anchor>aa2de0a3ee2f8af05dbc94bf3b4633b4a</anchor>
+      <anchor>aa18d835d37f65fa22b703c243f83dc29</anchor>
       <arglist>(const Transform &amp;left, const Transform &amp;right)</arglist>
     </member>
     <member kind="function">
-      <type>bool</type>
+      <type>constexpr bool</type>
       <name>operator!=</name>
       <anchorfile>classsf_1_1Transform.html</anchorfile>
-      <anchor>a5eee840ff0b2db9e5f57a87281cc2b01</anchor>
+      <anchor>a6cb4691413724c6d2b580c1615170dd2</anchor>
       <arglist>(const Transform &amp;left, const Transform &amp;right)</arglist>
     </member>
   </compound>
@@ -15226,127 +10971,92 @@
       <type></type>
       <name>Transformable</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>ae71710de0fef423121bab1c684954a2e</anchor>
-      <arglist>()</arglist>
+      <anchor>aaa38f4d53dc397b241bdf69d4e4bee2b</anchor>
+      <arglist>()=default</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual</type>
       <name>~Transformable</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a43253abcb863195a673c2a347a7425cc</anchor>
-      <arglist>()</arglist>
+      <anchor>a664fd83e1302a7e4ffc1ab463c25f6e5</anchor>
+      <arglist>()=default</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>setPosition</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a4dbfb1a7c80688b0b4c477d706550208</anchor>
-      <arglist>(float x, float y)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>setPosition</name>
-      <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>af1a42209ce2b5d3f07b00f917bcd8015</anchor>
-      <arglist>(const Vector2f &amp;position)</arglist>
+      <anchor>a47c1375b57cbb0e513286e8d11f6dd4d</anchor>
+      <arglist>(Vector2f position)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>setRotation</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a32baf2bf1a74699b03bf8c95030a38ed</anchor>
-      <arglist>(float angle)</arglist>
+      <anchor>a1b4bfa83da965c03ef523c7c33df991f</anchor>
+      <arglist>(Angle angle)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>setScale</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>aaec50b46b3f41b054763304d1e727471</anchor>
-      <arglist>(float factorX, float factorY)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>setScale</name>
-      <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a4c48a87f1626047e448f9c1a68ff167e</anchor>
-      <arglist>(const Vector2f &amp;factors)</arglist>
+      <anchor>a60b82c58502e86f258c9844a1a58400b</anchor>
+      <arglist>(Vector2f factors)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>setOrigin</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a56c67bd80aae8418d13fb96c034d25ec</anchor>
-      <arglist>(float x, float y)</arglist>
+      <anchor>a26788f72ade7ffadb8ba594c3332c4a8</anchor>
+      <arglist>(Vector2f origin)</arglist>
     </member>
     <member kind="function">
-      <type>void</type>
-      <name>setOrigin</name>
-      <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>aa93a835ffbf3bee2098dfbbc695a7f05</anchor>
-      <arglist>(const Vector2f &amp;origin)</arglist>
-    </member>
-    <member kind="function">
-      <type>const Vector2f &amp;</type>
+      <type>Vector2f</type>
       <name>getPosition</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>aea8b18e91a7bf7be589851bb9dd11241</anchor>
+      <anchor>a88a224d0831261591beace74cd3ad67b</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>float</type>
+      <type>Angle</type>
       <name>getRotation</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>aa00b5c5d4a06ac24a94dd72c56931d3a</anchor>
+      <anchor>a11ca740731d6c2cdde3cc8ae3bda3785</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>const Vector2f &amp;</type>
+      <type>Vector2f</type>
       <name>getScale</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a7bcae0e924213f2e89edd8926f2453af</anchor>
+      <anchor>a86fe2b0a7479713d33b71907191f654c</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>const Vector2f &amp;</type>
+      <type>Vector2f</type>
       <name>getOrigin</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a898b33eb6513161eb5c747a072364f15</anchor>
+      <anchor>aa32ea5e8c64716f07d0939252d8d7e31</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>move</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a86b461d6a941ad390c2ad8b6a4a20391</anchor>
-      <arglist>(float offsetX, float offsetY)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>move</name>
-      <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>ab9ca691522f6ddc1a40406849b87c469</anchor>
-      <arglist>(const Vector2f &amp;offset)</arglist>
+      <anchor>a860e50085b49a46a71cd028f7f5d8f6d</anchor>
+      <arglist>(Vector2f offset)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>rotate</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>af8a5ffddc0d93f238fee3bf8efe1ebda</anchor>
-      <arglist>(float angle)</arglist>
+      <anchor>aacd4c9a92b44f5a0cd95e2fe3741f8f1</anchor>
+      <arglist>(Angle angle)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>scale</name>
       <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>a3de0c6d8957f3cf318092f3f60656391</anchor>
-      <arglist>(float factorX, float factorY)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>scale</name>
-      <anchorfile>classsf_1_1Transformable.html</anchorfile>
-      <anchor>adecaa6c69b1f27dd5194b067d96bb694</anchor>
-      <arglist>(const Vector2f &amp;factor)</arglist>
+      <anchor>a24060d4216813d6f39698cf1cc82be98</anchor>
+      <arglist>(Vector2f factor)</arglist>
     </member>
     <member kind="function">
       <type>const Transform &amp;</type>
@@ -15366,7 +11076,6 @@
   <compound kind="class">
     <name>sf::GlResource::TransientContextLock</name>
     <filename>classsf_1_1GlResource_1_1TransientContextLock.html</filename>
-    <base protection="private">sf::NonCopyable</base>
     <member kind="function">
       <type></type>
       <name>TransientContextLock</name>
@@ -15381,101 +11090,173 @@
       <anchor>a169285281b252ac8d54523b0fcc4b814</anchor>
       <arglist>()</arglist>
     </member>
+    <member kind="function">
+      <type></type>
+      <name>TransientContextLock</name>
+      <anchorfile>classsf_1_1GlResource_1_1TransientContextLock.html</anchorfile>
+      <anchor>a402271e62092c05c629326a28e853405</anchor>
+      <arglist>(const TransientContextLock &amp;)=delete</arglist>
+    </member>
+    <member kind="function">
+      <type>TransientContextLock &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classsf_1_1GlResource_1_1TransientContextLock.html</anchorfile>
+      <anchor>adac2b561e93b4539ca8c0c153d48aa95</anchor>
+      <arglist>(const TransientContextLock &amp;)=delete</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>sf::U8StringCharTraits</name>
+    <filename>structsf_1_1U8StringCharTraits.html</filename>
+    <member kind="typedef">
+      <type>std::uint8_t</type>
+      <name>char_type</name>
+      <anchorfile>structsf_1_1U8StringCharTraits.html</anchorfile>
+      <anchor>af3a10a2045ba53360c41586818913d3a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>std::char_traits&lt; char &gt;::int_type</type>
+      <name>int_type</name>
+      <anchorfile>structsf_1_1U8StringCharTraits.html</anchorfile>
+      <anchor>a918b5cef66ee179dd0789ee6402ed5f3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>std::char_traits&lt; char &gt;::off_type</type>
+      <name>off_type</name>
+      <anchorfile>structsf_1_1U8StringCharTraits.html</anchorfile>
+      <anchor>af049feb6c92a566a5cffc7637bf404aa</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>std::char_traits&lt; char &gt;::pos_type</type>
+      <name>pos_type</name>
+      <anchorfile>structsf_1_1U8StringCharTraits.html</anchorfile>
+      <anchor>ae4015971eb1f32987cddbc984b2b8602</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>std::char_traits&lt; char &gt;::state_type</type>
+      <name>state_type</name>
+      <anchorfile>structsf_1_1U8StringCharTraits.html</anchorfile>
+      <anchor>ab14f442631ee99fd9d581ce32913ee74</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>assign</name>
+      <anchorfile>structsf_1_1U8StringCharTraits.html</anchorfile>
+      <anchor>a15829f93dc18be0c3ecf952cdab7e679</anchor>
+      <arglist>(char_type &amp;c1, char_type c2) noexcept</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static char_type *</type>
+      <name>assign</name>
+      <anchorfile>structsf_1_1U8StringCharTraits.html</anchorfile>
+      <anchor>af21d7752dc5554fe4dcd5610b1a97fde</anchor>
+      <arglist>(char_type *s, std::size_t n, char_type c)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static bool</type>
+      <name>eq</name>
+      <anchorfile>structsf_1_1U8StringCharTraits.html</anchorfile>
+      <anchor>a45d48d9e1cd178eb81f606d2c4fce937</anchor>
+      <arglist>(char_type c1, char_type c2) noexcept</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static bool</type>
+      <name>lt</name>
+      <anchorfile>structsf_1_1U8StringCharTraits.html</anchorfile>
+      <anchor>acf0c71d1a4041c793ac18647bbde9093</anchor>
+      <arglist>(char_type c1, char_type c2) noexcept</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static char_type *</type>
+      <name>move</name>
+      <anchorfile>structsf_1_1U8StringCharTraits.html</anchorfile>
+      <anchor>a80e5b4da555226d1c6aa080ff8a84522</anchor>
+      <arglist>(char_type *s1, const char_type *s2, std::size_t n)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static char_type *</type>
+      <name>copy</name>
+      <anchorfile>structsf_1_1U8StringCharTraits.html</anchorfile>
+      <anchor>a1bbfb4709559c15537d285699ea433cb</anchor>
+      <arglist>(char_type *s1, const char_type *s2, std::size_t n)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static int</type>
+      <name>compare</name>
+      <anchorfile>structsf_1_1U8StringCharTraits.html</anchorfile>
+      <anchor>a97bd849f37b7bd3ce18a58094bcd8e7e</anchor>
+      <arglist>(const char_type *s1, const char_type *s2, std::size_t n)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static std::size_t</type>
+      <name>length</name>
+      <anchorfile>structsf_1_1U8StringCharTraits.html</anchorfile>
+      <anchor>aa25878759942a79c150b8d6826356092</anchor>
+      <arglist>(const char_type *s)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static const char_type *</type>
+      <name>find</name>
+      <anchorfile>structsf_1_1U8StringCharTraits.html</anchorfile>
+      <anchor>aee44f3551fe9645745562bfbe0e28eec</anchor>
+      <arglist>(const char_type *s, std::size_t n, const char_type &amp;c)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static char_type</type>
+      <name>to_char_type</name>
+      <anchorfile>structsf_1_1U8StringCharTraits.html</anchorfile>
+      <anchor>aef0b658a4bdcba6c621400bae8e894ac</anchor>
+      <arglist>(int_type i) noexcept</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static int_type</type>
+      <name>to_int_type</name>
+      <anchorfile>structsf_1_1U8StringCharTraits.html</anchorfile>
+      <anchor>a5f9d3c31d649475b73723b86b71931fc</anchor>
+      <arglist>(char_type c) noexcept</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static bool</type>
+      <name>eq_int_type</name>
+      <anchorfile>structsf_1_1U8StringCharTraits.html</anchorfile>
+      <anchor>a148ae695341e82cba9e8cef3683cd34a</anchor>
+      <arglist>(int_type i1, int_type i2) noexcept</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static int_type</type>
+      <name>eof</name>
+      <anchorfile>structsf_1_1U8StringCharTraits.html</anchorfile>
+      <anchor>a612242cd2cee44b114dc05f1759f2919</anchor>
+      <arglist>() noexcept</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static int_type</type>
+      <name>not_eof</name>
+      <anchorfile>structsf_1_1U8StringCharTraits.html</anchorfile>
+      <anchor>add0fa81b45f96d40f13ae44df39cfdca</anchor>
+      <arglist>(int_type i) noexcept</arglist>
+    </member>
   </compound>
   <compound kind="class">
     <name>sf::UdpSocket</name>
     <filename>classsf_1_1UdpSocket.html</filename>
     <base>sf::Socket</base>
-    <member kind="enumvalue">
-      <name>MaxDatagramSize</name>
-      <anchorfile>classsf_1_1UdpSocket.html</anchorfile>
-      <anchor>a8ad087820b1ae07267858212f3d0fac5a728a7d33027bee0d65f70f964dd9c9eb</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>MaxDatagramSize</name>
-      <anchorfile>classsf_1_1UdpSocket.html</anchorfile>
-      <anchor>a8ad087820b1ae07267858212f3d0fac5a728a7d33027bee0d65f70f964dd9c9eb</anchor>
-      <arglist></arglist>
-    </member>
     <member kind="enumeration">
       <type></type>
       <name>Status</name>
       <anchorfile>classsf_1_1Socket.html</anchorfile>
       <anchor>a51bf0fd51057b98a10fbb866246176dc</anchor>
       <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Done</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a51bf0fd51057b98a10fbb866246176dca1de3a85bc56d3ae85b3d0f3cfd04ae90</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NotReady</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a51bf0fd51057b98a10fbb866246176dca8554848daae98f996e131bdeed076c09</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Partial</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a51bf0fd51057b98a10fbb866246176dca181c163fad2eaea927185d127c392706</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Disconnected</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a51bf0fd51057b98a10fbb866246176dcab215141f756acdc23c67fad149710eb1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Error</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a51bf0fd51057b98a10fbb866246176dca1dc9854433a28c22e192721179a2df5d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>AnyPort</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>aa3e6c984bcb81a35234dcc9cc8369d75a5a3c30fd128895403afc11076f461b19</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Done</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a51bf0fd51057b98a10fbb866246176dca1de3a85bc56d3ae85b3d0f3cfd04ae90</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>NotReady</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a51bf0fd51057b98a10fbb866246176dca8554848daae98f996e131bdeed076c09</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Partial</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a51bf0fd51057b98a10fbb866246176dca181c163fad2eaea927185d127c392706</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Disconnected</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a51bf0fd51057b98a10fbb866246176dcab215141f756acdc23c67fad149710eb1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Error</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a51bf0fd51057b98a10fbb866246176dca1dc9854433a28c22e192721179a2df5d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>AnyPort</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>aa3e6c984bcb81a35234dcc9cc8369d75a5a3c30fd128895403afc11076f461b19</anchor>
-      <arglist></arglist>
+      <enumvalue file="classsf_1_1Socket.html" anchor="a51bf0fd51057b98a10fbb866246176dcaf92965e2c8a7afb3c1b9a5c09a263636">Done</enumvalue>
+      <enumvalue file="classsf_1_1Socket.html" anchor="a51bf0fd51057b98a10fbb866246176dcadd353567e8118a2b8df4e822e59084ab">NotReady</enumvalue>
+      <enumvalue file="classsf_1_1Socket.html" anchor="a51bf0fd51057b98a10fbb866246176dca44ffd38a6dea695cbe2b34efdcc6cf27">Partial</enumvalue>
+      <enumvalue file="classsf_1_1Socket.html" anchor="a51bf0fd51057b98a10fbb866246176dcaef70e46fd3bbc21e3e1f0b6815e750c0">Disconnected</enumvalue>
+      <enumvalue file="classsf_1_1Socket.html" anchor="a51bf0fd51057b98a10fbb866246176dca902b0d55fddef6f8d651fe1035b7d4bd">Error</enumvalue>
     </member>
     <member kind="function">
       <type></type>
@@ -15495,8 +11276,8 @@
       <type>Status</type>
       <name>bind</name>
       <anchorfile>classsf_1_1UdpSocket.html</anchorfile>
-      <anchor>ad764c3d06d90b4714dcc97a0d1647bcc</anchor>
-      <arglist>(unsigned short port, const IpAddress &amp;address=IpAddress::Any)</arglist>
+      <anchor>a1bd7b273613665d5ef4dcecf5767ed75</anchor>
+      <arglist>(unsigned short port, IpAddress address=IpAddress::Any)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -15509,29 +11290,29 @@
       <type>Status</type>
       <name>send</name>
       <anchorfile>classsf_1_1UdpSocket.html</anchorfile>
-      <anchor>a664ab8f26f37c21cc4de1b847c2efcca</anchor>
-      <arglist>(const void *data, std::size_t size, const IpAddress &amp;remoteAddress, unsigned short remotePort)</arglist>
+      <anchor>a78b46f2a2345284339367bb44bab78cf</anchor>
+      <arglist>(const void *data, std::size_t size, IpAddress remoteAddress, unsigned short remotePort)</arglist>
     </member>
     <member kind="function">
       <type>Status</type>
       <name>receive</name>
       <anchorfile>classsf_1_1UdpSocket.html</anchorfile>
-      <anchor>ade9ca0f7ed7919136917b0b997a9833a</anchor>
-      <arglist>(void *data, std::size_t size, std::size_t &amp;received, IpAddress &amp;remoteAddress, unsigned short &amp;remotePort)</arglist>
+      <anchor>a3fdcfaf926ae4de72ab59573b408169d</anchor>
+      <arglist>(void *data, std::size_t size, std::size_t &amp;received, std::optional&lt; IpAddress &gt; &amp;remoteAddress, unsigned short &amp;remotePort)</arglist>
     </member>
     <member kind="function">
       <type>Status</type>
       <name>send</name>
       <anchorfile>classsf_1_1UdpSocket.html</anchorfile>
-      <anchor>a48969a62c80d40fd74293a740798e435</anchor>
-      <arglist>(Packet &amp;packet, const IpAddress &amp;remoteAddress, unsigned short remotePort)</arglist>
+      <anchor>aaaff67d1056fa46ca778db97eb0d5b6d</anchor>
+      <arglist>(Packet &amp;packet, IpAddress remoteAddress, unsigned short remotePort)</arglist>
     </member>
     <member kind="function">
       <type>Status</type>
       <name>receive</name>
       <anchorfile>classsf_1_1UdpSocket.html</anchorfile>
-      <anchor>afdd5c655d00c96222d5b477fc057a22b</anchor>
-      <arglist>(Packet &amp;packet, IpAddress &amp;remoteAddress, unsigned short &amp;remotePort)</arglist>
+      <anchor>a45fcae65cd694d9674f60c2479ffea30</anchor>
+      <arglist>(Packet &amp;packet, std::optional&lt; IpAddress &gt; &amp;remoteAddress, unsigned short &amp;remotePort)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -15547,42 +11328,34 @@
       <anchor>ab1ceca9ac114b8baeeda3b34a0aca468</anchor>
       <arglist>() const</arglist>
     </member>
+    <member kind="variable" static="yes">
+      <type>static constexpr std::size_t</type>
+      <name>MaxDatagramSize</name>
+      <anchorfile>classsf_1_1UdpSocket.html</anchorfile>
+      <anchor>a9a3612a4e887e10dbf396d2945b37548</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static constexpr unsigned short</type>
+      <name>AnyPort</name>
+      <anchorfile>classsf_1_1Socket.html</anchorfile>
+      <anchor>a16dfada3e5ba1773ac434bc70510221f</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="enumeration" protection="protected">
       <type></type>
       <name>Type</name>
       <anchorfile>classsf_1_1Socket.html</anchorfile>
       <anchor>a5d3ff44e56e68f02816bb0fabc34adf8</anchor>
       <arglist></arglist>
-    </member>
-    <member kind="enumvalue" protection="protected">
-      <name>Tcp</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a5d3ff44e56e68f02816bb0fabc34adf8acc02e97e90234b957eaad4dff7f22214</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue" protection="protected">
-      <name>Udp</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a5d3ff44e56e68f02816bb0fabc34adf8a6ebf3094830db4820191a327f3cc6ce2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue" protection="protected">
-      <name>Tcp</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a5d3ff44e56e68f02816bb0fabc34adf8acc02e97e90234b957eaad4dff7f22214</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue" protection="protected">
-      <name>Udp</name>
-      <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a5d3ff44e56e68f02816bb0fabc34adf8a6ebf3094830db4820191a327f3cc6ce2</anchor>
-      <arglist></arglist>
+      <enumvalue file="classsf_1_1Socket.html" anchor="a5d3ff44e56e68f02816bb0fabc34adf8a30b7fdeebc36988717d0e274cc2e7520">Tcp</enumvalue>
+      <enumvalue file="classsf_1_1Socket.html" anchor="a5d3ff44e56e68f02816bb0fabc34adf8a81baba40274ccb30f9fdfa2c73cf0482">Udp</enumvalue>
     </member>
     <member kind="function" protection="protected">
       <type>SocketHandle</type>
-      <name>getHandle</name>
+      <name>getNativeHandle</name>
       <anchorfile>classsf_1_1Socket.html</anchorfile>
-      <anchor>a675457784284ae2f5640bbbe16729393</anchor>
+      <anchor>a67fe286629b47a62c723478b846ab2c4</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function" protection="protected">
@@ -15619,15 +11392,15 @@
       <type>static In</type>
       <name>decode</name>
       <anchorfile>classsf_1_1Utf_3_0116_01_4.html</anchorfile>
-      <anchor>a17be6fc08e51182e7ac8bf9269dfae37</anchor>
-      <arglist>(In begin, In end, Uint32 &amp;output, Uint32 replacement=0)</arglist>
+      <anchor>ad77d90112de10aa2268f1a2f810b18f9</anchor>
+      <arglist>(In begin, In end, char32_t &amp;output, char32_t replacement=0)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static Out</type>
       <name>encode</name>
       <anchorfile>classsf_1_1Utf_3_0116_01_4.html</anchorfile>
-      <anchor>a516090c84ceec2cfde0a13b6148363bb</anchor>
-      <arglist>(Uint32 input, Out output, Uint16 replacement=0)</arglist>
+      <anchor>ad8585dc8ff7a19683de722764bc81c49</anchor>
+      <arglist>(char32_t input, Out output, char16_t replacement=0)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static In</type>
@@ -15647,8 +11420,8 @@
       <type>static Out</type>
       <name>fromAnsi</name>
       <anchorfile>classsf_1_1Utf_3_0116_01_4.html</anchorfile>
-      <anchor>a8a595dc1ea57ecf7aad944964913f0ff</anchor>
-      <arglist>(In begin, In end, Out output, const std::locale &amp;locale=std::locale())</arglist>
+      <anchor>a601429547902431dd8a443f968ec72ce</anchor>
+      <arglist>(In begin, In end, Out output, const std::locale &amp;locale={})</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static Out</type>
@@ -15668,8 +11441,8 @@
       <type>static Out</type>
       <name>toAnsi</name>
       <anchorfile>classsf_1_1Utf_3_0116_01_4.html</anchorfile>
-      <anchor>a6d2bfbdfe46364bd49bca28a410b18f7</anchor>
-      <arglist>(In begin, In end, Out output, char replacement=0, const std::locale &amp;locale=std::locale())</arglist>
+      <anchor>a8230fd0c8082cfe63b0bfdf13f2ad60f</anchor>
+      <arglist>(In begin, In end, Out output, char replacement=0, const std::locale &amp;locale={})</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static Out</type>
@@ -15714,15 +11487,15 @@
       <type>static In</type>
       <name>decode</name>
       <anchorfile>classsf_1_1Utf_3_0132_01_4.html</anchorfile>
-      <anchor>ad754ce8476f7b80563890dec12cefd46</anchor>
-      <arglist>(In begin, In end, Uint32 &amp;output, Uint32 replacement=0)</arglist>
+      <anchor>a9cc8923318da8f1b4f22ca39849b8b61</anchor>
+      <arglist>(In begin, In end, char32_t &amp;output, char32_t replacement=0)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static Out</type>
       <name>encode</name>
       <anchorfile>classsf_1_1Utf_3_0132_01_4.html</anchorfile>
-      <anchor>a27b9d3f3fc49a8c88d91966889fcfca1</anchor>
-      <arglist>(Uint32 input, Out output, Uint32 replacement=0)</arglist>
+      <anchor>aaf1566efc0669c2e184045c8e9d3d610</anchor>
+      <arglist>(char32_t input, Out output, char32_t replacement=0)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static In</type>
@@ -15742,8 +11515,8 @@
       <type>static Out</type>
       <name>fromAnsi</name>
       <anchorfile>classsf_1_1Utf_3_0132_01_4.html</anchorfile>
-      <anchor>a384a4169287af15876783ad477cac4e3</anchor>
-      <arglist>(In begin, In end, Out output, const std::locale &amp;locale=std::locale())</arglist>
+      <anchor>a6e37019ef0a047b4c8654750d91e6a47</anchor>
+      <arglist>(In begin, In end, Out output, const std::locale &amp;locale={})</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static Out</type>
@@ -15763,8 +11536,8 @@
       <type>static Out</type>
       <name>toAnsi</name>
       <anchorfile>classsf_1_1Utf_3_0132_01_4.html</anchorfile>
-      <anchor>a768cb205f7f1d20cd900e34fb48f9316</anchor>
-      <arglist>(In begin, In end, Out output, char replacement=0, const std::locale &amp;locale=std::locale())</arglist>
+      <anchor>aa3e82892a204b4b8b404c263d222deba</anchor>
+      <arglist>(In begin, In end, Out output, char replacement=0, const std::locale &amp;locale={})</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static Out</type>
@@ -15802,32 +11575,32 @@
       <arglist>(In begin, In end, Out output)</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static Uint32</type>
+      <type>static char32_t</type>
       <name>decodeAnsi</name>
       <anchorfile>classsf_1_1Utf_3_0132_01_4.html</anchorfile>
-      <anchor>a68346ea833f88267a7c739d4d96fb86f</anchor>
-      <arglist>(In input, const std::locale &amp;locale=std::locale())</arglist>
+      <anchor>a7dd1c0cce2f71059985b5a15dcc5c3fb</anchor>
+      <arglist>(In input, const std::locale &amp;locale={})</arglist>
     </member>
     <member kind="function" static="yes">
-      <type>static Uint32</type>
+      <type>static char32_t</type>
       <name>decodeWide</name>
       <anchorfile>classsf_1_1Utf_3_0132_01_4.html</anchorfile>
-      <anchor>a043fe25f5f4dbc205e78e6f1d99840dc</anchor>
+      <anchor>a451ebede3a9898cfdfe92e979b3a0f44</anchor>
       <arglist>(In input)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static Out</type>
       <name>encodeAnsi</name>
       <anchorfile>classsf_1_1Utf_3_0132_01_4.html</anchorfile>
-      <anchor>af6590226a071076ca22d818573a16ded</anchor>
-      <arglist>(Uint32 codepoint, Out output, char replacement=0, const std::locale &amp;locale=std::locale())</arglist>
+      <anchor>ab00c737cec395169b396f8c3d30d4662</anchor>
+      <arglist>(char32_t codepoint, Out output, char replacement=0, const std::locale &amp;locale={})</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static Out</type>
       <name>encodeWide</name>
       <anchorfile>classsf_1_1Utf_3_0132_01_4.html</anchorfile>
-      <anchor>a52e511e74ddc5df1bbf18f910193bc47</anchor>
-      <arglist>(Uint32 codepoint, Out output, wchar_t replacement=0)</arglist>
+      <anchor>ab367814139a1dcdb817a307c5b4604f2</anchor>
+      <arglist>(char32_t codepoint, Out output, wchar_t replacement=0)</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -15837,15 +11610,15 @@
       <type>static In</type>
       <name>decode</name>
       <anchorfile>classsf_1_1Utf_3_018_01_4.html</anchorfile>
-      <anchor>a59d4e8d5832961e62b263d308b72bf4b</anchor>
-      <arglist>(In begin, In end, Uint32 &amp;output, Uint32 replacement=0)</arglist>
+      <anchor>a43dab62b8b8dd639829f508fd0f2af6f</anchor>
+      <arglist>(In begin, In end, char32_t &amp;output, char32_t replacement=0)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static Out</type>
       <name>encode</name>
       <anchorfile>classsf_1_1Utf_3_018_01_4.html</anchorfile>
-      <anchor>a5fbc6b5a996f52e9e4a14633d0d71847</anchor>
-      <arglist>(Uint32 input, Out output, Uint8 replacement=0)</arglist>
+      <anchor>afcb5dcdfe1e4f8c1b949c5da2d12077d</anchor>
+      <arglist>(char32_t input, Out output, std::uint8_t replacement=0)</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static In</type>
@@ -15865,8 +11638,8 @@
       <type>static Out</type>
       <name>fromAnsi</name>
       <anchorfile>classsf_1_1Utf_3_018_01_4.html</anchorfile>
-      <anchor>a1b62ba85ad3c8ce68746e16192b3eef0</anchor>
-      <arglist>(In begin, In end, Out output, const std::locale &amp;locale=std::locale())</arglist>
+      <anchor>a4fe2086f44de9a930c8a2536ccf1295f</anchor>
+      <arglist>(In begin, In end, Out output, const std::locale &amp;locale={})</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static Out</type>
@@ -15886,8 +11659,8 @@
       <type>static Out</type>
       <name>toAnsi</name>
       <anchorfile>classsf_1_1Utf_3_018_01_4.html</anchorfile>
-      <anchor>a3d8b02f29021bd48831e7706d826f0c5</anchor>
-      <arglist>(In begin, In end, Out output, char replacement=0, const std::locale &amp;locale=std::locale())</arglist>
+      <anchor>a0184477f67318221e11312a5fac6a981</anchor>
+      <arglist>(In begin, In end, Out output, char replacement=0, const std::locale &amp;locale={})</arglist>
     </member>
     <member kind="function" static="yes">
       <type>static Out</type>
@@ -15930,25 +11703,116 @@
     <filename>classsf_1_1Vector2.html</filename>
     <templarg>typename T</templarg>
     <member kind="function">
-      <type></type>
+      <type>constexpr</type>
       <name>Vector2</name>
       <anchorfile>classsf_1_1Vector2.html</anchorfile>
-      <anchor>a58c32383b5291380db4b43a289f75988</anchor>
-      <arglist>()</arglist>
+      <anchor>a233626c2050cb7778eab4afb3330f324</anchor>
+      <arglist>()=default</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr</type>
+      <name>Vector2</name>
+      <anchorfile>classsf_1_1Vector2.html</anchorfile>
+      <anchor>a0376263ba09714adfdfff6452da53774</anchor>
+      <arglist>(T x, T y)</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr</type>
+      <name>operator Vector2&lt; U &gt;</name>
+      <anchorfile>classsf_1_1Vector2.html</anchorfile>
+      <anchor>a9be1ff00d4490c9da9f02db692c7302f</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>Vector2</name>
       <anchorfile>classsf_1_1Vector2.html</anchorfile>
-      <anchor>aed26a72164e59e8a4a0aeee2049568f1</anchor>
-      <arglist>(T X, T Y)</arglist>
+      <anchor>a16d61d7b61b3aa429835b669479d951d</anchor>
+      <arglist>(T r, Angle phi)</arglist>
     </member>
     <member kind="function">
-      <type></type>
-      <name>Vector2</name>
+      <type>T</type>
+      <name>length</name>
       <anchorfile>classsf_1_1Vector2.html</anchorfile>
-      <anchor>a3da455e0ae3f8ff6d2fe36d10b332d10</anchor>
-      <arglist>(const Vector2&lt; U &gt; &amp;vector)</arglist>
+      <anchor>a0f99a27817ae528e249e7a8053217e5f</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr T</type>
+      <name>lengthSquared</name>
+      <anchorfile>classsf_1_1Vector2.html</anchorfile>
+      <anchor>a5b81bd9bfb77bfaa5df34901ccbb1471</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>Vector2</type>
+      <name>normalized</name>
+      <anchorfile>classsf_1_1Vector2.html</anchorfile>
+      <anchor>ac8f9bb721feff232f8e2faddef407311</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>Angle</type>
+      <name>angleTo</name>
+      <anchorfile>classsf_1_1Vector2.html</anchorfile>
+      <anchor>a74bfd578ac68e581063c27f2bcfa7f37</anchor>
+      <arglist>(Vector2 rhs) const</arglist>
+    </member>
+    <member kind="function">
+      <type>Angle</type>
+      <name>angle</name>
+      <anchorfile>classsf_1_1Vector2.html</anchorfile>
+      <anchor>ae147c7f7d85347e1adc2e1a66ad87498</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>Vector2</type>
+      <name>rotatedBy</name>
+      <anchorfile>classsf_1_1Vector2.html</anchorfile>
+      <anchor>a5fc59b41ddaa0302556f6adbe849bdb4</anchor>
+      <arglist>(Angle phi) const</arglist>
+    </member>
+    <member kind="function">
+      <type>Vector2</type>
+      <name>projectedOnto</name>
+      <anchorfile>classsf_1_1Vector2.html</anchorfile>
+      <anchor>a5c8706b4817b1509ecc0ffebbfd0c70b</anchor>
+      <arglist>(Vector2 axis) const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr Vector2</type>
+      <name>perpendicular</name>
+      <anchorfile>classsf_1_1Vector2.html</anchorfile>
+      <anchor>a58eef070c3d27622f091c3a6aaed1c75</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr T</type>
+      <name>dot</name>
+      <anchorfile>classsf_1_1Vector2.html</anchorfile>
+      <anchor>aee222bf5c5cf5f88e33aa013e25a7b37</anchor>
+      <arglist>(Vector2 rhs) const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr T</type>
+      <name>cross</name>
+      <anchorfile>classsf_1_1Vector2.html</anchorfile>
+      <anchor>a078c3e36712860744c73ea2769e53417</anchor>
+      <arglist>(Vector2 rhs) const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr Vector2</type>
+      <name>componentWiseMul</name>
+      <anchorfile>classsf_1_1Vector2.html</anchorfile>
+      <anchor>ad7751c56d4f274c2a0083cad6414378b</anchor>
+      <arglist>(Vector2 rhs) const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr Vector2</type>
+      <name>componentWiseDiv</name>
+      <anchorfile>classsf_1_1Vector2.html</anchorfile>
+      <anchor>a1ffaa73823418df2d862b1bbe744eb16</anchor>
+      <arglist>(Vector2 rhs) const</arglist>
     </member>
     <member kind="variable">
       <type>T</type>
@@ -15965,88 +11829,88 @@
       <arglist></arglist>
     </member>
     <member kind="function">
-      <type>Vector2&lt; T &gt;</type>
+      <type>constexpr Vector2&lt; T &gt;</type>
       <name>operator-</name>
       <anchorfile>classsf_1_1Vector2.html</anchorfile>
-      <anchor>a3885c2e66dc427cec7eaa178d59d8e8b</anchor>
-      <arglist>(const Vector2&lt; T &gt; &amp;right)</arglist>
+      <anchor>a8a56bcc942a98756762d8a29f928cd84</anchor>
+      <arglist>(Vector2&lt; T &gt; right)</arglist>
     </member>
     <member kind="function">
-      <type>Vector2&lt; T &gt; &amp;</type>
+      <type>constexpr Vector2&lt; T &gt; &amp;</type>
       <name>operator+=</name>
       <anchorfile>classsf_1_1Vector2.html</anchorfile>
-      <anchor>ad4b7a9d355d57790bfc7df0ade8bb628</anchor>
-      <arglist>(Vector2&lt; T &gt; &amp;left, const Vector2&lt; T &gt; &amp;right)</arglist>
+      <anchor>aaad796083a13f08d4fc3a3ef621288d0</anchor>
+      <arglist>(Vector2&lt; T &gt; &amp;left, Vector2&lt; T &gt; right)</arglist>
     </member>
     <member kind="function">
-      <type>Vector2&lt; T &gt; &amp;</type>
+      <type>constexpr Vector2&lt; T &gt; &amp;</type>
       <name>operator-=</name>
       <anchorfile>classsf_1_1Vector2.html</anchorfile>
-      <anchor>a30a5a12ad03c9a3a982a0a313bf84e6f</anchor>
-      <arglist>(Vector2&lt; T &gt; &amp;left, const Vector2&lt; T &gt; &amp;right)</arglist>
+      <anchor>ab2a135edcc4a593c0cdca64606c94d34</anchor>
+      <arglist>(Vector2&lt; T &gt; &amp;left, Vector2&lt; T &gt; right)</arglist>
     </member>
     <member kind="function">
-      <type>Vector2&lt; T &gt;</type>
+      <type>constexpr Vector2&lt; T &gt;</type>
       <name>operator+</name>
       <anchorfile>classsf_1_1Vector2.html</anchorfile>
-      <anchor>a72421239823c38a6b780c86a710ead07</anchor>
-      <arglist>(const Vector2&lt; T &gt; &amp;left, const Vector2&lt; T &gt; &amp;right)</arglist>
+      <anchor>a2e066d86d153f287ca8a632e6ed7a9a8</anchor>
+      <arglist>(Vector2&lt; T &gt; left, Vector2&lt; T &gt; right)</arglist>
     </member>
     <member kind="function">
-      <type>Vector2&lt; T &gt;</type>
+      <type>constexpr Vector2&lt; T &gt;</type>
       <name>operator-</name>
       <anchorfile>classsf_1_1Vector2.html</anchorfile>
-      <anchor>ad027adae53ec547a86c20deeb05c9e85</anchor>
-      <arglist>(const Vector2&lt; T &gt; &amp;left, const Vector2&lt; T &gt; &amp;right)</arglist>
+      <anchor>aa51377d4f94fb582d649c683e834ecca</anchor>
+      <arglist>(Vector2&lt; T &gt; left, Vector2&lt; T &gt; right)</arglist>
     </member>
     <member kind="function">
-      <type>Vector2&lt; T &gt;</type>
+      <type>constexpr Vector2&lt; T &gt;</type>
       <name>operator*</name>
       <anchorfile>classsf_1_1Vector2.html</anchorfile>
-      <anchor>a5f48ca928995b41c89f155afe8d16b02</anchor>
-      <arglist>(const Vector2&lt; T &gt; &amp;left, T right)</arglist>
+      <anchor>aefd6a4cba946cac0b47d3211a6d303e1</anchor>
+      <arglist>(Vector2&lt; T &gt; left, T right)</arglist>
     </member>
     <member kind="function">
-      <type>Vector2&lt; T &gt;</type>
+      <type>constexpr Vector2&lt; T &gt;</type>
       <name>operator*</name>
       <anchorfile>classsf_1_1Vector2.html</anchorfile>
-      <anchor>ad8b3e1cf7b156a984bc1427539ca8605</anchor>
-      <arglist>(T left, const Vector2&lt; T &gt; &amp;right)</arglist>
+      <anchor>af34e7d8124fcc40ce508e46e0d34be73</anchor>
+      <arglist>(T left, Vector2&lt; T &gt; right)</arglist>
     </member>
     <member kind="function">
-      <type>Vector2&lt; T &gt; &amp;</type>
+      <type>constexpr Vector2&lt; T &gt; &amp;</type>
       <name>operator*=</name>
       <anchorfile>classsf_1_1Vector2.html</anchorfile>
-      <anchor>abea24cb28c0d6e2957e259ba4e65d70e</anchor>
+      <anchor>aa905b721512075ab95aa270a0926d605</anchor>
       <arglist>(Vector2&lt; T &gt; &amp;left, T right)</arglist>
     </member>
     <member kind="function">
-      <type>Vector2&lt; T &gt;</type>
+      <type>constexpr Vector2&lt; T &gt;</type>
       <name>operator/</name>
       <anchorfile>classsf_1_1Vector2.html</anchorfile>
-      <anchor>a7409dd89cb3aad6c3bc6622311107311</anchor>
-      <arglist>(const Vector2&lt; T &gt; &amp;left, T right)</arglist>
+      <anchor>afaaab9a4baab966ea90f4b2581c5786a</anchor>
+      <arglist>(Vector2&lt; T &gt; left, T right)</arglist>
     </member>
     <member kind="function">
-      <type>Vector2&lt; T &gt; &amp;</type>
+      <type>constexpr Vector2&lt; T &gt; &amp;</type>
       <name>operator/=</name>
       <anchorfile>classsf_1_1Vector2.html</anchorfile>
-      <anchor>ac4d293c9dc7954ccfd5e373972f38b03</anchor>
+      <anchor>aedc5f334aed16214ff359e15c1a1c433</anchor>
       <arglist>(Vector2&lt; T &gt; &amp;left, T right)</arglist>
     </member>
     <member kind="function">
-      <type>bool</type>
+      <type>constexpr bool</type>
       <name>operator==</name>
       <anchorfile>classsf_1_1Vector2.html</anchorfile>
-      <anchor>a9a7b2d36c3850828fdb651facfd25136</anchor>
-      <arglist>(const Vector2&lt; T &gt; &amp;left, const Vector2&lt; T &gt; &amp;right)</arglist>
+      <anchor>a932e0de006680f6b8787e2df6b3df003</anchor>
+      <arglist>(Vector2&lt; T &gt; left, Vector2&lt; T &gt; right)</arglist>
     </member>
     <member kind="function">
-      <type>bool</type>
+      <type>constexpr bool</type>
       <name>operator!=</name>
       <anchorfile>classsf_1_1Vector2.html</anchorfile>
-      <anchor>a01673da35ef9c52d0e54b8263549a956</anchor>
-      <arglist>(const Vector2&lt; T &gt; &amp;left, const Vector2&lt; T &gt; &amp;right)</arglist>
+      <anchor>aefc58a59529472fe01b42220f0d4c802</anchor>
+      <arglist>(Vector2&lt; T &gt; left, Vector2&lt; T &gt; right)</arglist>
     </member>
   </compound>
   <compound kind="class">
@@ -16054,25 +11918,74 @@
     <filename>classsf_1_1Vector3.html</filename>
     <templarg>typename T</templarg>
     <member kind="function">
-      <type></type>
+      <type>constexpr</type>
       <name>Vector3</name>
       <anchorfile>classsf_1_1Vector3.html</anchorfile>
-      <anchor>aee8be1985c6e45e381ad4071265636f9</anchor>
-      <arglist>()</arglist>
+      <anchor>ae198ff05b77a8ef447a8b5913f5436af</anchor>
+      <arglist>()=default</arglist>
     </member>
     <member kind="function">
-      <type></type>
+      <type>constexpr</type>
       <name>Vector3</name>
       <anchorfile>classsf_1_1Vector3.html</anchorfile>
-      <anchor>a99ed75b68f58adfa3e9fa0561b424bf6</anchor>
-      <arglist>(T X, T Y, T Z)</arglist>
+      <anchor>a8089b91a2c3364471a6981b993cb95af</anchor>
+      <arglist>(T x, T y, T z)</arglist>
     </member>
     <member kind="function">
-      <type></type>
-      <name>Vector3</name>
+      <type>constexpr</type>
+      <name>operator Vector3&lt; U &gt;</name>
       <anchorfile>classsf_1_1Vector3.html</anchorfile>
-      <anchor>adb2b2e150025e97ccfa96219bbed59d1</anchor>
-      <arglist>(const Vector3&lt; U &gt; &amp;vector)</arglist>
+      <anchor>aa9beed5d678b5009cc771533d2967e00</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>T</type>
+      <name>length</name>
+      <anchorfile>classsf_1_1Vector3.html</anchorfile>
+      <anchor>aefaa846a793073fca1ba739def64aa96</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr T</type>
+      <name>lengthSquared</name>
+      <anchorfile>classsf_1_1Vector3.html</anchorfile>
+      <anchor>aed0867ef16a5d115647d703d09a43cb7</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>Vector3</type>
+      <name>normalized</name>
+      <anchorfile>classsf_1_1Vector3.html</anchorfile>
+      <anchor>ad029fdaaa394b3cc40a6231eb34c44cf</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr T</type>
+      <name>dot</name>
+      <anchorfile>classsf_1_1Vector3.html</anchorfile>
+      <anchor>a3415efbdf1c7d57bea45157e5031d493</anchor>
+      <arglist>(const Vector3 &amp;rhs) const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr Vector3</type>
+      <name>cross</name>
+      <anchorfile>classsf_1_1Vector3.html</anchorfile>
+      <anchor>a0ae2c619bd454166d17930315f9e1068</anchor>
+      <arglist>(const Vector3 &amp;rhs) const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr Vector3</type>
+      <name>componentWiseMul</name>
+      <anchorfile>classsf_1_1Vector3.html</anchorfile>
+      <anchor>aa036d935daf75ac7f7bf21b977266521</anchor>
+      <arglist>(const Vector3 &amp;rhs) const</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr Vector3</type>
+      <name>componentWiseDiv</name>
+      <anchorfile>classsf_1_1Vector3.html</anchorfile>
+      <anchor>a223eb82eb24e9411d5fae705d5c31cf6</anchor>
+      <arglist>(const Vector3 &amp;rhs) const</arglist>
     </member>
     <member kind="variable">
       <type>T</type>
@@ -16096,146 +12009,111 @@
       <arglist></arglist>
     </member>
     <member kind="function">
-      <type>Vector3&lt; T &gt;</type>
+      <type>constexpr Vector3&lt; T &gt;</type>
       <name>operator-</name>
       <anchorfile>classsf_1_1Vector3.html</anchorfile>
-      <anchor>a9b75d2fb9b0f2fd9fe33f8f06f9dda75</anchor>
+      <anchor>af10c102acae3a4879f19557efac86522</anchor>
       <arglist>(const Vector3&lt; T &gt; &amp;left)</arglist>
     </member>
     <member kind="function">
-      <type>Vector3&lt; T &gt; &amp;</type>
+      <type>constexpr Vector3&lt; T &gt; &amp;</type>
       <name>operator+=</name>
       <anchorfile>classsf_1_1Vector3.html</anchorfile>
-      <anchor>abc28859af163c63318ea2723b81c5ad9</anchor>
+      <anchor>a726865e85b742fe950d71de940eb9291</anchor>
       <arglist>(Vector3&lt; T &gt; &amp;left, const Vector3&lt; T &gt; &amp;right)</arglist>
     </member>
     <member kind="function">
-      <type>Vector3&lt; T &gt; &amp;</type>
+      <type>constexpr Vector3&lt; T &gt; &amp;</type>
       <name>operator-=</name>
       <anchorfile>classsf_1_1Vector3.html</anchorfile>
-      <anchor>aa465672d2a4ee5fd354e585cf08d2ab9</anchor>
+      <anchor>a417e66974fca0750a1117da3b3e3d888</anchor>
       <arglist>(Vector3&lt; T &gt; &amp;left, const Vector3&lt; T &gt; &amp;right)</arglist>
     </member>
     <member kind="function">
-      <type>Vector3&lt; T &gt;</type>
+      <type>constexpr Vector3&lt; T &gt;</type>
       <name>operator+</name>
       <anchorfile>classsf_1_1Vector3.html</anchorfile>
-      <anchor>a6500a0cb00e07801e9e9d7e96852ddd3</anchor>
+      <anchor>aac707a09a00ba77bce6b224369f9dac8</anchor>
       <arglist>(const Vector3&lt; T &gt; &amp;left, const Vector3&lt; T &gt; &amp;right)</arglist>
     </member>
     <member kind="function">
-      <type>Vector3&lt; T &gt;</type>
+      <type>constexpr Vector3&lt; T &gt;</type>
       <name>operator-</name>
       <anchorfile>classsf_1_1Vector3.html</anchorfile>
-      <anchor>abe0b9411c00cf807bf8a5f835874bd2a</anchor>
+      <anchor>a6a85ca3ac65008a2e598325d2e23de65</anchor>
       <arglist>(const Vector3&lt; T &gt; &amp;left, const Vector3&lt; T &gt; &amp;right)</arglist>
     </member>
     <member kind="function">
-      <type>Vector3&lt; T &gt;</type>
+      <type>constexpr Vector3&lt; T &gt;</type>
       <name>operator*</name>
       <anchorfile>classsf_1_1Vector3.html</anchorfile>
-      <anchor>a44ec312b31c1a85dcff4863795f98329</anchor>
+      <anchor>a9b5144e7b818f8217993de19a7af99f9</anchor>
       <arglist>(const Vector3&lt; T &gt; &amp;left, T right)</arglist>
     </member>
     <member kind="function">
-      <type>Vector3&lt; T &gt;</type>
+      <type>constexpr Vector3&lt; T &gt;</type>
       <name>operator*</name>
       <anchorfile>classsf_1_1Vector3.html</anchorfile>
-      <anchor>aa6f2b0d9f79c1b9774759b7087affbb1</anchor>
+      <anchor>a63a5ec51eeb6db038e906bff66395ec9</anchor>
       <arglist>(T left, const Vector3&lt; T &gt; &amp;right)</arglist>
     </member>
     <member kind="function">
-      <type>Vector3&lt; T &gt; &amp;</type>
+      <type>constexpr Vector3&lt; T &gt; &amp;</type>
       <name>operator*=</name>
       <anchorfile>classsf_1_1Vector3.html</anchorfile>
-      <anchor>ad5fb972775ce8ab58cd9670789e806a7</anchor>
+      <anchor>a7e67d71427f99192b16c1e959dc422ad</anchor>
       <arglist>(Vector3&lt; T &gt; &amp;left, T right)</arglist>
     </member>
     <member kind="function">
-      <type>Vector3&lt; T &gt;</type>
+      <type>constexpr Vector3&lt; T &gt;</type>
       <name>operator/</name>
       <anchorfile>classsf_1_1Vector3.html</anchorfile>
-      <anchor>ad4ba4a83de236ddeb92a7b759187e90d</anchor>
+      <anchor>a02306f9d93ab82e545623e6fac868063</anchor>
       <arglist>(const Vector3&lt; T &gt; &amp;left, T right)</arglist>
     </member>
     <member kind="function">
-      <type>Vector3&lt; T &gt; &amp;</type>
+      <type>constexpr Vector3&lt; T &gt; &amp;</type>
       <name>operator/=</name>
       <anchorfile>classsf_1_1Vector3.html</anchorfile>
-      <anchor>a8995a700f9dffccc6dddb3696ae17b64</anchor>
+      <anchor>a0bbfa0d1a9ee7ccaf0f64567f1a601ba</anchor>
       <arglist>(Vector3&lt; T &gt; &amp;left, T right)</arglist>
     </member>
     <member kind="function">
-      <type>bool</type>
+      <type>constexpr bool</type>
       <name>operator==</name>
       <anchorfile>classsf_1_1Vector3.html</anchorfile>
-      <anchor>a388d72db973306a35ba467016b3dee30</anchor>
+      <anchor>a09f01fd7e9c4cc02d0c5f57a760b9dc2</anchor>
       <arglist>(const Vector3&lt; T &gt; &amp;left, const Vector3&lt; T &gt; &amp;right)</arglist>
     </member>
     <member kind="function">
-      <type>bool</type>
+      <type>constexpr bool</type>
       <name>operator!=</name>
       <anchorfile>classsf_1_1Vector3.html</anchorfile>
-      <anchor>a608500d1ad3b78082cb5bb4356742bd4</anchor>
+      <anchor>aaba028e454d6ab891ac231501aa33de1</anchor>
       <arglist>(const Vector3&lt; T &gt; &amp;left, const Vector3&lt; T &gt; &amp;right)</arglist>
     </member>
   </compound>
-  <compound kind="class">
+  <compound kind="struct">
     <name>sf::Vertex</name>
-    <filename>classsf_1_1Vertex.html</filename>
-    <member kind="function">
-      <type></type>
-      <name>Vertex</name>
-      <anchorfile>classsf_1_1Vertex.html</anchorfile>
-      <anchor>a6b4c79cd69f7ec1296fede536f39e9c8</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>Vertex</name>
-      <anchorfile>classsf_1_1Vertex.html</anchorfile>
-      <anchor>a4dccc5c351b73b6fac169fe442535b40</anchor>
-      <arglist>(const Vector2f &amp;thePosition)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>Vertex</name>
-      <anchorfile>classsf_1_1Vertex.html</anchorfile>
-      <anchor>a70b0679b4ec531d5bd1a7d0225c7321a</anchor>
-      <arglist>(const Vector2f &amp;thePosition, const Color &amp;theColor)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>Vertex</name>
-      <anchorfile>classsf_1_1Vertex.html</anchorfile>
-      <anchor>ab9bf849c4c0d82d09bf5bece23d2456a</anchor>
-      <arglist>(const Vector2f &amp;thePosition, const Vector2f &amp;theTexCoords)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>Vertex</name>
-      <anchorfile>classsf_1_1Vertex.html</anchorfile>
-      <anchor>ad5943f2b3cbc64b6e714bb37ccaf4960</anchor>
-      <arglist>(const Vector2f &amp;thePosition, const Color &amp;theColor, const Vector2f &amp;theTexCoords)</arglist>
-    </member>
+    <filename>structsf_1_1Vertex.html</filename>
     <member kind="variable">
       <type>Vector2f</type>
       <name>position</name>
-      <anchorfile>classsf_1_1Vertex.html</anchorfile>
+      <anchorfile>structsf_1_1Vertex.html</anchorfile>
       <anchor>a8a4e0f4dfa7f1eb215c92e93d04f0ac0</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>Color</type>
       <name>color</name>
-      <anchorfile>classsf_1_1Vertex.html</anchorfile>
+      <anchorfile>structsf_1_1Vertex.html</anchorfile>
       <anchor>a799faa0629442e90f07cd2edb568ff80</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>Vector2f</type>
       <name>texCoords</name>
-      <anchorfile>classsf_1_1Vertex.html</anchorfile>
+      <anchorfile>structsf_1_1Vertex.html</anchorfile>
       <anchor>a9e79bd05818d36c4789751908037097c</anchor>
       <arglist></arglist>
     </member>
@@ -16248,8 +12126,8 @@
       <type></type>
       <name>VertexArray</name>
       <anchorfile>classsf_1_1VertexArray.html</anchorfile>
-      <anchor>a15729e01df8fc0021f9774dfb56295c1</anchor>
-      <arglist>()</arglist>
+      <anchor>ae08fac1f6274698f55c752bd3ef11ba3</anchor>
+      <arglist>()=default</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -16333,49 +12211,16 @@
       <anchorfile>classsf_1_1VertexBuffer.html</anchorfile>
       <anchor>a3a531528684e63ecb45edd51282f5cb7</anchor>
       <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Stream</name>
-      <anchorfile>classsf_1_1VertexBuffer.html</anchorfile>
-      <anchor>a3a531528684e63ecb45edd51282f5cb7aeed06a391698772af58a9cfdff77deaf</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Dynamic</name>
-      <anchorfile>classsf_1_1VertexBuffer.html</anchorfile>
-      <anchor>a3a531528684e63ecb45edd51282f5cb7a13365282a5933ecd9cc6a3ef39ba58f7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Static</name>
-      <anchorfile>classsf_1_1VertexBuffer.html</anchorfile>
-      <anchor>a3a531528684e63ecb45edd51282f5cb7a041ab564f6cd1b6775bd0ebff06b6d7e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Stream</name>
-      <anchorfile>classsf_1_1VertexBuffer.html</anchorfile>
-      <anchor>a3a531528684e63ecb45edd51282f5cb7aeed06a391698772af58a9cfdff77deaf</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Dynamic</name>
-      <anchorfile>classsf_1_1VertexBuffer.html</anchorfile>
-      <anchor>a3a531528684e63ecb45edd51282f5cb7a13365282a5933ecd9cc6a3ef39ba58f7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>Static</name>
-      <anchorfile>classsf_1_1VertexBuffer.html</anchorfile>
-      <anchor>a3a531528684e63ecb45edd51282f5cb7a041ab564f6cd1b6775bd0ebff06b6d7e</anchor>
-      <arglist></arglist>
+      <enumvalue file="classsf_1_1VertexBuffer.html" anchor="a3a531528684e63ecb45edd51282f5cb7aeae835e83c0494a376229f254f7d3392">Stream</enumvalue>
+      <enumvalue file="classsf_1_1VertexBuffer.html" anchor="a3a531528684e63ecb45edd51282f5cb7a971fd8cc345d8bd9f92e9f7d88fdf20c">Dynamic</enumvalue>
+      <enumvalue file="classsf_1_1VertexBuffer.html" anchor="a3a531528684e63ecb45edd51282f5cb7a84a8921b25f505d0d2077aeb5db4bc16">Static</enumvalue>
     </member>
     <member kind="function">
       <type></type>
       <name>VertexBuffer</name>
       <anchorfile>classsf_1_1VertexBuffer.html</anchorfile>
-      <anchor>aba8836c571cef25a0f80e478add1560a</anchor>
-      <arglist>()</arglist>
+      <anchor>a9824d6fc4d01bc542082ff4436885399</anchor>
+      <arglist>()=default</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -16409,8 +12254,8 @@
       <type></type>
       <name>~VertexBuffer</name>
       <anchorfile>classsf_1_1VertexBuffer.html</anchorfile>
-      <anchor>acfbb3b16221bfb9406fcaa18cfcac3e7</anchor>
-      <arglist>()</arglist>
+      <anchor>a1ecc5d81030a0da11e3faede81fd9b11</anchor>
+      <arglist>() override</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
@@ -16458,8 +12303,8 @@
       <type>void</type>
       <name>swap</name>
       <anchorfile>classsf_1_1VertexBuffer.html</anchorfile>
-      <anchor>a3954d696848dc4c921c15a6b4459c8e6</anchor>
-      <arglist>(VertexBuffer &amp;right)</arglist>
+      <anchor>afe0c81c4a48b250b36813d0f452b3c68</anchor>
+      <arglist>(VertexBuffer &amp;right) noexcept</arglist>
     </member>
     <member kind="function">
       <type>unsigned int</type>
@@ -16518,15 +12363,15 @@
       <type></type>
       <name>VideoMode</name>
       <anchorfile>classsf_1_1VideoMode.html</anchorfile>
-      <anchor>a04c9417e5c304510bef5f6aeb03f6ce1</anchor>
-      <arglist>()</arglist>
+      <anchor>a5ef80d3ae7eb90d71b4da37077f949bc</anchor>
+      <arglist>()=default</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>VideoMode</name>
       <anchorfile>classsf_1_1VideoMode.html</anchorfile>
-      <anchor>a46c35ed41de9e115661dcd529d64e9d3</anchor>
-      <arglist>(unsigned int modeWidth, unsigned int modeHeight, unsigned int modeBitsPerPixel=32)</arglist>
+      <anchor>a958f45676f31f338e70b8f588c6ab767</anchor>
+      <arglist>(Vector2u modeSize, unsigned int modeBitsPerPixel=32)</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
@@ -16550,17 +12395,10 @@
       <arglist>()</arglist>
     </member>
     <member kind="variable">
-      <type>unsigned int</type>
-      <name>width</name>
+      <type>Vector2u</type>
+      <name>size</name>
       <anchorfile>classsf_1_1VideoMode.html</anchorfile>
-      <anchor>a9b3b2ad2cac6b9c266823fb5ed506d90</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>unsigned int</type>
-      <name>height</name>
-      <anchorfile>classsf_1_1VideoMode.html</anchorfile>
-      <anchor>a5a88d44c9470db7474361a42a189342d</anchor>
+      <anchor>afa7b60723adc1c39e43075a157d35d98</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -16620,8 +12458,8 @@
       <type></type>
       <name>View</name>
       <anchorfile>classsf_1_1View.html</anchorfile>
-      <anchor>a28c38308ff089ae5bdacd001d12286d3</anchor>
-      <arglist>()</arglist>
+      <anchor>a7405abaa98a7772b4ad7490d213c8941</anchor>
+      <arglist>()=default</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -16634,43 +12472,29 @@
       <type></type>
       <name>View</name>
       <anchorfile>classsf_1_1View.html</anchorfile>
-      <anchor>afdaf84cfc910ef160450d63603457ea4</anchor>
-      <arglist>(const Vector2f &amp;center, const Vector2f &amp;size)</arglist>
+      <anchor>a01eb9b64eb8944ea012936f56268ce18</anchor>
+      <arglist>(Vector2f center, Vector2f size)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>setCenter</name>
       <anchorfile>classsf_1_1View.html</anchorfile>
-      <anchor>aa8e3fedb008306ff9811163545fb75f2</anchor>
-      <arglist>(float x, float y)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>setCenter</name>
-      <anchorfile>classsf_1_1View.html</anchorfile>
-      <anchor>ab0296b03793e0873e6ae9e15311f3e78</anchor>
-      <arglist>(const Vector2f &amp;center)</arglist>
+      <anchor>a27c800522c013ccbd4ac2b6f321b4376</anchor>
+      <arglist>(Vector2f center)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>setSize</name>
       <anchorfile>classsf_1_1View.html</anchorfile>
-      <anchor>a9525b73fe9fbaceb9568faf56b399dab</anchor>
-      <arglist>(float width, float height)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>setSize</name>
-      <anchorfile>classsf_1_1View.html</anchorfile>
-      <anchor>a9e08d471ce21aa0e69ce55ff9de66d29</anchor>
-      <arglist>(const Vector2f &amp;size)</arglist>
+      <anchor>a49ad66679cd7a461917eaee587020354</anchor>
+      <arglist>(Vector2f size)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>setRotation</name>
       <anchorfile>classsf_1_1View.html</anchorfile>
-      <anchor>a24d0503c9c51f5ef5918612786d325c1</anchor>
-      <arglist>(float angle)</arglist>
+      <anchor>a73a27e9e90f4f00e0783fa2e771dfa98</anchor>
+      <arglist>(Angle angle)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -16681,30 +12505,30 @@
     </member>
     <member kind="function">
       <type>void</type>
-      <name>reset</name>
+      <name>setScissor</name>
       <anchorfile>classsf_1_1View.html</anchorfile>
-      <anchor>ac95b636eafab3922b7e8304fb6c00d7d</anchor>
-      <arglist>(const FloatRect &amp;rectangle)</arglist>
+      <anchor>a51029b20359f9889f4e0ad8c8254abc9</anchor>
+      <arglist>(const FloatRect &amp;scissor)</arglist>
     </member>
     <member kind="function">
-      <type>const Vector2f &amp;</type>
+      <type>Vector2f</type>
       <name>getCenter</name>
       <anchorfile>classsf_1_1View.html</anchorfile>
-      <anchor>a8bd01cd2bcad03e547232b190c215b09</anchor>
+      <anchor>aadd146fcb51b838c935bdc487f171247</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>const Vector2f &amp;</type>
+      <type>Vector2f</type>
       <name>getSize</name>
       <anchorfile>classsf_1_1View.html</anchorfile>
-      <anchor>a57e4a87cf0d724678675d22a0093719a</anchor>
+      <anchor>a4e5953e811413746fce3e134bd778416</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>float</type>
+      <type>Angle</type>
       <name>getRotation</name>
       <anchorfile>classsf_1_1View.html</anchorfile>
-      <anchor>a324d8885f4ab17f1f7b0313580c9b84e</anchor>
+      <anchor>a5b61f4e9d09024cbf9a5b2cdc314e693</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
@@ -16715,25 +12539,25 @@
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>void</type>
-      <name>move</name>
+      <type>const FloatRect &amp;</type>
+      <name>getScissor</name>
       <anchorfile>classsf_1_1View.html</anchorfile>
-      <anchor>a0c82144b837caf812f7cb25a43d80c41</anchor>
-      <arglist>(float offsetX, float offsetY)</arglist>
+      <anchor>a46ea8dd5eff1148b0bd54e4270a7a0ce</anchor>
+      <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>move</name>
       <anchorfile>classsf_1_1View.html</anchorfile>
-      <anchor>a4c98a6e04fed756dfaff8f629de50862</anchor>
-      <arglist>(const Vector2f &amp;offset)</arglist>
+      <anchor>a5df7c26db6583f0a59bc0522b27348f1</anchor>
+      <arglist>(Vector2f offset)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>rotate</name>
       <anchorfile>classsf_1_1View.html</anchorfile>
-      <anchor>a5fd3901aae1845586ca40add94faa378</anchor>
-      <arglist>(float angle)</arglist>
+      <anchor>a23c24a1ec48c3e50aba2307adaddaf93</anchor>
+      <arglist>(Angle angle)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -16758,31 +12582,6 @@
     </member>
   </compound>
   <compound kind="class">
-    <name>sf::Vulkan</name>
-    <filename>classsf_1_1Vulkan.html</filename>
-    <member kind="function" static="yes">
-      <type>static bool</type>
-      <name>isAvailable</name>
-      <anchorfile>classsf_1_1Vulkan.html</anchorfile>
-      <anchor>a88ddd65cc8732316e3066541084c32a0</anchor>
-      <arglist>(bool requireGraphics=true)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static VulkanFunctionPointer</type>
-      <name>getFunction</name>
-      <anchorfile>classsf_1_1Vulkan.html</anchorfile>
-      <anchor>af5b575941e5976af33c6447046e7fefe</anchor>
-      <arglist>(const char *name)</arglist>
-    </member>
-    <member kind="function" static="yes">
-      <type>static const std::vector&lt; const char * &gt; &amp;</type>
-      <name>getGraphicsRequiredInstanceExtensions</name>
-      <anchorfile>classsf_1_1Vulkan.html</anchorfile>
-      <anchor>a295895b452031cf58fadbf3205db6149</anchor>
-      <arglist>()</arglist>
-    </member>
-  </compound>
-  <compound kind="class">
     <name>sf::Window</name>
     <filename>classsf_1_1Window.html</filename>
     <base>sf::WindowBase</base>
@@ -16798,43 +12597,92 @@
       <type></type>
       <name>Window</name>
       <anchorfile>classsf_1_1Window.html</anchorfile>
-      <anchor>a1bee771baecbae6d357871929dc042a2</anchor>
-      <arglist>(VideoMode mode, const String &amp;title, Uint32 style=Style::Default, const ContextSettings &amp;settings=ContextSettings())</arglist>
+      <anchor>a264a604e7ad85e93f5177e81f101876e</anchor>
+      <arglist>(VideoMode mode, const String &amp;title, std::uint32_t style=Style::Default, State state=State::Windowed, const ContextSettings &amp;settings={})</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>Window</name>
       <anchorfile>classsf_1_1Window.html</anchorfile>
-      <anchor>a6d60912633bff9d33cf3ade4e0201de4</anchor>
-      <arglist>(WindowHandle handle, const ContextSettings &amp;settings=ContextSettings())</arglist>
+      <anchor>a8671f611b3906bfb9cc0e64e87fc8b4d</anchor>
+      <arglist>(VideoMode mode, const String &amp;title, State state, const ContextSettings &amp;settings={})</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual</type>
+    <member kind="function">
+      <type></type>
+      <name>Window</name>
+      <anchorfile>classsf_1_1Window.html</anchorfile>
+      <anchor>a17e85b2ef81e910310ee8547e6b60049</anchor>
+      <arglist>(WindowHandle handle, const ContextSettings &amp;settings={})</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
       <name>~Window</name>
       <anchorfile>classsf_1_1Window.html</anchorfile>
-      <anchor>ac30eb6ea5f5594204944d09d4bd69a97</anchor>
-      <arglist>()</arglist>
+      <anchor>a3c4c37f0767c77c3fa5febb136037567</anchor>
+      <arglist>() override</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Window</name>
+      <anchorfile>classsf_1_1Window.html</anchorfile>
+      <anchor>a12e647a9b7f2f3688f6cd76712500f11</anchor>
+      <arglist>(const Window &amp;)=delete</arglist>
+    </member>
+    <member kind="function">
+      <type>Window &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classsf_1_1Window.html</anchorfile>
+      <anchor>ad5f4ebc8b06562d46701dc447118dc90</anchor>
+      <arglist>(const Window &amp;)=delete</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Window</name>
+      <anchorfile>classsf_1_1Window.html</anchorfile>
+      <anchor>ac09d9fa445e31230d7d6f634e8a21b40</anchor>
+      <arglist>(Window &amp;&amp;) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>Window &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classsf_1_1Window.html</anchorfile>
+      <anchor>a851ae87971b1b4132085f6f9521b4193</anchor>
+      <arglist>(Window &amp;&amp;) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>create</name>
+      <anchorfile>classsf_1_1Window.html</anchorfile>
+      <anchor>ae77f112046c240b477963326e2363e18</anchor>
+      <arglist>(VideoMode mode, const String &amp;title, std::uint32_t style=Style::Default, State state=State::Windowed) override</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
       <name>create</name>
       <anchorfile>classsf_1_1Window.html</anchorfile>
-      <anchor>ac6a58d9c26a18f0e70888d0f53e154c1</anchor>
-      <arglist>(VideoMode mode, const String &amp;title, Uint32 style=Style::Default)</arglist>
+      <anchor>ace10c7fc5904ddff72a0fede61758679</anchor>
+      <arglist>(VideoMode mode, const String &amp;title, std::uint32_t style, State state, const ContextSettings &amp;settings)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>create</name>
+      <anchorfile>classsf_1_1Window.html</anchorfile>
+      <anchor>a17af5e75b858635f45ad46ce91668ce8</anchor>
+      <arglist>(VideoMode mode, const String &amp;title, State state) override</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
       <name>create</name>
       <anchorfile>classsf_1_1Window.html</anchorfile>
-      <anchor>a6518b989614750e90d9784f4d05ce02c</anchor>
-      <arglist>(VideoMode mode, const String &amp;title, Uint32 style, const ContextSettings &amp;settings)</arglist>
+      <anchor>a3667f889b2b288c13fe8f039cbad9931</anchor>
+      <arglist>(VideoMode mode, const String &amp;title, State state, const ContextSettings &amp;settings)</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual void</type>
+    <member kind="function">
+      <type>void</type>
       <name>create</name>
       <anchorfile>classsf_1_1Window.html</anchorfile>
-      <anchor>a5ee0c5262df6cc4e1a8031ae6848437f</anchor>
-      <arglist>(WindowHandle handle)</arglist>
+      <anchor>a5246d47ddea8ad787be150e09df1fc53</anchor>
+      <arglist>(WindowHandle handle) override</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
@@ -16843,12 +12691,12 @@
       <anchor>a064dd5dd7bb337fb9f5635f580081a1e</anchor>
       <arglist>(WindowHandle handle, const ContextSettings &amp;settings)</arglist>
     </member>
-    <member kind="function" virtualness="virtual">
-      <type>virtual void</type>
+    <member kind="function">
+      <type>void</type>
       <name>close</name>
       <anchorfile>classsf_1_1Window.html</anchorfile>
-      <anchor>a7355b916852af56cfe3cc00feed9f419</anchor>
-      <arglist>()</arglist>
+      <anchor>ab1d808a3682db8d113d67354bcbd717d</anchor>
+      <arglist>() override</arglist>
     </member>
     <member kind="function">
       <type>const ContextSettings &amp;</type>
@@ -16893,18 +12741,25 @@
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>bool</type>
+      <type>std::optional&lt; Event &gt;</type>
       <name>pollEvent</name>
       <anchorfile>classsf_1_1WindowBase.html</anchorfile>
-      <anchor>a6a143de089c8716bd42c38c781268f7f</anchor>
-      <arglist>(Event &amp;event)</arglist>
+      <anchor>a6090926b477e9d0a83854b94b9e1fd35</anchor>
+      <arglist>()</arglist>
     </member>
     <member kind="function">
-      <type>bool</type>
+      <type>std::optional&lt; Event &gt;</type>
       <name>waitEvent</name>
       <anchorfile>classsf_1_1WindowBase.html</anchorfile>
-      <anchor>aa1c100a69b5bc0c84e23a4652d51ac41</anchor>
-      <arglist>(Event &amp;event)</arglist>
+      <anchor>ab5975f6f6a06ecd6c18fa0f62cd1edf7</anchor>
+      <arglist>(Time timeout=Time::Zero)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>handleEvents</name>
+      <anchorfile>classsf_1_1WindowBase.html</anchorfile>
+      <anchor>ad86ae79ff4e2da25af1ca3cd06f79557</anchor>
+      <arglist>(Ts &amp;&amp;... handlers)</arglist>
     </member>
     <member kind="function">
       <type>Vector2i</type>
@@ -16917,8 +12772,8 @@
       <type>void</type>
       <name>setPosition</name>
       <anchorfile>classsf_1_1WindowBase.html</anchorfile>
-      <anchor>ab5b8d500fa5acd3ac2908c9221fe2019</anchor>
-      <arglist>(const Vector2i &amp;position)</arglist>
+      <anchor>a7282bbf43820f20f41c704c2ab5b86f8</anchor>
+      <arglist>(Vector2i position)</arglist>
     </member>
     <member kind="function">
       <type>Vector2u</type>
@@ -16931,8 +12786,22 @@
       <type>void</type>
       <name>setSize</name>
       <anchorfile>classsf_1_1WindowBase.html</anchorfile>
-      <anchor>a7edca32bca3000d2e241dba720034bd6</anchor>
-      <arglist>(const Vector2u &amp;size)</arglist>
+      <anchor>abd2581f59f35bd379307ea5b6254631c</anchor>
+      <arglist>(Vector2u size)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setMinimumSize</name>
+      <anchorfile>classsf_1_1WindowBase.html</anchorfile>
+      <anchor>a742a8f386668f58fe27c0b5f5929de7e</anchor>
+      <arglist>(const std::optional&lt; Vector2u &gt; &amp;minimumSize)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setMaximumSize</name>
+      <anchorfile>classsf_1_1WindowBase.html</anchorfile>
+      <anchor>a65f856835295a85a2959c962a1616cad</anchor>
+      <arglist>(const std::optional&lt; Vector2u &gt; &amp;maximumSize)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -16945,8 +12814,8 @@
       <type>void</type>
       <name>setIcon</name>
       <anchorfile>classsf_1_1WindowBase.html</anchorfile>
-      <anchor>add42ae12c13012e6aab74d9e34591719</anchor>
-      <arglist>(unsigned int width, unsigned int height, const Uint8 *pixels)</arglist>
+      <anchor>a07ab1f9f9dc2312ad0ee83d1ffee9715</anchor>
+      <arglist>(Vector2u size, const std::uint8_t *pixels)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -17006,17 +12875,17 @@
     </member>
     <member kind="function">
       <type>WindowHandle</type>
-      <name>getSystemHandle</name>
+      <name>getNativeHandle</name>
       <anchorfile>classsf_1_1WindowBase.html</anchorfile>
-      <anchor>af9e56181556545bf6e6d7ed969edae21</anchor>
+      <anchor>af360bb48167c6db4d13e47d23d9c35da</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>createVulkanSurface</name>
       <anchorfile>classsf_1_1WindowBase.html</anchorfile>
-      <anchor>a4bcb435cdb954f991f493976263a2fc1</anchor>
-      <arglist>(const VkInstance &amp;instance, VkSurfaceKHR &amp;surface, const VkAllocationCallbacks *allocator=0)</arglist>
+      <anchor>a1401a44aa18cff4c23184f909aae82df</anchor>
+      <arglist>(const VkInstance &amp;instance, VkSurfaceKHR &amp;surface, const VkAllocationCallbacks *allocator=nullptr)</arglist>
     </member>
     <member kind="function" protection="protected" virtualness="virtual">
       <type>virtual void</type>
@@ -17036,7 +12905,6 @@
   <compound kind="class">
     <name>sf::WindowBase</name>
     <filename>classsf_1_1WindowBase.html</filename>
-    <base protection="private">sf::NonCopyable</base>
     <member kind="function">
       <type></type>
       <name>WindowBase</name>
@@ -17048,8 +12916,15 @@
       <type></type>
       <name>WindowBase</name>
       <anchorfile>classsf_1_1WindowBase.html</anchorfile>
-      <anchor>ab150dbdb19eead86bcecb42cf3609e63</anchor>
-      <arglist>(VideoMode mode, const String &amp;title, Uint32 style=Style::Default)</arglist>
+      <anchor>ae647a1d5fa690408320195af4bc48dee</anchor>
+      <arglist>(VideoMode mode, const String &amp;title, std::uint32_t style=Style::Default, State state=State::Windowed)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>WindowBase</name>
+      <anchorfile>classsf_1_1WindowBase.html</anchorfile>
+      <anchor>a4541efb844ad853061fb3850a3ecfd45</anchor>
+      <arglist>(VideoMode mode, const String &amp;title, State state)</arglist>
     </member>
     <member kind="function">
       <type></type>
@@ -17065,12 +12940,47 @@
       <anchor>a7aac2a828b6bbd39b7195bb0545a2c47</anchor>
       <arglist>()</arglist>
     </member>
+    <member kind="function">
+      <type></type>
+      <name>WindowBase</name>
+      <anchorfile>classsf_1_1WindowBase.html</anchorfile>
+      <anchor>a50ec1d96f6bc8b12af49d359d176410c</anchor>
+      <arglist>(const WindowBase &amp;)=delete</arglist>
+    </member>
+    <member kind="function">
+      <type>WindowBase &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classsf_1_1WindowBase.html</anchorfile>
+      <anchor>afada06381eb41e6a0b027133ef875740</anchor>
+      <arglist>(const WindowBase &amp;)=delete</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>WindowBase</name>
+      <anchorfile>classsf_1_1WindowBase.html</anchorfile>
+      <anchor>aef508fa1812c97a3436723a2c6fdb1b4</anchor>
+      <arglist>(WindowBase &amp;&amp;) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>WindowBase &amp;</type>
+      <name>operator=</name>
+      <anchorfile>classsf_1_1WindowBase.html</anchorfile>
+      <anchor>a58f9f0faf72adf9b53638061bae4d8b2</anchor>
+      <arglist>(WindowBase &amp;&amp;) noexcept</arglist>
+    </member>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
       <name>create</name>
       <anchorfile>classsf_1_1WindowBase.html</anchorfile>
-      <anchor>a3b888387b7bd4be38d6db1234c8d7ad4</anchor>
-      <arglist>(VideoMode mode, const String &amp;title, Uint32 style=Style::Default)</arglist>
+      <anchor>a612f5918f3cb042fcf1189fed24b91d4</anchor>
+      <arglist>(VideoMode mode, const String &amp;title, std::uint32_t style=Style::Default, State state=State::Windowed)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>create</name>
+      <anchorfile>classsf_1_1WindowBase.html</anchorfile>
+      <anchor>a1730d462059617d78f08c0e4eeee771a</anchor>
+      <arglist>(VideoMode mode, const String &amp;title, State state)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual void</type>
@@ -17094,18 +13004,25 @@
       <arglist>() const</arglist>
     </member>
     <member kind="function">
-      <type>bool</type>
+      <type>std::optional&lt; Event &gt;</type>
       <name>pollEvent</name>
       <anchorfile>classsf_1_1WindowBase.html</anchorfile>
-      <anchor>a6a143de089c8716bd42c38c781268f7f</anchor>
-      <arglist>(Event &amp;event)</arglist>
+      <anchor>a6090926b477e9d0a83854b94b9e1fd35</anchor>
+      <arglist>()</arglist>
     </member>
     <member kind="function">
-      <type>bool</type>
+      <type>std::optional&lt; Event &gt;</type>
       <name>waitEvent</name>
       <anchorfile>classsf_1_1WindowBase.html</anchorfile>
-      <anchor>aa1c100a69b5bc0c84e23a4652d51ac41</anchor>
-      <arglist>(Event &amp;event)</arglist>
+      <anchor>ab5975f6f6a06ecd6c18fa0f62cd1edf7</anchor>
+      <arglist>(Time timeout=Time::Zero)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>handleEvents</name>
+      <anchorfile>classsf_1_1WindowBase.html</anchorfile>
+      <anchor>ad86ae79ff4e2da25af1ca3cd06f79557</anchor>
+      <arglist>(Ts &amp;&amp;... handlers)</arglist>
     </member>
     <member kind="function">
       <type>Vector2i</type>
@@ -17118,8 +13035,8 @@
       <type>void</type>
       <name>setPosition</name>
       <anchorfile>classsf_1_1WindowBase.html</anchorfile>
-      <anchor>ab5b8d500fa5acd3ac2908c9221fe2019</anchor>
-      <arglist>(const Vector2i &amp;position)</arglist>
+      <anchor>a7282bbf43820f20f41c704c2ab5b86f8</anchor>
+      <arglist>(Vector2i position)</arglist>
     </member>
     <member kind="function">
       <type>Vector2u</type>
@@ -17132,8 +13049,22 @@
       <type>void</type>
       <name>setSize</name>
       <anchorfile>classsf_1_1WindowBase.html</anchorfile>
-      <anchor>a7edca32bca3000d2e241dba720034bd6</anchor>
-      <arglist>(const Vector2u &amp;size)</arglist>
+      <anchor>abd2581f59f35bd379307ea5b6254631c</anchor>
+      <arglist>(Vector2u size)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setMinimumSize</name>
+      <anchorfile>classsf_1_1WindowBase.html</anchorfile>
+      <anchor>a742a8f386668f58fe27c0b5f5929de7e</anchor>
+      <arglist>(const std::optional&lt; Vector2u &gt; &amp;minimumSize)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setMaximumSize</name>
+      <anchorfile>classsf_1_1WindowBase.html</anchorfile>
+      <anchor>a65f856835295a85a2959c962a1616cad</anchor>
+      <arglist>(const std::optional&lt; Vector2u &gt; &amp;maximumSize)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -17146,8 +13077,8 @@
       <type>void</type>
       <name>setIcon</name>
       <anchorfile>classsf_1_1WindowBase.html</anchorfile>
-      <anchor>add42ae12c13012e6aab74d9e34591719</anchor>
-      <arglist>(unsigned int width, unsigned int height, const Uint8 *pixels)</arglist>
+      <anchor>a07ab1f9f9dc2312ad0ee83d1ffee9715</anchor>
+      <arglist>(Vector2u size, const std::uint8_t *pixels)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -17207,17 +13138,17 @@
     </member>
     <member kind="function">
       <type>WindowHandle</type>
-      <name>getSystemHandle</name>
+      <name>getNativeHandle</name>
       <anchorfile>classsf_1_1WindowBase.html</anchorfile>
-      <anchor>af9e56181556545bf6e6d7ed969edae21</anchor>
+      <anchor>af360bb48167c6db4d13e47d23d9c35da</anchor>
       <arglist>() const</arglist>
     </member>
     <member kind="function">
       <type>bool</type>
       <name>createVulkanSurface</name>
       <anchorfile>classsf_1_1WindowBase.html</anchorfile>
-      <anchor>a4bcb435cdb954f991f493976263a2fc1</anchor>
-      <arglist>(const VkInstance &amp;instance, VkSurfaceKHR &amp;surface, const VkAllocationCallbacks *allocator=0)</arglist>
+      <anchor>a1401a44aa18cff4c23184f909aae82df</anchor>
+      <arglist>(const VkInstance &amp;instance, VkSurfaceKHR &amp;surface, const VkAllocationCallbacks *allocator=nullptr)</arglist>
     </member>
     <member kind="function" protection="protected" virtualness="virtual">
       <type>virtual void</type>
@@ -17233,6 +13164,465 @@
       <anchor>a8be41815cbeb89bc49e8752b62283192</anchor>
       <arglist>()</arglist>
     </member>
+    <member kind="friend" protection="private">
+      <type>friend class</type>
+      <name>Window</name>
+      <anchorfile>classsf_1_1WindowBase.html</anchorfile>
+      <anchor>a553f958a25683445088050a69d3de8e9</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>sf</name>
+    <filename>namespacesf.html</filename>
+    <namespace>sf::Clipboard</namespace>
+    <namespace>sf::Glsl</namespace>
+    <namespace>sf::Joystick</namespace>
+    <namespace>sf::Keyboard</namespace>
+    <namespace>sf::Listener</namespace>
+    <namespace>sf::Literals</namespace>
+    <namespace>sf::Mouse</namespace>
+    <namespace>sf::PlaybackDevice</namespace>
+    <namespace>sf::Sensor</namespace>
+    <namespace>sf::Style</namespace>
+    <namespace>sf::Touch</namespace>
+    <namespace>sf::Vulkan</namespace>
+    <class kind="class">sf::Angle</class>
+    <class kind="class">sf::AudioResource</class>
+    <class kind="class">sf::BlendMode</class>
+    <class kind="class">sf::CircleShape</class>
+    <class kind="class">sf::Clock</class>
+    <class kind="class">sf::Color</class>
+    <class kind="class">sf::Context</class>
+    <class kind="class">sf::ContextSettings</class>
+    <class kind="class">sf::ConvexShape</class>
+    <class kind="class">sf::Cursor</class>
+    <class kind="class">sf::Drawable</class>
+    <class kind="class">sf::Event</class>
+    <class kind="class">sf::Exception</class>
+    <class kind="class">sf::FileInputStream</class>
+    <class kind="class">sf::Font</class>
+    <class kind="class">sf::Ftp</class>
+    <class kind="class">sf::GlResource</class>
+    <class kind="struct">sf::Glyph</class>
+    <class kind="class">sf::Http</class>
+    <class kind="class">sf::Image</class>
+    <class kind="class">sf::InputSoundFile</class>
+    <class kind="class">sf::InputStream</class>
+    <class kind="class">sf::IpAddress</class>
+    <class kind="class">sf::MemoryInputStream</class>
+    <class kind="class">sf::Music</class>
+    <class kind="class">sf::OutputSoundFile</class>
+    <class kind="class">sf::Packet</class>
+    <class kind="class">sf::Rect</class>
+    <class kind="class">sf::RectangleShape</class>
+    <class kind="class">sf::RenderStates</class>
+    <class kind="class">sf::RenderTarget</class>
+    <class kind="class">sf::RenderTexture</class>
+    <class kind="class">sf::RenderWindow</class>
+    <class kind="class">sf::Shader</class>
+    <class kind="class">sf::Shape</class>
+    <class kind="class">sf::Socket</class>
+    <class kind="class">sf::SocketSelector</class>
+    <class kind="class">sf::Sound</class>
+    <class kind="class">sf::SoundBuffer</class>
+    <class kind="class">sf::SoundBufferRecorder</class>
+    <class kind="class">sf::SoundFileFactory</class>
+    <class kind="class">sf::SoundFileReader</class>
+    <class kind="class">sf::SoundFileWriter</class>
+    <class kind="class">sf::SoundRecorder</class>
+    <class kind="class">sf::SoundSource</class>
+    <class kind="class">sf::SoundStream</class>
+    <class kind="class">sf::Sprite</class>
+    <class kind="class">sf::StencilMode</class>
+    <class kind="struct">sf::StencilValue</class>
+    <class kind="class">sf::String</class>
+    <class kind="struct">sf::SuspendAwareClock</class>
+    <class kind="class">sf::TcpListener</class>
+    <class kind="class">sf::TcpSocket</class>
+    <class kind="class">sf::Text</class>
+    <class kind="class">sf::Texture</class>
+    <class kind="class">sf::Time</class>
+    <class kind="class">sf::Transform</class>
+    <class kind="class">sf::Transformable</class>
+    <class kind="struct">sf::U8StringCharTraits</class>
+    <class kind="class">sf::UdpSocket</class>
+    <class kind="class">sf::Utf</class>
+    <class kind="class">sf::Utf&lt; 16 &gt;</class>
+    <class kind="class">sf::Utf&lt; 32 &gt;</class>
+    <class kind="class">sf::Utf&lt; 8 &gt;</class>
+    <class kind="class">sf::Vector2</class>
+    <class kind="class">sf::Vector3</class>
+    <class kind="struct">sf::Vertex</class>
+    <class kind="class">sf::VertexArray</class>
+    <class kind="class">sf::VertexBuffer</class>
+    <class kind="class">sf::VideoMode</class>
+    <class kind="class">sf::View</class>
+    <class kind="class">sf::Window</class>
+    <class kind="class">sf::WindowBase</class>
+    <member kind="typedef">
+      <type>Rect&lt; int &gt;</type>
+      <name>IntRect</name>
+      <anchorfile>namespacesf.html</anchorfile>
+      <anchor>add1cf75a734c8414680b0424145c30b1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>Rect&lt; float &gt;</type>
+      <name>FloatRect</name>
+      <anchorfile>namespacesf.html</anchorfile>
+      <anchor>a701020eb396e62ba560619e68c689a38</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>int</type>
+      <name>SocketHandle</name>
+      <anchorfile>namespacesf.html</anchorfile>
+      <anchor>a7403828dc19b7052b988d22c841ae92d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>std::basic_string&lt; std::uint8_t, U8StringCharTraits &gt;</type>
+      <name>U8String</name>
+      <anchorfile>namespacesf.html</anchorfile>
+      <anchor>a407496cc99eeb9bf75c2b4d0848d3fc7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>Utf&lt; 8 &gt;</type>
+      <name>Utf8</name>
+      <anchorfile>namespacesf.html</anchorfile>
+      <anchor>af8632a98df098830707aa50ab82029b8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>Utf&lt; 16 &gt;</type>
+      <name>Utf16</name>
+      <anchorfile>namespacesf.html</anchorfile>
+      <anchor>a99b0ac57adecd5594ce6dda56bfe6f70</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>Utf&lt; 32 &gt;</type>
+      <name>Utf32</name>
+      <anchorfile>namespacesf.html</anchorfile>
+      <anchor>a3f2bd4822b2d2563557e3d1d400f6cb8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>Vector2&lt; int &gt;</type>
+      <name>Vector2i</name>
+      <anchorfile>namespacesf.html</anchorfile>
+      <anchor>af0ffe1b157a56931ee3a9a1a771a827a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>Vector2&lt; unsigned int &gt;</type>
+      <name>Vector2u</name>
+      <anchorfile>namespacesf.html</anchorfile>
+      <anchor>adc674b5f5c13a6734954a18e01a73b42</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>Vector2&lt; float &gt;</type>
+      <name>Vector2f</name>
+      <anchorfile>namespacesf.html</anchorfile>
+      <anchor>af14b40e82368dd601a7ef8037214804d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>Vector3&lt; int &gt;</type>
+      <name>Vector3i</name>
+      <anchorfile>namespacesf.html</anchorfile>
+      <anchor>ac128b1a250ca87839ef1dd0416b45961</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>Vector3&lt; float &gt;</type>
+      <name>Vector3f</name>
+      <anchorfile>namespacesf.html</anchorfile>
+      <anchor>aabc495912efba35400b484ea842664d0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>void(*)()</type>
+      <name>GlFunctionPointer</name>
+      <anchorfile>namespacesf.html</anchorfile>
+      <anchor>a321a688c79d6cac3be7640f6ecd594d3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>void(*)(void *)</type>
+      <name>ContextDestroyCallback</name>
+      <anchorfile>namespacesf.html</anchorfile>
+      <anchor>aaa41cc1b21b8a8349a5b2a0ecd560962</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>void(*)()</type>
+      <name>VulkanFunctionPointer</name>
+      <anchorfile>namespacesf.html</anchorfile>
+      <anchor>a6e179664399fe764916147b2326a3c0e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>&quot;platform-specific&quot;</type>
+      <name>WindowHandle</name>
+      <anchorfile>group__window.html</anchorfile>
+      <anchor>ga9858f04701033cd01859037d8dafd289</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>SoundChannel</name>
+      <anchorfile>group__audio.html</anchorfile>
+      <anchor>ga9800c7f3d5e7a9c9310f707b2c995ff3</anchor>
+      <arglist></arglist>
+      <enumvalue file="group__audio.html" anchor="gga9800c7f3d5e7a9c9310f707b2c995ff3a6fcdc090caeade09d0efd6253932b6f5">Unspecified</enumvalue>
+      <enumvalue file="group__audio.html" anchor="gga9800c7f3d5e7a9c9310f707b2c995ff3a5d9b47bd3b65072e0d5daf55f01da086">Mono</enumvalue>
+      <enumvalue file="group__audio.html" anchor="gga9800c7f3d5e7a9c9310f707b2c995ff3a3a86c1ecef856c6360b14ee920abd2d4">FrontLeft</enumvalue>
+      <enumvalue file="group__audio.html" anchor="gga9800c7f3d5e7a9c9310f707b2c995ff3a17a1a1897fa234ffd995f32ff31c4075">FrontRight</enumvalue>
+      <enumvalue file="group__audio.html" anchor="gga9800c7f3d5e7a9c9310f707b2c995ff3ad446ecb2171ed693701ea6bd61081da1">FrontCenter</enumvalue>
+      <enumvalue file="group__audio.html" anchor="gga9800c7f3d5e7a9c9310f707b2c995ff3ad41ef6e0badb793ad8f27b37f4dcba05">FrontLeftOfCenter</enumvalue>
+      <enumvalue file="group__audio.html" anchor="gga9800c7f3d5e7a9c9310f707b2c995ff3a87b98fbe65e747d2663763249f60167c">FrontRightOfCenter</enumvalue>
+      <enumvalue file="group__audio.html" anchor="gga9800c7f3d5e7a9c9310f707b2c995ff3aadf637c910a4d16c3ad4f03b31063215">LowFrequencyEffects</enumvalue>
+      <enumvalue file="group__audio.html" anchor="gga9800c7f3d5e7a9c9310f707b2c995ff3abff6f014d4c53710a1ad968e9b401ccb">BackLeft</enumvalue>
+      <enumvalue file="group__audio.html" anchor="gga9800c7f3d5e7a9c9310f707b2c995ff3aa07ea17eb99337c60ed9ad770cf2bb55">BackRight</enumvalue>
+      <enumvalue file="group__audio.html" anchor="gga9800c7f3d5e7a9c9310f707b2c995ff3a28ce21f1909d32aa33998608a7d22438">BackCenter</enumvalue>
+      <enumvalue file="group__audio.html" anchor="gga9800c7f3d5e7a9c9310f707b2c995ff3a78c8f1c8df388a8810a325e9ca9752da">SideLeft</enumvalue>
+      <enumvalue file="group__audio.html" anchor="gga9800c7f3d5e7a9c9310f707b2c995ff3a31610f6c0f8a9f598c6279592d9f76e0">SideRight</enumvalue>
+      <enumvalue file="group__audio.html" anchor="gga9800c7f3d5e7a9c9310f707b2c995ff3a91b8ede24b7f93a98ae4dcaade15d468">TopCenter</enumvalue>
+      <enumvalue file="group__audio.html" anchor="gga9800c7f3d5e7a9c9310f707b2c995ff3afb669612ee1933229f170effa07aa8a9">TopFrontLeft</enumvalue>
+      <enumvalue file="group__audio.html" anchor="gga9800c7f3d5e7a9c9310f707b2c995ff3ae2c423ab92e9d89f7db6b65894ce20a6">TopFrontRight</enumvalue>
+      <enumvalue file="group__audio.html" anchor="gga9800c7f3d5e7a9c9310f707b2c995ff3ad22ee83cb7dfe7318ffeca7b632fb819">TopFrontCenter</enumvalue>
+      <enumvalue file="group__audio.html" anchor="gga9800c7f3d5e7a9c9310f707b2c995ff3adb41be9e166e3f77a49becccef7a57f9">TopBackLeft</enumvalue>
+      <enumvalue file="group__audio.html" anchor="gga9800c7f3d5e7a9c9310f707b2c995ff3a8731dd6d25eb4078d246edb9404e1684">TopBackRight</enumvalue>
+      <enumvalue file="group__audio.html" anchor="gga9800c7f3d5e7a9c9310f707b2c995ff3a523c261e94e92bcd0ed3276f42388790">TopBackCenter</enumvalue>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>CoordinateType</name>
+      <anchorfile>group__graphics.html</anchorfile>
+      <anchor>ga3279cc83ec99c60693c4fe6d0d3fb98b</anchor>
+      <arglist></arglist>
+      <enumvalue file="group__graphics.html" anchor="gga3279cc83ec99c60693c4fe6d0d3fb98ba66b28fcf83c9f24cd5b4d7bdc8f8ba0e">Normalized</enumvalue>
+      <enumvalue file="group__graphics.html" anchor="gga3279cc83ec99c60693c4fe6d0d3fb98bac3d2f5d37334dc978fd8b17fc77408a1">Pixels</enumvalue>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>PrimitiveType</name>
+      <anchorfile>group__graphics.html</anchorfile>
+      <anchor>ga5ee56ac1339984909610713096283b1b</anchor>
+      <arglist></arglist>
+      <enumvalue file="group__graphics.html" anchor="gga5ee56ac1339984909610713096283b1ba75dd5f1160a3f02b6fae89c54361a1b3">Points</enumvalue>
+      <enumvalue file="group__graphics.html" anchor="gga5ee56ac1339984909610713096283b1baa0b0293a2db49f5f93c15a62e095c819">Lines</enumvalue>
+      <enumvalue file="group__graphics.html" anchor="gga5ee56ac1339984909610713096283b1bae7f9e73b8edd21f420a63b3ace5768a2">LineStrip</enumvalue>
+      <enumvalue file="group__graphics.html" anchor="gga5ee56ac1339984909610713096283b1ba7ca66fdfaad3eb33fc65d7490178f856">Triangles</enumvalue>
+      <enumvalue file="group__graphics.html" anchor="gga5ee56ac1339984909610713096283b1ba1da0b9ead8b051940a89214bae22831c">TriangleStrip</enumvalue>
+      <enumvalue file="group__graphics.html" anchor="gga5ee56ac1339984909610713096283b1ba18d58fde618e4a30e2dfdc122e693047">TriangleFan</enumvalue>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>StencilComparison</name>
+      <anchorfile>namespacesf.html</anchorfile>
+      <anchor>a5a1510ae19d01cf19178b8f3ef92a2a1</anchor>
+      <arglist></arglist>
+      <enumvalue file="namespacesf.html" anchor="a5a1510ae19d01cf19178b8f3ef92a2a1a6e7b34fa59e1bd229b207892956dc41c">Never</enumvalue>
+      <enumvalue file="namespacesf.html" anchor="a5a1510ae19d01cf19178b8f3ef92a2a1a1cfdf0e8d0c87a228c1f40d9bee7888b">Less</enumvalue>
+      <enumvalue file="namespacesf.html" anchor="a5a1510ae19d01cf19178b8f3ef92a2a1ad3e6fdac55bb7b0edd7834c968ba1f38">LessEqual</enumvalue>
+      <enumvalue file="namespacesf.html" anchor="a5a1510ae19d01cf19178b8f3ef92a2a1a8768a6821cd735aea4f5b0df88c1fc6a">Greater</enumvalue>
+      <enumvalue file="namespacesf.html" anchor="a5a1510ae19d01cf19178b8f3ef92a2a1a758b05d899def79c9eb864ad4f96be1f">GreaterEqual</enumvalue>
+      <enumvalue file="namespacesf.html" anchor="a5a1510ae19d01cf19178b8f3ef92a2a1af5f286e73bda105e538310b3190f75c5">Equal</enumvalue>
+      <enumvalue file="namespacesf.html" anchor="a5a1510ae19d01cf19178b8f3ef92a2a1a19bb0af2c3c530538cb41aff7f235b96">NotEqual</enumvalue>
+      <enumvalue file="namespacesf.html" anchor="a5a1510ae19d01cf19178b8f3ef92a2a1a68eec46437c384d8dad18d5464ebc35c">Always</enumvalue>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>StencilUpdateOperation</name>
+      <anchorfile>namespacesf.html</anchorfile>
+      <anchor>accf495a19b2f6b4f8d9cff3dac777bfd</anchor>
+      <arglist></arglist>
+      <enumvalue file="namespacesf.html" anchor="accf495a19b2f6b4f8d9cff3dac777bfda02bce93bff905887ad2233110bf9c49e">Keep</enumvalue>
+      <enumvalue file="namespacesf.html" anchor="accf495a19b2f6b4f8d9cff3dac777bfdad7ed4ee1df437474d005188535f74875">Zero</enumvalue>
+      <enumvalue file="namespacesf.html" anchor="accf495a19b2f6b4f8d9cff3dac777bfda0ebe6df8a3ac338e0512acc741823fdb">Replace</enumvalue>
+      <enumvalue file="namespacesf.html" anchor="accf495a19b2f6b4f8d9cff3dac777bfda6f15bdfa71aa83b0d197cad75757d580">Increment</enumvalue>
+      <enumvalue file="namespacesf.html" anchor="accf495a19b2f6b4f8d9cff3dac777bfda6182913ea7b5c02fe2773ea87177d4f9">Decrement</enumvalue>
+      <enumvalue file="namespacesf.html" anchor="accf495a19b2f6b4f8d9cff3dac777bfda9b8958acb7be504bb5f55f17c0eea366">Invert</enumvalue>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>State</name>
+      <anchorfile>group__window.html</anchorfile>
+      <anchor>ga504e2cd8fc6a852463f8d049db1151e5</anchor>
+      <arglist></arglist>
+      <enumvalue file="group__window.html" anchor="gga504e2cd8fc6a852463f8d049db1151e5ab13311ab51c4c34757f67f26580018dd">Windowed</enumvalue>
+      <enumvalue file="group__window.html" anchor="gga504e2cd8fc6a852463f8d049db1151e5a0829ea6734059d66e6bf87096b215dc1">Fullscreen</enumvalue>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>swap</name>
+      <anchorfile>namespacesf.html</anchorfile>
+      <anchor>aa24192b5755e37da72ed0d9123f2e35a</anchor>
+      <arglist>(Texture &amp;left, Texture &amp;right) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>swap</name>
+      <anchorfile>namespacesf.html</anchorfile>
+      <anchor>a652fed1e4c9e36a97e2dcadfbd957025</anchor>
+      <arglist>(VertexBuffer &amp;left, VertexBuffer &amp;right) noexcept</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>operator==</name>
+      <anchorfile>namespacesf.html</anchorfile>
+      <anchor>a4b1fa6499a4ce78d12fa9a8d0acb59fa</anchor>
+      <arglist>(IpAddress left, IpAddress right)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>operator!=</name>
+      <anchorfile>namespacesf.html</anchorfile>
+      <anchor>a0dbbbec7605953e6f8fc78e4668565b0</anchor>
+      <arglist>(IpAddress left, IpAddress right)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>operator&lt;</name>
+      <anchorfile>namespacesf.html</anchorfile>
+      <anchor>a35724a7bbc9279a509b49f90461ecc03</anchor>
+      <arglist>(IpAddress left, IpAddress right)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>operator&gt;</name>
+      <anchorfile>namespacesf.html</anchorfile>
+      <anchor>a7d772ad2969a23ffdc460a2cf0e817df</anchor>
+      <arglist>(IpAddress left, IpAddress right)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>operator&lt;=</name>
+      <anchorfile>namespacesf.html</anchorfile>
+      <anchor>ab5b7daf9953cb4cad5756806c89eb22b</anchor>
+      <arglist>(IpAddress left, IpAddress right)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>operator&gt;=</name>
+      <anchorfile>namespacesf.html</anchorfile>
+      <anchor>aaccbe1d33f8b764745871941e00a53c5</anchor>
+      <arglist>(IpAddress left, IpAddress right)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::istream &amp;</type>
+      <name>operator&gt;&gt;</name>
+      <anchorfile>namespacesf.html</anchorfile>
+      <anchor>ab48bc71bf12df7dcf1f97f4ac58aaf75</anchor>
+      <arglist>(std::istream &amp;stream, std::optional&lt; IpAddress &gt; &amp;address)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::ostream &amp;</type>
+      <name>operator&lt;&lt;</name>
+      <anchorfile>namespacesf.html</anchorfile>
+      <anchor>adec1387fd48eaea32352560a9c51b401</anchor>
+      <arglist>(std::ostream &amp;stream, IpAddress address)</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr Angle</type>
+      <name>degrees</name>
+      <anchorfile>namespacesf.html</anchorfile>
+      <anchor>a956d8e2dd821777ce475c0856bfa879d</anchor>
+      <arglist>(float angle)</arglist>
+    </member>
+    <member kind="function">
+      <type>constexpr Angle</type>
+      <name>radians</name>
+      <anchorfile>namespacesf.html</anchorfile>
+      <anchor>a893b41868f0fb30e52e6490e3f5524b3</anchor>
+      <arglist>(float angle)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::ostream &amp;</type>
+      <name>err</name>
+      <anchorfile>group__system.html</anchorfile>
+      <anchor>ga885486205a724571d140a7c8a0e3626b</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>ANativeActivity *</type>
+      <name>getNativeActivity</name>
+      <anchorfile>group__system.html</anchorfile>
+      <anchor>ga666414341ce8396227f5a125ee5b7053</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sleep</name>
+      <anchorfile>group__system.html</anchorfile>
+      <anchor>gab8c0d1f966b4e5110fd370b662d8c11b</anchor>
+      <arglist>(Time duration)</arglist>
+    </member>
+    <member kind="variable">
+      <type>const BlendMode</type>
+      <name>BlendAlpha</name>
+      <anchorfile>namespacesf.html</anchorfile>
+      <anchor>a3d4548be9621e2fcfe187b3cb59f6f53</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const BlendMode</type>
+      <name>BlendAdd</name>
+      <anchorfile>namespacesf.html</anchorfile>
+      <anchor>a519b69f28b0d5f1cd65b8d3d7b94e13c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const BlendMode</type>
+      <name>BlendMultiply</name>
+      <anchorfile>namespacesf.html</anchorfile>
+      <anchor>ad451e51fcecccb331fb3238aea54c8e2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const BlendMode</type>
+      <name>BlendMin</name>
+      <anchorfile>namespacesf.html</anchorfile>
+      <anchor>a17bfffc4fc727f17fabd03df86ab758d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const BlendMode</type>
+      <name>BlendMax</name>
+      <anchorfile>namespacesf.html</anchorfile>
+      <anchor>a85eed8a516cfd2e664afa92a35735ccf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const BlendMode</type>
+      <name>BlendNone</name>
+      <anchorfile>namespacesf.html</anchorfile>
+      <anchor>a9286f4004890232f7ba3853e40162284</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>sf::Clipboard</name>
+    <filename>namespacesf_1_1Clipboard.html</filename>
+    <member kind="function">
+      <type>String</type>
+      <name>getString</name>
+      <anchorfile>namespacesf_1_1Clipboard.html</anchorfile>
+      <anchor>a5ffa170c4fa8674b90725936412b79aa</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setString</name>
+      <anchorfile>namespacesf_1_1Clipboard.html</anchorfile>
+      <anchor>a5ab898e1e6498c0312f24ff50aa2ccb3</anchor>
+      <arglist>(const String &amp;text)</arglist>
+    </member>
   </compound>
   <compound kind="namespace">
     <name>sf::Glsl</name>
@@ -17241,87 +13631,828 @@
       <type>Vector2&lt; float &gt;</type>
       <name>Vec2</name>
       <anchorfile>namespacesf_1_1Glsl.html</anchorfile>
-      <anchor>adeed356d346d87634b4c197a530e4edf</anchor>
+      <anchor>a568cbc1294c66f95c66c6b28dffa2fc1</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>Vector2&lt; int &gt;</type>
       <name>Ivec2</name>
       <anchorfile>namespacesf_1_1Glsl.html</anchorfile>
-      <anchor>aab803ee70c4b7bfcd63ec09e10408fd3</anchor>
+      <anchor>a290fe798ce4c2177901fad1d053f583d</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>Vector2&lt; bool &gt;</type>
       <name>Bvec2</name>
       <anchorfile>namespacesf_1_1Glsl.html</anchorfile>
-      <anchor>a59d8cf909c3d71ebf3db057480b464da</anchor>
+      <anchor>a59b28a237d06d420f48ee254b23f6513</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>Vector3&lt; float &gt;</type>
       <name>Vec3</name>
       <anchorfile>namespacesf_1_1Glsl.html</anchorfile>
-      <anchor>a9bdd0463b7cb5316244a082007bd50f0</anchor>
+      <anchor>a35f391b7d627d53162e48c14f9877653</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>Vector3&lt; int &gt;</type>
       <name>Ivec3</name>
       <anchorfile>namespacesf_1_1Glsl.html</anchorfile>
-      <anchor>a64f403dd0219e7f128ffddca641394df</anchor>
+      <anchor>a637fa3f9717a5fd04ad841d2f9333f79</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>Vector3&lt; bool &gt;</type>
       <name>Bvec3</name>
       <anchorfile>namespacesf_1_1Glsl.html</anchorfile>
-      <anchor>a4166ffc506619b4912d576e6eba2c957</anchor>
+      <anchor>ab63a2d13e86877f959b05516d3bf6e50</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
-      <type>implementation defined</type>
+      <type>ImplementationDefined</type>
       <name>Vec4</name>
       <anchorfile>namespacesf_1_1Glsl.html</anchorfile>
-      <anchor>a7c67253548c58adb77cb14f847f18f83</anchor>
+      <anchor>abf169ad4f8b5405d6b2f37ecd9d28cbd</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
-      <type>implementation defined</type>
+      <type>ImplementationDefined</type>
       <name>Ivec4</name>
       <anchorfile>namespacesf_1_1Glsl.html</anchorfile>
-      <anchor>a778682c4f085d2daeb90c724791f3f68</anchor>
+      <anchor>a367d451b5e74d4961effa15f77723906</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
-      <type>implementation defined</type>
+      <type>ImplementationDefined</type>
       <name>Bvec4</name>
       <anchorfile>namespacesf_1_1Glsl.html</anchorfile>
-      <anchor>a8b1f0ac369666c48a9eafc9d3f5618e6</anchor>
+      <anchor>afc300406e5b906bfb0c650efcdb529e4</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
-      <type>implementation defined</type>
+      <type>ImplementationDefined</type>
       <name>Mat3</name>
       <anchorfile>namespacesf_1_1Glsl.html</anchorfile>
-      <anchor>a9e984ebdc1cebc693a12f01a32b2d28d</anchor>
+      <anchor>a207da683a577343ae0633aed1b1fa12f</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
-      <type>implementation defined</type>
+      <type>ImplementationDefined</type>
       <name>Mat4</name>
       <anchorfile>namespacesf_1_1Glsl.html</anchorfile>
-      <anchor>a769de806596348a8e56ed6506c688271</anchor>
+      <anchor>ac7e4d95124aac05edea445249a71c00c</anchor>
       <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>sf::Joystick</name>
+    <filename>namespacesf_1_1Joystick.html</filename>
+    <class kind="struct">sf::Joystick::Identification</class>
+    <member kind="enumeration">
+      <type></type>
+      <name>Axis</name>
+      <anchorfile>namespacesf_1_1Joystick.html</anchorfile>
+      <anchor>a48db337092c2e263774f94de6d50baa7</anchor>
+      <arglist></arglist>
+      <enumvalue file="namespacesf_1_1Joystick.html" anchor="a48db337092c2e263774f94de6d50baa7a02129bb861061d1a052c592e2dc6b383">X</enumvalue>
+      <enumvalue file="namespacesf_1_1Joystick.html" anchor="a48db337092c2e263774f94de6d50baa7a57cec4137b614c87cb4e24a3d003a3e0">Y</enumvalue>
+      <enumvalue file="namespacesf_1_1Joystick.html" anchor="a48db337092c2e263774f94de6d50baa7a21c2e59531c8710156d34a3c30ac81d5">Z</enumvalue>
+      <enumvalue file="namespacesf_1_1Joystick.html" anchor="a48db337092c2e263774f94de6d50baa7ae1e1d3d40573127e9ee0480caf1283d6">R</enumvalue>
+      <enumvalue file="namespacesf_1_1Joystick.html" anchor="a48db337092c2e263774f94de6d50baa7a4c614360da93c0a041b22e537de151eb">U</enumvalue>
+      <enumvalue file="namespacesf_1_1Joystick.html" anchor="a48db337092c2e263774f94de6d50baa7a5206560a306a2e085a437fd258eb57ce">V</enumvalue>
+      <enumvalue file="namespacesf_1_1Joystick.html" anchor="a48db337092c2e263774f94de6d50baa7a783ee6cd28c54605c9ef0453ff213692">PovX</enumvalue>
+      <enumvalue file="namespacesf_1_1Joystick.html" anchor="a48db337092c2e263774f94de6d50baa7ad5145e1dd4aa9600d94cad6ec92e94e5">PovY</enumvalue>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isConnected</name>
+      <anchorfile>namespacesf_1_1Joystick.html</anchorfile>
+      <anchor>a8e312bfb03954efa373326dbda3f911d</anchor>
+      <arglist>(unsigned int joystick)</arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned int</type>
+      <name>getButtonCount</name>
+      <anchorfile>namespacesf_1_1Joystick.html</anchorfile>
+      <anchor>a31e0644c53d26e46618e5b6acdf2f5f2</anchor>
+      <arglist>(unsigned int joystick)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>hasAxis</name>
+      <anchorfile>namespacesf_1_1Joystick.html</anchorfile>
+      <anchor>afa7b0a9e74d47067670f37362a655a76</anchor>
+      <arglist>(unsigned int joystick, Axis axis)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isButtonPressed</name>
+      <anchorfile>namespacesf_1_1Joystick.html</anchorfile>
+      <anchor>af45b5a3883b80a54ecb9c5a5f1fc78b5</anchor>
+      <arglist>(unsigned int joystick, unsigned int button)</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
+      <name>getAxisPosition</name>
+      <anchorfile>namespacesf_1_1Joystick.html</anchorfile>
+      <anchor>a572af0673215579abf76a52665341338</anchor>
+      <arglist>(unsigned int joystick, Axis axis)</arglist>
+    </member>
+    <member kind="function">
+      <type>Identification</type>
+      <name>getIdentification</name>
+      <anchorfile>namespacesf_1_1Joystick.html</anchorfile>
+      <anchor>a0981cdfb1554be0eef5e080ee9c0bf27</anchor>
+      <arglist>(unsigned int joystick)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>update</name>
+      <anchorfile>namespacesf_1_1Joystick.html</anchorfile>
+      <anchor>a924f051f4c3d66a980918fda6b0ff787</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static constexpr unsigned int</type>
+      <name>Count</name>
+      <anchorfile>namespacesf_1_1Joystick.html</anchorfile>
+      <anchor>a459467658a2542bdf56903229e431068</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static constexpr unsigned int</type>
+      <name>ButtonCount</name>
+      <anchorfile>namespacesf_1_1Joystick.html</anchorfile>
+      <anchor>a650d9cc7232acb2b3a32b92166ed0c77</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static constexpr unsigned int</type>
+      <name>AxisCount</name>
+      <anchorfile>namespacesf_1_1Joystick.html</anchorfile>
+      <anchor>a0de8fc66336c6764151d88af5b42d2bb</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>sf::Keyboard</name>
+    <filename>namespacesf_1_1Keyboard.html</filename>
+    <member kind="typedef">
+      <type>Scan</type>
+      <name>Scancode</name>
+      <anchorfile>namespacesf_1_1Keyboard.html</anchorfile>
+      <anchor>a51f3be2ef1d778bd470c35f0ed39b0ba</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>Key</name>
+      <anchorfile>namespacesf_1_1Keyboard.html</anchorfile>
+      <anchor>acb4cacd7cc5802dec45724cf3314a142</anchor>
+      <arglist></arglist>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a88183b946cc5f0e8c96b2e66e1c74a7e">Unknown</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a7fc56270e7a70fa81a5935b72eacbe29">A</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a9d5ed678fe57bcca610140957afab571">B</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a0d61f8370cad1d412f80b84d143e1257">C</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142af623e75af30e62bbd73d6df5b50bb7b5">D</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a3a3ea00cfc35332cedf6e5e9a32e94da">E</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a800618943025315f869e4e1f09471012">F</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142adfcf28d0734569a6a693bc8194de62bf">G</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142ac1d9f50f86825a1a2302ec2449c17196">H</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142add7536794b63bf90eccfd37f9b147d7f">I</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142aff44570aca8241914870afbc310cdb85">J</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142aa5f3c6a11b03839d46af9fb43c97c188">K</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142ad20caec3b48a1eef164cb4ca81ba2587">L</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a69691c7bdcc3ce6d5d8a1361f22d04ac">M</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a8d9c307cb7f3c4a32822a51922d1ceaa">N</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142af186217753c37b9b9f958d906208506e">O</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a44c29edb103a2872f519ad0c9a0fdaaa">P</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142af09564c9ca56850d4cd6b3319e541aee">Q</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142ae1e1d3d40573127e9ee0480caf1283d6">R</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a5dbc98dcc983a70728bd082d1a47546e">S</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142ab9ece18c950afbfa6b0fdbfa4ff731d3">T</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a4c614360da93c0a041b22e537de151eb">U</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a5206560a306a2e085a437fd258eb57ce">V</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a61e9c06ea9a85a5088a499df6458d276">W</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a02129bb861061d1a052c592e2dc6b383">X</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a57cec4137b614c87cb4e24a3d003a3e0">Y</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a21c2e59531c8710156d34a3c30ac81d5">Z</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a845787798a45b48e825e9b99a338537a">Num0</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142abacb69a042a9fdc268a672919052d1f2">Num1</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a72bd76d6e2b68a539c8d1a77b564ed72">Num2</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142aa3a965b443a13522aa59fbdea31d00ce">Num3</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142ae0af89b5f83c670e4cc584c73c4732ca">Num4</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a7e89a79bbb017bfcaff80ff820a15d8a">Num5</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a0581cd1de881a0f697f3b46741fb326b">Num6</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a4911ceac5c68b5a3f1499d68b27b0938">Num7</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a894e7d9b7dcced78e8007ba2d38b8dd2">Num8</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142ad7b1dbe22119bc7acf6e4a1afcc06e46">Num9</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a013ec032d3460d4be4431c6ab1f8f224">Escape</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a9e6bbb54b2d06e4a49ebcea834724afd">LControl</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a667d08af6165c1cb6e72970036a9f7d7">LShift</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142aab527e774a30bf52a69de316727ce4cd">LAlt</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142afc2ae39512975c67ebe724fecc528d9d">LSystem</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142ab06196a3bdf600db4088d5ac34132d58">RControl</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a8e707c0a523c7ec2179a6b6821d6eba8">RShift</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a067967ae88a4f9ad8cf58e1bb88c32d8">RAlt</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a268cfbdcfc1a2d7ab31962c79b151a7d">RSystem</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142ab61541208db7fa7dba42c85224405911">Menu</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a17b56a4dc0feb499daf64d6c2bd11fdd">LBracket</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142ac27efa0472cd29bf688de150ce920752">RBracket</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a9806fa37a3ecd39bf637c203aa011ed0">Semicolon</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a58be47db9455679e6a44df2eff9c9fa6">Comma</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a1901606ea069a83dc7beea17881ef95a">Period</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142ab6ac6f84bcb33f9b5186bda6b4c8b399">Apostrophe</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a358cfe58715d680d9ab09f82e4010cbc">Slash</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142af6c6379402dce27659f7cffee6bc1f00">Backslash</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142aed24ff8971b1fa43a1efbb386618ce35">Grave</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142af5f286e73bda105e538310b3190f75c5">Equal</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a726add2b4d11304a74bc0360f8338984">Hyphen</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142ad511f8439ecde36647437fbba67a4394">Space</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142af1851d5600eae616ee802a31ac74701b">Enter</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142acd7d13ceea728b08555f7c818cfb13ef">Backspace</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a5c6ba25104401c9ee0650230fc6ba413">Tab</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a9b869c510c75c5827ac82e49d4340927">PageUp</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142aee3677bcca83ece9384b01e43952bf33">PageDown</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a87557f11575c0ad78e4e28abedc13b6e">End</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a8cf04a9734132302f96da8e113e80ce5">Home</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142aa458be0f08b7e4ff3c0f633c100176c0">Insert</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142af2a6c498fb90ee345d997f888fce3b18">Delete</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142aec211f7c20af43e742bf2570c3cb84f9">Add</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a1d9baf077ee87921f57a8fe42d510b65">Subtract</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142ae257376d913f3b53cbb4a9b19d770648">Multiply</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a0b914e196182d02615487e9793ecff3d">Divide</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a945d5e233cf7d6240f6b783b36a374ff">Left</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a92b09c7c48c520c3c55e497875da437c">Right</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a258f49887ef8d14ac268c92b02503aaa">Up</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a08a38277b0309070706f6652eeae9a53">Down</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a1b1118fbe9aecd479f93d37449578365">Numpad0</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142ac8e841f6b917061dd15aedb19a80cb77">Numpad1</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142af7303042267ef3576930c1f4cd79348a">Numpad2</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a5e23a433a108a85788894b705ec11cdd">Numpad3</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a50b622a0442de23f15effc7fc46f3892">Numpad4</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a6252c5b171a2982612e31042b953f558">Numpad5</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a4d9afa3da3cc40661d50a925dd3010ad">Numpad6</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a4314bbf1a297c4b03a5246a71c9c93b6">Numpad7</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a8bf3a062ba0e0fa6ef21508d15e7820e">Numpad8</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a15f7ca721fe2b648a34d498084f70919">Numpad9</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142ae1dffc8709f31a4987c8a88334107e89">F1</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142afe5c3684dce76cdd9f7f42430868aa74">F2</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a4b6bf4b531770872d4328ce69bef5627">F3</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142ae7e0e72401a9f2718ed0f39f2861d702">F4</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a37f438df6a6d5ba4c17ef8ca58562f00">F5</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a1faf42f2823f184eb2c9f0dffe5d73f2">F6</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a47489eb597b7db34caa24b1fc78fc839">F7</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a4787509ad9f9d747a81a30e9dde3d4a7">F8</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a892a245e287c163080b23db737d3c4c9">F9</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142ab213ce22ca6ad4eda8db82966b9b6e5a">F10</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a643b0662422d1d0dffa3fca2e2bf28a8">F11</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142ae902674982fc99aa343cdd94da7476c3">F12</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a95dfde4807d4d6a9eec499203b3c24a0">F13</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a2468649b6215c4cdd2aef5095b3f5932">F14</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142ae53b55851b9ff4979f2c3ff434a4a138">F15</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="acb4cacd7cc5802dec45724cf3314a142a105b296a83f9c105355403f3332af50f">Pause</enumvalue>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>Scan</name>
+      <anchorfile>namespacesf_1_1Keyboard.html</anchorfile>
+      <anchor>aed978288ff367518d29cfe0c9e3b295f</anchor>
+      <arglist></arglist>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa88183b946cc5f0e8c96b2e66e1c74a7e">Unknown</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa7fc56270e7a70fa81a5935b72eacbe29">A</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa9d5ed678fe57bcca610140957afab571">B</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa0d61f8370cad1d412f80b84d143e1257">C</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295faf623e75af30e62bbd73d6df5b50bb7b5">D</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa3a3ea00cfc35332cedf6e5e9a32e94da">E</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa800618943025315f869e4e1f09471012">F</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fadfcf28d0734569a6a693bc8194de62bf">G</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fac1d9f50f86825a1a2302ec2449c17196">H</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fadd7536794b63bf90eccfd37f9b147d7f">I</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295faff44570aca8241914870afbc310cdb85">J</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295faa5f3c6a11b03839d46af9fb43c97c188">K</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fad20caec3b48a1eef164cb4ca81ba2587">L</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa69691c7bdcc3ce6d5d8a1361f22d04ac">M</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa8d9c307cb7f3c4a32822a51922d1ceaa">N</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295faf186217753c37b9b9f958d906208506e">O</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa44c29edb103a2872f519ad0c9a0fdaaa">P</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295faf09564c9ca56850d4cd6b3319e541aee">Q</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fae1e1d3d40573127e9ee0480caf1283d6">R</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa5dbc98dcc983a70728bd082d1a47546e">S</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fab9ece18c950afbfa6b0fdbfa4ff731d3">T</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa4c614360da93c0a041b22e537de151eb">U</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa5206560a306a2e085a437fd258eb57ce">V</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa61e9c06ea9a85a5088a499df6458d276">W</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa02129bb861061d1a052c592e2dc6b383">X</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa57cec4137b614c87cb4e24a3d003a3e0">Y</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa21c2e59531c8710156d34a3c30ac81d5">Z</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fabacb69a042a9fdc268a672919052d1f2">Num1</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa72bd76d6e2b68a539c8d1a77b564ed72">Num2</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295faa3a965b443a13522aa59fbdea31d00ce">Num3</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fae0af89b5f83c670e4cc584c73c4732ca">Num4</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa7e89a79bbb017bfcaff80ff820a15d8a">Num5</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa0581cd1de881a0f697f3b46741fb326b">Num6</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa4911ceac5c68b5a3f1499d68b27b0938">Num7</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa894e7d9b7dcced78e8007ba2d38b8dd2">Num8</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fad7b1dbe22119bc7acf6e4a1afcc06e46">Num9</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa845787798a45b48e825e9b99a338537a">Num0</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295faf1851d5600eae616ee802a31ac74701b">Enter</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa013ec032d3460d4be4431c6ab1f8f224">Escape</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295facd7d13ceea728b08555f7c818cfb13ef">Backspace</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa5c6ba25104401c9ee0650230fc6ba413">Tab</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fad511f8439ecde36647437fbba67a4394">Space</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa726add2b4d11304a74bc0360f8338984">Hyphen</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295faf5f286e73bda105e538310b3190f75c5">Equal</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa17b56a4dc0feb499daf64d6c2bd11fdd">LBracket</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fac27efa0472cd29bf688de150ce920752">RBracket</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295faf6c6379402dce27659f7cffee6bc1f00">Backslash</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa9806fa37a3ecd39bf637c203aa011ed0">Semicolon</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fab6ac6f84bcb33f9b5186bda6b4c8b399">Apostrophe</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295faed24ff8971b1fa43a1efbb386618ce35">Grave</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa58be47db9455679e6a44df2eff9c9fa6">Comma</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa1901606ea069a83dc7beea17881ef95a">Period</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa358cfe58715d680d9ab09f82e4010cbc">Slash</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fae1dffc8709f31a4987c8a88334107e89">F1</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fafe5c3684dce76cdd9f7f42430868aa74">F2</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa4b6bf4b531770872d4328ce69bef5627">F3</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fae7e0e72401a9f2718ed0f39f2861d702">F4</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa37f438df6a6d5ba4c17ef8ca58562f00">F5</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa1faf42f2823f184eb2c9f0dffe5d73f2">F6</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa47489eb597b7db34caa24b1fc78fc839">F7</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa4787509ad9f9d747a81a30e9dde3d4a7">F8</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa892a245e287c163080b23db737d3c4c9">F9</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fab213ce22ca6ad4eda8db82966b9b6e5a">F10</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa643b0662422d1d0dffa3fca2e2bf28a8">F11</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fae902674982fc99aa343cdd94da7476c3">F12</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa95dfde4807d4d6a9eec499203b3c24a0">F13</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa2468649b6215c4cdd2aef5095b3f5932">F14</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fae53b55851b9ff4979f2c3ff434a4a138">F15</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa56d8353718e6fdc78b8d69078a2cdb94">F16</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295faffa5882d1ddcf903bf0d0dbc30bfc604">F17</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa810b30cdfc07fd7fff553a94b828ff78">F18</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295facd7c2a221ef5d0a34acc0bcd679b2054">F19</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fafc335adb3d69d3d8270769e1923ea4dc">F20</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa77e9eee7c579eef5f3731ecf1053c02e">F21</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa7fa06ead699fcbd63132370ffe13335a">F22</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa889645d530078147e7dc69a9caadc31e">F23</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295faebd7820c520d05eca2d775c37d141273">F24</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa8d0f4171170104d094d8b6d4f8bf49e6">CapsLock</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fabf54024481cd2ad6bbb9ae44b7312472">PrintScreen</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa7d7902d5e2998e4fb2b8694a2de4ff65">ScrollLock</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa105b296a83f9c105355403f3332af50f">Pause</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295faa458be0f08b7e4ff3c0f633c100176c0">Insert</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa8cf04a9734132302f96da8e113e80ce5">Home</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa9b869c510c75c5827ac82e49d4340927">PageUp</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295faf2a6c498fb90ee345d997f888fce3b18">Delete</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa87557f11575c0ad78e4e28abedc13b6e">End</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295faee3677bcca83ece9384b01e43952bf33">PageDown</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa92b09c7c48c520c3c55e497875da437c">Right</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa945d5e233cf7d6240f6b783b36a374ff">Left</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa08a38277b0309070706f6652eeae9a53">Down</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa258f49887ef8d14ac268c92b02503aaa">Up</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295facf6cc0261135c6d163fd4305375773d2">NumLock</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fab582ce65eec2e991f25b15018972a331">NumpadDivide</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa3a144014ebb167532263bd99b76c72b3">NumpadMultiply</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fafaa5b4e9d867f8e56e0188e8ba8eb279">NumpadMinus</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295faa8ce91fccd1f82a1df5d379178db2301">NumpadPlus</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa89f87f11f70130e64d2d15dd14d6717e">NumpadEqual</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa49d8361832bab5aa5c7a56623862e95e">NumpadEnter</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295faa652eda5c682a4c6efa8eaf658ea5831">NumpadDecimal</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fac8e841f6b917061dd15aedb19a80cb77">Numpad1</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295faf7303042267ef3576930c1f4cd79348a">Numpad2</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa5e23a433a108a85788894b705ec11cdd">Numpad3</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa50b622a0442de23f15effc7fc46f3892">Numpad4</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa6252c5b171a2982612e31042b953f558">Numpad5</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa4d9afa3da3cc40661d50a925dd3010ad">Numpad6</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa4314bbf1a297c4b03a5246a71c9c93b6">Numpad7</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa8bf3a062ba0e0fa6ef21508d15e7820e">Numpad8</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa15f7ca721fe2b648a34d498084f70919">Numpad9</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa1b1118fbe9aecd479f93d37449578365">Numpad0</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fac35a3006a1d15c7517c1a9127d7e7ed7">NonUsBackslash</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fae498749f3c42246d50b15c81c101d988">Application</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa40cd014b7b6251e3a22e6a45a73a64e1">Execute</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295faeb29d769d84544bf5181522bf8a5669a">ModeChange</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa6a26f548831e6a8c26bfbbd9f6ec61e0">Help</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fab61541208db7fa7dba42c85224405911">Menu</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fae0626222614bdee31951d84c64e5e9ff">Select</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa5afeaba074ef570dc720caaa855d49f6">Redo</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa1cdc076b28f70afac5fcedadf99fa119">Undo</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295faeb334dca00e390e0d3ebf52d205807d7">Cut</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa5fb63579fc981698f97d55bfecb213ea">Copy</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa36bb6559696dc9124986ae120515984f">Paste</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa98e0efccef4b465cb0edb78d2ddc4eed">VolumeMute</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295faf5311ec6ce071e43882685428cc9d56a">VolumeUp</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa91f1f883ea91306f79dbf0ca1b108bad">VolumeDown</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295faad5b800a2da567cb4b91f857b48761ac">MediaPlayPause</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa4e98cb54aeee7205dd16a2a054810be0">MediaStop</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa51d77ec4c0726881b5371a0738cd1c17">MediaNextTrack</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa2b544efa7eb11c924093836ee64b7c7c">MediaPreviousTrack</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa9e6bbb54b2d06e4a49ebcea834724afd">LControl</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa667d08af6165c1cb6e72970036a9f7d7">LShift</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295faab527e774a30bf52a69de316727ce4cd">LAlt</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fafc2ae39512975c67ebe724fecc528d9d">LSystem</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fab06196a3bdf600db4088d5ac34132d58">RControl</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa8e707c0a523c7ec2179a6b6821d6eba8">RShift</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa067967ae88a4f9ad8cf58e1bb88c32d8">RAlt</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa268cfbdcfc1a2d7ab31962c79b151a7d">RSystem</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa0557fa923dcee4d0f86b1409f5c2167f">Back</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa67d2f6740a8eaebf4d5c6f79be8da481">Forward</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa63a6a88c066880c5ac42394a22803ca6">Refresh</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa11a755d598c0c417f9a36758c3da7481">Stop</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa13348442cc6a27032d2b4aa28b75a5d3">Search</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fad78986947356ddd37b43d57df289dee9">Favorites</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fac1756c986aa71a9b63081415a42f1908">HomePage</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fad48b6d57a1819a8e3e49d8c3d4ce7b51">LaunchApplication1</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa7039b07547dd9d5d70c7be1823653606">LaunchApplication2</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa3306698f0c5c6aacb96a3b7793e4f88c">LaunchMail</enumvalue>
+      <enumvalue file="namespacesf_1_1Keyboard.html" anchor="aed978288ff367518d29cfe0c9e3b295fa03ca085f98dc5a775f38ff9dea9af6c3">LaunchMediaSelect</enumvalue>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isKeyPressed</name>
+      <anchorfile>namespacesf_1_1Keyboard.html</anchorfile>
+      <anchor>ae081baf14e88668e1b0831ce85aa07f5</anchor>
+      <arglist>(Key key)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isKeyPressed</name>
+      <anchorfile>namespacesf_1_1Keyboard.html</anchorfile>
+      <anchor>a76a6ffac56239faf949435d5caff11c6</anchor>
+      <arglist>(Scancode code)</arglist>
+    </member>
+    <member kind="function">
+      <type>Key</type>
+      <name>localize</name>
+      <anchorfile>namespacesf_1_1Keyboard.html</anchorfile>
+      <anchor>a048357eb1a5325b3dddeb0c0cefb9d0e</anchor>
+      <arglist>(Scancode code)</arglist>
+    </member>
+    <member kind="function">
+      <type>Scancode</type>
+      <name>delocalize</name>
+      <anchorfile>namespacesf_1_1Keyboard.html</anchorfile>
+      <anchor>a765ce72191e25b42281063405c40b4b8</anchor>
+      <arglist>(Key key)</arglist>
+    </member>
+    <member kind="function">
+      <type>String</type>
+      <name>getDescription</name>
+      <anchorfile>namespacesf_1_1Keyboard.html</anchorfile>
+      <anchor>a7b9e69295a65cdf4d6084f841ff6ef42</anchor>
+      <arglist>(Scancode code)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setVirtualKeyboardVisible</name>
+      <anchorfile>namespacesf_1_1Keyboard.html</anchorfile>
+      <anchor>a8be1ed69e71bf72e7445890352794ec9</anchor>
+      <arglist>(bool visible)</arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static constexpr unsigned int</type>
+      <name>KeyCount</name>
+      <anchorfile>namespacesf_1_1Keyboard.html</anchorfile>
+      <anchor>a1d05756904236ee9e096a25c3861a313</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static constexpr unsigned int</type>
+      <name>ScancodeCount</name>
+      <anchorfile>namespacesf_1_1Keyboard.html</anchorfile>
+      <anchor>a5e408fdae212e43143d7c48f41914dee</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>sf::Listener</name>
+    <filename>namespacesf_1_1Listener.html</filename>
+    <class kind="struct">sf::Listener::Cone</class>
+    <member kind="function">
+      <type>void</type>
+      <name>setGlobalVolume</name>
+      <anchorfile>namespacesf_1_1Listener.html</anchorfile>
+      <anchor>a7da4d76ecdca02cabbd2233caf60f7e3</anchor>
+      <arglist>(float volume)</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
+      <name>getGlobalVolume</name>
+      <anchorfile>namespacesf_1_1Listener.html</anchorfile>
+      <anchor>a6b0f5c3cf41e3f5f5c62349b828fb1f8</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setPosition</name>
+      <anchorfile>namespacesf_1_1Listener.html</anchorfile>
+      <anchor>a3eeab65603414a8267e3ed8554dd2843</anchor>
+      <arglist>(const Vector3f &amp;position)</arglist>
+    </member>
+    <member kind="function">
+      <type>Vector3f</type>
+      <name>getPosition</name>
+      <anchorfile>namespacesf_1_1Listener.html</anchorfile>
+      <anchor>a078d06e577badabd72cc2bae39625977</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setDirection</name>
+      <anchorfile>namespacesf_1_1Listener.html</anchorfile>
+      <anchor>a6d10105ab58a9529cd23b84ebf9cb0ee</anchor>
+      <arglist>(const Vector3f &amp;direction)</arglist>
+    </member>
+    <member kind="function">
+      <type>Vector3f</type>
+      <name>getDirection</name>
+      <anchorfile>namespacesf_1_1Listener.html</anchorfile>
+      <anchor>ae3bc82feaf0e1e4d2c86525142f6ec24</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setVelocity</name>
+      <anchorfile>namespacesf_1_1Listener.html</anchorfile>
+      <anchor>a6a27a97fe501521256cc620a0142bb0e</anchor>
+      <arglist>(const Vector3f &amp;velocity)</arglist>
+    </member>
+    <member kind="function">
+      <type>Vector3f</type>
+      <name>getVelocity</name>
+      <anchorfile>namespacesf_1_1Listener.html</anchorfile>
+      <anchor>a1af448517b376769ecf06dc4d3e682b1</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setCone</name>
+      <anchorfile>namespacesf_1_1Listener.html</anchorfile>
+      <anchor>a3efafdf5505bdf0f51a75255f1b22551</anchor>
+      <arglist>(const Listener::Cone &amp;cone)</arglist>
+    </member>
+    <member kind="function">
+      <type>Listener::Cone</type>
+      <name>getCone</name>
+      <anchorfile>namespacesf_1_1Listener.html</anchorfile>
+      <anchor>ac9237a9ced614de93fb91b744f22884a</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setUpVector</name>
+      <anchorfile>namespacesf_1_1Listener.html</anchorfile>
+      <anchor>a0eaaf861e5e0140d1fcf3564ef67a67b</anchor>
+      <arglist>(const Vector3f &amp;upVector)</arglist>
+    </member>
+    <member kind="function">
+      <type>Vector3f</type>
+      <name>getUpVector</name>
+      <anchorfile>namespacesf_1_1Listener.html</anchorfile>
+      <anchor>a6fa64bf2fc1799d05b2a48dbd8419e0b</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>sf::Literals</name>
+    <filename>namespacesf_1_1Literals.html</filename>
+  </compound>
+  <compound kind="namespace">
+    <name>sf::Mouse</name>
+    <filename>namespacesf_1_1Mouse.html</filename>
+    <member kind="enumeration">
+      <type></type>
+      <name>Button</name>
+      <anchorfile>namespacesf_1_1Mouse.html</anchorfile>
+      <anchor>a4fb128be433f9aafe66bc0c605daaa90</anchor>
+      <arglist></arglist>
+      <enumvalue file="namespacesf_1_1Mouse.html" anchor="a4fb128be433f9aafe66bc0c605daaa90a945d5e233cf7d6240f6b783b36a374ff">Left</enumvalue>
+      <enumvalue file="namespacesf_1_1Mouse.html" anchor="a4fb128be433f9aafe66bc0c605daaa90a92b09c7c48c520c3c55e497875da437c">Right</enumvalue>
+      <enumvalue file="namespacesf_1_1Mouse.html" anchor="a4fb128be433f9aafe66bc0c605daaa90ab1ca34f82e83c52b010f86955f264e05">Middle</enumvalue>
+      <enumvalue file="namespacesf_1_1Mouse.html" anchor="a4fb128be433f9aafe66bc0c605daaa90a113f84d105af2b8016b3896117c9deab">Extra1</enumvalue>
+      <enumvalue file="namespacesf_1_1Mouse.html" anchor="a4fb128be433f9aafe66bc0c605daaa90a83dca46dd08ad782e968d586375715e1">Extra2</enumvalue>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>Wheel</name>
+      <anchorfile>namespacesf_1_1Mouse.html</anchorfile>
+      <anchor>a60dd479a43f26f200e7957aa11803ff4</anchor>
+      <arglist></arglist>
+      <enumvalue file="namespacesf_1_1Mouse.html" anchor="a60dd479a43f26f200e7957aa11803ff4a06ce2a25e5d12c166a36f654dbea6012">Vertical</enumvalue>
+      <enumvalue file="namespacesf_1_1Mouse.html" anchor="a60dd479a43f26f200e7957aa11803ff4ac1b5fa03ecdb95d4a45dd1c40b02527f">Horizontal</enumvalue>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isButtonPressed</name>
+      <anchorfile>namespacesf_1_1Mouse.html</anchorfile>
+      <anchor>a2c04cfb3777a682cd83629ab0ba7443d</anchor>
+      <arglist>(Button button)</arglist>
+    </member>
+    <member kind="function">
+      <type>Vector2i</type>
+      <name>getPosition</name>
+      <anchorfile>namespacesf_1_1Mouse.html</anchorfile>
+      <anchor>ad662f5ffc4b5b8c395be6a58d482b5fb</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>Vector2i</type>
+      <name>getPosition</name>
+      <anchorfile>namespacesf_1_1Mouse.html</anchorfile>
+      <anchor>a88e3e03774b60576ec48a2301f4f57f9</anchor>
+      <arglist>(const WindowBase &amp;relativeTo)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setPosition</name>
+      <anchorfile>namespacesf_1_1Mouse.html</anchorfile>
+      <anchor>a6cf7dc4def89a2ae4e954fe0f454fed5</anchor>
+      <arglist>(Vector2i position)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setPosition</name>
+      <anchorfile>namespacesf_1_1Mouse.html</anchorfile>
+      <anchor>aeaac27aac9cb5eeb26862550cbc3d583</anchor>
+      <arglist>(Vector2i position, const WindowBase &amp;relativeTo)</arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static constexpr unsigned int</type>
+      <name>ButtonCount</name>
+      <anchorfile>namespacesf_1_1Mouse.html</anchorfile>
+      <anchor>a78384824bc3b006a99ce61b1b04c37f7</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>sf::PlaybackDevice</name>
+    <filename>namespacesf_1_1PlaybackDevice.html</filename>
+    <member kind="function">
+      <type>std::vector&lt; std::string &gt;</type>
+      <name>getAvailableDevices</name>
+      <anchorfile>namespacesf_1_1PlaybackDevice.html</anchorfile>
+      <anchor>afb84033768d8be76f1820886f5aa1003</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>std::optional&lt; std::string &gt;</type>
+      <name>getDefaultDevice</name>
+      <anchorfile>namespacesf_1_1PlaybackDevice.html</anchorfile>
+      <anchor>a42f072d55a913389bea68ac233287984</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>setDevice</name>
+      <anchorfile>namespacesf_1_1PlaybackDevice.html</anchorfile>
+      <anchor>aadbbdd328d6d7735d033a45d34fc1800</anchor>
+      <arglist>(const std::string &amp;name)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::optional&lt; std::string &gt;</type>
+      <name>getDevice</name>
+      <anchorfile>namespacesf_1_1PlaybackDevice.html</anchorfile>
+      <anchor>abe8bcab21351a0b5145a03937fee1a4f</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>sf::Sensor</name>
+    <filename>namespacesf_1_1Sensor.html</filename>
+    <member kind="enumeration">
+      <type></type>
+      <name>Type</name>
+      <anchorfile>namespacesf_1_1Sensor.html</anchorfile>
+      <anchor>a687375af3ab77b818fca73735bcaea84</anchor>
+      <arglist></arglist>
+      <enumvalue file="namespacesf_1_1Sensor.html" anchor="a687375af3ab77b818fca73735bcaea84ab043bc6d611582087d8bf1790d863d69">Accelerometer</enumvalue>
+      <enumvalue file="namespacesf_1_1Sensor.html" anchor="a687375af3ab77b818fca73735bcaea84abed99e5db57749f375e738c1c0258047">Gyroscope</enumvalue>
+      <enumvalue file="namespacesf_1_1Sensor.html" anchor="a687375af3ab77b818fca73735bcaea84a9e9fa52e0aa4a2b519f8287760d7c3ac">Magnetometer</enumvalue>
+      <enumvalue file="namespacesf_1_1Sensor.html" anchor="a687375af3ab77b818fca73735bcaea84a8a88c39cef668fb55f188af09665bd40">Gravity</enumvalue>
+      <enumvalue file="namespacesf_1_1Sensor.html" anchor="a687375af3ab77b818fca73735bcaea84ad77bb891b6d90fe3dd2d1a7d2d08ceb7">UserAcceleration</enumvalue>
+      <enumvalue file="namespacesf_1_1Sensor.html" anchor="a687375af3ab77b818fca73735bcaea84aabbd64f40c34c537d3a571af068fce29">Orientation</enumvalue>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isAvailable</name>
+      <anchorfile>namespacesf_1_1Sensor.html</anchorfile>
+      <anchor>a8bcd2db34212d34bd1a1365a029674b1</anchor>
+      <arglist>(Type sensor)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setEnabled</name>
+      <anchorfile>namespacesf_1_1Sensor.html</anchorfile>
+      <anchor>abae92d8aec41b231ac1f12d007806b99</anchor>
+      <arglist>(Type sensor, bool enabled)</arglist>
+    </member>
+    <member kind="function">
+      <type>Vector3f</type>
+      <name>getValue</name>
+      <anchorfile>namespacesf_1_1Sensor.html</anchorfile>
+      <anchor>a17ccc6f0906d33255ccf1bb777669046</anchor>
+      <arglist>(Type sensor)</arglist>
+    </member>
+    <member kind="variable" static="yes">
+      <type>static constexpr unsigned int</type>
+      <name>Count</name>
+      <anchorfile>namespacesf_1_1Sensor.html</anchorfile>
+      <anchor>a205cb2b7afc5f1397496fb61ff6663e0</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>sf::Style</name>
+    <filename>namespacesf_1_1Style.html</filename>
+    <member kind="enumvalue">
+      <name>None</name>
+      <anchorfile>group__window.html</anchorfile>
+      <anchor>gga5e7da6549090361249790ccb464158cca8c35a9c8507559e455387fc4a83ce422</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Titlebar</name>
+      <anchorfile>group__window.html</anchorfile>
+      <anchor>gga5e7da6549090361249790ccb464158ccab4c8b32b05ed715928513787cb1e85b6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Resize</name>
+      <anchorfile>group__window.html</anchorfile>
+      <anchor>gga5e7da6549090361249790ccb464158ccaccff967648ebcd5db2007eff7352b50f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Close</name>
+      <anchorfile>group__window.html</anchorfile>
+      <anchor>gga5e7da6549090361249790ccb464158ccae07a7d411d5acf28f4a9a4b76a3a9493</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>Default</name>
+      <anchorfile>group__window.html</anchorfile>
+      <anchor>gga5e7da6549090361249790ccb464158cca5597cd420fc461807e4a201c92adea37</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>sf::Touch</name>
+    <filename>namespacesf_1_1Touch.html</filename>
+    <member kind="function">
+      <type>bool</type>
+      <name>isDown</name>
+      <anchorfile>namespacesf_1_1Touch.html</anchorfile>
+      <anchor>a16ec0dde98706dcd9144a4263466571a</anchor>
+      <arglist>(unsigned int finger)</arglist>
+    </member>
+    <member kind="function">
+      <type>Vector2i</type>
+      <name>getPosition</name>
+      <anchorfile>namespacesf_1_1Touch.html</anchorfile>
+      <anchor>ae5d31f537862622b3bd0fa738ba37d43</anchor>
+      <arglist>(unsigned int finger)</arglist>
+    </member>
+    <member kind="function">
+      <type>Vector2i</type>
+      <name>getPosition</name>
+      <anchorfile>namespacesf_1_1Touch.html</anchorfile>
+      <anchor>a33fac8d46a80ad81f8339327d5edd0d3</anchor>
+      <arglist>(unsigned int finger, const WindowBase &amp;relativeTo)</arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>sf::Vulkan</name>
+    <filename>namespacesf_1_1Vulkan.html</filename>
+    <member kind="function">
+      <type>bool</type>
+      <name>isAvailable</name>
+      <anchorfile>namespacesf_1_1Vulkan.html</anchorfile>
+      <anchor>a7ef19fe70cf7164f8a3fc47f78fab5a1</anchor>
+      <arglist>(bool requireGraphics=true)</arglist>
+    </member>
+    <member kind="function">
+      <type>VulkanFunctionPointer</type>
+      <name>getFunction</name>
+      <anchorfile>namespacesf_1_1Vulkan.html</anchorfile>
+      <anchor>a1ef0f8740c571e50ce66e110e9acee26</anchor>
+      <arglist>(const char *name)</arglist>
+    </member>
+    <member kind="function">
+      <type>const std::vector&lt; const char * &gt; &amp;</type>
+      <name>getGraphicsRequiredInstanceExtensions</name>
+      <anchorfile>namespacesf_1_1Vulkan.html</anchorfile>
+      <anchor>a3f0cbedc28688be11208afef83fe1c1f</anchor>
+      <arglist>()</arglist>
     </member>
   </compound>
   <compound kind="group">
     <name>audio</name>
     <title>Audio module</title>
     <filename>group__audio.html</filename>
-    <class kind="class">sf::AlResource</class>
+    <namespace>sf::Listener</namespace>
+    <class kind="class">sf::AudioResource</class>
     <class kind="class">sf::InputSoundFile</class>
-    <class kind="class">sf::Listener</class>
     <class kind="class">sf::Music</class>
     <class kind="class">sf::OutputSoundFile</class>
     <class kind="class">sf::Sound</class>
@@ -17333,6 +14464,33 @@
     <class kind="class">sf::SoundRecorder</class>
     <class kind="class">sf::SoundSource</class>
     <class kind="class">sf::SoundStream</class>
+    <member kind="enumeration">
+      <type></type>
+      <name>sf::SoundChannel</name>
+      <anchorfile>group__audio.html</anchorfile>
+      <anchor>ga9800c7f3d5e7a9c9310f707b2c995ff3</anchor>
+      <arglist></arglist>
+      <enumvalue file="group__audio.html" anchor="gga9800c7f3d5e7a9c9310f707b2c995ff3a6fcdc090caeade09d0efd6253932b6f5">Unspecified</enumvalue>
+      <enumvalue file="group__audio.html" anchor="gga9800c7f3d5e7a9c9310f707b2c995ff3a5d9b47bd3b65072e0d5daf55f01da086">Mono</enumvalue>
+      <enumvalue file="group__audio.html" anchor="gga9800c7f3d5e7a9c9310f707b2c995ff3a3a86c1ecef856c6360b14ee920abd2d4">FrontLeft</enumvalue>
+      <enumvalue file="group__audio.html" anchor="gga9800c7f3d5e7a9c9310f707b2c995ff3a17a1a1897fa234ffd995f32ff31c4075">FrontRight</enumvalue>
+      <enumvalue file="group__audio.html" anchor="gga9800c7f3d5e7a9c9310f707b2c995ff3ad446ecb2171ed693701ea6bd61081da1">FrontCenter</enumvalue>
+      <enumvalue file="group__audio.html" anchor="gga9800c7f3d5e7a9c9310f707b2c995ff3ad41ef6e0badb793ad8f27b37f4dcba05">FrontLeftOfCenter</enumvalue>
+      <enumvalue file="group__audio.html" anchor="gga9800c7f3d5e7a9c9310f707b2c995ff3a87b98fbe65e747d2663763249f60167c">FrontRightOfCenter</enumvalue>
+      <enumvalue file="group__audio.html" anchor="gga9800c7f3d5e7a9c9310f707b2c995ff3aadf637c910a4d16c3ad4f03b31063215">LowFrequencyEffects</enumvalue>
+      <enumvalue file="group__audio.html" anchor="gga9800c7f3d5e7a9c9310f707b2c995ff3abff6f014d4c53710a1ad968e9b401ccb">BackLeft</enumvalue>
+      <enumvalue file="group__audio.html" anchor="gga9800c7f3d5e7a9c9310f707b2c995ff3aa07ea17eb99337c60ed9ad770cf2bb55">BackRight</enumvalue>
+      <enumvalue file="group__audio.html" anchor="gga9800c7f3d5e7a9c9310f707b2c995ff3a28ce21f1909d32aa33998608a7d22438">BackCenter</enumvalue>
+      <enumvalue file="group__audio.html" anchor="gga9800c7f3d5e7a9c9310f707b2c995ff3a78c8f1c8df388a8810a325e9ca9752da">SideLeft</enumvalue>
+      <enumvalue file="group__audio.html" anchor="gga9800c7f3d5e7a9c9310f707b2c995ff3a31610f6c0f8a9f598c6279592d9f76e0">SideRight</enumvalue>
+      <enumvalue file="group__audio.html" anchor="gga9800c7f3d5e7a9c9310f707b2c995ff3a91b8ede24b7f93a98ae4dcaade15d468">TopCenter</enumvalue>
+      <enumvalue file="group__audio.html" anchor="gga9800c7f3d5e7a9c9310f707b2c995ff3afb669612ee1933229f170effa07aa8a9">TopFrontLeft</enumvalue>
+      <enumvalue file="group__audio.html" anchor="gga9800c7f3d5e7a9c9310f707b2c995ff3ae2c423ab92e9d89f7db6b65894ce20a6">TopFrontRight</enumvalue>
+      <enumvalue file="group__audio.html" anchor="gga9800c7f3d5e7a9c9310f707b2c995ff3ad22ee83cb7dfe7318ffeca7b632fb819">TopFrontCenter</enumvalue>
+      <enumvalue file="group__audio.html" anchor="gga9800c7f3d5e7a9c9310f707b2c995ff3adb41be9e166e3f77a49becccef7a57f9">TopBackLeft</enumvalue>
+      <enumvalue file="group__audio.html" anchor="gga9800c7f3d5e7a9c9310f707b2c995ff3a8731dd6d25eb4078d246edb9404e1684">TopBackRight</enumvalue>
+      <enumvalue file="group__audio.html" anchor="gga9800c7f3d5e7a9c9310f707b2c995ff3a523c261e94e92bcd0ed3276f42388790">TopBackCenter</enumvalue>
+    </member>
   </compound>
   <compound kind="group">
     <name>graphics</name>
@@ -17345,7 +14503,7 @@
     <class kind="class">sf::ConvexShape</class>
     <class kind="class">sf::Drawable</class>
     <class kind="class">sf::Font</class>
-    <class kind="class">sf::Glyph</class>
+    <class kind="struct">sf::Glyph</class>
     <class kind="class">sf::Image</class>
     <class kind="class">sf::Rect</class>
     <class kind="class">sf::RectangleShape</class>
@@ -17356,80 +14514,36 @@
     <class kind="class">sf::Shader</class>
     <class kind="class">sf::Shape</class>
     <class kind="class">sf::Sprite</class>
+    <class kind="class">sf::StencilMode</class>
     <class kind="class">sf::Text</class>
     <class kind="class">sf::Texture</class>
     <class kind="class">sf::Transform</class>
     <class kind="class">sf::Transformable</class>
-    <class kind="class">sf::Vertex</class>
+    <class kind="struct">sf::Vertex</class>
     <class kind="class">sf::VertexArray</class>
     <class kind="class">sf::VertexBuffer</class>
     <class kind="class">sf::View</class>
+    <member kind="enumeration">
+      <type></type>
+      <name>sf::CoordinateType</name>
+      <anchorfile>group__graphics.html</anchorfile>
+      <anchor>ga3279cc83ec99c60693c4fe6d0d3fb98b</anchor>
+      <arglist></arglist>
+      <enumvalue file="group__graphics.html" anchor="gga3279cc83ec99c60693c4fe6d0d3fb98ba66b28fcf83c9f24cd5b4d7bdc8f8ba0e">Normalized</enumvalue>
+      <enumvalue file="group__graphics.html" anchor="gga3279cc83ec99c60693c4fe6d0d3fb98bac3d2f5d37334dc978fd8b17fc77408a1">Pixels</enumvalue>
+    </member>
     <member kind="enumeration">
       <type></type>
       <name>sf::PrimitiveType</name>
       <anchorfile>group__graphics.html</anchorfile>
       <anchor>ga5ee56ac1339984909610713096283b1b</anchor>
       <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>sf::Points</name>
-      <anchorfile>group__graphics.html</anchorfile>
-      <anchor>gga5ee56ac1339984909610713096283b1bac7097d3e01778b9318def1f7ac35a785</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>sf::Lines</name>
-      <anchorfile>group__graphics.html</anchorfile>
-      <anchor>gga5ee56ac1339984909610713096283b1ba2bf015eeff9f798dfc3d6d744d669f1e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>sf::LineStrip</name>
-      <anchorfile>group__graphics.html</anchorfile>
-      <anchor>gga5ee56ac1339984909610713096283b1ba14d9eeec2c7c314f239a57bde35949fa</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>sf::Triangles</name>
-      <anchorfile>group__graphics.html</anchorfile>
-      <anchor>gga5ee56ac1339984909610713096283b1ba880a7aa72c20b9f9beb7eb64d2434670</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>sf::TriangleStrip</name>
-      <anchorfile>group__graphics.html</anchorfile>
-      <anchor>gga5ee56ac1339984909610713096283b1ba05e55fec6d32c2fc8328f94d07f91184</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>sf::TriangleFan</name>
-      <anchorfile>group__graphics.html</anchorfile>
-      <anchor>gga5ee56ac1339984909610713096283b1ba363f7762b33706c805c6a451ad554f5e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>sf::Quads</name>
-      <anchorfile>group__graphics.html</anchorfile>
-      <anchor>gga5ee56ac1339984909610713096283b1ba5041359b76b4bd3d3e6ef738826b8743</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>sf::LinesStrip</name>
-      <anchorfile>group__graphics.html</anchorfile>
-      <anchor>gga5ee56ac1339984909610713096283b1ba5b09910f5d0f39641342184ccd0d1de3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>sf::TrianglesStrip</name>
-      <anchorfile>group__graphics.html</anchorfile>
-      <anchor>gga5ee56ac1339984909610713096283b1ba66643dbbb24bbacb405973ed80eebae0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>sf::TrianglesFan</name>
-      <anchorfile>group__graphics.html</anchorfile>
-      <anchor>gga5ee56ac1339984909610713096283b1ba5338a2c6d922151fe50f235036af8a20</anchor>
-      <arglist></arglist>
+      <enumvalue file="group__graphics.html" anchor="gga5ee56ac1339984909610713096283b1ba75dd5f1160a3f02b6fae89c54361a1b3">Points</enumvalue>
+      <enumvalue file="group__graphics.html" anchor="gga5ee56ac1339984909610713096283b1baa0b0293a2db49f5f93c15a62e095c819">Lines</enumvalue>
+      <enumvalue file="group__graphics.html" anchor="gga5ee56ac1339984909610713096283b1bae7f9e73b8edd21f420a63b3ace5768a2">LineStrip</enumvalue>
+      <enumvalue file="group__graphics.html" anchor="gga5ee56ac1339984909610713096283b1ba7ca66fdfaad3eb33fc65d7490178f856">Triangles</enumvalue>
+      <enumvalue file="group__graphics.html" anchor="gga5ee56ac1339984909610713096283b1ba1da0b9ead8b051940a89214bae22831c">TriangleStrip</enumvalue>
+      <enumvalue file="group__graphics.html" anchor="gga5ee56ac1339984909610713096283b1ba18d58fde618e4a30e2dfdc122e693047">TriangleFan</enumvalue>
     </member>
   </compound>
   <compound kind="group">
@@ -17450,17 +14564,12 @@
     <name>system</name>
     <title>System module</title>
     <filename>group__system.html</filename>
+    <class kind="class">sf::Angle</class>
     <class kind="class">sf::Clock</class>
     <class kind="class">sf::FileInputStream</class>
     <class kind="class">sf::InputStream</class>
-    <class kind="class">sf::Lock</class>
     <class kind="class">sf::MemoryInputStream</class>
-    <class kind="class">sf::Mutex</class>
-    <class kind="class">sf::NonCopyable</class>
     <class kind="class">sf::String</class>
-    <class kind="class">sf::Thread</class>
-    <class kind="class">sf::ThreadLocal</class>
-    <class kind="class">sf::ThreadLocalPtr</class>
     <class kind="class">sf::Time</class>
     <class kind="class">sf::Utf</class>
     <class kind="class">sf::Vector2</class>
@@ -17483,7 +14592,7 @@
       <type>std::ostream &amp;</type>
       <name>sf::err</name>
       <anchorfile>group__system.html</anchorfile>
-      <anchor>ga7fe7f475639e26334606b5142c29551f</anchor>
+      <anchor>ga885486205a724571d140a7c8a0e3626b</anchor>
       <arglist>()</arglist>
     </member>
   </compound>
@@ -17491,63 +14600,66 @@
     <name>window</name>
     <title>Window module</title>
     <filename>group__window.html</filename>
-    <class kind="class">sf::Clipboard</class>
+    <namespace>sf::Clipboard</namespace>
+    <namespace>sf::Joystick</namespace>
+    <namespace>sf::Keyboard</namespace>
+    <namespace>sf::Mouse</namespace>
+    <namespace>sf::Sensor</namespace>
+    <namespace>sf::Touch</namespace>
+    <namespace>sf::Vulkan</namespace>
     <class kind="class">sf::Context</class>
     <class kind="class">sf::ContextSettings</class>
     <class kind="class">sf::Cursor</class>
     <class kind="class">sf::Event</class>
     <class kind="class">sf::GlResource</class>
-    <class kind="class">sf::Joystick</class>
-    <class kind="class">sf::Keyboard</class>
-    <class kind="class">sf::Mouse</class>
-    <class kind="class">sf::Sensor</class>
-    <class kind="class">sf::Touch</class>
     <class kind="class">sf::VideoMode</class>
-    <class kind="class">sf::Vulkan</class>
     <class kind="class">sf::Window</class>
     <class kind="class">sf::WindowBase</class>
     <member kind="typedef">
-      <type>platform specific</type>
+      <type>&quot;platform-specific&quot;</type>
       <name>sf::WindowHandle</name>
       <anchorfile>group__window.html</anchorfile>
-      <anchor>gaed947028b0698a812cad2f97bfe9caa3</anchor>
+      <anchor>ga9858f04701033cd01859037d8dafd289</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>sf::Style::None</name>
       <anchorfile>group__window.html</anchorfile>
-      <anchor>gga97d7ee508bea4507ab40271518c732ffa8c35a9c8507559e455387fc4a83ce422</anchor>
+      <anchor>gga5e7da6549090361249790ccb464158cca8c35a9c8507559e455387fc4a83ce422</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>sf::Style::Titlebar</name>
       <anchorfile>group__window.html</anchorfile>
-      <anchor>gga97d7ee508bea4507ab40271518c732ffab4c8b32b05ed715928513787cb1e85b6</anchor>
+      <anchor>gga5e7da6549090361249790ccb464158ccab4c8b32b05ed715928513787cb1e85b6</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>sf::Style::Resize</name>
       <anchorfile>group__window.html</anchorfile>
-      <anchor>gga97d7ee508bea4507ab40271518c732ffaccff967648ebcd5db2007eff7352b50f</anchor>
+      <anchor>gga5e7da6549090361249790ccb464158ccaccff967648ebcd5db2007eff7352b50f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>sf::Style::Close</name>
       <anchorfile>group__window.html</anchorfile>
-      <anchor>gga97d7ee508bea4507ab40271518c732ffae07a7d411d5acf28f4a9a4b76a3a9493</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>sf::Style::Fullscreen</name>
-      <anchorfile>group__window.html</anchorfile>
-      <anchor>gga97d7ee508bea4507ab40271518c732ffa6288ec86830245cf957e2d234f79f50d</anchor>
+      <anchor>gga5e7da6549090361249790ccb464158ccae07a7d411d5acf28f4a9a4b76a3a9493</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>sf::Style::Default</name>
       <anchorfile>group__window.html</anchorfile>
-      <anchor>gga97d7ee508bea4507ab40271518c732ffa5597cd420fc461807e4a201c92adea37</anchor>
+      <anchor>gga5e7da6549090361249790ccb464158cca5597cd420fc461807e4a201c92adea37</anchor>
       <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>sf::State</name>
+      <anchorfile>group__window.html</anchorfile>
+      <anchor>ga504e2cd8fc6a852463f8d049db1151e5</anchor>
+      <arglist></arglist>
+      <enumvalue file="group__window.html" anchor="gga504e2cd8fc6a852463f8d049db1151e5ab13311ab51c4c34757f67f26580018dd">Windowed</enumvalue>
+      <enumvalue file="group__window.html" anchor="gga504e2cd8fc6a852463f8d049db1151e5a0829ea6734059d66e6bf87096b215dc1">Fullscreen</enumvalue>
     </member>
   </compound>
   <compound kind="page">

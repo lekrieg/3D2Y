@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////////////
 //
 // SFML - Simple and Fast Multimedia Library
-// Copyright (C) 2007-2025 Laurent Gomila (laurent@sfml-dev.org)
+// Copyright (C) 2007-2024 Laurent Gomila (laurent@sfml-dev.org)
 //
 // This software is provided 'as-is', without any express or implied warranty.
 // In no event will the authors be held liable for any damages arising from the use of this software.
@@ -34,7 +34,6 @@
 
 #include <SFML/System/Vector2.hpp>
 
-#include <type_traits>
 #include <variant>
 
 
@@ -336,8 +335,8 @@ public:
     /// \return The result of applying the visitor to the event
     ///
     ////////////////////////////////////////////////////////////
-    template <typename Visitor>
-    decltype(auto) visit(Visitor&& visitor) const;
+    template <typename T>
+    decltype(auto) visit(T&& visitor) const;
 
 private:
     ////////////////////////////////////////////////////////////
@@ -374,22 +373,11 @@ private:
     template <typename T, typename... Ts>
     [[nodiscard]] static constexpr bool isInParameterPack(const std::variant<Ts...>*)
     {
-        return std::disjunction_v<std::is_same<T, Ts>...>;
+        return (std::is_same_v<T, Ts> || ...);
     }
 
     template <typename T>
     static constexpr bool isEventSubtype = isInParameterPack<T>(decltype (&m_data)(nullptr));
-
-    friend class WindowBase;
-
-    template <typename Handler, typename... Ts>
-    [[nodiscard]] static constexpr bool isInvocableWithEventSubtype(const std::variant<Ts...>*)
-    {
-        return std::disjunction_v<std::is_invocable<Handler&, Ts&>...>;
-    }
-
-    template <typename Handler>
-    static constexpr bool isEventHandler = isInvocableWithEventSubtype<Handler>(decltype (&m_data)(nullptr));
 };
 
 } // namespace sf
