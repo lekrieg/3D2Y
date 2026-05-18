@@ -260,7 +260,7 @@ void abyss::serializer::Serializer::DeserializeSprite(const YAML::Node& node, st
 
 			m_assets->GetTextures()[fileName] = sf::Texture();
 
-			char* n = new char[fileName.size()];
+			char* n = new char[fileName.size() + 1];
 			strcpy(n, fileName.c_str());
 			int fileIndex = m_assets->GetArchiver().GetFileIndex(n);
 

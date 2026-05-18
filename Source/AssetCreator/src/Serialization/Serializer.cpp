@@ -105,7 +105,7 @@ void Serializer::DeserializeSprite(const YAML::Node& node, std::vector<std::shar
 			{
 				m_app->GetUsedTextures()[fileName] = std::make_shared<sf::Texture>();
 
-				char* n = new char[fileName.size()];
+				char* n = new char[fileName.size() + 1];
 				strcpy(n, fileName.c_str());
 				int fileIndex = m_app->GetArchiver().GetFileIndex(n);
 
