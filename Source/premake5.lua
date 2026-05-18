@@ -3,7 +3,7 @@ require "clion"
 local WIN_DEBUG_LINKS = {
     "sfml-graphics-s-d", "sfml-audio-s-d", "sfml-network-s-d",
     "sfml-window-s-d",   "sfml-system-s-d",
-    "yaml-cpp", "freetyped", "opengl32", "winmm", "gdi32",
+    "yaml-cppd", "freetyped", "opengl32", "winmm", "gdi32",
     "FLACd", "oggd", "vorbisd", "vorbisencd", "vorbisfiled", "ws2_32",
 }
 local WIN_RELEASE_LINKS = {

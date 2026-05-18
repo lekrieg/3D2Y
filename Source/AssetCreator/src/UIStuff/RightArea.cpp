@@ -629,7 +629,9 @@ bool RightArea::Deserialize(const std::string &path)
     YAML::Node root;
     try
     {
+        ABYSS_INFO("before loading");
         root = YAML::LoadFile(path);
+        ABYSS_INFO("after loading");
     }
     catch (YAML::ParserException& e)
     {

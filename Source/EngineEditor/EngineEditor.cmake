@@ -59,7 +59,7 @@ target_link_libraries("EngineEditor"
   $<$<CONFIG:Debug>:sfml-network-s-d>
   $<$<CONFIG:Debug>:sfml-window-s-d>
   $<$<CONFIG:Debug>:sfml-system-s-d>
-  $<$<CONFIG:Debug>:yaml-cpp>
+  $<$<CONFIG:Debug>:yaml-cppd>
   $<$<CONFIG:Debug>:freetyped>
   $<$<CONFIG:Debug>:opengl32>
   $<$<CONFIG:Debug>:winmm>

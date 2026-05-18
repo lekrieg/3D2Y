@@ -757,13 +757,14 @@ void editor::EditorScene::SceneManagerGui()
 
 	if (fileList.size() > 0)
 	{
-		const char *combo_preview_value = fileList[item_selected_idx].filename().c_str();
+		const std::string preview = fileList[item_selected_idx].filename().string();
+		const char *combo_preview_value = preview.c_str();
 		if (ImGui::BeginCombo("Level list", combo_preview_value, flags))
 		{
 			for (int n = 0; n < fileList.size(); n++)
 			{
 				const bool is_selected = (item_selected_idx == n);
-				if (ImGui::Selectable(fileList[n].filename().c_str(), is_selected))
+				if (ImGui::Selectable(fileList[n].filename().string().c_str(), is_selected))
 					item_selected_idx = n;
 
 				// Set the initial focus when opening the combo (scrolling + keyboard navigation focus)
@@ -777,8 +778,9 @@ void editor::EditorScene::SceneManagerGui()
 
 		if (ImGui::Button("Reload", ImVec2(100, 25)))
 		{
-			m_sceneName = fileList[item_selected_idx].filename();
-			Deserialize(fileList[item_selected_idx]);
+			m_sceneName = fileList[item_selected_idx].filename().string();
+			m_sceneName = m_fileDialog.GetSelected().filename().string();
+			Deserialize(fileList[item_selected_idx].string());
 			m_entityManager.SortLayers();
 		}
 
@@ -795,7 +797,7 @@ void editor::EditorScene::SceneManagerGui()
 	{
 		m_allowInput = true;
 		std::string path = m_fileDialog.GetSelected().string();
-		m_sceneName = m_fileDialog.GetSelected().filename();
+		m_sceneName = m_fileDialog.GetSelected().filename().string();
 
 		switch (m_dialogState)
 		{
